@@ -1,0 +1,32 @@
+# 2 of 85 files differ from prettier@3.10.1
+packages/excalidraw/components/FontPicker/FontPicker.scss
+packages/excalidraw/css/styles.scss
+
+# The first 2, reference first
+
+--- reference/packages/excalidraw/components/FontPicker/FontPicker.scss
++++ formatter/packages/excalidraw/components/FontPicker/FontPicker.scss
+@@ -8,7 +8,5 @@
+ 
+     @include isMobile {
+-      max-width: calc(
+-        2rem + 4 * var(--default-button-size)
+-      ); // 4 gaps + 4 buttons
++      max-width: calc(2rem + 4 * var(--default-button-size)); // 4 gaps + 4 buttons
+     }
+ 
+
+
+--- reference/packages/excalidraw/css/styles.scss
++++ formatter/packages/excalidraw/css/styles.scss
+@@ -587,7 +587,6 @@ body.excalidraw-cursor-resize * {
+     box-sizing: border-box;
+     max-width: calc(
+-      100% - var(--viewport-status-frame-border-width) - var(
+-          --viewport-status-frame-border-width
+-        )
++      100% - var(--viewport-status-frame-border-width) -
++        var(--viewport-status-frame-border-width)
+     );
+     pointer-events: var(--ui-pointerEvents);
+

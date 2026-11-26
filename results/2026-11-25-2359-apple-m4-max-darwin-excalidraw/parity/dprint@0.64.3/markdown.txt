@@ -1,0 +1,175 @@
+# 5 of 17 files differ from prettier@3.10.1
+README.md
+dev-docs/docs/@excalidraw/excalidraw/api/utils/utils-intro.md
+packages/excalidraw/CHANGELOG.md
+packages/excalidraw/README.md
+packages/utils/README.md
+
+# The first 5, reference first
+
+--- reference/README.md
++++ formatter/README.md
+@@ -1,6 +1,13 @@
+ <a href="https://excalidraw.com/" target="_blank" rel="noopener">
+   <picture>
+-    <source media="(prefers-color-scheme: dark)" alt="Excalidraw" srcset="https://excalidraw.nyc3.cdn.digitaloceanspaces.com/github/excalidraw_github_cover_2_dark.png" />
+-    <img alt="Excalidraw" src="https://excalidraw.nyc3.cdn.digitaloceanspaces.com/github/excalidraw_github_cover_2.png" />
++    <source
++      media="(prefers-color-scheme: dark)"
++      alt="Excalidraw"
++      srcset="https://excalidraw.nyc3.cdn.digitaloceanspaces.com/github/excalidraw_github_cover_2_dark.png"
++    />
++    <img
++      alt="Excalidraw"
++      src="https://excalidraw.nyc3.cdn.digitaloceanspaces.com/github/excalidraw_github_cover_2.png"
++    />
+   </picture>
+ </a>
+@@ -24,15 +31,30 @@
+ <p align="center">
+   <a href="https://github.com/excalidraw/excalidraw/blob/master/LICENSE">
+-    <img alt="Excalidraw is released under the MIT license." src="https://img.shields.io/badge/license-MIT-blue.svg"  /></a>
++    <img
++      alt="Excalidraw is released under the MIT license."
++      src="https://img.shields.io/badge/license-MIT-blue.svg"
++    /></a>
+   <a href="https://www.npmjs.com/package/@excalidraw/excalidraw">
+-    <img alt="npm downloads/month" src="https://img.shields.io/npm/dm/@excalidraw/excalidraw"  /></a>
++    <img
++      alt="npm downloads/month"
++      src="https://img.shields.io/npm/dm/@excalidraw/excalidraw"
++    /></a>
+   <a href="https://docs.excalidraw.com/docs/introduction/contributing">
+-    <img alt="PRs welcome!" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat"  /></a>
++    <img
++      alt="PRs welcome!"
++      src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat"
++    /></a>
+   <a href="https://discord.gg/UexuTaE">
+-    <img alt="Chat on Discord" src="https://img.shields.io/discord/723672430744174682?color=738ad6&label=Chat%20on%20Discord&logo=discord&logoColor=ffffff&widget=false"/></a>
++    <img
++      alt="Chat on Discord"
++      src="https://img.shields.io/discord/723672430744174682?color=738ad6&label=Chat%20on%20Discord&logo=discord&logoColor=ffffff&widget=false"
++    /></a>
+   <a href="https://deepwiki.com/excalidraw/excalidraw">
+     <img alt="Ask DeepWiki" src="https://deepwiki.com/badge.svg" /></a>
+   <a href="https://twitter.com/excalidraw">
+-    <img alt="Follow Excalidraw on Twitter" src="https://img.shields.io/twitter/follow/excalidraw.svg?label=follow+@excalidraw&style=social&logo=twitter"/></a>
++    <img
++      alt="Follow Excalidraw on Twitter"
++      src="https://img.shields.io/twitter/follow/excalidraw.svg?label=follow+@excalidraw&style=social&logo=twitter"
++    /></a>
+ </p>
+ 
+@@ -40,5 +62,8 @@
+   <figure>
+     <a href="https://excalidraw.com" target="_blank" rel="noopener">
+-      <img src="https://excalidraw.nyc3.cdn.digitaloceanspaces.com/github%2Fproduct_showcase.png" alt="Product showcase" />
++      <img
++        src="https://excalidraw.nyc3.cdn.digitaloceanspaces.com/github%2Fproduct_showcase.png"
+... 5 more lines
+
+--- reference/dev-docs/docs/@excalidraw/excalidraw/api/utils/utils-intro.md
++++ formatter/dev-docs/docs/@excalidraw/excalidraw/api/utils/utils-intro.md
+@@ -341,6 +341,5 @@ The `device` has the following `attributes`, some grouped into `viewport` and `e
+ The `EditorInterface` object has the following properties:
+ 
+-| Name | Type | Description |
+-| --- | --- | --- | --- | --- | --- |
++| Name | Type | Description | | --- | --- | --- | --- | --- | --- |
+ | `formFactor` | `'phone' | 'tablet' | 'desktop'` | Indicates the device type based on screen size |
+ | `desktopUIMode` | `'compact' | 'full'` | UI mode for desktop form factor |
+
+
+--- reference/packages/excalidraw/CHANGELOG.md
++++ formatter/packages/excalidraw/CHANGELOG.md
+@@ -241,5 +241,5 @@ The toolbar UI was rewritten from hidden radio/checkbox inputs to real `<button>
+       });
+     }}
+-  />
++  />;
+   ```
+ 
+@@ -280,5 +280,5 @@ The toolbar UI was rewritten from hidden radio/checkbox inputs to real `<button>
+   ```tsx
+   <Excalidraw
+-    onExport={async function* (_type, { files }, { signal }) {
++    onExport={async function*(_type, { files }, { signal }) {
+       yield { type: "progress", message: "Waiting for images..." };
+ 
+@@ -291,5 +291,5 @@ The toolbar UI was rewritten from hidden radio/checkbox inputs to real `<button>
+       yield { type: "progress", message: "Export ready", progress: 1 };
+     }}
+-  />
++  />;
+   ```
+ 
+@@ -396,16 +396,16 @@ import type { ExcalidrawImperativeAPI } from "@excalidraw/excalidraw/types";
+ <!-- import maps used for deduplicating react & react-dom versions -->
+ <script type="importmap">
+-  {
+-    "imports": {
+-      "react": "https://esm.sh/react@19.0.0",
+-      "react/jsx-runtime": "https://esm.sh/react@19.0.0/jsx-runtime",
+-      "react-dom": "https://esm.sh/react-dom@19.0.0"
+-    }
++{
++  "imports": {
++    "react": "https://esm.sh/react@19.0.0",
++    "react/jsx-runtime": "https://esm.sh/react@19.0.0/jsx-runtime",
++    "react-dom": "https://esm.sh/react-dom@19.0.0"
+   }
++}
+ </script>
+ <script type="module">
+-  import React from "https://esm.sh/react@19.0.0";
+-  import ReactDOM from "https://esm.sh/react-dom@19.0.0";
+-  import * as ExcalidrawLib from "https://esm.sh/@excalidraw/excalidraw@0.18.0/dist/dev/index.js?external=react,react-dom";
++import * as ExcalidrawLib from "https://esm.sh/@excalidraw/excalidraw@0.18.0/dist/dev/index.js?external=react,react-dom";
++import ReactDOM from "https://esm.sh/react-dom@19.0.0";
++import React from "https://esm.sh/react@19.0.0";
+ </script>
+ ```
+@@ -437,5 +437,5 @@ All fonts are automatically loaded from the [esm.run](https://esm.run/) CDN. For
+ 
+ ```js
+-<script>window.EXCALIDRAW_ASSET_PATH = "/";</script>
++<script>window.EXCALIDRAW_ASSET_PATH = "/";</script>;
+ ```
+ 
+@@ -445,5 +445,5 @@ or, if you serve your assets from the root of your CDN, you would do:
+ <script>
+   window.EXCALIDRAW_ASSET_PATH = "https://cdn.domain.com/subpath/";
+-</script>
+... 41 more lines
+
+--- reference/packages/excalidraw/README.md
++++ formatter/packages/excalidraw/README.md
+@@ -122,5 +122,5 @@ For self-hosting, copy the contents of `node_modules/@excalidraw/excalidraw/dist
+ ```html
+ <script>
+-  window.EXCALIDRAW_ASSET_PATH = "/";
++window.EXCALIDRAW_ASSET_PATH = "/";
+ </script>
+ ```
+
+
+--- reference/packages/utils/README.md
++++ formatter/packages/utils/README.md
+@@ -32,5 +32,5 @@ Excalidraw utils is published as a UMD (Universal Module Definition). If you are
+ 
+ ```js
+-import { exportToSvg, exportToBlob } from "@excalidraw/utils";
++import { exportToBlob, exportToSvg } from "@excalidraw/utils";
+ ```
+ 
+@@ -40,6 +40,6 @@ To use it in a browser directly:
+ <script src="https://unpkg.com/@excalidraw/utils@0.1.0/dist/excalidraw-utils.min.js"></script>
+ <script>
+-  // ExcalidrawUtils is a global variable defined by excalidraw.min.js
+-  const { exportToSvg, exportToBlob } = ExcalidrawUtils;
++// ExcalidrawUtils is a global variable defined by excalidraw.min.js
++const { exportToSvg, exportToBlob } = ExcalidrawUtils;
+ </script>
+ ```
+

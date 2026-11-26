@@ -1,0 +1,420 @@
+# 39 of 2433 files differ from prettier@3.10.1
+src/aria/toolbar/testing/toolbar-harness.ts
+src/aria/tree/tree.spec.ts
+src/cdk/a11y/key-manager/list-key-manager.ts
+src/cdk/a11y/key-manager/tree-key-manager.spec.ts
+src/cdk/drag-drop/directives/drag.ts
+src/cdk/drag-drop/directives/drop-list.ts
+src/cdk/drag-drop/drag-ref.ts
+src/cdk/overlay/position/connected-position.ts
+src/cdk/overlay/position/flexible-connected-position-strategy.ts
+src/cdk/overlay/position/position-strategy.ts
+src/cdk/portal/portal-directives.ts
+src/cdk/portal/portal.ts
+src/cdk/schematics/utils/project-main-file.ts
+src/cdk/scrolling/virtual-for-of.ts
+src/cdk/stepper/stepper.ts
+src/cdk/table/table.ts
+src/cdk/testing/component-harness.ts
+src/cdk/testing/testbed/task-state-zone-interceptor.ts
+src/cdk-experimental/selection/selection.ts
+src/components-examples/material-experimental/popover-edit/popover-edit-mat-table/popover-edit-mat-table-example.ts
+src/google-maps/marker-utilities.ts
+src/material/button/button-base.ts
+src/material/button/testing/button-harness-filters.ts
+src/material/checkbox/checkbox-config.ts
+src/material/chips/chip-input.ts
+src/material/chips/tokens.ts
+src/material/core/animation/animation.ts
+src/material/core/option/option.ts
+src/material/datepicker/calendar-body.ts
+src/material/datepicker/calendar.ts
+src/material/dialog/dialog.spec.ts
+src/material/form-field/form-field.ts
+src/material/progress-bar/progress-bar.ts
+src/material/schematics/ng-add/schema.ts
+src/material/select/select.ts
+src/material/snack-bar/snack-bar-config.ts
+src/material/sort/sort.spec.ts
+src/material/tabs/tab-group.ts
+src/material/tooltip/tooltip.ts
+
+# The first 25, reference first
+
+--- reference/src/aria/toolbar/testing/toolbar-harness.ts
++++ formatter/src/aria/toolbar/testing/toolbar-harness.ts
+@@ -56,5 +56,6 @@ export class ToolbarHarness extends ComponentHarness {
+     const host = await this.host();
+     return (await host.getAttribute("aria-orientation")) as
+-      "vertical" | "horizontal";
++      | "vertical"
++      | "horizontal";
+   }
+ }
+
+
+--- reference/src/aria/tree/tree.spec.ts
++++ formatter/src/aria/tree/tree.spec.ts
+@@ -117,5 +117,11 @@ describe("Tree", () => {
+       nav?: boolean;
+       currentType?:
+-        "page" | "step" | "location" | "date" | "time" | "true" | "false";
++        | "page"
++        | "step"
++        | "location"
++        | "date"
++        | "time"
++        | "true"
++        | "false";
+       tabIndex?: number;
+     } = {},
+
+
+--- reference/src/cdk/a11y/key-manager/list-key-manager.ts
++++ formatter/src/cdk/a11y/key-manager/list-key-manager.ts
+@@ -42,5 +42,8 @@ export interface ListKeyManagerOption {
+ /** Modifier keys handled by the ListKeyManager. */
+ export type ListKeyManagerModifierKey =
+-  "altKey" | "ctrlKey" | "metaKey" | "shiftKey";
++  | "altKey"
++  | "ctrlKey"
++  | "metaKey"
++  | "shiftKey";
+ 
+ /**
+@@ -72,5 +75,9 @@ export class ListKeyManager<T extends ListKeyManagerOption> {
+   constructor(
+     private _items:
+-      QueryList<T> | T[] | readonly T[] | Signal<T[]> | Signal<readonly T[]>,
++      | QueryList<T>
++      | T[]
++      | readonly T[]
++      | Signal<T[]>
++      | Signal<readonly T[]>,
+     injector?: Injector,
+   ) {
+
+
+--- reference/src/cdk/a11y/key-manager/tree-key-manager.spec.ts
++++ formatter/src/cdk/a11y/key-manager/tree-key-manager.spec.ts
+@@ -122,11 +122,15 @@ describe("TreeKeyManager", () => {
+ 
+       let parentItem:
+-        FakeArrayTreeKeyManagerItem | FakeObservableTreeKeyManagerItem; // index 0
++        | FakeArrayTreeKeyManagerItem
++        | FakeObservableTreeKeyManagerItem; // index 0
+       let childItem:
+-        FakeArrayTreeKeyManagerItem | FakeObservableTreeKeyManagerItem; // index 1
++        | FakeArrayTreeKeyManagerItem
++        | FakeObservableTreeKeyManagerItem; // index 1
+       let childItemWithNoChildren:
+-        FakeArrayTreeKeyManagerItem | FakeObservableTreeKeyManagerItem; // index 3
++        | FakeArrayTreeKeyManagerItem
++        | FakeObservableTreeKeyManagerItem; // index 3
+       let lastItem:
+-        FakeArrayTreeKeyManagerItem | FakeObservableTreeKeyManagerItem; // index 5
++        | FakeArrayTreeKeyManagerItem
++        | FakeObservableTreeKeyManagerItem; // index 5
+ 
+       beforeEach(() => {
+
+
+--- reference/src/cdk/drag-drop/directives/drag.ts
++++ formatter/src/cdk/drag-drop/directives/drag.ts
+@@ -134,5 +134,7 @@ export class CdkDrag<T = any> implements AfterViewInit, OnChanges, OnDestroy {
+    */
+   @Input("cdkDragBoundary") boundaryElement!:
+-    string | ElementRef<HTMLElement> | HTMLElement;
++    | string
++    | ElementRef<HTMLElement>
++    | HTMLElement;
+ 
+   /**
+
+
+--- reference/src/cdk/drag-drop/directives/drop-list.ts
++++ formatter/src/cdk/drag-drop/directives/drop-list.ts
+@@ -165,5 +165,6 @@ export class CdkDropList<T = any> implements OnDestroy {
+    */
+   @Input("cdkDropListElementContainer") elementContainerSelector:
+-    string | null = null;
++    | string
++    | null = null;
+ 
+   /**
+
+
+--- reference/src/cdk/drag-drop/drag-ref.ts
++++ formatter/src/cdk/drag-drop/drag-ref.ts
+@@ -134,5 +134,8 @@ const dragImportantProperties = new Set([
+  */
+ export type PreviewContainer =
+-  "global" | "parent" | ElementRef<HTMLElement> | HTMLElement;
++  | "global"
++  | "parent"
++  | ElementRef<HTMLElement>
++  | HTMLElement;
+ 
+ /**
+
+
+--- reference/src/cdk/overlay/position/connected-position.ts
++++ formatter/src/cdk/overlay/position/connected-position.ts
+@@ -15,5 +15,6 @@ export type VerticalConnectionPos = "top" | "center" | "bottom";
+ /** The distance between the overlay element and the viewport. */
+ export type ViewportMargin =
+-  number | { top?: number; bottom?: number; start?: number; end?: number };
++  | number
++  | { top?: number; bottom?: number; start?: number; end?: number };
+ 
+ /** A connection point on the origin element. */
+
+
+--- reference/src/cdk/overlay/position/flexible-connected-position-strategy.ts
++++ formatter/src/cdk/overlay/position/flexible-connected-position-strategy.ts
+@@ -73,5 +73,7 @@ export function createFlexibleConnectedPositionStrategy(
+ /** Supported locations in the DOM for connected overlays. */
+ export type FlexibleOverlayPopoverLocation =
+-  "global" | "inline" | { type: "parent"; element: Element };
++  | "global"
++  | "inline"
++  | { type: "parent"; element: Element };
+ 
+ /**
+@@ -570,5 +572,7 @@ export class FlexibleConnectedPositionStrategy implements PositionStrategy {
+   /** @docs-private */
+   getPopoverInsertionPoint():
+-    Element | null | { type: "parent"; element: Element } {
++    | Element
++    | null
++    | { type: "parent"; element: Element } {
+     if (this._popoverLocation === "global") {
+       return null;
+
+
+--- reference/src/cdk/overlay/position/position-strategy.ts
++++ formatter/src/cdk/overlay/position/position-strategy.ts
+@@ -28,4 +28,6 @@ export interface PositionStrategy {
+    */
+   getPopoverInsertionPoint?():
+-    Element | null | { type: "parent"; element: Element };
++    | Element
++    | null
++    | { type: "parent"; element: Element };
+ }
+
+
+--- reference/src/cdk/portal/portal-directives.ts
++++ formatter/src/cdk/portal/portal-directives.ts
+@@ -53,5 +53,7 @@ export class CdkPortal extends TemplatePortal {
+  */
+ export type CdkPortalOutletAttachedRef =
+-  ComponentRef<any> | EmbeddedViewRef<any> | null;
++  | ComponentRef<any>
++  | EmbeddedViewRef<any>
++  | null;
+ 
+ /**
+
+
+--- reference/src/cdk/portal/portal.ts
++++ formatter/src/cdk/portal/portal.ts
+@@ -112,5 +112,6 @@ export class ComponentPortal<T> extends Portal<ComponentRef<T>> {
+    */
+   readonly directives:
+-    (Type<unknown> | DirectiveWithBindings<unknown>)[] | null;
++    | (Type<unknown> | DirectiveWithBindings<unknown>)[]
++    | null;
+ 
+   constructor(
+
+
+--- reference/src/cdk/schematics/utils/project-main-file.ts
++++ formatter/src/cdk/schematics/utils/project-main-file.ts
+@@ -19,5 +19,6 @@ export function getProjectMainFile(project: ProjectDefinition): Path {
+   // `main` is for the `@angular-devkit/build-angular:browser` builder.
+   const mainPath = (buildOptions["browser"] || buildOptions["main"]) as
+-    Path | undefined;
++    | Path
++    | undefined;
+ 
+   if (!mainPath) {
+
+
+--- reference/src/cdk/scrolling/virtual-for-of.ts
++++ formatter/src/cdk/scrolling/virtual-for-of.ts
+@@ -122,5 +122,9 @@ export class CdkVirtualForOf<T>
+   @Input()
+   get cdkVirtualForOf():
+-    DataSource<T> | Observable<T[]> | NgIterable<T> | null | undefined {
++    | DataSource<T>
++    | Observable<T[]>
++    | NgIterable<T>
++    | null
++    | undefined {
+     return this._cdkVirtualForOf;
+   }
+@@ -142,5 +146,9 @@ export class CdkVirtualForOf<T>
+ 
+   _cdkVirtualForOf:
+-    DataSource<T> | Observable<T[]> | NgIterable<T> | null | undefined;
++    | DataSource<T>
++    | Observable<T[]>
++    | NgIterable<T>
++    | null
++    | undefined;
+ 
+   /**
+
+
+--- reference/src/cdk/stepper/stepper.ts
++++ formatter/src/cdk/stepper/stepper.ts
+@@ -134,5 +134,6 @@ export class CdkStep implements OnChanges {
+   )
+   protected _childForms:
+-    QueryList<Partial<NgForm | FormGroupDirective>> | undefined;
++    | QueryList<Partial<NgForm | FormGroupDirective>>
++    | undefined;
+ 
+   /** Template for step content. */
+
+
+--- reference/src/cdk/table/table.ts
++++ formatter/src/cdk/table/table.ts
+@@ -115,5 +115,7 @@ export interface RowOutlet {
+ /** Possible types that can be set as the data source for a `CdkTable`. */
+ export type CdkTableDataSourceInput<T> =
+-  readonly T[] | DataSource<T> | Observable<readonly T[]>;
++  | readonly T[]
++  | DataSource<T>
++  | Observable<readonly T[]>;
+ 
+ /**
+@@ -735,5 +737,8 @@ export class CdkTable<T>
+       (
+         def:
+-          ViewContainerRef | Set<unknown> | Map<unknown, unknown> | undefined,
++          | ViewContainerRef
++          | Set<unknown>
++          | Map<unknown, unknown>
++          | undefined,
+       ) => {
+         def?.clear();
+
+
+--- reference/src/cdk/testing/component-harness.ts
++++ formatter/src/cdk/testing/component-harness.ts
+@@ -32,5 +32,6 @@ export type AsyncOptionPredicate<T, O> = (
+  */
+ export type HarnessQuery<T extends ComponentHarness> =
+-  ComponentHarnessConstructor<T> | HarnessPredicate<T>;
++  | ComponentHarnessConstructor<T>
++  | HarnessPredicate<T>;
+ 
+ /**
+
+
+--- reference/src/cdk/testing/testbed/task-state-zone-interceptor.ts
++++ formatter/src/cdk/testing/testbed/task-state-zone-interceptor.ts
+@@ -91,5 +91,6 @@ export class TaskStateZoneInterceptor {
+     // tslint:disable-next-line:variable-name
+     const ProxyZoneSpec = (Zone as any)["ProxyZoneSpec"] as
+-      ProxyZoneStatic | undefined;
++      | ProxyZoneStatic
++      | undefined;
+ 
+     // If there is no "ProxyZoneSpec" installed, we throw an error and recommend
+
+
+--- reference/src/cdk-experimental/selection/selection.ts
++++ formatter/src/cdk-experimental/selection/selection.ts
+@@ -249,3 +249,5 @@ export class CdkSelection<T>
+ type SelectAllState = "all" | "none" | "partial";
+ type TableDataSource<T> =
+-  DataSource<T> | Observable<readonly T[]> | readonly T[];
++  | DataSource<T>
++  | Observable<readonly T[]>
++  | readonly T[];
+
+
+--- reference/src/components-examples/material-experimental/popover-edit/popover-edit-mat-table/popover-edit-mat-table-example.ts
++++ formatter/src/components-examples/material-experimental/popover-edit/popover-edit-mat-table/popover-edit-mat-table-example.ts
+@@ -20,5 +20,10 @@ export type ElementType = "Metal" | "Semimetal" | "Nonmetal";
+ 
+ export type FantasyElement =
+-  "Earth" | "Water" | "Wind" | "Fire" | "Light" | "Dark";
++  | "Earth"
++  | "Water"
++  | "Wind"
++  | "Fire"
++  | "Light"
++  | "Dark";
+ 
+ export interface PeriodicElement {
+
+
+--- reference/src/google-maps/marker-utilities.ts
++++ formatter/src/google-maps/marker-utilities.ts
+@@ -11,5 +11,6 @@ import { InjectionToken } from "@angular/core";
+ /** Marker types from the Google Maps API. */
+ export type Marker =
+-  google.maps.Marker | google.maps.marker.AdvancedMarkerElement;
++  | google.maps.Marker
++  | google.maps.marker.AdvancedMarkerElement;
+ 
+ /** Interface that should be implemented by directives that wrap marker APIs. */
+
+
+--- reference/src/material/button/button-base.ts
++++ formatter/src/material/button/button-base.ts
+@@ -35,5 +35,9 @@ import { _CdkPrivateStyleLoader } from "@angular/cdk/private";
+  */
+ export type MatButtonAppearance =
+-  "text" | "filled" | "elevated" | "outlined" | "tonal";
++  | "text"
++  | "filled"
++  | "elevated"
++  | "outlined"
++  | "tonal";
+ 
+ /** Object that can be used to configure the default options for the button component. */
+
+
+--- reference/src/material/button/testing/button-harness-filters.ts
++++ formatter/src/material/button/testing/button-harness-filters.ts
+@@ -14,5 +14,9 @@ export type ButtonVariant = "basic" | "icon" | "fab" | "mini-fab";
+ /** Possible button appearances. */
+ export type ButtonAppearance =
+-  "text" | "filled" | "elevated" | "outlined" | "tonal";
++  | "text"
++  | "filled"
++  | "elevated"
++  | "outlined"
++  | "tonal";
+ 
+ /** Possible button types. */
+
+
+--- reference/src/material/checkbox/checkbox-config.ts
++++ formatter/src/material/checkbox/checkbox-config.ts
+@@ -51,3 +51,6 @@ export const MAT_CHECKBOX_DEFAULT_OPTIONS =
+  */
+ export type MatCheckboxClickAction =
+-  "noop" | "check" | "check-indeterminate" | undefined;
++  | "noop"
++  | "check"
++  | "check-indeterminate"
++  | undefined;
+
+
+--- reference/src/material/chips/chip-input.ts
++++ formatter/src/material/chips/chip-input.ts
+@@ -105,5 +105,6 @@ export class MatChipInput implements MatChipTextControl, OnChanges, OnDestroy {
+   @Input("matChipInputSeparatorKeyCodes")
+   separatorKeyCodes:
+-    readonly (number | SeparatorKey)[] | ReadonlySet<number | SeparatorKey>;
++    | readonly (number | SeparatorKey)[]
++    | ReadonlySet<number | SeparatorKey>;
+ 
+   /** Emitted when a chip is to be added. */
+

@@ -1,0 +1,15 @@
+# 1 of 2433 files differ from prettier@3.10.1
+src/material/input/input.spec.ts
+
+# The first 1, reference first
+
+--- reference/src/material/input/input.spec.ts
++++ formatter/src/material/input/input.spec.ts
+@@ -2244,5 +2244,5 @@ class MatInputWithCondictionalLabel {
+       placeholder="Snacks"
+     >
+-    </textarea>
++      </textarea>
+   </mat-form-field>`,
+   imports: [MatInputModule],
+

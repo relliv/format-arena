@@ -1,0 +1,360 @@
+# 22 of 1621 files differ from prettier@3.10.1
+packages/create-vite/src/index.ts
+packages/plugin-legacy/src/index.ts
+packages/vite/src/module-runner/types.ts
+packages/vite/src/node/__tests__/plugins/importGlob/fixture-a/index.ts
+packages/vite/src/node/build.ts
+packages/vite/src/node/config.ts
+packages/vite/src/node/plugins/css.ts
+packages/vite/src/node/plugins/html.ts
+packages/vite/src/node/server/hmr.ts
+packages/vite/src/node/server/index.ts
+packages/vite/src/node/utils.ts
+packages/vite/src/shared/forwardConsole.ts
+packages/vite/src/shared/invokeMethods.ts
+packages/vite/src/types/commonjs.d.ts
+packages/vite/src/types/connect.d.ts
+packages/vite/src/types/shims.d.ts
+packages/vite/src/types/ws.d.ts
+packages/vite/types/importGlob.d.ts
+playground/css/async/async-3.js
+playground/dynamic-import/nested/index.js
+playground/js-sourcemap/with-multiline-import.ts
+playground/ssr-deps/define-properties-exports/index.js
+
+# The first 22, reference first
+
+--- reference/packages/create-vite/src/index.ts
++++ formatter/packages/create-vite/src/index.ts
+@@ -54,13 +54,13 @@ Options:
+ 
+ Available templates:
+-${yellow("vanilla-ts          vanilla")}
+-${green("vue-ts              vue")}
+-${cyan("react-ts            react")}
+-${cyan("react-compiler-ts   react-compiler")}
+-${magenta("preact-ts           preact")}
+-${redBright("lit-ts              lit")}
+-${red("svelte-ts           svelte")}
+-${blue("solid-ts            solid")}
+-${blueBright("qwik-ts             qwik")}`;
++${yellow    ('vanilla-ts          vanilla'       )}
++${green     ('vue-ts              vue'           )}
++${cyan      ('react-ts            react'         )}
++${cyan      ('react-compiler-ts   react-compiler')}
++${magenta   ('preact-ts           preact'        )}
++${redBright ('lit-ts              lit'           )}
++${red       ('svelte-ts           svelte'        )}
++${blue      ('solid-ts            solid'         )}
++${blueBright('qwik-ts             qwik'          )}`;
+ 
+ type ColorFunc = (str: string) => string;
+
+
+--- reference/packages/plugin-legacy/src/index.ts
++++ formatter/packages/plugin-legacy/src/index.ts
+@@ -494,5 +494,7 @@ function viteLegacyPlugin(options: Options = {}): Plugin[] {
+       const getLegacyOutputFileName = (
+         fileNames:
+-          string | ((chunkInfo: Rollup.PreRenderedChunk) => string) | undefined,
++          | string
++          | ((chunkInfo: Rollup.PreRenderedChunk) => string)
++          | undefined,
+         defaultFileName = "[name]-legacy-[hash].js",
+       ): string | ((chunkInfo: Rollup.PreRenderedChunk) => string) => {
+
+
+--- reference/packages/vite/src/module-runner/types.ts
++++ formatter/packages/vite/src/module-runner/types.ts
+@@ -100,5 +100,8 @@ export interface ModuleRunnerOptions {
+    */
+   sourcemapInterceptor?:
+-    false | "node" | "prepareStackTrace" | InterceptorOptions;
++    | false
++    | "node"
++    | "prepareStackTrace"
++    | InterceptorOptions;
+   /**
+    * Disable HMR or configure HMR options.
+
+
+--- reference/packages/vite/src/node/__tests__/plugins/importGlob/fixture-a/index.ts
++++ formatter/packages/vite/src/node/__tests__/plugins/importGlob/fixture-a/index.ts
+@@ -9,7 +9,7 @@ export interface ModuleType {
+ export const basic = import.meta.glob<ModuleType>("./modules/*.ts");
+ // prettier-ignore
+-export const basicWithObjectKeys = Object.keys(import.meta.glob<ModuleType>('./modules/*.ts'))
++export const basicWithObjectKeys = Object.keys(import.meta.glob<ModuleType>('./modules/*.ts'));
+ // prettier-ignore
+-export const basicWithObjectValues = Object.values(import.meta.glob<ModuleType>('./modules/*.ts'))
++export const basicWithObjectValues = Object.values(import.meta.glob<ModuleType>('./modules/*.ts'));
+ 
+ export const basicEager = import.meta.glob<ModuleType>("./modules/*.ts", {
+
+
+--- reference/packages/vite/src/node/build.ts
++++ formatter/packages/vite/src/node/build.ts
+@@ -141,5 +141,6 @@ export interface BuildEnvironmentOptions {
+    */
+   assetsInlineLimit?:
+-    number | ((filePath: string, content: Buffer) => boolean | undefined);
++    | number
++    | ((filePath: string, content: Buffer) => boolean | undefined);
+   /**
+    * Whether to code-split CSS. When enabled, CSS in async chunks will be
+
+
+--- reference/packages/vite/src/node/config.ts
++++ formatter/packages/vite/src/node/config.ts
+@@ -233,5 +233,6 @@ export interface DevEnvironmentOptions {
+    */
+   sourcemapIgnoreList?:
+-    false | ((sourcePath: string, sourcemapPath: string) => boolean);
++    | false
++    | ((sourcePath: string, sourcemapPath: string) => boolean);
+ 
+   /**
+
+
+--- reference/packages/vite/src/node/plugins/css.ts
++++ formatter/packages/vite/src/node/plugins/css.ts
+@@ -200,5 +200,6 @@ export interface CSSModulesOptions {
+   exportGlobals?: boolean;
+   generateScopedName?:
+-    string | ((name: string, filename: string, css: string) => string);
++    | string
++    | ((name: string, filename: string, css: string) => string);
+   hashPrefix?: string;
+   /**
+@@ -1930,5 +1931,6 @@ const preprocessorWorkerControllerCache = new WeakMap<
+ >();
+ let alwaysFakeWorkerWorkerControllerCache:
+-  PreprocessorWorkerController | undefined;
++  | PreprocessorWorkerController
++  | undefined;
+ 
+ export interface PreprocessCSSResult {
+@@ -2466,5 +2468,6 @@ export function hoistAtRules(css: string): string {
+ 
+ type PreprocessorAdditionalDataResult =
+-  string | { content: string; map?: ExistingRawSourceMap };
++  | string
++  | { content: string; map?: ExistingRawSourceMap };
+ 
+ type PreprocessorAdditionalData =
+@@ -3355,5 +3358,6 @@ async function compileLightningCSS(
+               const code = fs.readFileSync(filePath, "utf-8");
+               const lang = CSS_LANGS_RE.exec(filePath)?.[1] as
+-                CssLang | undefined;
++                | CssLang
++                | undefined;
+               if (isPreProcessor(lang)) {
+                 const result = await compileCSSPreprocessors(
+
+
+--- reference/packages/vite/src/node/plugins/html.ts
++++ formatter/packages/vite/src/node/plugins/html.ts
+@@ -1752,5 +1752,6 @@ export function getImportMap(
+ 
+   const asset = bundle[getImportMapFilename(options)] as
+-    OutputAsset | undefined;
++    | OutputAsset
++    | undefined;
+   if (!asset) return undefined;
+ 
+
+
+--- reference/packages/vite/src/node/server/hmr.ts
++++ formatter/packages/vite/src/node/server/hmr.ts
+@@ -226,5 +226,6 @@ export const normalizeHotChannel = (
+   let invokeHandlers: InvokeMethods | undefined;
+   let listenerForInvokeHandler:
+-    ((data: InvokeSendData, client: HotChannelClient) => void) | undefined;
++    | ((data: InvokeSendData, client: HotChannelClient) => void)
++    | undefined;
+   const handleInvoke = async <T extends keyof InvokeMethods>(
+     payload: HotPayload,
+@@ -319,5 +320,6 @@ export const normalizeHotChannel = (
+       listenerForInvokeHandler = async (payload, client) => {
+         const responseInvoke = payload.id.replace("send", "response") as
+-          "response" | `response:${string}`;
++          | "response"
++          | `response:${string}`;
+         client.send({
+           type: "custom",
+
+
+--- reference/packages/vite/src/node/server/index.ts
++++ formatter/packages/vite/src/node/server/index.ts
+@@ -188,5 +188,6 @@ export interface ServerOptions extends CommonServerOptions {
+    */
+   sourcemapIgnoreList?:
+-    false | ((sourcePath: string, sourcemapPath: string) => boolean);
++    | false
++    | ((sourcePath: string, sourcemapPath: string) => boolean);
+   /**
+    * Backward compatibility. The buildStart and buildEnd hooks were called only once for
+
+
+--- reference/packages/vite/src/node/utils.ts
++++ formatter/packages/vite/src/node/utils.ts
+@@ -59,5 +59,8 @@ import type { CommonServerOptions } from ".";
+  */
+ export type FilterPattern =
+-  ReadonlyArray<string | RegExp> | string | RegExp | null;
++  | ReadonlyArray<string | RegExp>
++  | string
++  | RegExp
++  | null;
+ export const createFilter = _createFilter as (
+   include?: FilterPattern,
+@@ -731,5 +734,6 @@ export async function recursiveReaddir(dir: string): Promise<string[]> {
+ // https://github.com/nodejs/node/issues/37737
+ export let safeRealpathSync:
+-  typeof windowsSafeRealPathSync | typeof fs.realpathSync.native = isWindows
++  | typeof windowsSafeRealPathSync
++  | typeof fs.realpathSync.native = isWindows
+   ? windowsSafeRealPathSync
+   : fs.realpathSync.native;
+@@ -972,5 +976,6 @@ export function unique<T>(arr: T[]): T[] {
+  */
+ export function getLocalhostAddressIfDiffersFromDNS():
+-  Promise<string | undefined> | undefined {
++  | Promise<string | undefined>
++  | undefined {
+   // dns.getDefaultResultOrder is not available in bun 1.3.11 and deno 2.7.11
+   // while this is a bug in bun and deno, since this function is commonly called,
+
+
+--- reference/packages/vite/src/shared/forwardConsole.ts
++++ formatter/packages/vite/src/shared/forwardConsole.ts
+@@ -7,5 +7,10 @@ import { prettyFormat } from "./pretty-format";
+ 
+ export type ForwardConsoleLogLevel =
+-  "error" | "warn" | "info" | "log" | "debug" | (string & {});
++  | "error"
++  | "warn"
++  | "info"
++  | "log"
++  | "debug"
++  | (string & {});
+ 
+ export interface ForwardConsoleOptions {
+
+
+--- reference/packages/vite/src/shared/invokeMethods.ts
++++ formatter/packages/vite/src/shared/invokeMethods.ts
+@@ -5,5 +5,7 @@ export interface FetchFunctionOptions {
+ 
+ export type FetchResult =
+-  CachedFetchResult | ExternalFetchResult | ViteFetchResult;
++  | CachedFetchResult
++  | ExternalFetchResult
++  | ViteFetchResult;
+ 
+ export interface CachedFetchResult {
+
+
+--- reference/packages/vite/src/types/commonjs.d.ts
++++ formatter/packages/vite/src/types/commonjs.d.ts
+@@ -207,5 +207,7 @@ export interface RollupCommonJSOptions {
+    */
+   defaultIsModuleExports?:
+-    boolean | "auto" | ((id: string) => boolean | "auto");
++    | boolean
++    | "auto"
++    | ((id: string) => boolean | "auto");
+   /**
+    * Some modules contain dynamic `require` calls, or require modules that
+
+
+--- reference/packages/vite/src/types/connect.d.ts
++++ formatter/packages/vite/src/types/connect.d.ts
+@@ -36,5 +36,7 @@ export namespace Connect {
+   ) => void;
+   export type HandleFunction =
+-    SimpleHandleFunction | NextHandleFunction | ErrorHandleFunction;
++    | SimpleHandleFunction
++    | NextHandleFunction
++    | ErrorHandleFunction;
+ 
+   export interface ServerStackItem {
+
+
+--- reference/packages/vite/src/types/shims.d.ts
++++ formatter/packages/vite/src/types/shims.d.ts
+@@ -26,5 +26,6 @@ declare module "postcss-import" {
+ // eslint-disable-next-line no-var
+ declare var __vite_profile_session:
+-  import("node:inspector").Session | undefined;
++  | import("node:inspector").Session
++  | undefined;
+ // eslint-disable-next-line no-var
+ declare var __vite_profile_name: string | undefined;
+
+
+--- reference/packages/vite/src/types/ws.d.ts
++++ formatter/packages/vite/src/types/ws.d.ts
+@@ -428,5 +428,7 @@ declare namespace WebSocket {
+     server?: HTTPServer | HTTPSServer | undefined;
+     verifyClient?:
+-      VerifyClientCallbackAsync | VerifyClientCallbackSync | undefined;
++      | VerifyClientCallbackAsync
++      | VerifyClientCallbackSync
++      | undefined;
+     handleProtocols?: (
+       protocols: Set<string>,
+
+
+--- reference/packages/vite/types/importGlob.d.ts
++++ formatter/packages/vite/types/importGlob.d.ts
+@@ -2,5 +2,6 @@
+ type StringQueryType = `?${keyof KnownAsTypeMap}` | (string & {});
+ type BaseQueryType =
+-  StringQueryType | Record<string, string | number | boolean>;
++  | StringQueryType
++  | Record<string, string | number | boolean>;
+ 
+ export interface ImportGlobOptions<
+
+
+--- reference/playground/css/async/async-3.js
++++ formatter/playground/css/async/async-3.js
+@@ -1,4 +1,4 @@
+ // oxfmt-ignore
+-import { createButton } from "./base";
++import { createButton } from './base';
+ import styles from "./async-3.module.css";
+ 
+
+
+--- reference/playground/dynamic-import/nested/index.js
++++ formatter/playground/dynamic-import/nested/index.js
+@@ -102,5 +102,5 @@ import(
+ ).then((mod) => {
+   text('.dynamic-import-with-vars-multiline', mod.hello())
+-})
++});
+ 
+ import(`../alias/${base}.js?raw`).then((mod) => {
+
+
+--- reference/playground/js-sourcemap/with-multiline-import.ts
++++ formatter/playground/js-sourcemap/with-multiline-import.ts
+@@ -2,5 +2,5 @@
+ import {
+   foo
+-} from '@vitejs/test-importee-pkg'
++} from '@vitejs/test-importee-pkg';
+ 
+ console.log("with-multiline-import", foo);
+
+
+--- reference/playground/ssr-deps/define-properties-exports/index.js
++++ formatter/playground/ssr-deps/define-properties-exports/index.js
+@@ -6,3 +6,3 @@ Object.defineProperties    (    exports    , {
+     }
+   }
+-})
++});
+

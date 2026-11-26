@@ -1,0 +1,31 @@
+# 2 of 1621 files differ from prettier@3.10.1
+packages/create-vite/template-lit/src/my-element.js
+packages/create-vite/template-lit-ts/src/my-element.ts
+
+# The first 2, reference first
+
+--- reference/packages/create-vite/template-lit/src/my-element.js
++++ formatter/packages/create-vite/template-lit/src/my-element.js
+@@ -142,6 +142,6 @@ export class MyElement extends LitElement {
+           rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+ 
+-        --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+-        --heading: system-ui, "Segoe UI", Roboto, sans-serif;
++        --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
++        --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+         --mono: ui-monospace, Consolas, monospace;
+ 
+
+
+--- reference/packages/create-vite/template-lit-ts/src/my-element.ts
++++ formatter/packages/create-vite/template-lit-ts/src/my-element.ts
+@@ -134,6 +134,6 @@ export class MyElement extends LitElement {
+         rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+ 
+-      --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+-      --heading: system-ui, "Segoe UI", Roboto, sans-serif;
++      --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
++      --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+       --mono: ui-monospace, Consolas, monospace;
+ 
+

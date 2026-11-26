@@ -1,0 +1,2050 @@
+# 1646 of 2433 files differ from prettier@3.10.1
+docs/e2e/src/app.e2e-spec.ts
+docs/karma.conf.js
+docs/scenes/e2e/src/app.e2e-spec.ts
+docs/scenes/karma.conf.js
+docs/scenes/src/app/app.component.spec.ts
+docs/scenes/src/app/scene-overlay-container.ts
+docs/scenes/src/app/scene-viewer/scene-viewer.ts
+docs/scenes/src/app/scenes/autocomplete/autocomplete-scene.ts
+docs/scenes/src/app/scenes/badge/badge-scene.ts
+docs/scenes/src/app/scenes/bottom-sheet/bottom-sheet-scene.ts
+docs/scenes/src/app/scenes/dialog/dialog-scene.ts
+docs/scenes/src/app/scenes/divider/divider-scene.ts
+docs/scenes/src/app/scenes/form-field/form-field-scene.ts
+docs/scenes/src/app/scenes/list/list-scene.ts
+docs/scenes/src/app/scenes/menu/menu-scene.ts
+docs/scenes/src/app/scenes/ripples/ripples-scene.ts
+docs/scenes/src/app/scenes/select/select-scene.ts
+docs/scenes/src/app/scenes/sidenav/sidenav-scene.ts
+docs/scenes/src/app/scenes/snack-bar/snack-bar-scene.ts
+docs/scenes/src/app/scenes/stepper/stepper-scene.ts
+docs/scenes/src/app/scenes/timepicker/timepicker-scene.ts
+docs/scenes/src/app/scenes/tooltip/tooltip-scene.ts
+docs/scenes/src/app/scenes/tree/tree-scene.ts
+docs/scenes/src/main.ts
+docs/src/app/material-docs-app.ts
+docs/src/app/pages/component-category-list/component-category-list.spec.ts
+docs/src/app/pages/component-category-list/component-category-list.ts
+docs/src/app/pages/component-sidenav/component-sidenav-can-load-guard.spec.ts
+docs/src/app/pages/component-sidenav/component-sidenav-can-load-guard.ts
+docs/src/app/pages/component-sidenav/component-sidenav.spec.ts
+docs/src/app/pages/component-sidenav/component-sidenav.ts
+docs/src/app/pages/component-viewer/component-base-view.spec.ts
+docs/src/app/pages/component-viewer/component-styling.spec.ts
+docs/src/app/pages/component-viewer/component-styling.ts
+docs/src/app/pages/component-viewer/component-viewer.spec.ts
+docs/src/app/pages/component-viewer/component-viewer.ts
+docs/src/app/pages/component-viewer/token-name.ts
+docs/src/app/pages/component-viewer/token-table.ts
+docs/src/app/pages/guide-list/guide-list.spec.ts
+docs/src/app/pages/guide-list/guide-list.ts
+docs/src/app/pages/guide-viewer/guide-viewer.spec.ts
+docs/src/app/pages/guide-viewer/guide-viewer.ts
+docs/src/app/pages/homepage/homepage.ts
+docs/src/app/pages/not-found/not-found.ts
+docs/src/app/pages/page-title/page-title.spec.ts
+docs/src/app/pages/page-title/page-title.ts
+docs/src/app/routes.ts
+docs/src/app/shared/analytics/analytics.ts
+docs/src/app/shared/analytics/error-report-handler.ts
+docs/src/app/shared/analytics/format-error.ts
+docs/src/app/shared/carousel/carousel.spec.ts
+docs/src/app/shared/carousel/carousel.ts
+docs/src/app/shared/doc-viewer/deprecated-tooltip.ts
+docs/src/app/shared/doc-viewer/doc-viewer.spec.ts
+docs/src/app/shared/doc-viewer/doc-viewer.ts
+docs/src/app/shared/doc-viewer/header-link.ts
+docs/src/app/shared/doc-viewer/module-import-copy-button.ts
+docs/src/app/shared/documentation-items/documentation-items.ts
+docs/src/app/shared/example-viewer/example-viewer.ts
+docs/src/app/shared/guide-items/guide-items.ts
+docs/src/app/shared/header-tag-manager.ts
+docs/src/app/shared/navbar/navbar.ts
+docs/src/app/shared/navigation-focus/navigation-focus.service.ts
+docs/src/app/shared/navigation-focus/navigation-focus.spec.ts
+docs/src/app/shared/navigation-focus/navigation-focus.ts
+docs/src/app/shared/normalized-version.ts
+docs/src/app/shared/stackblitz/stackblitz-button.ts
+docs/src/app/shared/stackblitz/stackblitz-writer.spec.ts
+docs/src/app/shared/stackblitz/stackblitz-writer.ts
+docs/src/app/shared/svg-viewer/svg-viewer.ts
+docs/src/app/shared/table-of-contents/table-of-contents.spec.ts
+docs/src/app/shared/table-of-contents/table-of-contents.ts
+docs/src/app/shared/theme-picker/theme-picker.spec.ts
+docs/src/app/shared/theme-picker/theme-picker.ts
+docs/src/app/shared/theme-picker/theme-storage/theme-storage.spec.ts
+docs/src/app/shared/theme-picker/theme-storage/theme-storage.ts
+docs/src/app/shared/version-picker/version-picker.spec.ts
+docs/src/app/shared/version-picker/version-picker.ts
+docs/src/assets/stackblitz/src/main.ts
+docs/src/main.ts
+docs/tools/audit-docs.js
+docs/tools/lighthouse-audit.mjs
+integration/linker/link-packages-test.mjs
+integration/module-tests/find-all-modules.mts
+integration/module-tests/index.mts
+integration/ng-add/karma.conf.js
+integration/ng-add-standalone/karma.conf.js
+integration/ts-compat/helpers.mjs
+integration/ts-compat/test.mjs
+integration/vitest/setup-test-files.mjs
+integration/vitest/src/vitest.spec.ts
+integration/yarn-pnp-compat/karma.conf.js
+integration/yarn-pnp-compat/src/main.ts
+integration/yarn-pnp-compat/src/polyfills.ts
+scripts/approve-api-golden.mts
+scripts/breaking-changes.mts
+scripts/build-and-check-release-output.mts
+scripts/build-docs-content.mts
+scripts/build-packages-dist.mts
+scripts/check-entry-point-setup.mjs
+scripts/circleci/setup-angular-snapshots.js
+scripts/create-legacy-tests-bundle.mjs
+scripts/create-package-archives.mjs
+scripts/detect-component-id-collisions.mts
+scripts/docs-deploy/deploy-ci-push.mts
+scripts/docs-deploy/github-versioning.mts
+scripts/docs-deploy/update-versions-file.mts
+scripts/docs-deploy/utils.mts
+scripts/run-component-tests.mts
+scripts/util.mts
+src/aria/accordion/accordion-group.ts
+src/aria/accordion/accordion-panel.ts
+src/aria/accordion/accordion-trigger.ts
+src/aria/accordion/accordion.spec.ts
+src/aria/accordion/public-api.ts
+src/aria/accordion/testing/accordion-harness.spec.ts
+src/aria/accordion/testing/accordion-harness.ts
+src/aria/combobox/combobox-popup.ts
+src/aria/combobox/combobox-widget.ts
+src/aria/combobox/combobox.spec.ts
+src/aria/combobox/combobox.ts
+src/aria/combobox/combobox.zone.spec.ts
+src/aria/combobox/public-api.ts
+src/aria/combobox/testing/combobox-harness.spec.ts
+src/aria/combobox/testing/combobox-harness.ts
+src/aria/grid/grid-cell-widget.ts
+src/aria/grid/grid-cell.ts
+src/aria/grid/grid-row.ts
+src/aria/grid/grid-tokens.ts
+src/aria/grid/grid.spec.ts
+src/aria/grid/grid.ts
+src/aria/grid/public-api.ts
+src/aria/grid/testing/grid-harness.spec.ts
+src/aria/grid/testing/grid-harness.ts
+src/aria/listbox/listbox.spec.ts
+src/aria/listbox/listbox.ts
+src/aria/listbox/option.ts
+src/aria/listbox/testing/listbox-harness.spec.ts
+src/aria/listbox/testing/listbox-harness.ts
+src/aria/menu/menu-bar.ts
+src/aria/menu/menu-item.ts
+src/aria/menu/menu-trigger.ts
+src/aria/menu/menu.spec.ts
+src/aria/menu/menu.ts
+src/aria/menu/public-api.ts
+src/aria/menu/testing/menu-harness.spec.ts
+src/aria/menu/testing/menu-harness.ts
+src/aria/private/accordion/accordion.spec.ts
+src/aria/private/accordion/accordion.ts
+src/aria/private/behaviors/event-manager/click-event-manager.ts
+src/aria/private/behaviors/event-manager/event-manager.ts
+src/aria/private/behaviors/event-manager/index.ts
+src/aria/private/behaviors/event-manager/keyboard-event-manager.ts
+src/aria/private/behaviors/event-manager/pointer-event-manager.ts
+src/aria/private/behaviors/expansion/expansion.spec.ts
+src/aria/private/behaviors/grid/grid-data.ts
+src/aria/private/behaviors/grid/grid-focus.spec.ts
+src/aria/private/behaviors/grid/grid-focus.ts
+src/aria/private/behaviors/grid/grid-navigation.spec.ts
+src/aria/private/behaviors/grid/grid-navigation.ts
+src/aria/private/behaviors/grid/grid-selection.spec.ts
+src/aria/private/behaviors/grid/grid-selection.ts
+src/aria/private/behaviors/grid/grid.spec.ts
+src/aria/private/behaviors/grid/grid.ts
+src/aria/private/behaviors/label/label.spec.ts
+src/aria/private/behaviors/list/list.spec.ts
+src/aria/private/behaviors/list/list.ts
+src/aria/private/behaviors/list-focus/list-focus.spec.ts
+src/aria/private/behaviors/list-focus/list-focus.ts
+src/aria/private/behaviors/list-navigation/list-navigation.spec.ts
+src/aria/private/behaviors/list-navigation/list-navigation.ts
+src/aria/private/behaviors/list-selection/list-selection.spec.ts
+src/aria/private/behaviors/list-selection/list-selection.ts
+src/aria/private/behaviors/list-typeahead/list-typeahead.spec.ts
+src/aria/private/behaviors/list-typeahead/list-typeahead.ts
+src/aria/private/behaviors/popup/popup.spec.ts
+src/aria/private/behaviors/tree/tree.spec.ts
+src/aria/private/behaviors/tree/tree.ts
+src/aria/private/combobox/combobox.spec.ts
+src/aria/private/combobox/combobox.ts
+src/aria/private/deferred-content/deferred-content.spec.ts
+src/aria/private/deferred-content/deferred-content.ts
+src/aria/private/deferred-content/index.ts
+src/aria/private/grid/cell.ts
+src/aria/private/grid/grid.spec.ts
+src/aria/private/grid/grid.ts
+src/aria/private/grid/row.ts
+src/aria/private/grid/widget.ts
+src/aria/private/listbox/listbox.spec.ts
+src/aria/private/listbox/listbox.ts
+src/aria/private/listbox/option.ts
+src/aria/private/menu/menu.spec.ts
+src/aria/private/menu/menu.ts
+src/aria/private/public-api.ts
+src/aria/private/tabs/tabs.spec.ts
+src/aria/private/tabs/tabs.ts
+src/aria/private/toolbar/toolbar-widget.ts
+src/aria/private/toolbar/toolbar.spec.ts
+src/aria/private/toolbar/toolbar.ts
+src/aria/private/tree/tree.spec.ts
+src/aria/private/tree/tree.ts
+src/aria/private/utils/collection.spec.ts
+src/aria/private/utils/collection.ts
+src/aria/private/utils/element-resolver.ts
+src/aria/private/utils/element.ts
+src/aria/tabs/public-api.ts
+src/aria/tabs/tab-list.ts
+src/aria/tabs/tab-panel.ts
+src/aria/tabs/tab-tokens.ts
+src/aria/tabs/tab.ts
+src/aria/tabs/tabs.spec.ts
+src/aria/tabs/tabs.ts
+src/aria/tabs/testing/tabs-harness.spec.ts
+src/aria/tabs/testing/tabs-harness.ts
+src/aria/toolbar/public-api.ts
+src/aria/toolbar/testing/public-api.ts
+src/aria/toolbar/testing/toolbar-harness.spec.ts
+src/aria/toolbar/testing/toolbar-harness.ts
+src/aria/toolbar/testing/toolbar-widget-group-harness.ts
+src/aria/toolbar/testing/toolbar-widget-harness.ts
+src/aria/toolbar/toolbar-widget-group.ts
+src/aria/toolbar/toolbar-widget.ts
+src/aria/toolbar/toolbar.spec.ts
+src/aria/toolbar/toolbar.ts
+src/aria/tree/testing/item-harness.ts
+src/aria/tree/testing/tree-harness.spec.ts
+src/aria/tree/testing/tree-harness.ts
+src/aria/tree/tree-item-group.ts
+src/aria/tree/tree-item.ts
+src/aria/tree/tree.spec.ts
+src/aria/tree/tree.ts
+src/cdk/a11y/a11y-module.ts
+src/cdk/a11y/aria-describer/aria-describer.spec.ts
+src/cdk/a11y/aria-describer/aria-describer.ts
+src/cdk/a11y/fake-event-detection.ts
+src/cdk/a11y/focus-monitor/focus-monitor.spec.ts
+src/cdk/a11y/focus-monitor/focus-monitor.ts
+src/cdk/a11y/focus-monitor/focus-monitor.zone.spec.ts
+src/cdk/a11y/focus-trap/configurable-focus-trap-factory.ts
+src/cdk/a11y/focus-trap/configurable-focus-trap.spec.ts
+src/cdk/a11y/focus-trap/configurable-focus-trap.ts
+src/cdk/a11y/focus-trap/event-listener-inert-strategy.spec.ts
+src/cdk/a11y/focus-trap/event-listener-inert-strategy.ts
+src/cdk/a11y/focus-trap/focus-trap-inert-strategy.ts
+src/cdk/a11y/focus-trap/focus-trap-manager.ts
+src/cdk/a11y/focus-trap/focus-trap.spec.ts
+src/cdk/a11y/focus-trap/focus-trap.ts
+src/cdk/a11y/high-contrast-mode/high-contrast-mode-detector.spec.ts
+src/cdk/a11y/high-contrast-mode/high-contrast-mode-detector.ts
+src/cdk/a11y/input-modality/input-modality-detector.spec.ts
+src/cdk/a11y/input-modality/input-modality-detector.ts
+src/cdk/a11y/interactivity-checker/interactivity-checker.spec.ts
+src/cdk/a11y/interactivity-checker/interactivity-checker.ts
+src/cdk/a11y/key-manager/activedescendant-key-manager.ts
+src/cdk/a11y/key-manager/focus-key-manager.ts
+src/cdk/a11y/key-manager/list-key-manager.spec.ts
+src/cdk/a11y/key-manager/list-key-manager.ts
+src/cdk/a11y/key-manager/noop-tree-key-manager.ts
+src/cdk/a11y/key-manager/tree-key-manager-strategy.ts
+src/cdk/a11y/key-manager/tree-key-manager.spec.ts
+src/cdk/a11y/key-manager/tree-key-manager.ts
+src/cdk/a11y/key-manager/typeahead.ts
+src/cdk/a11y/live-announcer/live-announcer-tokens.ts
+src/cdk/a11y/live-announcer/live-announcer.spec.ts
+src/cdk/a11y/live-announcer/live-announcer.ts
+src/cdk/a11y/public-api.ts
+src/cdk/accordion/accordion-item.spec.ts
+src/cdk/accordion/accordion-item.ts
+src/cdk/accordion/accordion.spec.ts
+src/cdk/accordion/accordion.ts
+src/cdk/accordion/public-api.ts
+src/cdk/bidi/dir-document-token.ts
+src/cdk/bidi/dir.ts
+src/cdk/bidi/directionality.spec.ts
+src/cdk/bidi/directionality.ts
+src/cdk/bidi/public-api.ts
+src/cdk/clipboard/clipboard.ts
+src/cdk/clipboard/copy-to-clipboard.spec.ts
+src/cdk/clipboard/copy-to-clipboard.ts
+src/cdk/clipboard/pending-copy.ts
+src/cdk/coercion/boolean-property.spec.ts
+src/cdk/coercion/number-property.spec.ts
+src/cdk/coercion/private/observable.ts
+src/cdk/coercion/public-api.ts
+src/cdk/coercion/string-array.spec.ts
+src/cdk/collections/array-data-source.ts
+src/cdk/collections/collection-viewer.ts
+src/cdk/collections/data-source.ts
+src/cdk/collections/public-api.ts
+src/cdk/collections/selection-model.ts
+src/cdk/collections/selection.spec.ts
+src/cdk/collections/unique-selection-dispatcher.ts
+src/cdk/dialog/dialog-config.ts
+src/cdk/dialog/dialog-container.ts
+src/cdk/dialog/dialog-injectors.ts
+src/cdk/dialog/dialog-module.ts
+src/cdk/dialog/dialog-ref.ts
+src/cdk/dialog/dialog.spec.ts
+src/cdk/dialog/dialog.ts
+src/cdk/dialog/public-api.ts
+src/cdk/drag-drop/directives/assertions.ts
+src/cdk/drag-drop/directives/config.ts
+src/cdk/drag-drop/directives/drag-handle.ts
+src/cdk/drag-drop/directives/drag-placeholder.ts
+src/cdk/drag-drop/directives/drag-preview.ts
+src/cdk/drag-drop/directives/drag.ts
+src/cdk/drag-drop/directives/drop-list-group.ts
+src/cdk/drag-drop/directives/drop-list-shared.spec.ts
+src/cdk/drag-drop/directives/drop-list.ts
+src/cdk/drag-drop/directives/mixed-drop-list.spec.ts
+src/cdk/drag-drop/directives/single-axis-drop-list.spec.ts
+src/cdk/drag-drop/directives/standalone-drag.spec.ts
+src/cdk/drag-drop/directives/standalone-drag.zone.spec.ts
+src/cdk/drag-drop/dom/clone-node.ts
+src/cdk/drag-drop/dom/dom-rect.ts
+src/cdk/drag-drop/dom/parent-position-tracker.ts
+src/cdk/drag-drop/dom/root-node.ts
+src/cdk/drag-drop/dom/transition-duration.ts
+src/cdk/drag-drop/drag-drop-module.ts
+src/cdk/drag-drop/drag-drop-registry.spec.ts
+src/cdk/drag-drop/drag-drop-registry.ts
+src/cdk/drag-drop/drag-drop.spec.ts
+src/cdk/drag-drop/drag-drop.ts
+src/cdk/drag-drop/drag-events.ts
+src/cdk/drag-drop/drag-ref.ts
+src/cdk/drag-drop/drag-utils.spec.ts
+src/cdk/drag-drop/drag-utils.ts
+src/cdk/drag-drop/drop-list-ref.ts
+src/cdk/drag-drop/preview-ref.ts
+src/cdk/drag-drop/public-api.ts
+src/cdk/drag-drop/sorting/drop-list-sort-strategy.ts
+src/cdk/drag-drop/sorting/mixed-sort-strategy.ts
+src/cdk/drag-drop/sorting/single-axis-sort-strategy.ts
+src/cdk/layout/breakpoints-observer.spec.ts
+src/cdk/layout/breakpoints-observer.ts
+src/cdk/layout/breakpoints.ts
+src/cdk/layout/media-matcher.spec.ts
+src/cdk/layout/media-matcher.ts
+src/cdk/layout/public-api.ts
+src/cdk/listbox/listbox.spec.ts
+src/cdk/listbox/listbox.ts
+src/cdk/menu/context-menu-trigger.spec.ts
+src/cdk/menu/context-menu-trigger.ts
+src/cdk/menu/menu-aim.ts
+src/cdk/menu/menu-bar.spec.ts
+src/cdk/menu/menu-bar.ts
+src/cdk/menu/menu-base.ts
+src/cdk/menu/menu-group.spec.ts
+src/cdk/menu/menu-group.ts
+src/cdk/menu/menu-interface.ts
+src/cdk/menu/menu-item-checkbox.spec.ts
+src/cdk/menu/menu-item-checkbox.ts
+src/cdk/menu/menu-item-radio.spec.ts
+src/cdk/menu/menu-item-radio.ts
+src/cdk/menu/menu-item-selectable.ts
+src/cdk/menu/menu-item.spec.ts
+src/cdk/menu/menu-item.ts
+src/cdk/menu/menu-module.ts
+src/cdk/menu/menu-stack.spec.ts
+src/cdk/menu/menu-stack.ts
+src/cdk/menu/menu-trigger-base.ts
+src/cdk/menu/menu-trigger.spec.ts
+src/cdk/menu/menu-trigger.ts
+src/cdk/menu/menu.spec.ts
+src/cdk/menu/menu.ts
+src/cdk/menu/pointer-focus-tracker.spec.ts
+src/cdk/menu/pointer-focus-tracker.ts
+src/cdk/menu/public-api.ts
+src/cdk/observers/observe-content.spec.ts
+src/cdk/observers/observe-content.ts
+src/cdk/observers/private/shared-resize-observer.spec.ts
+src/cdk/observers/private/shared-resize-observer.ts
+src/cdk/overlay/dispatchers/base-overlay-dispatcher.ts
+src/cdk/overlay/dispatchers/index.ts
+src/cdk/overlay/dispatchers/overlay-keyboard-dispatcher.spec.ts
+src/cdk/overlay/dispatchers/overlay-keyboard-dispatcher.ts
+src/cdk/overlay/dispatchers/overlay-outside-click-dispatcher.spec.ts
+src/cdk/overlay/dispatchers/overlay-outside-click-dispatcher.ts
+src/cdk/overlay/fullscreen-overlay-container.spec.ts
+src/cdk/overlay/fullscreen-overlay-container.ts
+src/cdk/overlay/overlay-config.ts
+src/cdk/overlay/overlay-container.spec.ts
+src/cdk/overlay/overlay-container.ts
+src/cdk/overlay/overlay-directives.spec.ts
+src/cdk/overlay/overlay-directives.ts
+src/cdk/overlay/overlay-directives.zone.spec.ts
+src/cdk/overlay/overlay-module.ts
+src/cdk/overlay/overlay-ref.ts
+src/cdk/overlay/overlay.spec.ts
+src/cdk/overlay/overlay.ts
+src/cdk/overlay/position/connected-position.ts
+src/cdk/overlay/position/flexible-connected-position-strategy.spec.ts
+src/cdk/overlay/position/flexible-connected-position-strategy.ts
+src/cdk/overlay/position/global-position-strategy.spec.ts
+src/cdk/overlay/position/global-position-strategy.ts
+src/cdk/overlay/position/overlay-position-builder.ts
+src/cdk/overlay/position/position-strategy.ts
+src/cdk/overlay/public-api.ts
+src/cdk/overlay/scroll/block-scroll-strategy.e2e.spec.ts
+src/cdk/overlay/scroll/block-scroll-strategy.spec.ts
+src/cdk/overlay/scroll/block-scroll-strategy.ts
+src/cdk/overlay/scroll/close-scroll-strategy.spec.ts
+src/cdk/overlay/scroll/close-scroll-strategy.ts
+src/cdk/overlay/scroll/close-scroll-strategy.zone.spec.ts
+src/cdk/overlay/scroll/index.ts
+src/cdk/overlay/scroll/reposition-scroll-strategy.spec.ts
+src/cdk/overlay/scroll/reposition-scroll-strategy.ts
+src/cdk/overlay/scroll/scroll-strategy-options.ts
+src/cdk/platform/features/scrolling.ts
+src/cdk/platform/features/shadow-dom.ts
+src/cdk/platform/features/test-environment.ts
+src/cdk/platform/platform.ts
+src/cdk/platform/public-api.ts
+src/cdk/portal/dom-portal-outlet.ts
+src/cdk/portal/portal-directives.ts
+src/cdk/portal/portal-errors.ts
+src/cdk/portal/portal.spec.ts
+src/cdk/portal/portal.ts
+src/cdk/portal/public-api.ts
+src/cdk/private/public-api.ts
+src/cdk/private/style-loader.ts
+src/cdk/schematics/index.ts
+src/cdk/schematics/ng-add/index.spec.ts
+src/cdk/schematics/ng-add/index.ts
+src/cdk/schematics/ng-generate/drag-drop/index.spec.ts
+src/cdk/schematics/ng-generate/drag-drop/index.ts
+src/cdk/schematics/ng-update/data/method-call-checks.ts
+src/cdk/schematics/ng-update/devkit-file-system.ts
+src/cdk/schematics/ng-update/devkit-migration.ts
+src/cdk/schematics/ng-update/html-parsing/elements.ts
+src/cdk/schematics/ng-update/index.ts
+src/cdk/schematics/ng-update/migrations/attribute-selectors.ts
+src/cdk/schematics/ng-update/migrations/class-inheritance.ts
+src/cdk/schematics/ng-update/migrations/class-names.ts
+src/cdk/schematics/ng-update/migrations/constructor-signature.ts
+src/cdk/schematics/ng-update/migrations/css-selectors.ts
+src/cdk/schematics/ng-update/migrations/css-tokens.ts
+src/cdk/schematics/ng-update/migrations/element-selectors.ts
+src/cdk/schematics/ng-update/migrations/input-names.ts
+src/cdk/schematics/ng-update/migrations/method-call-arguments.ts
+src/cdk/schematics/ng-update/migrations/output-names.ts
+src/cdk/schematics/ng-update/migrations/property-names.ts
+src/cdk/schematics/ng-update/migrations/symbol-removal.ts
+src/cdk/schematics/ng-update/public-api.ts
+src/cdk/schematics/ng-update/typescript/module-specifiers.ts
+src/cdk/schematics/ng-update/upgrade-data.ts
+src/cdk/schematics/testing/index.ts
+src/cdk/schematics/testing/post-scheduled-tasks.ts
+src/cdk/schematics/testing/test-case-setup.ts
+src/cdk/schematics/update-tool/component-resource-collector.ts
+src/cdk/schematics/update-tool/index.ts
+src/cdk/schematics/update-tool/migration.ts
+src/cdk/schematics/update-tool/target-version.ts
+src/cdk/schematics/update-tool/utils/decorators.ts
+src/cdk/schematics/update-tool/utils/imports.ts
+src/cdk/schematics/update-tool/utils/line-mappings.ts
+src/cdk/schematics/update-tool/utils/parse-tsconfig.ts
+src/cdk/schematics/update-tool/utils/property-name.ts
+src/cdk/schematics/update-tool/utils/virtual-host.ts
+src/cdk/schematics/update-tool/version-changes.ts
+src/cdk/schematics/utils/ast/ng-module-imports.ts
+src/cdk/schematics/utils/ast.ts
+src/cdk/schematics/utils/build-component.ts
+src/cdk/schematics/utils/html-manipulation.ts
+src/cdk/schematics/utils/parse5-element.ts
+src/cdk/schematics/utils/project-index-file.ts
+src/cdk/schematics/utils/project-main-file.ts
+src/cdk/schematics/utils/project-style-file.ts
+src/cdk/schematics/utils/project-tsconfig-paths.spec.ts
+src/cdk/schematics/utils/project-tsconfig-paths.ts
+src/cdk/schematics/utils/schematic-options.ts
+src/cdk/scrolling/fixed-size-virtual-scroll.ts
+src/cdk/scrolling/public-api.ts
+src/cdk/scrolling/scroll-dispatcher.spec.ts
+src/cdk/scrolling/scroll-dispatcher.ts
+src/cdk/scrolling/scroll-dispatcher.zone.spec.ts
+src/cdk/scrolling/scrollable.spec.ts
+src/cdk/scrolling/scrollable.ts
+src/cdk/scrolling/scrolling-module.ts
+src/cdk/scrolling/viewport-ruler.spec.ts
+src/cdk/scrolling/viewport-ruler.ts
+src/cdk/scrolling/viewport-ruler.zone.spec.ts
+src/cdk/scrolling/virtual-for-of.ts
+src/cdk/scrolling/virtual-scroll-strategy.ts
+src/cdk/scrolling/virtual-scroll-viewport.spec.ts
+src/cdk/scrolling/virtual-scroll-viewport.ts
+src/cdk/scrolling/virtual-scroll-viewport.zone.spec.ts
+src/cdk/scrolling/virtual-scrollable-element.ts
+src/cdk/scrolling/virtual-scrollable-window.ts
+src/cdk/stepper/public-api.ts
+src/cdk/stepper/step-label.ts
+src/cdk/stepper/stepper-button.ts
+src/cdk/stepper/stepper-module.ts
+src/cdk/stepper/stepper.ts
+src/cdk/table/cell.ts
+src/cdk/table/public-api.ts
+src/cdk/table/row.ts
+src/cdk/table/sticky-position-listener.ts
+src/cdk/table/sticky-styler.ts
+src/cdk/table/table-errors.ts
+src/cdk/table/table-module.ts
+src/cdk/table/table.spec.ts
+src/cdk/table/table.ts
+src/cdk/table/text-column.spec.ts
+src/cdk/table/text-column.ts
+src/cdk/testing/change-detection.ts
+src/cdk/testing/component-harness.ts
+src/cdk/testing/harness-environment.ts
+src/cdk/testing/private/fake-directionality.ts
+src/cdk/testing/private/public-api.ts
+src/cdk/testing/protractor/protractor-element.ts
+src/cdk/testing/protractor/protractor-harness-environment.ts
+src/cdk/testing/public-api.ts
+src/cdk/testing/selenium-webdriver/selenium-web-driver-element.ts
+src/cdk/testing/selenium-webdriver/selenium-web-driver-harness-environment.ts
+src/cdk/testing/selenium-webdriver/selenium-webdriver-keys.ts
+src/cdk/testing/test-element.ts
+src/cdk/testing/testbed/fake-events/event-objects.spec.ts
+src/cdk/testing/testbed/fake-events/event-objects.ts
+src/cdk/testing/testbed/fake-events/index.ts
+src/cdk/testing/testbed/fake-events/type-in-element.ts
+src/cdk/testing/testbed/task-state-zone-interceptor.ts
+src/cdk/testing/testbed/testbed-harness-environment.ts
+src/cdk/testing/testbed/unit-test-element.ts
+src/cdk/testing/testbed/zone-types.d.ts
+src/cdk/testing/tests/cross-environment-tests.ts
+src/cdk/testing/tests/harnesses/main-component-harness.ts
+src/cdk/testing/tests/harnesses/quoted-comma-selector-harness.ts
+src/cdk/testing/tests/harnesses/sub-component-harness.ts
+src/cdk/testing/tests/index.ts
+src/cdk/testing/tests/protractor.e2e.spec.ts
+src/cdk/testing/tests/test-main-component.ts
+src/cdk/testing/tests/test-shadow-boundary.ts
+src/cdk/testing/tests/test-sub-component.ts
+src/cdk/testing/tests/testbed.spec.ts
+src/cdk/testing/tests/webdriver.e2e.spec.ts
+src/cdk/text-field/autofill.spec.ts
+src/cdk/text-field/autofill.ts
+src/cdk/text-field/autofill.zone.spec.ts
+src/cdk/text-field/autosize.spec.ts
+src/cdk/text-field/autosize.ts
+src/cdk/tree/control/base-tree-control.ts
+src/cdk/tree/control/flat-tree-control.spec.ts
+src/cdk/tree/control/flat-tree-control.ts
+src/cdk/tree/control/nested-tree-control.spec.ts
+src/cdk/tree/control/nested-tree-control.ts
+src/cdk/tree/control/tree-control.ts
+src/cdk/tree/nested-node.ts
+src/cdk/tree/node.ts
+src/cdk/tree/outlet.ts
+src/cdk/tree/padding.ts
+src/cdk/tree/public-api.ts
+src/cdk/tree/toggle.ts
+src/cdk/tree/tree-module.ts
+src/cdk/tree/tree-using-legacy-key-manager.spec.ts
+src/cdk/tree/tree-with-tree-control.spec.ts
+src/cdk/tree/tree.spec.ts
+src/cdk/tree/tree.ts
+src/cdk-experimental/column-resize/coalesced-style-scheduler.ts
+src/cdk-experimental/column-resize/column-resize-directives/column-resize-flex.ts
+src/cdk-experimental/column-resize/column-resize-directives/column-resize.ts
+src/cdk-experimental/column-resize/column-resize-directives/constants.ts
+src/cdk-experimental/column-resize/column-resize-directives/default-enabled-column-resize-flex.ts
+src/cdk-experimental/column-resize/column-resize-directives/default-enabled-column-resize.ts
+src/cdk-experimental/column-resize/column-resize.ts
+src/cdk-experimental/column-resize/event-dispatcher.ts
+src/cdk-experimental/column-resize/overlay-handle.ts
+src/cdk-experimental/column-resize/public-api.ts
+src/cdk-experimental/column-resize/resizable.ts
+src/cdk-experimental/column-resize/resize-ref.ts
+src/cdk-experimental/column-resize/resize-strategy.ts
+src/cdk-experimental/popover-edit/edit-event-dispatcher.ts
+src/cdk-experimental/popover-edit/edit-ref.ts
+src/cdk-experimental/popover-edit/edit-services.ts
+src/cdk-experimental/popover-edit/focus-dispatcher.ts
+src/cdk-experimental/popover-edit/focus-escape-notifier.ts
+src/cdk-experimental/popover-edit/lens-directives.ts
+src/cdk-experimental/popover-edit/popover-edit-module.ts
+src/cdk-experimental/popover-edit/popover-edit.spec.ts
+src/cdk-experimental/popover-edit/table-directives.ts
+src/cdk-experimental/scrolling/auto-size-virtual-scroll.ts
+src/cdk-experimental/scrolling/virtual-scroll-viewport.spec.ts
+src/cdk-experimental/scrolling/virtual-scroll.e2e.spec.ts
+src/cdk-experimental/selection/public-api.ts
+src/cdk-experimental/selection/row-selection.ts
+src/cdk-experimental/selection/select-all.ts
+src/cdk-experimental/selection/selection-column.ts
+src/cdk-experimental/selection/selection-set.ts
+src/cdk-experimental/selection/selection-toggle.ts
+src/cdk-experimental/selection/selection.spec.ts
+src/cdk-experimental/selection/selection.ts
+src/cdk-experimental/table-scroll-container/table-scroll-container.spec.ts
+src/cdk-experimental/table-scroll-container/table-scroll-container.ts
+src/components-examples/aria/accordion/accordion-configurable/accordion-configurable-example.ts
+src/components-examples/aria/accordion/accordion-disabled/accordion-disabled-example.ts
+src/components-examples/aria/accordion/accordion-disabled-focusable/accordion-disabled-focusable-example.ts
+src/components-examples/aria/accordion/accordion-disabled-skipped/accordion-disabled-skipped-example.ts
+src/components-examples/aria/accordion/accordion-multi-expansion/accordion-multi-expansion-example.ts
+src/components-examples/aria/accordion/accordion-single-expansion/accordion-single-expansion-example.ts
+src/components-examples/aria/accordion/index.ts
+src/components-examples/aria/autocomplete/autocomplete-auto-select/autocomplete-auto-select-example.ts
+src/components-examples/aria/autocomplete/autocomplete-disabled/autocomplete-disabled-example.ts
+src/components-examples/aria/autocomplete/autocomplete-highlight/autocomplete-highlight-example.ts
+src/components-examples/aria/autocomplete/autocomplete-manual/autocomplete-manual-example.ts
+src/components-examples/aria/autocomplete/countries.ts
+src/components-examples/aria/combobox/combobox-auto-select/combobox-auto-select-example.ts
+src/components-examples/aria/combobox/combobox-datepicker/combobox-datepicker-example.ts
+src/components-examples/aria/combobox/combobox-dialog/combobox-dialog-example.ts
+src/components-examples/aria/combobox/combobox-disabled/combobox-disabled-example.ts
+src/components-examples/aria/combobox/combobox-editable-multiselect/combobox-editable-multiselect-example.ts
+src/components-examples/aria/combobox/combobox-grid/combobox-grid-example.ts
+src/components-examples/aria/combobox/combobox-hard-disabled/combobox-hard-disabled-example.ts
+src/components-examples/aria/combobox/combobox-highlight/combobox-highlight-example.ts
+src/components-examples/aria/combobox/combobox-listbox/combobox-listbox-example.ts
+src/components-examples/aria/combobox/combobox-multiselect-dialog/combobox-multiselect-dialog-example.ts
+src/components-examples/aria/combobox/combobox-readonly/combobox-readonly-example.ts
+src/components-examples/aria/combobox/combobox-readonly-disabled/combobox-readonly-disabled-example.ts
+src/components-examples/aria/combobox/combobox-readonly-multiselect/combobox-readonly-multiselect-example.ts
+src/components-examples/aria/combobox/combobox-select/combobox-select-example.ts
+src/components-examples/aria/combobox/combobox-tree/combobox-tree-example.ts
+src/components-examples/aria/combobox/combobox-tree-auto-select/combobox-tree-auto-select-example.ts
+src/components-examples/aria/combobox/combobox-tree-highlight/combobox-tree-highlight-example.ts
+src/components-examples/aria/combobox/countries.ts
+src/components-examples/aria/combobox/index.ts
+src/components-examples/aria/grid/grid-calendar/grid-calendar-example.ts
+src/components-examples/aria/grid/grid-configurable/grid-configurable-example.ts
+src/components-examples/aria/grid/grid-pill-list/grid-pill-list-example.ts
+src/components-examples/aria/grid/grid-table/grid-chips.ts
+src/components-examples/aria/grid/grid-table/grid-table-example.ts
+src/components-examples/aria/grid/index.ts
+src/components-examples/aria/listbox/index.ts
+src/components-examples/aria/listbox/listbox-active-descendant/listbox-active-descendant-example.ts
+src/components-examples/aria/listbox/listbox-configurable/listbox-configurable-example.ts
+src/components-examples/aria/listbox/listbox-disabled/listbox-disabled-example.ts
+src/components-examples/aria/listbox/listbox-disabled-focusable/listbox-disabled-focusable-example.ts
+src/components-examples/aria/listbox/listbox-disabled-skipped/listbox-disabled-skipped-example.ts
+src/components-examples/aria/listbox/listbox-horizontal/listbox-horizontal-example.ts
+src/components-examples/aria/listbox/listbox-multi-select/listbox-multi-select-example.ts
+src/components-examples/aria/listbox/listbox-multi-select-follow-focus/listbox-multi-select-follow-focus-example.ts
+src/components-examples/aria/listbox/listbox-readonly/listbox-readonly-example.ts
+src/components-examples/aria/listbox/listbox-rtl-horizontal/listbox-rtl-horizontal-example.ts
+src/components-examples/aria/listbox/listbox-single-select/listbox-single-select-example.ts
+src/components-examples/aria/listbox/listbox-single-select-follow-focus/listbox-single-select-follow-focus-example.ts
+src/components-examples/aria/menu/index.ts
+src/components-examples/aria/menu/menu-cdk-overlay/menu-cdk-overlay-example.ts
+src/components-examples/aria/menu/menu-context/menu-context-example.ts
+src/components-examples/aria/menu/menu-standalone/menu-standalone-example.ts
+src/components-examples/aria/menu/menu-standalone-disabled/menu-standalone-disabled-example.ts
+src/components-examples/aria/menu/menu-trigger/menu-trigger-example.ts
+src/components-examples/aria/menu/menu-trigger-disabled/menu-trigger-disabled-example.ts
+src/components-examples/aria/menu/simple-menu.ts
+src/components-examples/aria/menubar/index.ts
+src/components-examples/aria/menubar/menubar/menubar-example.ts
+src/components-examples/aria/menubar/menubar-disabled/menubar-disabled-example.ts
+src/components-examples/aria/menubar/menubar-rtl/menubar-rtl-example.ts
+src/components-examples/aria/tabs/active-descendant/tabs-active-descendant-example.ts
+src/components-examples/aria/tabs/disabled/tabs-disabled-example.ts
+src/components-examples/aria/tabs/disabled-focusable/tabs-disabled-focusable-example.ts
+src/components-examples/aria/tabs/disabled-skipped/tabs-disabled-skipped-example.ts
+src/components-examples/aria/tabs/explicit-selection/tabs-explicit-selection-example.ts
+src/components-examples/aria/tabs/index.ts
+src/components-examples/aria/tabs/rtl/tabs-rtl-example.ts
+src/components-examples/aria/tabs/scrollable/tabs-scrollable-example.ts
+src/components-examples/aria/tabs/selection-follows-focus/tabs-selection-follows-focus-example.ts
+src/components-examples/aria/tabs/tabs-configurable/tabs-configurable-example.ts
+src/components-examples/aria/tabs/vertical-orientation/tabs-vertical-example.ts
+src/components-examples/aria/toolbar/index.ts
+src/components-examples/aria/toolbar/simple-toolbar.ts
+src/components-examples/aria/toolbar/toolbar-basic-horizontal/toolbar-basic-horizontal-example.ts
+src/components-examples/aria/toolbar/toolbar-basic-vertical/toolbar-basic-vertical-example.ts
+src/components-examples/aria/toolbar/toolbar-configurable/toolbar-configurable-example.ts
+src/components-examples/aria/toolbar/toolbar-hard-disabled/toolbar-hard-disabled-example.ts
+src/components-examples/aria/toolbar/toolbar-rtl/toolbar-rtl-example.ts
+src/components-examples/aria/toolbar/toolbar-select-and-combobox/toolbar-select-and-combobox-example.ts
+src/components-examples/aria/tree/index.ts
+src/components-examples/aria/tree/tree-active-descendant/tree-active-descendant-example.ts
+src/components-examples/aria/tree/tree-configurable/tree-configurable-example.ts
+src/components-examples/aria/tree/tree-disabled/tree-disabled-example.ts
+src/components-examples/aria/tree/tree-disabled-focusable/tree-disabled-focusable-example.ts
+src/components-examples/aria/tree/tree-disabled-skipped/tree-disabled-skipped-example.ts
+src/components-examples/aria/tree/tree-multi-select/tree-multi-select-example.ts
+src/components-examples/aria/tree/tree-multi-select-follow-focus/tree-multi-select-follow-focus-example.ts
+src/components-examples/aria/tree/tree-nav/tree-nav-example.ts
+src/components-examples/aria/tree/tree-nav-rtl/tree-nav-rtl-example.ts
+src/components-examples/aria/tree/tree-single-select/tree-single-select-example.ts
+src/components-examples/aria/tree/tree-single-select-follow-focus/tree-single-select-follow-focus-example.ts
+src/components-examples/cdk/a11y/focus-monitor-directives/focus-monitor-directives-example.ts
+src/components-examples/cdk/a11y/focus-monitor-focus-via/focus-monitor-focus-via-example.ts
+src/components-examples/cdk/a11y/focus-monitor-overview/focus-monitor-overview-example.ts
+src/components-examples/cdk/accordion/cdk-accordion-overview/cdk-accordion-overview-example.ts
+src/components-examples/cdk/clipboard/cdk-clipboard-overview/cdk-clipboard-overview-example.ts
+src/components-examples/cdk/dialog/cdk-dialog-data/cdk-dialog-data-example.ts
+src/components-examples/cdk/dialog/cdk-dialog-overview/cdk-dialog-overview-example.ts
+src/components-examples/cdk/dialog/cdk-dialog-styling/cdk-dialog-styling-example.ts
+src/components-examples/cdk/layout/breakpoint-observer-overview/breakpoint-observer-overview-example.ts
+src/components-examples/cdk/listbox/cdk-listbox-activedescendant/cdk-listbox-activedescendant-example.ts
+src/components-examples/cdk/listbox/cdk-listbox-compare-with/cdk-listbox-compare-with-example.ts
+src/components-examples/cdk/listbox/cdk-listbox-custom-navigation/cdk-listbox-custom-navigation-example.ts
+src/components-examples/cdk/listbox/cdk-listbox-custom-typeahead/cdk-listbox-custom-typeahead-example.ts
+src/components-examples/cdk/listbox/cdk-listbox-disabled/cdk-listbox-disabled-example.ts
+src/components-examples/cdk/listbox/cdk-listbox-forms-validation/cdk-listbox-forms-validation-example.ts
+src/components-examples/cdk/listbox/cdk-listbox-horizontal/cdk-listbox-horizontal-example.ts
+src/components-examples/cdk/listbox/cdk-listbox-multiple/cdk-listbox-multiple-example.ts
+src/components-examples/cdk/listbox/cdk-listbox-overview/cdk-listbox-overview-example.ts
+src/components-examples/cdk/listbox/cdk-listbox-reactive-forms/cdk-listbox-reactive-forms-example.ts
+src/components-examples/cdk/listbox/cdk-listbox-template-forms/cdk-listbox-template-forms-example.ts
+src/components-examples/cdk/listbox/cdk-listbox-value-binding/cdk-listbox-value-binding-example.ts
+src/components-examples/cdk/menu/cdk-menu-context/cdk-menu-context-example.ts
+src/components-examples/cdk/menu/cdk-menu-inline/cdk-menu-inline-example.ts
+src/components-examples/cdk/menu/cdk-menu-menubar/cdk-menu-menubar-example.ts
+src/components-examples/cdk/menu/cdk-menu-nested-context/cdk-menu-nested-context-example.ts
+src/components-examples/cdk/menu/cdk-menu-standalone-menu/cdk-menu-standalone-menu-example.ts
+src/components-examples/cdk/menu/cdk-menu-standalone-stateful-menu/cdk-menu-standalone-stateful-menu-example.ts
+src/components-examples/cdk/menu/index.ts
+src/components-examples/cdk/overlay/cdk-overlay-basic/cdk-overlay-basic-example.ts
+src/components-examples/cdk/platform/cdk-platform-overview/cdk-platform-overview-example.ts
+src/components-examples/cdk/portal/cdk-portal-overview/cdk-portal-overview-example.ts
+src/components-examples/cdk/scrolling/cdk-scrollable-overview/cdk-scrollable-overview-example.ts
+src/components-examples/cdk/scrolling/cdk-virtual-scroll-append-only/cdk-virtual-scroll-append-only-example.ts
+src/components-examples/cdk/scrolling/cdk-virtual-scroll-context/cdk-virtual-scroll-context-example.ts
+src/components-examples/cdk/scrolling/cdk-virtual-scroll-custom-strategy/cdk-virtual-scroll-custom-strategy-example.ts
+src/components-examples/cdk/scrolling/cdk-virtual-scroll-data-source/cdk-virtual-scroll-data-source-example.ts
+src/components-examples/cdk/scrolling/cdk-virtual-scroll-dl/cdk-virtual-scroll-dl-example.ts
+src/components-examples/cdk/scrolling/cdk-virtual-scroll-fixed-buffer/cdk-virtual-scroll-fixed-buffer-example.ts
+src/components-examples/cdk/scrolling/cdk-virtual-scroll-horizontal/cdk-virtual-scroll-horizontal-example.ts
+src/components-examples/cdk/scrolling/cdk-virtual-scroll-overview/cdk-virtual-scroll-overview-example.ts
+src/components-examples/cdk/scrolling/cdk-virtual-scroll-parent-scrolling/cdk-virtual-scroll-parent-scrolling-example.ts
+src/components-examples/cdk/scrolling/cdk-virtual-scroll-template-cache/cdk-virtual-scroll-template-cache-example.ts
+src/components-examples/cdk/scrolling/cdk-virtual-scroll-window-scrolling/cdk-virtual-scroll-window-scrolling-example.ts
+src/components-examples/cdk/stepper/cdk-custom-stepper-without-form/cdk-custom-stepper-without-form-example.ts
+src/components-examples/cdk/stepper/cdk-linear-stepper-with-form/cdk-linear-stepper-with-form-example.ts
+src/components-examples/cdk/table/cdk-table-basic/cdk-table-basic-example.ts
+src/components-examples/cdk/table/cdk-table-fixed-layout/cdk-table-fixed-layout-example.ts
+src/components-examples/cdk/table/cdk-table-flex-basic/cdk-table-flex-basic-example.ts
+src/components-examples/cdk/table/cdk-table-recycle-rows/cdk-table-recycle-rows-example.ts
+src/components-examples/cdk/table/cdk-table-virtual-scroll/cdk-table-virtual-scroll-example.ts
+src/components-examples/cdk/table/index.ts
+src/components-examples/cdk/text-field/text-field-autofill-directive/text-field-autofill-directive-example.ts
+src/components-examples/cdk/text-field/text-field-autofill-monitor/text-field-autofill-monitor-example.ts
+src/components-examples/cdk/text-field/text-field-autosize-textarea/text-field-autosize-textarea-example.ts
+src/components-examples/cdk/tree/cdk-tree-complex/cdk-tree-complex-example.ts
+src/components-examples/cdk/tree/cdk-tree-custom-key-manager/cdk-tree-custom-key-manager-example.ts
+src/components-examples/cdk/tree/cdk-tree-flat/cdk-tree-flat-example.ts
+src/components-examples/cdk/tree/cdk-tree-flat-level-accessor/cdk-tree-flat-level-accessor-example.ts
+src/components-examples/cdk/tree/cdk-tree-nested/cdk-tree-nested-example.ts
+src/components-examples/cdk/tree/cdk-tree-nested-children-accessor/cdk-tree-nested-children-accessor-example.ts
+src/components-examples/cdk/tree/cdk-tree-nested-level-accessor/cdk-tree-nested-level-accessor-example.ts
+src/components-examples/cdk/tree/index.ts
+src/components-examples/cdk-experimental/popover-edit/cdk-popover-edit-cdk-table/cdk-popover-edit-cdk-table-example.ts
+src/components-examples/cdk-experimental/popover-edit/cdk-popover-edit-cdk-table-flex/cdk-popover-edit-cdk-table-flex-example.ts
+src/components-examples/cdk-experimental/popover-edit/cdk-popover-edit-cell-span-vanilla-table/cdk-popover-edit-cell-span-vanilla-table-example.ts
+src/components-examples/cdk-experimental/popover-edit/cdk-popover-edit-tab-out-vanilla-table/cdk-popover-edit-tab-out-vanilla-table-example.ts
+src/components-examples/cdk-experimental/popover-edit/cdk-popover-edit-vanilla-table/cdk-popover-edit-vanilla-table-example.ts
+src/components-examples/cdk-experimental/selection/cdk-selection-column/cdk-selection-column-example.ts
+src/components-examples/cdk-experimental/selection/cdk-selection-list/cdk-selection-list-example.ts
+src/components-examples/example-data.ts
+src/components-examples/example-module.d.ts
+src/components-examples/material/autocomplete/autocomplete-auto-active-first-option/autocomplete-auto-active-first-option-example.ts
+src/components-examples/material/autocomplete/autocomplete-auto-active-first-option-signal-form/autocomplete-auto-active-first-option-signal-form-example.ts
+src/components-examples/material/autocomplete/autocomplete-display/autocomplete-display-example.ts
+src/components-examples/material/autocomplete/autocomplete-filter/autocomplete-filter-example.ts
+src/components-examples/material/autocomplete/autocomplete-harness/autocomplete-harness-example.spec.ts
+src/components-examples/material/autocomplete/autocomplete-optgroup/autocomplete-optgroup-example.ts
+src/components-examples/material/autocomplete/autocomplete-overview/autocomplete-overview-example.ts
+src/components-examples/material/autocomplete/autocomplete-plain-input/autocomplete-plain-input-example.ts
+src/components-examples/material/autocomplete/autocomplete-require-selection/autocomplete-require-selection-example.ts
+src/components-examples/material/autocomplete/autocomplete-simple/autocomplete-simple-example.ts
+src/components-examples/material/autocomplete/index.ts
+src/components-examples/material/badge/badge-harness/badge-harness-example.spec.ts
+src/components-examples/material/badge/badge-overview/badge-overview-example.ts
+src/components-examples/material/badge/index.ts
+src/components-examples/material/bottom-sheet/bottom-sheet-harness/bottom-sheet-harness-example.spec.ts
+src/components-examples/material/bottom-sheet/bottom-sheet-harness/bottom-sheet-harness-example.ts
+src/components-examples/material/bottom-sheet/bottom-sheet-overview/bottom-sheet-overview-example.ts
+src/components-examples/material/bottom-sheet/index.ts
+src/components-examples/material/button/button-harness/button-harness-example.spec.ts
+src/components-examples/material/button/button-overview/button-overview-example.ts
+src/components-examples/material/button/index.ts
+src/components-examples/material/button-toggle/button-toggle-harness/button-toggle-harness-example.spec.ts
+src/components-examples/material/button-toggle/index.ts
+src/components-examples/material/card/card-footer/card-footer-example.ts
+src/components-examples/material/card/card-harness/card-harness-example.spec.ts
+src/components-examples/material/card/card-media-size/card-media-size-example.ts
+src/components-examples/material/card/index.ts
+src/components-examples/material/checkbox/checkbox-harness/checkbox-harness-example.spec.ts
+src/components-examples/material/checkbox/checkbox-overview/checkbox-overview-example.ts
+src/components-examples/material/chips/chips-autocomplete/chips-autocomplete-example.ts
+src/components-examples/material/chips/chips-harness/chips-harness-example.spec.ts
+src/components-examples/material/chips/chips-reactive-form/chips-reactive-form-example.ts
+src/components-examples/material/chips/index.ts
+src/components-examples/material/core/ripple-overview/ripple-overview-example.ts
+src/components-examples/material/datepicker/date-range-picker-selection-strategy/date-range-picker-selection-strategy-example.ts
+src/components-examples/material/datepicker/datepicker-actions/datepicker-actions-example.ts
+src/components-examples/material/datepicker/datepicker-custom-header/datepicker-custom-header-example.ts
+src/components-examples/material/datepicker/datepicker-dialog/datepicker-dialog-example.ts
+src/components-examples/material/datepicker/datepicker-harness/datepicker-harness-example.spec.ts
+src/components-examples/material/datepicker/datepicker-locale/datepicker-locale-example.ts
+src/components-examples/material/datepicker/datepicker-overview/datepicker-overview-example.ts
+src/components-examples/material/datepicker/datepicker-touch/datepicker-touch-example.ts
+src/components-examples/material/datepicker/datepicker-views-selection/datepicker-views-selection-example.ts
+src/components-examples/material/datepicker/index.ts
+src/components-examples/material/dialog/dialog-data/dialog-data-example.ts
+src/components-examples/material/dialog/dialog-harness/dialog-harness-example.spec.ts
+src/components-examples/material/dialog/dialog-harness/dialog-harness-example.ts
+src/components-examples/material/dialog/index.ts
+src/components-examples/material/divider/divider-harness/divider-harness-example.spec.ts
+src/components-examples/material/divider/index.ts
+src/components-examples/material/expansion/expansion-harness/expansion-harness-example.spec.ts
+src/components-examples/material/expansion/index.ts
+src/components-examples/material/form-field/form-field-custom-control/form-field-custom-control-example.ts
+src/components-examples/material/form-field/form-field-harness/form-field-harness-example.spec.ts
+src/components-examples/material/form-field/form-field-overview/form-field-overview-example.ts
+src/components-examples/material/form-field/index.ts
+src/components-examples/material/grid-list/grid-list-harness/grid-list-harness-example.spec.ts
+src/components-examples/material/grid-list/index.ts
+src/components-examples/material/icon/icon-harness/icon-harness-example.spec.ts
+src/components-examples/material/icon/icon-svg/icon-svg-example.ts
+src/components-examples/material/icon/index.ts
+src/components-examples/material/input/index.ts
+src/components-examples/material/input/input-clearable/input-clearable-example.ts
+src/components-examples/material/input/input-error-state-matcher/input-error-state-matcher-example.ts
+src/components-examples/material/input/input-errors/input-errors-example.ts
+src/components-examples/material/input/input-errors-signal-form/input-errors-signal-form-example.ts
+src/components-examples/material/input/input-form/input-form-example.ts
+src/components-examples/material/input/input-harness/input-harness-example.spec.ts
+src/components-examples/material/input/input-harness/input-harness-example.ts
+src/components-examples/material/input/input-hint/input-hint-example.ts
+src/components-examples/material/input/input-overview/input-overview-example.ts
+src/components-examples/material/input/input-prefix-suffix/input-prefix-suffix-example.ts
+src/components-examples/material/list/index.ts
+src/components-examples/material/list/list-harness/list-harness-example.spec.ts
+src/components-examples/material/list/list-sections/list-sections-example.ts
+src/components-examples/material/menu/context-menu/context-menu-example.ts
+src/components-examples/material/menu/index.ts
+src/components-examples/material/menu/menu-harness/menu-harness-example.spec.ts
+src/components-examples/material/menu/menu-icons/menu-icons-example.ts
+src/components-examples/material/menu/menu-nested/menu-nested-example.ts
+src/components-examples/material/menu/menu-overview/menu-overview-example.ts
+src/components-examples/material/menu/menu-position/menu-position-example.ts
+src/components-examples/material/paginator/index.ts
+src/components-examples/material/paginator/paginator-configurable/paginator-configurable-example.ts
+src/components-examples/material/paginator/paginator-harness/paginator-harness-example.spec.ts
+src/components-examples/material/paginator/paginator-harness/paginator-harness-example.ts
+src/components-examples/material/progress-bar/index.ts
+src/components-examples/material/progress-bar/progress-bar-configurable/progress-bar-configurable-example.ts
+src/components-examples/material/progress-bar/progress-bar-harness/progress-bar-harness-example.spec.ts
+src/components-examples/material/progress-spinner/index.ts
+src/components-examples/material/progress-spinner/progress-spinner-configurable/progress-spinner-configurable-example.ts
+src/components-examples/material/progress-spinner/progress-spinner-harness/progress-spinner-harness-example.spec.ts
+src/components-examples/material/radio/index.ts
+src/components-examples/material/radio/radio-harness/radio-harness-example.spec.ts
+src/components-examples/material/select/index.ts
+src/components-examples/material/select/select-custom-trigger/select-custom-trigger-example.ts
+src/components-examples/material/select/select-custom-trigger-signal-form/select-custom-trigger-signal-form-example.ts
+src/components-examples/material/select/select-disabled/select-disabled-example.ts
+src/components-examples/material/select/select-disabled-signal-form/select-disabled-signal-form-example.ts
+src/components-examples/material/select/select-error-state-matcher/select-error-state-matcher-example.ts
+src/components-examples/material/select/select-error-state-matcher-signal-form/select-error-state-matcher-signal-form-example.ts
+src/components-examples/material/select/select-form/select-form-example.ts
+src/components-examples/material/select/select-form-signal-form/select-form-signal-form-example.ts
+src/components-examples/material/select/select-harness/select-harness-example.spec.ts
+src/components-examples/material/select/select-harness/select-harness-example.ts
+src/components-examples/material/select/select-hint-error/select-hint-error-example.ts
+src/components-examples/material/select/select-hint-error-signal-form/select-hint-error-signal-form-example.ts
+src/components-examples/material/select/select-initial-value/select-initial-value-example.ts
+src/components-examples/material/select/select-multiple/select-multiple-example.ts
+src/components-examples/material/select/select-multiple-signal-form/select-multiple-signal-form-example.ts
+src/components-examples/material/select/select-no-ripple/select-no-ripple-example.ts
+src/components-examples/material/select/select-optgroup/select-optgroup-example.ts
+src/components-examples/material/select/select-optgroup-signal-form/select-optgroup-signal-form-example.ts
+src/components-examples/material/select/select-overview/select-overview-example.ts
+src/components-examples/material/select/select-panel-class/select-panel-class-example.ts
+src/components-examples/material/select/select-panel-class-signal-form/select-panel-class-signal-form-example.ts
+src/components-examples/material/select/select-reactive-form/select-reactive-form-example.ts
+src/components-examples/material/select/select-reset/select-reset-example.ts
+src/components-examples/material/select/select-selectable-null/select-selectable-null-example.ts
+src/components-examples/material/select/select-selectable-null-signal-form/select-selectable-null-signal-form-example.ts
+src/components-examples/material/select/select-value-binding/select-value-binding-example.ts
+src/components-examples/material/sidenav/index.ts
+src/components-examples/material/sidenav/sidenav-backdrop/sidenav-backdrop-example.ts
+src/components-examples/material/sidenav/sidenav-configurable-focus-trap/sidenav-configurable-focus-trap-example.ts
+src/components-examples/material/sidenav/sidenav-disable-close/sidenav-disable-close-example.ts
+src/components-examples/material/sidenav/sidenav-fixed/sidenav-fixed-example.ts
+src/components-examples/material/sidenav/sidenav-harness/sidenav-harness-example.spec.ts
+src/components-examples/material/sidenav/sidenav-mode/sidenav-mode-example.ts
+src/components-examples/material/sidenav/sidenav-open-close/sidenav-open-close-example.ts
+src/components-examples/material/sidenav/sidenav-responsive/sidenav-responsive-example.ts
+src/components-examples/material/slide-toggle/index.ts
+src/components-examples/material/slide-toggle/slide-toggle-configurable/slide-toggle-configurable-example.ts
+src/components-examples/material/slide-toggle/slide-toggle-forms/slide-toggle-forms-example.ts
+src/components-examples/material/slider/index.ts
+src/components-examples/material/slider/slider-configurable/slider-configurable-example.ts
+src/components-examples/material/slider/slider-harness/slider-harness-example.spec.ts
+src/components-examples/material/snack-bar/index.ts
+src/components-examples/material/snack-bar/snack-bar-annotated-component/snack-bar-annotated-component-example.ts
+src/components-examples/material/snack-bar/snack-bar-component/snack-bar-component-example.ts
+src/components-examples/material/snack-bar/snack-bar-harness/snack-bar-harness-example.spec.ts
+src/components-examples/material/snack-bar/snack-bar-overview/snack-bar-overview-example.ts
+src/components-examples/material/snack-bar/snack-bar-position/snack-bar-position-example.ts
+src/components-examples/material/sort/index.ts
+src/components-examples/material/sort/sort-harness/sort-harness-example.spec.ts
+src/components-examples/material/sort/sort-harness/sort-harness-example.ts
+src/components-examples/material/sort/sort-overview/sort-overview-example.ts
+src/components-examples/material/stepper/index.ts
+src/components-examples/material/stepper/stepper-animations/stepper-animations-example.ts
+src/components-examples/material/stepper/stepper-editable/stepper-editable-example.ts
+src/components-examples/material/stepper/stepper-errors/stepper-errors-example.ts
+src/components-examples/material/stepper/stepper-harness/stepper-harness-example.spec.ts
+src/components-examples/material/stepper/stepper-header-position/stepper-header-position-example.ts
+src/components-examples/material/stepper/stepper-intl/stepper-intl-example.ts
+src/components-examples/material/stepper/stepper-label-position-bottom/stepper-label-position-bottom-example.ts
+src/components-examples/material/stepper/stepper-optional/stepper-optional-example.ts
+src/components-examples/material/stepper/stepper-overview/stepper-overview-example.ts
+src/components-examples/material/stepper/stepper-responsive/stepper-responsive-example.ts
+src/components-examples/material/stepper/stepper-signal-forms/stepper-signal-forms-example.ts
+src/components-examples/material/stepper/stepper-states/stepper-states-example.ts
+src/components-examples/material/stepper/stepper-vertical/stepper-vertical-example.ts
+src/components-examples/material/table/index.ts
+src/components-examples/material/table/table-drag-drop/table-drag-drop-example.ts
+src/components-examples/material/table/table-dynamic-array-data/table-dynamic-array-data-example.ts
+src/components-examples/material/table/table-dynamic-columns/table-dynamic-columns-example.ts
+src/components-examples/material/table/table-dynamic-observable-data/table-dynamic-observable-data-example.ts
+src/components-examples/material/table/table-expandable-rows/table-expandable-rows-example.ts
+src/components-examples/material/table/table-filtering/table-filtering-example.ts
+src/components-examples/material/table/table-footer-row/table-footer-row-example.ts
+src/components-examples/material/table/table-harness/table-harness-example.spec.ts
+src/components-examples/material/table/table-http/table-http-example.ts
+src/components-examples/material/table/table-multiple-header-footer/table-multiple-header-footer-example.ts
+src/components-examples/material/table/table-overview/table-overview-example.ts
+src/components-examples/material/table/table-reorderable/table-reorderable-example.ts
+src/components-examples/material/table/table-selection/table-selection-example.ts
+src/components-examples/material/table/table-sorting/table-sorting-example.ts
+src/components-examples/material/table/table-sticky-complex/table-sticky-complex-example.ts
+src/components-examples/material/table/table-sticky-complex-flex/table-sticky-complex-flex-example.ts
+src/components-examples/material/table/table-sticky-footer/table-sticky-footer-example.ts
+src/components-examples/material/table/table-text-column-advanced/table-text-column-advanced-example.ts
+src/components-examples/material/table/table-virtual-scroll/table-virtual-scroll-example.ts
+src/components-examples/material/table/table-wrapped/table-wrapped-example.ts
+src/components-examples/material/tabs/index.ts
+src/components-examples/material/tabs/tab-group-async/tab-group-async-example.ts
+src/components-examples/material/tabs/tab-group-drag-drop/tab-group-drag-drop-example.ts
+src/components-examples/material/tabs/tab-group-dynamic/tab-group-dynamic-example.ts
+src/components-examples/material/tabs/tab-group-harness/tab-group-harness-example.spec.ts
+src/components-examples/material/tabs/tab-group-lazy-loaded/tab-group-lazy-loaded-example.ts
+src/components-examples/material/timepicker/index.ts
+src/components-examples/material/timepicker/timepicker-custom-icon/timepicker-custom-icon-example.ts
+src/components-examples/material/timepicker/timepicker-datepicker-integration/timepicker-datepicker-integration-example.ts
+src/components-examples/material/timepicker/timepicker-forms/timepicker-forms-example.ts
+src/components-examples/material/timepicker/timepicker-harness/timepicker-harness-example.spec.ts
+src/components-examples/material/timepicker/timepicker-locale/timepicker-locale-example.ts
+src/components-examples/material/timepicker/timepicker-options/timepicker-options-example.ts
+src/components-examples/material/timepicker/timepicker-overview/timepicker-overview-example.ts
+src/components-examples/material/timepicker/timepicker-validation/timepicker-validation-example.ts
+src/components-examples/material/toolbar/index.ts
+src/components-examples/material/toolbar/toolbar-basic/toolbar-basic-example.ts
+src/components-examples/material/toolbar/toolbar-harness/toolbar-harness-example.spec.ts
+src/components-examples/material/toolbar/toolbar-overview/toolbar-overview-example.ts
+src/components-examples/material/tooltip/index.ts
+src/components-examples/material/tooltip/tooltip-auto-hide/tooltip-auto-hide-example.ts
+src/components-examples/material/tooltip/tooltip-custom-class/tooltip-custom-class-example.ts
+src/components-examples/material/tooltip/tooltip-delay/tooltip-delay-example.ts
+src/components-examples/material/tooltip/tooltip-disabled/tooltip-disabled-example.ts
+src/components-examples/material/tooltip/tooltip-harness/tooltip-harness-example.spec.ts
+src/components-examples/material/tooltip/tooltip-manual/tooltip-manual-example.ts
+src/components-examples/material/tooltip/tooltip-message/tooltip-message-example.ts
+src/components-examples/material/tooltip/tooltip-modified-defaults/tooltip-modified-defaults-example.ts
+src/components-examples/material/tooltip/tooltip-overview/tooltip-overview-example.ts
+src/components-examples/material/tooltip/tooltip-position/tooltip-position-example.ts
+src/components-examples/material/tooltip/tooltip-position-at-origin/tooltip-position-at-origin-example.ts
+src/components-examples/material/tree/index.ts
+src/components-examples/material/tree/tree-dynamic/tree-dynamic-example.ts
+src/components-examples/material/tree/tree-flat-child-accessor-overview/tree-flat-child-accessor-overview-example.ts
+src/components-examples/material/tree/tree-flat-overview/tree-flat-overview-example.ts
+src/components-examples/material/tree/tree-harness/tree-harness-example.spec.ts
+src/components-examples/material/tree/tree-harness/tree-harness-example.ts
+src/components-examples/material/tree/tree-legacy-keyboard-interface/tree-legacy-keyboard-interface-example.ts
+src/components-examples/material/tree/tree-loadmore/tree-loadmore-example.ts
+src/components-examples/material/tree/tree-nested-child-accessor-overview/tree-nested-child-accessor-overview-example.ts
+src/components-examples/material/tree/tree-nested-overview/tree-nested-overview-example.ts
+src/components-examples/material-experimental/column-resize/default-enabled-column-resize/default-enabled-column-resize-example.ts
+src/components-examples/material-experimental/column-resize/default-enabled-column-resize-flex/default-enabled-column-resize-flex-example.ts
+src/components-examples/material-experimental/column-resize/index.ts
+src/components-examples/material-experimental/popover-edit/popover-edit-cell-span-mat-table/popover-edit-cell-span-mat-table-example.ts
+src/components-examples/material-experimental/popover-edit/popover-edit-mat-table/popover-edit-mat-table-example.ts
+src/components-examples/material-experimental/popover-edit/popover-edit-mat-table-flex/popover-edit-mat-table-flex-example.ts
+src/components-examples/material-experimental/popover-edit/popover-edit-tab-out-mat-table/popover-edit-tab-out-mat-table-example.ts
+src/components-examples/material-experimental/selection/mat-selection-column/mat-selection-column-example.ts
+src/components-examples/material-experimental/selection/mat-selection-list/mat-selection-list-example.ts
+src/components-examples/private/load-example.ts
+src/dev-app/aria-accordion/accordion-demo.ts
+src/dev-app/aria-autocomplete/autocomplete-demo.ts
+src/dev-app/aria-combobox/combobox-demo.ts
+src/dev-app/aria-grid/grid-demo.ts
+src/dev-app/aria-listbox/listbox-demo.ts
+src/dev-app/aria-menu/menu-demo.ts
+src/dev-app/aria-menubar/menubar-demo.ts
+src/dev-app/aria-tabs/tabs-demo.ts
+src/dev-app/aria-toolbar/toolbar-demo.ts
+src/dev-app/aria-tree/tree-demo.ts
+src/dev-app/autocomplete/autocomplete-demo.ts
+src/dev-app/bottom-sheet/bottom-sheet-demo.ts
+src/dev-app/cdk-dialog/dialog-demo.ts
+src/dev-app/cdk-listbox/cdk-listbox-demo.ts
+src/dev-app/checkbox/checkbox-demo.ts
+src/dev-app/clipboard/clipboard-demo.ts
+src/dev-app/connected-overlay/connected-overlay-demo.ts
+src/dev-app/datepicker/datepicker-demo.ts
+src/dev-app/dev-app/dev-app-directionality.ts
+src/dev-app/dev-app/dev-app-layout.ts
+src/dev-app/dev-app/dev-app-state.ts
+src/dev-app/dialog/dialog-demo.ts
+src/dev-app/drag-drop/drag-drop-demo.ts
+src/dev-app/example/example-list.ts
+src/dev-app/example/example.ts
+src/dev-app/focus-origin/focus-origin-demo.ts
+src/dev-app/focus-trap/focus-trap-demo.ts
+src/dev-app/google-map/google-map-demo.ts
+src/dev-app/grid-list/grid-list-demo.ts
+src/dev-app/icon/icon-demo.ts
+src/dev-app/input/input-demo.ts
+src/dev-app/input-modality/input-modality-detector-demo.ts
+src/dev-app/list/list-demo.ts
+src/dev-app/live-announcer/live-announcer-demo.ts
+src/dev-app/main.ts
+src/dev-app/performance/performance-demo.ts
+src/dev-app/platform/platform-demo.ts
+src/dev-app/popover-edit/popover-edit-demo.ts
+src/dev-app/portal/portal-demo.ts
+src/dev-app/routes.ts
+src/dev-app/screen-type/screen-type-demo.ts
+src/dev-app/select/select-demo.ts
+src/dev-app/slider/slider-demo.ts
+src/dev-app/snack-bar/snack-bar-demo.ts
+src/dev-app/stepper/stepper-demo.ts
+src/dev-app/table/table-demo.ts
+src/dev-app/theme/theme-demo.ts
+src/dev-app/timepicker/timepicker-demo.ts
+src/dev-app/tree/tree-demo.ts
+src/dev-app/virtual-scroll/virtual-scroll-demo.ts
+src/dev-app/youtube-player/youtube-player-demo.ts
+src/e2e-app/components/block-scroll-strategy/block-scroll-strategy-e2e.ts
+src/e2e-app/components/component-harness-e2e.ts
+src/e2e-app/components/e2e-app/e2e-app.ts
+src/e2e-app/components/home.ts
+src/e2e-app/components/slider-e2e.ts
+src/e2e-app/components/virtual-scroll/virtual-scroll-e2e.ts
+src/e2e-app/e2e-setup.ts
+src/google-maps/deprecated-map-marker-clusterer/deprecated-map-marker-clusterer.spec.ts
+src/google-maps/deprecated-map-marker-clusterer/deprecated-map-marker-clusterer.ts
+src/google-maps/google-map/google-map.spec.ts
+src/google-maps/google-map/google-map.ts
+src/google-maps/google-maps-module.ts
+src/google-maps/map-advanced-marker/map-advanced-marker.spec.ts
+src/google-maps/map-advanced-marker/map-advanced-marker.ts
+src/google-maps/map-base-layer.ts
+src/google-maps/map-bicycling-layer/map-bicycling-layer.spec.ts
+src/google-maps/map-bicycling-layer/map-bicycling-layer.ts
+src/google-maps/map-circle/map-circle.spec.ts
+src/google-maps/map-circle/map-circle.ts
+src/google-maps/map-directions-renderer/map-directions-renderer.spec.ts
+src/google-maps/map-directions-renderer/map-directions-renderer.ts
+src/google-maps/map-directions-renderer/map-directions-service.spec.ts
+src/google-maps/map-directions-renderer/map-directions-service.ts
+src/google-maps/map-event-manager.spec.ts
+src/google-maps/map-event-manager.ts
+src/google-maps/map-geocoder/map-geocoder.spec.ts
+src/google-maps/map-geocoder/map-geocoder.ts
+src/google-maps/map-ground-overlay/map-ground-overlay.spec.ts
+src/google-maps/map-ground-overlay/map-ground-overlay.ts
+src/google-maps/map-heatmap-layer/map-heatmap-layer.ts
+src/google-maps/map-info-window/map-info-window.spec.ts
+src/google-maps/map-info-window/map-info-window.ts
+src/google-maps/map-kml-layer/map-kml-layer.spec.ts
+src/google-maps/map-kml-layer/map-kml-layer.ts
+src/google-maps/map-marker/map-marker.spec.ts
+src/google-maps/map-marker/map-marker.ts
+src/google-maps/map-marker-clusterer/map-marker-clusterer-types.ts
+src/google-maps/map-marker-clusterer/map-marker-clusterer.spec.ts
+src/google-maps/map-marker-clusterer/map-marker-clusterer.ts
+src/google-maps/map-polygon/map-polygon.spec.ts
+src/google-maps/map-polygon/map-polygon.ts
+src/google-maps/map-polyline/map-polyline.spec.ts
+src/google-maps/map-polyline/map-polyline.ts
+src/google-maps/map-rectangle/map-rectangle.spec.ts
+src/google-maps/map-rectangle/map-rectangle.ts
+src/google-maps/map-traffic-layer/map-traffic-layer.spec.ts
+src/google-maps/map-traffic-layer/map-traffic-layer.ts
+src/google-maps/map-transit-layer/map-transit-layer.spec.ts
+src/google-maps/map-transit-layer/map-transit-layer.ts
+src/google-maps/marker-utilities.ts
+src/google-maps/public-api.ts
+src/google-maps/schematics/ng-add/index.ts
+src/google-maps/testing/fake-google-map-utils.ts
+src/material/autocomplete/autocomplete-module.ts
+src/material/autocomplete/autocomplete-trigger.ts
+src/material/autocomplete/autocomplete.spec.ts
+src/material/autocomplete/autocomplete.ts
+src/material/autocomplete/autocomplete.zone.spec.ts
+src/material/autocomplete/public-api.ts
+src/material/autocomplete/testing/autocomplete-harness.spec.ts
+src/material/autocomplete/testing/autocomplete-harness.ts
+src/material/badge/badge-module.ts
+src/material/badge/badge.spec.ts
+src/material/badge/badge.ts
+src/material/badge/public-api.ts
+src/material/badge/testing/badge-harness.spec.ts
+src/material/bottom-sheet/bottom-sheet-config.ts
+src/material/bottom-sheet/bottom-sheet-container.ts
+src/material/bottom-sheet/bottom-sheet-module.ts
+src/material/bottom-sheet/bottom-sheet-ref.ts
+src/material/bottom-sheet/bottom-sheet.spec.ts
+src/material/bottom-sheet/bottom-sheet.ts
+src/material/bottom-sheet/public-api.ts
+src/material/bottom-sheet/testing/bottom-sheet-harness.spec.ts
+src/material/bottom-sheet/testing/bottom-sheet-harness.ts
+src/material/button/button-base.ts
+src/material/button/button-module.ts
+src/material/button/button.spec.ts
+src/material/button/fab.ts
+src/material/button/icon-button.ts
+src/material/button/public-api.ts
+src/material/button/testing/button-harness-filters.ts
+src/material/button/testing/button-harness.spec.ts
+src/material/button/testing/button-harness.ts
+src/material/button-toggle/button-toggle-module.ts
+src/material/button-toggle/button-toggle.spec.ts
+src/material/button-toggle/button-toggle.ts
+src/material/button-toggle/testing/button-toggle-group-harness.ts
+src/material/button-toggle/testing/button-toggle-group.spec.ts
+src/material/button-toggle/testing/button-toggle-harness.spec.ts
+src/material/button-toggle/testing/button-toggle-harness.ts
+src/material/button-toggle/testing/public-api.ts
+src/material/card/card-module.ts
+src/material/card/card.spec.ts
+src/material/card/card.ts
+src/material/card/testing/card-harness.spec.ts
+src/material/card/testing/card-harness.ts
+src/material/checkbox/checkbox-config.ts
+src/material/checkbox/checkbox.spec.ts
+src/material/checkbox/checkbox.ts
+src/material/checkbox/public-api.ts
+src/material/checkbox/testing/checkbox-harness.spec.ts
+src/material/checkbox/testing/checkbox-harness.ts
+src/material/chips/chip-action.ts
+src/material/chips/chip-edit-input.spec.ts
+src/material/chips/chip-edit-input.ts
+src/material/chips/chip-grid.spec.ts
+src/material/chips/chip-grid.ts
+src/material/chips/chip-icons.ts
+src/material/chips/chip-input.spec.ts
+src/material/chips/chip-input.ts
+src/material/chips/chip-listbox.spec.ts
+src/material/chips/chip-listbox.ts
+src/material/chips/chip-option.spec.ts
+src/material/chips/chip-option.ts
+src/material/chips/chip-remove.spec.ts
+src/material/chips/chip-row.spec.ts
+src/material/chips/chip-row.ts
+src/material/chips/chip-set.spec.ts
+src/material/chips/chip-set.ts
+src/material/chips/chip.spec.ts
+src/material/chips/chip.ts
+src/material/chips/chips-module.ts
+src/material/chips/public-api.ts
+src/material/chips/testing/chip-grid-harness.spec.ts
+src/material/chips/testing/chip-harness.spec.ts
+src/material/chips/testing/chip-harness.ts
+src/material/chips/testing/chip-input-harness.spec.ts
+src/material/chips/testing/chip-input-harness.ts
+src/material/chips/testing/chip-listbox-harness.spec.ts
+src/material/chips/testing/chip-listbox-harness.ts
+src/material/chips/testing/chip-option-harness.spec.ts
+src/material/chips/testing/chip-option-harness.ts
+src/material/chips/testing/chip-row-harness.spec.ts
+src/material/chips/testing/chip-set-harness.spec.ts
+src/material/chips/testing/chip-set-harness.ts
+src/material/chips/testing/public-api.ts
+src/material/chips/tokens.ts
+src/material/core/animation/animation.ts
+src/material/core/common-behaviors/error-state.ts
+src/material/core/common-behaviors/index.ts
+src/material/core/datetime/date-adapter.ts
+src/material/core/datetime/native-date-adapter.spec.ts
+src/material/core/datetime/native-date-adapter.ts
+src/material/core/error/error-options.ts
+src/material/core/internal-form-field/internal-form-field.ts
+src/material/core/option/index.ts
+src/material/core/option/optgroup.ts
+src/material/core/option/option-module.ts
+src/material/core/option/option-parent.ts
+src/material/core/option/option.spec.ts
+src/material/core/option/option.ts
+src/material/core/private/ripple-loader.spec.ts
+src/material/core/private/ripple-loader.ts
+src/material/core/public-api.ts
+src/material/core/ripple/index.ts
+src/material/core/ripple/ripple-event-manager.ts
+src/material/core/ripple/ripple-ref.ts
+src/material/core/ripple/ripple-renderer.ts
+src/material/core/ripple/ripple.spec.ts
+src/material/core/ripple/ripple.ts
+src/material/core/ripple/ripple.zone.spec.ts
+src/material/core/selection/pseudo-checkbox/pseudo-checkbox.ts
+src/material/core/testing/optgroup-harness.spec.ts
+src/material/core/testing/option-harness.spec.ts
+src/material/core/testing/option-harness.ts
+src/material/core/testing/public-api.ts
+src/material/core/theming/tests/m3-theme.spec.ts
+src/material/core/theming/tests/theming-definition-api.spec.ts
+src/material/core/theming/tests/theming-inspection-api.spec.ts
+src/material/core/theming/tests/theming-typography-hierarchy.spec.ts
+src/material/datepicker/aria-accessible-name.spec.ts
+src/material/datepicker/aria-accessible-name.ts
+src/material/datepicker/calendar-body.spec.ts
+src/material/datepicker/calendar-body.ts
+src/material/datepicker/calendar-header.spec.ts
+src/material/datepicker/calendar.spec.ts
+src/material/datepicker/calendar.ts
+src/material/datepicker/date-range-input-parts.ts
+src/material/datepicker/date-range-input.spec.ts
+src/material/datepicker/date-range-input.ts
+src/material/datepicker/date-range-picker.ts
+src/material/datepicker/date-range-selection-strategy.spec.ts
+src/material/datepicker/date-range-selection-strategy.ts
+src/material/datepicker/date-selection-model.ts
+src/material/datepicker/datepicker-actions.spec.ts
+src/material/datepicker/datepicker-actions.ts
+src/material/datepicker/datepicker-base.ts
+src/material/datepicker/datepicker-errors.ts
+src/material/datepicker/datepicker-input-base.ts
+src/material/datepicker/datepicker-input.ts
+src/material/datepicker/datepicker-module.ts
+src/material/datepicker/datepicker-toggle.ts
+src/material/datepicker/datepicker.spec.ts
+src/material/datepicker/datepicker.ts
+src/material/datepicker/month-view.spec.ts
+src/material/datepicker/month-view.ts
+src/material/datepicker/multi-year-view.spec.ts
+src/material/datepicker/multi-year-view.ts
+src/material/datepicker/public-api.ts
+src/material/datepicker/testing/calendar-cell-harness.ts
+src/material/datepicker/testing/calendar-harness.spec.ts
+src/material/datepicker/testing/calendar-harness.ts
+src/material/datepicker/testing/date-range-input-harness.spec.ts
+src/material/datepicker/testing/date-range-input-harness.ts
+src/material/datepicker/testing/datepicker-actions-harness.spec.ts
+src/material/datepicker/testing/datepicker-actions-harness.ts
+src/material/datepicker/testing/datepicker-harness-filters.ts
+src/material/datepicker/testing/datepicker-input-harness-base.ts
+src/material/datepicker/testing/datepicker-input-harness.spec.ts
+src/material/datepicker/testing/datepicker-input-harness.ts
+src/material/datepicker/testing/datepicker-toggle-harness.spec.ts
+src/material/datepicker/testing/datepicker-toggle-harness.ts
+src/material/datepicker/testing/datepicker-trigger-harness-base.ts
+src/material/datepicker/testing/public-api.ts
+src/material/datepicker/year-view.spec.ts
+src/material/datepicker/year-view.ts
+src/material/dialog/dialog-config.ts
+src/material/dialog/dialog-container.ts
+src/material/dialog/dialog-content-directives.ts
+src/material/dialog/dialog-ref.ts
+src/material/dialog/dialog.spec.ts
+src/material/dialog/dialog.ts
+src/material/dialog/dialog.zone.spec.ts
+src/material/dialog/public-api.ts
+src/material/dialog/testing/dialog-harness.spec.ts
+src/material/dialog/testing/dialog-harness.ts
+src/material/dialog/testing/dialog-opener.spec.ts
+src/material/dialog/testing/dialog-opener.ts
+src/material/dialog/testing/index.ts
+src/material/dialog/testing/public-api.ts
+src/material/divider/divider.spec.ts
+src/material/divider/divider.ts
+src/material/divider/testing/divider-harness.spec.ts
+src/material/expansion/accordion-base.ts
+src/material/expansion/accordion.spec.ts
+src/material/expansion/accordion.ts
+src/material/expansion/expansion-module.ts
+src/material/expansion/expansion-panel-base.ts
+src/material/expansion/expansion-panel-content.ts
+src/material/expansion/expansion-panel-header.ts
+src/material/expansion/expansion-panel.ts
+src/material/expansion/expansion.spec.ts
+src/material/expansion/public-api.ts
+src/material/expansion/testing/expansion-harness.spec.ts
+src/material/expansion/testing/expansion-harness.ts
+src/material/form-field/directives/error.ts
+src/material/form-field/directives/floating-label.ts
+src/material/form-field/directives/hint.ts
+src/material/form-field/directives/line-ripple.ts
+src/material/form-field/directives/notched-outline.ts
+src/material/form-field/form-field-control.ts
+src/material/form-field/form-field.ts
+src/material/form-field/public-api.ts
+src/material/form-field/testing/control/form-field-control-harness.ts
+src/material/form-field/testing/form-field-harness.spec.ts
+src/material/form-field/testing/form-field-harness.ts
+src/material/form-field/testing/public-api.ts
+src/material/grid-list/grid-list.spec.ts
+src/material/grid-list/grid-list.ts
+src/material/grid-list/grid-tile.ts
+src/material/grid-list/public-api.ts
+src/material/grid-list/testing/grid-list-harness.spec.ts
+src/material/grid-list/testing/grid-list-harness.ts
+src/material/grid-list/testing/grid-tile-harness.ts
+src/material/grid-list/testing/public-api.ts
+src/material/grid-list/tile-styler.ts
+src/material/icon/fake-svgs.ts
+src/material/icon/icon-registry.ts
+src/material/icon/icon.spec.ts
+src/material/icon/icon.ts
+src/material/icon/public-api.ts
+src/material/icon/testing/fake-icon-registry.ts
+src/material/icon/testing/icon-harness.spec.ts
+src/material/icon/testing/icon-harness.ts
+src/material/icon/testing/public-api.ts
+src/material/input/input-value-accessor.ts
+src/material/input/input.spec.ts
+src/material/input/input.ts
+src/material/input/public-api.ts
+src/material/input/testing/input-harness.spec.ts
+src/material/input/testing/input-harness.ts
+src/material/input/testing/native-option-harness.ts
+src/material/input/testing/native-select-harness-filters.ts
+src/material/input/testing/native-select-harness.spec.ts
+src/material/input/testing/native-select-harness.ts
+src/material/input/testing/public-api.ts
+src/material/list/list-base.ts
+src/material/list/list-item-sections.ts
+src/material/list/list-module.ts
+src/material/list/list-option.ts
+src/material/list/list.spec.ts
+src/material/list/list.ts
+src/material/list/public-api.ts
+src/material/list/selection-list.spec.ts
+src/material/list/selection-list.ts
+src/material/list/testing/action-list-harness.ts
+src/material/list/testing/list-harness-base.ts
+src/material/list/testing/list-harness-filters.ts
+src/material/list/testing/list-harness.spec.ts
+src/material/list/testing/list-item-harness-base.ts
+src/material/list/testing/nav-list-harness.ts
+src/material/list/testing/public-api.ts
+src/material/list/testing/selection-list-harness.ts
+src/material/menu/context-menu-trigger.spec.ts
+src/material/menu/context-menu-trigger.ts
+src/material/menu/menu-content.ts
+src/material/menu/menu-errors.ts
+src/material/menu/menu-item.ts
+src/material/menu/menu-module.ts
+src/material/menu/menu-panel.ts
+src/material/menu/menu-trigger-base.ts
+src/material/menu/menu-trigger.ts
+src/material/menu/menu.spec.ts
+src/material/menu/menu.ts
+src/material/menu/public-api.ts
+src/material/menu/testing/context-menu-harness.spec.ts
+src/material/menu/testing/context-menu-harness.ts
+src/material/menu/testing/menu-harness.spec.ts
+src/material/menu/testing/menu-harness.ts
+src/material/menu/testing/public-api.ts
+src/material/paginator/paginator-intl.ts
+src/material/paginator/paginator.spec.ts
+src/material/paginator/paginator.ts
+src/material/paginator/public-api.ts
+src/material/paginator/testing/paginator-harness.spec.ts
+src/material/paginator/testing/paginator-harness.ts
+src/material/progress-bar/progress-bar.spec.ts
+src/material/progress-bar/progress-bar.ts
+src/material/progress-bar/testing/progress-bar-harness.spec.ts
+src/material/progress-spinner/progress-spinner.spec.ts
+src/material/progress-spinner/progress-spinner.ts
+src/material/progress-spinner/testing/progress-spinner-harness.spec.ts
+src/material/radio/radio.spec.ts
+src/material/radio/radio.ts
+src/material/radio/testing/radio-harness.spec.ts
+src/material/radio/testing/radio-harness.ts
+src/material/schematics/migration-utilities/typescript/import-operations.spec.ts
+src/material/schematics/migration-utilities/typescript/import-operations.ts
+src/material/schematics/ng-add/fonts/material-fonts.ts
+src/material/schematics/ng-add/index.spec.ts
+src/material/schematics/ng-add/index.ts
+src/material/schematics/ng-add/schema.ts
+src/material/schematics/ng-add/setup-project.ts
+src/material/schematics/ng-add/theming/theming.ts
+src/material/schematics/ng-generate/address-form/index.spec.ts
+src/material/schematics/ng-generate/address-form/index.ts
+src/material/schematics/ng-generate/dashboard/index.spec.ts
+src/material/schematics/ng-generate/dashboard/index.ts
+src/material/schematics/ng-generate/navigation/index.spec.ts
+src/material/schematics/ng-generate/navigation/index.ts
+src/material/schematics/ng-generate/table/index.spec.ts
+src/material/schematics/ng-generate/table/index.ts
+src/material/schematics/ng-generate/theme-color/index.spec.ts
+src/material/schematics/ng-generate/theme-color/index.ts
+src/material/schematics/ng-generate/tree/index.spec.ts
+src/material/schematics/ng-generate/tree/index.ts
+src/material/schematics/ng-update/test-cases/index.spec.ts
+src/material/schematics/ng-update/typescript/module-specifiers.ts
+src/material/select/public-api.ts
+src/material/select/select-module.ts
+src/material/select/select.spec.ts
+src/material/select/select.ts
+src/material/select/testing/select-harness-filters.ts
+src/material/select/testing/select-harness.spec.ts
+src/material/select/testing/select-harness.ts
+src/material/sidenav/drawer.spec.ts
+src/material/sidenav/drawer.ts
+src/material/sidenav/public-api.ts
+src/material/sidenav/sidenav.spec.ts
+src/material/sidenav/sidenav.ts
+src/material/sidenav/testing/drawer-container-harness.ts
+src/material/sidenav/testing/drawer-content-harness.ts
+src/material/sidenav/testing/drawer-harness.ts
+src/material/sidenav/testing/public-api.ts
+src/material/sidenav/testing/sidenav-container-harness.ts
+src/material/sidenav/testing/sidenav-content-harness.ts
+src/material/sidenav/testing/sidenav-harness.spec.ts
+src/material/slide-toggle/slide-toggle-config.ts
+src/material/slide-toggle/slide-toggle.spec.ts
+src/material/slide-toggle/slide-toggle.ts
+src/material/slide-toggle/testing/slide-toggle-harness.spec.ts
+src/material/slide-toggle/testing/slide-toggle-harness.ts
+src/material/slider/public-api.ts
+src/material/slider/slider-input.ts
+src/material/slider/slider-interface.ts
+src/material/slider/slider-module.ts
+src/material/slider/slider-thumb.ts
+src/material/slider/slider.e2e.spec.ts
+src/material/slider/slider.spec.ts
+src/material/slider/slider.ts
+src/material/slider/testing/public-api.ts
+src/material/slider/testing/slider-harness.spec.ts
+src/material/slider/testing/slider-harness.ts
+src/material/snack-bar/public-api.ts
+src/material/snack-bar/simple-snack-bar.ts
+src/material/snack-bar/snack-bar-config.ts
+src/material/snack-bar/snack-bar-container.ts
+src/material/snack-bar/snack-bar-module.ts
+src/material/snack-bar/snack-bar.spec.ts
+src/material/snack-bar/snack-bar.ts
+src/material/snack-bar/snack-bar.zone.spec.ts
+src/material/snack-bar/testing/snack-bar-harness.spec.ts
+src/material/snack-bar/testing/snack-bar-harness.ts
+src/material/sort/public-api.ts
+src/material/sort/sort-header.ts
+src/material/sort/sort-module.ts
+src/material/sort/sort.spec.ts
+src/material/sort/sort.ts
+src/material/sort/testing/public-api.ts
+src/material/sort/testing/sort-harness.spec.ts
+src/material/sort/testing/sort-header-harness.ts
+src/material/stepper/public-api.ts
+src/material/stepper/step-content.ts
+src/material/stepper/step-header.ts
+src/material/stepper/step-label.ts
+src/material/stepper/stepper-icon.ts
+src/material/stepper/stepper-module.ts
+src/material/stepper/stepper.spec.ts
+src/material/stepper/stepper.ts
+src/material/stepper/testing/public-api.ts
+src/material/stepper/testing/step-harness.ts
+src/material/stepper/testing/stepper-harness.spec.ts
+src/material/stepper/testing/stepper-harness.ts
+src/material/table/cell.ts
+src/material/table/public-api.ts
+src/material/table/row.ts
+src/material/table/table-data-source.spec.ts
+src/material/table/table-data-source.ts
+src/material/table/table-module.ts
+src/material/table/table.spec.ts
+src/material/table/table.ts
+src/material/table/testing/cell-harness.ts
+src/material/table/testing/public-api.ts
+src/material/table/testing/row-harness.ts
+src/material/table/testing/table-harness.spec.ts
+src/material/table/text-column.ts
+src/material/tabs/ink-bar.ts
+src/material/tabs/paginated-tab-header.ts
+src/material/tabs/public-api.ts
+src/material/tabs/tab-body.spec.ts
+src/material/tabs/tab-body.ts
+src/material/tabs/tab-content.ts
+src/material/tabs/tab-group.spec.ts
+src/material/tabs/tab-group.ts
+src/material/tabs/tab-header.spec.ts
+src/material/tabs/tab-header.ts
+src/material/tabs/tab-label-wrapper.ts
+src/material/tabs/tab-label.ts
+src/material/tabs/tab-nav-bar/tab-nav-bar.spec.ts
+src/material/tabs/tab-nav-bar/tab-nav-bar.ts
+src/material/tabs/tab.ts
+src/material/tabs/tabs-module.ts
+src/material/tabs/testing/public-api.ts
+src/material/tabs/testing/tab-group-harness.spec.ts
+src/material/tabs/testing/tab-group-harness.ts
+src/material/tabs/testing/tab-harness.ts
+src/material/tabs/testing/tab-nav-bar-harness.spec.ts
+src/material/tabs/testing/tab-nav-bar-harness.ts
+src/material/timepicker/public-api.ts
+src/material/timepicker/testing/timepicker-harness.spec.ts
+src/material/timepicker/testing/timepicker-harness.ts
+src/material/timepicker/testing/timepicker-input-harness.spec.ts
+src/material/timepicker/testing/timepicker-toggle-harness.spec.ts
+src/material/timepicker/testing/timepicker-toggle-harness.ts
+src/material/timepicker/timepicker-input.ts
+src/material/timepicker/timepicker-module.ts
+src/material/timepicker/timepicker-toggle.ts
+src/material/timepicker/timepicker.spec.ts
+src/material/timepicker/timepicker.ts
+src/material/timepicker/util.spec.ts
+src/material/timepicker/util.ts
+src/material/toolbar/public-api.ts
+src/material/toolbar/testing/toolbar-harness.spec.ts
+src/material/toolbar/testing/toolbar-harness.ts
+src/material/toolbar/toolbar.spec.ts
+src/material/toolbar/toolbar.ts
+src/material/tooltip/testing/tooltip-harness.spec.ts
+src/material/tooltip/testing/tooltip-harness.ts
+src/material/tooltip/tooltip-module.ts
+src/material/tooltip/tooltip.spec.ts
+src/material/tooltip/tooltip.ts
+src/material/tooltip/tooltip.zone.spec.ts
+src/material/tree/data-source/flat-data-source.ts
+src/material/tree/data-source/nested-data-source.ts
+src/material/tree/node.ts
+src/material/tree/outlet.ts
+src/material/tree/public-api.ts
+src/material/tree/testing/node-harness.ts
+src/material/tree/testing/tree-harness.spec.ts
+src/material/tree/testing/tree-harness.ts
+src/material/tree/tree-module.ts
+src/material/tree/tree-using-legacy-key-manager.spec.ts
+src/material/tree/tree-using-tree-control.spec.ts
+src/material/tree/tree.spec.ts
+src/material/tree/tree.ts
+src/material-date-fns-adapter/adapter/date-fns-adapter.spec.ts
+src/material-date-fns-adapter/adapter/date-fns-adapter.ts
+src/material-date-fns-adapter/schematics/ng-add/index.ts
+src/material-experimental/column-resize/column-resize-directives/column-resize-flex.ts
+src/material-experimental/column-resize/column-resize-directives/column-resize.ts
+src/material-experimental/column-resize/column-resize-directives/common.ts
+src/material-experimental/column-resize/column-resize-directives/default-enabled-column-resize-flex.ts
+src/material-experimental/column-resize/column-resize-directives/default-enabled-column-resize.ts
+src/material-experimental/column-resize/column-resize-module.ts
+src/material-experimental/column-resize/column-resize.spec.ts
+src/material-experimental/column-resize/overlay-handle.ts
+src/material-experimental/column-resize/public-api.ts
+src/material-experimental/column-resize/resizable-directives/common.ts
+src/material-experimental/column-resize/resizable-directives/default-enabled-resizable.ts
+src/material-experimental/column-resize/resizable-directives/resizable.ts
+src/material-experimental/column-resize/resize-strategy.ts
+src/material-experimental/menubar/menubar-item.spec.ts
+src/material-experimental/menubar/menubar-item.ts
+src/material-experimental/menubar/menubar-module.ts
+src/material-experimental/menubar/menubar.spec.ts
+src/material-experimental/menubar/menubar.ts
+src/material-experimental/popover-edit/lens-directives.ts
+src/material-experimental/popover-edit/popover-edit-module.ts
+src/material-experimental/popover-edit/popover-edit.spec.ts
+src/material-experimental/popover-edit/table-directives.ts
+src/material-experimental/selection/public-api.ts
+src/material-experimental/selection/row-selection.ts
+src/material-experimental/selection/selection-column.ts
+src/material-experimental/selection/selection-module.ts
+src/material-experimental/selection/selection.ts
+src/material-luxon-adapter/adapter/luxon-date-adapter.spec.ts
+src/material-luxon-adapter/adapter/luxon-date-adapter.ts
+src/material-luxon-adapter/schematics/ng-add/index.ts
+src/material-moment-adapter/adapter/moment-date-adapter.spec.ts
+src/material-moment-adapter/adapter/moment-date-adapter.ts
+src/material-moment-adapter/schematics/ng-add/index.ts
+src/universal-app/hydration.e2e.spec.ts
+src/universal-app/kitchen-sink/kitchen-sink.ts
+src/universal-app/prerender.ts
+src/youtube-player/fake-youtube-player.ts
+src/youtube-player/public-api.ts
+src/youtube-player/schematics/ng-add/index.ts
+src/youtube-player/youtube-player-placeholder.ts
+src/youtube-player/youtube-player.spec.ts
+src/youtube-player/youtube-player.ts
+test/bazel-karma-local-config.js
+test/browser-providers.js
+test/karma.conf.js
+tools/adev-api-extraction/index.mts
+tools/adev-api-extraction/interpolate-code-examples.mts
+tools/bazel-additional-stamp.mjs
+tools/dgeni/bazel-bin.ts
+tools/dgeni/common/class-inheritance.ts
+tools/dgeni/common/decorators.ts
+tools/dgeni/common/dgeni-definitions.ts
+tools/dgeni/common/directive-metadata.ts
+tools/dgeni/common/normalize-function-parameters.ts
+tools/dgeni/common/property-bindings.ts
+tools/dgeni/common/sort-members.ts
+tools/dgeni/docs-package.ts
+tools/dgeni/patch-log-service.ts
+tools/dgeni/processors/async-functions.ts
+tools/dgeni/processors/categorizer.ts
+tools/dgeni/processors/entry-point-grouper.ts
+tools/dgeni/processors/error-unknown-jsdoc-tags.ts
+tools/dgeni/processors/filter-duplicate-exports.ts
+tools/dgeni/processors/resolve-inherited-docs.ts
+tools/example-module/generate-example-module.ts
+tools/example-module/parse-example-file.ts
+tools/extract-tokens/extract-tokens.mts
+tools/highlight-files/highlight-files.mts
+tools/markdown-to-html/docs-marked-renderer.mts
+tools/markdown-to-html/docs-marked-renderer.spec.mts
+tools/package-docs-content/package-docs-content.ts
+tools/postcss/compare-nodes.ts
+tools/region-parser/region-parser.mts
+tools/release-checks/check-migration-collections.mts
+tools/release-checks/npm-package-output/check-package.mts
+tools/release-checks/npm-package-output/index.mts
+tools/release-checks/npm-package-output/output-validations.mts
+tools/sass/local-sass-importer.ts
+tools/stylelint/cross-package-import-validation.ts
+tools/stylelint/no-ampersand-beyond-selector-start.ts
+tools/stylelint/no-concrete-rules.ts
+tools/stylelint/no-import.ts
+tools/stylelint/no-prefixes/index.ts
+tools/stylelint/no-prefixes/needs-prefix.ts
+tools/stylelint/no-top-level-ampersand-in-mixin.ts
+tools/stylelint/no-unused-import.ts
+tools/stylelint/selector-no-deep.ts
+tools/stylelint/single-line-comment-only.ts
+tools/tslint-rules/lifecycleHookInterfaceRule.ts
+tools/tslint-rules/lightweightTokensRule.ts
+tools/tslint-rules/memberNamingRule.ts
+tools/tslint-rules/noCoercionMembersRule.ts
+tools/tslint-rules/noCrossEntryPointRelativeImportsRule.ts
+tools/tslint-rules/noExposedTodoRule.ts
+tools/tslint-rules/noHostDecoratorInConcreteRule.ts
+tools/tslint-rules/noLifecycleInvocationRule.ts
+tools/tslint-rules/noPrivateGettersRule.ts
+tools/tslint-rules/noUndecoratedBaseClassDiRule.ts
+tools/tslint-rules/noUndecoratedClassWithAngularFeaturesRule.ts
+tools/tslint-rules/noUnescapedHtmlTagRule.ts
+tools/tslint-rules/noZoneDependenciesRule.ts
+tools/tslint-rules/preferPlainEnumRule.ts
+tools/tslint-rules/requireBreakingChangeVersionRule.ts
+tools/tslint-rules/requireLicenseBannerRule.ts
+tools/tslint-rules/settersAfterGettersRule.ts
+tools/tslint-rules/symbolNamingRule.ts
+tools/tslint-rules/validateDecoratorsRule.ts
+
+# The first 25, reference first
+
+--- reference/docs/e2e/src/app.e2e-spec.ts
++++ formatter/docs/e2e/src/app.e2e-spec.ts
+@@ -39,7 +39,7 @@ describe("Material Docs App", () => {
+     const errors = logs.filter(
+       (log) =>
+-        log.level.name === "SEVERE" &&
+-        !log.message.includes("ERR_ACCESS_DENIED") &&
+-        !log.message.includes("ERR_INTERNET_DISCONNECTED"),
++        log.level.name === "SEVERE"
++        && !log.message.includes("ERR_ACCESS_DENIED")
++        && !log.message.includes("ERR_INTERNET_DISCONNECTED"),
+     );
+     expect(errors).toEqual([]);
+
+
+--- reference/docs/karma.conf.js
++++ formatter/docs/karma.conf.js
+@@ -9,5 +9,5 @@ process.env.CHROME_BIN = path.resolve(process.env.CHROME_BIN);
+ process.env.CHROMEDRIVER_BIN = path.resolve(process.env.CHROMEDRIVER_BIN);
+ 
+-module.exports = function (config) {
++module.exports = function(config) {
+   config.set({
+     basePath: "",
+
+
+--- reference/docs/scenes/e2e/src/app.e2e-spec.ts
++++ formatter/docs/scenes/e2e/src/app.e2e-spec.ts
+@@ -9,6 +9,6 @@
+ import * as webdriver from "selenium-webdriver";
+ import { createE2eWebDriver } from "../../../../src/e2e-app/e2e-setup";
+-import { AppPage } from "./app.po";
+ import { screenshot } from "../screenshot";
++import { AppPage } from "./app.po";
+ 
+ const { builder, port } = createE2eWebDriver();
+
+
+--- reference/docs/scenes/karma.conf.js
++++ formatter/docs/scenes/karma.conf.js
+@@ -13,5 +13,5 @@ if (isBazel) {
+ }
+ 
+-module.exports = function (config) {
++module.exports = function(config) {
+   config.set({
+     basePath: "",
+
+
+--- reference/docs/scenes/src/app/app.component.spec.ts
++++ formatter/docs/scenes/src/app/app.component.spec.ts
+@@ -1,5 +1,5 @@
+ import { TestBed } from "@angular/core/testing";
+-import { AppComponent } from "./app.component";
+ import { provideRouter } from "@angular/router";
++import { AppComponent } from "./app.component";
+ 
+ describe("AppComponent", () => {
+
+
+--- reference/docs/scenes/src/app/scene-overlay-container.ts
++++ formatter/docs/scenes/src/app/scene-overlay-container.ts
+@@ -7,6 +7,6 @@
+  */
+ 
+-import { Service } from "@angular/core";
+ import { OverlayContainer } from "@angular/cdk/overlay";
++import { Service } from "@angular/core";
+ 
+ @Service()
+@@ -16,7 +16,7 @@ export class SceneOverlayContainer extends OverlayContainer {
+     container.classList.add("scene-overlay-container");
+ 
+-    this._document
+-      .querySelector("#scene-content-container")
+-      ?.appendChild(container);
++    this._document.querySelector("#scene-content-container")?.appendChild(
++      container,
++    );
+     this._containerElement = container;
+   }
+
+
+--- reference/docs/scenes/src/app/scene-viewer/scene-viewer.ts
++++ formatter/docs/scenes/src/app/scene-viewer/scene-viewer.ts
+@@ -9,13 +9,13 @@
+ import {
+   Component,
++  inject,
+   Input,
+   OnInit,
++  viewChild,
+   ViewContainerRef,
+   ViewEncapsulation,
+-  viewChild,
+-  inject,
+ } from "@angular/core";
+-import { ActivatedRoute } from "@angular/router";
+ import { DomSanitizer, SafeStyle } from "@angular/platform-browser";
++import { ActivatedRoute } from "@angular/router";
+ 
+ @Component({
+
+
+--- reference/docs/scenes/src/app/scenes/autocomplete/autocomplete-scene.ts
++++ formatter/docs/scenes/src/app/scenes/autocomplete/autocomplete-scene.ts
+@@ -10,11 +10,11 @@ import {
+   AfterViewInit,
+   Component,
+-  ViewEncapsulation,
+   viewChild,
++  ViewEncapsulation,
+ } from "@angular/core";
+ import { FormControl, FormsModule, ReactiveFormsModule } from "@angular/forms";
++import { MatAutocompleteModule } from "@angular/material/autocomplete";
+ import { MatFormFieldModule } from "@angular/material/form-field";
+ import { MatInput, MatInputModule } from "@angular/material/input";
+-import { MatAutocompleteModule } from "@angular/material/autocomplete";
+ 
+ @Component({
+
+
+--- reference/docs/scenes/src/app/scenes/badge/badge-scene.ts
++++ formatter/docs/scenes/src/app/scenes/badge/badge-scene.ts
+@@ -8,6 +8,6 @@
+ 
+ import { Component, ViewEncapsulation } from "@angular/core";
+-import { MatIconModule } from "@angular/material/icon";
+ import { MatBadgeModule } from "@angular/material/badge";
++import { MatIconModule } from "@angular/material/icon";
+ 
+ @Component({
+
+
+--- reference/docs/scenes/src/app/scenes/bottom-sheet/bottom-sheet-scene.ts
++++ formatter/docs/scenes/src/app/scenes/bottom-sheet/bottom-sheet-scene.ts
+@@ -10,6 +10,6 @@ import {
+   AfterViewInit,
+   Component,
+-  ViewEncapsulation,
+   inject,
++  ViewEncapsulation,
+ } from "@angular/core";
+ import { MatBottomSheet } from "@angular/material/bottom-sheet";
+
+
+--- reference/docs/scenes/src/app/scenes/dialog/dialog-scene.ts
++++ formatter/docs/scenes/src/app/scenes/dialog/dialog-scene.ts
+@@ -7,5 +7,5 @@
+  */
+ 
+-import { Component, ViewEncapsulation, inject } from "@angular/core";
++import { Component, inject, ViewEncapsulation } from "@angular/core";
+ import { MatButtonModule } from "@angular/material/button";
+ import { MatDialog, MatDialogModule } from "@angular/material/dialog";
+@@ -30,5 +30,6 @@ export class DialogScene {
+ @Component({
+   selector: "app-dialog-scene-example-dialog",
+-  template: ` <div mat-dialog-content>Discard draft?</div>
++  template: `
++    <div mat-dialog-content>Discard draft?</div>
+     <div mat-dialog-actions>
+       <button mat-button mat-dialog-close>Cancel</button>
+
+
+--- reference/docs/scenes/src/app/scenes/divider/divider-scene.ts
++++ formatter/docs/scenes/src/app/scenes/divider/divider-scene.ts
+@@ -8,7 +8,7 @@
+ 
+ import { Component, ViewEncapsulation } from "@angular/core";
++import { MatDividerModule } from "@angular/material/divider";
+ import { MatIconModule } from "@angular/material/icon";
+ import { MatListModule } from "@angular/material/list";
+-import { MatDividerModule } from "@angular/material/divider";
+ 
+ @Component({
+
+
+--- reference/docs/scenes/src/app/scenes/form-field/form-field-scene.ts
++++ formatter/docs/scenes/src/app/scenes/form-field/form-field-scene.ts
+@@ -8,7 +8,7 @@
+ 
+ import { Component, ViewEncapsulation } from "@angular/core";
++import { MatFormFieldModule } from "@angular/material/form-field";
+ import { MatIconModule } from "@angular/material/icon";
+ import { MatInputModule } from "@angular/material/input";
+-import { MatFormFieldModule } from "@angular/material/form-field";
+ 
+ @Component({
+
+
+--- reference/docs/scenes/src/app/scenes/list/list-scene.ts
++++ formatter/docs/scenes/src/app/scenes/list/list-scene.ts
+@@ -8,6 +8,6 @@
+ 
+ import { Component, ViewEncapsulation } from "@angular/core";
+-import { MatListModule } from "@angular/material/list";
+ import { MatIconModule } from "@angular/material/icon";
++import { MatListModule } from "@angular/material/list";
+ 
+ @Component({
+
+
+--- reference/docs/scenes/src/app/scenes/menu/menu-scene.ts
++++ formatter/docs/scenes/src/app/scenes/menu/menu-scene.ts
+@@ -10,6 +10,6 @@ import {
+   AfterViewInit,
+   Component,
+-  ViewEncapsulation,
+   viewChild,
++  ViewEncapsulation,
+ } from "@angular/core";
+ import { MatButtonModule } from "@angular/material/button";
+
+
+--- reference/docs/scenes/src/app/scenes/ripples/ripples-scene.ts
++++ formatter/docs/scenes/src/app/scenes/ripples/ripples-scene.ts
+@@ -10,6 +10,6 @@ import {
+   AfterViewInit,
+   Component,
+-  ViewEncapsulation,
+   viewChild,
++  ViewEncapsulation,
+ } from "@angular/core";
+ import { MatButtonModule } from "@angular/material/button";
+
+
+--- reference/docs/scenes/src/app/scenes/select/select-scene.ts
++++ formatter/docs/scenes/src/app/scenes/select/select-scene.ts
+@@ -10,10 +10,10 @@ import {
+   AfterViewInit,
+   Component,
+-  ViewEncapsulation,
+   viewChild,
++  ViewEncapsulation,
+ } from "@angular/core";
++import { MatOptionModule } from "@angular/material/core";
+ import { MatFormFieldModule } from "@angular/material/form-field";
+ import { MatSelect, MatSelectModule } from "@angular/material/select";
+-import { MatOptionModule } from "@angular/material/core";
+ 
+ @Component({
+
+
+--- reference/docs/scenes/src/app/scenes/sidenav/sidenav-scene.ts
++++ formatter/docs/scenes/src/app/scenes/sidenav/sidenav-scene.ts
+@@ -9,6 +9,6 @@
+ import { Component, ViewEncapsulation } from "@angular/core";
+ import { MatIconModule } from "@angular/material/icon";
+-import { MatSidenavModule } from "@angular/material/sidenav";
+ import { MatListModule } from "@angular/material/list";
++import { MatSidenavModule } from "@angular/material/sidenav";
+ 
+ @Component({
+
+
+--- reference/docs/scenes/src/app/scenes/snack-bar/snack-bar-scene.ts
++++ formatter/docs/scenes/src/app/scenes/snack-bar/snack-bar-scene.ts
+@@ -7,10 +7,10 @@
+  */
+ 
+-import { Component, ViewEncapsulation, inject } from "@angular/core";
++import { Component, inject, ViewEncapsulation } from "@angular/core";
+ import { MatSnackBar } from "@angular/material/snack-bar";
+ 
+ @Component({
+   selector: "app-snack-bar-scene",
+-  template: '<div class="docs-scene-snackbar-background"></div>',
++  template: "<div class=\"docs-scene-snackbar-background\"></div>",
+   styleUrls: ["./snack-bar-scene.scss"],
+   encapsulation: ViewEncapsulation.None,
+
+
+--- reference/docs/scenes/src/app/scenes/stepper/stepper-scene.ts
++++ formatter/docs/scenes/src/app/scenes/stepper/stepper-scene.ts
+@@ -8,7 +8,7 @@
+ 
+ import { Component, ViewEncapsulation } from "@angular/core";
+-import { MatStepperModule } from "@angular/material/stepper";
+-import { MatInputModule } from "@angular/material/input";
+ import { MatFormFieldModule } from "@angular/material/form-field";
++import { MatInputModule } from "@angular/material/input";
++import { MatStepperModule } from "@angular/material/stepper";
+ 
+ @Component({
+
+
+--- reference/docs/scenes/src/app/scenes/timepicker/timepicker-scene.ts
++++ formatter/docs/scenes/src/app/scenes/timepicker/timepicker-scene.ts
+@@ -16,6 +16,6 @@ import { MatFormFieldModule } from "@angular/material/form-field";
+ import { MatInputModule } from "@angular/material/input";
+ import {
+-  MatTimepickerModule,
+   MatTimepicker,
++  MatTimepickerModule,
+ } from "@angular/material/timepicker";
+ 
+
+
+--- reference/docs/scenes/src/app/scenes/tooltip/tooltip-scene.ts
++++ formatter/docs/scenes/src/app/scenes/tooltip/tooltip-scene.ts
+@@ -8,12 +8,12 @@
+ 
+ import {
+-  Component,
+   AfterViewInit,
+-  ViewEncapsulation,
++  Component,
+   viewChild,
++  ViewEncapsulation,
+ } from "@angular/core";
+ import { MatButtonModule } from "@angular/material/button";
+-import { MatTooltipModule, MatTooltip } from "@angular/material/tooltip";
+ import { MatIconModule } from "@angular/material/icon";
++import { MatTooltip, MatTooltipModule } from "@angular/material/tooltip";
+ 
+ @Component({
+
+
+--- reference/docs/scenes/src/app/scenes/tree/tree-scene.ts
++++ formatter/docs/scenes/src/app/scenes/tree/tree-scene.ts
+@@ -7,13 +7,13 @@
+  */
+ 
++import { FlatTreeControl } from "@angular/cdk/tree";
+ import { Component } from "@angular/core";
++import { MatButtonModule } from "@angular/material/button";
+ import { MatIconModule } from "@angular/material/icon";
+ import {
+-  MatTreeModule,
+   MatTreeFlatDataSource,
+   MatTreeFlattener,
++  MatTreeModule,
+ } from "@angular/material/tree";
+-import { FlatTreeControl } from "@angular/cdk/tree";
+-import { MatButtonModule } from "@angular/material/button";
+ 
+ type IconType = "folder" | "text_snippet";
+
+
+--- reference/docs/scenes/src/main.ts
++++ formatter/docs/scenes/src/main.ts
+@@ -7,14 +7,14 @@
+  */
+ 
+-import { AppComponent } from "./app/app.component";
++import { OverlayContainer } from "@angular/cdk/overlay";
+ import {
+-  provideNativeDateAdapter,
+   MATERIAL_ANIMATIONS,
++  provideNativeDateAdapter,
+ } from "@angular/material/core";
+-import { routes } from "./app/app-routes";
+ import { bootstrapApplication } from "@angular/platform-browser";
+-import { SceneOverlayContainer } from "./app/scene-overlay-container";
+-import { OverlayContainer } from "@angular/cdk/overlay";
+ import { provideRouter } from "@angular/router";
++import { routes } from "./app/app-routes";
++import { AppComponent } from "./app/app.component";
++import { SceneOverlayContainer } from "./app/scene-overlay-container";
+ 
+ bootstrapApplication(AppComponent, {
+
+
+--- reference/docs/src/app/material-docs-app.ts
++++ formatter/docs/src/app/material-docs-app.ts
+@@ -10,24 +10,24 @@ import {
+   ChangeDetectionStrategy,
+   Component,
++  inject,
+   OnDestroy,
+   ViewEncapsulation,
+-  inject,
+ } from "@angular/core";
+ 
+-import { AnalyticsService } from "./shared/analytics/analytics";
+-import { NavigationFocusService } from "./shared/navigation-focus/navigation-focus.service";
++import { NavigationEnd, Router, RouterOutlet } from "@angular/router";
+ import { Subscription } from "rxjs";
+ import { filter, map, pairwise, startWith } from "rxjs/operators";
+-import { NavigationEnd, Router, RouterOutlet } from "@angular/router";
+-import { NavBar } from "./shared/navbar/navbar";
++import { AnalyticsService } from "./shared/analytics/analytics";
+ import { CookiePopup } from "./shared/cookie-popup/cookie-popup";
+ import { HeaderTagManager } from "./shared/header-tag-manager";
++import { NavBar } from "./shared/navbar/navbar";
++import { NavigationFocusService } from "./shared/navigation-focus/navigation-focus.service";
+ 
+ @Component({
+   selector: "material-docs-app",
+   template: `
+-    <app-cookie-popup />
+-    <app-navbar />
+-    <router-outlet />
++    <app-cookie-popup/>
++    <app-navbar/>
++    <router-outlet/>
+   `,
+   styleUrls: ["./material-docs-app.scss"],
+

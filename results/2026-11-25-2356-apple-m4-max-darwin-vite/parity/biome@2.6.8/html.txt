@@ -1,0 +1,683 @@
+# 100 of 158 files differ from prettier@3.10.1
+packages/create-vite/template-lit/index.html
+packages/create-vite/template-lit-ts/index.html
+packages/create-vite/template-preact/index.html
+packages/create-vite/template-preact-ts/index.html
+packages/create-vite/template-qwik/index.html
+packages/create-vite/template-qwik-ts/index.html
+packages/create-vite/template-react/index.html
+packages/create-vite/template-react-ts/index.html
+packages/create-vite/template-solid/index.html
+packages/create-vite/template-solid-ts/index.html
+packages/create-vite/template-svelte/index.html
+packages/create-vite/template-svelte-ts/index.html
+packages/create-vite/template-vanilla/index.html
+packages/create-vite/template-vanilla-ts/index.html
+packages/create-vite/template-vue/index.html
+packages/create-vite/template-vue-ts/index.html
+packages/vite/src/node/__tests__/plugins/fixtures/license/index.html
+packages/vite/src/node/server/middlewares/__tests__/fixtures/root/index.html
+playground/alias/index.html
+playground/assets/index.html
+playground/assets-sanitize/index.html
+playground/backend-integration/frontend/entrypoints/index.html
+playground/base-conflict/index.html
+playground/build-old/index.html
+playground/chunk-importmap/index.html
+playground/client-reload/index.html
+playground/csp/index.html
+playground/css/index.html
+playground/css/treeshake-scoped/index.html
+playground/css-codesplit/shared-css-no-js.html
+playground/css-codesplit/shared-css-with-js.html
+playground/css-lightningcss/index.html
+playground/css-no-codesplit/index.html
+playground/css-no-codesplit/sub.html
+playground/css-sourcemap/index.html
+playground/data-uri/index.html
+playground/define/index.html
+playground/devtools/index.html
+playground/dynamic-import/index.html
+playground/env/index.html
+playground/env-nested/index.html
+playground/environment-react-ssr/index.html
+playground/extensions/index.html
+playground/external/index.html
+playground/fs-serve/root/src/index.html
+playground/glob-import/root/index.html
+playground/hmr/css-deps/index.html
+playground/hmr/css-style/index.html
+playground/hmr/index.html
+playground/hmr-root/root/index.html
+playground/html/a á.html
+playground/html/emptyAttr.html
+playground/html/env.html
+playground/html/foo.html
+playground/html/importmapOrder.html
+playground/html/index.html
+playground/html/link-props/index.html
+playground/html/link.html
+playground/html/malformed-url.html
+playground/html/nested/index.html
+playground/html/noBody.html
+playground/html/noHead.html
+playground/html/protocol-relative.html
+playground/html/scriptAsync.html
+playground/html/scriptMixed.html
+playground/html/transform-inline-js.html
+playground/html/write.html
+playground/html/zeroJS.html
+playground/import-attribute/index.html
+playground/json/index.html
+playground/legacy/modern-target.html
+playground/legacy/no-polyfills-no-systemjs.html
+playground/legacy/no-polyfills.html
+playground/lib/index.dist.html
+playground/lib/index.html
+playground/minify/index.html
+playground/module-graph/index.html
+playground/nested-deps/index.html
+playground/optimize-deps/index.html
+playground/optimize-deps-no-discovery/index.html
+playground/optimize-missing-deps/index.html
+playground/preload/index.html
+playground/preserve-symlinks/index.html
+playground/proxy-bypass/index.html
+playground/proxy-hmr/index.html
+playground/resolve/index.html
+playground/resolve-tsconfig-paths/index.html
+playground/ssr/index.html
+playground/ssr-conditions/index.html
+playground/ssr-deps/index.html
+playground/ssr-html/index.html
+playground/ssr-html/trailing-slash/dir/index.html
+playground/ssr-noexternal/index.html
+playground/tailwind/index.html
+playground/tailwind-sourcemap/index.html
+playground/tailwind-v3/index.html
+playground/tsconfig-json/index.html
+playground/tsconfig-json-load-error/index.html
+playground/wasm/index.html
+playground/worker/index.html
+
+# The first 25, reference first
+
+--- reference/packages/create-vite/template-lit/index.html
++++ formatter/packages/create-vite/template-lit/index.html
+@@ -2,9 +2,9 @@
+ <html lang="en">
+   <head>
+-    <meta charset="UTF-8" />
+-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <meta charset="UTF-8">
++    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Vite + Lit</title>
+-    <link rel="stylesheet" href="./src/index.css" />
++    <link rel="stylesheet" href="./src/index.css">
+     <script type="module" src="/src/my-element.js"></script>
+   </head>
+
+
+--- reference/packages/create-vite/template-lit-ts/index.html
++++ formatter/packages/create-vite/template-lit-ts/index.html
+@@ -2,9 +2,9 @@
+ <html lang="en">
+   <head>
+-    <meta charset="UTF-8" />
+-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <meta charset="UTF-8">
++    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Vite + Lit + TS</title>
+-    <link rel="stylesheet" href="./src/index.css" />
++    <link rel="stylesheet" href="./src/index.css">
+     <script type="module" src="/src/my-element.ts"></script>
+   </head>
+
+
+--- reference/packages/create-vite/template-preact/index.html
++++ formatter/packages/create-vite/template-preact/index.html
+@@ -2,7 +2,7 @@
+ <html lang="en">
+   <head>
+-    <meta charset="UTF-8" />
+-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <meta charset="UTF-8">
++    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Vite + Preact</title>
+   </head>
+
+
+--- reference/packages/create-vite/template-preact-ts/index.html
++++ formatter/packages/create-vite/template-preact-ts/index.html
+@@ -2,7 +2,7 @@
+ <html lang="en">
+   <head>
+-    <meta charset="UTF-8" />
+-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <meta charset="UTF-8">
++    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Vite + Preact + TS</title>
+   </head>
+
+
+--- reference/packages/create-vite/template-qwik/index.html
++++ formatter/packages/create-vite/template-qwik/index.html
+@@ -2,7 +2,7 @@
+ <html lang="en">
+   <head>
+-    <meta charset="UTF-8" />
+-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <meta charset="UTF-8">
++    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Vite + Qwik</title>
+   </head>
+
+
+--- reference/packages/create-vite/template-qwik-ts/index.html
++++ formatter/packages/create-vite/template-qwik-ts/index.html
+@@ -2,7 +2,7 @@
+ <html lang="en">
+   <head>
+-    <meta charset="UTF-8" />
+-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <meta charset="UTF-8">
++    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Vite + Qwik + TS</title>
+   </head>
+
+
+--- reference/packages/create-vite/template-react/index.html
++++ formatter/packages/create-vite/template-react/index.html
+@@ -2,7 +2,7 @@
+ <html lang="en">
+   <head>
+-    <meta charset="UTF-8" />
+-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <meta charset="UTF-8">
++    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Vite + React</title>
+   </head>
+
+
+--- reference/packages/create-vite/template-react-ts/index.html
++++ formatter/packages/create-vite/template-react-ts/index.html
+@@ -2,7 +2,7 @@
+ <html lang="en">
+   <head>
+-    <meta charset="UTF-8" />
+-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <meta charset="UTF-8">
++    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Vite + React + TS</title>
+   </head>
+
+
+--- reference/packages/create-vite/template-solid/index.html
++++ formatter/packages/create-vite/template-solid/index.html
+@@ -2,7 +2,7 @@
+ <html lang="en">
+   <head>
+-    <meta charset="UTF-8" />
+-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <meta charset="UTF-8">
++    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Vite + Solid</title>
+   </head>
+
+
+--- reference/packages/create-vite/template-solid-ts/index.html
++++ formatter/packages/create-vite/template-solid-ts/index.html
+@@ -2,7 +2,7 @@
+ <html lang="en">
+   <head>
+-    <meta charset="UTF-8" />
+-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <meta charset="UTF-8">
++    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Vite + Solid + TS</title>
+   </head>
+
+
+--- reference/packages/create-vite/template-svelte/index.html
++++ formatter/packages/create-vite/template-svelte/index.html
+@@ -2,7 +2,7 @@
+ <html lang="en">
+   <head>
+-    <meta charset="UTF-8" />
+-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <meta charset="UTF-8">
++    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Vite + Svelte</title>
+   </head>
+
+
+--- reference/packages/create-vite/template-svelte-ts/index.html
++++ formatter/packages/create-vite/template-svelte-ts/index.html
+@@ -2,7 +2,7 @@
+ <html lang="en">
+   <head>
+-    <meta charset="UTF-8" />
+-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <meta charset="UTF-8">
++    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Vite + Svelte + TS</title>
+   </head>
+
+
+--- reference/packages/create-vite/template-vanilla/index.html
++++ formatter/packages/create-vite/template-vanilla/index.html
+@@ -2,7 +2,7 @@
+ <html lang="en">
+   <head>
+-    <meta charset="UTF-8" />
+-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <meta charset="UTF-8">
++    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Vite + JS</title>
+   </head>
+
+
+--- reference/packages/create-vite/template-vanilla-ts/index.html
++++ formatter/packages/create-vite/template-vanilla-ts/index.html
+@@ -2,7 +2,7 @@
+ <html lang="en">
+   <head>
+-    <meta charset="UTF-8" />
+-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <meta charset="UTF-8">
++    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Vite + TS</title>
+   </head>
+
+
+--- reference/packages/create-vite/template-vue/index.html
++++ formatter/packages/create-vite/template-vue/index.html
+@@ -2,7 +2,7 @@
+ <html lang="en">
+   <head>
+-    <meta charset="UTF-8" />
+-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <meta charset="UTF-8">
++    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Vite + Vue</title>
+   </head>
+
+
+--- reference/packages/create-vite/template-vue-ts/index.html
++++ formatter/packages/create-vite/template-vue-ts/index.html
+@@ -2,7 +2,7 @@
+ <html lang="en">
+   <head>
+-    <meta charset="UTF-8" />
+-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <meta charset="UTF-8">
++    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Vite + Vue + TS</title>
+   </head>
+
+
+--- reference/packages/vite/src/node/__tests__/plugins/fixtures/license/index.html
++++ formatter/packages/vite/src/node/__tests__/plugins/fixtures/license/index.html
+@@ -1,6 +1,6 @@
+ <script type="module">
+-  import dep1 from "@vitejs/test-dep-licence-cc0";
+-  import dep2 from "@vitejs/test-dep-license-mit";
+-  import dep3 from "@vitejs/test-dep-license-type-marker";
+-  console.log(dep1, dep2, dep3);
++import dep1 from "@vitejs/test-dep-licence-cc0";
++import dep2 from "@vitejs/test-dep-license-mit";
++import dep3 from "@vitejs/test-dep-license-type-marker";
++console.log(dep1, dep2, dep3);
+ </script>
+
+
+--- reference/packages/vite/src/node/server/middlewares/__tests__/fixtures/root/index.html
++++ formatter/packages/vite/src/node/server/middlewares/__tests__/fixtures/root/index.html
+@@ -2,5 +2,5 @@
+ <html>
+   <head>
+-    <meta charset="UTF-8" />
++    <meta charset="UTF-8">
+     <title>Test Index HTML</title>
+   </head>
+@@ -8,5 +8,5 @@
+     <div id="app"></div>
+     <script type="module">
+-      console.log("test module loaded");
++    console.log("test module loaded");
+     </script>
+   </body>
+
+
+--- reference/playground/alias/index.html
++++ formatter/playground/alias/index.html
+@@ -13,45 +13,45 @@
+ 
+ <script type="module">
+-  // no node: protocol intentionally
+-  import { msg as fsMsg } from "fs";
+-  import { msg as fsDirMsg } from "fs-dir/test";
+-  import { msg as regexMsg } from "regex/test";
+-  import { msg as depMsg } from "dep";
+-  import { msg as moduleMsg } from "aliased-module/index.js";
+-  import { msg as urlConflictMsg } from "//url_conflict.js";
+-  import { msg as customResolverMsg } from "custom-resolver";
+-
+-  function text(el, text) {
+-    document.querySelector(el).textContent = text;
+-  }
+-
+-  text(".fs", fsMsg);
+-  text(".fs-dir", fsDirMsg);
+-  text(".regex", regexMsg + " via regex");
+-  text(".dep", depMsg);
+-  text(".aliased-module", moduleMsg);
+-  text(".url-conflict", urlConflictMsg);
+-  text(".custom-resolver", customResolverMsg);
+-
+-  import { createApp } from "vue";
+-  import { ref } from "foo";
+-  // vue is aliased to the full browser build AND optimized.
+-  // should resolve as expected
+-  createApp({
+-    template: "[{{ msg }}] alias optimized dep",
+-    setup() {
+-      return {
+-        msg: ref("success"),
+-      };
+-    },
+-  }).mount(".optimized");
+-
+-  // aliased to an absolute URL in CJS, should be optimized
+-  import { isFunction } from "@vue/shared";
+-  // also check name clash for aliased deps
+-  export { isFunction } from "@vue/shared";
+-  console.log(isFunction(() => {}));
++// no node: protocol intentionally
++import { msg as fsMsg } from "fs";
++import { msg as fsDirMsg } from "fs-dir/test";
++import { msg as regexMsg } from "regex/test";
++import { msg as depMsg } from "dep";
++import { msg as moduleMsg } from "aliased-module/index.js";
++import { msg as urlConflictMsg } from "//url_conflict.js";
++import { msg as customResolverMsg } from "custom-resolver";
++
++function text(el, text) {
++  document.querySelector(el).textContent = text;
++}
++
++text(".fs", fsMsg);
++text(".fs-dir", fsDirMsg);
++text(".regex", regexMsg + " via regex");
+... 29 more lines
+
+--- reference/playground/assets/index.html
++++ formatter/playground/assets/index.html
+@@ -1,9 +1,8 @@
+ <!doctype html>
+-
+ <head>
+-  <meta charset="UTF-8" />
+-  <link class="ico" rel="icon" type="image/svg+xml" href="favicon.ico" />
+-  <link rel="manifest" href="manifest.json" />
+-  <link rel="modulepreload" href="preload-module.js" />
++  <meta charset="UTF-8">
++  <link class="ico" rel="icon" type="image/svg+xml" href="favicon.ico">
++  <link rel="manifest" href="manifest.json">
++  <link rel="modulepreload" href="preload-module.js">
+   <link
+     class="preload-href"
+@@ -11,5 +10,5 @@
+     as="image"
+     href="./nested/preload-asset.png"
+-  />
++  >
+   <link
+     class="preload-imagesrcset"
+@@ -17,19 +16,11 @@
+     as="image"
+     imagesrcset="./nested/preload-asset.png 1x, ./nested/preload-asset.png 2x"
+-  />
+-  <link
+-    class="prefetch-href"
+-    rel="prefetch"
+-    href="./nested/preload-asset.png"
+-  />
+-  <meta
+-    class="meta-og-image"
+-    property="og:image"
+-    content="./nested/asset.png"
+-  />
++  >
++  <link class="prefetch-href" rel="prefetch" href="./nested/preload-asset.png">
++  <meta class="meta-og-image" property="og:image" content="./nested/asset.png">
+ </head>
+ 
+-<link class="data-href" rel="icon" href="data:," />
+-<link rel="stylesheet" href="/raw.css" />
++<link class="data-href" rel="icon" href="data:,">
++<link rel="stylesheet" href="/raw.css">
+ 
+ <h1>Assets</h1>
+@@ -127,6 +118,6 @@
+   style="
+     background-image: -webkit-image-set(
+-      &quot;./nested/asset.png&quot; type(&quot;image/png&quot;) 1x,
+-      &quot;./nested/asset.png&quot; type(&quot;image/png&quot;) 2x
++      './nested/asset.png' type('image/png') 1x,
++      './nested/asset.png' type('image/png') 2x
+     );
+     background-size: 10px;
+@@ -141,6 +132,5 @@
+   style="
+     background-image:
+... 771 more lines
+
+--- reference/playground/assets-sanitize/index.html
++++ formatter/playground/assets-sanitize/index.html
+@@ -1,9 +1,9 @@
+ <script type="module" src="./index.js"></script>
+ <style>
+-  .test-el {
+-    background-repeat: no-repeat;
+-    padding-left: 2rem;
+-    margin-bottom: 1rem;
+-  }
++.test-el {
++  background-repeat: no-repeat;
++  padding-left: 2rem;
++  margin-bottom: 1rem;
++}
+ </style>
+ <h3>test elements below should show circles and their url</h3>
+@@ -16,25 +16,25 @@
+ 
+ <script type="module">
+-  // .env, denied by default. See fs-serve playground for other fs tests
+-  // these checks ensure that a project without a custom root respects fs.deny
++// .env, denied by default. See fs-serve playground for other fs tests
++// these checks ensure that a project without a custom root respects fs.deny
+ 
+-  fetch("/.env")
+-    .then((r) => {
+-      text(".unsafe-dotenv", r.status);
+-    })
+-    .catch((e) => {
+-      console.error(e);
+-    });
++fetch("/.env")
++  .then((r) => {
++    text(".unsafe-dotenv", r.status);
++  })
++  .catch((e) => {
++    console.error(e);
++  });
+ 
+-  fetch(window.location + "/.env")
+-    .then((r) => {
+-      text(".unsafe-dotenv-double-slash", r.status);
+-    })
+-    .catch((e) => {
+-      console.error(e);
+-    });
++fetch(window.location + "/.env")
++  .then((r) => {
++    text(".unsafe-dotenv-double-slash", r.status);
++  })
++  .catch((e) => {
++    console.error(e);
++  });
+ 
+-  function text(el, text) {
+-    document.querySelector(el).textContent = text;
+-  }
++function text(el, text) {
++  document.querySelector(el).textContent = text;
+... 3 more lines
+
+--- reference/playground/backend-integration/frontend/entrypoints/index.html
++++ formatter/playground/backend-integration/frontend/entrypoints/index.html
+@@ -1,5 +1,4 @@
+ <!doctype html>
+-
+-<link rel="stylesheet" href="/global.css" />
++<link rel="stylesheet" href="/global.css">
+ 
+ <h1 class="text-black">Backend Integration</h1>
+@@ -39,23 +38,23 @@
+ <script type="module" src="./nested/sub.ts"></script>
+ <script type="module">
+-  import "./global.css";
+-
+-  // Importing a file outside the `root` should provide an @fs path.
+-  import outsideRootUrl from "~/images/logo.png";
+-  setAssetReference(".outside-root", outsideRootUrl);
+-
+-  // Helper: Allows to test the URL content as well as the request being served.
+-  function setAssetReference(elSelector, url) {
+-    const text = document.createElement("code");
+-    text.classList.add("asset-url");
+-    text.textContent = url;
+-
+-    const img = document.createElement("img");
+-    img.classList.add("asset-preview");
+-    img.src = url;
+-
+-    const el = document.querySelector(`.asset-reference${elSelector}`);
+-    el.appendChild(img);
+-    el.appendChild(text);
+-  }
++import "./global.css";
++
++// Importing a file outside the `root` should provide an @fs path.
++import outsideRootUrl from "~/images/logo.png";
++setAssetReference(".outside-root", outsideRootUrl);
++
++// Helper: Allows to test the URL content as well as the request being served.
++function setAssetReference(elSelector, url) {
++  const text = document.createElement("code");
++  text.classList.add("asset-url");
++  text.textContent = url;
++
++  const img = document.createElement("img");
++  img.classList.add("asset-preview");
++  img.src = url;
++
++  const el = document.querySelector(`.asset-reference${elSelector}`);
++  el.appendChild(img);
++  el.appendChild(text);
++}
+ </script>
+
+
+--- reference/playground/base-conflict/index.html
++++ formatter/playground/base-conflict/index.html
+@@ -2,5 +2,5 @@
+ <html lang="en">
+   <head>
+-    <meta charset="UTF-8" />
++    <meta charset="UTF-8">
+     <title>Base Conflict</title>
+   </head>
+
+
+--- reference/playground/build-old/index.html
++++ formatter/playground/build-old/index.html
+@@ -11,20 +11,20 @@
+ 
+ <script type="module">
+-  text(".import-meta-url", typeof import.meta.url);
++text(".import-meta-url", typeof import.meta.url);
+ 
+-  import("./dynamic.js").then((m) => {
+-    text(".dynamic-import", m.default);
+-  });
++import("./dynamic.js").then((m) => {
++  text(".dynamic-import", m.default);
++});
+ 
+-  class PrivateField {
+-    #privateField = "private";
+-    get val() {
+-      return this.#privateField;
+-    }
++class PrivateField {
++  #privateField = "private";
++  get val() {
++    return this.#privateField;
+   }
+-  text(".private-field", new PrivateField().val);
++}
++text(".private-field", new PrivateField().val);
+ 
+-  function text(el, text) {
+-    document.querySelector(el).textContent = text;
+-  }
++function text(el, text) {
++  document.querySelector(el).textContent = text;
++}
+ </script>
+
+
+--- reference/playground/chunk-importmap/index.html
++++ formatter/playground/chunk-importmap/index.html
+@@ -1,5 +1,5 @@
+ <head>
+   <script type="importmap">
+-    { "imports": { "/foo": "/bar" } }
++  { "imports": { "/foo": "/bar" } }
+   </script>
+ </head>
+

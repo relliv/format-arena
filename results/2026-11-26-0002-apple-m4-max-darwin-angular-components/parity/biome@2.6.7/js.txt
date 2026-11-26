@@ -1,0 +1,938 @@
+# 299 of 2433 files differ from prettier@3.10.1
+docs/scenes/src/app/scenes/dialog/dialog-scene.ts
+docs/src/app/material-docs-app.ts
+docs/src/app/pages/component-viewer/token-name.ts
+docs/src/app/shared/carousel/carousel.spec.ts
+docs/src/app/shared/doc-viewer/deprecated-tooltip.ts
+docs/src/app/shared/doc-viewer/header-link.ts
+docs/src/app/shared/doc-viewer/module-import-copy-button.ts
+docs/src/app/shared/stackblitz/stackblitz-writer.spec.ts
+src/aria/accordion/accordion.spec.ts
+src/aria/combobox/combobox.spec.ts
+src/aria/combobox/combobox.zone.spec.ts
+src/aria/combobox/testing/combobox-harness.spec.ts
+src/aria/grid/grid.spec.ts
+src/aria/listbox/listbox.spec.ts
+src/aria/menu/menu.spec.ts
+src/aria/private/accordion/accordion.spec.ts
+src/aria/private/accordion/accordion.ts
+src/aria/private/behaviors/event-manager/event-manager.ts
+src/aria/private/behaviors/list-navigation/list-navigation.ts
+src/aria/private/behaviors/list-selection/list-selection.ts
+src/aria/private/behaviors/list-typeahead/list-typeahead.ts
+src/aria/private/behaviors/tree/tree.ts
+src/aria/private/deferred-content/deferred-content.spec.ts
+src/aria/private/grid/grid.spec.ts
+src/aria/private/grid/grid.ts
+src/aria/private/listbox/option.ts
+src/aria/private/menu/menu.ts
+src/aria/private/tabs/tabs.spec.ts
+src/aria/private/tabs/tabs.ts
+src/aria/private/tree/tree.spec.ts
+src/aria/private/tree/tree.ts
+src/aria/private/utils/collection.spec.ts
+src/aria/tabs/tabs.spec.ts
+src/aria/toolbar/testing/toolbar-harness.spec.ts
+src/aria/toolbar/testing/toolbar-harness.ts
+src/aria/toolbar/toolbar.spec.ts
+src/aria/tree/testing/tree-harness.spec.ts
+src/aria/tree/tree.spec.ts
+src/cdk/a11y/aria-describer/aria-describer.spec.ts
+src/cdk/a11y/focus-monitor/focus-monitor.spec.ts
+src/cdk/a11y/focus-trap/configurable-focus-trap.spec.ts
+src/cdk/a11y/focus-trap/event-listener-inert-strategy.spec.ts
+src/cdk/a11y/focus-trap/event-listener-inert-strategy.ts
+src/cdk/a11y/focus-trap/focus-trap.spec.ts
+src/cdk/a11y/key-manager/list-key-manager.ts
+src/cdk/a11y/key-manager/noop-tree-key-manager.ts
+src/cdk/a11y/key-manager/tree-key-manager.spec.ts
+src/cdk/a11y/key-manager/tree-key-manager.ts
+src/cdk/a11y/live-announcer/live-announcer.spec.ts
+src/cdk/accordion/accordion.spec.ts
+src/cdk/clipboard/copy-to-clipboard.spec.ts
+src/cdk/collections/dispose-view-repeater-strategy.ts
+src/cdk/collections/recycle-view-repeater-strategy.ts
+src/cdk/dialog/dialog.spec.ts
+src/cdk/drag-drop/directives/drag.ts
+src/cdk/drag-drop/directives/drop-list-shared.spec.ts
+src/cdk/drag-drop/directives/drop-list.ts
+src/cdk/drag-drop/directives/mixed-drop-list.spec.ts
+src/cdk/drag-drop/directives/standalone-drag.spec.ts
+src/cdk/drag-drop/directives/standalone-drag.zone.spec.ts
+src/cdk/drag-drop/drag-ref.ts
+src/cdk/drag-drop/drop-list-ref.ts
+src/cdk/listbox/listbox.spec.ts
+src/cdk/menu/context-menu-trigger.spec.ts
+src/cdk/menu/menu-bar.spec.ts
+src/cdk/menu/menu-group.spec.ts
+src/cdk/menu/menu-item.spec.ts
+src/cdk/menu/menu-trigger.spec.ts
+src/cdk/menu/menu.spec.ts
+src/cdk/observers/observe-content.spec.ts
+src/cdk/overlay/overlay-directives.spec.ts
+src/cdk/overlay/overlay-directives.zone.spec.ts
+src/cdk/overlay/overlay.spec.ts
+src/cdk/overlay/position/connected-position.ts
+src/cdk/overlay/position/flexible-connected-position-strategy.spec.ts
+src/cdk/overlay/position/flexible-connected-position-strategy.ts
+src/cdk/overlay/position/position-strategy.ts
+src/cdk/portal/portal-directives.ts
+src/cdk/portal/portal.spec.ts
+src/cdk/portal/portal.ts
+src/cdk/schematics/update-tool/utils/parse-tsconfig.ts
+src/cdk/schematics/utils/project-main-file.ts
+src/cdk/scrolling/scroll-dispatcher.spec.ts
+src/cdk/scrolling/scroll-dispatcher.zone.spec.ts
+src/cdk/scrolling/scrollable.spec.ts
+src/cdk/scrolling/virtual-for-of.ts
+src/cdk/scrolling/virtual-scroll-viewport.spec.ts
+src/cdk/scrolling/virtual-scroll-viewport.zone.spec.ts
+src/cdk/stepper/stepper.ts
+src/cdk/table/table.spec.ts
+src/cdk/table/table.ts
+src/cdk/table/text-column.spec.ts
+src/cdk/table/text-column.ts
+src/cdk/testing/component-harness.ts
+src/cdk/testing/testbed/task-state-zone-interceptor.ts
+src/cdk/testing/tests/test-sub-component.ts
+src/cdk/text-field/autofill.spec.ts
+src/cdk/text-field/autofill.zone.spec.ts
+src/cdk/text-field/autosize.spec.ts
+src/cdk/tree/tree-using-legacy-key-manager.spec.ts
+src/cdk/tree/tree-with-tree-control.spec.ts
+src/cdk/tree/tree.spec.ts
+src/cdk-experimental/popover-edit/popover-edit.spec.ts
+src/cdk-experimental/scrolling/virtual-scroll-viewport.spec.ts
+src/cdk-experimental/selection/selection-column.ts
+src/cdk-experimental/selection/selection.spec.ts
+src/cdk-experimental/selection/selection.ts
+src/cdk-experimental/table-scroll-container/table-scroll-container.spec.ts
+src/components-examples/aria/toolbar/simple-toolbar.ts
+src/components-examples/cdk/tree/cdk-tree-custom-key-manager/cdk-tree-custom-key-manager-example.ts
+src/components-examples/material/datepicker/date-range-picker-selection-strategy/date-range-picker-selection-strategy-example.ts
+src/components-examples/material/datepicker/datepicker-custom-header/datepicker-custom-header-example.ts
+src/components-examples/material/input/input-errors-signal-form/input-errors-signal-form-example.ts
+src/components-examples/material/table/table-rowspan/table-rowspan-example.ts
+src/components-examples/material-experimental/popover-edit/popover-edit-mat-table/popover-edit-mat-table-example.ts
+src/dev-app/autocomplete/autocomplete-demo.ts
+src/dev-app/cdk-dialog/dialog-demo.ts
+src/dev-app/datepicker/datepicker-demo.ts
+src/dev-app/dialog/dialog-demo.ts
+src/dev-app/example/example-list.ts
+src/dev-app/example/example.ts
+src/dev-app/popover-edit/popover-edit-demo.ts
+src/dev-app/portal/portal-demo.ts
+src/dev-app/slider/slider-demo.ts
+src/dev-app/theme/theme-demo.ts
+src/e2e-app/components/slider-e2e.ts
+src/google-maps/deprecated-map-marker-clusterer/deprecated-map-marker-clusterer.spec.ts
+src/google-maps/google-map/google-map.spec.ts
+src/google-maps/map-advanced-marker/map-advanced-marker.spec.ts
+src/google-maps/map-advanced-marker/map-advanced-marker.ts
+src/google-maps/map-circle/map-circle.spec.ts
+src/google-maps/map-directions-renderer/map-directions-renderer.spec.ts
+src/google-maps/map-ground-overlay/map-ground-overlay.spec.ts
+src/google-maps/map-ground-overlay/map-ground-overlay.ts
+src/google-maps/map-info-window/map-info-window.spec.ts
+src/google-maps/map-kml-layer/map-kml-layer.spec.ts
+src/google-maps/map-marker/map-marker.spec.ts
+src/google-maps/map-marker-clusterer/map-marker-clusterer.spec.ts
+src/google-maps/map-polygon/map-polygon.spec.ts
+src/google-maps/map-polygon/map-polygon.ts
+src/google-maps/map-polyline/map-polyline.spec.ts
+src/google-maps/map-polyline/map-polyline.ts
+src/google-maps/map-rectangle/map-rectangle.spec.ts
+src/google-maps/map-rectangle/map-rectangle.ts
+src/google-maps/marker-utilities.ts
+src/material/autocomplete/autocomplete.spec.ts
+src/material/autocomplete/autocomplete.zone.spec.ts
+src/material/autocomplete/testing/autocomplete-harness.spec.ts
+src/material/badge/badge.spec.ts
+src/material/badge/testing/badge-harness.spec.ts
+src/material/bottom-sheet/bottom-sheet.spec.ts
+src/material/bottom-sheet/testing/bottom-sheet-harness.spec.ts
+src/material/button/button-base.ts
+src/material/button/button.spec.ts
+src/material/button/testing/button-harness-filters.ts
+src/material/button/testing/button-harness.spec.ts
+src/material/button/testing/button-harness.ts
+src/material/button-toggle/button-toggle.spec.ts
+src/material/button-toggle/button-toggle.ts
+src/material/button-toggle/testing/button-toggle-group.spec.ts
+src/material/button-toggle/testing/button-toggle-harness.spec.ts
+src/material/card/testing/card-harness.spec.ts
+src/material/checkbox/checkbox-config.ts
+src/material/checkbox/checkbox.spec.ts
+src/material/checkbox/testing/checkbox-harness.spec.ts
+src/material/chips/chip-grid.spec.ts
+src/material/chips/chip-input.spec.ts
+src/material/chips/chip-input.ts
+src/material/chips/chip-listbox.spec.ts
+src/material/chips/chip-option.spec.ts
+src/material/chips/chip-remove.spec.ts
+src/material/chips/chip-row.spec.ts
+src/material/chips/chip-set.spec.ts
+src/material/chips/chip.spec.ts
+src/material/chips/testing/chip-grid-harness.spec.ts
+src/material/chips/testing/chip-harness.spec.ts
+src/material/chips/testing/chip-input-harness.spec.ts
+src/material/chips/testing/chip-listbox-harness.spec.ts
+src/material/chips/testing/chip-listbox-harness.ts
+src/material/chips/testing/chip-option-harness.spec.ts
+src/material/chips/testing/chip-row-harness.spec.ts
+src/material/chips/tokens.ts
+src/material/core/animation/animation.ts
+src/material/core/option/option.ts
+src/material/core/ripple/ripple.spec.ts
+src/material/core/ripple/ripple.zone.spec.ts
+src/material/datepicker/calendar-body.spec.ts
+src/material/datepicker/calendar-body.ts
+src/material/datepicker/calendar-header.spec.ts
+src/material/datepicker/calendar.spec.ts
+src/material/datepicker/calendar.ts
+src/material/datepicker/date-range-input.spec.ts
+src/material/datepicker/date-range-input.ts
+src/material/datepicker/date-range-selection-strategy.ts
+src/material/datepicker/date-selection-model.ts
+src/material/datepicker/datepicker-actions.spec.ts
+src/material/datepicker/datepicker-base.ts
+src/material/datepicker/datepicker-input-base.ts
+src/material/datepicker/datepicker-input.ts
+src/material/datepicker/datepicker.spec.ts
+src/material/datepicker/month-view.spec.ts
+src/material/datepicker/multi-year-view.spec.ts
+src/material/datepicker/testing/calendar-harness.spec.ts
+src/material/datepicker/testing/date-range-input-harness.spec.ts
+src/material/datepicker/testing/datepicker-actions-harness.spec.ts
+src/material/datepicker/testing/datepicker-harness-filters.ts
+src/material/datepicker/testing/datepicker-input-harness.spec.ts
+src/material/datepicker/testing/datepicker-toggle-harness.spec.ts
+src/material/datepicker/year-view.spec.ts
+src/material/dialog/dialog.spec.ts
+src/material/dialog/dialog.zone.spec.ts
+src/material/dialog/testing/dialog-harness.spec.ts
+src/material/dialog/testing/dialog-opener.spec.ts
+src/material/dialog/testing/dialog-opener.ts
+src/material/expansion/accordion.spec.ts
+src/material/expansion/expansion.spec.ts
+src/material/expansion/testing/expansion-harness.spec.ts
+src/material/expansion/testing/expansion-harness.ts
+src/material/form-field/form-field.ts
+src/material/form-field/testing/form-field-harness.spec.ts
+src/material/grid-list/grid-list.spec.ts
+src/material/grid-list/testing/grid-list-harness.spec.ts
+src/material/icon/icon-registry.ts
+src/material/icon/icon.spec.ts
+src/material/icon/testing/icon-harness.spec.ts
+src/material/input/input.spec.ts
+src/material/input/testing/input-harness.spec.ts
+src/material/input/testing/native-select-harness-filters.ts
+src/material/input/testing/native-select-harness.spec.ts
+src/material/list/list.spec.ts
+src/material/list/selection-list.spec.ts
+src/material/list/testing/action-list-harness.ts
+src/material/list/testing/list-harness-filters.ts
+src/material/list/testing/list-harness.spec.ts
+src/material/menu/context-menu-trigger.spec.ts
+src/material/menu/menu.spec.ts
+src/material/menu/testing/context-menu-harness.spec.ts
+src/material/menu/testing/menu-harness.spec.ts
+src/material/paginator/paginator.spec.ts
+src/material/paginator/testing/paginator-harness.spec.ts
+src/material/paginator/testing/paginator-harness.ts
+src/material/progress-bar/progress-bar.ts
+src/material/progress-spinner/progress-spinner.spec.ts
+src/material/progress-spinner/testing/progress-spinner-harness.spec.ts
+src/material/radio/radio.spec.ts
+src/material/radio/radio.ts
+src/material/radio/testing/radio-harness.spec.ts
+src/material/schematics/ng-add/schema.ts
+src/material/select/select.spec.ts
+src/material/select/select.ts
+src/material/select/testing/select-harness-filters.ts
+src/material/select/testing/select-harness.spec.ts
+src/material/sidenav/drawer.spec.ts
+src/material/sidenav/sidenav.spec.ts
+src/material/sidenav/testing/sidenav-harness.spec.ts
+src/material/slide-toggle/slide-toggle.spec.ts
+src/material/slide-toggle/testing/slide-toggle-harness.spec.ts
+src/material/slide-toggle/testing/slide-toggle-harness.ts
+src/material/slider/slider.spec.ts
+src/material/slider/testing/slider-harness.spec.ts
+src/material/snack-bar/snack-bar-config.ts
+src/material/snack-bar/snack-bar.spec.ts
+src/material/snack-bar/snack-bar.zone.spec.ts
+src/material/sort/sort.spec.ts
+src/material/sort/sort.ts
+src/material/sort/testing/sort-harness.spec.ts
+src/material/stepper/stepper.spec.ts
+src/material/stepper/testing/stepper-harness.spec.ts
+src/material/table/table.spec.ts
+src/material/table/table.ts
+src/material/table/testing/table-harness.spec.ts
+src/material/table/text-column.ts
+src/material/tabs/tab-group.spec.ts
+src/material/tabs/tab-group.ts
+src/material/tabs/tab-header.spec.ts
+src/material/tabs/tab-nav-bar/tab-nav-bar.spec.ts
+src/material/tabs/tab-nav-bar/tab-nav-bar.ts
+src/material/tabs/testing/tab-group-harness.spec.ts
+src/material/tabs/testing/tab-nav-bar-harness.spec.ts
+src/material/timepicker/testing/timepicker-harness.spec.ts
+src/material/timepicker/testing/timepicker-input-harness.spec.ts
+src/material/timepicker/testing/timepicker-toggle-harness.spec.ts
+src/material/timepicker/timepicker.spec.ts
+src/material/toolbar/testing/toolbar-harness.spec.ts
+src/material/tooltip/testing/tooltip-harness.spec.ts
+src/material/tooltip/tooltip.spec.ts
+src/material/tooltip/tooltip.ts
+src/material/tooltip/tooltip.zone.spec.ts
+src/material/tree/testing/tree-harness.spec.ts
+src/material/tree/tree-using-legacy-key-manager.spec.ts
+src/material/tree/tree-using-tree-control.spec.ts
+src/material/tree/tree.spec.ts
+src/material-experimental/popover-edit/popover-edit.spec.ts
+src/material-experimental/selection/selection-column.ts
+src/universal-app/kitchen-sink/kitchen-sink.ts
+src/youtube-player/youtube-player-placeholder.ts
+src/youtube-player/youtube-player.spec.ts
+src/youtube-player/youtube-player.ts
+tools/dgeni/common/dgeni-definitions.ts
+
+# The first 25, reference first
+
+--- reference/docs/scenes/src/app/scenes/dialog/dialog-scene.ts
++++ formatter/docs/scenes/src/app/scenes/dialog/dialog-scene.ts
+@@ -30,5 +30,6 @@ export class DialogScene {
+ @Component({
+   selector: "app-dialog-scene-example-dialog",
+-  template: ` <div mat-dialog-content>Discard draft?</div>
++  template: `
++    <div mat-dialog-content>Discard draft?</div>
+     <div mat-dialog-actions>
+       <button mat-button mat-dialog-close>Cancel</button>
+
+
+--- reference/docs/src/app/material-docs-app.ts
++++ formatter/docs/src/app/material-docs-app.ts
+@@ -27,7 +27,7 @@ import { HeaderTagManager } from "./shared/header-tag-manager";
+   selector: "material-docs-app",
+   template: `
+-    <app-cookie-popup />
+-    <app-navbar />
+-    <router-outlet />
++    <app-cookie-popup/>
++    <app-navbar/>
++    <router-outlet/>
+   `,
+   styleUrls: ["./material-docs-app.scss"],
+
+
+--- reference/docs/src/app/pages/component-viewer/token-name.ts
++++ formatter/docs/src/app/pages/component-viewer/token-name.ts
+@@ -17,10 +17,9 @@ import { MatTooltip } from "@angular/material/tooltip";
+   selector: "token-name",
+   template: `
+-    <code>{{ name() }}</code>
++    <code>{{name()}}</code>
+     <button
+       mat-icon-button
+       matTooltip="Copy name to the clipboard"
+-      (click)="copy(name())"
+-    >
++      (click)="copy(name())">
+       <mat-icon>content_copy</mat-icon>
+     </button>
+
+
+--- reference/docs/src/app/shared/carousel/carousel.spec.ts
++++ formatter/docs/src/app/shared/carousel/carousel.spec.ts
+@@ -58,16 +58,17 @@ describe("HorizontalCarousel", () => {
+ @Component({
+   selector: "test-carousel",
+-  template: ` <app-carousel>
+-    @for (i of items; track i) {
+-      <div carousel-item class="docs-carousel-item-container"></div>
+-    }
+-  </app-carousel>`,
++  template: `
++    <app-carousel>
++      @for (i of items; track i) {
++        <div carousel-item class="docs-carousel-item-container"></div>
++      }
++    </app-carousel>`,
+   styles: [
+     `
+-      .docs-carousel-item-container {
+-        display: flex;
+-        width: 250px;
+-      }
+-    `,
++    .docs-carousel-item-container {
++      display: flex;
++      width: 250px;
++    }
++  `,
+   ],
+   imports: [Carousel, CarouselItem],
+
+
+--- reference/docs/src/app/shared/doc-viewer/deprecated-tooltip.ts
++++ formatter/docs/src/app/shared/doc-viewer/deprecated-tooltip.ts
+@@ -13,8 +13,5 @@ import { MatTooltip } from "@angular/material/tooltip";
+ @Component({
+   selector: "deprecated-field",
+-  template: `<div
+-    class="docs-deprecated-content"
+-    [matTooltip]="message"
+-  ></div>`,
++  template: `<div class="docs-deprecated-content" [matTooltip]="message"></div>`,
+   imports: [MatTooltip],
+   changeDetection: ChangeDetectionStrategy.Eager,
+
+
+--- reference/docs/src/app/shared/doc-viewer/header-link.ts
++++ formatter/docs/src/app/shared/doc-viewer/header-link.ts
+@@ -18,10 +18,6 @@ import { MatIcon } from "@angular/material/icon";
+   selector: "header-link",
+   template: `
+-    <a
+-      aria-label="Link to this heading"
+-      class="docs-markdown-a"
+-      [attr.aria-describedby]="example()"
+-      [href]="_fragmentUrl()"
+-    >
++    <a aria-label="Link to this heading" class="docs-markdown-a"
++      [attr.aria-describedby]="example()" [href]="_fragmentUrl()">
+       <mat-icon>link</mat-icon>
+     </a>
+
+
+--- reference/docs/src/app/shared/doc-viewer/module-import-copy-button.ts
++++ formatter/docs/src/app/shared/doc-viewer/module-import-copy-button.ts
+@@ -20,9 +20,5 @@ import { Clipboard } from "@angular/cdk/clipboard";
+   selector: "module-import-copy-button",
+   template: `
+-    <button
+-      mat-icon-button
+-      matTooltip="Copy import to the clipboard"
+-      (click)="copy()"
+-    >
++    <button mat-icon-button matTooltip="Copy import to the clipboard" (click)="copy()">
+       <mat-icon>content_copy</mat-icon>
+     </button>
+
+
+--- reference/docs/src/app/shared/stackblitz/stackblitz-writer.spec.ts
++++ formatter/docs/src/app/shared/stackblitz/stackblitz-writer.spec.ts
+@@ -78,6 +78,7 @@ describe("StackBlitzWriter", () => {
+   it("should append correct copyright", () => {
+     const year = new Date().getFullYear();
+-    expect(stackBlitzWriter._appendCopyright("test.ts", "NoContent"))
+-      .toBe(`NoContent
++    expect(
++      stackBlitzWriter._appendCopyright("test.ts", "NoContent"),
++    ).toBe(`NoContent
+ 
+ /**  Copyright ${year} Google LLC. All Rights Reserved.
+@@ -85,6 +86,7 @@ describe("StackBlitzWriter", () => {
+     can be found in the LICENSE file at https://angular.dev/license */`);
+ 
+-    expect(stackBlitzWriter._appendCopyright("test.html", "NoContent"))
+-      .toBe(`NoContent
++    expect(
++      stackBlitzWriter._appendCopyright("test.html", "NoContent"),
++    ).toBe(`NoContent
+ 
+ <!-- Copyright ${year} Google LLC. All Rights Reserved.
+
+
+--- reference/src/aria/accordion/accordion.spec.ts
++++ formatter/src/aria/accordion/accordion.spec.ts
+@@ -671,8 +671,9 @@ describe("AccordionGroup", () => {
+             [disabled]="item.disabled()"
+             [(expanded)]="item.expanded"
++          >{{ item.header }}</button>
++          <div
++            ngAccordionPanel
++            #panel="ngAccordionPanel"
+           >
+-            {{ item.header }}
+-          </button>
+-          <div ngAccordionPanel #panel="ngAccordionPanel">
+             <ng-template ngAccordionContent>
+               {{ item.content }}
+@@ -736,7 +737,11 @@ class AccordionGroupWithLoop {
+       @if (includeFirst()) {
+         <div>
+-          <button ngAccordionTrigger [panel]="panel1">Item 1 Header</button>
++          <button ngAccordionTrigger [panel]="panel1">
++            Item 1 Header
++          </button>
+           <div ngAccordionPanel #panel1="ngAccordionPanel">
+-            <ng-template ngAccordionContent> Item 1 Content </ng-template>
++            <ng-template ngAccordionContent>
++              Item 1 Content
++            </ng-template>
+           </div>
+         </div>
+@@ -744,7 +749,11 @@ class AccordionGroupWithLoop {
+       @if (includeSecond()) {
+         <div>
+-          <button ngAccordionTrigger [panel]="panel2">Item 2 Header</button>
++          <button ngAccordionTrigger [panel]="panel2">
++            Item 2 Header
++          </button>
+           <div ngAccordionPanel #panel2="ngAccordionPanel">
+-            <ng-template ngAccordionContent> Item 2 Content </ng-template>
++            <ng-template ngAccordionContent>
++              Item 2 Content
++            </ng-template>
+           </div>
+         </div>
+@@ -752,7 +761,11 @@ class AccordionGroupWithLoop {
+       @if (includeThird()) {
+         <div>
+-          <button ngAccordionTrigger [panel]="panel3">Item 3 Header</button>
++          <button ngAccordionTrigger [panel]="panel3">
++            Item 3 Header
++          </button>
+           <div ngAccordionPanel #panel3="ngAccordionPanel">
+-            <ng-template ngAccordionContent> Item 3 Content </ng-template>
++            <ng-template ngAccordionContent>
++              Item 3 Content
++            </ng-template>
+           </div>
+         </div>
+@@ -802,5 +815,7 @@ class AccordionWithNestedTrigger {}
+     <div ngAccordionGroup>
+       <button ngAccordionTrigger [panel]="panel1">Trigger</button>
+... 25 more lines
+
+--- reference/src/aria/combobox/combobox.spec.ts
++++ formatter/src/aria/combobox/combobox.spec.ts
+@@ -1604,42 +1604,45 @@ describe("Combobox", () => {
+ @Component({
+   template: `
+-    <div>
+-      <input
+-        ngCombobox
+-        #combobox="ngCombobox"
+-        placeholder="Search..."
+-        [(value)]="searchString"
+-        [(expanded)]="popupExpanded"
+-        [readonly]="readonly()"
+-        [disabled]="disabled()"
+-        [softDisabled]="softDisabled()"
+-        [alwaysExpanded]="alwaysExpanded()"
+-        [tabindex]="tabIndex()"
+-        (focusout)="onBlur()"
+-        (click)="popupExpanded.set(true)"
+-      />
+-
+-      <ng-template ngComboboxPopup [combobox]="combobox">
++<div>
++  <input
++    ngCombobox
++    #combobox="ngCombobox"
++    placeholder="Search..."
++    [(value)]="searchString"
++    [(expanded)]="popupExpanded"
++    [readonly]="readonly()"
++    [disabled]="disabled()"
++    [softDisabled]="softDisabled()"
++    [alwaysExpanded]="alwaysExpanded()"
++    [tabindex]="tabIndex()"
++    (focusout)="onBlur()"
++    (click)="popupExpanded.set(true)"
++  />
++
++  <ng-template ngComboboxPopup [combobox]="combobox">
++    <div
++      ngComboboxWidget
++      #listbox="ngListbox"
++      ngListbox
++      id="listbox"
++      focusMode="activedescendant"
++      selectionMode="explicit"
++      [(value)]="value"
++      (valueChange)="valueChanges.push($event)"
++      (click)="onCommit()"
++      (keydown.enter)="onCommit()"
++      [activeDescendant]="listbox.activeDescendant()">
++      @for (option of options(); track option) {
+         <div
+-          ngComboboxWidget
+-          #listbox="ngListbox"
+-          ngListbox
+-          id="listbox"
+-          focusMode="activedescendant"
+-          selectionMode="explicit"
+-          [(value)]="value"
+... 502 more lines
+
+--- reference/src/aria/combobox/combobox.zone.spec.ts
++++ formatter/src/aria/combobox/combobox.zone.spec.ts
+@@ -94,14 +94,7 @@ describe("Combobox Zone.js integration", () => {
+       />
+       <ng-template ngComboboxPopup [combobox]="combobox">
+-        <ul
+-          ngListbox
+-          ngComboboxWidget
+-          #listbox="ngListbox"
+-          [activeDescendant]="listbox.activeDescendant()"
+-          focusMode="activedescendant"
+-          selectionMode="explicit"
+-        >
++        <ul ngListbox ngComboboxWidget #listbox="ngListbox" [activeDescendant]="listbox.activeDescendant()" focusMode="activedescendant" selectionMode="explicit">
+           @for (option of options(); track option) {
+-            <li ngOption [value]="option">{{ option }}</li>
++            <li ngOption [value]="option">{{option}}</li>
+           }
+         </ul>
+
+
+--- reference/src/aria/combobox/testing/combobox-harness.spec.ts
++++ formatter/src/aria/combobox/testing/combobox-harness.spec.ts
+@@ -149,12 +149,5 @@ describe("ComboboxHarness", () => {
+ 
+       <ng-template ngComboboxPopup [combobox]="combobox">
+-        <div
+-          ngComboboxWidget
+-          #listbox="ngListbox"
+-          ngListbox
+-          id="listbox-widget"
+-          focusMode="activedescendant"
+-          [activeDescendant]="listbox.activeDescendant()"
+-        >
++        <div ngComboboxWidget #listbox="ngListbox" ngListbox id="listbox-widget" focusMode="activedescendant" [activeDescendant]="listbox.activeDescendant()">
+           <div ngOption value="CA" label="California">California</div>
+           <div ngOption value="WA" label="Washington">Washington</div>
+@@ -176,9 +169,5 @@ class ComboboxTestApp {
+     </div>
+ 
+-    <ng-template
+-      cdkConnectedOverlay
+-      [cdkConnectedOverlayOrigin]="origin"
+-      [cdkConnectedOverlayOpen]="popupExpanded()"
+-    >
++    <ng-template cdkConnectedOverlay [cdkConnectedOverlayOrigin]="origin" [cdkConnectedOverlayOpen]="popupExpanded()">
+       <ng-template ngComboboxPopup [combobox]="combobox">
+         <div ngComboboxWidget ngListbox id="overlay-listbox">
+@@ -208,8 +197,5 @@ class ComboboxOverlayTestApp {
+     </div>
+ 
+-    <ng-template
+-      [cdkConnectedOverlay]="{ origin, usePopover: 'inline' }"
+-      [cdkConnectedOverlayOpen]="popupExpanded()"
+-    >
++    <ng-template [cdkConnectedOverlay]="{origin, usePopover: 'inline'}" [cdkConnectedOverlayOpen]="popupExpanded()">
+       <ng-template ngComboboxPopup [combobox]="combobox">
+         <div ngComboboxWidget ngListbox id="popover-listbox">
+
+
+--- reference/src/aria/grid/grid.spec.ts
++++ formatter/src/aria/grid/grid.spec.ts
+@@ -1282,6 +1282,5 @@ describe("Grid directives", () => {
+ @Component({
+   template: `
+-    <table
+-      ngGrid
++    <table ngGrid
+       [disabled]="disabled()"
+       [multi]="multi()"
+@@ -1292,54 +1291,39 @@ describe("Grid directives", () => {
+       [enableSelection]="enableSelection()"
+       [selectionMode]="selectionMode()"
+-      [tabindex]="tabIndex()"
+-    >
++      [tabindex]="tabIndex()">
+       @for (row of gridData(); track row; let rIndex = $index) {
+         <tr ngGridRow [rowIndex]="row.rowIndex">
+           @for (cell of row.cells; track cell; let cIndex = $index) {
+-            <td
+-              ngGridCell
+-              [id]="cell.id"
+-              [disabled]="cell.disabled ?? false"
+-              [role]="cell.role ?? 'gridcell'"
+-              [rowIndex]="cell.rowIndex"
+-              [colIndex]="cell.colIndex"
+-              [rowSpan]="cell.rowSpan ?? 1"
+-              [colSpan]="cell.colSpan ?? 1"
+-              [selectable]="cell.selectable ?? true"
+-            >
+-              Cell {{ rIndex }}-{{ cIndex }}
+-              @for (
+-                widget of cell.widgets || [];
+-                track $index;
+-                let wIndex = $index
+-              ) {
++            <td ngGridCell
++                [id]="cell.id"
++                [disabled]="cell.disabled ?? false"
++                [role]="cell.role ?? 'gridcell'"
++                [rowIndex]="cell.rowIndex"
++                [colIndex]="cell.colIndex"
++                [rowSpan]="cell.rowSpan ?? 1"
++                [colSpan]="cell.colSpan ?? 1"
++                [selectable]="cell.selectable ?? true">
++              Cell {{rIndex}}-{{cIndex}}
++              @for (widget of cell.widgets || []; track $index; let wIndex = $index) {
+                 @if (widget.hasTarget) {
+-                  <button
+-                    ngGridCellWidget
+-                    [id]="
+-                      widget.id ?? 'w' + rIndex + '-' + cIndex + '-' + wIndex
+-                    "
+-                    [widgetType]="widget.type ?? 'simple'"
+-                    [disabled]="widget.disabled ?? false"
+-                    [tabindex]="widget.tabindex"
+-                    [focusTarget]="targetInput"
+-                    (activated)="onActivated($event)"
+-                    (deactivated)="onDeactivated($event)"
+-                  >
+... 43 more lines
+
+--- reference/src/aria/listbox/listbox.spec.ts
++++ formatter/src/aria/listbox/listbox.spec.ts
+@@ -1214,15 +1214,7 @@ interface TestOption {
+       [selectionMode]="selectionMode"
+       [typeaheadDelay]="typeaheadDelay"
+-      [tabIndex]="tabIndex"
+-    >
++      [tabIndex]="tabIndex">
+       @for (option of options(); track option.value) {
+-        <li
+-          ngOption
+-          [value]="option.value"
+-          [disabled]="option.disabled"
+-          [label]="option.label"
+-        >
+-          {{ option.label }}
+-        </li>
++        <li ngOption [value]="option.value" [disabled]="option.disabled" [label]="option.label">{{ option.label }}</li>
+       }
+     </ul>
+
+
+--- reference/src/aria/menu/menu.spec.ts
++++ formatter/src/aria/menu/menu.spec.ts
+@@ -1433,46 +1433,23 @@ describe("Menu Bar Pattern", () => {
+ @Component({
+   template: `
+-    <div
+-      ngMenu
+-      [softDisabled]="softDisabled()"
+-      [expansionDelay]="0"
+-      (itemSelected)="itemSelected($event)"
+-    >
++    <div ngMenu [softDisabled]="softDisabled()" [expansionDelay]="0" (itemSelected)="itemSelected($event)">
+       <ng-template ngMenuContent>
+         <div
+           ngMenuItem
+-          value="Apple"
+-          searchTerm="Apple"
+-          [attr.aria-label]="firstItemAriaLabel()"
+-        >
+-          Apple
+-        </div>
+-        <div ngMenuItem value="Banana" searchTerm="Banana">Banana</div>
+-        <div
+-          ngMenuItem
+-          value="Berries"
+-          searchTerm="Berries"
+-          [submenu]="berriesMenu"
+-        >
+-          Berries
+-        </div>
++          value='Apple'
++          searchTerm='Apple'
++          [attr.aria-label]="firstItemAriaLabel()">Apple</div>
++        <div ngMenuItem value='Banana' searchTerm='Banana'>Banana</div>
++        <div ngMenuItem value='Berries' searchTerm='Berries' [submenu]="berriesMenu">Berries</div>
+ 
+         <div ngMenu [expansionDelay]="0" #berriesMenu="ngMenu">
+           <ng-template ngMenuContent>
+-            <div ngMenuItem value="Blueberry" searchTerm="Blueberry">
+-              Blueberry
+-            </div>
+-            <div ngMenuItem value="Blackberry" searchTerm="Blackberry">
+-              Blackberry
+-            </div>
+-            <div ngMenuItem value="Strawberry" searchTerm="Strawberry">
+-              Strawberry
+-            </div>
++            <div ngMenuItem value='Blueberry' searchTerm='Blueberry'>Blueberry</div>
++            <div ngMenuItem value='Blackberry' searchTerm='Blackberry'>Blackberry</div>
++            <div ngMenuItem value='Strawberry' searchTerm='Strawberry'>Strawberry</div>
+           </ng-template>
+         </div>
+ 
+-        <div ngMenuItem value="Cherry" searchTerm="Cherry" [disabled]="true">
+-          Cherry
+-        </div>
++        <div ngMenuItem value='Cherry' searchTerm='Cherry' [disabled]="true">Cherry</div>
+       </ng-template>
+     </div>
+@@ -1500,30 +1477,17 @@ class StandaloneMenuExample {
+... 113 more lines
+
+--- reference/src/aria/private/accordion/accordion.spec.ts
++++ formatter/src/aria/private/accordion/accordion.spec.ts
+@@ -26,7 +26,7 @@ import { ModifierKeys } from "@angular/cdk/testing";
+ // Converts the SignalLike type to WritableSignalLike type for controlling test inputs.
+ type WritableSignalOverrides<O> = {
+-  [
+-    K in keyof O as O[K] extends SignalLike<any> ? K : never
+-  ]: O[K] extends SignalLike<infer T> ? WritableSignalLike<T> : never;
++  [K in keyof O as O[K] extends SignalLike<any>
++    ? K
++    : never]: O[K] extends SignalLike<infer T> ? WritableSignalLike<T> : never;
+ };
+ 
+
+
+--- reference/src/aria/private/accordion/accordion.ts
++++ formatter/src/aria/private/accordion/accordion.ts
+@@ -33,10 +33,11 @@ import {
+ 
+ /** Inputs of the AccordionGroupPattern. */
+-export interface AccordionGroupInputs extends Omit<
+-  ListNavigationInputs<AccordionTriggerPattern> &
+-    ListFocusInputs<AccordionTriggerPattern> &
+-    Omit<ListExpansionInputs, "items">,
+-  "focusMode"
+-> {}
++export interface AccordionGroupInputs
++  extends Omit<
++    ListNavigationInputs<AccordionTriggerPattern> &
++      ListFocusInputs<AccordionTriggerPattern> &
++      Omit<ListExpansionInputs, "items">,
++    "focusMode"
++  > {}
+ 
+ const focusMode = () => "roving" as const;
+@@ -99,6 +100,5 @@ export class AccordionGroupPattern {
+ /** Inputs for the AccordionTriggerPattern. */
+ export interface AccordionTriggerInputs
+-  extends
+-    Omit<ListNavigationItem & ListFocusItem, "index">,
++  extends Omit<ListNavigationItem & ListFocusItem, "index">,
+     Omit<ExpansionItem, "expandable"> {
+   /** The parent accordion group that controls this trigger. */
+
+
+--- reference/src/aria/private/behaviors/event-manager/event-manager.ts
++++ formatter/src/aria/private/behaviors/event-manager/event-manager.ts
+@@ -37,7 +37,6 @@ export type EventMatcher<T extends Event> = (event: T) => boolean;
+ 
+ /** A config that specifies how to handle a particular event. */
+-export interface EventHandlerConfig<
+-  T extends Event,
+-> extends EventHandlerOptions {
++export interface EventHandlerConfig<T extends Event>
++  extends EventHandlerOptions {
+   matcher: EventMatcher<T>;
+   handler: EventHandler<T>;
+
+
+--- reference/src/aria/private/behaviors/list-navigation/list-navigation.ts
++++ formatter/src/aria/private/behaviors/list-navigation/list-navigation.ts
+@@ -18,7 +18,6 @@ export interface ListNavigationItem extends ListFocusItem {}
+ 
+ /** Represents the required inputs for a collection that has navigable items. */
+-export interface ListNavigationInputs<
+-  T extends ListNavigationItem,
+-> extends ListFocusInputs<T> {
++export interface ListNavigationInputs<T extends ListNavigationItem>
++  extends ListFocusInputs<T> {
+   /** Whether focus should wrap when navigating. */
+   wrap: SignalLike<boolean>;
+
+
+--- reference/src/aria/private/behaviors/list-selection/list-selection.ts
++++ formatter/src/aria/private/behaviors/list-selection/list-selection.ts
+@@ -29,8 +29,6 @@ export interface ListSelectionItem<V> extends ListFocusItem {
+ 
+ /** Represents the required inputs for a collection that contains selectable items. */
+-export interface ListSelectionInputs<
+-  T extends ListSelectionItem<V>,
+-  V,
+-> extends ListFocusInputs<T> {
++export interface ListSelectionInputs<T extends ListSelectionItem<V>, V>
++  extends ListFocusInputs<T> {
+   /** Whether multiple items in the list can be selected at once. */
+   multi: SignalLike<boolean>;
+
+
+--- reference/src/aria/private/behaviors/list-typeahead/list-typeahead.ts
++++ formatter/src/aria/private/behaviors/list-typeahead/list-typeahead.ts
+@@ -27,7 +27,6 @@ export interface ListTypeaheadItem extends ListFocusItem {
+  * typeahead.
+  */
+-export interface ListTypeaheadInputs<
+-  T extends ListTypeaheadItem,
+-> extends ListFocusInputs<T> {
++export interface ListTypeaheadInputs<T extends ListTypeaheadItem>
++  extends ListFocusInputs<T> {
+   /** The amount of time before the typeahead search is reset. */
+   typeaheadDelay: SignalLike<number>;
+
+
+--- reference/src/aria/private/behaviors/tree/tree.ts
++++ formatter/src/aria/private/behaviors/tree/tree.ts
+@@ -37,6 +37,5 @@ import { NavOptions } from "../list/list";
+ /** Represents an item in the tree. */
+ export interface TreeItem<V, T extends TreeItem<V, T>>
+-  extends
+-    ListTypeaheadItem,
++  extends ListTypeaheadItem,
+     ListNavigationItem,
+     ListSelectionItem<V>,
+
+
+--- reference/src/aria/private/deferred-content/deferred-content.spec.ts
++++ formatter/src/aria/private/deferred-content/deferred-content.spec.ts
+@@ -90,7 +90,9 @@ class CollapsibleContent {}
+   template: `
+     <div collapsible [preserveContent]="preserveContent()">
+-      <ng-template collapsibleContent> Lazy Content </ng-template>
++      <ng-template collapsibleContent>
++        Lazy Content
++      </ng-template>
+     </div>
+-  `,
++    `,
+   imports: [Collapsible, CollapsibleContent],
+   changeDetection: ChangeDetectionStrategy.Eager,
+
+
+--- reference/src/aria/private/grid/grid.spec.ts
++++ formatter/src/aria/private/grid/grid.spec.ts
+@@ -21,7 +21,7 @@ import { ModifierKeys } from "@angular/cdk/testing";
+ // Converts the SignalLike type to WritableSignal type for controlling test inputs.
+ type WritableSignalOverrides<O> = {
+-  [
+-    K in keyof O as O[K] extends SignalLike<any> ? K : never
+-  ]: O[K] extends SignalLike<infer T> ? WritableSignalLike<T> : never;
++  [K in keyof O as O[K] extends SignalLike<any>
++    ? K
++    : never]: O[K] extends SignalLike<infer T> ? WritableSignalLike<T> : never;
+ };
+ 
+
+
+--- reference/src/aria/private/grid/grid.ts
++++ formatter/src/aria/private/grid/grid.ts
+@@ -28,8 +28,6 @@ import type { GridCellPattern } from "./cell";
+ 
+ /** Represents the required inputs for the grid pattern. */
+-export interface GridInputs extends Omit<
+-  GridBehaviorInputs<GridCellPattern>,
+-  "cells"
+-> {
++export interface GridInputs
++  extends Omit<GridBehaviorInputs<GridCellPattern>, "cells"> {
+   /** The html element of the grid. */
+   element: SignalLike<HTMLElement>;
+

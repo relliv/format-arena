@@ -1,0 +1,15 @@
+# 1 of 276 files differ from prettier@3.10.1
+src/components-examples/aria/autocomplete/autocomplete.css
+
+# The first 1, reference first
+
+--- reference/src/components-examples/aria/autocomplete/autocomplete.css
++++ formatter/src/components-examples/aria/autocomplete/autocomplete.css
+@@ -28,5 +28,5 @@
+   }
+ 
+-  input:-moz-placeholder  /* Firefox 18- */ {
++  input:-moz-placeholder /* Firefox 18- */ {
+     color: var(--mat-sys-on-surface-variant);
+   }
+

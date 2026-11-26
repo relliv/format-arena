@@ -1,0 +1,395 @@
+# 54 of 434 files differ from prettier@3.10.1
+src/cdk/a11y/_index.scss
+src/dev-app/theme.scss
+src/material/autocomplete/_autocomplete-theme.scss
+src/material/badge/_badge-theme.scss
+src/material/badge/_m2-badge.scss
+src/material/bottom-sheet/_bottom-sheet-theme.scss
+src/material/button/_button-theme.scss
+src/material/button/_fab-theme.scss
+src/material/button/_icon-button-theme.scss
+src/material/button-toggle/_button-toggle-theme.scss
+src/material/card/_card-theme.scss
+src/material/checkbox/_checkbox-theme.scss
+src/material/chips/_chips-theme.scss
+src/material/core/option/_optgroup-theme.scss
+src/material/core/option/_option-theme.scss
+src/material/core/ripple/_ripple-theme.scss
+src/material/core/selection/pseudo-checkbox/_pseudo-checkbox-theme.scss
+src/material/core/theming/_definition.scss
+src/material/core/theming/_theming.scss
+src/material/core/theming/tests/test-typography-font-family.scss
+src/material/core/typography/_typography-utils.scss
+src/material/core/typography/_versioning.scss
+src/material/datepicker/_datepicker-theme.scss
+src/material/datepicker/_m2-datepicker.scss
+src/material/dialog/_dialog-theme.scss
+src/material/divider/_divider-theme.scss
+src/material/expansion/_expansion-theme.scss
+src/material/expansion/_m2-expansion.scss
+src/material/form-field/_form-field-theme.scss
+src/material/form-field/_m2-form-field.scss
+src/material/grid-list/_grid-list-theme.scss
+src/material/icon/_icon-theme.scss
+src/material/input/_input-theme.scss
+src/material/list/_list-theme.scss
+src/material/menu/_m2-menu.scss
+src/material/menu/_menu-theme.scss
+src/material/paginator/_paginator-theme.scss
+src/material/progress-bar/_progress-bar-theme.scss
+src/material/progress-spinner/_progress-spinner-theme.scss
+src/material/radio/_radio-theme.scss
+src/material/select/_select-theme.scss
+src/material/sidenav/_sidenav-theme.scss
+src/material/slide-toggle/_slide-toggle-theme.scss
+src/material/slider/_slider-theme.scss
+src/material/snack-bar/_snack-bar-theme.scss
+src/material/sort/_sort-theme.scss
+src/material/stepper/_stepper-theme.scss
+src/material/table/_m2-table.scss
+src/material/table/_table-theme.scss
+src/material/tabs/_tabs-theme.scss
+src/material/timepicker/_timepicker-theme.scss
+src/material/toolbar/_toolbar-theme.scss
+src/material/tooltip/_tooltip-theme.scss
+src/material/tree/_tree-theme.scss
+
+# The first 25, reference first
+
+--- reference/src/cdk/a11y/_index.scss
++++ formatter/src/cdk/a11y/_index.scss
+@@ -50,8 +50,12 @@
+   // allow them here anyway. They'll be coerced to `active` below.
+   @if (
+-    $target != "active" and
+-      $target != "none" and
+-      $target != "black-on-white" and
+-      $target != "white-on-black"
++    $target !=
++      "active" and
++      $target !=
++      "none" and
++      $target !=
++      "black-on-white" and
++      $target !=
++      "white-on-black"
+   ) {
+     @error 'Unknown cdk-high-contrast value "#{$target}" provided. ' +
+
+
+--- reference/src/dev-app/theme.scss
++++ formatter/src/dev-app/theme.scss
+@@ -19,11 +19,11 @@ $candy-app-theme: mat.m2-define-light-theme(
+     // Define the default colors for our app.
+     color: (
+-      primary: $candy-app-primary,
+-      accent: $candy-app-accent,
+-    ),
++        primary: $candy-app-primary,
++        accent: $candy-app-accent,
++      ),
+     // Define the default typography for our app.
+     typography: mat.m2-define-typography-config(),
+     // Define the default density level for our app.
+-    density: 0,
++    density: 0
+   )
+ );
+
+
+--- reference/src/material/autocomplete/_autocomplete-theme.scss
++++ formatter/src/material/autocomplete/_autocomplete-theme.scss
+@@ -51,5 +51,5 @@
+           autocomplete
+         )
+-    ),
++    )
+   );
+ }
+
+
+--- reference/src/material/badge/_badge-theme.scss
++++ formatter/src/material/badge/_badge-theme.scss
+@@ -76,5 +76,5 @@
+       namespace: badge,
+       tokens: token-utils.get-overrides(m3-badge.get-tokens(), badge)
+-    ),
++    )
+   );
+ }
+
+
+--- reference/src/material/badge/_m2-badge.scss
++++ formatter/src/material/badge/_m2-badge.scss
+@@ -43,5 +43,4 @@ $_large-size: $_default-size + 6px;
+       badge-small-size-container-overlap-offset: math.div($small-size, -2),
+       badge-large-size-container-overlap-offset: math.div($large-size, -2),
+-
+       badge-container-padding: 0,
+       badge-small-size-container-padding: 0,
+
+
+--- reference/src/material/bottom-sheet/_bottom-sheet-theme.scss
++++ formatter/src/material/bottom-sheet/_bottom-sheet-theme.scss
+@@ -51,5 +51,5 @@
+           bottom-sheet
+         )
+-    ),
++    )
+   );
+ }
+
+
+--- reference/src/material/button/_button-theme.scss
++++ formatter/src/material/button/_button-theme.scss
+@@ -88,5 +88,5 @@
+       namespace: button,
+       tokens: token-utils.get-overrides(m3-button.get-tokens(), button)
+-    ),
++    )
+   );
+ }
+
+
+--- reference/src/material/button/_fab-theme.scss
++++ formatter/src/material/button/_fab-theme.scss
+@@ -82,5 +82,5 @@
+       namespace: fab,
+       tokens: token-utils.get-overrides(m3-fab.get-tokens(), fab)
+-    ),
++    )
+   );
+ }
+
+
+--- reference/src/material/button/_icon-button-theme.scss
++++ formatter/src/material/button/_icon-button-theme.scss
+@@ -118,5 +118,5 @@
+           icon-button
+         )
+-    ),
++    )
+   );
+ }
+
+
+--- reference/src/material/button-toggle/_button-toggle-theme.scss
++++ formatter/src/material/button-toggle/_button-toggle-theme.scss
+@@ -65,5 +65,5 @@
+           button-toggle
+         )
+-    ),
++    )
+   );
+ }
+
+
+--- reference/src/material/card/_card-theme.scss
++++ formatter/src/material/card/_card-theme.scss
+@@ -48,5 +48,5 @@
+       namespace: card,
+       tokens: token-utils.get-overrides(m3-card.get-tokens(), card)
+-    ),
++    )
+   );
+ }
+
+
+--- reference/src/material/checkbox/_checkbox-theme.scss
++++ formatter/src/material/checkbox/_checkbox-theme.scss
+@@ -78,5 +78,5 @@
+       namespace: checkbox,
+       tokens: token-utils.get-overrides(m3-checkbox.get-tokens(), checkbox)
+-    ),
++    )
+   );
+ }
+
+
+--- reference/src/material/chips/_chips-theme.scss
++++ formatter/src/material/chips/_chips-theme.scss
+@@ -90,5 +90,5 @@
+       namespace: chip,
+       tokens: token-utils.get-overrides(m3-chip.get-tokens(), chip)
+-    ),
++    )
+   );
+ }
+
+
+--- reference/src/material/core/option/_optgroup-theme.scss
++++ formatter/src/material/core/option/_optgroup-theme.scss
+@@ -48,5 +48,5 @@
+       namespace: optgroup,
+       tokens: token-utils.get-overrides(m3-optgroup.get-tokens(), optgroup)
+-    ),
++    )
+   );
+ }
+
+
+--- reference/src/material/core/option/_option-theme.scss
++++ formatter/src/material/core/option/_option-theme.scss
+@@ -73,5 +73,5 @@
+       namespace: option,
+       tokens: token-utils.get-overrides(m3-option.get-tokens(), option)
+-    ),
++    )
+   );
+ }
+
+
+--- reference/src/material/core/ripple/_ripple-theme.scss
++++ formatter/src/material/core/ripple/_ripple-theme.scss
+@@ -47,5 +47,5 @@
+       namespace: ripple,
+       tokens: token-utils.get-overrides(m3-ripple.get-tokens(), ripple)
+-    ),
++    )
+   );
+ }
+
+
+--- reference/src/material/core/selection/pseudo-checkbox/_pseudo-checkbox-theme.scss
++++ formatter/src/material/core/selection/pseudo-checkbox/_pseudo-checkbox-theme.scss
+@@ -98,5 +98,5 @@
+           pseudo-checkbox
+         )
+-    ),
++    )
+   );
+ }
+
+
+--- reference/src/material/core/theming/_definition.scss
++++ formatter/src/material/core/theming/_definition.scss
+@@ -100,5 +100,5 @@ $theme-version: 1;
+       neutral10: map.get($palettes, neutral, 10),
+       // Sidenav scrim (container background shadow when opened),
+-      neutral-variant20: map.get($palettes, neutral-variant, 20),
++      neutral-variant20: map.get($palettes, neutral-variant, 20)
+     ),
+     m3-tokens.get-sys-typeface($typography, $typography-system-variables-prefix)
+
+
+--- reference/src/material/core/theming/_theming.scss
++++ formatter/src/material/core/theming/_theming.scss
+@@ -152,5 +152,6 @@ $private-internal-name: _mat-theming-internals-do-not-access;
+ @function private-legacy-get-theme($theme-or-color-config) {
+   @if private-is-theme-object($theme-or-color-config) or
+-    map.get($theme-or-color-config, $private-internal-name, theme-version) == 1
++    map.get($theme-or-color-config, $private-internal-name, theme-version) ==
++    1
+   {
+     @return $theme-or-color-config;
+@@ -187,5 +188,6 @@ $private-internal-name: _mat-theming-internals-do-not-access;
+     @return $max;
+   }
+-  @if meta.type-of($density-scale) != "number" or not
++  @if meta.type-of($density-scale) !=
++    "number" or not
+     math.is-unitless($density-scale)
+   {
+
+
+--- reference/src/material/core/theming/tests/test-typography-font-family.scss
++++ formatter/src/material/core/theming/tests/test-typography-font-family.scss
+@@ -9,6 +9,8 @@ $_font-family: string.unquote("Roboto, sans-serif");
+   @each $level-name, $level in $obj {
+     @if (
+-      meta.type-of($level) == "map" and
+-        map.get($level, "font-family") != $expected
++      meta.type-of($level) ==
++        "map" and
++        map.get($level, "font-family") !=
++        $expected
+     ) {
+       @error '[#{$test-name}]: Incorrect font-family in level "#{$level-name}". ' +
+
+
+--- reference/src/material/core/typography/_typography-utils.scss
++++ formatter/src/material/core/typography/_typography-utils.scss
+@@ -12,12 +12,20 @@
+   // so we fall back to passing in the individual properties.
+   @if (
+-    $font-size == inherit or
+-      $font-weight == inherit or
+-      $line-height == inherit or
+-      $font-family == inherit or
+-      $font-size == null or
+-      $font-weight == null or
+-      $line-height == null or
+-      $font-family == null
++    $font-size ==
++      inherit or
++      $font-weight ==
++      inherit or
++      $line-height ==
++      inherit or
++      $font-family ==
++      inherit or
++      $font-size ==
++      null or
++      $font-weight ==
++      null or
++      $line-height ==
++      null or
++      $font-family ==
++      null
+   ) {
+     font-size: $font-size;
+
+
+--- reference/src/material/core/typography/_versioning.scss
++++ formatter/src/material/core/typography/_versioning.scss
+@@ -78,5 +78,4 @@
+       subtitle-1: map.get($config, subheading-2),
+       font-family: map.get($config, font-family),
+-
+       // These mappings are odd, but body-2 in the 2014 system actually looks closer to subtitle-2
+       // in the 2018 system, and subeading-1 in the 2014 system looks more like body-1 in the 2018
+@@ -84,5 +83,4 @@
+       subtitle-2: map.get($config, body-2),
+       body-1: map.get($config, subheading-1),
+-
+       body-2: map.get($config, body-1),
+       button: map.get($config, button),
+
+
+--- reference/src/material/datepicker/_datepicker-theme.scss
++++ formatter/src/material/datepicker/_datepicker-theme.scss
+@@ -110,5 +110,5 @@
+       namespace: datepicker,
+       tokens: token-utils.get-overrides(m3-datepicker.get-tokens(), datepicker)
+-    ),
++    )
+   );
+ }
+
+
+--- reference/src/material/datepicker/_m2-datepicker.scss
++++ formatter/src/material/datepicker/_m2-datepicker.scss
+@@ -94,5 +94,4 @@
+         map.get($system, hover-state-layer-opacity)
+       ),
+-
+     datepicker-toggle-active-state-icon-color: map.get($system, primary),
+     datepicker-toggle-icon-color: map.get($system, on-surface-variant),
+@@ -112,5 +111,4 @@
+     datepicker-calendar-header-divider-color: map.get($system, outline),
+     datepicker-calendar-header-text-color: map.get($system, on-surface-variant),
+-
+     datepicker-calendar-date-today-outline-color: map.get(
+         $system,
+
+
+--- reference/src/material/dialog/_dialog-theme.scss
++++ formatter/src/material/dialog/_dialog-theme.scss
+@@ -48,5 +48,5 @@
+       namespace: dialog,
+       tokens: token-utils.get-overrides(m3-dialog.get-tokens(), dialog)
+-    ),
++    )
+   );
+ }
+

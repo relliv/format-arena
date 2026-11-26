@@ -1,0 +1,35 @@
+# 1 of 158 files differ from prettier@3.10.1
+playground/assets/index.html
+
+# The first 1, reference first
+
+--- reference/playground/assets/index.html
++++ formatter/playground/assets/index.html
+@@ -127,6 +127,6 @@
+   style="
+     background-image: -webkit-image-set(
+-      &quot;./nested/asset.png&quot; type(&quot;image/png&quot;) 1x,
+-      &quot;./nested/asset.png&quot; type(&quot;image/png&quot;) 2x
++      "./nested/asset.png" type("image/png") 1x,
++      "./nested/asset.png" type("image/png") 2x
+     );
+     background-size: 10px;
+@@ -141,6 +141,5 @@
+   style="
+     background-image:
+-      image-set(url(&quot;./nested/asset.png&quot;)),
+-      url(&quot;./nested/asset.png&quot;);
++      image-set(url("./nested/asset.png")), url("./nested/asset.png");
+     background-size: 10px 10px;
+   "
+@@ -449,8 +448,5 @@
+ <div
+   class="inline-style"
+-  style="
+-    background: url(&quot;./nested/asset.png&quot;);
+-    background-size: 10px 10px;
+-  "
++  style="background: url("./nested/asset.png"); background-size: 10px 10px"
+ >
+   inline style
+

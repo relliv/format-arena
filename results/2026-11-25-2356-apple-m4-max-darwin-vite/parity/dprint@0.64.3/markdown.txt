@@ -1,0 +1,618 @@
+# 20 of 80 files differ from prettier@3.10.1
+README.md
+docs/acknowledgements.md
+docs/blog/announcing-vite3.md
+docs/changes/shared-plugins-during-build.md
+docs/config/build-options.md
+docs/config/shared-options.md
+docs/guide/api-environment-frameworks.md
+docs/guide/api-environment-instances.md
+docs/guide/api-environment-plugins.md
+docs/guide/api-environment-runtimes.md
+docs/guide/api-javascript.md
+docs/guide/api-plugin.md
+docs/guide/assets.md
+docs/guide/backend-integration.md
+docs/guide/build.md
+docs/guide/features.md
+docs/guide/index.md
+docs/guide/migration.md
+docs/guide/ssr.md
+packages/vite/LICENSE.md
+
+# The first 20, reference first
+
+--- reference/README.md
++++ formatter/README.md
+@@ -4,6 +4,12 @@
+   <a href="https://vite.dev" target="_blank" rel="noopener noreferrer">
+     <picture>
+-      <source media="(prefers-color-scheme: dark)" srcset="https://vite.dev/vite-light.svg">
+-      <source media="(prefers-color-scheme: light)" srcset="https://vite.dev/vite-dark.svg">
++      <source
++        media="(prefers-color-scheme: dark)"
++        srcset="https://vite.dev/vite-light.svg"
++      >
++      <source
++        media="(prefers-color-scheme: light)"
++        srcset="https://vite.dev/vite-dark.svg"
++      >
+       <img alt="vite logo" src="https://vite.dev/vite-dark.svg" height="60">
+     </picture>
+@@ -12,5 +18,5 @@
+   <br>
+ </p>
+-<br/>
++<br />
+ <p align="center">
+   <a href="https://npmjs.com/package/vite"><img src="https://img.shields.io/npm/v/vite.svg" alt="npm package"></a>
+@@ -19,5 +25,5 @@
+   <a href="https://chat.vite.dev"><img src="https://img.shields.io/badge/chat-discord-blue?style=flat&logo=discord" alt="discord chat"></a>
+ </p>
+-<br/>
++<br />
+ 
+ # Vite ⚡
+
+
+--- reference/docs/acknowledgements.md
++++ formatter/docs/acknowledgements.md
+@@ -46,6 +46,18 @@ Vite depends on these amazing open source projects:
+       <a :href="npmUrl(dep.name)" target="_blank" rel="noopener"><code>{{ dep.name }}</code></a>
+       <span class="dep-links">
+-        <a v-if="dep.repository" :href="dep.repository" target="_blank" rel="noopener" class="dep-link">Repo</a>
+-        <a v-if="dep.funding" :href="dep.funding" target="_blank" rel="noopener" class="dep-link sponsor">Sponsor</a>
++        <a
++          v-if="dep.repository"
++          :href="dep.repository"
++          target="_blank"
++          rel="noopener"
++          class="dep-link"
++        >Repo</a>
++        <a
++          v-if="dep.funding"
++          :href="dep.funding"
++          target="_blank"
++          rel="noopener"
++          class="dep-link sponsor"
++        >Sponsor</a>
+       </span>
+     </div>
+@@ -71,9 +83,16 @@ Vite depends on these amazing open source projects:
+         <a v-if="author.url" :href="author.url" target="_blank" rel="noopener">{{ author.name }}</a>
+         <template v-else>{{ author.name }}</template>
+-        <a v-if="author.funding" :href="author.funding" target="_blank" rel="noopener" class="sponsor-link">Sponsor</a>
++        <a
++          v-if="author.funding"
++          :href="author.funding"
++          target="_blank"
++          rel="noopener"
++          class="sponsor-link"
++        >Sponsor</a>
+       </td>
+       <td>
+         <template v-for="(pkg, index) in author.packages" :key="pkg.name">
+-          <span class="pkg-item"><a :href="npmUrl(pkg.name)" target="_blank" rel="noopener"><code>{{ pkg.name }}</code></a><a v-if="pkg.funding" :href="pkg.funding" target="_blank" rel="noopener" class="sponsor-link">Sponsor</a></span><template v-if="index < author.packages.length - 1">, </template>
++          <span class="pkg-item"><a :href="npmUrl(pkg.name)" target="_blank" rel="noopener"><code>{{ pkg.name }}</code></a><a v-if="pkg.funding" :href="pkg.funding" target="_blank" rel="noopener" class="sponsor-link">Sponsor</a></span><template v-if="index < author.packages.length - 1">,
++          </template>
+         </template>
+       </td>
+@@ -95,6 +114,18 @@ Vite's development workflow is powered by these tools:
+       <a :href="npmUrl(dep.name)" target="_blank" rel="noopener"><code>{{ dep.name }}</code></a>
+       <span class="dep-links">
+-        <a v-if="dep.repository" :href="dep.repository" target="_blank" rel="noopener" class="dep-link">Repo</a>
+-        <a v-if="dep.funding" :href="dep.funding" target="_blank" rel="noopener" class="dep-link sponsor">Sponsor</a>
++        <a
++          v-if="dep.repository"
++          :href="dep.repository"
++          target="_blank"
++          rel="noopener"
++          class="dep-link"
++        >Repo</a>
++        <a
++          v-if="dep.funding"
++          :href="dep.funding"
++          target="_blank"
++          rel="noopener"
++          class="dep-link sponsor"
+... 13 more lines
+
+--- reference/docs/blog/announcing-vite3.md
++++ formatter/docs/blog/announcing-vite3.md
+@@ -65,10 +65,10 @@ There is also now an official Spanish translation, that has been added to the pr
+ 
+ <div class="stackblitz-links">
+-<a target="_blank" href="https://vite.new"><img width="75" height="75" src="../images/vite.svg" alt="Vite logo"></a>
+-<a target="_blank" href="https://vite.new/vue"><img width="75" height="75" src="../images/vue.svg" alt="Vue logo"></a>
+-<a target="_blank" href="https://vite.new/svelte"><img width="60" height="60" src="../images/svelte.svg" alt="Svelte logo"></a>
+-<a target="_blank" href="https://vite.new/react"><img width="75" height="75" src="../images/react.svg" alt="React logo"></a>
+-<a target="_blank" href="https://vite.new/preact"><img width="65" height="65" src="../images/preact.svg" alt="Preact logo"></a>
+-<a target="_blank" href="https://vite.new/lit"><img width="60" height="60" src="../images/lit.svg" alt="Lit logo"></a>
++  <a target="_blank" href="https://vite.new"><img width="75" height="75" src="../images/vite.svg" alt="Vite logo"></a>
++  <a target="_blank" href="https://vite.new/vue"><img width="75" height="75" src="../images/vue.svg" alt="Vue logo"></a>
++  <a target="_blank" href="https://vite.new/svelte"><img width="60" height="60" src="../images/svelte.svg" alt="Svelte logo"></a>
++  <a target="_blank" href="https://vite.new/react"><img width="75" height="75" src="../images/react.svg" alt="React logo"></a>
++  <a target="_blank" href="https://vite.new/preact"><img width="65" height="65" src="../images/preact.svg" alt="Preact logo"></a>
++  <a target="_blank" href="https://vite.new/lit"><img width="60" height="60" src="../images/lit.svg" alt="Lit logo"></a>
+ </div>
+ 
+
+
+--- reference/docs/changes/shared-plugins-during-build.md
++++ formatter/docs/changes/shared-plugins-during-build.md
+@@ -43,5 +43,5 @@ If we instead want to count the number of transformed modules for each environme
+ ```ts
+ function PerEnvironmentCountTransformedModulesPlugin() {
+-  const state = new Map<Environment, { count: number }>();
++  const state = new Map<Environment, { count: number; }>();
+   return {
+     name: "count-transformed-modules",
+@@ -64,5 +64,5 @@ To simplify this pattern, Vite exports a `perEnvironmentState` helper:
+ ```ts
+ function PerEnvironmentCountTransformedModulesPlugin() {
+-  const state = perEnvironmentState<{ count: number }>(() => ({ count: 0 }));
++  const state = perEnvironmentState<{ count: number; }>(() => ({ count: 0 }));
+   return {
+     name: "count-transformed-modules",
+
+
+--- reference/docs/config/build-options.md
++++ formatter/docs/config/build-options.md
+@@ -54,11 +54,11 @@ const config = {
+   // prettier-ignore
+   build: {
+-// ---cut-before---
+-modulePreload: {
+-  resolveDependencies: (filename, deps, { hostId, hostType }) => {
+-    return deps.filter(condition)
+-  },
+-},
+-// ---cut-after---
++    // ---cut-before---
++    modulePreload: {
++      resolveDependencies: (filename, deps, { hostId, hostType }) => {
++        return deps.filter(condition);
++      },
++    },
++    // ---cut-after---
+   },
+ };
+
+
+--- reference/docs/config/shared-options.md
++++ formatter/docs/config/shared-options.md
+@@ -214,6 +214,5 @@ List of file extensions to try for imports that omit extensions. Note it is **NO
+ Enabling this setting causes vite to determine file identity by the original file path (i.e. the path without following symlinks) instead of the real file path (i.e. the path after following symlinks).
+ 
+-- **Related:** [esbuild#preserve-symlinks](https://esbuild.github.io/api/#preserve-symlinks), [webpack#resolve.symlinks
+-  ](https://webpack.js.org/configuration/resolve/#resolvesymlinks)
++- **Related:** [esbuild#preserve-symlinks](https://esbuild.github.io/api/#preserve-symlinks), [webpack#resolve.symlinks](https://webpack.js.org/configuration/resolve/#resolvesymlinks)
+ 
+ ## resolve.tsconfigPaths
+@@ -299,5 +298,6 @@ export default defineConfig({
+     exportGlobals?: boolean;
+     generateScopedName?:
+-      string | ((name: string, filename: string, css: string) => string);
++      | string
++      | ((name: string, filename: string, css: string) => string);
+     hashPrefix?: string;
+     /**
+@@ -310,8 +310,8 @@ export default defineConfig({
+       | "dashesOnly"
+       | ((
+-          originalClassName: string,
+-          generatedClassName: string,
+-          inputFile: string,
+-        ) => string);
++        originalClassName: string,
++        generatedClassName: string,
++        inputFile: string,
++      ) => string);
+   }
+   ```
+
+
+--- reference/docs/guide/api-environment-frameworks.md
++++ formatter/docs/guide/api-environment-frameworks.md
+@@ -134,6 +134,6 @@ This environment provides a standardized way of handling requests via the `handl
+ ```ts
+ import {
+-  createServer,
+   createFetchableDevEnvironment,
++  createServer,
+   isFetchableDevEnvironment,
+ } from "vite";
+
+
+--- reference/docs/guide/api-environment-instances.md
++++ formatter/docs/guide/api-environment-instances.md
+@@ -20,5 +20,5 @@ During dev, the available environments in a dev server can be accessed using `se
+ ```js
+ // create the server, or get it from the configureServer hook
+-const server = await createServer(/* options */);
++const server = await createServer(); /* options */
+ 
+ const clientEnvironment = server.environments.client;
+@@ -120,5 +120,5 @@ and with `TransformResult` being:
+ interface TransformResult {
+   code: string;
+-  map: SourceMap | { mappings: "" } | null;
++  map: SourceMap | { mappings: ""; } | null;
+   etag?: string;
+   deps?: string[];
+
+
+--- reference/docs/guide/api-environment-plugins.md
++++ formatter/docs/guide/api-environment-plugins.md
+@@ -33,7 +33,7 @@ A plugin could use the `environment` instance to change how a module is processe
+ 
+ ```ts
+-  transform(code, id) {
+-    console.log(this.environment.config.resolve.conditions)
+-  }
++transform(code, id) {
++  console.log(this.environment.config.resolve.conditions)
++}
+ ```
+ 
+@@ -43,15 +43,15 @@ Plugins can add new environments in the `config` hook. For example, [RSC support
+ 
+ ```ts
+-  config(config: UserConfig) {
+-    return {
+-      environments: {
+-        rsc: {
+-          resolve: {
+-            conditions: ['react-server', ...defaultServerConditions],
+-          },
++config(config: UserConfig) {
++  return {
++    environments: {
++      rsc: {
++        resolve: {
++          conditions: ['react-server', ...defaultServerConditions],
+         },
+       },
+-    }
++    },
+   }
++}
+ ```
+ 
+@@ -68,14 +68,14 @@ Plugins should set default values using the `config` hook. To configure each env
+ 
+ ```ts
+-  configEnvironment(name: string, options: EnvironmentOptions) {
+-    // add "workerd" condition to the rsc environment
+-    if (name === 'rsc') {
+-      return {
+-        resolve: {
+-          conditions: ['workerd'],
+-        },
+-      }
++configEnvironment(name: string, options: EnvironmentOptions) {
++  // add "workerd" condition to the rsc environment
++  if (name === 'rsc') {
++    return {
++      resolve: {
++        conditions: ['workerd'],
++      },
+     }
+   }
++}
+ ```
+ 
+... 11 more lines
+
+--- reference/docs/guide/api-environment-runtimes.md
++++ formatter/docs/guide/api-environment-runtimes.md
+@@ -203,7 +203,7 @@ Module runner exposes `import` method. When Vite server triggers `full-reload` H
+ ```js
+ import {
+-  ModuleRunner,
+-  ESModulesEvaluator,
+   createNodeImportMeta,
++  ESModulesEvaluator,
++  ModuleRunner,
+ } from "vite/module-runner";
+ import { transport } from "./rpc-implementation.js";
+@@ -225,7 +225,7 @@ await moduleRunner.import("/src/entry-point.js");
+ import type { Debug } from "@type-challenges/utils";
+ import type {
++  EvaluatedModules,
+   InterceptorOptions as InterceptorOptionsRaw,
+   ModuleRunnerHmr as ModuleRunnerHmrRaw,
+-  EvaluatedModules,
+ } from "vite/module-runner";
+ 
+@@ -250,5 +250,8 @@ interface ModuleRunnerOptions {
+    */
+   sourcemapInterceptor?:
+-    false | "node" | "prepareStackTrace" | InterceptorOptions;
++    | false
++    | "node"
++    | "prepareStackTrace"
++    | InterceptorOptions;
+   /**
+    * Disable HMR or configure HMR options.
+@@ -315,5 +318,5 @@ interface ModuleRunnerTransport {
+   disconnect?(): Promise<void> | void;
+   send?(data: HotPayload): Promise<void> | void;
+-  invoke?(data: HotPayload): Promise<{ result: any } | { error: any }>;
++  invoke?(data: HotPayload): Promise<{ result: any; } | { error: any; }>;
+   timeout?: number;
+ }
+@@ -330,7 +333,7 @@ import { fileURLToPath } from "node:url";
+ import { parentPort } from "node:worker_threads";
+ import {
++  createNodeImportMeta,
+   ESModulesEvaluator,
+   ModuleRunner,
+-  createNodeImportMeta,
+ } from "vite/module-runner";
+ 
+
+
+--- reference/docs/guide/api-javascript.md
++++ formatter/docs/guide/api-javascript.md
+@@ -152,5 +152,5 @@ interface ViteDevServer {
+   ssrLoadModule(
+     url: string,
+-    options?: { fixStacktrace?: boolean },
++    options?: { fixStacktrace?: boolean; },
+   ): Promise<Record<string, any>>;
+   /**
+@@ -326,6 +326,6 @@ import {
+   defineConfig,
+   mergeConfig,
+-  type UserConfigFnObject,
+   type UserConfig,
++  type UserConfigFnObject,
+ } from "vite";
+ declare const configAsCallback: UserConfigFnObject;
+@@ -334,5 +334,5 @@ declare const configAsObject: UserConfig;
+ // ---cut---
+ export default defineConfig((configEnv) =>
+-  mergeConfig(configAsCallback(configEnv), configAsObject),
++  mergeConfig(configAsCallback(configEnv), configAsObject)
+ );
+ ```
+@@ -398,5 +398,5 @@ async function transformWithOxc(
+   options?: OxcTransformOptions,
+   inMap?: object,
+-): Promise<Omit<OxcTransformResult, "errors"> & { warnings: string[] }>;
++): Promise<Omit<OxcTransformResult, "errors"> & { warnings: string[]; }>;
+ ```
+ 
+@@ -431,9 +431,11 @@ async function loadConfigFromFile(
+   logLevel?: LogLevel,
+   customLogger?: Logger,
+-): Promise<{
+-  path: string;
+-  config: UserConfig;
+-  dependencies: string[];
+-} | null>;
++): Promise<
++  {
++    path: string;
++    config: UserConfig;
++    dependencies: string[];
++  } | null
++>;
+ ```
+ 
+
+
+--- reference/docs/guide/api-plugin.md
++++ formatter/docs/guide/api-plugin.md
+@@ -434,5 +434,7 @@ Vite plugins can also provide hooks that serve Vite-specific purposes. These hoo
+     },
+   ) =>
+-    IndexHtmlTransformResult | void | Promise<IndexHtmlTransformResult | void>;
++    | IndexHtmlTransformResult
++    | void
++    | Promise<IndexHtmlTransformResult | void>;
+ 
+   type IndexHtmlTransformResult =
+@@ -440,7 +442,7 @@ Vite plugins can also provide hooks that serve Vite-specific purposes. These hoo
+     | HtmlTagDescriptor[]
+     | {
+-        html: string;
+-        tags: HtmlTagDescriptor[];
+-      };
++      html: string;
++      tags: HtmlTagDescriptor[];
++    };
+ 
+   interface HtmlTagDescriptor {
+@@ -761,6 +763,6 @@ function accessImportMap() {
+     },
+     generateBundle(options, bundle) {
+-      const chunkImportMap =
+-        config.build.rolldownOptions.experimental?.chunkImportMap;
++      const chunkImportMap = config.build.rolldownOptions.experimental
++        ?.chunkImportMap;
+       if (chunkImportMap) {
+         const importMapFilename =
+@@ -861,5 +863,5 @@ import "vite/types/customEvent.d.ts";
+ declare module "vite/types/customEvent.d.ts" {
+   interface CustomEventMap {
+-    "custom:foo": { msg: string };
++    "custom:foo": { msg: string; };
+     // 'event-key': payload
+   }
+@@ -874,5 +876,5 @@ import type { InferCustomEventPayload } from "vite/types/customEvent.d.ts";
+ declare module "vite/types/customEvent.d.ts" {
+   interface CustomEventMap {
+-    "custom:foo": { msg: string };
++    "custom:foo": { msg: string; };
+   }
+ }
+
+
+--- reference/docs/guide/assets.md
++++ formatter/docs/guide/assets.md
+@@ -64,6 +64,6 @@ import "vite/client";
+ // ---cut---
+ // prettier-ignore
+-import imgUrl1 from './img.svg?no-inline'
+ import imgUrl2 from "./img.png?inline";
++import imgUrl1 from "./img.svg?no-inline";
+ ```
+ 
+
+
+--- reference/docs/guide/backend-integration.md
++++ formatter/docs/guide/backend-integration.md
+@@ -53,9 +53,9 @@ If you need a custom integration, you can follow the steps in this guide to conf
+    ```html
+    <script type="module">
+-     import RefreshRuntime from "http://localhost:5173/@react-refresh";
+-     RefreshRuntime.injectIntoGlobalHook(window);
+-     window.$RefreshReg$ = () => {};
+-     window.$RefreshSig$ = () => (type) => type;
+-     window.__vite_plugin_react_preamble_installed__ = true;
++   import RefreshRuntime from "http://localhost:5173/@react-refresh";
++   RefreshRuntime.injectIntoGlobalHook(window);
++   window.$RefreshReg$ = () => {};
++   window.$RefreshSig$ = () => (type) => type;
++   window.__vite_plugin_react_preamble_installed__ = true;
+    </script>
+    ```
+
+
+--- reference/docs/guide/build.md
++++ formatter/docs/guide/build.md
+@@ -207,5 +207,5 @@ The entry file would contain exports that can be imported by users of your packa
+ import Bar from "./Bar.vue";
+ import Foo from "./Foo.vue";
+-export { Foo, Bar };
++export { Bar, Foo };
+ ```
+ 
+@@ -320,15 +320,15 @@ import type { UserConfig } from "vite";
+ // prettier-ignore
+ const config: UserConfig = {
+-// ---cut-before---
+-experimental: {
+-  renderBuiltUrl(filename, { hostType }) {
+-    if (hostType === 'js') {
+-      return { runtime: `window.__toCdnUrl(${JSON.stringify(filename)})` }
+-    } else {
+-      return { relative: true }
+-    }
++  // ---cut-before---
++  experimental: {
++    renderBuiltUrl(filename, { hostType }) {
++      if (hostType === "js") {
++        return { runtime: `window.__toCdnUrl(${JSON.stringify(filename)})` };
++      } else {
++        return { relative: true };
++      }
++    },
+   },
+-},
+-// ---cut-after---
++  // ---cut-after---
+ };
+ ```
+@@ -341,19 +341,19 @@ import type { UserConfig } from "vite";
+ // prettier-ignore
+ const config: UserConfig = {
+-// ---cut-before---
+-experimental: {
+-  renderBuiltUrl(filename, { hostId, hostType, type }) {
+-    if (type === 'public') {
+-      return 'https://www.domain.com/' + filename
+-    } else if (path.extname(hostId) === '.js') {
+-      return {
+-        runtime: `window.__assetsPath(${JSON.stringify(filename)})`
++  // ---cut-before---
++  experimental: {
++    renderBuiltUrl(filename, { hostId, hostType, type }) {
++      if (type === "public") {
++        return "https://www.domain.com/" + filename;
++      } else if (path.extname(hostId) === ".js") {
++        return {
++          runtime: `window.__assetsPath(${JSON.stringify(filename)})`,
++        };
++      } else {
++        return "https://cdn.domain.com/assets/" + filename;
+       }
+-    } else {
+-      return 'https://cdn.domain.com/assets/' + filename
+... 9 more lines
+
+--- reference/docs/guide/features.md
++++ formatter/docs/guide/features.md
+@@ -207,5 +207,5 @@ Assets referenced by HTML elements such as `<script type="module" src>` and `<li
+ 
+ ```html {4-5,8-9}
+-<!doctype html>
++<!DOCTYPE html>
+ <html>
+   <head>
+@@ -740,6 +740,7 @@ import wasmUrl from "foo.wasm?url";
+ const main = async () => {
+   const responsePromise = fetch(wasmUrl);
+-  const { module, instance } =
+-    await WebAssembly.instantiateStreaming(responsePromise);
++  const { module, instance } = await WebAssembly.instantiateStreaming(
++    responsePromise,
++  );
+   /* ... */
+ };
+@@ -814,5 +815,5 @@ Ensure that you replace the placeholder with a unique value for each request. Th
+ :::
+ 
+-### [`data:`](<https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/Sources#scheme-source:~:text=schemes%20(not%20recommended).-,data%3A,-Allows%20data%3A>)
++### [`data:`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/Sources#scheme-source:~:text=schemes%20(not%20recommended).-,data%3A,-Allows%20data%3A)
+ 
+ By default, during build, Vite inlines small assets as data URIs. Allowing `data:` for related directives (e.g. [`img-src`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/img-src), [`font-src`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/font-src)), or, disabling it by setting [`build.assetsInlineLimit: 0`](/config/build-options#build-assetsinlinelimit) is necessary.
+
+
+--- reference/docs/guide/index.md
++++ formatter/docs/guide/index.md
+@@ -213,4 +213,5 @@ In a project where Vite is installed, you can use the `vite` binary in your npm
+ 
+ <!-- prettier-ignore -->
++
+ ```json [package.json]
+ {
+
+
+--- reference/docs/guide/migration.md
++++ formatter/docs/guide/migration.md
+@@ -27,5 +27,5 @@ For users migrating from `rolldown-vite` to Vite 8, you can undo the dependency
+ {
+   "devDependencies": {
+-    "vite": "npm:rolldown-vite@7.2.2" // [!code --]
++    "vite": "npm:rolldown-vite@7.2.2", // [!code --]
+     "vite": "^8.0.0" // [!code ++]
+   }
+
+
+--- reference/docs/guide/ssr.md
++++ formatter/docs/guide/ssr.md
+@@ -123,6 +123,6 @@ export function ssrReload(): Plugin {
+         for (const mod of modules) {
+           if (mod.file == null) continue;
+-          const clientModules =
+-            server.environments.client.moduleGraph.getModulesByFile(mod.file);
++          const clientModules = server.environments.client.moduleGraph
++            .getModulesByFile(mod.file);
+           if (clientModules != null) continue;
+ 
+
+
+--- reference/packages/vite/LICENSE.md
++++ formatter/packages/vite/LICENSE.md
+@@ -634,6 +634,5 @@ By: Guy Bedford
+ Repository: https://github.com/guybedford/es-module-lexer
+ 
+-> MIT License
+-> -----------
++> ## MIT License
+ >
+ > Copyright (C) 2018-2022 Guy Bedford
+

@@ -1,0 +1,83 @@
+# 3 of 278 files differ from prettier@3.10.1
+guides/material-2.md
+guides/theming-your-components.md
+src/material/table/table.md
+
+# The first 3, reference first
+
+--- reference/guides/material-2.md
++++ formatter/guides/material-2.md
+@@ -51,10 +51,10 @@ $m2-indigo-palette: (
+   // ... continues to 900
+   contrast: (
+-    50: rgba(black, 0.87),
+-    100: rgba(black, 0.87),
+-    200: rgba(black, 0.87),
+-    300: white,
+-    // ... continues to 900
+-  ),
++      50: rgba(black, 0.87),
++      100: rgba(black, 0.87),
++      200: rgba(black, 0.87),
++      300: white,
++      // ... continues to 900
++    ),
+ );
+ ```
+@@ -882,5 +882,5 @@ typography styles only for the button component.
+ $kids-typography: mat.m2-define-typography-config(
+   // Specify "Comic Sans" as the default font family for all levels.
+-  $font-family: "Comic Sans",
++  $font-family: "Comic Sans"
+ );
+ 
+
+
+--- reference/guides/theming-your-components.md
++++ formatter/guides/theming-your-components.md
+@@ -881,21 +881,21 @@ Material, this is used for the outline of an outlined card and the color of the
+ ```css
+ --mat-sys-level0:
+-  0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14),
+-  0px 0px 0px 0px rgba(0, 0, 0, 0.12);
++  0px 0px 0px 0px rgba(0, 0, 0, .2), 0px 0px 0px 0px rgba(0, 0, 0, .14),
++  0px 0px 0px 0px rgba(0, 0, 0, .12);
+ --mat-sys-level1:
+-  0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+-  0px 1px 3px 0px rgba(0, 0, 0, 0.12);
++  0px 2px 1px -1px rgba(0, 0, 0, .2), 0px 1px 1px 0px rgba(0, 0, 0, .14),
++  0px 1px 3px 0px rgba(0, 0, 0, .12);
+ --mat-sys-level2:
+-  0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14),
+-  0px 1px 8px 0px rgba(0, 0, 0, 0.12);
++  0px 3px 3px -2px rgba(0, 0, 0, .2), 0px 3px 4px 0px rgba(0, 0, 0, .14),
++  0px 1px 8px 0px rgba(0, 0, 0, .12);
+ --mat-sys-level3:
+-  0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14),
+-  0px 1px 18px 0px rgba(0, 0, 0, 0.12);
++  0px 3px 5px -1px rgba(0, 0, 0, .2), 0px 6px 10px 0px rgba(0, 0, 0, .14),
++  0px 1px 18px 0px rgba(0, 0, 0, .12);
+ --mat-sys-level4:
+-  0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14),
+-  0px 3px 14px 2px rgba(0, 0, 0, 0.12);
++  0px 5px 5px -3px rgba(0, 0, 0, .2), 0px 8px 10px 1px rgba(0, 0, 0, .14),
++  0px 3px 14px 2px rgba(0, 0, 0, .12);
+ --mat-sys-level5:
+-  0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14),
+-  0px 5px 22px 4px rgba(0, 0, 0, 0.12);
++  0px 7px 8px -4px rgba(0, 0, 0, .2), 0px 12px 17px 2px rgba(0, 0, 0, .14),
++  0px 5px 22px 4px rgba(0, 0, 0, .12);
+ ```
+ 
+
+
+--- reference/src/material/table/table.md
++++ formatter/src/material/table/table.md
+@@ -280,5 +280,5 @@ const initialSelection = [];
+ const allowMultiSelect = true;
+ this.selection =
+-  (new SelectionModel() < MyDataType) > (allowMultiSelect, initialSelection);
++  new SelectionModel() < MyDataType > (allowMultiSelect, initialSelection);
+ ```
+ 
+

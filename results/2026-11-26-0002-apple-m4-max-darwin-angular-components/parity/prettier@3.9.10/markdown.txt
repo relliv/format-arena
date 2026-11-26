@@ -1,0 +1,44 @@
+# 2 of 278 files differ from prettier@3.10.1
+guides/material-2.md
+src/material/table/table.md
+
+# The first 2, reference first
+
+--- reference/guides/material-2.md
++++ formatter/guides/material-2.md
+@@ -51,10 +51,10 @@ $m2-indigo-palette: (
+   // ... continues to 900
+   contrast: (
+-    50: rgba(black, 0.87),
+-    100: rgba(black, 0.87),
+-    200: rgba(black, 0.87),
+-    300: white,
+-    // ... continues to 900
+-  ),
++      50: rgba(black, 0.87),
++      100: rgba(black, 0.87),
++      200: rgba(black, 0.87),
++      300: white,
++      // ... continues to 900
++    ),
+ );
+ ```
+@@ -882,5 +882,5 @@ typography styles only for the button component.
+ $kids-typography: mat.m2-define-typography-config(
+   // Specify "Comic Sans" as the default font family for all levels.
+-  $font-family: "Comic Sans",
++  $font-family: "Comic Sans"
+ );
+ 
+
+
+--- reference/src/material/table/table.md
++++ formatter/src/material/table/table.md
+@@ -280,5 +280,5 @@ const initialSelection = [];
+ const allowMultiSelect = true;
+ this.selection =
+-  (new SelectionModel() < MyDataType) > (allowMultiSelect, initialSelection);
++  new SelectionModel() < MyDataType > (allowMultiSelect, initialSelection);
+ ```
+ 
+

@@ -1,0 +1,69 @@
+# 5 of 684 files differ from prettier@3.10.1
+src/components-examples/cdk/listbox/cdk-listbox-compare-with/cdk-listbox-compare-with-example.html
+src/components-examples/cdk/listbox/cdk-listbox-forms-validation/cdk-listbox-forms-validation-example.html
+src/components-examples/cdk/listbox/cdk-listbox-reactive-forms/cdk-listbox-reactive-forms-example.html
+src/components-examples/cdk/listbox/cdk-listbox-template-forms/cdk-listbox-template-forms-example.html
+src/components-examples/cdk/listbox/cdk-listbox-value-binding/cdk-listbox-value-binding-example.html
+
+# The first 5, reference first
+
+--- reference/src/components-examples/cdk/listbox/cdk-listbox-compare-with/cdk-listbox-compare-with-example.html
++++ formatter/src/components-examples/cdk/listbox/cdk-listbox-compare-with/cdk-listbox-compare-with-example.html
+@@ -21,5 +21,6 @@
+   <p>
+     Your appointment is scheduled for
+-    <strong>{{ formatAppointment() | json }}</strong>&nbsp;
++    <strong>{{ formatAppointment() | json }}</strong
++    >&nbsp;
+   </p>
+ }
+
+
+--- reference/src/components-examples/cdk/listbox/cdk-listbox-forms-validation/cdk-listbox-forms-validation-example.html
++++ formatter/src/components-examples/cdk/listbox/cdk-listbox-forms-validation/cdk-listbox-forms-validation-example.html
+@@ -25,5 +25,6 @@
+ }
+ <p>
+-  Your zodiac sign is: <strong>{{ signCtrl.value | json }}</strong>&nbsp;
++  Your zodiac sign is: <strong>{{ signCtrl.value | json }}</strong
++  >&nbsp;
+   <button (click)="signCtrl.setValue([])">Clear</button>
+ </p>
+
+
+--- reference/src/components-examples/cdk/listbox/cdk-listbox-reactive-forms/cdk-listbox-reactive-forms-example.html
++++ formatter/src/components-examples/cdk/listbox/cdk-listbox-reactive-forms/cdk-listbox-reactive-forms-example.html
+@@ -17,6 +17,6 @@
+ </div>
+ <p>
+-  Your preferred language:
+-  <strong>{{ languageCtrl.value | json }}</strong>&nbsp;
++  Your preferred language: <strong>{{ languageCtrl.value | json }}</strong
++  >&nbsp;
+   <button (click)="languageCtrl.reset()">Reset</button>
+ </p>
+
+
+--- reference/src/components-examples/cdk/listbox/cdk-listbox-template-forms/cdk-listbox-template-forms-example.html
++++ formatter/src/components-examples/cdk/listbox/cdk-listbox-template-forms/cdk-listbox-template-forms-example.html
+@@ -18,5 +18,6 @@
+ </div>
+ <p>
+-  Your order: <strong>{{ order | json }}</strong>&nbsp;
++  Your order: <strong>{{ order | json }}</strong
++  >&nbsp;
+   <button (click)="order = []">Reset</button>
+ </p>
+
+
+--- reference/src/components-examples/cdk/listbox/cdk-listbox-value-binding/cdk-listbox-value-binding-example.html
++++ formatter/src/components-examples/cdk/listbox/cdk-listbox-value-binding/cdk-listbox-value-binding-example.html
+@@ -18,5 +18,6 @@
+ </div>
+ <p>
+-  Your starter pokemon is <strong>{{ starter | json }}</strong>&nbsp;
++  Your starter pokemon is <strong>{{ starter | json }}</strong
++  >&nbsp;
+   <button (click)="reset()">Reset</button>
+ </p>
+

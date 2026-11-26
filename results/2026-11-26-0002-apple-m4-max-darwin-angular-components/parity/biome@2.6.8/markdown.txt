@@ -1,0 +1,1543 @@
+# 112 of 278 files differ from prettier@3.10.1
+CHANGELOG.md
+CHANGELOG_ARCHIVE.md
+CODING_STANDARDS.md
+goldens/aria/accordion/index.api.md
+goldens/aria/combobox/index.api.md
+goldens/aria/grid/index.api.md
+goldens/aria/index.api.md
+goldens/aria/listbox/index.api.md
+goldens/aria/menu/index.api.md
+goldens/aria/private/index.api.md
+goldens/aria/tabs/index.api.md
+goldens/aria/toolbar/index.api.md
+goldens/cdk/a11y/index.api.md
+goldens/cdk/accordion/index.api.md
+goldens/cdk/bidi/index.api.md
+goldens/cdk/clipboard/index.api.md
+goldens/cdk/collections/index.api.md
+goldens/cdk/dialog/index.api.md
+goldens/cdk/drag-drop/index.api.md
+goldens/cdk/index.api.md
+goldens/cdk/layout/index.api.md
+goldens/cdk/listbox/index.api.md
+goldens/cdk/menu/index.api.md
+goldens/cdk/observers/index.api.md
+goldens/cdk/overlay/index.api.md
+goldens/cdk/portal/index.api.md
+goldens/cdk/scrolling/index.api.md
+goldens/cdk/stepper/index.api.md
+goldens/cdk/table/index.api.md
+goldens/cdk/testing/index.api.md
+goldens/cdk/text-field/index.api.md
+goldens/cdk/tree/index.api.md
+goldens/google-maps/index.api.md
+goldens/material/autocomplete/index.api.md
+goldens/material/badge/index.api.md
+goldens/material/bottom-sheet/index.api.md
+goldens/material/button/index.api.md
+goldens/material/button/testing/index.api.md
+goldens/material/button-toggle/index.api.md
+goldens/material/card/index.api.md
+goldens/material/checkbox/index.api.md
+goldens/material/chips/index.api.md
+goldens/material/core/index.api.md
+goldens/material/datepicker/index.api.md
+goldens/material/datepicker/testing/index.api.md
+goldens/material/dialog/index.api.md
+goldens/material/dialog/testing/index.api.md
+goldens/material/divider/index.api.md
+goldens/material/expansion/index.api.md
+goldens/material/form-field/index.api.md
+goldens/material/grid-list/index.api.md
+goldens/material/icon/index.api.md
+goldens/material/input/index.api.md
+goldens/material/input/testing/index.api.md
+goldens/material/list/index.api.md
+goldens/material/list/testing/index.api.md
+goldens/material/menu/index.api.md
+goldens/material/paginator/index.api.md
+goldens/material/progress-bar/index.api.md
+goldens/material/progress-spinner/index.api.md
+goldens/material/radio/index.api.md
+goldens/material/select/index.api.md
+goldens/material/select/testing/index.api.md
+goldens/material/sidenav/index.api.md
+goldens/material/slide-toggle/index.api.md
+goldens/material/slider/index.api.md
+goldens/material/snack-bar/index.api.md
+goldens/material/sort/index.api.md
+goldens/material/stepper/index.api.md
+goldens/material/table/index.api.md
+goldens/material/tabs/index.api.md
+goldens/material/timepicker/index.api.md
+goldens/material/tooltip/index.api.md
+goldens/material/tree/index.api.md
+goldens/youtube-player/index.api.md
+guides/bidirectionality.md
+guides/creating-a-custom-form-field-control.md
+guides/creating-a-custom-stepper-using-the-cdk-stepper.md
+guides/material-2.md
+guides/theming-your-components.md
+guides/theming.md
+guides/v9-hammerjs-migration.md
+src/README.md
+src/cdk/a11y/a11y.md
+src/cdk/a11y/interactivity-checker/interactivity-checker.md
+src/cdk/a11y/key-manager/list-key-manager.md
+src/cdk/clipboard/clipboard.md
+src/cdk/dialog/dialog.md
+src/cdk/listbox/listbox.md
+src/cdk/schematics/ng-update/update-schematic.md
+src/cdk/table/table.md
+src/cdk/testing/test-harnesses.md
+src/cdk/tree/tree.md
+src/google-maps/deprecated-map-marker-clusterer/README.md
+src/google-maps/map-marker-clusterer/README.md
+src/material/autocomplete/autocomplete.md
+src/material/chips/chips.md
+src/material/datepicker/datepicker.md
+src/material/dialog/dialog.md
+src/material/divider/divider.md
+src/material/expansion/expansion.md
+src/material/list/list.md
+src/material/paginator/paginator.md
+src/material/schematics/ng-generate/theme-color/README.md
+src/material/slide-toggle/slide-toggle.md
+src/material/slider/slider.md
+src/material/stepper/stepper.md
+src/material/table/table.md
+src/material/timepicker/timepicker.md
+src/material/toolbar/toolbar.md
+src/material/tree/tree.md
+src/material-experimental/README.md
+
+# The first 25, reference first
+
+--- reference/CHANGELOG.md
++++ formatter/CHANGELOG.md
+@@ -16,5 +16,4 @@ No user facing changes in this release
+ | -------------------------------------------------------------------------------------------------- | ---- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+ | [249b3ee5c](https://github.com/angular/components/commit/249b3ee5c8b334dcb6b8d9e035380318e4438c2c) | fix  | **combobox:** queue relayed keyboard events to prevent dropping back-to-back keys ([#34083](https://github.com/angular/components/pull/34083)) |
+-
+ ### material
+ 
+@@ -26,5 +25,4 @@ No user facing changes in this release
+ | [78e0484ef](https://github.com/angular/components/commit/78e0484efd4b2d71a9f78fa4d6077d47486ca97c) | fix  | **chips:** do not apply avatar shape to leading icons ([#34099](https://github.com/angular/components/pull/34099))  |
+ | [a8808e252](https://github.com/angular/components/commit/a8808e252a5f737c11b31010d5498daf89332fb0) | fix  | **radio:** use correct selector for label                                                                           |
+-
+ ### multiple
+ 
+@@ -48,5 +46,4 @@ No user facing changes in this release
+ | [e2189c4d5](https://github.com/angular/components/commit/e2189c4d5e17d29c8d588f5f9602d85a035043c2) | fix  | **menu:** render content only when visible ([#34104](https://github.com/angular/components/pull/34104))                          |
+ | [fdfca0b27](https://github.com/angular/components/commit/fdfca0b277dc6d08ba8ba163db2a0052133241b2) | fix  | **tree:** avoid errors when destroyed before initialization ([#34059](https://github.com/angular/components/pull/34059))         |
+-
+ ### cdk
+ 
+@@ -68,5 +65,4 @@ No user facing changes in this release
+ | [883fd65024e08](https://github.com/angular/components/commit/883fd65024e088dfcf288ec567f51b2c887a4ab1) | fix  | **accordion:** move listeners to trigger ([#34053](https://github.com/angular/components/pull/34053))                      |
+ | [e7dc3254ce3b0](https://github.com/angular/components/commit/e7dc3254ce3b0f94288277795152bfa56947a39f) | fix  | **combobox:** prevent selecting filtered-out options on Enter ([#34045](https://github.com/angular/components/pull/34045)) |
+-
+ ### cdk
+ 
+@@ -77,5 +73,4 @@ No user facing changes in this release
+ | [3ed6bca260716](https://github.com/angular/components/commit/3ed6bca26071663784057ef15c4fbe7c6dc625d7) | fix  | **testing:** enable bubbling for input-related events ([#34020](https://github.com/angular/components/pull/34020))     |
+ | [ee54e1deb454f](https://github.com/angular/components/commit/ee54e1deb454f70269ec4411b41f1e8c4380a2de) | fix  | **testing:** option selection with latest angular version ([#34040](https://github.com/angular/components/pull/34040)) |
+-
+ ### material
+ 
+@@ -96,5 +91,4 @@ No user facing changes in this release
+ | -------------------------------------------------------------------------------------------------- | ---- | --------------------------------------------------------------------------------------------------------------------------- |
+ | [1edc5bfd7](https://github.com/angular/components/commit/1edc5bfd7c345360ab92b154a56524e6a8283e87) | fix  | **menu:** avoid re-rendering when unrelated elements are added ([#33996](https://github.com/angular/components/pull/33996)) |
+-
+ ### material
+ 
+@@ -103,5 +97,4 @@ No user facing changes in this release
+ | [cdaa1c3bd](https://github.com/angular/components/commit/cdaa1c3bda7c3973333cbc230e897981962f1e1c) | fix  | **checkbox:** duplicate required error with signal forms     |
+ | [f70c3ccdd](https://github.com/angular/components/commit/f70c3ccdd874c872b36684a17e0b250e5339b186) | fix  | **slide-toggle:** duplicate required error with signal forms |
+-
+ ### multiple
+ 
+@@ -121,5 +114,4 @@ No user facing changes in this release
+ | -------------------------------------------------------------------------------------------------- | ---- | -------------------------------------------------------------------------------------------------------------------------------------- |
+ | [14d931161](https://github.com/angular/components/commit/14d931161b4530ec6b5ba3525fdc2f3544cdf7d7) | fix  | **combobox:** error when popup is destroyed before first change detection ([#33974](https://github.com/angular/components/pull/33974)) |
+-
+ ### material
+ 
+@@ -140,5 +132,4 @@ No user facing changes in this release
+ | -------------------------------------------------------------------------------------------------- | ---- | ------------------------------------------------------------------------------------------------------------ |
+ | [a307978dc](https://github.com/angular/components/commit/a307978dc42c034ed8a13a13fce93f6884c69487) | fix  | **a11y:** treat inert elements as non-focusable ([#33846](https://github.com/angular/components/pull/33846)) |
+-
+ ### material
+ 
+@@ -160,5 +151,4 @@ No user facing changes in this release
+ | [471f62afa](https://github.com/angular/components/commit/471f62afaf7200b8c92a630539260dbec45c1d34) | fix  | **drag-drop:** use consistent touch coordinates for bounded dragging ([#33928](https://github.com/angular/components/pull/33928)) |
+ | [9c62976ba](https://github.com/angular/components/commit/9c62976ba987cdc671be49cba410605fae417438) | fix  | **overlay:** remove old prefixes for fullscreen elements                                                                          |
+-
+... 3590 more lines
+
+--- reference/CHANGELOG_ARCHIVE.md
++++ formatter/CHANGELOG_ARCHIVE.md
+@@ -1464,5 +1464,5 @@ the new Sass module system, which offers a number of benefits over the existing
+ |         |                                                                                                                                                                                                                                                                 |
+ | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+-| bug fix | **mdc-form-field:** add filled MDC text field class ([#19103](https://github.com/angular/components/issues/19103)) ([54c5633](https://github.com/angular/components/commit/54c5633))                                                                            |
++| bug fix | **mdc-form-field:** add  filled MDC text field class ([#19103](https://github.com/angular/components/issues/19103)) ([54c5633](https://github.com/angular/components/commit/54c5633))                                                                           |
+ | bug fix | **mdc-progress-bar:** better server-side rendering support ([#19036](https://github.com/angular/components/issues/19036)) ([7a99cfa](https://github.com/angular/components/commit/7a99cfa))                                                                     |
+ | bug fix | **mdc-button:** strong focus indication always visible on fab buttons ([#19169](https://github.com/angular/components/issues/19169)) ([11786b7](https://github.com/angular/components/commit/11786b7))                                                          |
+@@ -1651,5 +1651,5 @@ This release introduces support for TypeScript 3.8.
+ |         |                                                                                                                                                                                                |
+ | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+-| bug fix | **mdc-\*:** rename sass mixins to mat-mdc-* ([#18615](https://github.com/angular/components/issues/18615)) ([694386a](https://github.com/angular/components/commit/694386a))                   |
++| bug fix | **mdc-*:** rename sass mixins to mat-mdc-* ([#18615](https://github.com/angular/components/issues/18615)) ([694386a](https://github.com/angular/components/commit/694386a))                    |
+ | bug fix | **mdc-form-field:** avoid expression changed after check ([#18741](https://github.com/angular/components/issues/18741)) ([65a602f](https://github.com/angular/components/commit/65a602f))      |
+ | bug fix | **mdc-progress-bar:** account for breaking changes in latest canary ([5d49f37](https://github.com/angular/components/commit/5d49f37))                                                          |
+@@ -4231,5 +4231,4 @@ With the Angular CLI v6.0+, you can use the `ng update` command to automatically
+ ng update @angular/material
+ ```
+-
+ **NOTE:** There may be some cases where the tool may be unable to automatically migrate, but will notify you of those cases
+ 
+@@ -5500,4 +5499,5 @@ We expect to have the tool ready when we release version 6.0.0.
+   - Any uses of the `ScrollDispatcher.scrolled` method have to be refactored to subscribe to the
+     returned Observable, instead of passing in the `callback`. Example
++
+     ```ts
+     // Before
+@@ -5507,4 +5507,5 @@ We expect to have the tool ready when we release version 6.0.0.
+     scrollDispatcher.scrolled(50).subscribe(() => ...);
+     ```
++
+ - **unique-selection:** move UniqueSelectionDispatcher to `@angular/cdk/collections`
+   (`UniqueSelectionDispatcher`, `UniqueSelectionDispatcherListener`, and
+@@ -5663,7 +5664,7 @@ marble-mustache](https://github.com/angular/material2/compare/2.0.0-beta.11...2.
+ 
+ - All "md" prefixes have been removed. See the [deprecation notice in the beta.11 notes for more
+-  information](https://github.com/angular/material2/blob/main/CHANGELOG.md#deprecation-of-md-prefix).
++information](https://github.com/angular/material2/blob/main/CHANGELOG.md#deprecation-of-md-prefix).
+ - All cdk re-exports in `@angular/material` have been removed. See the [the beta.10 notes for more
+-  information](https://github.com/angular/material2/blob/main/CHANGELOG.md#breaking-changes-2).
++information](https://github.com/angular/material2/blob/main/CHANGELOG.md#breaking-changes-2).
+ - Previously the `ScrollDispatcher.scrolled` subscription would react both on scroll events and on window resize events. Now it only reacts to scroll events. To react to resize events, subscribe to the `ViewportRuler.change()` stream.
+ - `UniqueSelectionDispatcher`, `UniqueSelectionDispatcherListener` and `UNIQUE_SELECTION_DISPATCHER_PROVIDER` are no longer
+@@ -5778,5 +5779,4 @@ marble-mustache](https://github.com/angular/material2/compare/2.0.0-beta.11...2.
+   the `themeClass` property has been removed. To add a class to the
+   overlay for theming, you can do
+-
+ ```ts
+ overlayContainer.getContainerElement().classList.add("my-theme-class");
+@@ -5811,5 +5811,5 @@ time:
+   names remained "Md" to be unfriendly.
+ - Making both prefixes available consistently through templates required [adding many
+-  getters/setters that aliased the "true" property](https://github.com/angular/material2/blob/1cfce8d9ab047d447465bd4e233fd26893830328/src/lib/tooltip/tooltip.ts#L171-L198).
++getters/setters that aliased the "true" property](https://github.com/angular/material2/blob/1cfce8d9ab047d447465bd4e233fd26893830328/src/lib/tooltip/tooltip.ts#L171-L198).
+   This ends up increasing payload size and complexity of the source code.
+ - Compatiblity mode itself used [broad directive selectors](https://github.com/angular/material2/blob/87318bc7c83d249036837376609ea099e5aea2d9/src/lib/core/compatibility/compatibility.ts#L107-L187)
+@@ -5923,9 +5923,7 @@ broken countless custom styles that relied on a particular specificity working.
+ - Imports from `@angular/cdk` are now scoped to a specific sub-package. For example, if you
+   previously had:
+... 43 more lines
+
+--- reference/CODING_STANDARDS.md
++++ formatter/CODING_STANDARDS.md
+@@ -161,4 +161,5 @@ API docs.
+ - Decorators such as `@Input` should be applied to the getter and not the setter.
+ - Always use a `readonly` property instead of a getter (with no setter) when possible.
++
+   ```ts
+   /** YES */
+@@ -289,5 +290,4 @@ import {Input, booleanAttribute} from '@angular/core';
+ @Input({transform: booleanAttribute}) disabled: boolean = false;
+ ```
+-
+ The above code allows users to set `disabled` similar to how it can be set on native inputs:
+ 
+@@ -316,5 +316,5 @@ Usage
+ ```html
+ <your-component>
+-  <input />
++  <input>
+ </your-component>
+ ```
+@@ -325,5 +325,5 @@ Implementation
+ 
+ ```html
+-<input />
++<input>
+ ```
+ 
+
+
+--- reference/goldens/aria/accordion/index.api.md
++++ formatter/goldens/aria/accordion/index.api.md
+@@ -4,9 +4,10 @@
+ 
+ ```ts
+-import * as _angular_cdk_bidi from "@angular/cdk/bidi";
+-import * as _angular_core from "@angular/core";
+-import { InjectionToken } from "@angular/core";
+-import { OnDestroy } from "@angular/core";
+-import { Signal } from "@angular/core";
++
++import * as _angular_cdk_bidi from '@angular/cdk/bidi';
++import * as _angular_core from '@angular/core';
++import { InjectionToken } from '@angular/core';
++import { OnDestroy } from '@angular/core';
++import { Signal } from '@angular/core';
+ 
+ // @public
+@@ -15,133 +16,68 @@ export const ACCORDION_GROUP: InjectionToken<AccordionGroup>;
+ // @public
+ export class AccordionContent {
+-  // (undocumented)
+-  static ɵdir: _angular_core.ɵɵDirectiveDeclaration<
+-    AccordionContent,
+-    "ng-template[ngAccordionContent]",
+-    never,
+-    {},
+-    {},
+-    never,
+-    never,
+-    true,
+-    [{ directive: typeof DeferredContent; inputs: {}; outputs: {} }]
+-  >;
+-  // (undocumented)
+-  static ɵfac: _angular_core.ɵɵFactoryDeclaration<AccordionContent, never>;
++    // (undocumented)
++    static ɵdir: _angular_core.ɵɵDirectiveDeclaration<AccordionContent, "ng-template[ngAccordionContent]", never, {}, {}, never, never, true, [{ directive: typeof DeferredContent; inputs: {}; outputs: {}; }]>;
++    // (undocumented)
++    static ɵfac: _angular_core.ɵɵFactoryDeclaration<AccordionContent, never>;
+ }
+ 
+ // @public
+ export class AccordionGroup implements OnDestroy {
+-  constructor();
+-  collapseAll(): void;
+-  readonly _collection: SortedCollection<AccordionTrigger>;
+-  readonly disabled: _angular_core.InputSignalWithTransform<boolean, unknown>;
+-  readonly element: HTMLElement;
+-  expandAll(): void;
+-  readonly multiExpandable: _angular_core.InputSignalWithTransform<
+-    boolean,
+-    unknown
+-  >;
+-  // (undocumented)
+-  ngOnDestroy(): void;
+-  readonly _pattern: AccordionGroupPattern;
+-  readonly softDisabled: _angular_core.InputSignalWithTransform<
+-    boolean,
+-    unknown
+-  >;
+... 143 more lines
+
+--- reference/goldens/aria/combobox/index.api.md
++++ formatter/goldens/aria/combobox/index.api.md
+@@ -4,72 +4,34 @@
+ 
+ ```ts
+-import * as _angular_core from "@angular/core";
+-import { InjectionToken } from "@angular/core";
+-import { OnDestroy } from "@angular/core";
+-import { OnInit } from "@angular/core";
++
++import * as _angular_core from '@angular/core';
++import { InjectionToken } from '@angular/core';
++import { OnDestroy } from '@angular/core';
++import { OnInit } from '@angular/core';
+ 
+ // @public
+-export class Combobox
+-  extends DeferredContentAware
+-  implements OnInit, OnDestroy
+-{
+-  constructor();
+-  readonly alwaysExpanded: _angular_core.InputSignalWithTransform<
+-    boolean,
+-    unknown
+-  >;
+-  readonly disabled: _angular_core.InputSignalWithTransform<boolean, unknown>;
+-  readonly element: HTMLElement;
+-  readonly expanded: _angular_core.ModelSignal<boolean>;
+-  readonly inlineSuggestion: _angular_core.InputSignal<string | undefined>;
+-  // (undocumented)
+-  ngOnDestroy(): void;
+-  // (undocumented)
+-  ngOnInit(): void;
+-  readonly _pattern: ComboboxPattern;
+-  readonly _popup: _angular_core.WritableSignal<ComboboxPopup | undefined>;
+-  readonly readonly: _angular_core.InputSignalWithTransform<boolean, unknown>;
+-  _registerPopup(popup: ComboboxPopup): void;
+-  readonly softDisabled: _angular_core.InputSignalWithTransform<
+-    boolean,
+-    unknown
+-  >;
+-  readonly tabIndex: _angular_core.InputSignalWithTransform<
+-    number | undefined,
+-    string | number | undefined
+-  >;
+-  _unregisterPopup(): void;
+-  readonly value: _angular_core.ModelSignal<string>;
+-  // (undocumented)
+-  static ɵdir: _angular_core.ɵɵDirectiveDeclaration<
+-    Combobox,
+-    "[ngCombobox]",
+-    ["ngCombobox"],
+-    {
+-      disabled: { alias: "disabled"; required: false; isSignal: true };
+-      readonly: { alias: "readonly"; required: false; isSignal: true };
+-      softDisabled: { alias: "softDisabled"; required: false; isSignal: true };
+-      alwaysExpanded: {
+-        alias: "alwaysExpanded";
+-        required: false;
+-        isSignal: true;
+... 149 more lines
+
+--- reference/goldens/aria/grid/index.api.md
++++ formatter/goldens/aria/grid/index.api.md
+@@ -4,11 +4,12 @@
+ 
+ ```ts
+-import * as _angular_cdk_bidi from "@angular/cdk/bidi";
+-import * as _angular_core from "@angular/core";
+-import { ElementRef } from "@angular/core";
+-import { InjectionToken } from "@angular/core";
+-import { OnDestroy } from "@angular/core";
+-import { OnInit } from "@angular/core";
+-import { Signal } from "@angular/core";
++
++import * as _angular_cdk_bidi from '@angular/cdk/bidi';
++import * as _angular_core from '@angular/core';
++import { ElementRef } from '@angular/core';
++import { InjectionToken } from '@angular/core';
++import { OnDestroy } from '@angular/core';
++import { OnInit } from '@angular/core';
++import { Signal } from '@angular/core';
+ 
+ // @public
+@@ -17,63 +18,26 @@ export const GRID: InjectionToken<Grid>;
+ // @public
+ export class Grid implements OnDestroy {
+-  constructor();
+-  readonly activeDescendant: Signal<string | undefined>;
+-  readonly _collection: SortedCollection<GridRow>;
+-  readonly colWrap: _angular_core.InputSignal<"continuous" | "loop" | "nowrap">;
+-  readonly disabled: _angular_core.InputSignalWithTransform<boolean, unknown>;
+-  readonly element: HTMLElement;
+-  readonly enableSelection: _angular_core.InputSignalWithTransform<
+-    boolean,
+-    unknown
+-  >;
+-  readonly focusMode: _angular_core.InputSignal<"activedescendant" | "roving">;
+-  readonly multi: _angular_core.InputSignalWithTransform<boolean, unknown>;
+-  // (undocumented)
+-  ngOnDestroy(): void;
+-  readonly _pattern: GridPattern;
+-  readonly rowWrap: _angular_core.InputSignal<"continuous" | "loop" | "nowrap">;
+-  scrollActiveCellIntoView(options?: ScrollIntoViewOptions): void;
+-  readonly selectionMode: _angular_core.InputSignal<"explicit" | "follow">;
+-  readonly softDisabled: _angular_core.InputSignalWithTransform<
+-    boolean,
+-    unknown
+-  >;
+-  readonly tabIndex: _angular_core.InputSignalWithTransform<
+-    number | undefined,
+-    string | number | undefined
+-  >;
+-  readonly textDirection: _angular_core.WritableSignal<_angular_cdk_bidi.Direction>;
+-  // (undocumented)
+-  static ɵdir: _angular_core.ɵɵDirectiveDeclaration<
+-    Grid,
+-    "[ngGrid]",
+-    ["ngGrid"],
+-    {
+-      enableSelection: {
+-        alias: "enableSelection";
+... 234 more lines
+
+--- reference/goldens/aria/index.api.md
++++ formatter/goldens/aria/index.api.md
+@@ -4,5 +4,6 @@
+ 
+ ```ts
+-import { Version } from "@angular/core";
++
++import { Version } from '@angular/core';
+ 
+ // @public
+@@ -10,3 +11,4 @@ export const VERSION: Version;
+ 
+ // (No @packageDocumentation comment for this package)
++
+ ```
+
+
+--- reference/goldens/aria/listbox/index.api.md
++++ formatter/goldens/aria/listbox/index.api.md
+@@ -4,10 +4,11 @@
+ 
+ ```ts
+-import * as _angular_cdk_bidi from "@angular/cdk/bidi";
+-import * as _angular_core from "@angular/core";
+-import { InjectionToken } from "@angular/core";
+-import { OnDestroy } from "@angular/core";
+-import { OnInit } from "@angular/core";
+-import { Signal } from "@angular/core";
++
++import * as _angular_cdk_bidi from '@angular/cdk/bidi';
++import * as _angular_core from '@angular/core';
++import { InjectionToken } from '@angular/core';
++import { OnDestroy } from '@angular/core';
++import { OnInit } from '@angular/core';
++import { Signal } from '@angular/core';
+ 
+ // @public (undocumented)
+@@ -16,107 +17,56 @@ export const LISTBOX: InjectionToken<Listbox<any>>;
+ // @public
+ export class Listbox<V> implements OnDestroy {
+-  constructor();
+-  readonly activeDescendant: Signal<string | undefined>;
+-  readonly _collection: SortedCollection<Option_2<V>>;
+-  readonly disabled: _angular_core.InputSignalWithTransform<boolean, unknown>;
+-  readonly element: HTMLElement;
+-  readonly focusMode: _angular_core.InputSignal<"activedescendant" | "roving">;
+-  gotoFirst(): void;
+-  gotoIndex(index: number): void;
+-  readonly id: _angular_core.InputSignal<string>;
+-  readonly multi: _angular_core.InputSignalWithTransform<boolean, unknown>;
+-  // (undocumented)
+-  ngOnDestroy(): void;
+-  readonly orientation: _angular_core.InputSignal<"horizontal" | "vertical">;
+-  readonly _pattern: ListboxPattern<V>;
+-  readonly readonly: _angular_core.InputSignalWithTransform<boolean, unknown>;
+-  // (undocumented)
+-  scrollActiveItemIntoView(options?: ScrollIntoViewOptions): void;
+-  readonly selectionMode: _angular_core.InputSignal<"explicit" | "follow">;
+-  readonly softDisabled: _angular_core.InputSignalWithTransform<
+-    boolean,
+-    unknown
+-  >;
+-  readonly tabIndex: _angular_core.InputSignalWithTransform<
+-    number | undefined,
+-    string | number | undefined
+-  >;
+-  protected readonly textDirection: Signal<_angular_cdk_bidi.Direction>;
+-  readonly typeaheadDelay: _angular_core.InputSignal<number>;
+-  readonly value: _angular_core.ModelSignal<V[]>;
+-  readonly wrap: _angular_core.InputSignalWithTransform<boolean, unknown>;
+-  // (undocumented)
+-  static ɵdir: _angular_core.ɵɵDirectiveDeclaration<
+-    Listbox<any>,
+-    "[ngListbox]",
+-    ["ngListbox"],
+-    {
+-      id: { alias: "id"; required: false; isSignal: true };
+... 115 more lines
+
+--- reference/goldens/aria/menu/index.api.md
++++ formatter/goldens/aria/menu/index.api.md
+@@ -4,72 +4,37 @@
+ 
+ ```ts
+-import * as _angular_cdk_bidi from "@angular/cdk/bidi";
+-import * as _angular_core from "@angular/core";
+-import { InjectionToken } from "@angular/core";
+-import { OnDestroy } from "@angular/core";
+-import { OnInit } from "@angular/core";
+-import { Signal } from "@angular/core";
++
++import * as _angular_cdk_bidi from '@angular/cdk/bidi';
++import * as _angular_core from '@angular/core';
++import { InjectionToken } from '@angular/core';
++import { OnDestroy } from '@angular/core';
++import { OnInit } from '@angular/core';
++import { Signal } from '@angular/core';
+ 
+ // @public
+ export class Menu<V> implements OnDestroy {
+-  constructor();
+-  close(): void;
+-  readonly _collection: SortedCollection<MenuItem<V>>;
+-  readonly disabled: _angular_core.InputSignalWithTransform<boolean, unknown>;
+-  readonly element: HTMLElement;
+-  readonly expansionDelay: _angular_core.InputSignal<number>;
+-  readonly id: _angular_core.InputSignal<string>;
+-  readonly _items: Signal<MenuItem<V>[]>;
+-  readonly itemSelected: _angular_core.OutputEmitterRef<V | undefined>;
+-  // (undocumented)
+-  ngOnDestroy(): void;
+-  readonly parent: _angular_core.WritableSignal<
+-    MenuItem<V> | MenuTrigger<V> | undefined
+-  >;
+-  readonly _pattern: MenuPattern<V>;
+-  readonly softDisabled: _angular_core.InputSignalWithTransform<
+-    boolean,
+-    unknown
+-  >;
+-  readonly tabIndex: Signal<-1 | 0>;
+-  readonly textDirection: _angular_core.WritableSignal<_angular_cdk_bidi.Direction>;
+-  readonly typeaheadDelay: _angular_core.InputSignal<number>;
+-  readonly visible: Signal<boolean>;
+-  readonly wrap: _angular_core.InputSignalWithTransform<boolean, unknown>;
+-  // (undocumented)
+-  static ɵdir: _angular_core.ɵɵDirectiveDeclaration<
+-    Menu<any>,
+-    "[ngMenu]",
+-    ["ngMenu"],
+-    {
+-      id: { alias: "id"; required: false; isSignal: true };
+-      wrap: { alias: "wrap"; required: false; isSignal: true };
+-      typeaheadDelay: {
+-        alias: "typeaheadDelay";
+-        required: false;
+-        isSignal: true;
+-      };
+-      disabled: { alias: "disabled"; required: false; isSignal: true };
+-      softDisabled: { alias: "softDisabled"; required: false; isSignal: true };
+... 261 more lines
+
+--- reference/goldens/aria/private/index.api.md
++++ formatter/goldens/aria/private/index.api.md
+@@ -11,10 +11,11 @@ import { untracked } from "@angular/core/primitives/signals";
+ 
+ // @public
+-export interface AccordionGroupInputs extends Omit<
+-  ListNavigationInputs<AccordionTriggerPattern> &
+-    ListFocusInputs<AccordionTriggerPattern> &
+-    Omit<ListExpansionInputs, "items">,
+-  "focusMode"
+-> {}
++export interface AccordionGroupInputs
++  extends Omit<
++    ListNavigationInputs<AccordionTriggerPattern> &
++      ListFocusInputs<AccordionTriggerPattern> &
++      Omit<ListExpansionInputs, "items">,
++    "focusMode"
++  > {}
+ 
+ // @public
+@@ -33,6 +34,5 @@ export class AccordionGroupPattern {
+ // @public
+ export interface AccordionTriggerInputs
+-  extends
+-    Omit<ListNavigationItem & ListFocusItem, "index">,
++  extends Omit<ListNavigationItem & ListFocusItem, "index">,
+     Omit<ExpansionItem, "expandable"> {
+   accordionGroup: SignalLike<AccordionGroupPattern>;
+@@ -288,8 +288,6 @@ export class GridCellWidgetPattern {
+ 
+ // @public
+-export interface GridInputs extends Omit<
+-  GridInputs$1<GridCellPattern>,
+-  "cells"
+-> {
++export interface GridInputs
++  extends Omit<GridInputs$1<GridCellPattern>, "cells"> {
+   element: SignalLike<HTMLElement>;
+   enableSelection: SignalLike<boolean>;
+@@ -400,8 +398,6 @@ export class ListboxPattern<V> {
+ 
+ // @public
+-export interface MenuBarInputs<V> extends ListInputs<
+-  MenuItemPattern<V>,
+-  V | undefined
+-> {
++export interface MenuBarInputs<V>
++  extends ListInputs<MenuItemPattern<V>, V | undefined> {
+   items: SignalLike<MenuItemPattern<V>[]>;
+   itemSelected?: (value: V | undefined) => void;
+@@ -441,8 +437,6 @@ export class MenuBarPattern<V> {
+ 
+ // @public
+-export interface MenuInputs<V> extends Omit<
+-  ListInputs<MenuItemPattern<V>, V | undefined>,
+-  "value"
+-> {
++export interface MenuInputs<V>
++  extends Omit<ListInputs<MenuItemPattern<V>, V | undefined>, "value"> {
+   expansionDelay: SignalLike<number>;
+... 65 more lines
+
+--- reference/goldens/aria/tabs/index.api.md
++++ formatter/goldens/aria/tabs/index.api.md
+@@ -4,45 +4,32 @@
+ 
+ ```ts
+-import * as _angular_cdk_bidi from "@angular/cdk/bidi";
+-import * as _angular_core from "@angular/core";
+-import { InjectionToken } from "@angular/core";
+-import { OnDestroy } from "@angular/core";
+-import { OnInit } from "@angular/core";
+-import { Signal } from "@angular/core";
+-import { WritableSignal } from "@angular/core";
++
++import * as _angular_cdk_bidi from '@angular/cdk/bidi';
++import * as _angular_core from '@angular/core';
++import { InjectionToken } from '@angular/core';
++import { OnDestroy } from '@angular/core';
++import { OnInit } from '@angular/core';
++import { Signal } from '@angular/core';
++import { WritableSignal } from '@angular/core';
+ 
+ // @public
+ export class Tab implements HasElement, OnInit, OnDestroy {
+-  constructor();
+-  readonly active: _angular_core.Signal<boolean>;
+-  readonly disabled: _angular_core.InputSignalWithTransform<boolean, unknown>;
+-  readonly element: HTMLElement;
+-  readonly id: _angular_core.InputSignal<string>;
+-  // (undocumented)
+-  ngOnDestroy(): void;
+-  // (undocumented)
+-  ngOnInit(): void;
+-  open(): void;
+-  readonly _pattern: TabPattern;
+-  readonly selected: _angular_core.Signal<boolean>;
+-  readonly value: _angular_core.InputSignal<string>;
+-  // (undocumented)
+-  static ɵdir: _angular_core.ɵɵDirectiveDeclaration<
+-    Tab,
+-    "[ngTab]",
+-    ["ngTab"],
+-    {
+-      id: { alias: "id"; required: false; isSignal: true };
+-      disabled: { alias: "disabled"; required: false; isSignal: true };
+-      value: { alias: "value"; required: true; isSignal: true };
+-    },
+-    {},
+-    never,
+-    never,
+-    true,
+-    never
+-  >;
+-  // (undocumented)
+-  static ɵfac: _angular_core.ɵɵFactoryDeclaration<Tab, never>;
++    constructor();
++    readonly active: _angular_core.Signal<boolean>;
++    readonly disabled: _angular_core.InputSignalWithTransform<boolean, unknown>;
++    readonly element: HTMLElement;
++    readonly id: _angular_core.InputSignal<string>;
++    // (undocumented)
+... 221 more lines
+
+--- reference/goldens/aria/toolbar/index.api.md
++++ formatter/goldens/aria/toolbar/index.api.md
+@@ -4,47 +4,30 @@
+ 
+ ```ts
+-import * as _angular_cdk_bidi from "@angular/cdk/bidi";
+-import * as _angular_core from "@angular/core";
+-import { InjectionToken } from "@angular/core";
+-import { OnDestroy } from "@angular/core";
+-import { OnInit } from "@angular/core";
+-import { Signal } from "@angular/core";
++
++import * as _angular_cdk_bidi from '@angular/cdk/bidi';
++import * as _angular_core from '@angular/core';
++import { InjectionToken } from '@angular/core';
++import { OnDestroy } from '@angular/core';
++import { OnInit } from '@angular/core';
++import { Signal } from '@angular/core';
+ 
+ // @public
+ export class Toolbar implements OnDestroy {
+-  constructor();
+-  readonly _collection: SortedCollection<ToolbarWidget>;
+-  readonly disabled: _angular_core.InputSignalWithTransform<boolean, unknown>;
+-  readonly element: HTMLElement;
+-  readonly _itemPatterns: _angular_core.Signal<ToolbarWidgetPattern[]>;
+-  // (undocumented)
+-  ngOnDestroy(): void;
+-  readonly orientation: _angular_core.InputSignal<"horizontal" | "vertical">;
+-  readonly _pattern: ToolbarPattern;
+-  readonly softDisabled: _angular_core.InputSignalWithTransform<
+-    boolean,
+-    unknown
+-  >;
+-  readonly textDirection: _angular_core.WritableSignal<_angular_cdk_bidi.Direction>;
+-  readonly wrap: _angular_core.InputSignalWithTransform<boolean, unknown>;
+-  // (undocumented)
+-  static ɵdir: _angular_core.ɵɵDirectiveDeclaration<
+-    Toolbar,
+-    "[ngToolbar]",
+-    ["ngToolbar"],
+-    {
+-      orientation: { alias: "orientation"; required: false; isSignal: true };
+-      softDisabled: { alias: "softDisabled"; required: false; isSignal: true };
+-      disabled: { alias: "disabled"; required: false; isSignal: true };
+-      wrap: { alias: "wrap"; required: false; isSignal: true };
+-    },
+-    {},
+-    never,
+-    never,
+-    true,
+-    never
+-  >;
+-  // (undocumented)
+-  static ɵfac: _angular_core.ɵɵFactoryDeclaration<Toolbar, never>;
++    constructor();
++    readonly _collection: SortedCollection<ToolbarWidget>;
++    readonly disabled: _angular_core.InputSignalWithTransform<boolean, unknown>;
++    readonly element: HTMLElement;
++    readonly _itemPatterns: _angular_core.Signal<ToolbarWidgetPattern[]>;
+... 97 more lines
+
+--- reference/goldens/cdk/a11y/index.api.md
++++ formatter/goldens/cdk/a11y/index.api.md
+@@ -4,214 +4,146 @@
+ 
+ ```ts
+-import { AfterContentInit } from "@angular/core";
+-import { AfterViewInit } from "@angular/core";
+-import { DoCheck } from "@angular/core";
+-import { ElementRef } from "@angular/core";
+-import { EventEmitter } from "@angular/core";
+-import * as i0 from "@angular/core";
+-import { InjectionToken } from "@angular/core";
+-import { Injector } from "@angular/core";
+-import { NgZone } from "@angular/core";
+-import { Observable } from "rxjs";
+-import { OnChanges } from "@angular/core";
+-import { OnDestroy } from "@angular/core";
+-import { Provider } from "@angular/core";
+-import { QueryList } from "@angular/core";
+-import { SafeHtml } from "@angular/platform-browser";
+-import { Signal } from "@angular/core";
+-import { SimpleChanges } from "@angular/core";
+-import { Subject } from "rxjs";
++
++import { AfterContentInit } from '@angular/core';
++import { AfterViewInit } from '@angular/core';
++import { DoCheck } from '@angular/core';
++import { ElementRef } from '@angular/core';
++import { EventEmitter } from '@angular/core';
++import * as i0 from '@angular/core';
++import { InjectionToken } from '@angular/core';
++import { Injector } from '@angular/core';
++import { NgZone } from '@angular/core';
++import { Observable } from 'rxjs';
++import { OnChanges } from '@angular/core';
++import { OnDestroy } from '@angular/core';
++import { Provider } from '@angular/core';
++import { QueryList } from '@angular/core';
++import { SafeHtml } from '@angular/platform-browser';
++import { Signal } from '@angular/core';
++import { SimpleChanges } from '@angular/core';
++import { Subject } from 'rxjs';
+ 
+ // @public (undocumented)
+ export class A11yModule {
+-  constructor();
+-  // (undocumented)
+-  static ɵfac: i0.ɵɵFactoryDeclaration<A11yModule, never>;
+-  // (undocumented)
+-  static ɵinj: i0.ɵɵInjectorDeclaration<A11yModule>;
+-  // (undocumented)
+-  static ɵmod: i0.ɵɵNgModuleDeclaration<
+-    A11yModule,
+-    never,
+-    [
+-      typeof ObserversModule,
+-      typeof CdkAriaLive,
+-      typeof CdkTrapFocus,
+-      typeof CdkMonitorFocus,
+-    ],
+... 898 more lines
+
+--- reference/goldens/cdk/accordion/index.api.md
++++ formatter/goldens/cdk/accordion/index.api.md
+@@ -4,12 +4,13 @@
+ 
+ ```ts
+-import { EventEmitter } from "@angular/core";
+-import * as i0 from "@angular/core";
+-import { InjectionToken } from "@angular/core";
+-import { OnChanges } from "@angular/core";
+-import { OnDestroy } from "@angular/core";
+-import { OnInit } from "@angular/core";
+-import { SimpleChanges } from "@angular/core";
+-import { Subject } from "rxjs";
++
++import { EventEmitter } from '@angular/core';
++import * as i0 from '@angular/core';
++import { InjectionToken } from '@angular/core';
++import { OnChanges } from '@angular/core';
++import { OnDestroy } from '@angular/core';
++import { OnInit } from '@angular/core';
++import { SimpleChanges } from '@angular/core';
++import { Subject } from 'rxjs';
+ 
+ // @public
+@@ -18,96 +19,64 @@ export const CDK_ACCORDION: InjectionToken<CdkAccordion>;
+ // @public
+ export class CdkAccordion implements OnDestroy, OnChanges {
+-  closeAll(): void;
+-  readonly id: string;
+-  multi: boolean;
+-  // (undocumented)
+-  static ngAcceptInputType_multi: unknown;
+-  // (undocumented)
+-  ngOnChanges(changes: SimpleChanges<this>): void;
+-  // (undocumented)
+-  ngOnDestroy(): void;
+-  openAll(): void;
+-  readonly _openCloseAllActions: Subject<boolean>;
+-  readonly _stateChanges: Subject<SimpleChanges<this>>;
+-  // (undocumented)
+-  static ɵdir: i0.ɵɵDirectiveDeclaration<
+-    CdkAccordion,
+-    "cdk-accordion, [cdkAccordion]",
+-    ["cdkAccordion"],
+-    { multi: { alias: "multi"; required: false } },
+-    {},
+-    never,
+-    never,
+-    true,
+-    never
+-  >;
+-  // (undocumented)
+-  static ɵfac: i0.ɵɵFactoryDeclaration<CdkAccordion, never>;
++    closeAll(): void;
++    readonly id: string;
++    multi: boolean;
++    // (undocumented)
++    static ngAcceptInputType_multi: unknown;
++    // (undocumented)
++    ngOnChanges(changes: SimpleChanges<this>): void;
+... 112 more lines
+
+--- reference/goldens/cdk/bidi/index.api.md
++++ formatter/goldens/cdk/bidi/index.api.md
+@@ -4,51 +4,37 @@
+ 
+ ```ts
+-import { AfterContentInit } from "@angular/core";
+-import { EventEmitter } from "@angular/core";
+-import * as i0 from "@angular/core";
+-import { InjectionToken } from "@angular/core";
+-import { OnDestroy } from "@angular/core";
++
++import { AfterContentInit } from '@angular/core';
++import { EventEmitter } from '@angular/core';
++import * as i0 from '@angular/core';
++import { InjectionToken } from '@angular/core';
++import { OnDestroy } from '@angular/core';
+ 
+ // @public (undocumented)
+ export class BidiModule {
+-  // (undocumented)
+-  static ɵfac: i0.ɵɵFactoryDeclaration<BidiModule, never>;
+-  // (undocumented)
+-  static ɵinj: i0.ɵɵInjectorDeclaration<BidiModule>;
+-  // (undocumented)
+-  static ɵmod: i0.ɵɵNgModuleDeclaration<
+-    BidiModule,
+-    never,
+-    [typeof Dir],
+-    [typeof Dir]
+-  >;
++    // (undocumented)
++    static ɵfac: i0.ɵɵFactoryDeclaration<BidiModule, never>;
++    // (undocumented)
++    static ɵinj: i0.ɵɵInjectorDeclaration<BidiModule>;
++    // (undocumented)
++    static ɵmod: i0.ɵɵNgModuleDeclaration<BidiModule, never, [typeof Dir], [typeof Dir]>;
+ }
+ 
+ // @public
+ export class Dir implements Directionality, AfterContentInit, OnDestroy {
+-  readonly change: EventEmitter<Direction>;
+-  get dir(): Direction;
+-  set dir(value: Direction | "auto");
+-  ngAfterContentInit(): void;
+-  // (undocumented)
+-  ngOnDestroy(): void;
+-  _rawDir: string;
+-  get value(): Direction;
+-  // (undocumented)
+-  readonly valueSignal: i0.WritableSignal<Direction>;
+-  // (undocumented)
+-  static ɵdir: i0.ɵɵDirectiveDeclaration<
+-    Dir,
+-    "[dir]",
+-    ["dir"],
+-    { dir: { alias: "dir"; required: false } },
+-    { change: "dirChange" },
+-    never,
+-    never,
+-    true,
+... 54 more lines
+
+--- reference/goldens/cdk/clipboard/index.api.md
++++ formatter/goldens/cdk/clipboard/index.api.md
+@@ -4,8 +4,9 @@
+ 
+ ```ts
+-import { EventEmitter } from "@angular/core";
+-import * as i0 from "@angular/core";
+-import { InjectionToken } from "@angular/core";
+-import { OnDestroy } from "@angular/core";
++
++import { EventEmitter } from '@angular/core';
++import * as i0 from '@angular/core';
++import { InjectionToken } from '@angular/core';
++import { OnDestroy } from '@angular/core';
+ 
+ // @public
+@@ -14,68 +15,51 @@ export const CDK_COPY_TO_CLIPBOARD_CONFIG: InjectionToken<CdkCopyToClipboardConf
+ // @public
+ export class CdkCopyToClipboard implements OnDestroy {
+-  constructor();
+-  attempts: number;
+-  readonly copied: EventEmitter<boolean>;
+-  copy(attempts?: number): void;
+-  // (undocumented)
+-  ngOnDestroy(): void;
+-  text: string;
+-  // (undocumented)
+-  static ɵdir: i0.ɵɵDirectiveDeclaration<
+-    CdkCopyToClipboard,
+-    "[cdkCopyToClipboard]",
+-    never,
+-    {
+-      text: { alias: "cdkCopyToClipboard"; required: false };
+-      attempts: { alias: "cdkCopyToClipboardAttempts"; required: false };
+-    },
+-    { copied: "cdkCopyToClipboardCopied" },
+-    never,
+-    never,
+-    true,
+-    never
+-  >;
+-  // (undocumented)
+-  static ɵfac: i0.ɵɵFactoryDeclaration<CdkCopyToClipboard, never>;
++    constructor();
++    attempts: number;
++    readonly copied: EventEmitter<boolean>;
++    copy(attempts?: number): void;
++    // (undocumented)
++    ngOnDestroy(): void;
++    text: string;
++    // (undocumented)
++    static ɵdir: i0.ɵɵDirectiveDeclaration<CdkCopyToClipboard, "[cdkCopyToClipboard]", never, { "text": { "alias": "cdkCopyToClipboard"; "required": false; }; "attempts": { "alias": "cdkCopyToClipboardAttempts"; "required": false; }; }, { "copied": "cdkCopyToClipboardCopied"; }, never, never, true, never>;
++    // (undocumented)
++    static ɵfac: i0.ɵɵFactoryDeclaration<CdkCopyToClipboard, never>;
+ }
+ 
+ // @public
+ export interface CdkCopyToClipboardConfig {
+-  attempts?: number;
++    attempts?: number;
+... 55 more lines
+
+--- reference/goldens/cdk/collections/index.api.md
++++ formatter/goldens/cdk/collections/index.api.md
+@@ -4,51 +4,40 @@
+ 
+ ```ts
+-import * as i0 from "@angular/core";
+-import { IterableChangeRecord } from "@angular/core";
+-import { IterableChanges } from "@angular/core";
+-import { Observable } from "rxjs";
+-import { OnDestroy } from "@angular/core";
+-import { Subject } from "rxjs";
+-import { TemplateRef } from "@angular/core";
+-import { ViewContainerRef } from "@angular/core";
++
++import * as i0 from '@angular/core';
++import { IterableChangeRecord } from '@angular/core';
++import { IterableChanges } from '@angular/core';
++import { Observable } from 'rxjs';
++import { OnDestroy } from '@angular/core';
++import { Subject } from 'rxjs';
++import { TemplateRef } from '@angular/core';
++import { ViewContainerRef } from '@angular/core';
+ 
+ // @public
+ export class ArrayDataSource<T> extends DataSource<T> {
+-  constructor(_data: readonly T[] | Observable<readonly T[]>);
+-  // (undocumented)
+-  connect(): Observable<readonly T[]>;
+-  // (undocumented)
+-  disconnect(): void;
++    constructor(_data: readonly T[] | Observable<readonly T[]>);
++    // (undocumented)
++    connect(): Observable<readonly T[]>;
++    // (undocumented)
++    disconnect(): void;
+ }
+ 
+ // @public
+ export interface CollectionViewer {
+-  viewChange: Observable<ListRange>;
++    viewChange: Observable<ListRange>;
+ }
+ 
+ // @public (undocumented)
+ export abstract class DataSource<T> {
+-  abstract connect(
+-    collectionViewer: CollectionViewer,
+-  ): Observable<readonly T[]>;
+-  abstract disconnect(collectionViewer: CollectionViewer): void;
++    abstract connect(collectionViewer: CollectionViewer): Observable<readonly T[]>;
++    abstract disconnect(collectionViewer: CollectionViewer): void;
+ }
+ 
+ // @public
+-export class _DisposeViewRepeaterStrategy<
+-  T,
+-  R,
+-  C extends _ViewRepeaterItemContext<T>,
+-> implements _ViewRepeater<T, R, C> {
+-  // (undocumented)
+... 236 more lines
+
+--- reference/goldens/cdk/dialog/index.api.md
++++ formatter/goldens/cdk/dialog/index.api.md
+@@ -4,124 +4,101 @@
+ 
+ ```ts
+-import { AfterContentInit } from "@angular/core";
+-import { AfterViewInit } from "@angular/core";
+-import * as _angular_cdk_portal from "@angular/cdk/portal";
+-import { Binding } from "@angular/core";
+-import { ChangeDetectorRef } from "@angular/core";
+-import { ComponentRef } from "@angular/core";
+-import { DirectiveWithBindings } from "@angular/core";
+-import { DoCheck } from "@angular/core";
+-import { ElementRef } from "@angular/core";
+-import { EmbeddedViewRef } from "@angular/core";
+-import { EnvironmentInjector } from "@angular/core";
+-import { EventEmitter } from "@angular/core";
+-import * as i0 from "@angular/core";
+-import { InjectionToken } from "@angular/core";
+-import { Injector } from "@angular/core";
+-import { Location as Location_2 } from "@angular/common";
+-import { NgIterable } from "@angular/core";
+-import { NgZone } from "@angular/core";
+-import { Observable } from "rxjs";
+-import { OnChanges } from "@angular/core";
+-import { OnDestroy } from "@angular/core";
+-import { OnInit } from "@angular/core";
+-import { Renderer2 } from "@angular/core";
+-import { SimpleChanges } from "@angular/core";
+-import { StaticProvider } from "@angular/core";
+-import { Subject } from "rxjs";
+-import { Subscription } from "rxjs";
+-import { TemplateRef } from "@angular/core";
+-import { TrackByFunction } from "@angular/core";
+-import { Type } from "@angular/core";
+-import { ViewContainerRef } from "@angular/core";
++
++import { AfterContentInit } from '@angular/core';
++import { AfterViewInit } from '@angular/core';
++import * as _angular_cdk_portal from '@angular/cdk/portal';
++import { Binding } from '@angular/core';
++import { ChangeDetectorRef } from '@angular/core';
++import { ComponentRef } from '@angular/core';
++import { DirectiveWithBindings } from '@angular/core';
++import { DoCheck } from '@angular/core';
++import { ElementRef } from '@angular/core';
++import { EmbeddedViewRef } from '@angular/core';
++import { EnvironmentInjector } from '@angular/core';
++import { EventEmitter } from '@angular/core';
++import * as i0 from '@angular/core';
++import { InjectionToken } from '@angular/core';
++import { Injector } from '@angular/core';
++import { Location as Location_2 } from '@angular/common';
++import { NgIterable } from '@angular/core';
++import { NgZone } from '@angular/core';
++import { Observable } from 'rxjs';
++import { OnChanges } from '@angular/core';
++import { OnDestroy } from '@angular/core';
++import { OnInit } from '@angular/core';
++import { Renderer2 } from '@angular/core';
+... 348 more lines
+
+--- reference/goldens/cdk/drag-drop/index.api.md
++++ formatter/goldens/cdk/drag-drop/index.api.md
+@@ -4,21 +4,22 @@
+ 
+ ```ts
+-import { AfterViewInit } from "@angular/core";
+-import { ElementRef } from "@angular/core";
+-import { EventEmitter } from "@angular/core";
+-import * as i0 from "@angular/core";
+-import { InjectionToken } from "@angular/core";
+-import { Injector } from "@angular/core";
+-import { NgZone } from "@angular/core";
+-import { Observable } from "rxjs";
+-import { OnChanges } from "@angular/core";
+-import { OnDestroy } from "@angular/core";
+-import { OnInit } from "@angular/core";
+-import { Renderer2 } from "@angular/core";
+-import { SimpleChanges } from "@angular/core";
+-import { Subject } from "rxjs";
+-import { Subscription } from "rxjs";
+-import { TemplateRef } from "@angular/core";
+-import { ViewContainerRef } from "@angular/core";
++
++import { AfterViewInit } from '@angular/core';
++import { ElementRef } from '@angular/core';
++import { EventEmitter } from '@angular/core';
++import * as i0 from '@angular/core';
++import { InjectionToken } from '@angular/core';
++import { Injector } from '@angular/core';
++import { NgZone } from '@angular/core';
++import { Observable } from 'rxjs';
++import { OnChanges } from '@angular/core';
++import { OnDestroy } from '@angular/core';
++import { OnInit } from '@angular/core';
++import { Renderer2 } from '@angular/core';
++import { SimpleChanges } from '@angular/core';
++import { Subject } from 'rxjs';
++import { Subscription } from 'rxjs';
++import { TemplateRef } from '@angular/core';
++import { ViewContainerRef } from '@angular/core';
+ 
+ // @public
+@@ -41,749 +42,545 @@ export const CDK_DROP_LIST: InjectionToken<CdkDropList<any>>;
+ 
+ // @public
+-export const CDK_DROP_LIST_GROUP: InjectionToken<
+-  CdkDropListGroup<CdkDropList<any>>
+->;
++export const CDK_DROP_LIST_GROUP: InjectionToken<CdkDropListGroup<CdkDropList<any>>>;
+ 
+ // @public
+ export class CdkDrag<T = any> implements AfterViewInit, OnChanges, OnDestroy {
+-  constructor();
+-  // (undocumented)
+-  _addHandle(handle: CdkDragHandle): void;
+-  boundaryElement: string | ElementRef<HTMLElement> | HTMLElement;
+-  constrainPosition?: DragConstrainPosition;
+-  data: T;
+-  get disabled(): boolean;
+-  set disabled(value: boolean);
+... 1162 more lines
+
+--- reference/goldens/cdk/index.api.md
++++ formatter/goldens/cdk/index.api.md
+@@ -4,5 +4,6 @@
+ 
+ ```ts
+-import { Version } from "@angular/core";
++
++import { Version } from '@angular/core';
+ 
+ // @public
+@@ -10,3 +11,4 @@ export const VERSION: Version;
+ 
+ // (No @packageDocumentation comment for this package)
++
+ ```
+
+
+--- reference/goldens/cdk/layout/index.api.md
++++ formatter/goldens/cdk/layout/index.api.md
+@@ -4,65 +4,67 @@
+ 
+ ```ts
+-import * as i0 from "@angular/core";
+-import { Observable } from "rxjs";
+-import { OnDestroy } from "@angular/core";
++
++import * as i0 from '@angular/core';
++import { Observable } from 'rxjs';
++import { OnDestroy } from '@angular/core';
+ 
+ // @public
+ export class BreakpointObserver implements OnDestroy {
+-  isMatched(value: string | readonly string[]): boolean;
+-  ngOnDestroy(): void;
+-  observe(value: string | readonly string[]): Observable<BreakpointState>;
+-  // (undocumented)
+-  static ɵfac: i0.ɵɵFactoryDeclaration<BreakpointObserver, never>;
+-  // (undocumented)
+-  static ɵprov: i0.ɵɵInjectableDeclaration<any>;
++    isMatched(value: string | readonly string[]): boolean;
++    ngOnDestroy(): void;
++    observe(value: string | readonly string[]): Observable<BreakpointState>;
++    // (undocumented)
++    static ɵfac: i0.ɵɵFactoryDeclaration<BreakpointObserver, never>;
++    // (undocumented)
++    static ɵprov: i0.ɵɵInjectableDeclaration<any>;
+ }
+ 
+ // @public (undocumented)
+ export const Breakpoints: {
+-  XSmall: string;
+-  Small: string;
+-  Medium: string;
+-  Large: string;
+-  XLarge: string;
+-  Handset: string;
+-  Tablet: string;
+-  Web: string;
+-  HandsetPortrait: string;
+-  TabletPortrait: string;
+-  WebPortrait: string;
+-  HandsetLandscape: string;
+-  TabletLandscape: string;
+-  WebLandscape: string;
++    XSmall: string;
++    Small: string;
++    Medium: string;
++    Large: string;
++    XLarge: string;
++    Handset: string;
++    Tablet: string;
++    Web: string;
++    HandsetPortrait: string;
++    TabletPortrait: string;
++    WebPortrait: string;
++    HandsetLandscape: string;
++    TabletLandscape: string;
+... 51 more lines
+
+--- reference/goldens/cdk/listbox/index.api.md
++++ formatter/goldens/cdk/listbox/index.api.md
+@@ -4,204 +4,146 @@
+ 
+ ```ts
+-import { AfterContentInit } from "@angular/core";
+-import { ChangeDetectorRef } from "@angular/core";
+-import { ControlValueAccessor } from "@angular/forms";
+-import * as i0 from "@angular/core";
+-import { Injector } from "@angular/core";
+-import { NgZone } from "@angular/core";
+-import { OnDestroy } from "@angular/core";
+-import { QueryList } from "@angular/core";
+-import { Signal } from "@angular/core";
+-import { Subject } from "rxjs";
++
++import { AfterContentInit } from '@angular/core';
++import { ChangeDetectorRef } from '@angular/core';
++import { ControlValueAccessor } from '@angular/forms';
++import * as i0 from '@angular/core';
++import { Injector } from '@angular/core';
++import { NgZone } from '@angular/core';
++import { OnDestroy } from '@angular/core';
++import { QueryList } from '@angular/core';
++import { Signal } from '@angular/core';
++import { Subject } from 'rxjs';
+ 
+ // @public (undocumented)
+-export class CdkListbox<T = unknown>
+-  implements AfterContentInit, OnDestroy, ControlValueAccessor
+-{
+-  constructor();
+-  protected readonly changeDetectorRef: ChangeDetectorRef;
+-  get compareWith(): undefined | ((o1: T, o2: T) => boolean);
+-  set compareWith(fn: undefined | ((o1: T, o2: T) => boolean));
+-  deselect(option: CdkOption<T>): void;
+-  deselectValue(value: T): void;
+-  protected readonly destroyed: Subject<void>;
+-  get disabled(): boolean;
+-  set disabled(value: boolean);
+-  protected readonly element: HTMLElement;
+-  get enabledTabIndex(): number | null | undefined;
+-  set enabledTabIndex(value: number | null | undefined);
+-  focus(): void;
+-  protected _getAriaActiveDescendant(): string | null | undefined;
+-  protected _getTabIndex(): number | null | undefined;
+-  protected _handleFocus(): void;
+-  protected _handleFocusIn(): void;
+-  protected _handleFocusOut(event: FocusEvent): void;
+-  protected _handleKeydown(event: KeyboardEvent): void;
+-  get id(): string;
+-  set id(value: string);
+-  isActive(option: CdkOption<T>): boolean;
+-  isSelected(option: CdkOption<T>): boolean;
+-  isValueSelected(value: T): boolean;
+-  protected listKeyManager: ActiveDescendantKeyManager<CdkOption<T>>;
+-  get multiple(): boolean;
+-  set multiple(value: boolean);
+-  get navigateDisabledOptions(): boolean;
+-  set navigateDisabledOptions(skip: boolean);
+... 275 more lines
+
+--- reference/goldens/cdk/menu/index.api.md
++++ formatter/goldens/cdk/menu/index.api.md
+@@ -4,34 +4,35 @@
+ 
+ ```ts
+-import { AfterContentInit } from "@angular/core";
+-import { Binding } from "@angular/core";
+-import { ComponentRef } from "@angular/core";
+-import { DirectiveWithBindings } from "@angular/core";
+-import { DoCheck } from "@angular/core";
+-import { ElementRef } from "@angular/core";
+-import { EmbeddedViewRef } from "@angular/core";
+-import { EnvironmentInjector } from "@angular/core";
+-import { EventEmitter } from "@angular/core";
+-import * as i0 from "@angular/core";
+-import { InjectionToken } from "@angular/core";
+-import { Injector } from "@angular/core";
+-import { Location as Location_2 } from "@angular/common";
+-import { NgIterable } from "@angular/core";
+-import { NgZone } from "@angular/core";
+-import { Observable } from "rxjs";
+-import { OnChanges } from "@angular/core";
+-import { OnDestroy } from "@angular/core";
+-import { OnInit } from "@angular/core";
+-import { QueryList } from "@angular/core";
+-import { Renderer2 } from "@angular/core";
+-import * as rxjs from "rxjs";
+-import { Signal } from "@angular/core";
+-import { SimpleChanges } from "@angular/core";
+-import { Subject } from "rxjs";
+-import { Subscription } from "rxjs";
+-import { TemplateRef } from "@angular/core";
+-import { TrackByFunction } from "@angular/core";
+-import { Type } from "@angular/core";
+-import { ViewContainerRef } from "@angular/core";
++
++import { AfterContentInit } from '@angular/core';
++import { Binding } from '@angular/core';
++import { ComponentRef } from '@angular/core';
++import { DirectiveWithBindings } from '@angular/core';
++import { DoCheck } from '@angular/core';
++import { ElementRef } from '@angular/core';
++import { EmbeddedViewRef } from '@angular/core';
++import { EnvironmentInjector } from '@angular/core';
++import { EventEmitter } from '@angular/core';
++import * as i0 from '@angular/core';
++import { InjectionToken } from '@angular/core';
++import { Injector } from '@angular/core';
++import { Location as Location_2 } from '@angular/common';
++import { NgIterable } from '@angular/core';
++import { NgZone } from '@angular/core';
++import { Observable } from 'rxjs';
++import { OnChanges } from '@angular/core';
++import { OnDestroy } from '@angular/core';
++import { OnInit } from '@angular/core';
++import { QueryList } from '@angular/core';
++import { Renderer2 } from '@angular/core';
++import * as rxjs from 'rxjs';
++import { Signal } from '@angular/core';
++import { SimpleChanges } from '@angular/core';
+... 806 more lines
+
+--- reference/goldens/cdk/observers/index.api.md
++++ formatter/goldens/cdk/observers/index.api.md
+@@ -4,80 +4,64 @@
+ 
+ ```ts
+-import { AfterContentInit } from "@angular/core";
+-import { ElementRef } from "@angular/core";
+-import { EventEmitter } from "@angular/core";
+-import * as i0 from "@angular/core";
+-import { Observable } from "rxjs";
+-import { OnDestroy } from "@angular/core";
++
++import { AfterContentInit } from '@angular/core';
++import { ElementRef } from '@angular/core';
++import { EventEmitter } from '@angular/core';
++import * as i0 from '@angular/core';
++import { Observable } from 'rxjs';
++import { OnDestroy } from '@angular/core';
+ 
+ // @public
+ export class CdkObserveContent implements AfterContentInit, OnDestroy {
+-  get debounce(): number;
+-  set debounce(value: NumberInput);
+-  get disabled(): boolean;
+-  set disabled(value: boolean);
+-  readonly event: EventEmitter<MutationRecord[]>;
+-  // (undocumented)
+-  static ngAcceptInputType_disabled: unknown;
+-  // (undocumented)
+-  ngAfterContentInit(): void;
+-  // (undocumented)
+-  ngOnDestroy(): void;
+-  // (undocumented)
+-  static ɵdir: i0.ɵɵDirectiveDeclaration<
+-    CdkObserveContent,
+-    "[cdkObserveContent]",
+-    ["cdkObserveContent"],
+-    {
+-      disabled: { alias: "cdkObserveContentDisabled"; required: false };
+-      debounce: { alias: "debounce"; required: false };
+-    },
+-    { event: "cdkObserveContent" },
+-    never,
+-    never,
+-    true,
+-    never
+-  >;
+-  // (undocumented)
+-  static ɵfac: i0.ɵɵFactoryDeclaration<CdkObserveContent, never>;
++    get debounce(): number;
++    set debounce(value: NumberInput);
++    get disabled(): boolean;
++    set disabled(value: boolean);
++    readonly event: EventEmitter<MutationRecord[]>;
++    // (undocumented)
++    static ngAcceptInputType_disabled: unknown;
++    // (undocumented)
++    ngAfterContentInit(): void;
++    // (undocumented)
++    ngOnDestroy(): void;
+... 67 more lines
+
+--- reference/goldens/cdk/overlay/index.api.md
++++ formatter/goldens/cdk/overlay/index.api.md
+@@ -4,38 +4,39 @@
+ 
+ ```ts
+-import { AfterContentInit } from "@angular/core";
+-import { Binding } from "@angular/core";
+-import { ComponentRef } from "@angular/core";
+-import { DirectiveWithBindings } from "@angular/core";
+-import { DoCheck } from "@angular/core";
+-import { ElementRef } from "@angular/core";
+-import { EmbeddedViewRef } from "@angular/core";
+-import { EnvironmentInjector } from "@angular/core";
+-import { EventEmitter } from "@angular/core";
+-import * as i0 from "@angular/core";
+-import { InjectionToken } from "@angular/core";
+-import { Injector } from "@angular/core";
+-import { Location as Location_2 } from "@angular/common";
+-import { NgIterable } from "@angular/core";
+-import { NgZone } from "@angular/core";
+-import { Observable } from "rxjs";
+-import { OnChanges } from "@angular/core";
+-import { OnDestroy } from "@angular/core";
+-import { OnInit } from "@angular/core";
+-import { Renderer2 } from "@angular/core";
+-import { SimpleChanges } from "@angular/core";
+-import { Subject } from "rxjs";
+-import { Subscription } from "rxjs";
+-import { TemplateRef } from "@angular/core";
+-import { TrackByFunction } from "@angular/core";
+-import { Type } from "@angular/core";
+-import { ViewContainerRef } from "@angular/core";
++
++import { AfterContentInit } from '@angular/core';
++import { Binding } from '@angular/core';
++import { ComponentRef } from '@angular/core';
++import { DirectiveWithBindings } from '@angular/core';
++import { DoCheck } from '@angular/core';
++import { ElementRef } from '@angular/core';
++import { EmbeddedViewRef } from '@angular/core';
++import { EnvironmentInjector } from '@angular/core';
++import { EventEmitter } from '@angular/core';
++import * as i0 from '@angular/core';
++import { InjectionToken } from '@angular/core';
++import { Injector } from '@angular/core';
++import { Location as Location_2 } from '@angular/common';
++import { NgIterable } from '@angular/core';
++import { NgZone } from '@angular/core';
++import { Observable } from 'rxjs';
++import { OnChanges } from '@angular/core';
++import { OnDestroy } from '@angular/core';
++import { OnInit } from '@angular/core';
++import { Renderer2 } from '@angular/core';
++import { SimpleChanges } from '@angular/core';
++import { Subject } from 'rxjs';
++import { Subscription } from 'rxjs';
++import { TemplateRef } from '@angular/core';
++import { TrackByFunction } from '@angular/core';
++import { Type } from '@angular/core';
++import { ViewContainerRef } from '@angular/core';
+... 1271 more lines

@@ -1,0 +1,184 @@
+# 10 of 278 files differ from prettier@3.10.1
+CHANGELOG_ARCHIVE.md
+guides/material-2.md
+guides/theming-your-components.md
+src/aria/private/ui-pattern-rules.md
+src/cdk/tree/tree.md
+src/material/datepicker/datepicker.md
+src/material/expansion/expansion.md
+src/material/table/table.md
+src/material/toolbar/toolbar.md
+src/material/tree/tree.md
+
+# The first 10, reference first
+
+--- reference/CHANGELOG_ARCHIVE.md
++++ formatter/CHANGELOG_ARCHIVE.md
+@@ -1651,5 +1651,5 @@ This release introduces support for TypeScript 3.8.
+ |         |                                                                                                                                                                                                |
+ | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+-| bug fix | **mdc-\*:** rename sass mixins to mat-mdc-* ([#18615](https://github.com/angular/components/issues/18615)) ([694386a](https://github.com/angular/components/commit/694386a))                   |
++| bug fix | **mdc-*:** rename sass mixins to mat-mdc-* ([#18615](https://github.com/angular/components/issues/18615)) ([694386a](https://github.com/angular/components/commit/694386a))                    |
+ | bug fix | **mdc-form-field:** avoid expression changed after check ([#18741](https://github.com/angular/components/issues/18741)) ([65a602f](https://github.com/angular/components/commit/65a602f))      |
+ | bug fix | **mdc-progress-bar:** account for breaking changes in latest canary ([5d49f37](https://github.com/angular/components/commit/5d49f37))                                                          |
+
+
+--- reference/guides/material-2.md
++++ formatter/guides/material-2.md
+@@ -51,10 +51,10 @@ $m2-indigo-palette: (
+   // ... continues to 900
+   contrast: (
+-    50: rgba(black, 0.87),
+-    100: rgba(black, 0.87),
+-    200: rgba(black, 0.87),
+-    300: white,
+-    // ... continues to 900
+-  ),
++      50: rgba(black, 0.87),
++      100: rgba(black, 0.87),
++      200: rgba(black, 0.87),
++      300: white,
++      // ... continues to 900
++    ),
+ );
+ ```
+@@ -882,5 +882,5 @@ typography styles only for the button component.
+ $kids-typography: mat.m2-define-typography-config(
+   // Specify "Comic Sans" as the default font family for all levels.
+-  $font-family: "Comic Sans",
++  $font-family: "Comic Sans"
+ );
+ 
+
+
+--- reference/guides/theming-your-components.md
++++ formatter/guides/theming-your-components.md
+@@ -881,21 +881,21 @@ Material, this is used for the outline of an outlined card and the color of the
+ ```css
+ --mat-sys-level0:
+-  0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14),
+-  0px 0px 0px 0px rgba(0, 0, 0, 0.12);
++  0px 0px 0px 0px rgba(0, 0, 0, .2), 0px 0px 0px 0px rgba(0, 0, 0, .14),
++  0px 0px 0px 0px rgba(0, 0, 0, .12);
+ --mat-sys-level1:
+-  0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+-  0px 1px 3px 0px rgba(0, 0, 0, 0.12);
++  0px 2px 1px -1px rgba(0, 0, 0, .2), 0px 1px 1px 0px rgba(0, 0, 0, .14),
++  0px 1px 3px 0px rgba(0, 0, 0, .12);
+ --mat-sys-level2:
+-  0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14),
+-  0px 1px 8px 0px rgba(0, 0, 0, 0.12);
++  0px 3px 3px -2px rgba(0, 0, 0, .2), 0px 3px 4px 0px rgba(0, 0, 0, .14),
++  0px 1px 8px 0px rgba(0, 0, 0, .12);
+ --mat-sys-level3:
+-  0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14),
+-  0px 1px 18px 0px rgba(0, 0, 0, 0.12);
++  0px 3px 5px -1px rgba(0, 0, 0, .2), 0px 6px 10px 0px rgba(0, 0, 0, .14),
++  0px 1px 18px 0px rgba(0, 0, 0, .12);
+ --mat-sys-level4:
+-  0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14),
+-  0px 3px 14px 2px rgba(0, 0, 0, 0.12);
++  0px 5px 5px -3px rgba(0, 0, 0, .2), 0px 8px 10px 1px rgba(0, 0, 0, .14),
++  0px 3px 14px 2px rgba(0, 0, 0, .12);
+ --mat-sys-level5:
+-  0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14),
+-  0px 5px 22px 4px rgba(0, 0, 0, 0.12);
++  0px 7px 8px -4px rgba(0, 0, 0, .2), 0px 12px 17px 2px rgba(0, 0, 0, .14),
++  0px 5px 22px 4px rgba(0, 0, 0, .12);
+ ```
+ 
+
+
+--- reference/src/aria/private/ui-pattern-rules.md
++++ formatter/src/aria/private/ui-pattern-rules.md
+@@ -44,7 +44,6 @@ All inputs must be signals. Inputs must not use the `Signal` or `WritableSignal`
+ 
+ ```ts
+-export interface ExampleInputs extends Behavior1Inputs, Behavior2Inputs {
+-  // Additional inputs.
+-}
++export interface ExampleInputs extends Behavior1Inputs, Behavior2Inputs {}
++// Additional inputs.
+ ```
+ 
+
+
+--- reference/src/cdk/tree/tree.md
++++ formatter/src/cdk/tree/tree.md
+@@ -179,5 +179,6 @@ tree how to uniquely identify nodes to track how the data changes with each upda
+   [treeControl]="treeControl"
+   [trackBy]="trackByFn"
+-></cdk-tree>
++>
++</cdk-tree>
+ ```
+ 
+
+
+--- reference/src/material/datepicker/datepicker.md
++++ formatter/src/material/datepicker/datepicker.md
+@@ -621,4 +621,5 @@ input with your datepicker, create a template reference for the datepicker and a
+ 
+ ```html
+-<input [matDatepicker]="picker" /> <mat-datepicker #picker></mat-datepicker>
++<input [matDatepicker]="picker" />
++<mat-datepicker #picker></mat-datepicker>
+ ```
+
+
+--- reference/src/material/expansion/expansion.md
++++ formatter/src/material/expansion/expansion.md
+@@ -21,5 +21,5 @@ header to indicate the expansion state. This icon can be hidden via the
+ 
+ <!-- example({"example": "expansion-overview",
+-              "file": "expansion-overview-example.html",
++              "file": "expansion-overview-example.html", 
+               "region": "hide-toggle"}) -->
+ 
+
+
+--- reference/src/material/table/table.md
++++ formatter/src/material/table/table.md
+@@ -280,5 +280,5 @@ const initialSelection = [];
+ const allowMultiSelect = true;
+ this.selection =
+-  (new SelectionModel() < MyDataType) > (allowMultiSelect, initialSelection);
++  new SelectionModel() < MyDataType > (allowMultiSelect, initialSelection);
+ ```
+ 
+
+
+--- reference/src/material/toolbar/toolbar.md
++++ formatter/src/material/toolbar/toolbar.md
+@@ -16,5 +16,5 @@ be done by placing `<mat-toolbar-row>` elements inside a `<mat-toolbar>`.
+ 
+ <!-- example({"example":"toolbar-multirow",
+-              "file":"toolbar-multirow-example.html",
++              "file":"toolbar-multirow-example.html", 
+               "region":"toolbar-row"}) -->
+ 
+@@ -31,9 +31,9 @@ easily accomplished with `display: flex`:
+ 
+ <!-- example({"example":"toolbar-multirow",
+-              "file":"toolbar-multirow-example.html",
++              "file":"toolbar-multirow-example.html", 
+               "region":"toolbar-position-content"}) -->
+ 
+ <!-- example({"example":"toolbar-multirow",
+-              "file":"toolbar-multirow-example.css",
++              "file":"toolbar-multirow-example.css", 
+               "region":"toolbar-position-content-style"}) -->
+ 
+
+
+--- reference/src/material/tree/tree.md
++++ formatter/src/material/tree/tree.md
+@@ -190,5 +190,6 @@ tree how to uniquely identify nodes to track how the data changes with each upda
+   [treeControl]="treeControl"
+   [trackBy]="trackByFn"
+-></mat-tree>
++>
++</mat-tree>
+ ```
+ 
+

@@ -1,0 +1,937 @@
+# 177 of 434 files differ from prettier@3.10.1
+docs/src/highlightjs/material-dark.scss
+docs/src/highlightjs/material-light.scss
+docs/src/styles/general.scss
+src/cdk/_index.scss
+src/cdk/a11y/_index.scss
+src/dev-app/theme-m3.scss
+src/material/_index.scss
+src/material/autocomplete/_autocomplete-theme.scss
+src/material/autocomplete/_m2-autocomplete.scss
+src/material/badge/_badge-theme.scss
+src/material/badge/_m2-badge.scss
+src/material/badge/_m3-badge.scss
+src/material/bottom-sheet/_bottom-sheet-theme.scss
+src/material/bottom-sheet/_m2-bottom-sheet.scss
+src/material/bottom-sheet/_m3-bottom-sheet.scss
+src/material/button/_button-base.scss
+src/material/button/_button-theme.scss
+src/material/button/_fab-theme.scss
+src/material/button/_icon-button-theme.scss
+src/material/button/_m2-button.scss
+src/material/button/_m2-fab.scss
+src/material/button/_m2-icon-button.scss
+src/material/button/_m3-button.scss
+src/material/button/_m3-fab.scss
+src/material/button/_m3-icon-button.scss
+src/material/button/button.scss
+src/material/button/icon-button.scss
+src/material/button-toggle/_button-toggle-theme.scss
+src/material/button-toggle/_m2-button-toggle.scss
+src/material/button-toggle/_m3-button-toggle.scss
+src/material/button-toggle/button-toggle.scss
+src/material/card/_card-theme.scss
+src/material/card/_m2-card.scss
+src/material/card/_m3-card.scss
+src/material/card/card.scss
+src/material/checkbox/_checkbox-theme.scss
+src/material/checkbox/_m2-checkbox.scss
+src/material/checkbox/_m3-checkbox.scss
+src/material/chips/_chips-theme.scss
+src/material/chips/_m2-chip.scss
+src/material/chips/_m3-chip.scss
+src/material/chips/chip.scss
+src/material/core/_core-theme.scss
+src/material/core/_m2-app.scss
+src/material/core/_m3-app.scss
+src/material/core/color/_all-color.scss
+src/material/core/density/private/_all-density.scss
+src/material/core/focus-indicators/_private.scss
+src/material/core/m2/_index.scss
+src/material/core/m2/_theming.scss
+src/material/core/m2/_typography-utils.scss
+src/material/core/m2/_typography.scss
+src/material/core/option/_m2-optgroup.scss
+src/material/core/option/_m2-option.scss
+src/material/core/option/_m3-optgroup.scss
+src/material/core/option/_m3-option.scss
+src/material/core/option/_optgroup-theme.scss
+src/material/core/option/_option-theme.scss
+src/material/core/option/option.scss
+src/material/core/ripple/_m2-ripple.scss
+src/material/core/ripple/_m3-ripple.scss
+src/material/core/ripple/_ripple-theme.scss
+src/material/core/selection/pseudo-checkbox/_m2-pseudo-checkbox.scss
+src/material/core/selection/pseudo-checkbox/_m3-pseudo-checkbox.scss
+src/material/core/selection/pseudo-checkbox/_pseudo-checkbox-theme.scss
+src/material/core/style/_elevation.scss
+src/material/core/theming/_config-validation.scss
+src/material/core/theming/_definition.scss
+src/material/core/theming/_inspection.scss
+src/material/core/theming/_m2-inspection.scss
+src/material/core/theming/_theming.scss
+src/material/core/theming/tests/test-typography-font-family.scss
+src/material/core/tokens/_m2-utils.scss
+src/material/core/tokens/_m3-tokens.scss
+src/material/core/tokens/_system.scss
+src/material/core/tokens/_token-utils.scss
+src/material/core/tokens/m2/_md-sys-elevation.scss
+src/material/core/tokens/m2/_md-sys-motion.scss
+src/material/core/tokens/m2/_md-sys-shape.scss
+src/material/core/tokens/m2/_md-sys-state.scss
+src/material/core/tokens/m2/_md-sys-typescale.scss
+src/material/core/tokens/m3/_md-sys-elevation.scss
+src/material/core/tokens/m3/_md-sys-motion.scss
+src/material/core/tokens/m3/_md-sys-shape.scss
+src/material/core/tokens/m3/_md-sys-state.scss
+src/material/core/tokens/m3/_theme.scss
+src/material/core/typography/_typography-utils.scss
+src/material/core/typography/_typography.scss
+src/material/core/typography/_versioning.scss
+src/material/datepicker/_datepicker-theme.scss
+src/material/datepicker/_m2-datepicker.scss
+src/material/datepicker/_m3-datepicker.scss
+src/material/datepicker/calendar-body.scss
+src/material/datepicker/calendar.scss
+src/material/dialog/_dialog-theme.scss
+src/material/dialog/_m2-dialog.scss
+src/material/dialog/_m3-dialog.scss
+src/material/divider/_divider-theme.scss
+src/material/divider/_m2-divider.scss
+src/material/divider/_m3-divider.scss
+src/material/expansion/_expansion-theme.scss
+src/material/expansion/_m2-expansion.scss
+src/material/expansion/_m3-expansion.scss
+src/material/form-field/_form-field-theme.scss
+src/material/form-field/_m2-form-field.scss
+src/material/form-field/_m3-form-field.scss
+src/material/form-field/_mdc-text-field-density-overrides.scss
+src/material/form-field/form-field.scss
+src/material/grid-list/_grid-list-theme.scss
+src/material/grid-list/_m2-grid-list.scss
+src/material/grid-list/_m3-grid-list.scss
+src/material/icon/_icon-theme.scss
+src/material/icon/_m2-icon.scss
+src/material/icon/_m3-icon.scss
+src/material/input/_input-theme.scss
+src/material/list/_list-theme.scss
+src/material/list/_m2-list.scss
+src/material/list/_m3-list.scss
+src/material/list/list.scss
+src/material/menu/_m2-menu.scss
+src/material/menu/_m3-menu.scss
+src/material/menu/_menu-theme.scss
+src/material/paginator/_m2-paginator.scss
+src/material/paginator/_m3-paginator.scss
+src/material/paginator/_paginator-theme.scss
+src/material/paginator/paginator.scss
+src/material/progress-bar/_m2-progress-bar.scss
+src/material/progress-bar/_m3-progress-bar.scss
+src/material/progress-bar/_progress-bar-theme.scss
+src/material/progress-spinner/_m2-progress-spinner.scss
+src/material/progress-spinner/_m3-progress-spinner.scss
+src/material/progress-spinner/_progress-spinner-theme.scss
+src/material/radio/_m2-radio.scss
+src/material/radio/_m3-radio.scss
+src/material/radio/_radio-common.scss
+src/material/radio/_radio-theme.scss
+src/material/select/_m2-select.scss
+src/material/select/_m3-select.scss
+src/material/select/_select-theme.scss
+src/material/sidenav/_m2-sidenav.scss
+src/material/sidenav/_m3-sidenav.scss
+src/material/sidenav/_sidenav-theme.scss
+src/material/slide-toggle/_m2-slide-toggle.scss
+src/material/slide-toggle/_m3-slide-toggle.scss
+src/material/slide-toggle/_slide-toggle-theme.scss
+src/material/slider/_m2-slider.scss
+src/material/slider/_m3-slider.scss
+src/material/slider/_slider-theme.scss
+src/material/snack-bar/_m2-snack-bar.scss
+src/material/snack-bar/_m3-snack-bar.scss
+src/material/snack-bar/_snack-bar-theme.scss
+src/material/sort/_m2-sort.scss
+src/material/sort/_m3-sort.scss
+src/material/sort/_sort-theme.scss
+src/material/stepper/_m2-stepper.scss
+src/material/stepper/_m3-stepper.scss
+src/material/stepper/_stepper-theme.scss
+src/material/table/_m2-table.scss
+src/material/table/_m3-table.scss
+src/material/table/_table-theme.scss
+src/material/tabs/_m2-tabs.scss
+src/material/tabs/_m3-tabs.scss
+src/material/tabs/_tabs-theme.scss
+src/material/timepicker/_m2-timepicker.scss
+src/material/timepicker/_m3-timepicker.scss
+src/material/timepicker/_timepicker-theme.scss
+src/material/toolbar/_m2-toolbar.scss
+src/material/toolbar/_m3-toolbar.scss
+src/material/toolbar/_toolbar-theme.scss
+src/material/tooltip/_m2-tooltip.scss
+src/material/tooltip/_m3-tooltip.scss
+src/material/tooltip/_tooltip-theme.scss
+src/material/tree/_m2-tree.scss
+src/material/tree/_m3-tree.scss
+src/material/tree/_tree-theme.scss
+src/material-experimental/_index.scss
+src/material-experimental/column-resize/_column-resize-theme.scss
+
+# The first 25, reference first
+
+--- reference/docs/src/highlightjs/material-dark.scss
++++ formatter/docs/src/highlightjs/material-dark.scss
+@@ -11,5 +11,5 @@
+   text-size-adjust: 100%;
+   font:
+-    300 100%/1 Roboto Mono,
++    300 100% / 1 Roboto Mono,
+     monospace;
+   font-size: 14px;
+
+
+--- reference/docs/src/highlightjs/material-light.scss
++++ formatter/docs/src/highlightjs/material-light.scss
+@@ -10,5 +10,5 @@
+   text-size-adjust: 100%;
+   font:
+-    300 100%/1 Roboto Mono,
++    300 100% / 1 Roboto Mono,
+     monospace;
+   font-size: 14px;
+
+
+--- reference/docs/src/styles/general.scss
++++ formatter/docs/src/styles/general.scss
+@@ -7,6 +7,11 @@
+   body {
+     font-family:
+-      "Roboto", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial,
+-      "Lucida Grande", sans-serif;
++      "Roboto",
++      "Helvetica Neue Light",
++      "Helvetica Neue",
++      Helvetica,
++      Arial,
++      "Lucida Grande",
++      sans-serif;
+     margin: 0;
+   }
+
+
+--- reference/src/cdk/_index.scss
++++ formatter/src/cdk/_index.scss
+@@ -1,8 +1,12 @@
+-@forward "./overlay" show overlay, $overlay-container-z-index, $overlay-z-index,
+-  $overlay-backdrop-z-index, $overlay-backdrop-color;
++@forward "./overlay" show overlay,
++$overlay-container-z-index,
++$overlay-z-index,
++$overlay-backdrop-z-index,
++$overlay-backdrop-color;
+ @forward "./a11y" show a11y-visually-hidden, high-contrast;
+-@forward "./text-field" show text-field-autosize, text-field-autofill,
+-  text-field-autofill-color,
+-  // `text-field` is deprecated, but we have to export it
+-  // here in order for the theming API schematic to work.
+-  text-field;
++@forward "./text-field" show text-field-autosize,
++text-field-autofill,
++// `text-field` is deprecated, but we have to export it
++// here in order for the theming API schematic to work.
++text-field-autofill-color,
++text-field;
+
+
+--- reference/src/cdk/a11y/_index.scss
++++ formatter/src/cdk/a11y/_index.scss
+@@ -50,11 +50,10 @@
+   // allow them here anyway. They'll be coerced to `active` below.
+   @if (
+-    $target != "active" and
+-      $target != "none" and
++    $target != "active" and $target != "none" and
+       $target != "black-on-white" and
+       $target != "white-on-black"
+   ) {
+     @error 'Unknown cdk-high-contrast value "#{$target}" provided. ' +
+-           'Allowed values are "active" and "none"';
++      'Allowed values are "active" and "none"';
+   }
+ 
+
+
+--- reference/src/dev-app/theme-m3.scss
++++ formatter/src/dev-app/theme-m3.scss
+@@ -31,12 +31,8 @@ $tertiary: mat.$blue-palette;
+ 
+ // Define the default (light) theme.
+-$light-theme: create-theme(
+-  $type: light,
+-);
++$light-theme: create-theme($type: light);
+ 
+ // Create our dark theme.
+-$dark-theme: create-theme(
+-  $type: dark,
+-);
++$dark-theme: create-theme($type: dark);
+ 
+ // Include the default theme styles.
+@@ -99,7 +95,5 @@ $density-scales: (-1, -2, -3, -4, minimum, maximum);
+   .demo-density-#{$scale} {
+     body:not(.demo-experimental-theme) & {
+-      $density-theme: create-theme(
+-        $density: $scale,
+-      );
++      $density-theme: create-theme($density: $scale);
+       @include mat.all-component-densities($density-theme);
+     }
+
+
+--- reference/src/material/_index.scss
++++ formatter/src/material/_index.scss
+@@ -3,18 +3,31 @@
+ 
+ // New theming APIs
+-@forward "./core/theming/inspection" show get-theme-version, get-theme-type,
+-  get-theme-color, get-theme-typography, get-theme-density, theme-has,
+-  theme-remove;
+-@forward "./core/theming/definition" show define-theme, define-colors,
+-  define-typography, define-density;
+-@forward "./core/theming/palettes" show $red-palette, $green-palette,
+-  $blue-palette, $yellow-palette, $cyan-palette, $magenta-palette,
+-  $orange-palette, $chartreuse-palette, $spring-green-palette, $azure-palette,
+-  $violet-palette, $rose-palette;
+-@forward "./core/theming/color-api-backwards-compatibility" show
+-  color-variants-backwards-compatibility;
++@forward "./core/theming/inspection" show get-theme-version,
++get-theme-type,
++get-theme-color,
++get-theme-typography,
++get-theme-density,
++theme-has,
++theme-remove;
++@forward "./core/theming/definition" show define-theme,
++define-colors,
++define-typography,
++define-density;
++@forward "./core/theming/palettes" show $red-palette,
++$green-palette,
++$blue-palette,
++$yellow-palette,
++$cyan-palette,
++$magenta-palette,
++$orange-palette,
++$chartreuse-palette,
++$spring-green-palette,
++$azure-palette,
++$violet-palette,
++$rose-palette;
++@forward "./core/theming/color-api-backwards-compatibility" show color-variants-backwards-compatibility;
+ 
+ @forward "./core/theming/theming" show $theme-ignore-duplication-warnings,
+-  $theme-legacy-inspection-api-compatibility;
++$theme-legacy-inspection-api-compatibility;
+ @forward "./core/theming/theming" as private-* show private-clamp-density;
+ @forward "./core/typography/typography" show typography-hierarchy;
+@@ -22,6 +35,12 @@
+ @forward "./core/theming/typography" as typography-*;
+ @forward "./core/tokens/system" show system-level-colors,
+-  system-level-typography, system-level-elevation, system-level-shape,
+-  system-level-motion, system-level-state, theme, theme-overrides, m2-theme;
++system-level-typography,
++system-level-elevation,
++system-level-shape,
++system-level-motion,
++system-level-state,
++theme,
++theme-overrides,
++m2-theme;
+ @forward "./core/tokens/classes" show system-classes;
+... 395 more lines
+
+--- reference/src/material/autocomplete/_autocomplete-theme.scss
++++ formatter/src/material/autocomplete/_autocomplete-theme.scss
+@@ -47,8 +47,6 @@
+     (
+       namespace: autocomplete,
+-      tokens: token-utils.get-overrides(
+-          m3-autocomplete.get-tokens(),
+-          autocomplete
+-        )
++      tokens:
++        token-utils.get-overrides(m3-autocomplete.get-tokens(), autocomplete),
+     ),
+   );
+
+
+--- reference/src/material/autocomplete/_m2-autocomplete.scss
++++ formatter/src/material/autocomplete/_m2-autocomplete.scss
+@@ -15,5 +15,5 @@
+     ),
+     typography: (),
+-    density: ()
++    density: (),
+   );
+ }
+
+
+--- reference/src/material/badge/_badge-theme.scss
++++ formatter/src/material/badge/_badge-theme.scss
+@@ -75,5 +75,5 @@
+     (
+       namespace: badge,
+-      tokens: token-utils.get-overrides(m3-badge.get-tokens(), badge)
++      tokens: token-utils.get-overrides(m3-badge.get-tokens(), badge),
+     ),
+   );
+
+
+--- reference/src/material/badge/_m2-badge.scss
++++ formatter/src/material/badge/_m2-badge.scss
+@@ -48,5 +48,6 @@ $_large-size: $_default-size + 6px;
+       badge-large-size-container-padding: 0,
+     ),
+-    color: map.merge(
++    color:
++      map.merge(
+         $primary-color-tokens,
+         (
+@@ -67,5 +68,5 @@ $_large-size: $_default-size + 6px;
+       badge-large-size-line-height: $_large-size,
+     ),
+-    density: ()
++    density: (),
+   );
+ }
+@@ -82,5 +83,5 @@ $_large-size: $_default-size + 6px;
+   @return (
+     badge-background-color: map.get($system, primary),
+-    badge-text-color: map.get($system, on-primary)
++    badge-text-color: map.get($system, on-primary),
+   );
+ }
+
+
+--- reference/src/material/badge/_m3-badge.scss
++++ formatter/src/material/badge/_m3-badge.scss
+@@ -35,8 +35,6 @@
+     color: (
+       badge-background-color: map.get($system, error),
+-      badge-disabled-state-background-color: m3-utils.color-with-opacity(
+-          map.get($system, error),
+-          38%
+-        ),
++      badge-disabled-state-background-color:
++        m3-utils.color-with-opacity(map.get($system, error), 38%),
+       badge-disabled-state-text-color: map.get($system, on-error),
+       badge-text-color: map.get($system, on-error),
+
+
+--- reference/src/material/bottom-sheet/_bottom-sheet-theme.scss
++++ formatter/src/material/bottom-sheet/_bottom-sheet-theme.scss
+@@ -47,8 +47,6 @@
+     (
+       namespace: bottom-sheet,
+-      tokens: token-utils.get-overrides(
+-          m3-bottom-sheet.get-tokens(),
+-          bottom-sheet
+-        )
++      tokens:
++        token-utils.get-overrides(m3-bottom-sheet.get-tokens(), bottom-sheet),
+     ),
+   );
+
+
+--- reference/src/material/bottom-sheet/_m2-bottom-sheet.scss
++++ formatter/src/material/bottom-sheet/_m2-bottom-sheet.scss
+@@ -15,16 +15,12 @@
+     typography: (
+       bottom-sheet-container-text-font: map.get($system, body-medium-font),
+-      bottom-sheet-container-text-line-height: map.get(
+-          $system,
+-          body-medium-line-height
+-        ),
++      bottom-sheet-container-text-line-height:
++        map.get($system, body-medium-line-height),
+       bottom-sheet-container-text-size: map.get($system, body-medium-size),
+-      bottom-sheet-container-text-tracking: map.get(
+-          $system,
+-          body-medium-tracking
+-        ),
++      bottom-sheet-container-text-tracking:
++        map.get($system, body-medium-tracking),
+       bottom-sheet-container-text-weight: map.get($system, body-medium-weight),
+     ),
+-    density: ()
++    density: (),
+   );
+ }
+
+
+--- reference/src/material/bottom-sheet/_m3-bottom-sheet.scss
++++ formatter/src/material/bottom-sheet/_m3-bottom-sheet.scss
+@@ -12,23 +12,17 @@
+     color: (
+       bottom-sheet-container-text-color: map.get($system, on-surface),
+-      bottom-sheet-container-background-color: map.get(
+-          $system,
+-          surface-container-low
+-        ),
++      bottom-sheet-container-background-color:
++        map.get($system, surface-container-low),
+     ),
+     typography: (
+       bottom-sheet-container-text-font: map.get($system, body-large-font),
+-      bottom-sheet-container-text-line-height: map.get(
+-          $system,
+-          body-large-line-height
+-        ),
++      bottom-sheet-container-text-line-height:
++        map.get($system, body-large-line-height),
+       bottom-sheet-container-text-size: map.get($system, body-large-size),
+-      bottom-sheet-container-text-tracking: map.get(
+-          $system,
+-          body-large-tracking
+-        ),
++      bottom-sheet-container-text-tracking:
++        map.get($system, body-large-tracking),
+       bottom-sheet-container-text-weight: map.get($system, body-large-weight),
+     ),
+-    density: ()
++    density: (),
+   );
+ }
+
+
+--- reference/src/material/button/_button-base.scss
++++ formatter/src/material/button/_button-base.scss
+@@ -163,11 +163,11 @@
+     // stylelint-disable selector-class-pattern
+     &:has(
+-      .material-icons,
+-      .material-symbols-outlined,
+-      .material-symbols-rounded,
+-      .material-symbols-sharp,
+-      mat-icon,
+-      [matButtonIcon]
+-    ) {
++        .material-icons,
++        .material-symbols-outlined,
++        .material-symbols-rounded,
++        .material-symbols-sharp,
++        mat-icon,
++        [matButtonIcon]
++      ) {
+       padding: 0
+         token-utils.slot($with-icon-horizontal-padding-token, $fallbacks, true);
+
+
+--- reference/src/material/button/_button-theme.scss
++++ formatter/src/material/button/_button-theme.scss
+@@ -87,5 +87,5 @@
+     (
+       namespace: button,
+-      tokens: token-utils.get-overrides(m3-button.get-tokens(), button)
++      tokens: token-utils.get-overrides(m3-button.get-tokens(), button),
+     ),
+   );
+
+
+--- reference/src/material/button/_fab-theme.scss
++++ formatter/src/material/button/_fab-theme.scss
+@@ -81,5 +81,5 @@
+     (
+       namespace: fab,
+-      tokens: token-utils.get-overrides(m3-fab.get-tokens(), fab)
++      tokens: token-utils.get-overrides(m3-fab.get-tokens(), fab),
+     ),
+   );
+
+
+--- reference/src/material/button/_icon-button-theme.scss
++++ formatter/src/material/button/_icon-button-theme.scss
+@@ -114,8 +114,6 @@
+     (
+       namespace: icon-button,
+-      tokens: token-utils.get-overrides(
+-          m3-icon-button.get-tokens(),
+-          icon-button
+-        )
++      tokens:
++        token-utils.get-overrides(m3-icon-button.get-tokens(), icon-button),
+     ),
+   );
+
+
+--- reference/src/material/button/_m2-button.scss
++++ formatter/src/material/button/_m2-button.scss
+@@ -75,22 +75,15 @@
+       button-filled-disabled-container-color: $disabled-container,
+       button-filled-disabled-label-text-color: $disabled,
+-      button-filled-disabled-state-layer-color: map.get(
+-          $system,
+-          on-surface-variant
+-        ),
+-      button-filled-focus-state-layer-opacity: map.get(
+-          $system,
+-          focus-state-layer-opacity
+-        ),
+-      button-filled-hover-state-layer-opacity: map.get(
+-          $system,
+-          hover-state-layer-opacity
+-        ),
++      button-filled-disabled-state-layer-color:
++        map.get($system, on-surface-variant),
++      button-filled-focus-state-layer-opacity:
++        map.get($system, focus-state-layer-opacity),
++      button-filled-hover-state-layer-opacity:
++        map.get($system, hover-state-layer-opacity),
+       button-filled-label-text-color: map.get($system, on-surface),
+-      button-filled-pressed-state-layer-opacity: map.get(
+-          $system,
+-          pressed-state-layer-opacity
+-        ),
+-      button-filled-ripple-color: m3-utils.color-with-opacity(
++      button-filled-pressed-state-layer-opacity:
++        map.get($system, pressed-state-layer-opacity),
++      button-filled-ripple-color:
++        m3-utils.color-with-opacity(
+           map.get($system, on-surface),
+           map.get($system, pressed-state-layer-opacity)
+@@ -99,23 +92,16 @@
+       button-outlined-disabled-label-text-color: $disabled,
+       button-outlined-disabled-outline-color: map.get($system, outline),
+-      button-outlined-disabled-state-layer-color: map.get(
+-          $system,
+-          on-surface-variant
+-        ),
+-      button-outlined-focus-state-layer-opacity: map.get(
+-          $system,
+-          focus-state-layer-opacity
+-        ),
+-      button-outlined-hover-state-layer-opacity: map.get(
+-          $system,
+-          hover-state-layer-opacity
+-        ),
++      button-outlined-disabled-state-layer-color:
++        map.get($system, on-surface-variant),
++      button-outlined-focus-state-layer-opacity:
++        map.get($system, focus-state-layer-opacity),
++      button-outlined-hover-state-layer-opacity:
++        map.get($system, hover-state-layer-opacity),
+       button-outlined-label-text-color: map.get($system, on-surface),
+       button-outlined-outline-color: map.get($system, outline),
+-      button-outlined-pressed-state-layer-opacity: map.get(
+-          $system,
+... 182 more lines
+
+--- reference/src/material/button/_m2-fab.scss
++++ formatter/src/material/button/_m2-fab.scss
+@@ -42,7 +42,6 @@
+       fab-extended-focus-container-elevation-shadow: elevation.get-box-shadow(8),
+       fab-extended-hover-container-elevation-shadow: elevation.get-box-shadow(8),
+-      fab-extended-pressed-container-elevation-shadow: elevation.get-box-shadow(
+-          12
+-        ),
++      fab-extended-pressed-container-elevation-shadow:
++        elevation.get-box-shadow(12),
+       fab-focus-container-elevation-shadow: elevation.get-box-shadow(8),
+       fab-hover-container-elevation-shadow: elevation.get-box-shadow(8),
+@@ -58,9 +57,8 @@
+       fab-foreground-color: map.get($system, on-surface),
+       fab-hover-state-layer-opacity: map.get($system, hover-state-layer-opacity),
+-      fab-pressed-state-layer-opacity: map.get(
+-          $system,
+-          pressed-state-layer-opacity
+-        ),
+-      fab-ripple-color: m3-utils.color-with-opacity(
++      fab-pressed-state-layer-opacity:
++        map.get($system, pressed-state-layer-opacity),
++      fab-ripple-color:
++        m3-utils.color-with-opacity(
+           map.get($system, on-surface),
+           map.get($system, pressed-state-layer-opacity)
+@@ -70,18 +68,13 @@
+       fab-small-disabled-state-foreground-color: $disabled,
+       fab-small-disabled-state-layer-color: map.get($system, on-surface-variant),
+-      fab-small-focus-state-layer-opacity: map.get(
+-          $system,
+-          focus-state-layer-opacity
+-        ),
++      fab-small-focus-state-layer-opacity:
++        map.get($system, focus-state-layer-opacity),
+       fab-small-foreground-color: map.get($system, on-surface),
+-      fab-small-hover-state-layer-opacity: map.get(
+-          $system,
+-          hover-state-layer-opacity
+-        ),
+-      fab-small-pressed-state-layer-opacity: map.get(
+-          $system,
+-          pressed-state-layer-opacity
+-        ),
+-      fab-small-ripple-color: m3-utils.color-with-opacity(
++      fab-small-hover-state-layer-opacity:
++        map.get($system, hover-state-layer-opacity),
++      fab-small-pressed-state-layer-opacity:
++        map.get($system, pressed-state-layer-opacity),
++      fab-small-ripple-color:
++        m3-utils.color-with-opacity(
+           map.get($system, on-surface),
+           map.get($system, pressed-state-layer-opacity)
+@@ -99,5 +92,5 @@
+       fab-small-touch-target-display: $touch-target-display,
+       fab-touch-target-display: $touch-target-display,
+-    )
++    ),
+   );
+ }
+... 23 more lines
+
+--- reference/src/material/button/_m2-icon-button.scss
++++ formatter/src/material/button/_m2-icon-button.scss
+@@ -20,26 +20,17 @@
+     ),
+     color: (
+-      icon-button-disabled-icon-color: m3-utils.color-with-opacity(
+-          map.get($system, on-surface),
+-          38%
+-        ),
+-      icon-button-disabled-state-layer-color: map.get(
+-          $system,
+-          on-surface-variant
+-        ),
+-      icon-button-focus-state-layer-opacity: map.get(
+-          $system,
+-          focus-state-layer-opacity
+-        ),
+-      icon-button-hover-state-layer-opacity: map.get(
+-          $system,
+-          hover-state-layer-opacity
+-        ),
++      icon-button-disabled-icon-color:
++        m3-utils.color-with-opacity(map.get($system, on-surface), 38%),
++      icon-button-disabled-state-layer-color:
++        map.get($system, on-surface-variant),
++      icon-button-focus-state-layer-opacity:
++        map.get($system, focus-state-layer-opacity),
++      icon-button-hover-state-layer-opacity:
++        map.get($system, hover-state-layer-opacity),
+       icon-button-icon-color: inherit,
+-      icon-button-pressed-state-layer-opacity: map.get(
+-          $system,
+-          pressed-state-layer-opacity
+-        ),
+-      icon-button-ripple-color: m3-utils.color-with-opacity(
++      icon-button-pressed-state-layer-opacity:
++        map.get($system, pressed-state-layer-opacity),
++      icon-button-ripple-color:
++        m3-utils.color-with-opacity(
+           map.get($system, on-surface),
+           map.get($system, pressed-state-layer-opacity)
+@@ -50,5 +41,6 @@
+     density: (
+       icon-button-touch-target-display: $touch-target-display,
+-      icon-button-state-layer-size: map.get(
++      icon-button-state-layer-size:
++        map.get(
+           (
+             0: 48px,
+@@ -61,5 +53,5 @@
+           $density-scale
+         ),
+-    )
++    ),
+   );
+ }
+@@ -77,8 +69,9 @@
+     icon-button-icon-color: map.get($system, primary),
+     icon-button-state-layer-color: map.get($system, primary),
+-    icon-button-ripple-color: m3-utils.color-with-opacity(
+... 9 more lines
+
+--- reference/src/material/button/_m3-button.scss
++++ formatter/src/material/button/_m3-button.scss
+@@ -60,65 +60,41 @@
+     color: (
+       button-filled-container-color: map.get($system, primary),
+-      button-filled-disabled-container-color: m3-utils.color-with-opacity(
+-          map.get($system, on-surface),
+-          12%
+-        ),
+-      button-filled-disabled-label-text-color: m3-utils.color-with-opacity(
+-          map.get($system, on-surface),
+-          38%
+-        ),
+-      button-filled-disabled-state-layer-color: map.get(
+-          $system,
+-          on-surface-variant
+-        ),
+-      button-filled-focus-state-layer-opacity: map.get(
+-          $system,
+-          focus-state-layer-opacity
+-        ),
+-      button-filled-hover-state-layer-opacity: map.get(
+-          $system,
+-          hover-state-layer-opacity
+-        ),
++      button-filled-disabled-container-color:
++        m3-utils.color-with-opacity(map.get($system, on-surface), 12%),
++      button-filled-disabled-label-text-color:
++        m3-utils.color-with-opacity(map.get($system, on-surface), 38%),
++      button-filled-disabled-state-layer-color:
++        map.get($system, on-surface-variant),
++      button-filled-focus-state-layer-opacity:
++        map.get($system, focus-state-layer-opacity),
++      button-filled-hover-state-layer-opacity:
++        map.get($system, hover-state-layer-opacity),
+       button-filled-label-text-color: map.get($system, on-primary),
+-      button-filled-pressed-state-layer-opacity: map.get(
+-          $system,
+-          pressed-state-layer-opacity
+-        ),
+-      button-filled-ripple-color: m3-utils.color-with-opacity(
++      button-filled-pressed-state-layer-opacity:
++        map.get($system, pressed-state-layer-opacity),
++      button-filled-ripple-color:
++        m3-utils.color-with-opacity(
+           map.get($system, on-primary),
+           map.get($system, pressed-state-layer-opacity)
+         ),
+-      button-filled-progress-active-indicator-color: map.get(
+-          $system,
+-          on-primary
+-        ),
++      button-filled-progress-active-indicator-color:
++        map.get($system, on-primary),
+       button-filled-state-layer-color: map.get($system, on-primary),
+-      button-outlined-disabled-label-text-color: m3-utils.color-with-opacity(
+-          map.get($system, on-surface),
+-          38%
+-        ),
+-      button-outlined-disabled-outline-color: m3-utils.color-with-opacity(
+... 252 more lines
+
+--- reference/src/material/button/_m3-fab.scss
++++ formatter/src/material/button/_m3-fab.scss
+@@ -30,80 +30,55 @@
+     color: (
+       fab-container-color: map.get($system, primary-container),
+-      fab-container-elevation-shadow: elevation.get-box-shadow(
+-          map.get($system, level3)
+-        ),
+-      fab-disabled-state-container-color: m3-utils.color-with-opacity(
+-          map.get($system, on-surface),
+-          12%
+-        ),
+-      fab-disabled-state-foreground-color: m3-utils.color-with-opacity(
+-          map.get($system, on-surface),
+-          38%
+-        ),
+-      fab-extended-container-elevation-shadow: elevation.get-box-shadow(
+-          map.get($system, level3)
+-        ),
+-      fab-extended-focus-container-elevation-shadow: elevation.get-box-shadow(
+-          map.get($system, level3)
+-        ),
+-      fab-extended-hover-container-elevation-shadow: elevation.get-box-shadow(
+-          map.get($system, level4)
+-        ),
++      fab-container-elevation-shadow:
++        elevation.get-box-shadow(map.get($system, level3)),
++      fab-disabled-state-container-color:
++        m3-utils.color-with-opacity(map.get($system, on-surface), 12%),
++      fab-disabled-state-foreground-color:
++        m3-utils.color-with-opacity(map.get($system, on-surface), 38%),
++      fab-extended-container-elevation-shadow:
++        elevation.get-box-shadow(map.get($system, level3)),
++      fab-extended-focus-container-elevation-shadow:
++        elevation.get-box-shadow(map.get($system, level3)),
++      fab-extended-hover-container-elevation-shadow:
++        elevation.get-box-shadow(map.get($system, level4)),
+       fab-extended-pressed-container-elevation-shadow: map.get($system, level3),
+-      fab-focus-container-elevation-shadow: elevation.get-box-shadow(
+-          map.get($system, level3)
+-        ),
++      fab-focus-container-elevation-shadow:
++        elevation.get-box-shadow(map.get($system, level3)),
+       fab-focus-state-layer-opacity: map.get($system, focus-state-layer-opacity),
+       fab-foreground-color: map.get($system, on-primary-container),
+-      fab-hover-container-elevation-shadow: elevation.get-box-shadow(
+-          map.get($system, level4)
+-        ),
++      fab-hover-container-elevation-shadow:
++        elevation.get-box-shadow(map.get($system, level4)),
+       fab-hover-state-layer-opacity: map.get($system, hover-state-layer-opacity),
+-      fab-pressed-container-elevation-shadow: elevation.get-box-shadow(
+-          map.get($system, level3)
+-        ),
+-      fab-pressed-state-layer-opacity: map.get(
+-          $system,
+-          pressed-state-layer-opacity
+-        ),
+-      fab-ripple-color: m3-utils.color-with-opacity(
++      fab-pressed-container-elevation-shadow:
+... 73 more lines
+
+--- reference/src/material/button/_m3-icon-button.scss
++++ formatter/src/material/button/_m3-icon-button.scss
+@@ -32,26 +32,17 @@
+     ),
+     color: (
+-      icon-button-disabled-icon-color: m3-utils.color-with-opacity(
+-          map.get($system, on-surface),
+-          38%
+-        ),
+-      icon-button-disabled-state-layer-color: map.get(
+-          $system,
+-          on-surface-variant
+-        ),
+-      icon-button-focus-state-layer-opacity: map.get(
+-          $system,
+-          focus-state-layer-opacity
+-        ),
+-      icon-button-hover-state-layer-opacity: map.get(
+-          $system,
+-          hover-state-layer-opacity
+-        ),
++      icon-button-disabled-icon-color:
++        m3-utils.color-with-opacity(map.get($system, on-surface), 38%),
++      icon-button-disabled-state-layer-color:
++        map.get($system, on-surface-variant),
++      icon-button-focus-state-layer-opacity:
++        map.get($system, focus-state-layer-opacity),
++      icon-button-hover-state-layer-opacity:
++        map.get($system, hover-state-layer-opacity),
+       icon-button-icon-color: map.get($system, on-surface-variant),
+-      icon-button-pressed-state-layer-opacity: map.get(
+-          $system,
+-          pressed-state-layer-opacity
+-        ),
+-      icon-button-ripple-color: m3-utils.color-with-opacity(
++      icon-button-pressed-state-layer-opacity:
++        map.get($system, pressed-state-layer-opacity),
++      icon-button-ripple-color:
++        m3-utils.color-with-opacity(
+           map.get($system, on-surface-variant),
+           map.get($system, pressed-state-layer-opacity)
+@@ -72,13 +63,9 @@
+ 
+   @return (
+-    icon-button-touch-target-display: list.nth(
+-        (block, block, none, none, none, none),
+-        $index
+-      ),
++    icon-button-touch-target-display:
++      list.nth((block, block, none, none, none, none), $index),
+     // The size caps out at 24px, because anything lower will be smaller than the icon.
+-    icon-button-state-layer-size: list.nth(
+-        (40px, 36px, 32px, 28px, 24px, 24px),
+-        $index
+-      )
++    icon-button-state-layer-size:
++      list.nth((40px, 36px, 32px, 28px, 24px, 24px), $index),
+   );
+ }
+

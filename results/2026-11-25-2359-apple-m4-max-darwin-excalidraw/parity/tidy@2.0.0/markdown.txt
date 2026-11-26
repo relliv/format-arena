@@ -1,0 +1,14 @@
+# 1 of 17 files differ from prettier@3.10.1
+packages/excalidraw/CHANGELOG.md
+
+# The first 1, reference first
+
+--- reference/packages/excalidraw/CHANGELOG.md
++++ formatter/packages/excalidraw/CHANGELOG.md
+@@ -2254,4 +2254,5 @@ Check out the [release notes](https://github.com/excalidraw/excalidraw/releases/
+ 
+ - #### BREAKING CHANGE
++
+   - Removed exposing `getSyncableElements` helper which was specific to excalidraw app collab implementation [#3471](https://github.com/excalidraw/excalidraw/pull/3471). If you happened to use it, you can easily reimplement it yourself using the newly exposed [isInvisiblySmallElement](https://github.com/excalidraw/excalidraw/blob/master/src/packages/excalidraw/README.md#isInvisiblySmallElement) helper:
+ 
+

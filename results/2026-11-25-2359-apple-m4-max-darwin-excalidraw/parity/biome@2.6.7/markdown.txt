@@ -1,0 +1,149 @@
+# 5 of 17 files differ from prettier@3.10.1
+README.md
+dev-docs/docs/@excalidraw/excalidraw/api/utils/utils-intro.md
+dev-docs/src/pages/markdown-page.md
+packages/excalidraw/CHANGELOG.md
+packages/utils/README.md
+
+# The first 5, reference first
+
+--- reference/README.md
++++ formatter/README.md
+@@ -1,13 +1,25 @@
+ <a href="https://excalidraw.com/" target="_blank" rel="noopener">
+   <picture>
+-    <source media="(prefers-color-scheme: dark)" alt="Excalidraw" srcset="https://excalidraw.nyc3.cdn.digitaloceanspaces.com/github/excalidraw_github_cover_2_dark.png" />
+-    <img alt="Excalidraw" src="https://excalidraw.nyc3.cdn.digitaloceanspaces.com/github/excalidraw_github_cover_2.png" />
++    <source
++      media="(prefers-color-scheme: dark)"
++      alt="Excalidraw"
++      srcset="
++        https://excalidraw.nyc3.cdn.digitaloceanspaces.com/github/excalidraw_github_cover_2_dark.png
++      "
++    >
++    <img
++      alt="Excalidraw"
++      src="https://excalidraw.nyc3.cdn.digitaloceanspaces.com/github/excalidraw_github_cover_2.png"
++    >
+   </picture>
+ </a>
+ 
+ <h4 align="center">
+-  <a href="https://excalidraw.com">Excalidraw Editor</a> |
+-  <a href="https://plus.excalidraw.com/blog">Blog</a> |
+-  <a href="https://docs.excalidraw.com">Documentation</a> |
++  <a href="https://excalidraw.com">Excalidraw Editor</a>
++  |
++  <a href="https://plus.excalidraw.com/blog">Blog</a>
++  |
++  <a href="https://docs.excalidraw.com">Documentation</a>
++  |
+   <a href="https://plus.excalidraw.com">Excalidraw+</a>
+ </h4>
+@@ -21,18 +33,39 @@
+ </div>
+ 
+-<br />
++<br>
+ <p align="center">
+   <a href="https://github.com/excalidraw/excalidraw/blob/master/LICENSE">
+-    <img alt="Excalidraw is released under the MIT license." src="https://img.shields.io/badge/license-MIT-blue.svg"  /></a>
++    <img
++      alt="Excalidraw is released under the MIT license."
++      src="https://img.shields.io/badge/license-MIT-blue.svg"
++    ></a
++  >
+   <a href="https://www.npmjs.com/package/@excalidraw/excalidraw">
+-    <img alt="npm downloads/month" src="https://img.shields.io/npm/dm/@excalidraw/excalidraw"  /></a>
++    <img
++      alt="npm downloads/month"
++      src="https://img.shields.io/npm/dm/@excalidraw/excalidraw"
++    ></a
++  >
+   <a href="https://docs.excalidraw.com/docs/introduction/contributing">
+-    <img alt="PRs welcome!" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat"  /></a>
++    <img
++      alt="PRs welcome!"
++      src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat"
++    ></a
++  >
+... 37 more lines
+
+--- reference/dev-docs/docs/@excalidraw/excalidraw/api/utils/utils-intro.md
++++ formatter/dev-docs/docs/@excalidraw/excalidraw/api/utils/utils-intro.md
+@@ -1,5 +1,5 @@
+ ---
+-slug: /@excalidraw/excalidraw/api/utils
+----
++
++## slug: /@excalidraw/excalidraw/api/utils
+ 
+ # Utils
+
+
+--- reference/dev-docs/src/pages/markdown-page.md
++++ formatter/dev-docs/src/pages/markdown-page.md
+@@ -1,5 +1,5 @@
+ ---
+-title: Markdown page example
+----
++
++## title: Markdown page example
+ 
+ # Markdown page example
+
+
+--- reference/packages/excalidraw/CHANGELOG.md
++++ formatter/packages/excalidraw/CHANGELOG.md
+@@ -122,5 +122,4 @@ The toolbar UI was rewritten from hidden radio/checkbox inputs to real `<button>
+ 
+ - Tool buttons render as semantic `<button>` elements with `aria-pressed` instead of `<label>`-wrapped hidden `<input type="radio">` / `<input type="checkbox">`. If you style or query the editor DOM:
+-
+   - The `.ToolIcon_type_radio`, `.ToolIcon_type_checkbox`, and `.ToolIcon--selected` class names no longer exist — the pressed state is exposed through the `.ToolIcon--checked` class and the `aria-pressed` attribute.
+   - `<Sidebar.Trigger>` (including the default Library trigger) renders a `<button>` instead of a `<label>` + checkbox.
+@@ -206,5 +205,4 @@ The toolbar UI was rewritten from hidden radio/checkbox inputs to real `<button>
+ 
+ - Theme changes initiated by the default UI are now delegated to `<Excalidraw onThemeChange={(theme) => ...} />` when supplied. If `onThemeChange` is not supplied, light/dark theme toggling still falls back to updating the internal editor state.
+-
+   - `MainMenu.DefaultItems.ToggleTheme` no longer accepts the item-level `onSelect` callback. Host apps that need to control light/dark/system theme should pass `onThemeChange` to `<Excalidraw />` instead.
+   - `MainMenu.DefaultItems.ToggleTheme` with system theme support now uses `allowSystemTheme` together with `theme={Theme | "system"}` only to render the selected value. For the regular light/dark item, pass `allowSystemTheme={false}`.
+@@ -393,5 +391,5 @@ import type { ExcalidrawImperativeAPI } from "@excalidraw/excalidraw/types";
+   rel="stylesheet"
+   href="https://esm.sh/@excalidraw/excalidraw@0.18.0/dist/dev/index.css"
+-/>
++>
+ <!-- import maps used for deduplicating react & react-dom versions -->
+ <script type="importmap">
+@@ -454,5 +452,5 @@ or, if you prefer the path to be dynamically set based on the `location.origin`,
+ <Script id="load-env-variables" strategy="beforeInteractive">
+   {`window["EXCALIDRAW_ASSET_PATH"] = location.origin;`} // or use just "/"!
+-</Script>
++</Script>;
+ ```
+ 
+@@ -2220,5 +2218,4 @@ Check out the [release notes](https://github.com/excalidraw/excalidraw/releases/
+ 
+ - Make library local to given excalidraw instance (previously, all instances on the same page shared one global library) [#3451](https://github.com/excalidraw/excalidraw/pull/3451).
+-
+   - Added prop [onLibraryChange](https://github.com/excalidraw/excalidraw/blob/master/src/packages/excalidraw/README.md#onLibraryChange) which if supplied will be called when library is updated.
+ 
+@@ -2308,4 +2305,5 @@ Check out the [release notes](https://github.com/excalidraw/excalidraw/releases/
+ - Support passing a CSRF token when importing libraries to prevent prompting before installation. The token is passed from [https://libraries.excalidraw.com](https://libraries.excalidraw.com/) using the `token` URL key [#3329](https://github.com/excalidraw/excalidraw/pull/3329).
+ - #### BREAKING CHANGE
++
+   Use `location.hash` when importing libraries to fix installation issues. This will require host apps to add a `hashchange` listener and call the newly exposed `excalidrawAPI.importLibrary(url)` API when applicable [#3320](https://github.com/excalidraw/excalidraw/pull/3320). Check the [readme](https://github.com/excalidraw/excalidraw/blob/master/src/packages/excalidraw/README.md#importlibrary) for more details.
+ - Append `location.pathname` to `libraryReturnUrl` default url [#3325](https://github.com/excalidraw/excalidraw/pull/3325).
+
+
+--- reference/packages/utils/README.md
++++ formatter/packages/utils/README.md
+@@ -38,5 +38,7 @@ To use it in a browser directly:
+ 
+ ```html
+-<script src="https://unpkg.com/@excalidraw/utils@0.1.0/dist/excalidraw-utils.min.js"></script>
++<script
++  src="https://unpkg.com/@excalidraw/utils@0.1.0/dist/excalidraw-utils.min.js"
++></script>
+ <script>
+   // ExcalidrawUtils is a global variable defined by excalidraw.min.js
+

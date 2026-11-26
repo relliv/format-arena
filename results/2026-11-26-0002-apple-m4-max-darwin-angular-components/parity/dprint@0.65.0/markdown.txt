@@ -1,0 +1,1151 @@
+# 150 of 278 files differ from prettier@3.10.1
+CHANGELOG.md
+CHANGELOG_ARCHIVE.md
+CODING_STANDARDS.md
+DEV_ENVIRONMENT.md
+goldens/aria/accordion/index.api.md
+goldens/aria/accordion/testing/index.api.md
+goldens/aria/combobox/index.api.md
+goldens/aria/combobox/testing/index.api.md
+goldens/aria/grid/index.api.md
+goldens/aria/grid/testing/index.api.md
+goldens/aria/listbox/index.api.md
+goldens/aria/menu/index.api.md
+goldens/aria/private/index.api.md
+goldens/aria/tabs/index.api.md
+goldens/aria/tabs/testing/index.api.md
+goldens/aria/toolbar/index.api.md
+goldens/aria/toolbar/testing/index.api.md
+goldens/aria/tree/index.api.md
+goldens/aria/tree/testing/index.api.md
+goldens/cdk/a11y/index.api.md
+goldens/cdk/accordion/index.api.md
+goldens/cdk/bidi/index.api.md
+goldens/cdk/clipboard/index.api.md
+goldens/cdk/collections/index.api.md
+goldens/cdk/dialog/index.api.md
+goldens/cdk/drag-drop/index.api.md
+goldens/cdk/layout/index.api.md
+goldens/cdk/listbox/index.api.md
+goldens/cdk/menu/index.api.md
+goldens/cdk/observers/index.api.md
+goldens/cdk/observers/private/index.api.md
+goldens/cdk/overlay/index.api.md
+goldens/cdk/portal/index.api.md
+goldens/cdk/private/index.api.md
+goldens/cdk/scrolling/index.api.md
+goldens/cdk/stepper/index.api.md
+goldens/cdk/table/index.api.md
+goldens/cdk/testing/index.api.md
+goldens/cdk/testing/private/index.api.md
+goldens/cdk/testing/selenium-webdriver/index.api.md
+goldens/cdk/text-field/index.api.md
+goldens/cdk/tree/index.api.md
+goldens/google-maps/index.api.md
+goldens/material/autocomplete/index.api.md
+goldens/material/badge/index.api.md
+goldens/material/bottom-sheet/index.api.md
+goldens/material/bottom-sheet/testing/index.api.md
+goldens/material/button/index.api.md
+goldens/material/button/testing/index.api.md
+goldens/material/button-toggle/index.api.md
+goldens/material/card/index.api.md
+goldens/material/card/testing/index.api.md
+goldens/material/checkbox/index.api.md
+goldens/material/chips/index.api.md
+goldens/material/chips/testing/index.api.md
+goldens/material/core/index.api.md
+goldens/material/datepicker/index.api.md
+goldens/material/datepicker/testing/index.api.md
+goldens/material/dialog/index.api.md
+goldens/material/dialog/testing/index.api.md
+goldens/material/divider/index.api.md
+goldens/material/divider/testing/index.api.md
+goldens/material/expansion/index.api.md
+goldens/material/expansion/testing/index.api.md
+goldens/material/form-field/index.api.md
+goldens/material/form-field/testing/control/index.api.md
+goldens/material/form-field/testing/index.api.md
+goldens/material/grid-list/index.api.md
+goldens/material/grid-list/testing/index.api.md
+goldens/material/icon/index.api.md
+goldens/material/icon/testing/index.api.md
+goldens/material/input/index.api.md
+goldens/material/input/testing/index.api.md
+goldens/material/list/index.api.md
+goldens/material/list/testing/index.api.md
+goldens/material/menu/index.api.md
+goldens/material/menu/testing/index.api.md
+goldens/material/paginator/index.api.md
+goldens/material/paginator/testing/index.api.md
+goldens/material/progress-bar/index.api.md
+goldens/material/progress-bar/testing/index.api.md
+goldens/material/progress-spinner/index.api.md
+goldens/material/progress-spinner/testing/index.api.md
+goldens/material/radio/index.api.md
+goldens/material/select/index.api.md
+goldens/material/select/testing/index.api.md
+goldens/material/sidenav/index.api.md
+goldens/material/sidenav/testing/index.api.md
+goldens/material/slide-toggle/index.api.md
+goldens/material/slider/index.api.md
+goldens/material/snack-bar/index.api.md
+goldens/material/snack-bar/testing/index.api.md
+goldens/material/sort/index.api.md
+goldens/material/sort/testing/index.api.md
+goldens/material/stepper/index.api.md
+goldens/material/table/index.api.md
+goldens/material/table/testing/index.api.md
+goldens/material/tabs/index.api.md
+goldens/material/tabs/testing/index.api.md
+goldens/material/timepicker/index.api.md
+goldens/material/timepicker/testing/index.api.md
+goldens/material/toolbar/index.api.md
+goldens/material/toolbar/testing/index.api.md
+goldens/material/tooltip/index.api.md
+goldens/material/tooltip/testing/index.api.md
+goldens/material/tree/index.api.md
+goldens/material/tree/testing/index.api.md
+goldens/youtube-player/index.api.md
+guides/creating-a-custom-form-field-control.md
+guides/material-2.md
+guides/theming-your-components.md
+guides/theming.md
+guides/v9-hammerjs-migration.md
+src/README.md
+src/aria/private/ui-pattern-rules.md
+src/cdk/a11y/a11y.md
+src/cdk/clipboard/clipboard.md
+src/cdk/coercion/coercion.md
+src/cdk/collections/collections.md
+src/cdk/dialog/dialog.md
+src/cdk/layout/layout.md
+src/cdk/overlay/overlay.md
+src/cdk/portal/portal.md
+src/cdk/scrolling/scrolling.md
+src/cdk/table/table.md
+src/cdk/testing/test-harnesses.md
+src/cdk/tree/tree.md
+src/cdk-experimental/scrolling/scrolling.md
+src/google-maps/README.md
+src/google-maps/deprecated-map-marker-clusterer/README.md
+src/google-maps/map-directions-renderer/README.md
+src/google-maps/map-geocoder/README.md
+src/google-maps/map-marker-clusterer/README.md
+src/material/autocomplete/autocomplete.md
+src/material/bottom-sheet/bottom-sheet.md
+src/material/datepicker/datepicker.md
+src/material/dialog/dialog.md
+src/material/expansion/expansion.md
+src/material/list/list.md
+src/material/menu/menu.md
+src/material/paginator/paginator.md
+src/material/schematics/ng-generate/theme-color/README.md
+src/material/select/select.md
+src/material/slider/slider.md
+src/material/stepper/stepper.md
+src/material/table/table.md
+src/material/timepicker/timepicker.md
+src/material/tree/tree.md
+src/material-experimental/README.md
+src/youtube-player/README.md
+
+# The first 25, reference first
+
+--- reference/CHANGELOG.md
++++ formatter/CHANGELOG.md
+@@ -607,4 +607,5 @@ No user facing changes in this release
+ 
+   - feat(aria/combobox): promote simple-combobox to stable un-prefixed combobox
++
+   * Relocates public, private, and example directories to clean `combobox` entry points.
+   * Renames internal layout symbols, selectors, and uppercase tokens (`SIMPLE_COMBOBOX_POPUP` -> `COMBOBOX_POPUP`).
+@@ -612,5 +613,4 @@ No user facing changes in this release
+   * Standardizes the accompanying toolbar component showcase into the clean `aria-toolbar` path.
+   * Re-routes dev-app navigation links and migrates public API golden records.
+-
+ - `SimpleCombobox` has been promoted to `Combobox`. All `simple-combobox` prefixed symbols, selectors, and tokens have been renamed to use the `combobox` prefix.
+ 
+@@ -3758,5 +3758,4 @@ The Material 2 component styles have undergone minor adjustments to enhance cons
+ 
+   Note when upgrading: isExpandable works differently on Trees using treeControl than trees using childrenAccessor or levelAccessor. Nodes on trees that have a treeControl are expandable by default. Nodes on trees using childrenAccessor or levelAccessor are _not_ expandable by default. Provide isExpandable to override default behavior.
+-
+ - Setting tabindex of tree nodes deprecated. By default, Tree ignores tabindex passed to tree nodes.
+   - MatTreeNode#tabIndex deprecated. MatTreeNode ignores Input tabIndex and manages its own focus behavior.
+@@ -3768,5 +3767,4 @@ The Material 2 component styles have undergone minor adjustments to enhance cons
+ 
+   Add Legacy Keyboard Interface demo, which shows usage of LEGACY_TREE_KEY_MANAGER_FACTORY_PROVIDER. Add Custom Key Manager, which shows usage of injecting a TreeKeyManagerStrategy
+-
+ - disabled renamed to isDisabled.
+   - CdkTreeNode#disabled deprecated and alias to CdkTreeNode#isDisabled
+
+
+--- reference/CHANGELOG_ARCHIVE.md
++++ formatter/CHANGELOG_ARCHIVE.md
+@@ -1651,5 +1651,5 @@ This release introduces support for TypeScript 3.8.
+ |         |                                                                                                                                                                                                |
+ | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+-| bug fix | **mdc-\*:** rename sass mixins to mat-mdc-* ([#18615](https://github.com/angular/components/issues/18615)) ([694386a](https://github.com/angular/components/commit/694386a))                   |
++| bug fix | __mdc-*:__ rename sass mixins to mat-mdc-* ([#18615](https://github.com/angular/components/issues/18615)) ([694386a](https://github.com/angular/components/commit/694386a))                    |
+ | bug fix | **mdc-form-field:** avoid expression changed after check ([#18741](https://github.com/angular/components/issues/18741)) ([65a602f](https://github.com/angular/components/commit/65a602f))      |
+ | bug fix | **mdc-progress-bar:** account for breaking changes in latest canary ([5d49f37](https://github.com/angular/components/commit/5d49f37))                                                          |
+@@ -3169,5 +3169,4 @@ $myTheme: ...
+   @include mat-theme-elevation($zValue, $myTheme);
+ }
+-
+ ```
+ 
+@@ -3413,5 +3412,4 @@ $myTheme: ...
+   @include mat-theme-elevation($zValue, $myTheme);
+ }
+-
+ ```
+ 
+@@ -5647,6 +5645,5 @@ We expect to have the tool ready when we release version 6.0.0.
+   <mat-select placeholder="State">
+     <mat-option *ngFor="let state of states" [value]="state"
+-      >{{ state }}</mat-option
+-    >
++    >{{ state }}</mat-option>
+   </mat-select>
+ </mat-form-field>
+@@ -5925,5 +5922,5 @@ broken countless custom styles that relied on a particular specificity working.
+ 
+ ```ts
+-import { LiveAnnouncer, Overlay, Directionality } from "@angular/cdk";
++import { Directionality, LiveAnnouncer, Overlay } from "@angular/cdk";
+ ```
+ 
+@@ -6750,5 +6747,5 @@ imports only the set of components actually used in the application.
+   ```html
+   <md-input-container>
+-    <input mdInput name="value" ngModel />
++    <input mdInput name="value" ngModel>
+   </md-input-container>
+   ```
+@@ -7066,9 +7063,12 @@ should no longer throw an error if it is missing.
+ - Tabs no longer use an `md-tab-content` directive. Instead, the non-label content of the tab is
+   used as its content. Labels can also be specified via attribute, so the tabs can now be given as:
+-
+   ```html
+   <md-tab-group>
+-    <md-tab label="Overview"> This is the overview tab </md-tab>
+-    <md-tab label="Details"> This is the details tab </md-tab>
++    <md-tab label="Overview">
++      This is the overview tab
++    </md-tab>
++    <md-tab label="Details">
++      This is the details tab
++    </md-tab>
+   </md-tab-group>
+   ```
+
+
+--- reference/CODING_STANDARDS.md
++++ formatter/CODING_STANDARDS.md
+@@ -184,6 +184,6 @@ Properties should have a concise description of what the property means:
+ 
+ ```ts
+-  /** The label position relative to the checkbox. Defaults to 'after' */
+-  @Input() labelPosition: 'before' | 'after' = 'after';
++/** The label position relative to the checkbox. Defaults to 'after' */
++@Input() labelPosition: 'before' | 'after' = 'after';
+ ```
+ 
+@@ -192,11 +192,11 @@ and the return value:
+ 
+ ```ts
+-  /**
+-   * Opens a modal dialog containing the given component.
+-   * @param component Type of the component to load into the dialog.
+-   * @param config Dialog configuration options.
+-   * @returns Reference to the newly-opened dialog.
+-   */
+-  open<T>(component: ComponentType<T>, config?: MatDialogConfig): MatDialogRef<T> { ... }
++/**
++ * Opens a modal dialog containing the given component.
++ * @param component Type of the component to load into the dialog.
++ * @param config Dialog configuration options.
++ * @returns Reference to the newly-opened dialog.
++ */
++open<T>(component: ComponentType<T>, config?: MatDialogConfig): MatDialogRef<T> { ... }
+ ```
+ 
+@@ -285,7 +285,7 @@ For example:
+ 
+ ```ts
+-import {Input, booleanAttribute} from '@angular/core';
++import { booleanAttribute, Input } from "@angular/core";
+ 
+-@Input({transform: booleanAttribute}) disabled: boolean = false;
++disabled: boolean = false;
+ ```
+ 
+@@ -316,5 +316,5 @@ Usage
+ ```html
+ <your-component>
+-  <input />
++  <input>
+ </your-component>
+ ```
+@@ -325,5 +325,5 @@ Implementation
+ 
+ ```html
+-<input />
++<input>
+ ```
+ 
+
+
+--- reference/DEV_ENVIRONMENT.md
++++ formatter/DEV_ENVIRONMENT.md
+@@ -104,8 +104,8 @@ To contribute to Angular using a Windows machine, you need to use the [Windows L
+ Installing WSL on your machine requires a few extra steps, but we believe it's generally useful for developing on Windows:
+ 
+-1.  Run `wsl --install` from Powershell (as administrator).
+-2.  Restart your machine.
+-3.  Enter the WSL environment by running: `wsl`.
+-4.  Continue with the developer guide as if you were on a native Linux system.
++1. Run `wsl --install` from Powershell (as administrator).
++2. Restart your machine.
++3. Enter the WSL environment by running: `wsl`.
++4. Continue with the developer guide as if you were on a native Linux system.
+ 
+ For a more detailed guide, refer to the official Microsoft documentation: [Installing WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
+
+
+--- reference/goldens/aria/accordion/index.api.md
++++ formatter/goldens/aria/accordion/index.api.md
+@@ -25,5 +25,5 @@ export class AccordionContent {
+     never,
+     true,
+-    [{ directive: typeof DeferredContent; inputs: {}; outputs: {} }]
++    [{ directive: typeof DeferredContent; inputs: {}; outputs: {}; }]
+   >;
+   // (undocumented)
+@@ -50,5 +50,7 @@ export class AccordionGroup implements OnDestroy {
+     unknown
+   >;
+-  readonly textDirection: _angular_core.WritableSignal<_angular_cdk_bidi.Direction>;
++  readonly textDirection: _angular_core.WritableSignal<
++    _angular_cdk_bidi.Direction
++  >;
+   readonly wrap: _angular_core.InputSignalWithTransform<boolean, unknown>;
+   // (undocumented)
+@@ -58,5 +60,5 @@ export class AccordionGroup implements OnDestroy {
+     ["ngAccordionGroup"],
+     {
+-      disabled: { alias: "disabled"; required: false; isSignal: true };
++      disabled: { alias: "disabled"; required: false; isSignal: true; };
+       multiExpandable: {
+         alias: "multiExpandable";
+@@ -64,6 +66,6 @@ export class AccordionGroup implements OnDestroy {
+         isSignal: true;
+       };
+-      softDisabled: { alias: "softDisabled"; required: false; isSignal: true };
+-      wrap: { alias: "wrap"; required: false; isSignal: true };
++      softDisabled: { alias: "softDisabled"; required: false; isSignal: true; };
++      wrap: { alias: "wrap"; required: false; isSignal: true; };
+     },
+     {},
+@@ -92,16 +94,14 @@ export class AccordionPanel {
+     "[ngAccordionPanel]",
+     ["ngAccordionPanel"],
+-    { id: { alias: "id"; required: false; isSignal: true } },
++    { id: { alias: "id"; required: false; isSignal: true; }; },
+     {},
+     ["_accordionContent"],
+     never,
+     true,
+-    [
+-      {
+-        directive: typeof DeferredContentAware;
+-        inputs: { preserveContent: "preserveContent" };
+-        outputs: {};
+-      },
+-    ]
++    [{
++      directive: typeof DeferredContentAware;
++      inputs: { preserveContent: "preserveContent"; };
++      outputs: {};
++    }]
+   >;
+   // (undocumented)
+@@ -129,10 +129,10 @@ export class AccordionTrigger {
+     ["ngAccordionTrigger"],
+     {
+... 14 more lines
+
+--- reference/goldens/aria/accordion/testing/index.api.md
++++ formatter/goldens/aria/accordion/testing/index.api.md
+@@ -21,8 +21,11 @@ export class AccordionGroupHarness extends ComponentHarness {
+ 
+ // @public
+-export interface AccordionGroupHarnessFilters extends BaseHarnessFilters {}
++export interface AccordionGroupHarnessFilters extends BaseHarnessFilters {
++}
+ 
+ // @public
+-export class AccordionHarness extends ContentContainerComponentHarness<AccordionSection> {
++export class AccordionHarness
++  extends ContentContainerComponentHarness<AccordionSection>
++{
+   blur(): Promise<void>;
+   collapse(): Promise<void>;
+
+
+--- reference/goldens/aria/combobox/index.api.md
++++ formatter/goldens/aria/combobox/index.api.md
+@@ -10,6 +10,5 @@ import { OnInit } from "@angular/core";
+ 
+ // @public
+-export class Combobox
+-  extends DeferredContentAware
++export class Combobox extends DeferredContentAware
+   implements OnInit, OnDestroy
+ {
+@@ -47,7 +46,7 @@ export class Combobox
+     ["ngCombobox"],
+     {
+-      disabled: { alias: "disabled"; required: false; isSignal: true };
+-      readonly: { alias: "readonly"; required: false; isSignal: true };
+-      softDisabled: { alias: "softDisabled"; required: false; isSignal: true };
++      disabled: { alias: "disabled"; required: false; isSignal: true; };
++      readonly: { alias: "readonly"; required: false; isSignal: true; };
++      softDisabled: { alias: "softDisabled"; required: false; isSignal: true; };
+       alwaysExpanded: {
+         alias: "alwaysExpanded";
+@@ -55,7 +54,7 @@ export class Combobox
+         isSignal: true;
+       };
+-      tabIndex: { alias: "tabindex"; required: false; isSignal: true };
+-      expanded: { alias: "expanded"; required: false; isSignal: true };
+-      value: { alias: "value"; required: false; isSignal: true };
++      tabIndex: { alias: "tabindex"; required: false; isSignal: true; };
++      expanded: { alias: "expanded"; required: false; isSignal: true; };
++      value: { alias: "value"; required: false; isSignal: true; };
+       inlineSuggestion: {
+         alias: "inlineSuggestion";
+@@ -64,5 +63,5 @@ export class Combobox
+       };
+     },
+-    { expanded: "expandedChange"; value: "valueChange" },
++    { expanded: "expandedChange"; value: "valueChange"; },
+     never,
+     never,
+@@ -100,6 +99,6 @@ export class ComboboxPopup implements OnInit, OnDestroy {
+     ["ngComboboxPopup"],
+     {
+-      combobox: { alias: "combobox"; required: true; isSignal: true };
+-      popupType: { alias: "popupType"; required: false; isSignal: true };
++      combobox: { alias: "combobox"; required: true; isSignal: true; };
++      popupType: { alias: "popupType"; required: false; isSignal: true; };
+     },
+     {},
+@@ -107,5 +106,5 @@ export class ComboboxPopup implements OnInit, OnDestroy {
+     never,
+     true,
+-    [{ directive: typeof DeferredContent; inputs: {}; outputs: {} }]
++    [{ directive: typeof DeferredContent; inputs: {}; outputs: {}; }]
+   >;
+   // (undocumented)
+
+
+--- reference/goldens/aria/combobox/testing/index.api.md
++++ formatter/goldens/aria/combobox/testing/index.api.md
+@@ -20,5 +20,7 @@ export class ComboboxHarness extends ContentContainerComponentHarness {
+   getPopupWidget<T extends ComponentHarness>(
+     type: ComponentHarnessConstructor<T> & {
+-      with: (options?: { selector?: string }) => HarnessPredicate<T>;
++      with: (options?: {
++        selector?: string;
++      }) => HarnessPredicate<T>;
+     },
+   ): Promise<T>;
+
+
+--- reference/goldens/aria/grid/index.api.md
++++ formatter/goldens/aria/grid/index.api.md
+@@ -43,5 +43,7 @@ export class Grid implements OnDestroy {
+     string | number | undefined
+   >;
+-  readonly textDirection: _angular_core.WritableSignal<_angular_cdk_bidi.Direction>;
++  readonly textDirection: _angular_core.WritableSignal<
++    _angular_cdk_bidi.Direction
++  >;
+   // (undocumented)
+   static ɵdir: _angular_core.ɵɵDirectiveDeclaration<
+@@ -55,10 +57,10 @@ export class Grid implements OnDestroy {
+         isSignal: true;
+       };
+-      disabled: { alias: "disabled"; required: false; isSignal: true };
+-      softDisabled: { alias: "softDisabled"; required: false; isSignal: true };
+-      focusMode: { alias: "focusMode"; required: false; isSignal: true };
+-      rowWrap: { alias: "rowWrap"; required: false; isSignal: true };
+-      colWrap: { alias: "colWrap"; required: false; isSignal: true };
+-      multi: { alias: "multi"; required: false; isSignal: true };
++      disabled: { alias: "disabled"; required: false; isSignal: true; };
++      softDisabled: { alias: "softDisabled"; required: false; isSignal: true; };
++      focusMode: { alias: "focusMode"; required: false; isSignal: true; };
++      rowWrap: { alias: "rowWrap"; required: false; isSignal: true; };
++      colWrap: { alias: "colWrap"; required: false; isSignal: true; };
++      multi: { alias: "multi"; required: false; isSignal: true; };
+       selectionMode: {
+         alias: "selectionMode";
+@@ -66,5 +68,5 @@ export class Grid implements OnDestroy {
+         isSignal: true;
+       };
+-      tabIndex: { alias: "tabindex"; required: false; isSignal: true };
++      tabIndex: { alias: "tabindex"; required: false; isSignal: true; };
+     },
+     {},
+@@ -107,5 +109,7 @@ export class GridCell implements OnInit, OnDestroy {
+   protected readonly _tabIndex: Signal<number>;
+   readonly tabindex: _angular_core.InputSignal<number | undefined>;
+-  readonly textDirection: _angular_core.WritableSignal<_angular_cdk_bidi.Direction>;
++  readonly textDirection: _angular_core.WritableSignal<
++    _angular_cdk_bidi.Direction
++  >;
+   // (undocumented)
+   static ɵdir: _angular_core.ɵɵDirectiveDeclaration<
+@@ -114,16 +118,16 @@ export class GridCell implements OnInit, OnDestroy {
+     ["ngGridCell"],
+     {
+-      id: { alias: "id"; required: false; isSignal: true };
+-      role: { alias: "role"; required: false; isSignal: true };
+-      rowSpan: { alias: "rowSpan"; required: false; isSignal: true };
+-      colSpan: { alias: "colSpan"; required: false; isSignal: true };
+-      rowIndex: { alias: "rowIndex"; required: false; isSignal: true };
+-      colIndex: { alias: "colIndex"; required: false; isSignal: true };
+-      disabled: { alias: "disabled"; required: false; isSignal: true };
+-      selected: { alias: "selected"; required: false; isSignal: true };
+-      selectable: { alias: "selectable"; required: false; isSignal: true };
+-      tabindex: { alias: "tabindex"; required: false; isSignal: true };
++      id: { alias: "id"; required: false; isSignal: true; };
++      role: { alias: "role"; required: false; isSignal: true; };
++      rowSpan: { alias: "rowSpan"; required: false; isSignal: true; };
+... 38 more lines
+
+--- reference/goldens/aria/grid/testing/index.api.md
++++ formatter/goldens/aria/grid/testing/index.api.md
+@@ -62,5 +62,6 @@ export class GridRowHarness extends ComponentHarness {
+ 
+ // @public
+-export interface GridRowHarnessFilters extends BaseHarnessFilters {}
++export interface GridRowHarnessFilters extends BaseHarnessFilters {
++}
+ 
+ // (No @packageDocumentation comment for this package)
+
+
+--- reference/goldens/aria/listbox/index.api.md
++++ formatter/goldens/aria/listbox/index.api.md
+@@ -52,10 +52,10 @@ export class Listbox<V> implements OnDestroy {
+     ["ngListbox"],
+     {
+-      id: { alias: "id"; required: false; isSignal: true };
+-      orientation: { alias: "orientation"; required: false; isSignal: true };
+-      multi: { alias: "multi"; required: false; isSignal: true };
+-      wrap: { alias: "wrap"; required: false; isSignal: true };
+-      softDisabled: { alias: "softDisabled"; required: false; isSignal: true };
+-      focusMode: { alias: "focusMode"; required: false; isSignal: true };
++      id: { alias: "id"; required: false; isSignal: true; };
++      orientation: { alias: "orientation"; required: false; isSignal: true; };
++      multi: { alias: "multi"; required: false; isSignal: true; };
++      wrap: { alias: "wrap"; required: false; isSignal: true; };
++      softDisabled: { alias: "softDisabled"; required: false; isSignal: true; };
++      focusMode: { alias: "focusMode"; required: false; isSignal: true; };
+       selectionMode: {
+         alias: "selectionMode";
+@@ -68,10 +68,10 @@ export class Listbox<V> implements OnDestroy {
+         isSignal: true;
+       };
+-      disabled: { alias: "disabled"; required: false; isSignal: true };
+-      readonly: { alias: "readonly"; required: false; isSignal: true };
+-      tabIndex: { alias: "tabindex"; required: false; isSignal: true };
+-      value: { alias: "value"; required: false; isSignal: true };
++      disabled: { alias: "disabled"; required: false; isSignal: true; };
++      readonly: { alias: "readonly"; required: false; isSignal: true; };
++      tabIndex: { alias: "tabindex"; required: false; isSignal: true; };
++      value: { alias: "value"; required: false; isSignal: true; };
+     },
+-    { value: "valueChange" },
++    { value: "valueChange"; },
+     never,
+     never,
+@@ -103,8 +103,8 @@ class Option_2<V> implements OnInit, OnDestroy {
+     ["ngOption"],
+     {
+-      id: { alias: "id"; required: false; isSignal: true };
+-      value: { alias: "value"; required: true; isSignal: true };
+-      disabled: { alias: "disabled"; required: false; isSignal: true };
+-      label: { alias: "label"; required: false; isSignal: true };
++      id: { alias: "id"; required: false; isSignal: true; };
++      value: { alias: "value"; required: true; isSignal: true; };
++      disabled: { alias: "disabled"; required: false; isSignal: true; };
++      label: { alias: "label"; required: false; isSignal: true; };
+     },
+     {},
+
+
+--- reference/goldens/aria/menu/index.api.md
++++ formatter/goldens/aria/menu/index.api.md
+@@ -33,5 +33,7 @@ export class Menu<V> implements OnDestroy {
+   >;
+   readonly tabIndex: Signal<-1 | 0>;
+-  readonly textDirection: _angular_core.WritableSignal<_angular_cdk_bidi.Direction>;
++  readonly textDirection: _angular_core.WritableSignal<
++    _angular_cdk_bidi.Direction
++  >;
+   readonly typeaheadDelay: _angular_core.InputSignal<number>;
+   readonly visible: Signal<boolean>;
+@@ -43,6 +45,6 @@ export class Menu<V> implements OnDestroy {
+     ["ngMenu"],
+     {
+-      id: { alias: "id"; required: false; isSignal: true };
+-      wrap: { alias: "wrap"; required: false; isSignal: true };
++      id: { alias: "id"; required: false; isSignal: true; };
++      wrap: { alias: "wrap"; required: false; isSignal: true; };
+       typeaheadDelay: {
+         alias: "typeaheadDelay";
+@@ -50,6 +52,6 @@ export class Menu<V> implements OnDestroy {
+         isSignal: true;
+       };
+-      disabled: { alias: "disabled"; required: false; isSignal: true };
+-      softDisabled: { alias: "softDisabled"; required: false; isSignal: true };
++      disabled: { alias: "disabled"; required: false; isSignal: true; };
++      softDisabled: { alias: "softDisabled"; required: false; isSignal: true; };
+       expansionDelay: {
+         alias: "expansionDelay";
+@@ -58,15 +60,13 @@ export class Menu<V> implements OnDestroy {
+       };
+     },
+-    { itemSelected: "itemSelected" },
++    { itemSelected: "itemSelected"; },
+     never,
+     never,
+     true,
+-    [
+-      {
+-        directive: typeof DeferredContentAware;
+-        inputs: { preserveContent: "preserveContent" };
+-        outputs: {};
+-      },
+-    ]
++    [{
++      directive: typeof DeferredContentAware;
++      inputs: { preserveContent: "preserveContent"; };
++      outputs: {};
++    }]
+   >;
+   // (undocumented)
+@@ -94,5 +94,7 @@ export class MenuBar<V> implements OnDestroy {
+     unknown
+   >;
+-  readonly textDirection: _angular_core.WritableSignal<_angular_cdk_bidi.Direction>;
++  readonly textDirection: _angular_core.WritableSignal<
++    _angular_cdk_bidi.Direction
++  >;
+   readonly typeaheadDelay: _angular_core.InputSignal<number>;
+   readonly value: _angular_core.ModelSignal<V[]>;
+... 72 more lines
+
+--- reference/goldens/aria/private/index.api.md
++++ formatter/goldens/aria/private/index.api.md
+@@ -11,10 +11,13 @@ import { untracked } from "@angular/core/primitives/signals";
+ 
+ // @public
+-export interface AccordionGroupInputs extends Omit<
+-  ListNavigationInputs<AccordionTriggerPattern> &
+-    ListFocusInputs<AccordionTriggerPattern> &
+-    Omit<ListExpansionInputs, "items">,
+-  "focusMode"
+-> {}
++export interface AccordionGroupInputs extends
++  Omit<
++    & ListNavigationInputs<AccordionTriggerPattern>
++    & ListFocusInputs<AccordionTriggerPattern>
++    & Omit<ListExpansionInputs, "items">,
++    "focusMode"
++  >
++{
++}
+ 
+ // @public
+@@ -35,5 +38,6 @@ export interface AccordionTriggerInputs
+   extends
+     Omit<ListNavigationItem & ListFocusItem, "index">,
+-    Omit<ExpansionItem, "expandable"> {
++    Omit<ExpansionItem, "expandable">
++{
+   accordionGroup: SignalLike<AccordionGroupPattern>;
+   accordionPanelId: SignalLike<string>;
+@@ -155,5 +159,7 @@ export class DeferredContent implements OnDestroy {
+   constructor();
+   // (undocumented)
+-  readonly deferredContentAware: _angular_core.WritableSignal<DeferredContentAware | null>;
++  readonly deferredContentAware: _angular_core.WritableSignal<
++    DeferredContentAware | null
++  >;
+   // (undocumented)
+   ngOnDestroy(): void;
+@@ -192,5 +198,5 @@ export class DeferredContentAware {
+       };
+     },
+-    { preserveContent: "preserveContentChange" },
++    { preserveContent: "preserveContentChange"; },
+     never,
+     never,
+@@ -288,8 +294,7 @@ export class GridCellWidgetPattern {
+ 
+ // @public
+-export interface GridInputs extends Omit<
+-  GridInputs$1<GridCellPattern>,
+-  "cells"
+-> {
++export interface GridInputs
++  extends Omit<GridInputs$1<GridCellPattern>, "cells">
++{
+   element: SignalLike<HTMLElement>;
+   enableSelection: SignalLike<boolean>;
+@@ -400,8 +405,7 @@ export class ListboxPattern<V> {
+ 
+... 142 more lines
+
+--- reference/goldens/aria/tabs/index.api.md
++++ formatter/goldens/aria/tabs/index.api.md
+@@ -33,7 +33,7 @@ export class Tab implements HasElement, OnInit, OnDestroy {
+     ["ngTab"],
+     {
+-      id: { alias: "id"; required: false; isSignal: true };
+-      disabled: { alias: "disabled"; required: false; isSignal: true };
+-      value: { alias: "value"; required: true; isSignal: true };
++      id: { alias: "id"; required: false; isSignal: true; };
++      disabled: { alias: "disabled"; required: false; isSignal: true; };
++      value: { alias: "value"; required: true; isSignal: true; };
+     },
+     {},
+@@ -62,5 +62,5 @@ export class TabContent {
+     never,
+     true,
+-    [{ directive: typeof DeferredContent; inputs: {}; outputs: {} }]
++    [{ directive: typeof DeferredContent; inputs: {}; outputs: {}; }]
+   >;
+   // (undocumented)
+@@ -100,8 +100,8 @@ export class TabList implements OnInit, OnDestroy {
+     ["ngTabList"],
+     {
+-      orientation: { alias: "orientation"; required: false; isSignal: true };
+-      wrap: { alias: "wrap"; required: false; isSignal: true };
+-      softDisabled: { alias: "softDisabled"; required: false; isSignal: true };
+-      focusMode: { alias: "focusMode"; required: false; isSignal: true };
++      orientation: { alias: "orientation"; required: false; isSignal: true; };
++      wrap: { alias: "wrap"; required: false; isSignal: true; };
++      softDisabled: { alias: "softDisabled"; required: false; isSignal: true; };
++      focusMode: { alias: "focusMode"; required: false; isSignal: true; };
+       selectionMode: {
+         alias: "selectionMode";
+@@ -109,8 +109,8 @@ export class TabList implements OnInit, OnDestroy {
+         isSignal: true;
+       };
+-      selectedTab: { alias: "selectedTab"; required: false; isSignal: true };
+-      disabled: { alias: "disabled"; required: false; isSignal: true };
++      selectedTab: { alias: "selectedTab"; required: false; isSignal: true; };
++      disabled: { alias: "disabled"; required: false; isSignal: true; };
+     },
+-    { selectedTab: "selectedTabChange" },
++    { selectedTab: "selectedTabChange"; },
+     never,
+     never,
+@@ -140,6 +140,6 @@ export class TabPanel implements OnInit, OnDestroy {
+     ["ngTabPanel"],
+     {
+-      id: { alias: "id"; required: false; isSignal: true };
+-      value: { alias: "value"; required: true; isSignal: true };
++      id: { alias: "id"; required: false; isSignal: true; };
++      value: { alias: "value"; required: true; isSignal: true; };
+     },
+     {},
+@@ -147,11 +147,9 @@ export class TabPanel implements OnInit, OnDestroy {
+     never,
+     true,
+-    [
+-      {
+-        directive: typeof DeferredContentAware;
+... 12 more lines
+
+--- reference/goldens/aria/tabs/testing/index.api.md
++++ formatter/goldens/aria/tabs/testing/index.api.md
+@@ -42,5 +42,6 @@ export class TabsHarness extends ComponentHarness {
+ 
+ // @public
+-export interface TabsHarnessFilters extends BaseHarnessFilters {}
++export interface TabsHarnessFilters extends BaseHarnessFilters {
++}
+ 
+ // (No @packageDocumentation comment for this package)
+
+
+--- reference/goldens/aria/toolbar/index.api.md
++++ formatter/goldens/aria/toolbar/index.api.md
+@@ -26,5 +26,7 @@ export class Toolbar implements OnDestroy {
+     unknown
+   >;
+-  readonly textDirection: _angular_core.WritableSignal<_angular_cdk_bidi.Direction>;
++  readonly textDirection: _angular_core.WritableSignal<
++    _angular_cdk_bidi.Direction
++  >;
+   readonly wrap: _angular_core.InputSignalWithTransform<boolean, unknown>;
+   // (undocumented)
+@@ -34,8 +36,8 @@ export class Toolbar implements OnDestroy {
+     ["ngToolbar"],
+     {
+-      orientation: { alias: "orientation"; required: false; isSignal: true };
+-      softDisabled: { alias: "softDisabled"; required: false; isSignal: true };
+-      disabled: { alias: "disabled"; required: false; isSignal: true };
+-      wrap: { alias: "wrap"; required: false; isSignal: true };
++      orientation: { alias: "orientation"; required: false; isSignal: true; };
++      softDisabled: { alias: "softDisabled"; required: false; isSignal: true; };
++      disabled: { alias: "disabled"; required: false; isSignal: true; };
++      wrap: { alias: "wrap"; required: false; isSignal: true; };
+     },
+     {},
+@@ -72,6 +74,6 @@ export class ToolbarWidget implements OnInit, OnDestroy {
+     ["ngToolbarWidget"],
+     {
+-      id: { alias: "id"; required: false; isSignal: true };
+-      disabled: { alias: "disabled"; required: false; isSignal: true };
++      id: { alias: "id"; required: false; isSignal: true; };
++      disabled: { alias: "disabled"; required: false; isSignal: true; };
+     },
+     {},
+@@ -96,5 +98,5 @@ export class ToolbarWidgetGroup {
+     "[ngToolbarWidgetGroup]",
+     ["ngToolbarWidgetGroup"],
+-    { disabled: { alias: "disabled"; required: false; isSignal: true } },
++    { disabled: { alias: "disabled"; required: false; isSignal: true; }; },
+     {},
+     ["_widgets"],
+
+
+--- reference/goldens/aria/toolbar/testing/index.api.md
++++ formatter/goldens/aria/toolbar/testing/index.api.md
+@@ -27,5 +27,6 @@ export class ToolbarHarness extends ComponentHarness {
+ 
+ // @public
+-export interface ToolbarHarnessFilters extends BaseHarnessFilters {}
++export interface ToolbarHarnessFilters extends BaseHarnessFilters {
++}
+ 
+ // @public
+@@ -42,8 +43,11 @@ export class ToolbarWidgetGroupHarness extends ComponentHarness {
+ 
+ // @public
+-export interface ToolbarWidgetGroupHarnessFilters extends BaseHarnessFilters {}
++export interface ToolbarWidgetGroupHarnessFilters extends BaseHarnessFilters {
++}
+ 
+ // @public
+-export class ToolbarWidgetHarness extends ContentContainerComponentHarness<string> {
++export class ToolbarWidgetHarness
++  extends ContentContainerComponentHarness<string>
++{
+   click(): Promise<void>;
+   getText(): Promise<string>;
+
+
+--- reference/goldens/aria/tree/index.api.md
++++ formatter/goldens/aria/tree/index.api.md
+@@ -39,5 +39,7 @@ export class Tree<V> implements OnDestroy {
+     string | number | undefined
+   >;
+-  readonly textDirection: _angular_core.WritableSignal<_angular_cdk_bidi.Direction>;
++  readonly textDirection: _angular_core.WritableSignal<
++    _angular_cdk_bidi.Direction
++  >;
+   readonly typeaheadDelay: _angular_core.InputSignal<number>;
+   readonly value: _angular_core.ModelSignal<V[]>;
+@@ -49,8 +51,8 @@ export class Tree<V> implements OnDestroy {
+     ["ngTree"],
+     {
+-      id: { alias: "id"; required: false; isSignal: true };
+-      orientation: { alias: "orientation"; required: false; isSignal: true };
+-      multi: { alias: "multi"; required: false; isSignal: true };
+-      disabled: { alias: "disabled"; required: false; isSignal: true };
++      id: { alias: "id"; required: false; isSignal: true; };
++      orientation: { alias: "orientation"; required: false; isSignal: true; };
++      multi: { alias: "multi"; required: false; isSignal: true; };
++      disabled: { alias: "disabled"; required: false; isSignal: true; };
+       selectionMode: {
+         alias: "selectionMode";
+@@ -58,7 +60,7 @@ export class Tree<V> implements OnDestroy {
+         isSignal: true;
+       };
+-      focusMode: { alias: "focusMode"; required: false; isSignal: true };
+-      wrap: { alias: "wrap"; required: false; isSignal: true };
+-      softDisabled: { alias: "softDisabled"; required: false; isSignal: true };
++      focusMode: { alias: "focusMode"; required: false; isSignal: true; };
++      wrap: { alias: "wrap"; required: false; isSignal: true; };
++      softDisabled: { alias: "softDisabled"; required: false; isSignal: true; };
+       typeaheadDelay: {
+         alias: "typeaheadDelay";
+@@ -66,10 +68,10 @@ export class Tree<V> implements OnDestroy {
+         isSignal: true;
+       };
+-      tabIndex: { alias: "tabindex"; required: false; isSignal: true };
+-      value: { alias: "value"; required: false; isSignal: true };
+-      nav: { alias: "nav"; required: false; isSignal: true };
+-      currentType: { alias: "currentType"; required: false; isSignal: true };
++      tabIndex: { alias: "tabindex"; required: false; isSignal: true; };
++      value: { alias: "value"; required: false; isSignal: true; };
++      nav: { alias: "nav"; required: false; isSignal: true; };
++      currentType: { alias: "currentType"; required: false; isSignal: true; };
+     },
+-    { value: "valueChange" },
++    { value: "valueChange"; },
+     never,
+     never,
+@@ -82,6 +84,5 @@ export class Tree<V> implements OnDestroy {
+ 
+ // @public
+-export class TreeItem<V>
+-  extends DeferredContentAware
++export class TreeItem<V> extends DeferredContentAware
+   implements OnInit, HasElement
+ {
+@@ -115,13 +116,13 @@ export class TreeItem<V>
+... 35 more lines
+
+--- reference/goldens/aria/tree/testing/index.api.md
++++ formatter/goldens/aria/tree/testing/index.api.md
+@@ -27,5 +27,6 @@ export class TreeHarness extends ComponentHarness {
+ 
+ // @public
+-export interface TreeHarnessFilters extends BaseHarnessFilters {}
++export interface TreeHarnessFilters extends BaseHarnessFilters {
++}
+ 
+ // @public
+
+
+--- reference/goldens/cdk/a11y/index.api.md
++++ formatter/goldens/cdk/a11y/index.api.md
+@@ -4,4 +4,5 @@
+ 
+ ```ts
++import * as i0 from "@angular/core";
+ import { AfterContentInit } from "@angular/core";
+ import { AfterViewInit } from "@angular/core";
+@@ -9,16 +10,15 @@ import { DoCheck } from "@angular/core";
+ import { ElementRef } from "@angular/core";
+ import { EventEmitter } from "@angular/core";
+-import * as i0 from "@angular/core";
+ import { InjectionToken } from "@angular/core";
+ import { Injector } from "@angular/core";
+ import { NgZone } from "@angular/core";
+-import { Observable } from "rxjs";
+ import { OnChanges } from "@angular/core";
+ import { OnDestroy } from "@angular/core";
+ import { Provider } from "@angular/core";
+ import { QueryList } from "@angular/core";
+-import { SafeHtml } from "@angular/platform-browser";
+ import { Signal } from "@angular/core";
+ import { SimpleChanges } from "@angular/core";
++import { SafeHtml } from "@angular/platform-browser";
++import { Observable } from "rxjs";
+ import { Subject } from "rxjs";
+ 
+@@ -45,7 +45,7 @@ export class A11yModule {
+ 
+ // @public (undocumented)
+-export class ActiveDescendantKeyManager<T> extends ListKeyManager<
+-  Highlightable & T
+-> {
++export class ActiveDescendantKeyManager<T>
++  extends ListKeyManager<Highlightable & T>
++{
+   setActiveItem(index: number): void;
+   setActiveItem(item: T): void;
+@@ -91,6 +91,6 @@ export class CdkAriaLive implements OnDestroy {
+     ["cdkAriaLive"],
+     {
+-      politeness: { alias: "cdkAriaLive"; required: false };
+-      duration: { alias: "cdkAriaLiveDuration"; required: false };
++      politeness: { alias: "cdkAriaLive"; required: false; };
++      duration: { alias: "cdkAriaLiveDuration"; required: false; };
+     },
+     {},
+@@ -120,5 +120,5 @@ export class CdkMonitorFocus implements AfterViewInit, OnDestroy {
+     ["cdkMonitorFocus"],
+     {},
+-    { cdkFocusChange: "cdkFocusChange" },
++    { cdkFocusChange: "cdkFocusChange"; },
+     never,
+     never,
+@@ -157,6 +157,6 @@ export class CdkTrapFocus
+     ["cdkTrapFocus"],
+     {
+-      enabled: { alias: "cdkTrapFocus"; required: false };
+-      autoCapture: { alias: "cdkTrapFocusAutoCapture"; required: false };
++      enabled: { alias: "cdkTrapFocus"; required: false; };
+... 144 more lines
+
+--- reference/goldens/cdk/accordion/index.api.md
++++ formatter/goldens/cdk/accordion/index.api.md
+@@ -4,6 +4,6 @@
+ 
+ ```ts
+-import { EventEmitter } from "@angular/core";
+ import * as i0 from "@angular/core";
++import { EventEmitter } from "@angular/core";
+ import { InjectionToken } from "@angular/core";
+ import { OnChanges } from "@angular/core";
+@@ -35,5 +35,5 @@ export class CdkAccordion implements OnDestroy, OnChanges {
+     "cdk-accordion, [cdkAccordion]",
+     ["cdkAccordion"],
+-    { multi: { alias: "multi"; required: false } },
++    { multi: { alias: "multi"; required: false; }; },
+     {},
+     never,
+@@ -77,6 +77,6 @@ export class CdkAccordionItem implements OnInit, OnDestroy {
+     ["cdkAccordionItem"],
+     {
+-      expanded: { alias: "expanded"; required: false };
+-      disabled: { alias: "disabled"; required: false };
++      expanded: { alias: "expanded"; required: false; };
++      disabled: { alias: "disabled"; required: false; };
+     },
+     {
+
+
+--- reference/goldens/cdk/bidi/index.api.md
++++ formatter/goldens/cdk/bidi/index.api.md
+@@ -4,7 +4,7 @@
+ 
+ ```ts
++import * as i0 from "@angular/core";
+ import { AfterContentInit } from "@angular/core";
+ import { EventEmitter } from "@angular/core";
+-import * as i0 from "@angular/core";
+ import { InjectionToken } from "@angular/core";
+ import { OnDestroy } from "@angular/core";
+@@ -42,6 +42,6 @@ export class Dir implements Directionality, AfterContentInit, OnDestroy {
+     "[dir]",
+     ["dir"],
+-    { dir: { alias: "dir"; required: false } },
+-    { change: "dirChange" },
++    { dir: { alias: "dir"; required: false; }; },
++    { change: "dirChange"; },
+     never,
+     never,
+
+
+--- reference/goldens/cdk/clipboard/index.api.md
++++ formatter/goldens/cdk/clipboard/index.api.md
+@@ -4,11 +4,13 @@
+ 
+ ```ts
+-import { EventEmitter } from "@angular/core";
+ import * as i0 from "@angular/core";
++import { EventEmitter } from "@angular/core";
+ import { InjectionToken } from "@angular/core";
+ import { OnDestroy } from "@angular/core";
+ 
+ // @public
+-export const CDK_COPY_TO_CLIPBOARD_CONFIG: InjectionToken<CdkCopyToClipboardConfig>;
++export const CDK_COPY_TO_CLIPBOARD_CONFIG: InjectionToken<
++  CdkCopyToClipboardConfig
++>;
+ 
+ // @public
+@@ -27,8 +29,8 @@ export class CdkCopyToClipboard implements OnDestroy {
+     never,
+     {
+-      text: { alias: "cdkCopyToClipboard"; required: false };
+-      attempts: { alias: "cdkCopyToClipboardAttempts"; required: false };
++      text: { alias: "cdkCopyToClipboard"; required: false; };
++      attempts: { alias: "cdkCopyToClipboardAttempts"; required: false; };
+     },
+-    { copied: "cdkCopyToClipboardCopied" },
++    { copied: "cdkCopyToClipboardCopied"; },
+     never,
+     never,
+
+
+--- reference/goldens/cdk/collections/index.api.md
++++ formatter/goldens/cdk/collections/index.api.md
+@@ -7,9 +7,9 @@ import * as i0 from "@angular/core";
+ import { IterableChangeRecord } from "@angular/core";
+ import { IterableChanges } from "@angular/core";
+-import { Observable } from "rxjs";
+ import { OnDestroy } from "@angular/core";
+-import { Subject } from "rxjs";
+ import { TemplateRef } from "@angular/core";
+ import { ViewContainerRef } from "@angular/core";
++import { Observable } from "rxjs";
++import { Subject } from "rxjs";
+ 
+ // @public
+
+
+--- reference/goldens/cdk/dialog/index.api.md
++++ formatter/goldens/cdk/dialog/index.api.md
+@@ -4,7 +4,9 @@
+ 
+ ```ts
++import * as _angular_cdk_portal from "@angular/cdk/portal";
++import { Location as Location_2 } from "@angular/common";
++import * as i0 from "@angular/core";
+ import { AfterContentInit } from "@angular/core";
+ import { AfterViewInit } from "@angular/core";
+-import * as _angular_cdk_portal from "@angular/cdk/portal";
+ import { Binding } from "@angular/core";
+ import { ChangeDetectorRef } from "@angular/core";
+@@ -16,11 +18,8 @@ import { EmbeddedViewRef } from "@angular/core";
+ import { EnvironmentInjector } from "@angular/core";
+ import { EventEmitter } from "@angular/core";
+-import * as i0 from "@angular/core";
+ import { InjectionToken } from "@angular/core";
+ import { Injector } from "@angular/core";
+-import { Location as Location_2 } from "@angular/common";
+ import { NgIterable } from "@angular/core";
+ import { NgZone } from "@angular/core";
+-import { Observable } from "rxjs";
+ import { OnChanges } from "@angular/core";
+ import { OnDestroy } from "@angular/core";
+@@ -29,10 +28,11 @@ import { Renderer2 } from "@angular/core";
+ import { SimpleChanges } from "@angular/core";
+ import { StaticProvider } from "@angular/core";
+-import { Subject } from "rxjs";
+-import { Subscription } from "rxjs";
+ import { TemplateRef } from "@angular/core";
+ import { TrackByFunction } from "@angular/core";
+ import { Type } from "@angular/core";
+ import { ViewContainerRef } from "@angular/core";
++import { Observable } from "rxjs";
++import { Subject } from "rxjs";
++import { Subscription } from "rxjs";
+ 
+ // @public
+@@ -162,10 +162,8 @@ export class DialogConfig<
+     componentInstance: Component | null,
+   ) => boolean;
+-  container?:
+-    | Type<C>
+-    | {
+-        type: Type<C>;
+-        providers: (config: DialogConfig<D, R, C>) => StaticProvider[];
+-      };
++  container?: Type<C> | {
++    type: Type<C>;
++    providers: (config: DialogConfig<D, R, C>) => StaticProvider[];
++  };
+   data?: D | null;
+   direction?: Direction;
+@@ -185,8 +183,8 @@ export class DialogConfig<
+     | StaticProvider[]
+     | ((
+-        dialogRef: R,
+-        config: DialogConfig<D, R, C>,
+-        container: C,
+... 8 more lines

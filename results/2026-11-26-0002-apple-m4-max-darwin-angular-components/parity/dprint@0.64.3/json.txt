@@ -1,0 +1,840 @@
+# 22 of 124 files differ from prettier@3.10.1
+docs/package.json
+docs/src/assets/stackblitz/package.json
+integration/ng-add/package.json
+integration/ng-add-standalone/package.json
+integration/package.json
+integration/vitest/package.json
+integration/yarn-pnp-compat/package.json
+package.json
+src/aria/package.json
+src/cdk/package.json
+src/cdk-experimental/package.json
+src/components-examples/package.json
+src/dev-app/package.json
+src/e2e-app/package.json
+src/google-maps/package.json
+src/material/package.json
+src/material-date-fns-adapter/package.json
+src/material-experimental/package.json
+src/material-luxon-adapter/package.json
+src/material-moment-adapter/package.json
+src/universal-app/package.json
+src/youtube-player/package.json
+
+# The first 22, reference first
+
+--- reference/docs/package.json
++++ formatter/docs/package.json
+@@ -2,6 +2,6 @@
+   "name": "material-angular-io",
+   "version": "0.0.0",
+-  "license": "MIT",
+   "private": true,
++  "license": "MIT",
+   "scripts": {
+     "ng": "ng",
+@@ -25,8 +25,4 @@
+     "test:e2e:scenes": "bazel test //docs/scenes/e2e:e2e_tests"
+   },
+-  "engines": {
+-    "node": "^20.11.1 || >=22.0.0",
+-    "npm": "Please use pnpm instead of NPM to install dependencies"
+-  },
+   "dependencies": {
+     "@angular/aria": "workspace:*",
+@@ -82,4 +78,8 @@
+     "ts-node": "10.9.2",
+     "typescript": "6.0.2"
++  },
++  "engines": {
++    "node": "^20.11.1 || >=22.0.0",
++    "npm": "Please use pnpm instead of NPM to install dependencies"
+   }
+ }
+
+
+--- reference/docs/src/assets/stackblitz/package.json
++++ formatter/docs/src/assets/stackblitz/package.json
+@@ -2,4 +2,5 @@
+   "name": "example-app",
+   "version": "0.0.0",
++  "private": true,
+   "scripts": {
+     "ng": "ng",
+@@ -9,5 +10,7 @@
+     "test": "ng test"
+   },
+-  "private": true,
++  "overrides": {
++    "@napi-rs/wasm-runtime": "1.2.2"
++  },
+   "dependencies": {
+     "@angular/cdk": "^22.3.0",
+@@ -36,13 +39,10 @@
+     "@types/node": "^26.6.2",
+     "jasmine-core": "~5.8.0",
++    "karma": "~6.4.0",
+     "karma-chrome-launcher": "~3.2.0",
+     "karma-coverage": "~2.2.0",
+-    "karma-jasmine-html-reporter": "~2.1.0",
+     "karma-jasmine": "~5.0.0",
+-    "karma": "~6.4.0",
++    "karma-jasmine-html-reporter": "~2.1.0",
+     "typescript": "~6.0.3"
+-  },
+-  "overrides": {
+-    "@napi-rs/wasm-runtime": "1.2.2"
+   }
+ }
+
+
+--- reference/integration/ng-add/package.json
++++ formatter/integration/ng-add/package.json
+@@ -2,4 +2,5 @@
+   "name": "ng-add",
+   "version": "0.0.0",
++  "private": true,
+   "scripts": {
+     "ng": "ng",
+@@ -9,6 +10,4 @@
+     "test": "ng test"
+   },
+-  "packageManager": "pnpm@11.1.2",
+-  "private": true,
+   "dependencies": {
+     "@angular/cdk": "next",
+@@ -38,4 +37,5 @@
+     "karma-jasmine-html-reporter": "~2.1.0",
+     "typescript": "5.8.3"
+-  }
++  },
++  "packageManager": "pnpm@11.1.2"
+ }
+
+
+--- reference/integration/ng-add-standalone/package.json
++++ formatter/integration/ng-add-standalone/package.json
+@@ -2,4 +2,5 @@
+   "name": "ng-add-standalone",
+   "version": "0.0.0",
++  "private": true,
+   "scripts": {
+     "ng": "ng",
+@@ -9,6 +10,4 @@
+     "test": "ng test"
+   },
+-  "packageManager": "pnpm@11.1.2",
+-  "private": true,
+   "dependencies": {
+     "@angular/cdk": "next",
+@@ -38,4 +37,5 @@
+     "karma-jasmine-html-reporter": "~2.1.0",
+     "typescript": "5.8.3"
+-  }
++  },
++  "packageManager": "pnpm@11.1.2"
+ }
+
+
+--- reference/integration/package.json
++++ formatter/integration/package.json
+@@ -4,7 +4,7 @@
+     "@angular/cdk": "workspace:*",
+     "@angular/cdk-experimental": "workspace:*",
++    "@angular/google-maps": "workspace:*",
+     "@angular/material": "workspace:*",
+     "@angular/material-experimental": "workspace:*",
+-    "@angular/google-maps": "workspace:*",
+     "@angular/youtube-player": "workspace:*"
+   }
+
+
+--- reference/integration/vitest/package.json
++++ formatter/integration/vitest/package.json
+@@ -2,4 +2,5 @@
+   "name": "vitest",
+   "version": "0.0.0",
++  "private": true,
+   "scripts": {
+     "ng": "ng",
+@@ -9,6 +10,4 @@
+     "test": "ng test"
+   },
+-  "packageManager": "pnpm@11.1.2",
+-  "private": true,
+   "dependencies": {
+     "@angular/cdk": "next",
+@@ -32,4 +31,5 @@
+     "typescript": "~6.0.2",
+     "vitest": "^4.0.8"
+-  }
++  },
++  "packageManager": "pnpm@11.1.2"
+ }
+
+
+--- reference/integration/yarn-pnp-compat/package.json
++++ formatter/integration/yarn-pnp-compat/package.json
+@@ -2,5 +2,5 @@
+   "name": "yarn-pnp-compat",
+   "version": "0.0.0",
+-  "packageManager": "yarn@4.7.0",
++  "private": true,
+   "scripts": {
+     "ng": "ng",
+@@ -10,5 +10,4 @@
+     "test": "ng test"
+   },
+-  "private": true,
+   "dependencies": {
+     "@angular/cdk": "next",
+@@ -38,4 +37,5 @@
+     "karma-jasmine-html-reporter": "~2.1.0",
+     "typescript": "6.0.2"
+-  }
++  },
++  "packageManager": "yarn@4.7.0"
+ }
+
+
+--- reference/package.json
++++ formatter/package.json
+@@ -1,4 +1,5 @@
+ {
+   "name": "components-srcs",
++  "version": "22.4.0-next.0",
+   "description": "Material Design components for Angular",
+   "homepage": "https://github.com/angular/components",
+@@ -9,10 +10,4 @@
+   },
+   "license": "MIT",
+-  "packageManager": "pnpm@12.18.0",
+-  "engines": {
+-    "npm": "Please use pnpm instead of NPM to install dependencies",
+-    "yarn": "Please use pnpm instead of Yarn to install dependencies",
+-    "pnpm": "11.28.11"
+-  },
+   "scripts": {
+     "ng-dev": "node --no-warnings=ExperimentalWarning --loader ts-node/esm/transpile-only node_modules/@angular/ng-dev/bundles/cli.mjs",
+@@ -51,5 +46,4 @@
+     "prepare": "husky"
+   },
+-  "version": "22.4.0-next.0",
+   "dependencies": {
+     "@angular-devkit/core": "catalog:",
+@@ -144,4 +138,10 @@
+     "yargs": "^18.0.0",
+     "zx": "^8.0.0"
++  },
++  "packageManager": "pnpm@12.18.0",
++  "engines": {
++    "npm": "Please use pnpm instead of NPM to install dependencies",
++    "pnpm": "11.28.11",
++    "yarn": "Please use pnpm instead of Yarn to install dependencies"
+   }
+ }
+
+
+--- reference/src/aria/package.json
++++ formatter/src/aria/package.json
+@@ -3,4 +3,8 @@
+   "version": "0.0.0-PLACEHOLDER",
+   "description": "Angular Aria",
++  "homepage": "https://github.com/angular/components#readme",
++  "bugs": {
++    "url": "https://github.com/angular/components/issues"
++  },
+   "repository": {
+     "type": "git",
+@@ -8,17 +12,14 @@
+   },
+   "license": "MIT",
+-  "bugs": {
+-    "url": "https://github.com/angular/components/issues"
+-  },
+-  "homepage": "https://github.com/angular/components#readme",
+-  "peerDependencies": {
+-    "@angular/cdk": "0.0.0-PLACEHOLDER",
+-    "@angular/core": "0.0.0-NG"
++  "sideEffects": false,
++  "dependencies": {
++    "tslib": "^2.3.0"
+   },
+   "devDependencies": {
+     "@angular/cdk": "workspace:*"
+   },
+-  "dependencies": {
+-    "tslib": "^2.3.0"
++  "peerDependencies": {
++    "@angular/cdk": "0.0.0-PLACEHOLDER",
++    "@angular/core": "0.0.0-NG"
+   },
+   "angular": {
+@@ -30,5 +31,4 @@
+   "ng-update": {
+     "packageGroup": "NG_UPDATE_PACKAGE_GROUP"
+-  },
+-  "sideEffects": false
++  }
+ }
+
+
+--- reference/src/cdk/package.json
++++ formatter/src/cdk/package.json
+@@ -3,8 +3,4 @@
+   "version": "0.0.0-PLACEHOLDER",
+   "description": "Angular Material Component Development Kit",
+-  "repository": {
+-    "type": "git",
+-    "url": "https://github.com/angular/components.git"
+-  },
+   "keywords": [
+     "angular",
+@@ -14,9 +10,14 @@
+     "kit"
+   ],
+-  "license": "MIT",
++  "homepage": "https://github.com/angular/components#readme",
+   "bugs": {
+     "url": "https://github.com/angular/components/issues"
+   },
+-  "homepage": "https://github.com/angular/components#readme",
++  "repository": {
++    "type": "git",
++    "url": "https://github.com/angular/components.git"
++  },
++  "license": "MIT",
++  "sideEffects": false,
+   "exports": {
+     ".": {
+@@ -45,20 +46,19 @@
+     }
+   },
++  "dependencies": {
++    "parse5": "^8.0.0",
++    "tslib": "^2.3.0"
++  },
+   "peerDependencies": {
+-    "@angular/core": "0.0.0-NG",
+     "@angular/common": "0.0.0-NG",
++    "@angular/core": "0.0.0-NG",
+     "@angular/forms": "0.0.0-NG",
+     "@angular/platform-browser": "0.0.0-NG",
+     "rxjs": "^6.5.3 || ^7.4.0"
+   },
+-  "dependencies": {
+-    "parse5": "^8.0.0",
+-    "tslib": "^2.3.0"
+-  },
+-  "schematics": "./schematics/collection.json",
+   "ng-update": {
+     "migrations": "./schematics/migration.json",
+     "packageGroup": "NG_UPDATE_PACKAGE_GROUP"
+   },
+-  "sideEffects": false
++  "schematics": "./schematics/collection.json"
+ }
+
+
+--- reference/src/cdk-experimental/package.json
++++ formatter/src/cdk-experimental/package.json
+@@ -3,4 +3,8 @@
+   "version": "0.0.0-PLACEHOLDER",
+   "description": "Experimental components for Angular CDK",
++  "homepage": "https://github.com/angular/components#readme",
++  "bugs": {
++    "url": "https://github.com/angular/components/issues"
++  },
+   "repository": {
+     "type": "git",
+@@ -8,21 +12,17 @@
+   },
+   "license": "MIT",
+-  "bugs": {
+-    "url": "https://github.com/angular/components/issues"
+-  },
+-  "homepage": "https://github.com/angular/components#readme",
+-  "peerDependencies": {
+-    "@angular/cdk": "0.0.0-PLACEHOLDER",
+-    "@angular/core": "0.0.0-NG"
++  "sideEffects": false,
++  "dependencies": {
++    "tslib": "^2.3.0"
+   },
+   "devDependencies": {
+     "@angular/cdk": "workspace:*"
+   },
+-  "dependencies": {
+-    "tslib": "^2.3.0"
++  "peerDependencies": {
++    "@angular/cdk": "0.0.0-PLACEHOLDER",
++    "@angular/core": "0.0.0-NG"
+   },
+   "ng-update": {
+     "packageGroup": "NG_UPDATE_PACKAGE_GROUP"
+-  },
+-  "sideEffects": false
++  }
+ }
+
+
+--- reference/src/components-examples/package.json
++++ formatter/src/components-examples/package.json
+@@ -2,10 +2,6 @@
+   "name": "@angular/components-examples",
+   "version": "0.0.0-PLACEHOLDER",
+-  "description": "Angular Components Examples",
+   "private": true,
+-  "repository": {
+-    "type": "git",
+-    "url": "https://github.com/angular/components.git"
+-  },
++  "description": "Angular Components Examples",
+   "keywords": [
+     "angular",
+@@ -14,4 +10,13 @@
+     "components"
+   ],
++  "homepage": "https://github.com/angular/components#readme",
++  "bugs": {
++    "url": "https://github.com/angular/components/issues"
++  },
++  "repository": {
++    "type": "git",
++    "url": "https://github.com/angular/components.git"
++  },
++  "license": "MIT",
+   "exports": {
+     "./fesm2022": {
+@@ -19,19 +24,6 @@
+     }
+   },
+-  "license": "MIT",
+-  "bugs": {
+-    "url": "https://github.com/angular/components/issues"
+-  },
+-  "homepage": "https://github.com/angular/components#readme",
+-  "peerDependencies": {
+-    "@angular/aria": "0.0.0-PLACEHOLDER",
+-    "@angular/cdk": "0.0.0-PLACEHOLDER",
+-    "@angular/cdk-experimental": "0.0.0-PLACEHOLDER",
+-    "@angular/core": "0.0.0-NG",
+-    "@angular/common": "0.0.0-NG",
+-    "@angular/material": "0.0.0-PLACEHOLDER",
+-    "@angular/material-experimental": "0.0.0-PLACEHOLDER",
+-    "@angular/material-luxon-adapter": "0.0.0-PLACEHOLDER",
+-    "@angular/material-date-fns-adapter": "0.0.0-PLACEHOLDER"
++  "dependencies": {
++    "tslib": "^2.3.0"
+   },
+   "devDependencies": {
+@@ -40,10 +32,18 @@
+     "@angular/cdk-experimental": "workspace:*",
+     "@angular/material": "workspace:*",
++    "@angular/material-date-fns-adapter": "workspace:*",
+     "@angular/material-experimental": "workspace:*",
+-    "@angular/material-luxon-adapter": "workspace:*",
+-    "@angular/material-date-fns-adapter": "workspace:*"
++    "@angular/material-luxon-adapter": "workspace:*"
+   },
+-  "dependencies": {
+... 14 more lines
+
+--- reference/src/dev-app/package.json
++++ formatter/src/dev-app/package.json
+@@ -4,9 +4,9 @@
+     "@angular/cdk": "workspace:*",
+     "@angular/cdk-experimental": "workspace:*",
++    "@angular/components-examples": "workspace:*",
++    "@angular/google-maps": "workspace:*",
+     "@angular/material": "workspace:*",
+     "@angular/material-experimental": "workspace:*",
+-    "@angular/components-examples": "workspace:*",
+-    "@angular/youtube-player": "workspace:*",
+-    "@angular/google-maps": "workspace:*"
++    "@angular/youtube-player": "workspace:*"
+   }
+ }
+
+
+--- reference/src/e2e-app/package.json
++++ formatter/src/e2e-app/package.json
+@@ -3,6 +3,6 @@
+     "@angular/cdk": "workspace:*",
+     "@angular/cdk-experimental": "workspace:*",
+-    "@angular/material": "workspace:*",
+-    "@angular/components-examples": "workspace:*"
++    "@angular/components-examples": "workspace:*",
++    "@angular/material": "workspace:*"
+   }
+ }
+
+
+--- reference/src/google-maps/package.json
++++ formatter/src/google-maps/package.json
+@@ -3,8 +3,4 @@
+   "version": "0.0.0-PLACEHOLDER",
+   "description": "Angular Google Maps",
+-  "repository": {
+-    "type": "git",
+-    "url": "https://github.com/angular/components.git"
+-  },
+   "keywords": [
+     "angular",
+@@ -12,9 +8,14 @@
+     "google-maps"
+   ],
+-  "license": "MIT",
++  "homepage": "https://github.com/angular/components/tree/main/src/google-maps#readme",
+   "bugs": {
+     "url": "https://github.com/angular/components/issues"
+   },
+-  "homepage": "https://github.com/angular/components/tree/main/src/google-maps#readme",
++  "repository": {
++    "type": "git",
++    "url": "https://github.com/angular/components.git"
++  },
++  "license": "MIT",
++  "sideEffects": false,
+   "dependencies": {
+     "@types/google.maps": "^3.65.1",
+@@ -22,10 +23,8 @@
+   },
+   "peerDependencies": {
+-    "@angular/core": "0.0.0-NG",
+     "@angular/common": "0.0.0-NG",
++    "@angular/core": "0.0.0-NG",
+     "rxjs": "^6.5.3 || ^7.4.0"
+   },
+-  "sideEffects": false,
+-  "schematics": "./schematics/collection.json",
+   "ng-update": {
+     "migrations": "./schematics/migration.json",
+@@ -33,4 +32,5 @@
+       "@angular/google-maps"
+     ]
+-  }
++  },
++  "schematics": "./schematics/collection.json"
+ }
+
+
+--- reference/src/material/package.json
++++ formatter/src/material/package.json
+@@ -3,8 +3,4 @@
+   "version": "0.0.0-PLACEHOLDER",
+   "description": "Angular Material",
+-  "repository": {
+-    "type": "git",
+-    "url": "https://github.com/angular/components.git"
+-  },
+   "keywords": [
+     "angular",
+@@ -13,9 +9,14 @@
+     "components"
+   ],
+-  "license": "MIT",
++  "homepage": "https://github.com/angular/components#readme",
+   "bugs": {
+     "url": "https://github.com/angular/components/issues"
+   },
+-  "homepage": "https://github.com/angular/components#readme",
++  "repository": {
++    "type": "git",
++    "url": "https://github.com/angular/components.git"
++  },
++  "license": "MIT",
++  "sideEffects": false,
+   "exports": {
+     ".": {
+@@ -56,23 +57,22 @@
+     }
+   },
++  "dependencies": {
++    "tslib": "^2.3.0"
++  },
++  "devDependencies": {
++    "@angular/cdk": "workspace:*"
++  },
+   "peerDependencies": {
+     "@angular/cdk": "0.0.0-PLACEHOLDER",
+-    "@angular/core": "0.0.0-NG",
+     "@angular/common": "0.0.0-NG",
++    "@angular/core": "0.0.0-NG",
+     "@angular/forms": "0.0.0-NG",
+     "@angular/platform-browser": "0.0.0-NG",
+     "rxjs": "^6.5.3 || ^7.4.0"
+   },
+-  "dependencies": {
+-    "tslib": "^2.3.0"
+-  },
+-  "devDependencies": {
+-    "@angular/cdk": "workspace:*"
+-  },
+-  "schematics": "./schematics/collection.json",
+   "ng-update": {
+     "migrations": "./schematics/migration.json",
+     "packageGroup": "NG_UPDATE_PACKAGE_GROUP"
+   },
+-  "sideEffects": false
++  "schematics": "./schematics/collection.json"
+ }
+... 1 more lines
+
+--- reference/src/material-date-fns-adapter/package.json
++++ formatter/src/material-date-fns-adapter/package.json
+@@ -3,4 +3,8 @@
+   "version": "0.0.0-PLACEHOLDER",
+   "description": "Angular Material date-fns Adapter",
++  "homepage": "https://github.com/angular/components#readme",
++  "bugs": {
++    "url": "https://github.com/angular/components/issues"
++  },
+   "repository": {
+     "type": "git",
+@@ -8,23 +12,19 @@
+   },
+   "license": "MIT",
+-  "bugs": {
+-    "url": "https://github.com/angular/components/issues"
+-  },
+-  "homepage": "https://github.com/angular/components#readme",
+-  "peerDependencies": {
+-    "@angular/material": "0.0.0-PLACEHOLDER",
+-    "@angular/core": "0.0.0-NG",
+-    "date-fns": ">2.20.0 <5.0"
++  "sideEffects": false,
++  "dependencies": {
++    "tslib": "^2.3.0"
+   },
+   "devDependencies": {
+     "@angular/material": "workspace:*"
+   },
+-  "dependencies": {
+-    "tslib": "^2.3.0"
++  "peerDependencies": {
++    "@angular/core": "0.0.0-NG",
++    "@angular/material": "0.0.0-PLACEHOLDER",
++    "date-fns": ">2.20.0 <5.0"
+   },
+   "ng-update": {
+     "packageGroup": "NG_UPDATE_PACKAGE_GROUP"
+   },
+-  "schematics": "./schematics/collection.json",
+-  "sideEffects": false
++  "schematics": "./schematics/collection.json"
+ }
+
+
+--- reference/src/material-experimental/package.json
++++ formatter/src/material-experimental/package.json
+@@ -3,4 +3,8 @@
+   "version": "0.0.0-PLACEHOLDER",
+   "description": "Experimental components for Angular Material",
++  "homepage": "https://github.com/angular/components#readme",
++  "bugs": {
++    "url": "https://github.com/angular/components/issues"
++  },
+   "repository": {
+     "type": "git",
+@@ -8,8 +12,5 @@
+   },
+   "license": "MIT",
+-  "bugs": {
+-    "url": "https://github.com/angular/components/issues"
+-  },
+-  "homepage": "https://github.com/angular/components#readme",
++  "sideEffects": false,
+   "exports": {
+     ".": {
+@@ -17,24 +18,23 @@
+     }
+   },
++  "dependencies": {
++    "tslib": "^2.3.0"
++  },
++  "devDependencies": {
++    "@angular/cdk": "workspace:*",
++    "@angular/cdk-experimental": "workspace:*",
++    "@angular/material": "workspace:*"
++  },
+   "peerDependencies": {
+     "@angular/cdk": "0.0.0-PLACEHOLDER",
+-    "@angular/core": "0.0.0-NG",
++    "@angular/cdk-experimental": "0.0.0-PLACEHOLDER",
+     "@angular/common": "0.0.0-NG",
++    "@angular/core": "0.0.0-NG",
+     "@angular/forms": "0.0.0-NG",
+-    "@angular/platform-browser": "0.0.0-NG",
+     "@angular/material": "0.0.0-PLACEHOLDER",
+-    "@angular/cdk-experimental": "0.0.0-PLACEHOLDER"
+-  },
+-  "devDependencies": {
+-    "@angular/material": "workspace:*",
+-    "@angular/cdk": "workspace:*",
+-    "@angular/cdk-experimental": "workspace:*"
+-  },
+-  "dependencies": {
+-    "tslib": "^2.3.0"
++    "@angular/platform-browser": "0.0.0-NG"
+   },
+   "ng-update": {
+     "packageGroup": "NG_UPDATE_PACKAGE_GROUP"
+-  },
+-  "sideEffects": false
++  }
+ }
+
+
+--- reference/src/material-luxon-adapter/package.json
++++ formatter/src/material-luxon-adapter/package.json
+@@ -3,4 +3,8 @@
+   "version": "0.0.0-PLACEHOLDER",
+   "description": "Angular Material Luxon Adapter",
++  "homepage": "https://github.com/angular/components#readme",
++  "bugs": {
++    "url": "https://github.com/angular/components/issues"
++  },
+   "repository": {
+     "type": "git",
+@@ -8,23 +12,19 @@
+   },
+   "license": "MIT",
+-  "bugs": {
+-    "url": "https://github.com/angular/components/issues"
+-  },
+-  "homepage": "https://github.com/angular/components#readme",
+-  "peerDependencies": {
+-    "@angular/material": "0.0.0-PLACEHOLDER",
+-    "@angular/core": "0.0.0-NG",
+-    "luxon": "^3.7.2"
++  "sideEffects": false,
++  "dependencies": {
++    "tslib": "^2.3.0"
+   },
+   "devDependencies": {
+     "@angular/material": "workspace:*"
+   },
+-  "dependencies": {
+-    "tslib": "^2.3.0"
++  "peerDependencies": {
++    "@angular/core": "0.0.0-NG",
++    "@angular/material": "0.0.0-PLACEHOLDER",
++    "luxon": "^3.7.2"
+   },
+   "ng-update": {
+     "packageGroup": "NG_UPDATE_PACKAGE_GROUP"
+   },
+-  "schematics": "./schematics/collection.json",
+-  "sideEffects": false
++  "schematics": "./schematics/collection.json"
+ }
+
+
+--- reference/src/material-moment-adapter/package.json
++++ formatter/src/material-moment-adapter/package.json
+@@ -3,4 +3,8 @@
+   "version": "0.0.0-PLACEHOLDER",
+   "description": "Angular Material Moment Adapter",
++  "homepage": "https://github.com/angular/components#readme",
++  "bugs": {
++    "url": "https://github.com/angular/components/issues"
++  },
+   "repository": {
+     "type": "git",
+@@ -8,23 +12,19 @@
+   },
+   "license": "MIT",
+-  "bugs": {
+-    "url": "https://github.com/angular/components/issues"
+-  },
+-  "homepage": "https://github.com/angular/components#readme",
+-  "peerDependencies": {
+-    "@angular/material": "0.0.0-PLACEHOLDER",
+-    "@angular/core": "0.0.0-NG",
+-    "moment": "^2.18.1"
++  "sideEffects": false,
++  "dependencies": {
++    "tslib": "^2.3.0"
+   },
+   "devDependencies": {
+     "@angular/material": "workspace:*"
+   },
+-  "dependencies": {
+-    "tslib": "^2.3.0"
++  "peerDependencies": {
++    "@angular/core": "0.0.0-NG",
++    "@angular/material": "0.0.0-PLACEHOLDER",
++    "moment": "^2.18.1"
+   },
+   "ng-update": {
+     "packageGroup": "NG_UPDATE_PACKAGE_GROUP"
+   },
+-  "schematics": "./schematics/collection.json",
+-  "sideEffects": false
++  "schematics": "./schematics/collection.json"
+ }
+
+
+--- reference/src/universal-app/package.json
++++ formatter/src/universal-app/package.json
+@@ -3,8 +3,8 @@
+     "@angular/cdk": "workspace:*",
+     "@angular/cdk-experimental": "workspace:*",
+-    "@angular/material": "workspace:*",
+-    "@angular/material-experimental": "workspace:*",
+     "@angular/components-examples": "workspace:*",
+     "@angular/google-maps": "workspace:*",
++    "@angular/material": "workspace:*",
++    "@angular/material-experimental": "workspace:*",
+     "@angular/youtube-player": "workspace:*"
+   }
+
+
+--- reference/src/youtube-player/package.json
++++ formatter/src/youtube-player/package.json
+@@ -3,8 +3,4 @@
+   "version": "0.0.0-PLACEHOLDER",
+   "description": "Angular YouTube Player",
+-  "repository": {
+-    "type": "git",
+-    "url": "https://github.com/angular/components.git"
+-  },
+   "keywords": [
+     "angular",
+@@ -12,21 +8,25 @@
+     "youtube"
+   ],
+-  "license": "MIT",
++  "homepage": "https://github.com/angular/components/tree/main/src/youtube-player#readme",
+   "bugs": {
+     "url": "https://github.com/angular/components/issues"
+   },
+-  "homepage": "https://github.com/angular/components/tree/main/src/youtube-player#readme",
++  "repository": {
++    "type": "git",
++    "url": "https://github.com/angular/components.git"
++  },
++  "license": "MIT",
++  "sideEffects": false,
+   "dependencies": {
+     "@types/youtube": "0.3.0",
+-    "tslib": "^2.3.0",
+-    "safevalues": "^1.2.0"
++    "safevalues": "^1.2.0",
++    "tslib": "^2.3.0"
+   },
+   "peerDependencies": {
+-    "@angular/core": "0.0.0-NG",
+     "@angular/common": "0.0.0-NG",
++    "@angular/core": "0.0.0-NG",
+     "rxjs": "^6.5.3 || ^7.4.0"
+   },
+-  "sideEffects": false,
+-  "schematics": "./schematics/collection.json",
+-  "ng-update": {}
++  "ng-update": {},
++  "schematics": "./schematics/collection.json"
+ }
+

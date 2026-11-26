@@ -1,0 +1,1135 @@
+# 32 of 80 files differ from prettier@3.10.1
+README.md
+docs/acknowledgements.md
+docs/blog/announcing-vite2.md
+docs/blog/announcing-vite3.md
+docs/blog/announcing-vite4-3.md
+docs/blog/announcing-vite4.md
+docs/blog/announcing-vite5-1.md
+docs/blog/announcing-vite5.md
+docs/blog/announcing-vite6.md
+docs/blog/announcing-vite7.md
+docs/blog/announcing-vite8-1.md
+docs/blog/announcing-vite8-beta.md
+docs/blog/announcing-vite8.md
+docs/blog/cloudflare-supports-vite.md
+docs/blog.md
+docs/config/build-options.md
+docs/config/index.md
+docs/config/shared-options.md
+docs/guide/api-environment-plugins.md
+docs/guide/api-environment-runtimes.md
+docs/guide/api-plugin.md
+docs/guide/assets.md
+docs/guide/backend-integration.md
+docs/guide/build.md
+docs/guide/dep-pre-bundling.md
+docs/guide/features.md
+docs/guide/static-deploy.md
+docs/index.md
+docs/live.md
+docs/team.md
+packages/plugin-legacy/README.md
+packages/vite/LICENSE.md
+
+# The first 25, reference first
+
+--- reference/README.md
++++ formatter/README.md
+@@ -4,6 +4,12 @@
+   <a href="https://vite.dev" target="_blank" rel="noopener noreferrer">
+     <picture>
+-      <source media="(prefers-color-scheme: dark)" srcset="https://vite.dev/vite-light.svg">
+-      <source media="(prefers-color-scheme: light)" srcset="https://vite.dev/vite-dark.svg">
++      <source
++        media="(prefers-color-scheme: dark)"
++        srcset="https://vite.dev/vite-light.svg"
++      >
++      <source
++        media="(prefers-color-scheme: light)"
++        srcset="https://vite.dev/vite-dark.svg"
++      >
+       <img alt="vite logo" src="https://vite.dev/vite-dark.svg" height="60">
+     </picture>
+@@ -12,12 +18,29 @@
+   <br>
+ </p>
+-<br/>
++<br>
+ <p align="center">
+-  <a href="https://npmjs.com/package/vite"><img src="https://img.shields.io/npm/v/vite.svg" alt="npm package"></a>
+-  <a href="https://nodejs.org/en/about/previous-releases"><img src="https://img.shields.io/node/v/vite.svg" alt="node compatibility"></a>
+-  <a href="https://github.com/vitejs/vite/actions/workflows/ci.yml"><img src="https://github.com/vitejs/vite/actions/workflows/ci.yml/badge.svg?branch=main" alt="build status"></a>
+-  <a href="https://chat.vite.dev"><img src="https://img.shields.io/badge/chat-discord-blue?style=flat&logo=discord" alt="discord chat"></a>
++  <a href="https://npmjs.com/package/vite"
++    ><img src="https://img.shields.io/npm/v/vite.svg" alt="npm package"></a
++  >
++  <a href="https://nodejs.org/en/about/previous-releases"
++    ><img
++      src="https://img.shields.io/node/v/vite.svg"
++      alt="node compatibility"
++    ></a
++  >
++  <a href="https://github.com/vitejs/vite/actions/workflows/ci.yml"
++    ><img
++      src="https://github.com/vitejs/vite/actions/workflows/ci.yml/badge.svg?branch=main"
++      alt="build status"
++    ></a
++  >
++  <a href="https://chat.vite.dev"
++    ><img
++      src="https://img.shields.io/badge/chat-discord-blue?style=flat&logo=discord"
++      alt="discord chat"
++    ></a
++  >
+ </p>
+-<br/>
++<br>
+ 
+ # Vite ⚡
+
+
+--- reference/docs/acknowledgements.md
++++ formatter/docs/acknowledgements.md
+@@ -1,3 +1,4 @@
+ ---
++
+ title: Acknowledgements
+ description: Vite is built upon the shoulders of giants. Thank you to all the projects and contributors that make Vite possible.
+
+
+--- reference/docs/blog/announcing-vite2.md
++++ formatter/docs/blog/announcing-vite2.md
+@@ -1,21 +1,24 @@
+ ---
++
+ title: Announcing Vite 2.0
+ author:
+-  - name: The Vite Team
+-sidebar: false
+-date: 2021-02-16
+-head:
+-  - - meta
+-    - property: og:type
+-      content: website
+-  - - meta
+-    - property: og:title
+-      content: Announcing Vite 2.0
+-  - - meta
+-    - property: og:url
+-      content: https://vite.dev/blog/announcing-vite2
+-  - - meta
+-    - property: og:description
+-      content: Vite 2 Release Announcement
++
++- name: The Vite Team
++  sidebar: false
++  date: 2021-02-16
++  head:
++- - meta
++  * property: og:type
++    content: website
++- - meta
++  * property: og:title
++    content: Announcing Vite 2.0
++- - meta
++  * property: og:url
++    content: https://vite.dev/blog/announcing-vite2
++- - meta
++  * property: og:description
++    content: Vite 2 Release Announcement
++
+ ---
+ 
+
+
+--- reference/docs/blog/announcing-vite3.md
++++ formatter/docs/blog/announcing-vite3.md
+@@ -1,27 +1,30 @@
+ ---
++
+ title: Vite 3.0 is out!
+ author:
+-  name: The Vite Team
++name: The Vite Team
+ date: 2022-07-23
+ sidebar: false
+ head:
+-  - - meta
+-    - property: og:type
+-      content: website
+-  - - meta
+-    - property: og:title
+-      content: Announcing Vite 3
+-  - - meta
+-    - property: og:image
+-      content: https://vite.dev/og-image-announcing-vite3.webp
+-  - - meta
+-    - property: og:url
+-      content: https://vite.dev/blog/announcing-vite3
+-  - - meta
+-    - property: og:description
+-      content: Vite 3 Release Announcement
+-  - - meta
+-    - name: twitter:card
+-      content: summary_large_image
++
++- - meta
++  * property: og:type
++    content: website
++- - meta
++  * property: og:title
++    content: Announcing Vite 3
++- - meta
++  * property: og:image
++    content: https://vite.dev/og-image-announcing-vite3.webp
++- - meta
++  * property: og:url
++    content: https://vite.dev/blog/announcing-vite3
++- - meta
++  * property: og:description
++    content: Vite 3 Release Announcement
++- - meta
++  * name: twitter:card
++    content: summary_large_image
++
+ ---
+ 
+@@ -65,10 +68,32 @@ There is also now an official Spanish translation, that has been added to the pr
+ 
+ <div class="stackblitz-links">
+-<a target="_blank" href="https://vite.new"><img width="75" height="75" src="../images/vite.svg" alt="Vite logo"></a>
+-<a target="_blank" href="https://vite.new/vue"><img width="75" height="75" src="../images/vue.svg" alt="Vue logo"></a>
+-<a target="_blank" href="https://vite.new/svelte"><img width="60" height="60" src="../images/svelte.svg" alt="Svelte logo"></a>
+-<a target="_blank" href="https://vite.new/react"><img width="75" height="75" src="../images/react.svg" alt="React logo"></a>
+-<a target="_blank" href="https://vite.new/preact"><img width="65" height="65" src="../images/preact.svg" alt="Preact logo"></a>
+... 32 more lines
+
+--- reference/docs/blog/announcing-vite4-3.md
++++ formatter/docs/blog/announcing-vite4-3.md
+@@ -1,27 +1,30 @@
+ ---
++
+ title: Vite 4.3 is out!
+ author:
+-  name: The Vite Team
++name: The Vite Team
+ date: 2023-04-20
+ sidebar: false
+ head:
+-  - - meta
+-    - property: og:type
+-      content: website
+-  - - meta
+-    - property: og:title
+-      content: Announcing Vite 4.3
+-  - - meta
+-    - property: og:image
+-      content: https://vite.dev/og-image-announcing-vite4-3.webp
+-  - - meta
+-    - property: og:url
+-      content: https://vite.dev/blog/announcing-vite4-3
+-  - - meta
+-    - property: og:description
+-      content: Vite 4.3 Release Announcement
+-  - - meta
+-    - name: twitter:card
+-      content: summary_large_image
++
++- - meta
++  * property: og:type
++    content: website
++- - meta
++  * property: og:title
++    content: Announcing Vite 4.3
++- - meta
++  * property: og:image
++    content: https://vite.dev/og-image-announcing-vite4-3.webp
++- - meta
++  * property: og:url
++    content: https://vite.dev/blog/announcing-vite4-3
++- - meta
++  * property: og:description
++    content: Vite 4.3 Release Announcement
++- - meta
++  * name: twitter:card
++    content: summary_large_image
++
+ ---
+ 
+
+
+--- reference/docs/blog/announcing-vite4.md
++++ formatter/docs/blog/announcing-vite4.md
+@@ -1,27 +1,30 @@
+ ---
++
+ title: Vite 4.0 is out!
+ author:
+-  name: The Vite Team
++name: The Vite Team
+ date: 2022-12-09
+ sidebar: false
+ head:
+-  - - meta
+-    - property: og:type
+-      content: website
+-  - - meta
+-    - property: og:title
+-      content: Announcing Vite 4
+-  - - meta
+-    - property: og:image
+-      content: https://vite.dev/og-image-announcing-vite4.webp
+-  - - meta
+-    - property: og:url
+-      content: https://vite.dev/blog/announcing-vite4
+-  - - meta
+-    - property: og:description
+-      content: Vite 4 Release Announcement
+-  - - meta
+-    - name: twitter:card
+-      content: summary_large_image
++
++- - meta
++  * property: og:type
++    content: website
++- - meta
++  * property: og:title
++    content: Announcing Vite 4
++- - meta
++  * property: og:image
++    content: https://vite.dev/og-image-announcing-vite4.webp
++- - meta
++  * property: og:url
++    content: https://vite.dev/blog/announcing-vite4
++- - meta
++  * property: og:description
++    content: Vite 4 Release Announcement
++- - meta
++  * name: twitter:card
++    content: summary_large_image
++
+ ---
+ 
+
+
+--- reference/docs/blog/announcing-vite5-1.md
++++ formatter/docs/blog/announcing-vite5-1.md
+@@ -1,27 +1,30 @@
+ ---
++
+ title: Vite 5.1 is out!
+ author:
+-  name: The Vite Team
++name: The Vite Team
+ date: 2024-02-08
+ sidebar: false
+ head:
+-  - - meta
+-    - property: og:type
+-      content: website
+-  - - meta
+-    - property: og:title
+-      content: Announcing Vite 5.1
+-  - - meta
+-    - property: og:image
+-      content: https://vite.dev/og-image-announcing-vite5-1.webp
+-  - - meta
+-    - property: og:url
+-      content: https://vite.dev/blog/announcing-vite5-1
+-  - - meta
+-    - property: og:description
+-      content: Vite 5.1 Release Announcement
+-  - - meta
+-    - name: twitter:card
+-      content: summary_large_image
++
++- - meta
++  * property: og:type
++    content: website
++- - meta
++  * property: og:title
++    content: Announcing Vite 5.1
++- - meta
++  * property: og:image
++    content: https://vite.dev/og-image-announcing-vite5-1.webp
++- - meta
++  * property: og:url
++    content: https://vite.dev/blog/announcing-vite5-1
++- - meta
++  * property: og:description
++    content: Vite 5.1 Release Announcement
++- - meta
++  * name: twitter:card
++    content: summary_large_image
++
+ ---
+ 
+
+
+--- reference/docs/blog/announcing-vite5.md
++++ formatter/docs/blog/announcing-vite5.md
+@@ -1,27 +1,30 @@
+ ---
++
+ title: Vite 5.0 is out!
+ author:
+-  name: The Vite Team
++name: The Vite Team
+ date: 2023-11-16
+ sidebar: false
+ head:
+-  - - meta
+-    - property: og:type
+-      content: website
+-  - - meta
+-    - property: og:title
+-      content: Announcing Vite 5
+-  - - meta
+-    - property: og:image
+-      content: https://vite.dev/og-image-announcing-vite5.webp
+-  - - meta
+-    - property: og:url
+-      content: https://vite.dev/blog/announcing-vite5
+-  - - meta
+-    - property: og:description
+-      content: Vite 5 Release Announcement
+-  - - meta
+-    - name: twitter:card
+-      content: summary_large_image
++
++- - meta
++  * property: og:type
++    content: website
++- - meta
++  * property: og:title
++    content: Announcing Vite 5
++- - meta
++  * property: og:image
++    content: https://vite.dev/og-image-announcing-vite5.webp
++- - meta
++  * property: og:url
++    content: https://vite.dev/blog/announcing-vite5
++- - meta
++  * property: og:description
++    content: Vite 5 Release Announcement
++- - meta
++  * name: twitter:card
++    content: summary_large_image
++
+ ---
+ 
+
+
+--- reference/docs/blog/announcing-vite6.md
++++ formatter/docs/blog/announcing-vite6.md
+@@ -1,27 +1,30 @@
+ ---
++
+ title: Vite 6.0 is out!
+ author:
+-  name: The Vite Team
++name: The Vite Team
+ date: 2024-11-26
+ sidebar: false
+ head:
+-  - - meta
+-    - property: og:type
+-      content: website
+-  - - meta
+-    - property: og:title
+-      content: Announcing Vite 6
+-  - - meta
+-    - property: og:image
+-      content: https://vite.dev/og-image-announcing-vite6.webp
+-  - - meta
+-    - property: og:url
+-      content: https://vite.dev/blog/announcing-vite6
+-  - - meta
+-    - property: og:description
+-      content: Vite 6 Release Announcement
+-  - - meta
+-    - name: twitter:card
+-      content: summary_large_image
++
++- - meta
++  * property: og:type
++    content: website
++- - meta
++  * property: og:title
++    content: Announcing Vite 6
++- - meta
++  * property: og:image
++    content: https://vite.dev/og-image-announcing-vite6.webp
++- - meta
++  * property: og:url
++    content: https://vite.dev/blog/announcing-vite6
++- - meta
++  * property: og:description
++    content: Vite 6 Release Announcement
++- - meta
++  * name: twitter:card
++    content: summary_large_image
++
+ ---
+ 
+
+
+--- reference/docs/blog/announcing-vite7.md
++++ formatter/docs/blog/announcing-vite7.md
+@@ -1,27 +1,30 @@
+ ---
++
+ title: Vite 7.0 is out!
+ author:
+-  name: The Vite Team
++name: The Vite Team
+ date: 2025-06-24
+ sidebar: false
+ head:
+-  - - meta
+-    - property: og:type
+-      content: website
+-  - - meta
+-    - property: og:title
+-      content: Announcing Vite 7
+-  - - meta
+-    - property: og:image
+-      content: https://vite.dev/og-image-announcing-vite7.webp
+-  - - meta
+-    - property: og:url
+-      content: https://vite.dev/blog/announcing-vite7
+-  - - meta
+-    - property: og:description
+-      content: Vite 7 Release Announcement
+-  - - meta
+-    - name: twitter:card
+-      content: summary_large_image
++
++- - meta
++  * property: og:type
++    content: website
++- - meta
++  * property: og:title
++    content: Announcing Vite 7
++- - meta
++  * property: og:image
++    content: https://vite.dev/og-image-announcing-vite7.webp
++- - meta
++  * property: og:url
++    content: https://vite.dev/blog/announcing-vite7
++- - meta
++  * property: og:description
++    content: Vite 7 Release Announcement
++- - meta
++  * name: twitter:card
++    content: summary_large_image
++
+ ---
+ 
+
+
+--- reference/docs/blog/announcing-vite8-1.md
++++ formatter/docs/blog/announcing-vite8-1.md
+@@ -1,28 +1,31 @@
+ ---
++
+ title: Vite 8.1 is out!
+ author:
+-  name: The Vite Team
++name: The Vite Team
+ date: 2026-06-23
+ sidebar: false
+ head:
+-  - - meta
+-    - property: og:type
+-      content: website
+-  - - meta
+-    - property: og:title
+-      content: Announcing Vite 8.1
+-  - - meta
+-    - property: og:image
+-      content: https://vite.dev/og-image-announcing-vite8-1.webp
+-  - - meta
+-    - property: og:url
+-      content: https://vite.dev/blog/announcing-vite8-1
+-  - - meta
+-    - property: og:description
+-      content: Vite 8.1 Release Announcement
+-
+-  - - meta
+-    - name: twitter:card
+-      content: summary_large_image
++
++- - meta
++  * property: og:type
++    content: website
++- - meta
++  * property: og:title
++    content: Announcing Vite 8.1
++- - meta
++  * property: og:image
++    content: https://vite.dev/og-image-announcing-vite8-1.webp
++- - meta
++  * property: og:url
++    content: https://vite.dev/blog/announcing-vite8-1
++- - meta
++  * property: og:description
++    content: Vite 8.1 Release Announcement
++
++- - meta
++  * name: twitter:card
++    content: summary_large_image
++
+ ---
+ 
+@@ -155,5 +158,5 @@ Previously, Vite would only discover assets for the elements and attributes that
+   data-src-dark="/layout-dark.png"
+   data-src-light="/layout-light.png"
+-/>
++>
+ ```
+... 2 more lines
+
+--- reference/docs/blog/announcing-vite8-beta.md
++++ formatter/docs/blog/announcing-vite8-beta.md
+@@ -1,27 +1,30 @@
+ ---
+-title: "Vite 8 Beta: The Rolldown-powered Vite"
++
++title: 'Vite 8 Beta: The Rolldown-powered Vite'
+ author:
+-  name: The Vite Team
++name: The Vite Team
+ date: 2025-12-03
+ sidebar: false
+ head:
+-  - - meta
+-    - property: og:type
+-      content: website
+-  - - meta
+-    - property: og:title
+-      content: Announcing Vite 8 Beta
+-  - - meta
+-    - property: og:image
+-      content: https://vite.dev/og-image-announcing-vite8-beta.webp
+-  - - meta
+-    - property: og:url
+-      content: https://vite.dev/blog/announcing-vite8-beta
+-  - - meta
+-    - property: og:description
+-      content: Vite 8 Beta Release Announcement
+-  - - meta
+-    - name: twitter:card
+-      content: summary_large_image
++
++- - meta
++  * property: og:type
++    content: website
++- - meta
++  * property: og:title
++    content: Announcing Vite 8 Beta
++- - meta
++  * property: og:image
++    content: https://vite.dev/og-image-announcing-vite8-beta.webp
++- - meta
++  * property: og:url
++    content: https://vite.dev/blog/announcing-vite8-beta
++- - meta
++  * property: og:description
++    content: Vite 8 Beta Release Announcement
++- - meta
++  * name: twitter:card
++    content: summary_large_image
++
+ ---
+ 
+
+
+--- reference/docs/blog/announcing-vite8.md
++++ formatter/docs/blog/announcing-vite8.md
+@@ -1,27 +1,30 @@
+ ---
++
+ title: Vite 8.0 is out!
+ author:
+-  name: The Vite Team
++name: The Vite Team
+ date: 2026-03-12
+ sidebar: false
+ head:
+-  - - meta
+-    - property: og:type
+-      content: website
+-  - - meta
+-    - property: og:title
+-      content: Announcing Vite 8
+-  - - meta
+-    - property: og:image
+-      content: https://vite.dev/og-image-announcing-vite8.webp
+-  - - meta
+-    - property: og:url
+-      content: https://vite.dev/blog/announcing-vite8
+-  - - meta
+-    - property: og:description
+-      content: Vite 8 Release Announcement
+-  - - meta
+-    - name: twitter:card
+-      content: summary_large_image
++
++- - meta
++  * property: og:type
++    content: website
++- - meta
++  * property: og:title
++    content: Announcing Vite 8
++- - meta
++  * property: og:image
++    content: https://vite.dev/og-image-announcing-vite8.webp
++- - meta
++  * property: og:url
++    content: https://vite.dev/blog/announcing-vite8
++- - meta
++  * property: og:description
++    content: Vite 8 Release Announcement
++- - meta
++  * name: twitter:card
++    content: summary_large_image
++
+ ---
+ 
+
+
+--- reference/docs/blog/cloudflare-supports-vite.md
++++ formatter/docs/blog/cloudflare-supports-vite.md
+@@ -1,27 +1,30 @@
+ ---
++
+ title: Cloudflare supports Vite's mission
+ author:
+-  name: The Vite Team
++name: The Vite Team
+ date: 2026-06-04
+ sidebar: false
+ head:
+-  - - meta
+-    - property: og:type
+-      content: website
+-  - - meta
+-    - property: og:title
+-      content: Cloudflare supports Vite's mission
+-  - - meta
+-    - property: og:image
+-      content: https://vite.dev/og-image-cloudflare-supports-vite.webp
+-  - - meta
+-    - property: og:url
+-      content: https://vite.dev/blog/cloudflare-supports-vite
+-  - - meta
+-    - property: og:description
+-      content: The VoidZero team is joining Cloudflare. Vite remains MIT, vendor-neutral and stewarded by the same wider team.
+-  - - meta
+-    - name: twitter:card
+-      content: summary_large_image
++
++- - meta
++  * property: og:type
++    content: website
++- - meta
++  * property: og:title
++    content: Cloudflare supports Vite's mission
++- - meta
++  * property: og:image
++    content: https://vite.dev/og-image-cloudflare-supports-vite.webp
++- - meta
++  * property: og:url
++    content: https://vite.dev/blog/cloudflare-supports-vite
++- - meta
++  * property: og:description
++    content: The VoidZero team is joining Cloudflare. Vite remains MIT, vendor-neutral and stewarded by the same wider team.
++- - meta
++  * name: twitter:card
++    content: summary_large_image
++
+ ---
+ 
+
+
+--- reference/docs/blog.md
++++ formatter/docs/blog.md
+@@ -1,3 +1,4 @@
+ ---
++
+ sidebar: false
+ editLink: false
+@@ -11,3 +12,3 @@ import BlogIndex from './.vitepress/theme/components/BlogIndex.vue'
+ # Latest From the Vite Blog
+ 
+-<BlogIndex/>
++<BlogIndex />
+
+
+--- reference/docs/config/build-options.md
++++ formatter/docs/config/build-options.md
+@@ -54,11 +54,11 @@ const config = {
+   // prettier-ignore
+   build: {
+-// ---cut-before---
+-modulePreload: {
+-  resolveDependencies: (filename, deps, { hostId, hostType }) => {
+-    return deps.filter(condition)
+-  },
+-},
+-// ---cut-after---
++    // ---cut-before---
++    modulePreload: {
++      resolveDependencies: (filename, deps, { hostId, hostType }) => {
++        return deps.filter(condition);
++      },
++    },
++    // ---cut-after---
+   },
+ };
+
+
+--- reference/docs/config/index.md
++++ formatter/docs/config/index.md
+@@ -1,5 +1,5 @@
+ ---
+-title: Configuring Vite
+----
++
++## title: Configuring Vite
+ 
+ # Configuring Vite
+
+
+--- reference/docs/config/shared-options.md
++++ formatter/docs/config/shared-options.md
+@@ -215,5 +215,5 @@ Enabling this setting causes vite to determine file identity by the original fil
+ 
+ - **Related:** [esbuild#preserve-symlinks](https://esbuild.github.io/api/#preserve-symlinks), [webpack#resolve.symlinks
+-  ](https://webpack.js.org/configuration/resolve/#resolvesymlinks)
++](https://webpack.js.org/configuration/resolve/#resolvesymlinks)
+ 
+ ## resolve.tsconfigPaths
+@@ -288,4 +288,5 @@ export default defineConfig({
+ 
+ - **Type:**
++
+   ```ts
+   interface CSSModulesOptions {
+@@ -294,24 +295,25 @@ export default defineConfig({
+       json: Record<string, string>,
+       outputFileName: string,
+-    ) => void;
+-    scopeBehaviour?: "global" | "local";
+-    globalModulePaths?: RegExp[];
+-    exportGlobals?: boolean;
++    ) => void
++    scopeBehaviour?: 'global' | 'local'
++    globalModulePaths?: RegExp[]
++    exportGlobals?: boolean
+     generateScopedName?:
+-      string | ((name: string, filename: string, css: string) => string);
+-    hashPrefix?: string;
++      | string
++      | ((name: string, filename: string, css: string) => string)
++    hashPrefix?: string
+     /**
+      * default: undefined
+      */
+     localsConvention?:
+-      | "camelCase"
+-      | "camelCaseOnly"
+-      | "dashes"
+-      | "dashesOnly"
++      | 'camelCase'
++      | 'camelCaseOnly'
++      | 'dashes'
++      | 'dashesOnly'
+       | ((
+           originalClassName: string,
+           generatedClassName: string,
+           inputFile: string,
+-        ) => string);
++        ) => string)
+   }
+   ```
+@@ -539,13 +541,14 @@ Adjust console output verbosity. Default is `'info'`.
+ 
+ - **Type:**
++
+   ```ts
+   interface Logger {
+-    info(msg: string, options?: LogOptions): void;
+-    warn(msg: string, options?: LogOptions): void;
+... 15 more lines
+
+--- reference/docs/guide/api-environment-plugins.md
++++ formatter/docs/guide/api-environment-plugins.md
+@@ -152,7 +152,7 @@ The hook can choose to:
+   ```js
+   if (import.meta.hot) {
+-    import.meta.hot.on("special-update", (data) => {
++    import.meta.hot.on('special-update', (data) => {
+       // perform custom update
+-    });
++    })
+   }
+   ```
+
+
+--- reference/docs/guide/api-environment-runtimes.md
++++ formatter/docs/guide/api-environment-runtimes.md
+@@ -27,5 +27,7 @@ function createWorkerdEnvironment(
+     {
+       resolve: {
+-        conditions: [/*...*/],
++        conditions: [
++          /*...*/
++        ],
+       },
+       dev: {
+@@ -250,5 +252,8 @@ interface ModuleRunnerOptions {
+    */
+   sourcemapInterceptor?:
+-    false | "node" | "prepareStackTrace" | InterceptorOptions;
++    | false
++    | "node"
++    | "prepareStackTrace"
++    | InterceptorOptions;
+   /**
+    * Disable HMR or configure HMR options.
+@@ -458,15 +463,15 @@ In this case, the `handleInvoke` method in the `NormalizedHotChannel` can be use
+ 
+ ```ts
+-const customEnvironment = new DevEnvironment(name, config, context);
++const customEnvironment = new DevEnvironment(name, config, context)
+ 
+ server.onRequest((request: Request) => {
+-  const url = new URL(request.url);
+-  if (url.pathname === "/invoke") {
+-    const payload = (await request.json()) as HotPayload;
+-    const result = customEnvironment.hot.handleInvoke(payload);
+-    return new Response(JSON.stringify(result));
++  const url = new URL(request.url)
++  if (url.pathname === '/invoke') {
++    const payload = (await request.json()) as HotPayload
++    const result = customEnvironment.hot.handleInvoke(payload)
++    return new Response(JSON.stringify(result))
+   }
+-  return Response.error();
+-});
++  return Response.error()
++})
+ ```
+ 
+
+
+--- reference/docs/guide/api-plugin.md
++++ formatter/docs/guide/api-plugin.md
+@@ -190,23 +190,23 @@ Vite plugins can also provide hooks that serve Vite-specific purposes. These hoo
+   // return partial config (recommended)
+   const partialConfigPlugin = () => ({
+-    name: "return-partial",
++    name: 'return-partial',
+     config: () => ({
+       resolve: {
+         alias: {
+-          foo: "bar",
++          foo: 'bar',
+         },
+       },
+     }),
+-  });
++  })
+ 
+   // mutate the config directly (use only when merging doesn't work)
+   const mutateConfigPlugin = () => ({
+-    name: "mutate-config",
++    name: 'mutate-config',
+     config(config, { command }) {
+-      if (command === "build") {
+-        config.root = "foo";
++      if (command === 'build') {
++        config.root = 'foo'
+       }
+     },
+-  });
++  })
+   ```
+ 
+@@ -227,17 +227,17 @@ Vite plugins can also provide hooks that serve Vite-specific purposes. These hoo
+   ```js
+   const examplePlugin = () => {
+-    let config;
++    let config
+ 
+     return {
+-      name: "read-config",
++      name: 'read-config',
+ 
+       configResolved(resolvedConfig) {
+         // store the resolved config
+-        config = resolvedConfig;
++        config = resolvedConfig
+       },
+ 
+       // use stored config in other hooks
+       transform(code, id) {
+-        if (config.command === "serve") {
++        if (config.command === 'serve') {
+           // dev: plugin invoked by dev server
+         } else {
+@@ -245,6 +245,6 @@ Vite plugins can also provide hooks that serve Vite-specific purposes. These hoo
+         }
+       },
+-    };
+-  };
+... 236 more lines
+
+--- reference/docs/guide/assets.md
++++ formatter/docs/guide/assets.md
+@@ -64,5 +64,5 @@ import "vite/client";
+ // ---cut---
+ // prettier-ignore
+-import imgUrl1 from './img.svg?no-inline'
++import imgUrl1 from "./img.svg?no-inline";
+ import imgUrl2 from "./img.png?inline";
+ ```
+
+
+--- reference/docs/guide/backend-integration.md
++++ formatter/docs/guide/backend-integration.md
+@@ -10,13 +10,13 @@ If you need a custom integration, you can follow the steps in this guide to conf
+ 
+    ```js twoslash [vite.config.js]
+-   import { defineConfig } from "vite";
++   import { defineConfig } from 'vite'
+    // ---cut---
+    export default defineConfig({
+      // overwrite default .html entry
+-     input: "/path/to/main.js",
++     input: '/path/to/main.js',
+      server: {
+        cors: {
+          // the origin you will be accessing via browser
+-         origin: "http://my-backend.example.com",
++         origin: 'http://my-backend.example.com',
+        },
+      },
+@@ -25,5 +25,5 @@ If you need a custom integration, you can follow the steps in this guide to conf
+        manifest: true,
+      },
+-   });
++   })
+    ```
+ 
+@@ -32,5 +32,5 @@ If you need a custom integration, you can follow the steps in this guide to conf
+    ```js
+    // add the beginning of your app entry
+-   import "vite/modulepreload-polyfill";
++   import 'vite/modulepreload-polyfill'
+    ```
+ 
+@@ -53,9 +53,9 @@ If you need a custom integration, you can follow the steps in this guide to conf
+    ```html
+    <script type="module">
+-     import RefreshRuntime from "http://localhost:5173/@react-refresh";
+-     RefreshRuntime.injectIntoGlobalHook(window);
+-     window.$RefreshReg$ = () => {};
+-     window.$RefreshSig$ = () => (type) => type;
+-     window.__vite_plugin_react_preamble_installed__ = true;
++     import RefreshRuntime from 'http://localhost:5173/@react-refresh'
++     RefreshRuntime.injectIntoGlobalHook(window)
++     window.$RefreshReg$ = () => {}
++     window.$RefreshSig$ = () => (type) => type
++     window.__vite_plugin_react_preamble_installed__ = true
+    </script>
+    ```
+@@ -135,25 +135,25 @@ If you need a custom integration, you can follow the steps in this guide to conf
+       * The input file name of this chunk / asset if known
+       */
+-     src?: string;
++     src?: string
+      /**
+       * The output file name of this chunk / asset
+       */
+-     file: string;
++     file: string
+      /**
+       * The list of CSS files imported by this chunk
+... 82 more lines
+
+--- reference/docs/guide/build.md
++++ formatter/docs/guide/build.md
+@@ -320,15 +320,15 @@ import type { UserConfig } from "vite";
+ // prettier-ignore
+ const config: UserConfig = {
+-// ---cut-before---
+-experimental: {
+-  renderBuiltUrl(filename, { hostType }) {
+-    if (hostType === 'js') {
+-      return { runtime: `window.__toCdnUrl(${JSON.stringify(filename)})` }
+-    } else {
+-      return { relative: true }
+-    }
++  // ---cut-before---
++  experimental: {
++    renderBuiltUrl(filename, { hostType }) {
++      if (hostType === "js") {
++        return { runtime: `window.__toCdnUrl(${JSON.stringify(filename)})` };
++      } else {
++        return { relative: true };
++      }
++    },
+   },
+-},
+-// ---cut-after---
++  // ---cut-after---
+ };
+ ```
+@@ -341,19 +341,19 @@ import type { UserConfig } from "vite";
+ // prettier-ignore
+ const config: UserConfig = {
+-// ---cut-before---
+-experimental: {
+-  renderBuiltUrl(filename, { hostId, hostType, type }) {
+-    if (type === 'public') {
+-      return 'https://www.domain.com/' + filename
+-    } else if (path.extname(hostId) === '.js') {
+-      return {
+-        runtime: `window.__assetsPath(${JSON.stringify(filename)})`
++  // ---cut-before---
++  experimental: {
++    renderBuiltUrl(filename, { hostId, hostType, type }) {
++      if (type === "public") {
++        return "https://www.domain.com/" + filename;
++      } else if (path.extname(hostId) === ".js") {
++        return {
++          runtime: `window.__assetsPath(${JSON.stringify(filename)})`,
++        };
++      } else {
++        return "https://cdn.domain.com/assets/" + filename;
+       }
+-    } else {
+-      return 'https://cdn.domain.com/assets/' + filename
+-    }
++    },
+   },
+-},
+-// ---cut-after---
++  // ---cut-after---
+ };
+... 2 more lines
+
+--- reference/docs/guide/dep-pre-bundling.md
++++ formatter/docs/guide/dep-pre-bundling.md
+@@ -13,5 +13,5 @@ This is Vite performing what we call "dependency pre-bundling". This process ser
+    ```js
+    // works as expected
+-   import React, { useState } from "react";
++   import React, { useState } from 'react'
+    ```
+ 
+

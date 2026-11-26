@@ -1,0 +1,134 @@
+# 5 of 85 files differ from prettier@3.10.1
+packages/excalidraw/components/FontPicker/FontPicker.scss
+packages/excalidraw/components/Range.scss
+packages/excalidraw/components/Tooltip.scss
+packages/excalidraw/css/styles.scss
+packages/excalidraw/css/theme.scss
+
+# The first 5, reference first
+
+--- reference/packages/excalidraw/components/FontPicker/FontPicker.scss
++++ formatter/packages/excalidraw/components/FontPicker/FontPicker.scss
+@@ -8,7 +8,5 @@
+ 
+     @include isMobile {
+-      max-width: calc(
+-        2rem + 4 * var(--default-button-size)
+-      ); // 4 gaps + 4 buttons
++      max-width: calc(2rem + 4 * var(--default-button-size)); // 4 gaps + 4 buttons
+     }
+ 
+
+
+--- reference/packages/excalidraw/components/Range.scss
++++ formatter/packages/excalidraw/components/Range.scss
+@@ -53,6 +53,6 @@
+     // centered on the thumb, which travels (width - thumb size)
+     left: calc(
+-      var(--slider-thumb-size) / 2 + (100% - var(--slider-thumb-size)) *
+-        var(--range-progress)
++      var(--slider-thumb-size) / 2 +
++        (100% - var(--slider-thumb-size)) * var(--range-progress)
+     );
+     transform: translateX(-50%);
+
+
+--- reference/packages/excalidraw/components/Tooltip.scss
++++ formatter/packages/excalidraw/components/Tooltip.scss
+@@ -3,7 +3,6 @@
+ // container in body where the actual tooltip is appended to
+ .excalidraw-tooltip {
+-  --ui-font:
+-    Assistant, system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto,
+-    Helvetica, Arial, sans-serif;
++  --ui-font: Assistant, system-ui, BlinkMacSystemFont, -apple-system, Segoe UI,
++  Roboto, Helvetica, Arial, sans-serif;
+   font-family: var(--ui-font);
+   position: fixed;
+
+
+--- reference/packages/excalidraw/css/styles.scss
++++ formatter/packages/excalidraw/css/styles.scss
+@@ -40,7 +40,6 @@ body.excalidraw-cursor-resize * {
+ 
+ .excalidraw {
+-  --ui-font:
+-    Assistant, system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto,
+-    Helvetica, Arial, sans-serif;
++  --ui-font: Assistant, system-ui, BlinkMacSystemFont, -apple-system, Segoe UI,
++  Roboto, Helvetica, Arial, sans-serif;
+   --viewport-status-frame-border-width: 0px;
+ 
+@@ -587,7 +586,6 @@ body.excalidraw-cursor-resize * {
+     box-sizing: border-box;
+     max-width: calc(
+-      100% - var(--viewport-status-frame-border-width) - var(
+-          --viewport-status-frame-border-width
+-        )
++      100% - var(--viewport-status-frame-border-width) -
++        var(--viewport-status-frame-border-width)
+     );
+     pointer-events: var(--ui-pointerEvents);
+
+
+--- reference/packages/excalidraw/css/theme.scss
++++ formatter/packages/excalidraw/css/theme.scss
+@@ -13,5 +13,7 @@
+   --button-special-active-bg-color: #{$color-green-0};
+   --dialog-border-color: var(--color-gray-20);
+-  --dropdown-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="292.4" height="292.4" viewBox="0 0 292 292"><path d="M287 197L159 69c-4-3-8-5-13-5s-9 2-13 5L5 197c-3 4-5 8-5 13s2 9 5 13c4 4 8 5 13 5h256c5 0 9-1 13-5s5-8 5-13-1-9-5-13z"/></svg>');
++  --dropdown-icon: url(
++    'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="292.4" height="292.4" viewBox="0 0 292 292"><path d="M287 197L159 69c-4-3-8-5-13-5s-9 2-13 5L5 197c-3 4-5 8-5 13s2 9 5 13c4 4 8 5 13 5h256c5 0 9-1 13-5s5-8 5-13-1-9-5-13z"/></svg>'
++  );
+   --focus-highlight-color: #{$color-blue-2};
+   --icon-fill-color: var(--color-on-surface);
+@@ -34,10 +36,8 @@
+   --popup-text-inverted-color: #fff;
+   --select-highlight-color: #{$color-blue-5};
+-  --shadow-island:
+-    0px 0px 1px 0px rgba(0, 0, 0, 0.17), 0px 0px 3px 0px rgba(0, 0, 0, 0.08),
+-    0px 7px 14px 0px rgba(0, 0, 0, 0.05);
+-  --shadow-island-stronger:
+-    0px 0px 1px 0px rgba(0, 0, 0, 0.17), 0px 0px 3px 0px rgba(0, 0, 0, 0.08),
+-    0px 7px 14px 0px rgb(0 0 0 / 18%);
++  --shadow-island: 0px 0px 1px 0px rgba(0, 0, 0, 0.17),
++  0px 0px 3px 0px rgba(0, 0, 0, 0.08), 0px 7px 14px 0px rgba(0, 0, 0, 0.05);
++  --shadow-island-stronger: 0px 0px 1px 0px rgba(0, 0, 0, 0.17),
++  0px 0px 3px 0px rgba(0, 0, 0, 0.08), 0px 7px 14px 0px rgb(0 0 0 / 18%);
+ 
+   --button-hover-bg: var(--color-surface-high);
+@@ -59,25 +59,22 @@
+   --color-slider-thumb: var(--color-gray-80);
+ 
+-  --modal-shadow:
+-    0px 100px 80px rgba(0, 0, 0, 0.07),
+-    0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198),
+-    0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275),
+-    0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035),
+-    0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725),
+-    0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
++  --modal-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07),
++  0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198),
++  0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275),
++  0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035),
++  0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725),
++  0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+   --avatar-border-color: var(--color-gray-20);
+-  --sidebar-shadow:
+-    0px 100px 80px rgba(0, 0, 0, 0.07),
+-    0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198),
+-    0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275),
+-    0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035),
+-    0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725),
+-    0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
++  --sidebar-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07),
++  0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198),
++  0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275),
++  0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035),
++  0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725),
++  0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+   --sidebar-border-color: var(--color-surface-high);
+   --sidebar-bg-color: var(--island-bg-color);
+-  --library-dropdown-shadow:
+-    0px 15px 6px rgba(0, 0, 0, 0.01), 0px 8px 5px rgba(0, 0, 0, 0.05),
+... 35 more lines

@@ -1,0 +1,379 @@
+{
+  "schema": 1,
+  "id": "2026-11-26-0002-apple-m4-max-darwin-angular-components",
+  "label": "angular-components",
+  "startedAt": "2026-11-26T00:02:02.400Z",
+  "endedAt": "2026-11-26T00:08:50.583Z",
+  "source": {
+    "kind": "local"
+  },
+  "machine": {
+    "platform": "darwin-arm64",
+    "cpu": "Apple M4 Max",
+    "cores": 16,
+    "memoryGiB": 48,
+    "os": "macOS 27.0.1 (26A434)",
+    "node": "v26.0.0"
+  },
+  "target": {
+    "kind": "corpus",
+    "commit": "6f98996b8250f0b81e599330a1a91351507f436d",
+    "dirty": false
+  },
+  "reference": "prettier@3.10.1",
+  "rounds": 7,
+  "threads": [
+    "default",
+    1
+  ],
+  "formatters": [
+    {
+      "id": "prettier@3.10.1",
+      "family": "prettier",
+      "package": "prettier",
+      "version": "3.10.1",
+      "with": {},
+      "languages": [
+        "js",
+        "json",
+        "css",
+        "scss",
+        "less",
+        "markdown",
+        "yaml",
+        "html",
+        "angular"
+      ],
+      "defaultThreads": 1,
+      "available": true,
+      "versionOutput": "3.10.1",
+      "binarySha256": "9fe2ddfe1e45b37300579ec494ae46e41432331682534e69c66515ac91161a63",
+      "release": null
+    },
+    {
+      "id": "biome@2.6.7",
+      "family": "biome",
+      "package": "@biomejs/biome",
+      "version": "2.6.7",
+      "with": {},
+      "languages": [
+        "js",
+        "json",
+        "css",
+        "scss",
+        "markdown",
+        "yaml",
+        "html",
+        "angular"
+      ],
+      "defaultThreads": "per-core",
+      "available": true,
+      "versionOutput": "Version: 2.6.7",
+      "binarySha256": "5ea2cd7d212b10132ee960ce480fc33aab761d0d6b658a1112c36c2657ed0957",
+      "release": null
+    },
+    {
+      "id": "biome@2.6.8",
+      "family": "biome",
+      "package": "@biomejs/biome",
+      "version": "2.6.8",
+      "with": {},
+      "languages": [
+        "js",
+        "json",
+        "css",
+        "scss",
+        "markdown",
+        "yaml",
+        "html",
+        "angular"
+      ],
+      "defaultThreads": "per-core",
+      "available": true,
+      "versionOutput": "Version: 2.6.8",
+      "binarySha256": "16c2a522889a679768bafe463523aded030c51f17004cf5c579750422443fcc4",
+      "release": null
+    },
+    {
+      "id": "bun@1.4.4",
+      "family": "bun",
+      "package": "bun",
+      "version": "1.4.4",
+      "with": {},
+      "languages": [
+        "js",
+        "json",
+        "css",
+        "scss",
+        "less",
+        "markdown",
+        "yaml",
+        "html",
+        "angular"
+      ],
+      "defaultThreads": "per-core",
+      "available": true,
+      "versionOutput": "1.4.4",
+      "binarySha256": "0a2237cdcfa0d16ef501d9acca9f0026309ef348bea7393a64e8d1e3609565cc",
+      "release": null
+    },
+    {
+      "id": "dprint@0.64.3",
+      "family": "dprint",
+      "package": "dprint",
+      "version": "0.64.3",
+      "with": {
+        "@dprint/typescript": "0.101.0",
+        "@dprint/json": "0.26.0",
+        "@dprint/markdown": "0.29.0",
+        "dprint-plugin-malva": "0.16.1",
+        "dprint-plugin-yaml": "0.6.0",
+        "dprint-plugin-markup": "0.28.0"
+      },
+      "languages": [
+        "js",
+        "json",
+        "css",
+        "scss",
+        "less",
+        "markdown",
+        "yaml",
+        "html",
+        "angular"
+      ],
+      "defaultThreads": "per-core",
+      "available": true,
+      "versionOutput": "dprint 0.64.3",
+      "binarySha256": "de19b9ad9d2a70b541183f041bffa96947bc68ea7e1572dfaa634ee5735f6613",
+      "release": null
+    },
+    {
+      "id": "dprint@0.65.0",
+      "family": "dprint",
+      "package": "dprint",
+      "version": "0.65.0",
+      "with": {
+        "@dprint/typescript": "0.101.0",
+        "@dprint/json": "0.26.0",
+        "@dprint/markdown": "0.29.0",
+        "dprint-plugin-malva": "0.16.1",
+        "dprint-plugin-yaml": "0.6.0",
+        "dprint-plugin-markup": "0.28.0"
+      },
+      "languages": [
+        "js",
+        "json",
+        "css",
+        "scss",
+        "less",
+        "markdown",
+        "yaml",
+        "html",
+        "angular"
+      ],
+      "defaultThreads": "per-core",
+      "available": true,
+      "versionOutput": "dprint 0.65.0",
+      "binarySha256": "a0e191b7a7f7d62b62450f4821b2b46904b8be215e4f380284212594df817271",
+      "release": null
+    },
+    {
+      "id": "oxfmt@0.78.0",
+      "family": "oxfmt",
+      "package": "oxfmt",
+      "version": "0.78.0",
+      "with": {},
+      "languages": [
+        "js",
+        "json",
+        "css",
+        "scss",
+        "less",
+        "markdown",
+        "yaml",
+        "html",
+        "angular"
+      ],
+      "defaultThreads": "per-core",
+      "available": true,
+      "versionOutput": "Version: 0.78.0",
+      "binarySha256": "ecab4e2f1bebaab1a3306620bee562ec16e8cb83dd5fb739b94a5aae3c9e34bd",
+      "release": null
+    },
+    {
+      "id": "oxfmt@0.79.0",
+      "family": "oxfmt",
+      "package": "oxfmt",
+      "version": "0.79.0",
+      "with": {},
+      "languages": [
+        "js",
+        "json",
+        "css",
+        "scss",
+        "less",
+        "markdown",
+        "yaml",
+        "html",
+        "angular"
+      ],
+      "defaultThreads": "per-core",
+      "available": true,
+      "versionOutput": "Version: 0.79.0",
+      "binarySha256": "ecab4e2f1bebaab1a3306620bee562ec16e8cb83dd5fb739b94a5aae3c9e34bd",
+      "release": null
+    },
+    {
+      "id": "prettier@3.9.10",
+      "family": "prettier",
+      "package": "prettier",
+      "version": "3.9.10",
+      "with": {},
+      "languages": [
+        "js",
+        "json",
+        "css",
+        "scss",
+        "less",
+        "markdown",
+        "yaml",
+        "html",
+        "angular"
+      ],
+      "defaultThreads": 1,
+      "available": true,
+      "versionOutput": "3.9.10",
+      "binarySha256": "6e922134a3c76fd4de202959bb6aef50bde0c994148075003a15569b7197906e",
+      "release": null
+    },
+    {
+      "id": "tidy@2.0.0",
+      "family": "tidy",
+      "package": "lukeed/tidy release",
+      "version": "2.0.0",
+      "with": {},
+      "languages": [
+        "js",
+        "json",
+        "css",
+        "scss",
+        "less",
+        "markdown",
+        "yaml",
+        "html",
+        "angular"
+      ],
+      "defaultThreads": "per-core",
+      "available": true,
+      "versionOutput": "tidy 2.0.0",
+      "binarySha256": "02f558417b51e06f8e4f575040747c59efa006f06902449fea1614554f032f1a",
+      "release": {
+        "repo": "lukeed/tidy",
+        "tag": "v2.0.0",
+        "publishedAt": "2026-11-24T19:10:29Z",
+        "allowYoung": true
+      }
+    }
+  ],
+  "languages": {
+    "js": {
+      "files": 2433,
+      "bytes": 11528727,
+      "rejected": []
+    },
+    "json": {
+      "files": 124,
+      "bytes": 119799,
+      "rejected": []
+    },
+    "css": {
+      "files": 276,
+      "bytes": 95583,
+      "rejected": []
+    },
+    "scss": {
+      "files": 434,
+      "bytes": 1104423,
+      "rejected": []
+    },
+    "markdown": {
+      "files": 278,
+      "bytes": 3263476,
+      "rejected": []
+    },
+    "yaml": {
+      "files": 4,
+      "bytes": 4047,
+      "rejected": []
+    },
+    "angular": {
+      "files": 684,
+      "bytes": 929632,
+      "rejected": [
+        {
+          "file": "docs/src/assets/stackblitz/src/index.html",
+          "reason": "SyntaxError: Unexpected character \"EOF\" (Do you have an unescaped \"{\" in your template? Use \"{{ '{' }}\") to escape it.) (17:1)"
+        },
+        {
+          "file": "tools/dgeni/templates/class.template.html",
+          "reason": "SyntaxError: Unexpected character \"EOF\" (Do you have an unescaped \"{\" in your template? Use \"{{ '{' }}\") to escape it.) (52:1)"
+        },
+        {
+          "file": "tools/dgeni/templates/common.template.html",
+          "reason": "SyntaxError: Unexpected character \"EOF\" (Do you have an unescaped \"{\" in your template? Use \"{{ '{' }}\") to escape it.) (1:38)"
+        },
+        {
+          "file": "tools/dgeni/templates/constant.template.html",
+          "reason": "SyntaxError: Unexpected character \"EOF\" (Do you have an unescaped \"{\" in your template? Use \"{{ '{' }}\") to escape it.) (23:1)"
+        },
+        {
+          "file": "tools/dgeni/templates/entry-point.template.html",
+          "reason": "SyntaxError: Unexpected character \"EOF\" (Do you have an unescaped \"{\" in your template? Use \"{{ '{' }}\") to escape it.) (137:1)"
+        },
+        {
+          "file": "tools/dgeni/templates/interface.template.html",
+          "reason": "SyntaxError: Unexpected character \"EOF\" (Do you have an unescaped \"{\" in your template? Use \"{{ '{' }}\") to escape it.) (21:1)"
+        },
+        {
+          "file": "tools/dgeni/templates/macros.html",
+          "reason": "SyntaxError: Unexpected character \"EOF\" (Do you have an unescaped \"{\" in your template? Use \"{{ '{' }}\") to escape it.) (8:1)"
+        },
+        {
+          "file": "tools/dgeni/templates/method-list.template.html",
+          "reason": "SyntaxError: Unexpected character \"EOF\" (Do you have an unescaped \"{\" in your template? Use \"{{ '{' }}\") to escape it.) (7:1)"
+        },
+        {
+          "file": "tools/dgeni/templates/method.template.html",
+          "reason": "SyntaxError: Unexpected character \"EOF\" (Do you have an unescaped \"{\" in your template? Use \"{{ '{' }}\") to escape it.) (86:1)"
+        },
+        {
+          "file": "tools/dgeni/templates/property-list.template.html",
+          "reason": "SyntaxError: Unexpected character \"EOF\" (Do you have an unescaped \"{\" in your template? Use \"{{ '{' }}\") to escape it.) (15:1)"
+        },
+        {
+          "file": "tools/dgeni/templates/property.template.html",
+          "reason": "SyntaxError: Unexpected character \"EOF\" (Do you have an unescaped \"{\" in your template? Use \"{{ '{' }}\") to escape it.) (35:1)"
+        },
+        {
+          "file": "tools/dgeni/templates/type-alias.template.html",
+          "reason": "SyntaxError: Unexpected character \"EOF\" (Do you have an unescaped \"{\" in your template? Use \"{{ '{' }}\") to escape it.) (23:1)"
+        }
+      ]
+    }
+  },
+  "exclude": [],
+  "html": "angular",
+  "conditions": {
+    "warnings": [],
+    "loadStart": [
+      3.4775390625,
+      3.939453125,
+      3.8369140625
+    ],
+    "loadEnd": [
+      6.65185546875,
+      4.98388671875,
+      4.2744140625
+    ]
+  }
+}

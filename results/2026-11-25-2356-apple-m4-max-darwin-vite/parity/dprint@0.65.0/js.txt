@@ -1,0 +1,1397 @@
+# 408 of 1621 files differ from prettier@3.10.1
+docs/_data/acknowledgements.data.ts
+packages/create-vite/__tests__/cli.spec.ts
+packages/create-vite/src/index.ts
+packages/create-vite/template-lit/src/my-element.js
+packages/create-vite/template-lit-ts/src/my-element.ts
+packages/create-vite/tsdown.config.ts
+packages/plugin-legacy/src/__tests__/index.spec.ts
+packages/plugin-legacy/src/index.ts
+packages/plugin-legacy/src/snippets.ts
+packages/plugin-legacy/tsdown.config.ts
+packages/vite/bin/vite.js
+packages/vite/client.d.ts
+packages/vite/rolldown.config.ts
+packages/vite/rolldown.dts.config.ts
+packages/vite/rollupLicensePlugin.ts
+packages/vite/src/client/bundledDevClient.ts
+packages/vite/src/client/bundledDevHmrClient.ts
+packages/vite/src/client/client.ts
+packages/vite/src/client/clientEntry.ts
+packages/vite/src/client/overlay.ts
+packages/vite/src/module-runner/createImportMeta.ts
+packages/vite/src/module-runner/esmEvaluator.ts
+packages/vite/src/module-runner/evaluatedModules.ts
+packages/vite/src/module-runner/hmrHandler.ts
+packages/vite/src/module-runner/importMetaResolver.ts
+packages/vite/src/module-runner/index.ts
+packages/vite/src/module-runner/runner.ts
+packages/vite/src/module-runner/sourcemap/decoder.ts
+packages/vite/src/module-runner/sourcemap/interceptor.ts
+packages/vite/src/module-runner/types.ts
+packages/vite/src/module-runner/utils.ts
+packages/vite/src/node/__tests__/assetSource.spec.ts
+packages/vite/src/node/__tests__/build.spec.ts
+packages/vite/src/node/__tests__/config.spec.ts
+packages/vite/src/node/__tests__/dev.spec.ts
+packages/vite/src/node/__tests__/filterRegex.spec.ts
+packages/vite/src/node/__tests__/fixtures/config/entry/vite.config.ts
+packages/vite/src/node/__tests__/fixtures/config/import-meta/vite.config.ts
+packages/vite/src/node/__tests__/http.spec.ts
+packages/vite/src/node/__tests__/logger.spec.ts
+packages/vite/src/node/__tests__/optimizer/customExtensionBundleClose.spec.ts
+packages/vite/src/node/__tests__/optimizer/discoverBeforeListen.spec.ts
+packages/vite/src/node/__tests__/plugins/assetImportMetaUrl.spec.ts
+packages/vite/src/node/__tests__/plugins/css.spec.ts
+packages/vite/src/node/__tests__/plugins/cssPreprocessorTeardown.spec.ts
+packages/vite/src/node/__tests__/plugins/define.spec.ts
+packages/vite/src/node/__tests__/plugins/dynamicImportVar/parse.spec.ts
+packages/vite/src/node/__tests__/plugins/esbuild.spec.ts
+packages/vite/src/node/__tests__/plugins/hooks.spec.ts
+packages/vite/src/node/__tests__/plugins/import.spec.ts
+packages/vite/src/node/__tests__/plugins/importAnalysisBuild.spec.ts
+packages/vite/src/node/__tests__/plugins/importGlob/fixture-a/index.ts
+packages/vite/src/node/__tests__/plugins/importGlob/parse.spec.ts
+packages/vite/src/node/__tests__/plugins/index.spec.ts
+packages/vite/src/node/__tests__/plugins/modulePreloadPolyfill/modulePreloadPolyfill.spec.ts
+packages/vite/src/node/__tests__/plugins/oxc.spec.ts
+packages/vite/src/node/__tests__/plugins/pluginFilter.spec.ts
+packages/vite/src/node/__tests__/plugins/worker.spec.ts
+packages/vite/src/node/__tests__/plugins/workerImportMetaUrl.spec.ts
+packages/vite/src/node/__tests__/resolve.spec.ts
+packages/vite/src/node/__tests__/runnerImport.spec.ts
+packages/vite/src/node/__tests__/scan.spec.ts
+packages/vite/src/node/__tests__/shortcuts.spec.ts
+packages/vite/src/node/__tests__/utils.spec.ts
+packages/vite/src/node/__tests_dts__/config.ts
+packages/vite/src/node/__tests_dts__/importGlob.ts
+packages/vite/src/node/__tests_dts__/plugin.ts
+packages/vite/src/node/__tests_dts__/typeOptions.ts
+packages/vite/src/node/__tests_dts__/utils.ts
+packages/vite/src/node/assetSource.ts
+packages/vite/src/node/baseEnvironment.ts
+packages/vite/src/node/build.ts
+packages/vite/src/node/cli.ts
+packages/vite/src/node/config.ts
+packages/vite/src/node/constants.ts
+packages/vite/src/node/deprecations.ts
+packages/vite/src/node/env.ts
+packages/vite/src/node/environment.ts
+packages/vite/src/node/external.ts
+packages/vite/src/node/http.ts
+packages/vite/src/node/idResolver.ts
+packages/vite/src/node/index.ts
+packages/vite/src/node/logger.ts
+packages/vite/src/node/nativeConfigCompat.ts
+packages/vite/src/node/optimizer/index.ts
+packages/vite/src/node/optimizer/optimizer.ts
+packages/vite/src/node/optimizer/pluginConverter.ts
+packages/vite/src/node/optimizer/resolve.ts
+packages/vite/src/node/optimizer/rolldownDepPlugin.ts
+packages/vite/src/node/optimizer/scan.ts
+packages/vite/src/node/packages.ts
+packages/vite/src/node/plugin.ts
+packages/vite/src/node/plugins/asset.ts
+packages/vite/src/node/plugins/assetImportMetaUrl.ts
+packages/vite/src/node/plugins/clientInjections.ts
+packages/vite/src/node/plugins/css.ts
+packages/vite/src/node/plugins/define.ts
+packages/vite/src/node/plugins/dynamicImportVars.ts
+packages/vite/src/node/plugins/esbuild.ts
+packages/vite/src/node/plugins/esbuildBannerFooterCompatPlugin.ts
+packages/vite/src/node/plugins/forwardConsole.ts
+packages/vite/src/node/plugins/html.ts
+packages/vite/src/node/plugins/importAnalysis.ts
+packages/vite/src/node/plugins/importAnalysisBuild.ts
+packages/vite/src/node/plugins/importMetaGlob.ts
+packages/vite/src/node/plugins/index.ts
+packages/vite/src/node/plugins/license.ts
+packages/vite/src/node/plugins/manifest.ts
+packages/vite/src/node/plugins/optimizedDeps.ts
+packages/vite/src/node/plugins/oxc.ts
+packages/vite/src/node/plugins/pluginFilter.ts
+packages/vite/src/node/plugins/preAlias.ts
+packages/vite/src/node/plugins/prepareOutDir.ts
+packages/vite/src/node/plugins/reporter.ts
+packages/vite/src/node/plugins/resolve.ts
+packages/vite/src/node/plugins/terser.ts
+packages/vite/src/node/plugins/wasm.ts
+packages/vite/src/node/plugins/worker.ts
+packages/vite/src/node/plugins/workerImportMetaUrl.ts
+packages/vite/src/node/preview.ts
+packages/vite/src/node/server/__tests__/hmr.spec.ts
+packages/vite/src/node/server/__tests__/moduleGraph.spec.ts
+packages/vite/src/node/server/__tests__/pluginContainer.spec.ts
+packages/vite/src/node/server/__tests__/watcher.spec.ts
+packages/vite/src/node/server/bundledDev.ts
+packages/vite/src/node/server/environment.ts
+packages/vite/src/node/server/environments/runnableEnvironment.ts
+packages/vite/src/node/server/hmr.ts
+packages/vite/src/node/server/index.ts
+packages/vite/src/node/server/middlewares/__tests__/indexHtml.spec.ts
+packages/vite/src/node/server/middlewares/__tests__/static.spec.ts
+packages/vite/src/node/server/middlewares/base.ts
+packages/vite/src/node/server/middlewares/error.ts
+packages/vite/src/node/server/middlewares/hostCheck.ts
+packages/vite/src/node/server/middlewares/htmlFallback.ts
+packages/vite/src/node/server/middlewares/indexHtml.ts
+packages/vite/src/node/server/middlewares/memoryFiles.ts
+packages/vite/src/node/server/middlewares/proxy.ts
+packages/vite/src/node/server/middlewares/static.ts
+packages/vite/src/node/server/middlewares/time.ts
+packages/vite/src/node/server/middlewares/transform.ts
+packages/vite/src/node/server/middlewares/triggerLazyBundling.ts
+packages/vite/src/node/server/mixedModuleGraph.ts
+packages/vite/src/node/server/moduleGraph.ts
+packages/vite/src/node/server/moduleUrl.ts
+packages/vite/src/node/server/openBrowser.ts
+packages/vite/src/node/server/pluginContainer.ts
+packages/vite/src/node/server/send.ts
+packages/vite/src/node/server/sourcemap.ts
+packages/vite/src/node/server/transformRequest.ts
+packages/vite/src/node/server/warmup.ts
+packages/vite/src/node/server/ws.ts
+packages/vite/src/node/shortcuts.ts
+packages/vite/src/node/ssr/__tests__/fixtures/bundled-with-sourcemaps/bundle.js
+packages/vite/src/node/ssr/__tests__/fixtures/multi-source-sourcemaps/dist.js
+packages/vite/src/node/ssr/__tests__/ssrTransform.spec.ts
+packages/vite/src/node/ssr/fetchModule.ts
+packages/vite/src/node/ssr/index.ts
+packages/vite/src/node/ssr/runnerImport.ts
+packages/vite/src/node/ssr/runtime/__tests__/fixtures/assets.js
+packages/vite/src/node/ssr/runtime/__tests__/fixtures/hmr-evaluated-import-race/evaluated.js
+packages/vite/src/node/ssr/runtime/__tests__/fixtures/oxc-runtime-helper.ts
+packages/vite/src/node/ssr/runtime/__tests__/fixtures/pre-source-mapped-file.js
+packages/vite/src/node/ssr/runtime/__tests__/fixtures/virtual.js
+packages/vite/src/node/ssr/runtime/__tests__/fixtures/worker.invoke.mjs
+packages/vite/src/node/ssr/runtime/__tests__/fixtures/worker.mjs
+packages/vite/src/node/ssr/runtime/__tests__/server-hmr.spec.ts
+packages/vite/src/node/ssr/runtime/__tests__/server-runtime.spec.ts
+packages/vite/src/node/ssr/runtime/__tests__/server-source-maps.spec.ts
+packages/vite/src/node/ssr/runtime/__tests__/server-worker-runner.invoke.spec.ts
+packages/vite/src/node/ssr/runtime/__tests__/utils.ts
+packages/vite/src/node/ssr/runtime/serverModuleRunner.ts
+packages/vite/src/node/ssr/ssrManifestPlugin.ts
+packages/vite/src/node/ssr/ssrModuleLoader.ts
+packages/vite/src/node/ssr/ssrStacktrace.ts
+packages/vite/src/node/ssr/ssrTransform.ts
+packages/vite/src/node/typeUtils.ts
+packages/vite/src/node/utils.ts
+packages/vite/src/node/watch.ts
+packages/vite/src/shared/__tests__/forwardConsole.spec.ts
+packages/vite/src/shared/forwardConsole.ts
+packages/vite/src/shared/hmr.ts
+packages/vite/src/shared/invokeMethods.ts
+packages/vite/src/shared/moduleRunnerTransport.ts
+packages/vite/src/shared/pretty-format.ts
+packages/vite/src/shared/utils.ts
+packages/vite/src/types/alias.d.ts
+packages/vite/src/types/commonjs.d.ts
+packages/vite/src/types/connect.d.ts
+packages/vite/src/types/shims.d.ts
+packages/vite/src/types/ws.d.ts
+packages/vite/types/customEvent.d.ts
+packages/vite/types/importGlob.d.ts
+packages/vite/types/importMeta.d.ts
+packages/vite/types/internal/cssPreprocessorOptions.d.ts
+playground/assets/__tests__/assets.spec.ts
+playground/assets/__tests__/encoded-base/assets-encoded-base.spec.ts
+playground/assets/__tests__/relative-base/assets-relative-base.spec.ts
+playground/assets/__tests__/runtime-base/assets-runtime-base.spec.ts
+playground/assets/__tests__/url-base/assets-url-base.spec.ts
+playground/assets/multiline-import-meta-url.js
+playground/assets/vite.config.js
+playground/assets-sanitize/vite.config.js
+playground/backend-integration/__tests__/backend-integration.spec.ts
+playground/backend-integration/vite.config.js
+playground/base-conflict/vite.config.ts
+playground/build-old/__tests__/build-old.spec.ts
+playground/chunk-importmap/__tests__/chunk-importmap.spec.ts
+playground/chunk-importmap/index.js
+playground/cli/__tests__/serve.ts
+playground/cli/vite.config.js
+playground/cli-module/__tests__/cli-module.spec.ts
+playground/cli-module/__tests__/serve.ts
+playground/cli-module/index.js
+playground/cli-module/vite.config.js
+playground/client-reload/__tests__/client-reload.spec.ts
+playground/client-reload/__tests__/serve.ts
+playground/csp/vite.config.js
+playground/css/__tests__/postcss-plugins-different-dir/serve.ts
+playground/css/__tests__/sass-tests.ts
+playground/css/__tests__/tests.ts
+playground/css/async/async-3.js
+playground/css/lightningcss-plugins.js
+playground/css/main.js
+playground/css/postcss-caching/css.spec.ts
+playground/css/postcss-caching/serve.ts
+playground/css/postcss.config.js
+playground/css/treeshake-scoped/index.js
+playground/css/vite.config.js
+playground/css-lightningcss/__tests__/css-lightningcss.spec.ts
+playground/css-lightningcss-proxy/__tests__/serve.ts
+playground/css-lightningcss-proxy/server.js
+playground/css-sourcemap/vite.config.js
+playground/define/vite.config.js
+playground/dynamic-import/__tests__/dynamic-import.spec.ts
+playground/dynamic-import/cjs-dynamic-importer-cjs/index.js
+playground/dynamic-import/dep-cjs-umd/index.js
+playground/dynamic-import/dynamic-deps.js
+playground/dynamic-import/files/mxd.js
+playground/dynamic-import/nested/index.js
+playground/env/__tests__/env.spec.ts
+playground/env/vite.config.js
+playground/environment-react-ssr/__tests__/environment-react-ssr.spec.ts
+playground/environment-react-ssr/vite.config.ts
+playground/external/dep-that-imports/index.js
+playground/external/dep-that-requires/index.js
+playground/external/public/slash@3.0.0.js
+playground/fs-serve/__tests__/commonTests.ts
+playground/fs-serve/__tests__/fs-serve.spec.ts
+playground/fs-serve/root/matrixTestResultPlugin.ts
+playground/glob-import/__tests__/glob-import.spec.ts
+playground/glob-import/root/dir/index.js
+playground/glob-import/root/escape/(parenthesis)/glob.js
+playground/glob-import/root/escape/[brackets]/glob.js
+playground/glob-import/root/escape/{curlies}/glob.js
+playground/glob-import/root/side-effect/writedom.js
+playground/glob-import/root/side-effect/writetodom.js
+playground/glob-import/root/vite.config.ts
+playground/hmr/__tests__/hmr.spec.ts
+playground/hmr/css-link/plugin.ts
+playground/hmr/css-style/plugin.ts
+playground/hmr/event.d.ts
+playground/hmr/file-delete-restore/runtime.js
+playground/hmr/hmr.ts
+playground/hmr/orphan-no-boundary/re-export.js
+playground/hmr/soft-invalidation/index.js
+playground/hmr/vite.config-no-partial-accept.js
+playground/hmr/vite.config.ts
+playground/hmr-full-bundle-mode/__tests__/build-hooks.spec.ts
+playground/hmr-full-bundle-mode/__tests__/hmr-full-bundle-mode.spec.ts
+playground/hmr-full-bundle-mode/vite.config.ts
+playground/hmr-ssr/__tests__/hmr-ssr.spec.ts
+playground/hmr-ssr/event.d.ts
+playground/hmr-ssr/soft-invalidation/index.js
+playground/hmr-ssr/vite.config.ts
+playground/html/__tests__/html.spec.ts
+playground/html/vite.config.js
+playground/js-sourcemap/__tests__/js-sourcemap.spec.ts
+playground/js-sourcemap/dep-malicious-sourcemap/index.js
+playground/js-sourcemap/dep-optimized-malicious/index.js
+playground/js-sourcemap/test-ssr-dev.js
+playground/js-sourcemap/vite.config.js
+playground/js-sourcemap/with-multiline-import.ts
+playground/json/__tests__/csr/json-csr.spec.ts
+playground/lazy-compilation/__tests__/lazy-compilation.spec.ts
+playground/legacy/__tests__/client-and-ssr/serve.ts
+playground/legacy/__tests__/legacy.spec.ts
+playground/legacy/__tests__/ssr/serve.ts
+playground/legacy/__tests__/watch/legacy-styles-only-entry-watch.spec.ts
+playground/legacy/vite.config-chunk-importmap.js
+playground/legacy/vite.config-modern-target.js
+playground/legacy/vite.config-no-polyfills-no-systemjs.js
+playground/legacy/vite.config-no-polyfills.js
+playground/legacy/vite.config-watch.js
+playground/legacy/vite.config.js
+playground/lib/__tests__/lib.spec.ts
+playground/lib/__tests__/serve.ts
+playground/lib/src/main-helpers-injection.js
+playground/lib/src/main.js
+playground/minify/__tests__/minify.spec.ts
+playground/module-graph/vite.config.ts
+playground/multiple-entrypoints/entrypoints/a0.js
+playground/multiple-entrypoints/entrypoints/a1.js
+playground/multiple-entrypoints/entrypoints/a10.js
+playground/multiple-entrypoints/entrypoints/a11.js
+playground/multiple-entrypoints/entrypoints/a12.js
+playground/multiple-entrypoints/entrypoints/a13.js
+playground/multiple-entrypoints/entrypoints/a14.js
+playground/multiple-entrypoints/entrypoints/a15.js
+playground/multiple-entrypoints/entrypoints/a16.js
+playground/multiple-entrypoints/entrypoints/a17.js
+playground/multiple-entrypoints/entrypoints/a18.js
+playground/multiple-entrypoints/entrypoints/a19.js
+playground/multiple-entrypoints/entrypoints/a2.js
+playground/multiple-entrypoints/entrypoints/a20.js
+playground/multiple-entrypoints/entrypoints/a21.js
+playground/multiple-entrypoints/entrypoints/a22.js
+playground/multiple-entrypoints/entrypoints/a23.js
+playground/multiple-entrypoints/entrypoints/a24.js
+playground/multiple-entrypoints/entrypoints/a3.js
+playground/multiple-entrypoints/entrypoints/a4.js
+playground/multiple-entrypoints/entrypoints/a5.js
+playground/multiple-entrypoints/entrypoints/a6.js
+playground/multiple-entrypoints/entrypoints/a7.js
+playground/multiple-entrypoints/entrypoints/a8.js
+playground/multiple-entrypoints/entrypoints/a9.js
+playground/nested-deps/test-package-e/index.js
+playground/optimize-deps/__tests__/optimize-deps.spec.ts
+playground/optimize-deps/cjs.js
+playground/optimize-deps/dep-cjs-browser-field/lib/axios.js
+playground/optimize-deps/dep-cjs-with-external-deps/index.js
+playground/optimize-deps/dep-lodash/index.js
+playground/optimize-deps/dep-with-dynamic-import/index.js
+playground/optimize-deps/dep-with-excluded-optional-peer-dep-cjs/index.js
+playground/optimize-deps/dep-with-optional-peer-dep-cjs/index.js
+playground/optimize-deps/vite.config.js
+playground/optimize-missing-deps/__test__/serve.ts
+playground/optimize-missing-deps/server.js
+playground/preload/__tests__/preload.spec.ts
+playground/proxy-hmr/__tests__/proxy-hmr.spec.ts
+playground/proxy-hmr/__tests__/serve.ts
+playground/resolve/__tests__/resolve.spec.ts
+playground/resolve/ts-extension/index-js.js
+playground/resolve/ts-extension/index.ts
+playground/resolve/utf8-bom/main.js
+playground/resolve/utf8-bom-package/index.mjs
+playground/resolve/vite.config.js
+playground/ssr/__tests__/serve.ts
+playground/ssr/__tests__/ssr.spec.ts
+playground/ssr/server.js
+playground/ssr/src/app.js
+playground/ssr/src/forked-deadlock/dynamic-imports/common-module.js
+playground/ssr/src/utils.js
+playground/ssr-alias/src/main.js
+playground/ssr-conditions/__tests__/serve.ts
+playground/ssr-conditions/server.js
+playground/ssr-conditions/src/app.js
+playground/ssr-deps/__tests__/serve.ts
+playground/ssr-deps/__tests__/ssr-deps.spec.ts
+playground/ssr-deps/define-properties-exports/index.js
+playground/ssr-deps/import-builtin-cjs/index.js
+playground/ssr-deps/linked-no-external/index.js
+playground/ssr-deps/no-external-cjs/index.js
+playground/ssr-deps/server.js
+playground/ssr-deps/src/app.js
+playground/ssr-html/__tests__/serve.ts
+playground/ssr-html/__tests__/ssr-html.spec.ts
+playground/ssr-html/public/slash@3.0.0.js
+playground/ssr-html/server.js
+playground/ssr-noexternal/__tests__/serve.ts
+playground/ssr-noexternal/server.js
+playground/ssr-noexternal/src/entry-server.js
+playground/ssr-pug/__tests__/serve.ts
+playground/ssr-pug/__tests__/ssr-pug.spec.ts
+playground/ssr-pug/server.js
+playground/ssr-resolve/deep-import/index.js
+playground/ssr-wasm/__tests__/serve.ts
+playground/ssr-wasm/server.js
+playground/ssr-wasm/src/app.js
+playground/ssr-webworker/__tests__/serve.ts
+playground/ssr-webworker/__tests__/ssr-webworker.spec.ts
+playground/ssr-webworker/src/entry-worker.jsx
+playground/ssr-webworker/worker.js
+playground/tailwind/__test__/tailwind.spec.ts
+playground/tailwind/src/components/component1.js
+playground/tailwind/vite.config.ts
+playground/tailwind-v3/__test__/tailwind-v3.spec.ts
+playground/tailwind-v3/src/components/component1.js
+playground/tailwind-v3/vite.config.ts
+playground/test-utils.ts
+playground/tsconfig-json/src/decorator.ts
+playground/tsconfig-json-load-error/__tests__/tsconfig-json-load-error.spec.ts
+playground/vitestSetup.ts
+playground/vitestSetupUtils.ts
+playground/wasm/__tests__/wasm.spec.ts
+playground/worker/__tests__/es/worker-es.spec.ts
+playground/worker/__tests__/iife/worker-iife.spec.ts
+playground/worker/__tests__/relative-base/worker-relative-base.spec.ts
+playground/worker/__tests__/sourcemap/worker-sourcemap.spec.ts
+playground/worker/__tests__/sourcemap-hidden/worker-sourcemap-hidden.spec.ts
+playground/worker/__tests__/sourcemap-inline/worker-sourcemap-inline.spec.ts
+playground/worker/importMetaGlob.worker.js
+playground/worker/importMetaGlobEager.worker.js
+playground/worker/worker/main-classic.js
+playground/worker/worker/main-module.js
+playground/worker/worker-sourcemap-config.js
+scripts/releaseUtils.ts
+vitest.config.e2e.ts
+
+# The first 25, reference first
+
+--- reference/docs/_data/acknowledgements.data.ts
++++ formatter/docs/_data/acknowledgements.data.ts
+@@ -61,10 +61,10 @@ interface PackageJson {
+   version: string;
+   description?: string;
+-  author?: string | { name: string; email?: string; url?: string };
+-  repository?: string | { type?: string; url?: string };
++  author?: string | { name: string; email?: string; url?: string; };
++  repository?: string | { type?: string; url?: string; };
+   funding?:
+     | string
+-    | { url: string; type?: string }
+-    | Array<string | { url: string; type?: string }>;
++    | { url: string; type?: string; }
++    | Array<string | { url: string; type?: string; }>;
+   dependencies?: Record<string, string>;
+   devDependencies?: Record<string, string>;
+@@ -121,5 +121,5 @@ function parseBundledDependenciesFromLicense(licensePath: string): string[] {
+   const deps = [...bundledSection.matchAll(/^## (.+)$/gm)].flatMap((m) =>
+     // Package names can be comma-separated (e.g., "## pkg1, pkg2, pkg3")
+-    m[1].split(",").map((n) => n.trim()),
++    m[1].split(",").map((n) => n.trim())
+   );
+   return [...new Set(deps)];
+@@ -222,5 +222,5 @@ function groupByAuthor(dependencies: Dependency[]): Author[] {
+   const authorMap = new Map<
+     string,
+-    { url?: string; packages: AuthorPackage[] }
++    { url?: string; packages: AuthorPackage[]; }
+   >();
+ 
+@@ -245,11 +245,12 @@ function groupByAuthor(dependencies: Dependency[]): Author[] {
+     .map(([name, info]) => {
+       const sortedPackages = info.packages.sort((a, b) =>
+-        a.name.localeCompare(b.name),
++        a.name.localeCompare(b.name)
+       );
+       const fundingUrls = new Set(
+         sortedPackages.map((p) => p.funding).filter(Boolean),
+       );
+-      const sharedFunding =
+-        fundingUrls.size === 1 ? [...fundingUrls][0] : undefined;
++      const sharedFunding = fundingUrls.size === 1
++        ? [...fundingUrls][0]
++        : undefined;
+       return {
+         name,
+@@ -276,6 +277,6 @@ function loadData(): AcknowledgementsData {
+     .map(
+       (name) =>
+-        readPackageInfo(name, nodeModulesDir) ||
+-        readPackageInfo(name, rootNodeModulesDir),
++        readPackageInfo(name, nodeModulesDir)
++        || readPackageInfo(name, rootNodeModulesDir),
+     )
+     .filter((dep) => dep != null)
+@@ -290,6 +291,6 @@ function loadData(): AcknowledgementsData {
+     .map(
+       (name) =>
+-        readPackageInfo(name, nodeModulesDir) ||
+... 6 more lines
+
+--- reference/packages/create-vite/__tests__/cli.spec.ts
++++ formatter/packages/create-vite/__tests__/cli.spec.ts
+@@ -1,6 +1,6 @@
+-import fs from "node:fs";
+-import path from "node:path";
+ import type { SyncOptions } from "execa";
+ import { execaCommandSync } from "execa";
++import fs from "node:fs";
++import path from "node:path";
+ import { afterEach, beforeAll, expect, test } from "vitest";
+ 
+@@ -30,5 +30,5 @@ const createNonEmptyDir = (overrideFolder?: string) => {
+   // Create a package.json file
+   const pkgJson = path.join(newNonEmptyFolder, "package.json");
+-  fs.writeFileSync(pkgJson, '{ "foo": "bar" }');
++  fs.writeFileSync(pkgJson, "{ \"foo\": \"bar\" }");
+ };
+ 
+@@ -206,7 +206,7 @@ test("scaffolds react-ts with Oxlint by default", () => {
+ 
+   const pkg = fs.readFileSync(path.join(genPath, "package.json"), "utf-8");
+-  expect(pkg).toContain('"oxlint"');
++  expect(pkg).toContain("\"oxlint\"");
+   expect(pkg).not.toContain("eslint");
+-  expect(pkg).toContain('"lint": "oxlint"');
++  expect(pkg).toContain("\"lint\": \"oxlint\"");
+ 
+   const readme = fs.readFileSync(path.join(genPath, "README.md"), "utf-8");
+@@ -225,7 +225,7 @@ test("scaffolds React template with ESLint when --eslint is passed", () => {
+ 
+   const pkg = fs.readFileSync(path.join(genPath, "package.json"), "utf-8");
+-  expect(pkg).toContain('"eslint"');
++  expect(pkg).toContain("\"eslint\"");
+   expect(pkg).not.toContain("oxlint");
+-  expect(pkg).toContain('"lint": "eslint ."');
++  expect(pkg).toContain("\"lint\": \"eslint .\"");
+ });
+ 
+
+
+--- reference/packages/create-vite/src/index.ts
++++ formatter/packages/create-vite/src/index.ts
+@@ -1,2 +1,4 @@
++import * as prompts from "@clack/prompts";
++import mri from "mri";
+ import type { SpawnOptions } from "node:child_process";
+ import fs from "node:fs";
+@@ -4,6 +6,4 @@ import path from "node:path";
+ import { fileURLToPath } from "node:url";
+ import util from "node:util";
+-import * as prompts from "@clack/prompts";
+-import mri from "mri";
+ import { detectAgent } from "std-env";
+ import { xSync } from "tinyexec";
+@@ -516,9 +516,8 @@ async function init() {
+       if (interactive) {
+         const res = await prompts.select({
+-          message:
+-            (targetDir === "."
+-              ? "Current directory"
+-              : `Target directory "${targetDir}"`) +
+-            ` is not empty. Please choose how to proceed:`,
++          message: (targetDir === "."
++            ? "Current directory"
++            : `Target directory "${targetDir}"`)
++            + ` is not empty. Please choose how to proceed:`,
+           options: [
+             {
+@@ -602,7 +601,7 @@ async function init() {
+           const command = variant.customCommand
+             ? getFullCustomCommand(variant.customCommand, pkgInfo).replace(
+-                / TARGET_DIR$/,
+-                "",
+-              )
++              / TARGET_DIR$/,
++              "",
++            )
+             : undefined;
+           return {
+@@ -632,6 +631,6 @@ async function init() {
+ 
+   const { customCommand } =
+-    FRAMEWORKS.flatMap((f) => f.variants).find((v) => v.name === template) ??
+-    {};
++    FRAMEWORKS.flatMap((f) => f.variants).find((v) => v.name === template)
++      ?? {};
+ 
+   if (customCommand) {
+@@ -641,5 +640,5 @@ async function init() {
+     // we replace TARGET_DIR here because targetDir may include a space
+     const replacedArgs = args.map((arg) =>
+-      arg.replace("TARGET_DIR", () => targetDir),
++      arg.replace("TARGET_DIR", () => targetDir)
+     );
+     const { exitCode } = xSync(command, replacedArgs, {
+@@ -872,7 +871,7 @@ import babel from '@rolldown/plugin-babel'`,
+   updateReactCompilerReadme(
+     root,
+-    "The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.\n\n" +
+-      "Note: This will impact Vite dev & build performances.\n" +
+... 7 more lines
+
+--- reference/packages/create-vite/template-lit/src/my-element.js
++++ formatter/packages/create-vite/template-lit/src/my-element.js
+@@ -1,3 +1,3 @@
+-import { LitElement, css, html } from "lit";
++import { css, html, LitElement } from "lit";
+ import heroImg from "./assets/hero.png";
+ import litLogo from "./assets/lit.svg";
+@@ -29,7 +29,7 @@ export class MyElement extends LitElement {
+       <section id="center">
+         <div class="hero">
+-          <img src=${heroImg} class="base" width="170" height="179" alt="" />
+-          <img src=${litLogo} class="framework" alt="Lit logo" />
+-          <img src=${viteLogo} class="vite" alt="Vite logo" />
++          <img src="${heroImg}" class="base" width="170" height="179" alt="" />
++          <img src="${litLogo}" class="framework" alt="Lit logo" />
++          <img src="${viteLogo}" class="vite" alt="Vite logo" />
+         </div>
+         <div>
+@@ -43,5 +43,5 @@ export class MyElement extends LitElement {
+           type="button"
+           class="counter"
+-          @click=${this._onClick}
++          @click="${this._onClick}"
+           part="button"
+         >
+@@ -62,5 +62,5 @@ export class MyElement extends LitElement {
+             <li>
+               <a href="https://vite.dev/" target="_blank">
+-                <img class="logo" src=${viteLogo} alt="" />
++                <img class="logo" src="${viteLogo}" alt="" />
+                 Explore Vite
+               </a>
+@@ -68,5 +68,5 @@ export class MyElement extends LitElement {
+             <li>
+               <a href="https://lit.dev/" target="_blank">
+-                <img class="button-icon" src=${litLogo} alt="" />
++                <img class="button-icon" src="${litLogo}" alt="" />
+                 Learn more
+               </a>
+@@ -269,6 +269,6 @@ export class MyElement extends LitElement {
+         top: 34px;
+         height: 28px;
+-        transform: perspective(2000px) rotateZ(300deg) rotateX(44deg)
+-          rotateY(39deg) scale(1.4);
++        transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg)
++          scale(1.4);
+       }
+ 
+@@ -278,6 +278,6 @@ export class MyElement extends LitElement {
+         height: 26px;
+         width: auto;
+-        transform: perspective(2000px) rotateZ(300deg) rotateX(40deg)
+-          rotateY(39deg) scale(0.8);
++        transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg)
++          scale(0.8);
+       }
+ 
+
+
+--- reference/packages/create-vite/template-lit-ts/src/my-element.ts
++++ formatter/packages/create-vite/template-lit-ts/src/my-element.ts
+@@ -1,3 +1,3 @@
+-import { LitElement, css, html } from "lit";
++import { css, html, LitElement } from "lit";
+ import { customElement, property } from "lit/decorators.js";
+ import heroImg from "./assets/hero.png";
+@@ -23,7 +23,7 @@ export class MyElement extends LitElement {
+       <section id="center">
+         <div class="hero">
+-          <img src=${heroImg} class="base" width="170" height="179" alt="" />
+-          <img src=${litLogo} class="framework" alt="Lit logo" />
+-          <img src=${viteLogo} class="vite" alt="Vite logo" />
++          <img src="${heroImg}" class="base" width="170" height="179" alt="" />
++          <img src="${litLogo}" class="framework" alt="Lit logo" />
++          <img src="${viteLogo}" class="vite" alt="Vite logo" />
+         </div>
+         <div>
+@@ -37,5 +37,5 @@ export class MyElement extends LitElement {
+           type="button"
+           class="counter"
+-          @click=${this._onClick}
++          @click="${this._onClick}"
+           part="button"
+         >
+@@ -56,5 +56,5 @@ export class MyElement extends LitElement {
+             <li>
+               <a href="https://vite.dev/" target="_blank">
+-                <img class="logo" src=${viteLogo} alt="" />
++                <img class="logo" src="${viteLogo}" alt="" />
+                 Explore Vite
+               </a>
+@@ -62,5 +62,5 @@ export class MyElement extends LitElement {
+             <li>
+               <a href="https://lit.dev/" target="_blank">
+-                <img class="button-icon" src=${litLogo} alt="" />
++                <img class="button-icon" src="${litLogo}" alt="" />
+                 Learn more
+               </a>
+@@ -132,5 +132,6 @@ export class MyElement extends LitElement {
+       --social-bg: rgba(244, 243, 236, 0.5);
+       --shadow:
+-        rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
++        rgba(0, 0, 0, 0.1) 0 10px 15px -3px,
++        rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+ 
+       --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+@@ -261,6 +262,6 @@ export class MyElement extends LitElement {
+       top: 34px;
+       height: 28px;
+-      transform: perspective(2000px) rotateZ(300deg) rotateX(44deg)
+-        rotateY(39deg) scale(1.4);
++      transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg)
++        scale(1.4);
+     }
+ 
+@@ -271,6 +272,6 @@ export class MyElement extends LitElement {
+       width: auto;
+       color: var(--vite-logo);
+-      transform: perspective(2000px) rotateZ(300deg) rotateX(40deg)
+... 6 more lines
+
+--- reference/packages/create-vite/tsdown.config.ts
++++ formatter/packages/create-vite/tsdown.config.ts
+@@ -16,9 +16,9 @@ export default defineConfig(() => ({
+       "create-vite license",
+       "create-vite",
+-      '# License of the files in the directories starting with "template-" in create-vite\n' +
+-        'The files in the directories starting with "template-" in create-vite and files\n' +
+-        "generated from those files are licensed under the CC0 1.0 Universal license:\n\n" +
+-        cc0LicenseText +
+-        "\n\n",
++      "# License of the files in the directories starting with \"template-\" in create-vite\n"
++        + "The files in the directories starting with \"template-\" in create-vite and files\n"
++        + "generated from those files are licensed under the CC0 1.0 Universal license:\n\n"
++        + cc0LicenseText
++        + "\n\n",
+     ),
+   ],
+
+
+--- reference/packages/plugin-legacy/src/__tests__/index.spec.ts
++++ formatter/packages/plugin-legacy/src/__tests__/index.spec.ts
+@@ -4,16 +4,19 @@ import { modulePreloadLinkRE } from "../index";
+ describe("modulePreloadLinkRE", () => {
+   const matches: Array<[string, string]> = [
+-    ["rel first", '<link rel="modulepreload" crossorigin href="/assets/x.js">'],
++    [
++      "rel first",
++      "<link rel=\"modulepreload\" crossorigin href=\"/assets/x.js\">",
++    ],
+     [
+       "rel after other attributes",
+-      '<link href="/assets/x.js" rel="modulepreload">',
++      "<link href=\"/assets/x.js\" rel=\"modulepreload\">",
+     ],
+-    ["rel only", '<link rel="modulepreload">'],
+-    ["self-closing", '<link rel="modulepreload"/>'],
+-    ["self-closing with space", '<link rel="modulepreload" />'],
++    ["rel only", "<link rel=\"modulepreload\">"],
++    ["self-closing", "<link rel=\"modulepreload\"/>"],
++    ["self-closing with space", "<link rel=\"modulepreload\" />"],
+     ["single quotes", "<link rel='modulepreload' href='/assets/x.js'>"],
+     [
+       "attributes across multiple lines",
+-      '<link\n  rel="modulepreload"\n  href="/assets/x.js"\n>',
++      "<link\n  rel=\"modulepreload\"\n  href=\"/assets/x.js\"\n>",
+     ],
+   ];
+@@ -26,12 +29,15 @@ describe("modulePreloadLinkRE", () => {
+ 
+   const nonMatches: Array<[string, string]> = [
+-    ["tag name with suffix", '<linkfoo rel="modulepreload">'],
+-    ["custom element with hyphen", '<link-preview rel="modulepreload">'],
++    ["tag name with suffix", "<linkfoo rel=\"modulepreload\">"],
++    ["custom element with hyphen", "<link-preview rel=\"modulepreload\">"],
+     ["bare link tag", "<link>"],
+-    ["stylesheet link", '<link rel="stylesheet" href="/assets/x.css">'],
+-    ["preload (not modulepreload)", '<link rel="preload" href="/assets/x.js">'],
++    ["stylesheet link", "<link rel=\"stylesheet\" href=\"/assets/x.css\">"],
++    [
++      "preload (not modulepreload)",
++      "<link rel=\"preload\" href=\"/assets/x.js\">",
++    ],
+     [
+       "attribute name ending in rel",
+-      '<link xrel="modulepreload" href="/assets/x.js">',
++      "<link xrel=\"modulepreload\" href=\"/assets/x.js\">",
+     ],
+     ["mismatched quotes", `<link rel="modulepreload'>`],
+
+
+--- reference/packages/plugin-legacy/src/index.ts
++++ formatter/packages/plugin-legacy/src/index.ts
+@@ -1,5 +1,2 @@
+-import crypto from "node:crypto";
+-import path from "node:path";
+-import { fileURLToPath } from "node:url";
+ import type {
+   PluginItem as BabelPlugin,
+@@ -9,6 +6,8 @@ import browserslist from "browserslist";
+ import corejsPkg from "core-js/package.json" with { type: "json" };
+ import MagicString from "magic-string";
++import crypto from "node:crypto";
++import path from "node:path";
++import { fileURLToPath } from "node:url";
+ import colors from "picocolors";
+-import { build, normalizePath } from "vite";
+ import type {
+   BuildOptions,
+@@ -18,4 +17,5 @@ import type {
+   Rollup,
+ } from "vite";
++import { build, normalizePath } from "vite";
+ import {
+   createModernChunkLegacyGuard,
+@@ -102,7 +102,7 @@ function getBaseInHTML(urlRelativePath: string, config: ResolvedConfig) {
+   return config.base === "./" || config.base === ""
+     ? path.posix.join(
+-        path.posix.relative(urlRelativePath, "").slice(0, -2),
+-        "./",
+-      )
++      path.posix.relative(urlRelativePath, "").slice(0, -2),
++      "./",
++    )
+     : config.base;
+ }
+@@ -183,6 +183,7 @@ const modernTargetsBabel =
+   "edge>=105, firefox>=106, chrome>=105, safari>=16.4, chromeAndroid>=105, iOS>=16.4";
+ 
+-const outputOptionsForLegacyChunks =
+-  new WeakSet<Rollup.NormalizedOutputOptions>();
++const outputOptionsForLegacyChunks = new WeakSet<
++  Rollup.NormalizedOutputOptions
++>();
+ 
+ function resolveLegacyOutputMinify(
+@@ -208,6 +209,6 @@ function viteLegacyPlugin(options: Options = {}): Plugin[] {
+   let config: ResolvedConfig;
+   let targets: Options["targets"];
+-  const modernTargets: Options["modernTargets"] =
+-    options.modernTargets || modernTargetsBabel;
++  const modernTargets: Options["modernTargets"] = options.modernTargets
++    || modernTargetsBabel;
+ 
+   const genLegacy = options.renderLegacyChunks !== false;
+@@ -220,6 +221,6 @@ function viteLegacyPlugin(options: Options = {}): Plugin[] {
+ 
+   const debugFlags = (process.env.DEBUG || "").split(",");
+-  const isDebug =
+-    debugFlags.includes("vite:*") || debugFlags.includes("vite:legacy");
++  const isDebug = debugFlags.includes("vite:*")
+... 180 more lines
+
+--- reference/packages/plugin-legacy/src/snippets.ts
++++ formatter/packages/plugin-legacy/src/snippets.ts
+@@ -1,9 +1,11 @@
+ // https://gist.github.com/samthor/64b114e4a4f539915a95b91ffd340acc
+ // DO NOT ALTER THIS CONTENT
+-export const safari10NoModuleFix: string = `!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();`;
++export const safari10NoModuleFix: string =
++  `!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();`;
+ 
+ export const legacyPolyfillId: string = "vite-legacy-polyfill";
+ export const legacyEntryId: string = "vite-legacy-entry";
+-export const systemJSInlineCode: string = `System.import(document.getElementById('${legacyEntryId}').getAttribute('data-src'))`;
++export const systemJSInlineCode: string =
++  `System.import(document.getElementById('${legacyEntryId}').getAttribute('data-src'))`;
+ 
+ const detectModernBrowserVarName = "__vite_is_modern_browser";
+@@ -20,11 +22,19 @@ const detectModernBrowserVarName = "__vite_is_modern_browser";
+  */
+ const createDetectImportMetaResolveSupportModule = (chunkId: string | null) =>
+-  `data:text/javascript,${chunkId != null ? `${JSON.stringify(chunkId)};` : ""}if(!import.meta.resolve)throw Error("import.meta.resolve not supported")`;
++  `data:text/javascript,${
++    chunkId != null ? `${JSON.stringify(chunkId)};` : ""
++  }if(!import.meta.resolve)throw Error("import.meta.resolve not supported")`;
+ 
+ // detect support via syntax errors
+-export const detectModernBrowserDetector: string = `import.meta.url;import("_").catch(()=>1);(async function*(){})().next()`;
+-export const detectModernBrowserCode: string = `import'${createDetectImportMetaResolveSupportModule(null)}';${detectModernBrowserDetector};window.${detectModernBrowserVarName}=true`;
+-export const dynamicFallbackInlineCode: string = `!function(){if(window.${detectModernBrowserVarName})return;console.warn("vite: loading legacy chunks, syntax error above and the same error below should be ignored");var e=document.getElementById("${legacyPolyfillId}"),n=document.createElement("script");n.src=e.src,n.onload=function(){${systemJSInlineCode}},document.body.appendChild(n)}();`;
++export const detectModernBrowserDetector: string =
++  `import.meta.url;import("_").catch(()=>1);(async function*(){})().next()`;
++export const detectModernBrowserCode: string = `import'${
++  createDetectImportMetaResolveSupportModule(null)
++}';${detectModernBrowserDetector};window.${detectModernBrowserVarName}=true`;
++export const dynamicFallbackInlineCode: string =
++  `!function(){if(window.${detectModernBrowserVarName})return;console.warn("vite: loading legacy chunks, syntax error above and the same error below should be ignored");var e=document.getElementById("${legacyPolyfillId}"),n=document.createElement("script");n.src=e.src,n.onload=function(){${systemJSInlineCode}},document.body.appendChild(n)}();`;
+ 
+ export const createModernChunkLegacyGuard = (chunkId: string): string =>
+-  `import'${createDetectImportMetaResolveSupportModule(chunkId)}';export function __vite_legacy_guard(){${detectModernBrowserDetector}};`;
++  `import'${
++    createDetectImportMetaResolveSupportModule(chunkId)
++  }';export function __vite_legacy_guard(){${detectModernBrowserDetector}};`;
+
+
+--- reference/packages/plugin-legacy/tsdown.config.ts
++++ formatter/packages/plugin-legacy/tsdown.config.ts
+@@ -1,3 +1,3 @@
+-import { type UserConfig, defineConfig } from "tsdown";
++import { defineConfig, type UserConfig } from "tsdown";
+ 
+ export default defineConfig({
+
+
+--- reference/packages/vite/bin/vite.js
++++ formatter/packages/vite/bin/vite.js
+@@ -18,8 +18,8 @@ global.__vite_start_time = performance.now();
+ // check debug mode first before requiring the CLI.
+ const debugIndex = process.argv.findIndex((arg) =>
+-  /^(?:-d|--debug)$/.test(arg),
++  /^(?:-d|--debug)$/.test(arg)
+ );
+ const filterIndex = process.argv.findIndex((arg) =>
+-  /^(?:-f|--filter)$/.test(arg),
++  /^(?:-f|--filter)$/.test(arg)
+ );
+ const profileIndex = process.argv.findIndex(
+
+
+--- reference/packages/vite/client.d.ts
++++ formatter/packages/vite/client.d.ts
+@@ -5,5 +5,5 @@ declare module "vite/modulepreload-polyfill" {}
+ 
+ // CSS modules
+-type CSSModuleClasses = { readonly [key: string]: string };
++type CSSModuleClasses = { readonly [key: string]: string; };
+ 
+ declare module "*.module.css" {
+@@ -211,5 +211,5 @@ declare module "*.wasm" {}
+ declare module "*?worker" {
+   const workerConstructor: {
+-    new (options?: { name?: string }): Worker;
++    new(options?: { name?: string; }): Worker;
+   };
+   export default workerConstructor;
+@@ -218,5 +218,5 @@ declare module "*?worker" {
+ declare module "*?worker&inline" {
+   const workerConstructor: {
+-    new (options?: { name?: string }): Worker;
++    new(options?: { name?: string; }): Worker;
+   };
+   export default workerConstructor;
+@@ -230,5 +230,5 @@ declare module "*?worker&url" {
+ declare module "*?sharedworker" {
+   const sharedWorkerConstructor: {
+-    new (options?: { name?: string }): SharedWorker;
++    new(options?: { name?: string; }): SharedWorker;
+   };
+   export default sharedWorkerConstructor;
+@@ -237,5 +237,5 @@ declare module "*?sharedworker" {
+ declare module "*?sharedworker&inline" {
+   const sharedWorkerConstructor: {
+-    new (options?: { name?: string }): SharedWorker;
++    new(options?: { name?: string; }): SharedWorker;
+   };
+   export default sharedWorkerConstructor;
+
+
+--- reference/packages/vite/rolldown.config.ts
++++ formatter/packages/vite/rolldown.config.ts
+@@ -1,6 +1,6 @@
+-import { writeFileSync } from "node:fs";
+-import path from "node:path";
+ import { ImportType, init, parse } from "es-module-lexer";
+ import MagicString from "magic-string";
++import { writeFileSync } from "node:fs";
++import path from "node:path";
+ import type { Plugin } from "rolldown";
+ import { defineConfig } from "rolldown";
+@@ -104,5 +104,6 @@ const nodeConfig = defineConfig({
+         {
+           src: "const { pathToFileURL } = require('node:url')",
+-          replacement: `const { fileURLToPath, pathToFileURL } = require('node:url')`,
++          replacement:
++            `const { fileURLToPath, pathToFileURL } = require('node:url')`,
+         },
+         {
+@@ -117,15 +118,15 @@ const nodeConfig = defineConfig({
+       "postcss-import/index.js": [
+         {
+-          src: 'const resolveId = require("./lib/resolve-id")',
++          src: "const resolveId = require(\"./lib/resolve-id\")",
+           replacement: "const resolveId = (id) => id",
+         },
+         {
+-          src: 'const loadContent = require("./lib/load-content")',
+-          replacement: 'const loadContent = () => ""',
++          src: "const loadContent = require(\"./lib/load-content\")",
++          replacement: "const loadContent = () => \"\"",
+         },
+       ],
+       "postcss-import/lib/parse-styles.js": [
+         {
+-          src: 'const resolveId = require("./resolve-id")',
++          src: "const resolveId = require(\"./resolve-id\")",
+           replacement: "const resolveId = (id) => id",
+         },
+@@ -211,6 +212,7 @@ function externalizeDepsInWatchPlugin(): Plugin {
+       if (this.meta.watchMode) {
+         options.external ||= [];
+-        if (!Array.isArray(options.external))
++        if (!Array.isArray(options.external)) {
+           throw new Error("external must be an array");
++        }
+         options.external = [
+           ...options.external,
+@@ -239,5 +241,5 @@ function shimDepsPlugin(deps: Record<string, ShimOptions[]>): Plugin {
+       handler(code, id) {
+         const file = Object.keys(deps).find((file) =>
+-          id.replace(/\\/g, "/").endsWith(file),
++          id.replace(/\\/g, "/").endsWith(file)
+         );
+         if (!file) return;
+@@ -332,6 +334,6 @@ function buildTimeImportMetaUrlPlugin(): Plugin {
+         for (const { t, ss, se } of imports) {
+           if (
+-            t === ImportType.ImportMeta &&
+-            code.slice(se, se + 4) === ".url"
+... 31 more lines
+
+--- reference/packages/vite/rolldown.dts.config.ts
++++ formatter/packages/vite/rolldown.dts.config.ts
+@@ -1,7 +1,6 @@
+-import { builtinModules } from "node:module";
+ import { parse as parseWithBabel } from "@babel/parser";
+ import { walk } from "estree-walker";
+ import MagicString from "magic-string";
+-import { defineConfig } from "rolldown";
++import { builtinModules } from "node:module";
+ import type {
+   OutputChunk,
+@@ -10,4 +9,5 @@ import type {
+   RenderedChunk,
+ } from "rolldown";
++import { defineConfig } from "rolldown";
+ import { dts } from "rolldown-plugin-dts";
+ import { parseAst } from "rolldown/parseAst";
+@@ -146,8 +146,8 @@ function patchTypes(): Plugin {
+           const importBindings = getAllImportBindings(ast);
+           if (
+-            chunk.fileName.startsWith("module-runner") ||
++            chunk.fileName.startsWith("module-runner")
+             // index and moduleRunner have a common chunk
+-            chunk.fileName.startsWith("chunks/") ||
+-            chunk.fileName.startsWith("types.d-")
++            || chunk.fileName.startsWith("chunks/")
++            || chunk.fileName.startsWith("types.d-")
+           ) {
+             validateRunnerChunk.call(this, chunk, importBindings);
+@@ -171,5 +171,5 @@ function stringifyModuleExportName(node: ModuleExportName): string {
+ }
+ 
+-type ImportBindings = { id: string; bindings: string[]; locals: string[] };
++type ImportBindings = { id: string; bindings: string[]; locals: string[]; };
+ 
+ function getImportBindings(
+@@ -183,6 +183,6 @@ function getImportBindings(
+           ? "default"
+           : s.type === "ImportNamespaceSpecifier"
+-            ? "*"
+-            : stringifyModuleExportName(s.imported),
++          ? "*"
++          : stringifyModuleExportName(s.imported)
+       ),
+       locals: node.specifiers.map((s) => s.local.name),
+@@ -217,13 +217,15 @@ function validateRunnerChunk(
+   for (const { id, bindings } of importBindings) {
+     if (
+-      !id.startsWith("./") &&
+-      !id.startsWith("../") &&
+-      !id.startsWith("#") &&
++      !id.startsWith("./")
++      && !id.startsWith("../")
++      && !id.startsWith("#")
+       // index and moduleRunner have a common chunk
+-      !id.startsWith("chunks/") &&
+-      !id.startsWith("types.d")
++      && !id.startsWith("chunks/")
++      && !id.startsWith("types.d")
+     ) {
+... 58 more lines
+
+--- reference/packages/vite/rollupLicensePlugin.ts
++++ formatter/packages/vite/rollupLicensePlugin.ts
+@@ -2,6 +2,6 @@ import fs from "node:fs";
+ import colors from "picocolors";
+ import type { Plugin, PluginContext } from "rollup";
+-import license from "rollup-plugin-license";
+ import type { Dependency } from "rollup-plugin-license";
++import license from "rollup-plugin-license";
+ 
+ export default function licensePlugin(
+@@ -46,9 +46,9 @@ export default function licensePlugin(
+         // If all same dependencies have the same license and contributor names, show them only once
+         if (
+-          depInfos.length > 1 &&
+-          depInfos.every(
++          depInfos.length > 1
++          && depInfos.every(
+             (info) =>
+-              info.license === depInfos[0].license &&
+-              info.names === depInfos[0].names,
++              info.license === depInfos[0].license
++              && info.names === depInfos[0].names,
+           )
+         ) {
+@@ -62,6 +62,5 @@ export default function licensePlugin(
+           if (names) text += `By: ${names}\n`;
+           if (repositoryText) text += `Repositories: ${repositoryText}\n`;
+-        }
+-        // Else show each dependency separately
++        } // Else show each dependency separately
+         else {
+           for (let j = 0; j < depInfos.length; j++) {
+@@ -76,13 +75,12 @@ export default function licensePlugin(
+ 
+         if (licenseText) {
+-          text +=
+-            "\n" +
+-            licenseText
++          text += "\n"
++            + licenseText
+               .trim()
+               .replace(/\r\n|\r/g, "\n")
+               .split("\n")
+               .map((line) => `> ${line}`)
+-              .join("\n") +
+-            "\n";
++              .join("\n")
++            + "\n";
+         }
+ 
+@@ -94,15 +92,14 @@ export default function licensePlugin(
+       }
+ 
+-      const licenseText =
+-        `# ${licenseTitle}\n` +
+-        `${packageName} is released under the MIT license:\n\n` +
+-        coreLicense +
+-        `\n` +
+-        (additionalSection || "") +
+-        `# Licenses of bundled dependencies\n` +
+... 24 more lines
+
+--- reference/packages/vite/src/client/bundledDevClient.ts
++++ formatter/packages/vite/src/client/bundledDevClient.ts
+@@ -17,8 +17,8 @@ declare const __HMR_PARTIAL_ACCEPT__: boolean;
+ export {
+   createHotContext,
++  ErrorOverlay,
+   injectQuery,
+   removeStyle,
+   updateStyle,
+-  ErrorOverlay,
+ } from "./client";
+ 
+@@ -46,6 +46,6 @@ if (typeof DevRuntime !== "undefined") {
+   });
+ 
+-  const runtime = ((globalThis as any).__rolldown_runtime__ ??=
+-    new ViteDevRuntime(clientId));
++  const runtime =
++    ((globalThis as any).__rolldown_runtime__ ??= new ViteDevRuntime(clientId));
+ 
+   const bundledDevHmrClient = new BundledDevHMRClient(
+
+
+--- reference/packages/vite/src/client/bundledDevHmrClient.ts
++++ formatter/packages/vite/src/client/bundledDevHmrClient.ts
+@@ -9,5 +9,5 @@ import type { NormalizedModuleRunnerTransport } from "../shared/moduleRunnerTran
+ /** the subset of `__rolldown_runtime__` the HMR client uses */
+ export interface RolldownRuntimeLike {
+-  staticImports: Map<string, { edges: string[] }>;
++  staticImports: Map<string, { edges: string[]; }>;
+   getImporters(id: string): string[];
+   getImportedBindings(importer: string, id: string): string[] | undefined;
+@@ -27,10 +27,10 @@ interface PropagationBoundary {
+ 
+ type HmrUpdate =
+-  | { type: "full-reload"; reason: string }
++  | { type: "full-reload"; reason: string; }
+   | {
+-      type: "update";
+-      boundaries: PropagationBoundary[];
+-      updateSet: string[];
+-    };
++    type: "update";
++    boundaries: PropagationBoundary[];
++    updateSet: string[];
++  };
+ 
+ export interface BundledDevHMRClientOptions {
+@@ -102,5 +102,5 @@ export class BundledDevHMRClient extends HMRClient {
+   computeHmrUpdate(
+     changedIds: string[],
+-    opts?: { firstInvalidatedBy?: string },
++    opts?: { firstInvalidatedBy?: string; },
+   ): HmrUpdate {
+     const boundaries: PropagationBoundary[] = [];
+@@ -138,12 +138,12 @@ export class BundledDevHMRClient extends HMRClient {
+       return {
+         type: "full-reload",
+-        reason: `update propagated back to ${firstInvalidatedBy}, which already called \`import.meta.hot.invalidate()\``,
++        reason:
++          `update propagated back to ${firstInvalidatedBy}, which already called \`import.meta.hot.invalidate()\``,
+       };
+     }
+     const acceptedExports = this.getAcceptedExports(id);
+-    const selfAccepted =
+-      this.isSelfAccepted(id) ||
+-      (acceptedExports !== undefined &&
+-        this.acceptsAllExports(id, acceptedExports));
++    const selfAccepted = this.isSelfAccepted(id)
++      || (acceptedExports !== undefined
++        && this.acceptsAllExports(id, acceptedExports));
+     if (selfAccepted || acceptedExports) {
+       boundaries.push({
+@@ -174,6 +174,6 @@ export class BundledDevHMRClient extends HMRClient {
+       }
+       if (
+-        acceptedExports &&
+-        this.importsOnlyAccepted(parent, id, acceptedExports)
++        acceptedExports
++        && this.importsOnlyAccepted(parent, id, acceptedExports)
+       ) {
+         continue;
+@@ -323,6 +323,7 @@ export class BundledDevHMRClient extends HMRClient {
+... 85 more lines
+
+--- reference/packages/vite/src/client/client.ts
++++ formatter/packages/vite/src/client/client.ts
+@@ -10,5 +10,5 @@ import {
+ import { moduleUrlToBrowserUrl } from "../shared/utils";
+ import type { BundledDevHMRClient } from "./bundledDevHmrClient";
+-import { ErrorOverlay, cspNonce, overlayId } from "./overlay";
++import { cspNonce, ErrorOverlay, overlayId } from "./overlay";
+ // @ts-expect-error internal virtual module
+ import "@vite/env";
+@@ -33,6 +33,6 @@ const importMetaUrl = new URL(import.meta.url);
+ // use server configuration, then fallback to inference
+ const serverHost = __SERVER_HOST__;
+-const socketProtocol =
+-  __HMR_PROTOCOL__ || (importMetaUrl.protocol === "https:" ? "wss" : "ws");
++const socketProtocol = __HMR_PROTOCOL__
++  || (importMetaUrl.protocol === "https:" ? "wss" : "ws");
+ const hmrPort = __HMR_PORT__;
+ const socketHost = `${__HMR_HOSTNAME__ || importMetaUrl.hostname}:${
+@@ -78,17 +78,16 @@ export const transport = normalizeModuleRunnerTransport(
+             } catch (e) {
+               if (
+-                e instanceof Error &&
+-                e.message.includes("WebSocket closed without opened.")
++                e instanceof Error
++                && e.message.includes("WebSocket closed without opened.")
+               ) {
+                 const currentScriptHostURL = new URL(import.meta.url);
+-                const currentScriptHost =
+-                  currentScriptHostURL.host +
+-                  currentScriptHostURL.pathname.replace(/@vite\/client$/, "");
++                const currentScriptHost = currentScriptHostURL.host
++                  + currentScriptHostURL.pathname.replace(/@vite\/client$/, "");
+                 console.error(
+-                  "[vite] failed to connect to websocket.\n" +
+-                    "your current setup:\n" +
+-                    `  (browser) ${currentScriptHost} <--[HTTP]--> ${serverHost} (server)\n` +
+-                    `  (browser) ${socketHost} <--[WebSocket (failing)]--> ${directSocketHost} (server)\n` +
+-                    "Check out your Vite / network configuration and https://vite.dev/config/server-options.html#server-hmr .",
++                  "[vite] failed to connect to websocket.\n"
++                    + "your current setup:\n"
++                    + `  (browser) ${currentScriptHost} <--[HTTP]--> ${serverHost} (server)\n`
++                    + `  (browser) ${socketHost} <--[WebSocket (failing)]--> ${directSocketHost} (server)\n`
++                    + "Check out your Vite / network configuration and https://vite.dev/config/server-options.html#server-hmr .",
+                 );
+               }
+@@ -154,7 +153,7 @@ const hmrClient = new HMRClient(
+   }) {
+     const [acceptedPathWithoutQuery, query] = acceptedPath.split(`?`);
+-    const moduleUrl = `${acceptedPathWithoutQuery}?${explicitImportRequired ? "import&" : ""}t=${timestamp}${
+-      query ? `&${query}` : ""
+-    }`;
++    const moduleUrl = `${acceptedPathWithoutQuery}?${
++      explicitImportRequired ? "import&" : ""
++    }t=${timestamp}${query ? `&${query}` : ""}`;
+     const browserUrl = moduleUrlToBrowserUrl(moduleUrl, base);
+     const importPromise = import(/* @vite-ignore */ browserUrl);
+@@ -162,6 +161,6 @@ const hmrClient = new HMRClient(
+       importPromise.catch(() => {
+         console.info(
+-          `[hmr] ${acceptedPath} failed to apply HMR as it's within a circular import. Reloading page to reset the execution order. ` +
+... 57 more lines
+
+--- reference/packages/vite/src/client/clientEntry.ts
++++ formatter/packages/vite/src/client/clientEntry.ts
+@@ -5,7 +5,7 @@
+ export {
+   createHotContext,
++  ErrorOverlay,
+   injectQuery,
+   removeStyle,
+   updateStyle,
+-  ErrorOverlay,
+ } from "./client";
+
+
+--- reference/packages/vite/src/client/overlay.ts
++++ formatter/packages/vite/src/client/overlay.ts
+@@ -8,8 +8,7 @@ const hmrConfigName = __HMR_CONFIG_NAME__;
+ const base = __BASE__ || "/";
+ 
+-export const cspNonce =
+-  "document" in globalThis
+-    ? document.querySelector<HTMLMetaElement>("meta[property=csp-nonce]")?.nonce
+-    : undefined;
++export const cspNonce = "document" in globalThis
++  ? document.querySelector<HTMLMetaElement>("meta[property=csp-nonce]")?.nonce
++  : undefined;
+ 
+ // Create an element with provided attributes and optional children
+
+
+--- reference/packages/vite/src/module-runner/createImportMeta.ts
++++ formatter/packages/vite/src/module-runner/createImportMeta.ts
+@@ -7,5 +7,7 @@ const envProxy = new Proxy({} as any, {
+   get(_, p) {
+     throw new Error(
+-      `[module runner] Dynamic access of "import.meta.env" is not supported. Please, use "import.meta.env.${String(p)}" instead.`,
++      `[module runner] Dynamic access of "import.meta.env" is not supported. Please, use "import.meta.env.${
++        String(p)
++      }" instead.`,
+     );
+   },
+@@ -25,5 +27,5 @@ export function createDefaultImportMeta(
+     resolve(_id: string, _parent?: string) {
+       throw new Error(
+-        '[module runner] "import.meta.resolve" is not supported.',
++        "[module runner] \"import.meta.resolve\" is not supported.",
+       );
+     },
+@@ -31,6 +33,6 @@ export function createDefaultImportMeta(
+     glob() {
+       throw new Error(
+-        `[module runner] "import.meta.glob" is statically replaced during ` +
+-          `file transformation. Make sure to reference it by the full name.`,
++        `[module runner] "import.meta.glob" is statically replaced during `
++          + `file transformation. Make sure to reference it by the full name.`,
+       );
+     },
+
+
+--- reference/packages/vite/src/module-runner/esmEvaluator.ts
++++ formatter/packages/vite/src/module-runner/esmEvaluator.ts
+@@ -32,5 +32,5 @@ export class ESModulesEvaluator implements ModuleEvaluator {
+       // source map should already be inlined by Vite.
+       // Place "use strict" on its own line to avoid shifting the column numbers
+-      '"use strict";\n' + code,
++      "\"use strict\";\n" + code,
+     );
+ 
+
+
+--- reference/packages/vite/src/module-runner/evaluatedModules.ts
++++ formatter/packages/vite/src/module-runner/evaluatedModules.ts
+@@ -5,5 +5,6 @@ import type { ResolvedResult } from "./types";
+ import { decodeBase64 } from "./utils";
+ 
+-const MODULE_RUNNER_SOURCEMAPPING_PREFIX = `//# ${SOURCEMAPPING_URL}=data:application/json;base64,`;
++const MODULE_RUNNER_SOURCEMAPPING_PREFIX =
++  `//# ${SOURCEMAPPING_URL}=data:application/json;base64,`;
+ 
+ export class EvaluatedModuleNode {
+
+
+--- reference/packages/vite/src/module-runner/hmrHandler.ts
++++ formatter/packages/vite/src/module-runner/hmrHandler.ts
+@@ -36,7 +36,7 @@ export function createHMRHandlerForRunner(
+         const clearEntrypointUrls = triggeredBy
+           ? getModulesEntrypoints(
+-              runner,
+-              getModulesByFile(runner, slash(triggeredBy)),
+-            )
++            runner,
++            getModulesByFile(runner, slash(triggeredBy)),
++          )
+           : findAllEntrypoints(runner);
+ 
+
+
+--- reference/packages/vite/src/module-runner/importMetaResolver.ts
++++ formatter/packages/vite/src/module-runner/importMetaResolver.ts
+@@ -11,5 +11,7 @@ const customizationHooksModule = /* js */ `
+ export async function resolve(specifier, context, nextResolve) {
+   if (specifier.startsWith(${JSON.stringify(customizationHookNamespace)})) {
+-    const data = specifier.slice(${JSON.stringify(customizationHookNamespace)}.length)
++    const data = specifier.slice(${
++      JSON.stringify(customizationHookNamespace)
++    }.length)
+     const [parsedSpecifier, parsedImporter] = JSON.parse(data)
+     specifier = parsedSpecifier
+@@ -49,8 +51,7 @@ export function createImportMetaResolver(): ImportMetaResolver | undefined {
+   let module: typeof import("node:module") | undefined;
+   try {
+-    module =
+-      typeof process !== "undefined"
+-        ? process.getBuiltinModule("node:module").Module
+-        : undefined;
++    module = typeof process !== "undefined"
++      ? process.getBuiltinModule("node:module").Module
++      : undefined;
+   } catch {
+     return;
+@@ -76,5 +77,7 @@ export function createImportMetaResolver(): ImportMetaResolver | undefined {
+ 
+   try {
+-    const hookModuleContent = `data:text/javascript,${encodeURI(customizationHooksModule)}`;
++    const hookModuleContent = `data:text/javascript,${
++      encodeURI(customizationHooksModule)
++    }`;
+     // eslint-disable-next-line n/no-unsupported-features/node-builtins -- we checked the existence
+     module.register(hookModuleContent);
+

@@ -1,0 +1,797 @@
+# 95 of 2433 files differ from prettier@3.10.1
+docs/src/app/shared/carousel/carousel.spec.ts
+docs/src/app/shared/doc-viewer/doc-viewer.ts
+src/aria/accordion/accordion.spec.ts
+src/aria/combobox/combobox.spec.ts
+src/aria/combobox/combobox.zone.spec.ts
+src/aria/combobox/testing/combobox-harness.spec.ts
+src/aria/grid/grid.spec.ts
+src/aria/grid/testing/grid-harness-filters.ts
+src/aria/listbox/listbox.spec.ts
+src/aria/menu/menu.spec.ts
+src/aria/private/utils/collection.spec.ts
+src/aria/tabs/tabs.spec.ts
+src/aria/toolbar/toolbar.spec.ts
+src/aria/tree/testing/tree-harness.spec.ts
+src/aria/tree/tree.spec.ts
+src/cdk/a11y/focus-trap/focus-trap.spec.ts
+src/cdk/drag-drop/directives/drop-list-shared.spec.ts
+src/cdk/drag-drop/directives/mixed-drop-list.spec.ts
+src/cdk/drag-drop/directives/standalone-drag.spec.ts
+src/cdk/listbox/listbox.spec.ts
+src/cdk/menu/menu-trigger.spec.ts
+src/cdk/menu/pointer-focus-tracker.spec.ts
+src/cdk/portal/portal.spec.ts
+src/cdk/scrolling/virtual-scroll-viewport.spec.ts
+src/cdk/table/table.spec.ts
+src/cdk/table/table.ts
+src/cdk/testing/tests/test-sub-component.ts
+src/cdk/tree/tree-with-tree-control.spec.ts
+src/cdk/tree/tree.spec.ts
+src/cdk-experimental/popover-edit/popover-edit.spec.ts
+src/cdk-experimental/selection/selection-column.ts
+src/cdk-experimental/selection/selection.spec.ts
+src/cdk-experimental/table-scroll-container/table-scroll-container.spec.ts
+src/components-examples/aria/toolbar/simple-toolbar.ts
+src/dev-app/autocomplete/autocomplete-demo.ts
+src/dev-app/bottom-sheet/bottom-sheet-demo.ts
+src/dev-app/dialog/dialog-demo.ts
+src/dev-app/example/example-list.ts
+src/dev-app/example/example.ts
+src/dev-app/theme/theme-demo.ts
+src/e2e-app/components/component-harness-e2e.ts
+src/google-maps/deprecated-map-marker-clusterer/deprecated-map-marker-clusterer.spec.ts
+src/google-maps/map-marker-clusterer/map-marker-clusterer.spec.ts
+src/material/autocomplete/autocomplete.spec.ts
+src/material/autocomplete/autocomplete.zone.spec.ts
+src/material/autocomplete/testing/autocomplete-harness.spec.ts
+src/material/button-toggle/button-toggle.spec.ts
+src/material/chips/chip-grid.spec.ts
+src/material/chips/chip-listbox.spec.ts
+src/material/chips/chip-option.spec.ts
+src/material/chips/chip-row.spec.ts
+src/material/chips/chip-set.spec.ts
+src/material/chips/chip.spec.ts
+src/material/chips/testing/chip-listbox-harness.spec.ts
+src/material/core/ripple/ripple.spec.ts
+src/material/datepicker/calendar-header.spec.ts
+src/material/datepicker/calendar.spec.ts
+src/material/datepicker/datepicker-actions.spec.ts
+src/material/datepicker/multi-year-view.spec.ts
+src/material/datepicker/year-view.spec.ts
+src/material/dialog/dialog.spec.ts
+src/material/dialog/dialog.zone.spec.ts
+src/material/expansion/accordion.spec.ts
+src/material/expansion/expansion.spec.ts
+src/material/grid-list/grid-list.spec.ts
+src/material/grid-list/testing/grid-list-harness.spec.ts
+src/material/icon/icon.spec.ts
+src/material/input/input.spec.ts
+src/material/list/list.spec.ts
+src/material/list/selection-list.spec.ts
+src/material/menu/context-menu-trigger.spec.ts
+src/material/menu/menu.spec.ts
+src/material/radio/radio.spec.ts
+src/material/radio/testing/radio-harness.spec.ts
+src/material/select/select.spec.ts
+src/material/select/testing/select-harness.spec.ts
+src/material/sidenav/drawer.spec.ts
+src/material/sidenav/sidenav.spec.ts
+src/material/snack-bar/snack-bar.spec.ts
+src/material/snack-bar/snack-bar.zone.spec.ts
+src/material/sort/testing/sort-harness.spec.ts
+src/material/stepper/stepper.spec.ts
+src/material/table/table.ts
+src/material/tabs/tab-group.spec.ts
+src/material/tabs/tab-header.spec.ts
+src/material/tabs/tab-nav-bar/tab-nav-bar.spec.ts
+src/material/toolbar/toolbar.spec.ts
+src/material/tooltip/tooltip.spec.ts
+src/material/tooltip/tooltip.zone.spec.ts
+src/material/tree/tree-using-legacy-key-manager.spec.ts
+src/material/tree/tree-using-tree-control.spec.ts
+src/material/tree/tree.spec.ts
+src/material-experimental/selection/selection-column.ts
+src/youtube-player/youtube-player.spec.ts
+src/youtube-player/youtube-player.ts
+
+# The first 25, reference first
+
+--- reference/docs/src/app/shared/carousel/carousel.spec.ts
++++ formatter/docs/src/app/shared/carousel/carousel.spec.ts
+@@ -59,7 +59,5 @@ describe("HorizontalCarousel", () => {
+   selector: "test-carousel",
+   template: ` <app-carousel>
+-    @for (i of items; track i) {
+-      <div carousel-item class="docs-carousel-item-container"></div>
+-    }
++
+   </app-carousel>`,
+   styles: [
+
+
+--- reference/docs/src/app/shared/doc-viewer/doc-viewer.ts
++++ formatter/docs/src/app/shared/doc-viewer/doc-viewer.ts
+@@ -65,9 +65,4 @@ class DocFetcher {
+   selector: "doc-viewer",
+   template: `
+-    @if (portal) {
+-      <ng-template [cdkPortalOutlet]="portal" />
+-    } @else {
+-      Loading document...
+-    }
+   `,
+   imports: [CdkPortalOutlet],
+
+
+--- reference/src/aria/accordion/accordion.spec.ts
++++ formatter/src/aria/accordion/accordion.spec.ts
+@@ -664,23 +664,5 @@ describe("AccordionGroup", () => {
+       [wrap]="wrap()"
+     >
+-      @for (item of items(); track item.panelId) {
+-        <div>
+-          <button
+-            ngAccordionTrigger
+-            [panel]="panel"
+-            [disabled]="item.disabled()"
+-            [(expanded)]="item.expanded"
+-          >
+-            {{ item.header }}
+-          </button>
+-          <div ngAccordionPanel #panel="ngAccordionPanel">
+-            <ng-template ngAccordionContent>
+-              {{ item.content }}
+-              <button type="button">Action</button>
+-              <input aria-label="Test input" />
+-            </ng-template>
+-          </div>
+-        </div>
+-      }
++
+     </div>
+   `,
+@@ -734,28 +716,7 @@ class AccordionGroupWithLoop {
+   template: `
+     <div ngAccordionGroup [wrap]="true">
+-      @if (includeFirst()) {
+-        <div>
+-          <button ngAccordionTrigger [panel]="panel1">Item 1 Header</button>
+-          <div ngAccordionPanel #panel1="ngAccordionPanel">
+-            <ng-template ngAccordionContent> Item 1 Content </ng-template>
+-          </div>
+-        </div>
+-      }
+-      @if (includeSecond()) {
+-        <div>
+-          <button ngAccordionTrigger [panel]="panel2">Item 2 Header</button>
+-          <div ngAccordionPanel #panel2="ngAccordionPanel">
+-            <ng-template ngAccordionContent> Item 2 Content </ng-template>
+-          </div>
+-        </div>
+-      }
+-      @if (includeThird()) {
+-        <div>
+-          <button ngAccordionTrigger [panel]="panel3">Item 3 Header</button>
+-          <div ngAccordionPanel #panel3="ngAccordionPanel">
+-            <ng-template ngAccordionContent> Item 3 Content </ng-template>
+-          </div>
+-        </div>
+-      }
++
++
++
+     </div>
+   `,
+
+
+--- reference/src/aria/combobox/combobox.spec.ts
++++ formatter/src/aria/combobox/combobox.spec.ts
+@@ -1634,9 +1634,5 @@ describe("Combobox", () => {
+           [activeDescendant]="listbox.activeDescendant()"
+         >
+-          @for (option of options(); track option) {
+-            <div ngOption [value]="option" [label]="option">
+-              <span>{{ option }}</span>
+-            </div>
+-          }
++
+         </div>
+       </ng-template>
+@@ -1753,5 +1749,5 @@ function getTreeNodes(): TreeNode[] {
+           <ng-template
+             [ngTemplateOutlet]="treeNodes"
+-            [ngTemplateOutletContext]="{ nodes: nodes(), parent: tree }"
++            [ngTemplateOutletContext]="{nodes: nodes(), parent: tree}"
+           />
+         </ul>
+@@ -1760,34 +1756,5 @@ function getTreeNodes(): TreeNode[] {
+ 
+     <ng-template #treeNodes let-nodes="nodes" let-parent="parent">
+-      @for (node of nodes; track node.name) {
+-        <li
+-          ngTreeItem
+-          [parent]="parent"
+-          [value]="node.name"
+-          [label]="node.name"
+-          [(expanded)]="node.expanded"
+-          #treeItem="ngTreeItem"
+-        >
+-          {{ node.name }}
+-        </li>
+-
+-        @if (node.children) {
+-          <ul role="group">
+-            <ng-template
+-              ngTreeItemGroup
+-              [ownedBy]="treeItem"
+-              #group="ngTreeItemGroup"
+-            >
+-              <ng-template
+-                [ngTemplateOutlet]="treeNodes"
+-                [ngTemplateOutletContext]="{
+-                  nodes: node.children,
+-                  parent: group,
+-                }"
+-              />
+-            </ng-template>
+-          </ul>
+-        }
+-      }
++
+     </ng-template>
+   `,
+@@ -1967,37 +1934,5 @@ const states = [
+           [activeDescendant]="grid.activeDescendant()"
+         >
+-          @for (item of filteredItems(); track item; let i = $index) {
+... 76 more lines
+
+--- reference/src/aria/combobox/combobox.zone.spec.ts
++++ formatter/src/aria/combobox/combobox.zone.spec.ts
+@@ -102,7 +102,5 @@ describe("Combobox Zone.js integration", () => {
+           selectionMode="explicit"
+         >
+-          @for (option of options(); track option) {
+-            <li ngOption [value]="option">{{ option }}</li>
+-          }
++
+         </ul>
+       </ng-template>
+
+
+--- reference/src/aria/combobox/testing/combobox-harness.spec.ts
++++ formatter/src/aria/combobox/testing/combobox-harness.spec.ts
+@@ -209,5 +209,5 @@ class ComboboxOverlayTestApp {
+ 
+     <ng-template
+-      [cdkConnectedOverlay]="{ origin, usePopover: 'inline' }"
++      [cdkConnectedOverlay]="{origin, usePopover: 'inline'}"
+       [cdkConnectedOverlayOpen]="popupExpanded()"
+     >
+
+
+--- reference/src/aria/grid/grid.spec.ts
++++ formatter/src/aria/grid/grid.spec.ts
+@@ -1294,60 +1294,5 @@ describe("Grid directives", () => {
+       [tabindex]="tabIndex()"
+     >
+-      @for (row of gridData(); track row; let rIndex = $index) {
+-        <tr ngGridRow [rowIndex]="row.rowIndex">
+-          @for (cell of row.cells; track cell; let cIndex = $index) {
+-            <td
+-              ngGridCell
+-              [id]="cell.id"
+-              [disabled]="cell.disabled ?? false"
+-              [role]="cell.role ?? 'gridcell'"
+-              [rowIndex]="cell.rowIndex"
+-              [colIndex]="cell.colIndex"
+-              [rowSpan]="cell.rowSpan ?? 1"
+-              [colSpan]="cell.colSpan ?? 1"
+-              [selectable]="cell.selectable ?? true"
+-            >
+-              Cell {{ rIndex }}-{{ cIndex }}
+-              @for (
+-                widget of cell.widgets || [];
+-                track $index;
+-                let wIndex = $index
+-              ) {
+-                @if (widget.hasTarget) {
+-                  <button
+-                    ngGridCellWidget
+-                    [id]="
+-                      widget.id ?? 'w' + rIndex + '-' + cIndex + '-' + wIndex
+-                    "
+-                    [widgetType]="widget.type ?? 'simple'"
+-                    [disabled]="widget.disabled ?? false"
+-                    [tabindex]="widget.tabindex"
+-                    [focusTarget]="targetInput"
+-                    (activated)="onActivated($event)"
+-                    (deactivated)="onDeactivated($event)"
+-                  >
+-                    Widget
+-                  </button>
+-                  <input #targetInput id="target-{{ widget.id }}" type="text" />
+-                } @else {
+-                  <button
+-                    ngGridCellWidget
+-                    [id]="
+-                      widget.id ?? 'w' + rIndex + '-' + cIndex + '-' + wIndex
+-                    "
+-                    [widgetType]="widget.type ?? 'simple'"
+-                    [disabled]="widget.disabled ?? false"
+-                    [tabindex]="widget.tabindex"
+-                    (activated)="onActivated($event)"
+-                    (deactivated)="onDeactivated($event)"
+-                  >
+-                    Widget
+-                  </button>
+-                }
+-              }
+-            </td>
+-          }
+-        </tr>
+... 5 more lines
+
+--- reference/src/aria/grid/testing/grid-harness-filters.ts
++++ formatter/src/aria/grid/testing/grid-harness-filters.ts
+@@ -20,7 +20,6 @@ export interface GridCellHarnessFilters extends BaseHarnessFilters {
+ 
+ /** Filters for locating a `GridRowHarness`. */
+-export interface GridRowHarnessFilters extends BaseHarnessFilters {
+-  // Add filters if needed, e.g., rowIndex
+-}
++export interface GridRowHarnessFilters extends BaseHarnessFilters {}
++// Add filters if needed, e.g., rowIndex
+ 
+ /** Filters for locating a `GridHarness`. */
+
+
+--- reference/src/aria/listbox/listbox.spec.ts
++++ formatter/src/aria/listbox/listbox.spec.ts
+@@ -1216,14 +1216,5 @@ interface TestOption {
+       [tabIndex]="tabIndex"
+     >
+-      @for (option of options(); track option.value) {
+-        <li
+-          ngOption
+-          [value]="option.value"
+-          [disabled]="option.disabled"
+-          [label]="option.label"
+-        >
+-          {{ option.label }}
+-        </li>
+-      }
++
+     </ul>
+   `,
+
+
+--- reference/src/aria/menu/menu.spec.ts
++++ formatter/src/aria/menu/menu.spec.ts
+@@ -1588,7 +1588,5 @@ class MenuBarExample {}
+   template: `
+     <div ngMenu>
+-      @for (item of items(); track item) {
+-        <div ngMenuItem [value]="item.value">{{ item.value }}</div>
+-      }
++
+     </div>
+   `,
+@@ -1607,7 +1605,5 @@ class ShuffledMenuExample {
+   template: `
+     <div ngMenuBar>
+-      @for (item of items(); track item) {
+-        <div ngMenuItem [value]="item.value">{{ item.value }}</div>
+-      }
++
+     </div>
+   `,
+
+
+--- reference/src/aria/private/utils/collection.spec.ts
++++ formatter/src/aria/private/utils/collection.spec.ts
+@@ -132,7 +132,5 @@ class TestItemComponent implements HasElement, OnDestroy {
+   template: `
+     <testCollection>
+-      @for (item of items(); track item) {
+-        <testItem [value]="item" />
+-      }
++
+     </testCollection>
+   `,
+
+
+--- reference/src/aria/tabs/tabs.spec.ts
++++ formatter/src/aria/tabs/tabs.spec.ts
+@@ -1000,16 +1000,8 @@ describe("Tabs", () => {
+         [selectionMode]="selectionMode()"
+       >
+-        @for (tabDef of tabsData(); track tabDef.value) {
+-          <li ngTab [value]="tabDef.value" [disabled]="!!tabDef.disabled">
+-            {{ tabDef.label }}
+-          </li>
+-        }
++
+       </ul>
+ 
+-      @for (tabDef of tabsData(); track tabDef.value) {
+-        <div ngTabPanel [value]="tabDef.value">
+-          <ng-template ngTabContent>{{ tabDef.content }}</ng-template>
+-        </div>
+-      }
++
+     </div>
+   `,
+
+
+--- reference/src/aria/toolbar/toolbar.spec.ts
++++ formatter/src/aria/toolbar/toolbar.spec.ts
+@@ -869,7 +869,5 @@ class WrappedToolbarExample {}
+   template: `
+     <div ngToolbar>
+-      @for (item of items(); track item) {
+-        <button ngToolbarWidget>{{ item.value }}</button>
+-      }
++
+     </div>
+   `,
+
+
+--- reference/src/aria/tree/testing/tree-harness.spec.ts
++++ formatter/src/aria/tree/testing/tree-harness.spec.ts
+@@ -153,39 +153,10 @@ interface TreeNode {
+       <ng-template
+         [ngTemplateOutlet]="treeNodes"
+-        [ngTemplateOutletContext]="{ nodes: nodes, parent: tree }"
++        [ngTemplateOutletContext]="{nodes: nodes, parent: tree}"
+       />
+     </ul>
+ 
+     <ng-template #treeNodes let-nodes="nodes" let-parent="parent">
+-      @for (node of nodes; track node.value) {
+-        <li
+-          ngTreeItem
+-          [parent]="parent"
+-          [value]="node.value"
+-          [label]="node.name"
+-          [disabled]="node.disabled"
+-          #treeItem="ngTreeItem"
+-        >
+-          {{ node.name }}
+-        </li>
+ 
+-        @if (node.children) {
+-          <ul role="group">
+-            <ng-template
+-              ngTreeItemGroup
+-              [ownedBy]="treeItem"
+-              #group="ngTreeItemGroup"
+-            >
+-              <ng-template
+-                [ngTemplateOutlet]="treeNodes"
+-                [ngTemplateOutletContext]="{
+-                  nodes: node.children,
+-                  parent: group,
+-                }"
+-              />
+-            </ng-template>
+-          </ul>
+-        }
+-      }
+     </ng-template>
+   `,
+
+
+--- reference/src/aria/tree/tree.spec.ts
++++ formatter/src/aria/tree/tree.spec.ts
+@@ -1985,10 +1985,5 @@ interface TestTreeNode<V = string> {
+       #tree="ngTree"
+     >
+-      @for (node of nodes(); track node.value) {
+-        <ng-template
+-          [ngTemplateOutlet]="nodeTemplate"
+-          [ngTemplateOutletContext]="{ node: node, parent: tree }"
+-        />
+-      }
++
+     </ul>
+ 
+@@ -2006,20 +2001,5 @@ interface TestTreeNode<V = string> {
+       >
+         {{ node.label }}
+-        @if (node.children !== undefined && node.children!.length > 0) {
+-          <ul role="group">
+-            <ng-template
+-              ngTreeItemGroup
+-              [ownedBy]="treeItem"
+-              #group="ngTreeItemGroup"
+-            >
+-              @for (node of node.children; track node.value) {
+-                <ng-template
+-                  [ngTemplateOutlet]="nodeTemplate"
+-                  [ngTemplateOutletContext]="{ node: node, parent: group }"
+-                />
+-              }
+-            </ng-template>
+-          </ul>
+-        }
++
+       </li>
+     </ng-template>
+
+
+--- reference/src/cdk/a11y/focus-trap/focus-trap.spec.ts
++++ formatter/src/cdk/a11y/focus-trap/focus-trap.spec.ts
+@@ -458,12 +458,5 @@ class FocusTrapWithAutoCaptureInShadowDom extends FocusTrapWithAutoCapture {}
+ 
+ @Component({
+-  template: `
+-    @if (renderFocusTrap) {
+-      <div [cdkTrapFocus]="_isFocusTrapEnabled">
+-        <input />
+-        <button>SAVE</button>
+-      </div>
+-    }
+-  `,
++  template: ` `,
+   imports: [A11yModule, PortalModule],
+   changeDetection: ChangeDetectionStrategy.Eager,
+
+
+--- reference/src/cdk/drag-drop/directives/drop-list-shared.spec.ts
++++ formatter/src/cdk/drag-drop/directives/drop-list-shared.spec.ts
+@@ -5988,12 +5988,5 @@ export function getHorizontalFixtures(
+     template: `
+       <div class="list" cdkDropList [cdkDropListOrientation]="_listOrientation">
+-        @for (item of items; track item) {
+-          <div class="item" cdkDrag>
+-            {{ item }}
+-            <ng-template cdkDragPreview [matchSize]="true">
+-              <div class="item">{{ item }}</div>
+-            </ng-template>
+-          </div>
+-        }
++
+       </div>
+     `,
+@@ -6190,18 +6183,5 @@ class DraggableInScrollableParentContainer
+       (cdkDropListDropped)="droppedSpy($event)"
+     >
+-      @if (true) {
+-        @for (item of items; track item) {
+-          <div
+-            cdkDrag
+-            [cdkDragData]="item"
+-            [cdkDragBoundary]="boundarySelector"
+-            [style.height.px]="item.height"
+-            [style.margin-bottom.px]="item.margin"
+-            style="width: 100%; background: red;"
+-          >
+-            {{ item.value }}
+-          </div>
+-        }
+-      }
++
+     </div>
+   `,
+@@ -6220,27 +6200,5 @@ class DraggableInDropZoneWithContainer extends DraggableInDropZone {}
+       [cdkDropListLockAxis]="dropLockAxis()!"
+     >
+-      @for (item of items; track item) {
+-        <div
+-          cdkDrag
+-          [cdkDragConstrainPosition]="constrainPosition"
+-          [cdkDragBoundary]="boundarySelector"
+-          [cdkDragPreviewClass]="previewClass"
+-          [cdkDragLockAxis]="item.lockAxis"
+-          style="width: 100%; height: ${ITEM_HEIGHT}px; background: red;"
+-        >
+-          {{ item.label }}
+-
+-          <ng-container *ngIf="renderCustomPreview">
+-            <ng-template cdkDragPreview [matchSize]="matchPreviewSize">
+-              <div
+-                class="custom-preview"
+-                style="width: 50px; height: 50px; background: purple;"
+-              >
+-                Custom preview
+-              </div>
+-            </ng-template>
+-          </ng-container>
+... 321 more lines
+
+--- reference/src/cdk/drag-drop/directives/mixed-drop-list.spec.ts
++++ formatter/src/cdk/drag-drop/directives/mixed-drop-list.spec.ts
+@@ -127,7 +127,5 @@ function getSortedSiblings(item: Element) {
+       (cdkDropListDropped)="droppedSpy($event)"
+     >
+-      @for (item of items; track item) {
+-        <div cdkDrag>{{ item }}</div>
+-      }
++
+     </div>
+   `,
+
+
+--- reference/src/cdk/drag-drop/directives/standalone-drag.spec.ts
++++ formatter/src/cdk/drag-drop/directives/standalone-drag.spec.ts
+@@ -2109,11 +2109,5 @@ class StandaloneDraggableWithPreDisabledHandle {
+       style="width: 100px; height: 100px; background: red; position: relative"
+     >
+-      @if (showHandle) {
+-        <div
+-          #handleElement
+-          cdkDragHandle
+-          style="width: 10px; height: 10px; background: green;"
+-        ></div>
+-      }
++
+     </div>
+   `,
+
+
+--- reference/src/cdk/listbox/listbox.spec.ts
++++ formatter/src/cdk/listbox/listbox.spec.ts
+@@ -1091,14 +1091,5 @@ describe("CdkOption and CdkListbox", () => {
+       (cdkListboxValueChange)="onSelectionChange($event)"
+     >
+-      @if (appleRendered) {
+-        <div
+-          cdkOption="apple"
+-          [cdkOptionDisabled]="isAppleDisabled"
+-          [id]="appleId"
+-          [tabindex]="appleTabindex"
+-        >
+-          Apple
+-        </div>
+-      }
++
+       <div cdkOption="orange" [cdkOptionDisabled]="isOrangeDisabled">
+         Orange
+@@ -1166,7 +1157,5 @@ class ListboxWithFormControl {
+   template: `
+     <div cdkListbox [formControl]="formControl">
+-      @for (option of options; track option) {
+-        <div [cdkOption]="option">{{ option }}</div>
+-      }
++
+     </div>
+   `,
+@@ -1182,7 +1171,5 @@ class ListboxWithPreselectedFormControl {
+   template: `
+     <div cdkListbox [formControl]="formControl">
+-      @for (option of options; track option) {
+-        <div [cdkOption]="option">{{ option }}</div>
+-      }
++
+     </div>
+   `,
+@@ -1244,7 +1231,5 @@ class ListboxWithMultipleBoundValues {
+   template: `
+     <div cdkListbox [cdkListboxCompareWith]="fruitCompare">
+-      @for (fruit of fruits; track fruit) {
+-        <div [cdkOption]="fruit">{{ fruit.name }}</div>
+-      }
++
+     </div>
+   `,
+
+
+--- reference/src/cdk/menu/menu-trigger.spec.ts
++++ formatter/src/cdk/menu/menu-trigger.spec.ts
+@@ -710,9 +710,5 @@ class TriggerOpensItsMenu {
+ @Component({
+   template: `
+-    @if (useButtonTrigger) {
+-      <button cdkMenuItem [cdkMenuTriggerFor]="sub1">First</button>
+-    } @else {
+-      <div cdkMenuItem [cdkMenuTriggerFor]="sub1">First</div>
+-    }
++
+ 
+     <ng-template #sub1>
+
+
+--- reference/src/cdk/menu/pointer-focus-tracker.spec.ts
++++ formatter/src/cdk/menu/pointer-focus-tracker.spec.ts
+@@ -124,7 +124,5 @@ class MockWrapper implements FocusableElement {
+       <wrapper>First</wrapper>
+       <wrapper>Second</wrapper>
+-      @if (showThird) {
+-        <wrapper>Third</wrapper>
+-      }
++
+     </div>
+   `,
+
+
+--- reference/src/cdk/portal/portal.spec.ts
++++ formatter/src/cdk/portal/portal.spec.ts
+@@ -1038,7 +1038,5 @@ class ArbitraryViewContainerRefComponent {
+     <ng-template cdkPortal>
+       <ul>
+-        @for (fruitName of fruits; track fruitName) {
+-          <li>{{ fruitName }}</li>
+-        }
++
+       </ul>
+     </ng-template>
+
+
+--- reference/src/cdk/scrolling/virtual-scroll-viewport.spec.ts
++++ formatter/src/cdk/scrolling/virtual-scroll-viewport.spec.ts
+@@ -1531,9 +1531,5 @@ class VirtualScrollWithItemInjectingViewContainer {
+   template: `
+     <cdk-virtual-scroll-viewport [itemSize]="itemSize">
+-      @if (renderVirtualFor) {
+-        <div class="item" *cdkVirtualFor="let item of items; trackBy: trackBy">
+-          {{ item }}
+-        </div>
+-      }
++
+     </cdk-virtual-scroll-viewport>
+   `,
+
+
+--- reference/src/cdk/table/table.spec.ts
++++ formatter/src/cdk/table/table.spec.ts
+@@ -2981,19 +2981,5 @@ class StickyPositioningListenerTest implements StickyPositioningListener {
+   template: `
+     <cdk-table [dataSource]="dataSource" [dir]="dir">
+-      @for (column of columns; track column) {
+-        <ng-container
+-          [cdkColumnDef]="column"
+-          [sticky]="isStuck(stickyStartColumns, column)"
+-          [stickyEnd]="isStuck(stickyEndColumns, column)"
+-        >
+-          <cdk-header-cell *cdkHeaderCellDef>
+-            Header {{ column }}
+-          </cdk-header-cell>
+-          <cdk-cell *cdkCellDef>{{ column }}</cdk-cell>
+-          <cdk-footer-cell *cdkFooterCellDef>
+-            Footer {{ column }}
+-          </cdk-footer-cell>
+-        </ng-container>
+-      }
++
+ 
+       <cdk-header-row
+@@ -3075,15 +3061,5 @@ class StickyFlexLayoutCdkTableApp extends StickyPositioningListenerTest {
+   template: `
+     <table cdk-table [dataSource]="dataSource">
+-      @for (column of columns; track column) {
+-        <ng-container
+-          [cdkColumnDef]="column"
+-          [sticky]="isStuck(stickyStartColumns, column)"
+-          [stickyEnd]="isStuck(stickyEndColumns, column)"
+-        >
+-          <th cdk-header-cell *cdkHeaderCellDef>Header {{ column }}</th>
+-          <td cdk-cell *cdkCellDef="let row">{{ column }}</td>
+-          <td cdk-footer-cell *cdkFooterCellDef>Footer {{ column }}</td>
+-        </ng-container>
+-      }
++
+ 
+       <tr
+@@ -3160,10 +3136,5 @@ class StickyNativeLayoutCdkTableApp extends StickyPositioningListenerTest {
+   template: `
+     <cdk-table [dataSource]="dataSource">
+-      @for (column of dynamicColumns; track column) {
+-        <ng-container [cdkColumnDef]="column">
+-          <cdk-header-cell *cdkHeaderCellDef> {{ column }} </cdk-header-cell>
+-          <cdk-cell *cdkCellDef="let row"> {{ column }} </cdk-cell>
+-        </ng-container>
+-      }
++
+ 
+       <cdk-header-row *cdkHeaderRowDef="dynamicColumns"></cdk-header-row>
+@@ -3406,9 +3377,9 @@ class UndefinedColumnsCdkTableApp {
+           "
+           [class]="{
+-            'custom-cell-class-first': enableCellContextClasses && first,
+-            'custom-cell-class-last': enableCellContextClasses && last,
+-            'custom-cell-class-even': enableCellContextClasses && even,
+-            'custom-cell-class-odd': enableCellContextClasses && odd,
+-          }"
+... 35 more lines
