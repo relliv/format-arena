@@ -1,0 +1,28 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+
+# Runs against a local path stay on this machine until `pnpm arena publish`.
+results/private/
+results/.smoke/
+
+# Release-based tools: the unpacked binary (release.json pins its sha256), and
+# caches kept with a tool (dprint's compiled plugins).
+tools/*/bin/
+tools/*/.cache/
+
+# Playwright: screenshots and snapshots from browser checks of the site, reports and traces.
+.playwright-mcp/
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Temporary files.
+tmp/
+.tmp/
+*.tmp
+*.temp
+*.swp
+*~
