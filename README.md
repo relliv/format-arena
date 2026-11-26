@@ -36,9 +36,9 @@ pnpm arena families                      # families, languages and thread settin
 | prettier | `prettier` >= 3, the reference | all nine | everywhere Node runs |
 | bun | `bun` >= 1.4.4 (`bun fmt`) | all nine | macOS, Linux, Windows (x64, arm64) |
 | oxfmt | `oxfmt` | all nine | macOS, Linux, Windows (x64, arm64) |
-| biome | `@biomejs/biome` >= 2 (`biome format`) | all but Less; Angular templates as HTML | macOS, Linux, Windows (x64, arm64) |
-| dprint | `dprint`, with its plugins pinned as packages | all nine; Angular templates as HTML | macOS, Linux, Windows (x64, arm64) |
-| tidy | the `lukeed/tidy` GitHub release | all nine; Angular templates as HTML | macOS, Linux, Windows (x64, arm64) |
+| biome | `@biomejs/biome` >= 2 (`biome format`) | all but Less; Angular templates as plain HTML | macOS, Linux, Windows (x64, arm64) |
+| dprint | `dprint`, with its plugins pinned as packages | all nine, Angular in its own style | macOS, Linux, Windows (x64, arm64) |
+| tidy | the `lukeed/tidy` GitHub release | all nine; Angular templates as plain HTML | macOS, Linux, Windows (x64, arm64) |
 
 The supply chain policy in [pnpm-workspace.yaml](pnpm-workspace.yaml) applies to every npm package: a version must be 7 days old (`--allow-young` adds a reviewed exception), and a weaker publish trust than an earlier version is refused. A release-based tool follows the same age rule against its GitHub publish time, and its archive is refused unless its sha256 matches `tools/<id>/release.json`.
 
