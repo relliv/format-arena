@@ -1,0 +1,1 @@
+<section class="list">@if (items().length) {<ul>@for (item of items(); track item.id) {<li [class.done]="item.done" (click)="toggle(item)">{{ item.title | titlecase }}</li>} @empty {<li>None</li>}</ul>} @else {<p>Loading</p>}</section>
