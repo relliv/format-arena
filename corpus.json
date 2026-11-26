@@ -1,0 +1,27 @@
+{
+  "$comment": "Pinned public projects for runs that are comparable over time and across machines (CI runs these). Fields: repo and sha: what `pnpm arena corpus setup` clones into the corpus folder; exclude: paths left out of the file set, relative to the checkout, on top of what every run skips (node_modules, dist, dot folders, what git ignores); excludeNote: why; html: \"angular\" when the project's .html files are Angular templates (Angular 20 and Angular Material name them app.html and button.html, not .component.html). Formatting reads source only, so no project is installed or built.",
+  "projects": [
+    {
+      "name": "vite",
+      "description": "Frontend tooling monorepo: the dev server, build pipeline, playgrounds and templates, in TypeScript and JavaScript",
+      "repo": "https://github.com/vitejs/vite",
+      "sha": "cce559ab158cc6b177d0911a0bea73436b48faff",
+      "exclude": []
+    },
+    {
+      "name": "excalidraw",
+      "description": "A whiteboard app in React and TypeScript: mostly TSX, with a few large modules",
+      "repo": "https://github.com/excalidraw/excalidraw",
+      "sha": "dabd83c4aa6b9e42d0dd0a42be62200eb8e3cce9",
+      "exclude": []
+    },
+    {
+      "name": "angular-components",
+      "description": "Angular Material and the CDK: TypeScript, SCSS, and Angular templates with control flow",
+      "repo": "https://github.com/angular/components",
+      "sha": "6f98996b8250f0b81e599330a1a91351507f436d",
+      "exclude": [],
+      "html": "angular"
+    }
+  ]
+}
