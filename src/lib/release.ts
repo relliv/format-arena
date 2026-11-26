@@ -85,8 +85,12 @@ export async function fetchRelease(tool: Tool): Promise<boolean> {
     const archive = join(dir, asset.name);
     writeFileSync(archive, bytes);
     mkdirSync(releaseBinDir(tool), { recursive: true });
-    // bsdtar (macOS, Windows) reads .zip and .tar.gz alike; GNU tar on Linux reads the .tar.gz builds.
-    const r = spawnSync('tar', ['-xf', archive, '-C', releaseBinDir(tool)], { encoding: 'utf8' });
+    // bsdtar (macOS, Windows) reads .zip and .tar.gz alike; GNU tar on Linux reads the
+    // .tar.gz builds. On Windows the tar first on PATH can be Git Bash's GNU tar, which
+    // reads "C:" in a path as a remote host and cannot unpack a zip, so Windows' own
+    // bsdtar is named directly.
+    const tar = process.platform === 'win32' ? join(process.env['SystemRoot'] ?? 'C:\\Windows', 'System32', 'tar.exe') : 'tar';
+    const r = spawnSync(tar, ['-xf', archive, '-C', releaseBinDir(tool)], { encoding: 'utf8' });
     if (r.status !== 0) throw new Error(`${tool.id}: could not unpack ${asset.name}: ${r.stderr}`);
   } finally {
     rmSync(dir, { recursive: true, force: true });
