@@ -1,0 +1,637 @@
+# 223 of 434 files differ from prettier@3.10.1
+docs/scenes/src/app/app.component.scss
+docs/scenes/src/app/scenes/placeholder/_placeholder-scene-theme.scss
+docs/scenes/src/styles.scss
+docs/src/app/pages/component-category-list/component-category-list.scss
+docs/src/app/pages/homepage/homepage.scss
+docs/src/highlightjs/material-dark.scss
+docs/src/highlightjs/material-light.scss
+docs/src/styles/_markdown.scss
+docs/src/styles/custom-themes/azure-blue.scss
+docs/src/styles/custom-themes/cyan-orange.scss
+docs/src/styles/custom-themes/magenta-violet.scss
+docs/src/styles/custom-themes/rose-red.scss
+docs/src/styles/general.scss
+docs/src/styles.scss
+integration/yarn-pnp-compat/src/app/app.component.scss
+integration/yarn-pnp-compat/src/styles.scss
+src/cdk/_index.scss
+src/cdk/a11y/_index.scss
+src/cdk/overlay/_index.scss
+src/cdk/text-field/_index.scss
+src/dev-app/cdk-dialog/dialog-demo.scss
+src/dev-app/datepicker/datepicker-demo.scss
+src/dev-app/dev-app/dev-app-layout.scss
+src/dev-app/drag-drop/drag-drop-demo.scss
+src/dev-app/focus-trap/focus-trap-demo.scss
+src/dev-app/layout/layout-demo.scss
+src/dev-app/ripple/ripple-demo.scss
+src/dev-app/table-scroll-container/table-scroll-container-demo.scss
+src/dev-app/theme/theme-demo.scss
+src/dev-app/theme-m3.scss
+src/dev-app/theme.scss
+src/dev-app/tree/tree-demo.scss
+src/e2e-app/theme.scss
+src/material/_index.scss
+src/material/autocomplete/_autocomplete-theme.scss
+src/material/autocomplete/_m2-autocomplete.scss
+src/material/autocomplete/_m3-autocomplete.scss
+src/material/badge/_m2-badge.scss
+src/material/badge/_m3-badge.scss
+src/material/bottom-sheet/_bottom-sheet-theme.scss
+src/material/bottom-sheet/_m2-bottom-sheet.scss
+src/material/bottom-sheet/_m3-bottom-sheet.scss
+src/material/bottom-sheet/bottom-sheet-container.scss
+src/material/button/_button-base.scss
+src/material/button/_fab-theme.scss
+src/material/button/_icon-button-theme.scss
+src/material/button/_m2-button.scss
+src/material/button/_m2-fab.scss
+src/material/button/_m2-icon-button.scss
+src/material/button/_m3-button.scss
+src/material/button/_m3-fab.scss
+src/material/button/_m3-icon-button.scss
+src/material/button/button.scss
+src/material/button/fab.scss
+src/material/button/icon-button.scss
+src/material/button-toggle/_button-toggle-theme.scss
+src/material/button-toggle/_m2-button-toggle.scss
+src/material/button-toggle/_m3-button-toggle.scss
+src/material/button-toggle/button-toggle.scss
+src/material/card/_m2-card.scss
+src/material/card/_m3-card.scss
+src/material/card/card.scss
+src/material/checkbox/_m2-checkbox.scss
+src/material/checkbox/_m3-checkbox.scss
+src/material/chips/_m2-chip.scss
+src/material/chips/_m3-chip.scss
+src/material/chips/chip.scss
+src/material/core/_core-theme.scss
+src/material/core/_core.scss
+src/material/core/_m2-app.scss
+src/material/core/_m3-app.scss
+src/material/core/color/_all-color.scss
+src/material/core/density/private/_all-density.scss
+src/material/core/focus-indicators/_private.scss
+src/material/core/m2/_index.scss
+src/material/core/m2/_palette.scss
+src/material/core/m2/_theming.scss
+src/material/core/m2/_typography-utils.scss
+src/material/core/m2/_typography.scss
+src/material/core/option/_m2-optgroup.scss
+src/material/core/option/_m2-option.scss
+src/material/core/option/_m3-optgroup.scss
+src/material/core/option/_m3-option.scss
+src/material/core/option/option.scss
+src/material/core/ripple/_m2-ripple.scss
+src/material/core/ripple/_m3-ripple.scss
+src/material/core/ripple/_ripple.scss
+src/material/core/selection/pseudo-checkbox/_m2-pseudo-checkbox.scss
+src/material/core/selection/pseudo-checkbox/_m3-pseudo-checkbox.scss
+src/material/core/selection/pseudo-checkbox/_pseudo-checkbox-common.scss
+src/material/core/selection/pseudo-checkbox/_pseudo-checkbox-theme.scss
+src/material/core/selection/pseudo-checkbox/pseudo-checkbox.scss
+src/material/core/style/_elevation.scss
+src/material/core/style/_list-common.scss
+src/material/core/style/_variables.scss
+src/material/core/theming/_config-validation.scss
+src/material/core/theming/_definition.scss
+src/material/core/theming/_inspection.scss
+src/material/core/theming/_m2-inspection.scss
+src/material/core/theming/_palettes.scss
+src/material/core/theming/_theming.scss
+src/material/core/theming/prebuilt/azure-blue.scss
+src/material/core/theming/prebuilt/cyan-orange.scss
+src/material/core/theming/prebuilt/deeppurple-amber.scss
+src/material/core/theming/prebuilt/indigo-pink.scss
+src/material/core/theming/prebuilt/magenta-violet.scss
+src/material/core/theming/prebuilt/pink-bluegrey.scss
+src/material/core/theming/prebuilt/purple-green.scss
+src/material/core/theming/prebuilt/rose-red.scss
+src/material/core/theming/tests/test-css-variables-theme.scss
+src/material/core/theming/tests/test-theming-api.scss
+src/material/core/theming/tests/test-theming-bundle.scss
+src/material/core/theming/tests/test-typography-font-family.scss
+src/material/core/tokens/_m2-utils.scss
+src/material/core/tokens/_m3-tokens.scss
+src/material/core/tokens/_system.scss
+src/material/core/tokens/_token-utils.scss
+src/material/core/tokens/m2/_md-sys-color.scss
+src/material/core/tokens/m2/_md-sys-elevation.scss
+src/material/core/tokens/m2/_md-sys-shape.scss
+src/material/core/tokens/m2/_md-sys-typescale.scss
+src/material/core/tokens/m3/_md-sys-color.scss
+src/material/core/tokens/m3/_md-sys-elevation.scss
+src/material/core/tokens/m3/_md-sys-shape.scss
+src/material/core/tokens/m3/_md-sys-typescale.scss
+src/material/core/tokens/m3/_theme.scss
+src/material/core/typography/_typography-utils.scss
+src/material/core/typography/_typography.scss
+src/material/core/typography/_versioning.scss
+src/material/datepicker/_datepicker-theme.scss
+src/material/datepicker/_m2-datepicker.scss
+src/material/datepicker/_m3-datepicker.scss
+src/material/datepicker/calendar-body.scss
+src/material/datepicker/calendar.scss
+src/material/dialog/_dialog-legacy-padding.scss
+src/material/dialog/_m2-dialog.scss
+src/material/dialog/_m3-dialog.scss
+src/material/dialog/dialog.scss
+src/material/divider/_m2-divider.scss
+src/material/divider/_m3-divider.scss
+src/material/expansion/_expansion-variables.scss
+src/material/expansion/_m2-expansion.scss
+src/material/expansion/_m3-expansion.scss
+src/material/form-field/_m2-form-field.scss
+src/material/form-field/_m3-form-field.scss
+src/material/form-field/_mdc-text-field-density-overrides.scss
+src/material/form-field/_mdc-text-field-structure.scss
+src/material/form-field/form-field.scss
+src/material/grid-list/_m2-grid-list.scss
+src/material/grid-list/_m3-grid-list.scss
+src/material/icon/_m3-icon.scss
+src/material/icon/icon.scss
+src/material/input/_input-theme.scss
+src/material/list/_list-inherited-structure.scss
+src/material/list/_list-theme.scss
+src/material/list/_m2-list.scss
+src/material/list/_m3-list.scss
+src/material/list/list-option.scss
+src/material/list/list.scss
+src/material/menu/_m2-menu.scss
+src/material/menu/_m3-menu.scss
+src/material/menu/menu.scss
+src/material/paginator/_m2-paginator.scss
+src/material/paginator/_m3-paginator.scss
+src/material/paginator/paginator.scss
+src/material/progress-bar/_m2-progress-bar.scss
+src/material/progress-bar/_m3-progress-bar.scss
+src/material/progress-bar/_progress-bar-theme.scss
+src/material/progress-bar/progress-bar.scss
+src/material/progress-spinner/_m2-progress-spinner.scss
+src/material/progress-spinner/_m3-progress-spinner.scss
+src/material/progress-spinner/_progress-spinner-theme.scss
+src/material/progress-spinner/progress-spinner.scss
+src/material/radio/_m2-radio.scss
+src/material/radio/_m3-radio.scss
+src/material/radio/_radio-common.scss
+src/material/select/_m2-select.scss
+src/material/select/_m3-select.scss
+src/material/sidenav/_m2-sidenav.scss
+src/material/sidenav/_m3-sidenav.scss
+src/material/slide-toggle/_m2-slide-toggle.scss
+src/material/slide-toggle/_m3-slide-toggle.scss
+src/material/slide-toggle/_slide-toggle-theme.scss
+src/material/slide-toggle/slide-toggle.scss
+src/material/slider/_m2-slider.scss
+src/material/slider/_m3-slider.scss
+src/material/snack-bar/_m2-snack-bar.scss
+src/material/snack-bar/_m3-snack-bar.scss
+src/material/snack-bar/snack-bar-container.scss
+src/material/sort/_m2-sort.scss
+src/material/sort/_m3-sort.scss
+src/material/sort/sort-header.scss
+src/material/stepper/_m2-stepper.scss
+src/material/stepper/_m3-stepper.scss
+src/material/stepper/_stepper-variables.scss
+src/material/table/_m2-table.scss
+src/material/table/_m3-table.scss
+src/material/table/_table-flex-styles.scss
+src/material/tabs/_m2-tabs.scss
+src/material/tabs/_m3-tabs.scss
+src/material/tabs/_tabs-common.scss
+src/material/tabs/_tabs-theme.scss
+src/material/tabs/tab-nav-bar/tab-link.scss
+src/material/timepicker/_m2-timepicker.scss
+src/material/timepicker/_m3-timepicker.scss
+src/material/toolbar/_m2-toolbar.scss
+src/material/toolbar/_m3-toolbar.scss
+src/material/toolbar/_toolbar-theme.scss
+src/material/toolbar/_toolbar-variables.scss
+src/material/toolbar/toolbar.scss
+src/material/tooltip/_m2-tooltip.scss
+src/material/tooltip/_m3-tooltip.scss
+src/material/tree/_m2-tree.scss
+src/material/tree/_m3-tree.scss
+src/material-experimental/_index.scss
+src/material-experimental/column-resize/_column-resize-theme.scss
+src/material-experimental/menubar/_menubar-theme.scss
+src/material-experimental/menubar/menubar-item.scss
+src/material-experimental/menubar/menubar.scss
+src/material-experimental/popover-edit/_popover-edit-theme.scss
+src/material-experimental/selection/_selection.scss
+src/universal-app/styles.scss
+src/youtube-player/youtube-player.scss
+
+# Left as they were staged (14)
+docs/src/app/pages/homepage/homepage.scss
+docs/src/highlightjs/material-light.scss
+src/cdk/_index.scss
+src/dev-app/ripple/ripple-demo.scss
+src/dev-app/table-scroll-container/table-scroll-container-demo.scss
+src/dev-app/tree/tree-demo.scss
+src/material/core/style/_list-common.scss
+src/material/core/tokens/m2/_md-sys-elevation.scss
+src/material/core/tokens/m3/_md-sys-elevation.scss
+src/material/dialog/_dialog-legacy-padding.scss
+src/material/dialog/dialog.scss
+src/material/tabs/tab-nav-bar/tab-link.scss
+src/material/toolbar/toolbar.scss
+src/youtube-player/youtube-player.scss
+
+# dprint@0.64.3 exited 1; its output
+
+Error formatting <work>/scss/out/dprint@0.64.3/src/cdk/_index.scss. Message: Formatting not stable. Bailed after 5 tries. This indicates a bug in the plugin where it formats the file differently each time.
+Error formatting <work>/scss/out/dprint@0.64.3/src/material/toolbar/toolbar.scss. Message: syntax error at line 74, col 10: expect token `{`, but found `(`
+Error formatting <work>/scss/out/dprint@0.64.3/src/material/dialog/dialog.scss. Message: syntax error at line 42, col 10: expect token `{`, but found `(`
+Error formatting <work>/scss/out/dprint@0.64.3/src/material/tabs/tab-nav-bar/tab-link.scss. Message: syntax error at line 20, col 8: expect token `{`, but found `(`
+Had 4 errors formatting.
+
+
+
+# The first 25, reference first
+
+--- reference/docs/scenes/src/app/app.component.scss
++++ formatter/docs/scenes/src/app/app.component.scss
+@@ -0,0 +1 @@
++
+
+
+--- reference/docs/scenes/src/app/scenes/placeholder/_placeholder-scene-theme.scss
++++ formatter/docs/scenes/src/app/scenes/placeholder/_placeholder-scene-theme.scss
+@@ -0,0 +1 @@
++
+
+
+--- reference/docs/scenes/src/styles.scss
++++ formatter/docs/scenes/src/styles.scss
+@@ -7,8 +7,8 @@ html {
+       color: (
+         theme-type: light,
+-        primary: mat.$red-palette,
++        primary: mat.$red-palette
+       ),
+       typography: Roboto,
+-      density: 0,
++      density: 0
+     )
+   );
+
+
+--- reference/docs/src/app/pages/component-category-list/component-category-list.scss
++++ formatter/docs/src/app/pages/component-category-list/component-category-list.scss
+@@ -51,8 +51,5 @@
+   }
+ 
+-  &,
+-  &:active,
+-  &:hover,
+-  &:focus {
++  &, &:active, &:hover, &:focus {
+     text-decoration: none;
+   }
+
+
+--- reference/docs/src/app/pages/homepage/homepage.scss
++++ formatter/docs/src/app/pages/homepage/homepage.scss
+@@ -180,6 +180,5 @@ a.docs-link:hover {
+     }
+ 
+-    &:hover,
+-    &:focus {
++    &:hover, &:focus {
+       img {
+         transform: scale(1.1);
+@@ -241,6 +240,5 @@ a.docs-link:hover {
+   }
+ 
+-  .docs-homepage-row,
+-  .docs-homepage-carousel-row {
++  .docs-homepage-row, .docs-homepage-carousel-row {
+     margin: $margin-promotion-sections-small 0;
+   }
+
+
+--- reference/docs/src/highlightjs/material-dark.scss
++++ formatter/docs/src/highlightjs/material-dark.scss
+@@ -10,7 +10,5 @@
+   -webkit-font-smoothing: antialiased;
+   text-size-adjust: 100%;
+-  font:
+-    300 100%/1 Roboto Mono,
+-    monospace;
++  font: 300 100%/1 Roboto Mono, monospace;
+   font-size: 14px;
+ }
+
+
+--- reference/docs/src/highlightjs/material-light.scss
++++ formatter/docs/src/highlightjs/material-light.scss
+@@ -9,7 +9,5 @@
+   -webkit-font-smoothing: antialiased;
+   text-size-adjust: 100%;
+-  font:
+-    300 100%/1 Roboto Mono,
+-    monospace;
++  font: 300 100%/1 Roboto Mono, monospace;
+   font-size: 14px;
+ }
+
+
+--- reference/docs/src/styles/_markdown.scss
++++ formatter/docs/src/styles/_markdown.scss
+@@ -35,6 +35,5 @@
+     }
+ 
+-    h3 .mat-icon,
+-    h4 .mat-icon {
++    h3 .mat-icon, h4 .mat-icon {
+       color: var(--mat-sys-on-surface);
+     }
+@@ -160,6 +159,7 @@
+       background-color: color-mix(
+         in srgb,
+-        var(--mat-sys-on-surface)
+-          calc(var(--mat-sys-hover-state-layer-opacity) * 100%),
++        var(--mat-sys-on-surface) calc(
++          var(--mat-sys-hover-state-layer-opacity) * 100%
++        ),
+         transparent
+       );
+@@ -168,6 +168,7 @@
+       background-color: color-mix(
+         in srgb,
+-        var(--mat-sys-on-surface)
+-          calc(var(--mat-sys-focus-state-layer-opacity) * 100%),
++        var(--mat-sys-on-surface) calc(
++          var(--mat-sys-focus-state-layer-opacity) * 100%
++        ),
+         transparent
+       );
+@@ -176,6 +177,7 @@
+       background-color: color-mix(
+         in srgb,
+-        var(--mat-sys-on-surface)
+-          calc(var(--mat-sys-pressed-state-layer-opacity) * 100%),
++        var(--mat-sys-on-surface) calc(
++          var(--mat-sys-pressed-state-layer-opacity) * 100%
++        ),
+         transparent
+       );
+
+
+--- reference/docs/src/styles/custom-themes/azure-blue.scss
++++ formatter/docs/src/styles/custom-themes/azure-blue.scss
+@@ -7,8 +7,8 @@ html {
+         theme-type: light,
+         primary: mat.$azure-palette,
+-        tertiary: mat.$blue-palette,
++        tertiary: mat.$blue-palette
+       ),
+       typography: Roboto,
+-      density: 0,
++      density: 0
+     )
+   );
+
+
+--- reference/docs/src/styles/custom-themes/cyan-orange.scss
++++ formatter/docs/src/styles/custom-themes/cyan-orange.scss
+@@ -7,8 +7,8 @@ html {
+         theme-type: dark,
+         primary: mat.$cyan-palette,
+-        tertiary: mat.$orange-palette,
++        tertiary: mat.$orange-palette
+       ),
+       typography: Roboto,
+-      density: 0,
++      density: 0
+     )
+   );
+
+
+--- reference/docs/src/styles/custom-themes/magenta-violet.scss
++++ formatter/docs/src/styles/custom-themes/magenta-violet.scss
+@@ -7,8 +7,8 @@ html {
+         theme-type: dark,
+         primary: mat.$magenta-palette,
+-        tertiary: mat.$violet-palette,
++        tertiary: mat.$violet-palette
+       ),
+       typography: Roboto,
+-      density: 0,
++      density: 0
+     )
+   );
+
+
+--- reference/docs/src/styles/custom-themes/rose-red.scss
++++ formatter/docs/src/styles/custom-themes/rose-red.scss
+@@ -7,8 +7,8 @@ html {
+         theme-type: light,
+         primary: mat.$rose-palette,
+-        tertiary: mat.$red-palette,
++        tertiary: mat.$red-palette
+       ),
+       typography: Roboto,
+-      density: 0,
++      density: 0
+     )
+   );
+
+
+--- reference/docs/src/styles/general.scss
++++ formatter/docs/src/styles/general.scss
+@@ -7,11 +7,15 @@
+   body {
+     font-family:
+-      "Roboto", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial,
+-      "Lucida Grande", sans-serif;
++      "Roboto",
++      "Helvetica Neue Light",
++      "Helvetica Neue",
++      Helvetica,
++      Arial,
++      "Lucida Grande",
++      sans-serif;
+     margin: 0;
+   }
+ 
+-  h1,
+-  h2 {
++  h1, h2 {
+     font-weight: 400;
+   }
+@@ -33,6 +37,5 @@
+   }
+ 
+-  code,
+-  pre {
++  code, pre {
+     font-family: "Roboto Mono", monospace;
+   }
+
+
+--- reference/docs/src/styles.scss
++++ formatter/docs/src/styles.scss
+@@ -15,8 +15,8 @@ html {
+         theme-type: light,
+         primary: mat.$azure-palette,
+-        tertiary: mat.$blue-palette,
++        tertiary: mat.$blue-palette
+       ),
+       typography: Roboto,
+-      density: 0,
++      density: 0
+     )
+   );
+
+
+--- reference/integration/yarn-pnp-compat/src/app/app.component.scss
++++ formatter/integration/yarn-pnp-compat/src/app/app.component.scss
+@@ -0,0 +1 @@
++
+
+
+--- reference/integration/yarn-pnp-compat/src/styles.scss
++++ formatter/integration/yarn-pnp-compat/src/styles.scss
+@@ -5,10 +5,7 @@ $accent: mat.m2-define-palette(mat.$m2-grey-palette);
+ $theme: mat.m2-define-light-theme(
+   (
+-    color: (
+-      primary: $primary,
+-      accent: $accent,
+-    ),
++    color: (primary: $primary, accent: $accent),
+     typography: mat.m2-define-typography-config(),
+-    density: 0,
++    density: 0
+   )
+ );
+
+
+--- reference/src/cdk/_index.scss
++++ formatter/src/cdk/_index.scss
+@@ -1,6 +1,6 @@
+-@forward "./overlay" show overlay, $overlay-container-z-index, $overlay-z-index,
++@forward './overlay' show overlay, $overlay-container-z-index, $overlay-z-index,
+   $overlay-backdrop-z-index, $overlay-backdrop-color;
+-@forward "./a11y" show a11y-visually-hidden, high-contrast;
+-@forward "./text-field" show text-field-autosize, text-field-autofill,
++@forward './a11y' show a11y-visually-hidden, high-contrast;
++@forward './text-field' show text-field-autosize, text-field-autofill,
+   text-field-autofill-color,
+   // `text-field` is deprecated, but we have to export it
+
+
+--- reference/src/cdk/a11y/_index.scss
++++ formatter/src/cdk/a11y/_index.scss
+@@ -50,11 +50,10 @@
+   // allow them here anyway. They'll be coerced to `active` below.
+   @if (
+-    $target != "active" and
+-      $target != "none" and
++    $target != "active" and $target != "none" and
+       $target != "black-on-white" and
+       $target != "white-on-black"
+   ) {
+-    @error 'Unknown cdk-high-contrast value "#{$target}" provided. ' +
+-           'Allowed values are "active" and "none"';
++    @error "Unknown cdk-high-contrast value \"#{$target}\" provided. " +
++      "Allowed values are \"active\" and \"none\"";
+   }
+ 
+
+
+--- reference/src/cdk/overlay/_index.scss
++++ formatter/src/cdk/overlay/_index.scss
+@@ -27,6 +27,5 @@ $backdrop-animation-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1) !default;
+ // the styles that support customization in a way that makes them easier to change.
+ @mixin private-overlay-structure($wrap-customizable-styles) {
+-  .cdk-overlay-container,
+-  .cdk-global-overlay-wrapper {
++  .cdk-overlay-container, .cdk-global-overlay-wrapper {
+     // Disable events from being captured on the overlay container.
+     pointer-events: none;
+@@ -132,7 +131,5 @@ $backdrop-animation-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1) !default;
+   .cdk-overlay-transparent-backdrop {
+     // Define a transition on the visibility so that the `transitionend` event can fire immediately.
+-    transition:
+-      visibility 1ms linear,
+-      opacity 1ms linear;
++    transition: visibility 1ms linear, opacity 1ms linear;
+     visibility: hidden;
+     opacity: 1;
+
+
+--- reference/src/cdk/text-field/_index.scss
++++ formatter/src/cdk/text-field/_index.scss
+@@ -76,5 +76,6 @@ $autofill-color-frame-count: 0;
+ 
+   &:-webkit-autofill {
+-    animation: cdk-text-field-autofill-color-#{$autofill-color-frame-count} both;
++    animation: cdk-text-field-autofill-color-#{$autofill-color-frame-count}
++      both;
+   }
+ 
+
+
+--- reference/src/dev-app/cdk-dialog/dialog-demo.scss
++++ formatter/src/dev-app/cdk-dialog/dialog-demo.scss
+@@ -1,5 +1,4 @@
+ .demo-container {
+-  button,
+-  label {
++  button, label {
+     margin-right: 8px;
+ 
+
+
+--- reference/src/dev-app/datepicker/datepicker-demo.scss
++++ formatter/src/dev-app/datepicker/datepicker-demo.scss
+@@ -10,4 +10,9 @@ mat-calendar {
+ 
+ .demo-custom-range {
+-  @include mat.datepicker-date-range-colors(hotpink, teal, yellow, purple);
++  @include mat.datepicker-date-range-colors(
++    hotpink,
++    teal,
++    yellow,
++    purple
++  );
+ }
+
+
+--- reference/src/dev-app/dev-app/dev-app-layout.scss
++++ formatter/src/dev-app/dev-app/dev-app-layout.scss
+@@ -1,4 +1,3 @@
+-html,
+-body {
++html, body {
+   width: 100%;
+   height: 100%;
+
+
+--- reference/src/dev-app/drag-drop/drag-drop-demo.scss
++++ formatter/src/dev-app/drag-drop/drag-drop-demo.scss
+@@ -66,6 +66,5 @@
+     margin: 8px;
+ 
+-    &,
+-    &:last-child {
++    &, &:last-child {
+       border: solid 1px #ccc;
+     }
+
+
+--- reference/src/dev-app/focus-trap/focus-trap-demo.scss
++++ formatter/src/dev-app/focus-trap/focus-trap-demo.scss
+@@ -8,6 +8,5 @@
+   }
+ 
+-  .demo-focus-trap-element,
+-  .demo-focus-trap-shadow-root {
++  .demo-focus-trap-element, .demo-focus-trap-shadow-root {
+     display: block;
+     margin: 4px;
+

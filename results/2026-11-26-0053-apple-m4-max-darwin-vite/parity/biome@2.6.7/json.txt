@@ -1,0 +1,40 @@
+# 1 of 397 files differ from prettier@3.10.1
+playground/tsconfig-json/nested/tsconfig.json
+
+# biome@2.6.7 exited 1; its output
+
+format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Some errors were emitted while running checks.
+  
+
+
+reporter/parse ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  i The following files have parsing errors:
+  
+  - packages/vite/src/node/server/__tests__/fixtures/lerna/lerna.json
+  
+reporter/format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  i The following files need to be formatted:
+  
+  - packages/vite/src/node/server/__tests__/fixtures/lerna/lerna.json
+  
+
+Formatted 397 files in 17ms. Fixed 1 file.
+Found 1 error.
+
+
+# The first 1, reference first
+
+--- reference/playground/tsconfig-json/nested/tsconfig.json
++++ formatter/playground/tsconfig-json/nested/tsconfig.json
+@@ -16,5 +16,5 @@
+ 
+     /* tsconfig.json should support comments and trailing comma */
+-    "useDefineForClassFields": false,
++    "useDefineForClassFields": false
+   }
+ }
+

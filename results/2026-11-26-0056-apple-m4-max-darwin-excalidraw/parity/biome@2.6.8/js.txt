@@ -1,0 +1,686 @@
+# 61 of 735 files differ from prettier@3.10.1
+excalidraw-app/data/index.ts
+excalidraw-app/useHandleAppTheme.ts
+packages/common/src/editorInterface.ts
+packages/common/src/utils.ts
+packages/element/src/binding.ts
+packages/element/src/bounds.ts
+packages/element/src/bucketFill.ts
+packages/element/src/collision.ts
+packages/element/src/elbowArrow.ts
+packages/element/src/linearElementEditor.ts
+packages/element/src/resizeElements.ts
+packages/element/src/selection.ts
+packages/element/src/showSelectedShapeActions.ts
+packages/element/src/stickyNote.ts
+packages/element/src/store.ts
+packages/element/src/transformHandles.ts
+packages/element/src/types.ts
+packages/element/src/utils.ts
+packages/element/tests/bucketFill.test.ts
+packages/element/tests/linearElementEditor.test.tsx
+packages/excalidraw/actions/actionProperties.tsx
+packages/excalidraw/actions/types.ts
+packages/excalidraw/appState.ts
+packages/excalidraw/charts/charts.types.ts
+packages/excalidraw/components/App.cursor.ts
+packages/excalidraw/components/App.pan.ts
+packages/excalidraw/components/App.tsx
+packages/excalidraw/components/App.viewport.ts
+packages/excalidraw/components/AppStateObserver.ts
+packages/excalidraw/components/Button.tsx
+packages/excalidraw/components/ColorPicker/colorPickerUtils.ts
+packages/excalidraw/components/ConvertElementTypePopup.tsx
+packages/excalidraw/components/FilledButton.tsx
+packages/excalidraw/components/Minimap/minimap-shared.chunk.ts
+packages/excalidraw/components/Stats/utils.ts
+packages/excalidraw/components/TTDDialog/TTDDialog.tsx
+packages/excalidraw/components/TTDDialog/types.ts
+packages/excalidraw/components/TTDDialog/utils/mermaidError.ts
+packages/excalidraw/components/UserList.tsx
+packages/excalidraw/data/ai/types.ts
+packages/excalidraw/data/library.ts
+packages/excalidraw/data/restore.ts
+packages/excalidraw/deburr.ts
+packages/excalidraw/errors.ts
+packages/excalidraw/fonts/ExcalidrawFontFace.ts
+packages/excalidraw/hooks/useAppStateValue.ts
+packages/excalidraw/index.tsx
+packages/excalidraw/renderer/animation.ts
+packages/excalidraw/renderer/interactiveScene.ts
+packages/excalidraw/scene/types.ts
+packages/excalidraw/subset/harfbuzz/harfbuzz-wasm.ts
+packages/excalidraw/subset/woff2/woff2-bindings.ts
+packages/excalidraw/subset/woff2/woff2-wasm.ts
+packages/excalidraw/tests/bucketFill.test.tsx
+packages/excalidraw/tests/crossDocument.test.tsx
+packages/excalidraw/tests/data/restore.test.ts
+packages/excalidraw/tests/helpers/api.ts
+packages/excalidraw/tests/queries/dom.ts
+packages/excalidraw/types.ts
+packages/excalidraw/wysiwyg/textWysiwyg.tsx
+scripts/stats/perf.mjs
+
+# Left as they were staged (31)
+excalidraw-app/data/index.ts
+excalidraw-app/useHandleAppTheme.ts
+packages/common/src/editorInterface.ts
+packages/element/src/bounds.ts
+packages/element/src/showSelectedShapeActions.ts
+packages/element/src/store.ts
+packages/element/src/utils.ts
+packages/excalidraw/actions/types.ts
+packages/excalidraw/charts/charts.types.ts
+packages/excalidraw/components/App.cursor.ts
+packages/excalidraw/components/App.pan.ts
+packages/excalidraw/components/App.viewport.ts
+packages/excalidraw/components/AppStateObserver.ts
+packages/excalidraw/components/Button.tsx
+packages/excalidraw/components/ColorPicker/colorPickerUtils.ts
+packages/excalidraw/components/FilledButton.tsx
+packages/excalidraw/components/Stats/utils.ts
+packages/excalidraw/components/TTDDialog/TTDDialog.tsx
+packages/excalidraw/components/TTDDialog/types.ts
+packages/excalidraw/components/UserList.tsx
+packages/excalidraw/data/ai/types.ts
+packages/excalidraw/data/library.ts
+packages/excalidraw/errors.ts
+packages/excalidraw/fonts/ExcalidrawFontFace.ts
+packages/excalidraw/hooks/useAppStateValue.ts
+packages/excalidraw/index.tsx
+packages/excalidraw/renderer/animation.ts
+packages/excalidraw/scene/types.ts
+packages/excalidraw/tests/crossDocument.test.tsx
+packages/excalidraw/tests/data/restore.test.ts
+packages/excalidraw/types.ts
+
+# The first 25, reference first
+
+--- reference/excalidraw-app/data/index.ts
++++ formatter/excalidraw-app/data/index.ts
+@@ -243,5 +243,6 @@ export const importFromBackend = async (
+ 
+ type ExportToBackendResult =
+-  { url: null; errorMessage: string } | { url: string; errorMessage: null };
++  | { url: null; errorMessage: string }
++  | { url: string; errorMessage: null };
+ 
+ export const exportToBackend = async (
+
+
+--- reference/excalidraw-app/useHandleAppTheme.ts
++++ formatter/excalidraw-app/useHandleAppTheme.ts
+@@ -13,5 +13,7 @@ export const useHandleAppTheme = () => {
+     return (
+       (localStorage.getItem(STORAGE_KEYS.LOCAL_STORAGE_THEME) as
+-        Theme | "system" | null) || THEME.LIGHT
++        | Theme
++        | "system"
++        | null) || THEME.LIGHT
+     );
+   });
+
+
+--- reference/packages/common/src/editorInterface.ts
++++ formatter/packages/common/src/editorInterface.ts
+@@ -91,5 +91,6 @@ const isMobileOrTablet = (): boolean => {
+   const platform = navigator.platform || "";
+   const uaData = (navigator as any).userAgentData as
+-    { mobile?: boolean; platform?: string } | undefined;
++    | { mobile?: boolean; platform?: string }
++    | undefined;
+ 
+   // --- 1) chromium: prefer ua client hints -------------------------------
+
+
+--- reference/packages/common/src/utils.ts
++++ formatter/packages/common/src/utils.ts
+@@ -114,5 +114,8 @@ export const isWritableElement = (
+   target: Element | EventTarget | null,
+ ): target is
+-  HTMLInputElement | HTMLTextAreaElement | HTMLBRElement | HTMLDivElement => {
++  | HTMLInputElement
++  | HTMLTextAreaElement
++  | HTMLBRElement
++  | HTMLDivElement => {
+   const targetWindow = getTargetWindow(target);
+   return (
+@@ -1081,7 +1084,7 @@ type RemoveAllBrands<T> =
+     ? {
+         // eslint-disable-next-line @typescript-eslint/no-unused-vars
+-        [
+-          K in keyof T as K extends `~brand~${infer _}` | "_brand" ? never : K
+-        ]: T[K];
++        [K in keyof T as K extends `~brand~${infer _}` | "_brand"
++          ? never
++          : K]: T[K];
+       }
+     : T;
+
+
+--- reference/packages/element/src/binding.ts
++++ formatter/packages/element/src/binding.ts
+@@ -2607,5 +2607,6 @@ const newBoundElements = (
+       (x) =>
+         ({ id: x.id, type: x.type }) as
+-          ExcalidrawArrowElement | ExcalidrawTextElement,
++          | ExcalidrawArrowElement
++          | ExcalidrawTextElement,
+     ),
+   );
+@@ -2625,5 +2626,8 @@ export type BindableProp = "boundElements";
+ 
+ export type BindingProp =
+-  "frameId" | "containerId" | "startBinding" | "endBinding";
++  | "frameId"
++  | "containerId"
++  | "startBinding"
++  | "endBinding";
+ 
+ type BoundElementsVisitingFunc = (
+@@ -2943,9 +2947,11 @@ export const getGlobalFixedPoints = (
+     arrow.startBinding &&
+     (elementsMap.get(arrow.startBinding.elementId) as
+-      ExcalidrawBindableElement | undefined);
++      | ExcalidrawBindableElement
++      | undefined);
+   const endElement =
+     arrow.endBinding &&
+     (elementsMap.get(arrow.endBinding.elementId) as
+-      ExcalidrawBindableElement | undefined);
++      | ExcalidrawBindableElement
++      | undefined);
+   const startPoint =
+     startElement && arrow.startBinding
+
+
+--- reference/packages/element/src/bounds.ts
++++ formatter/packages/element/src/bounds.ts
+@@ -1387,5 +1387,6 @@ export interface BoundingBox {
+ export const getCommonBoundingBox = (
+   elements:
+-    readonly ExcalidrawElement[] | readonly NonDeleted<ExcalidrawElement>[],
++    | readonly ExcalidrawElement[]
++    | readonly NonDeleted<ExcalidrawElement>[],
+ ): BoundingBox => {
+   const [minX, minY, maxX, maxY] = getCommonBounds(elements);
+
+
+--- reference/packages/element/src/bucketFill.ts
++++ formatter/packages/element/src/bucketFill.ts
+@@ -174,5 +174,9 @@ export const DEFAULT_BUCKET_FILL_OPTIONS: BucketFillOptions = {
+ 
+ export type BucketFillFailureReason =
+-  "no_owner" | "open_region" | "too_complex" | "too_small" | "invalid_polygon";
++  | "no_owner"
++  | "open_region"
++  | "too_complex"
++  | "too_small"
++  | "invalid_polygon";
+ 
+ /**
+
+
+--- reference/packages/element/src/collision.ts
++++ formatter/packages/element/src/collision.ts
+@@ -209,5 +209,7 @@ export const hitElementItself = ({
+   // Do the precise (and relatively costly) hit test
+   const hitElement = (
+-    overrideShouldTestInside ? true : shouldTestInside(element)
++    overrideShouldTestInside
++      ? true
++      : shouldTestInside(element)
+   )
+     ? // Since `inShape` tests STRICTLY againt the insides of a shape
+
+
+--- reference/packages/element/src/elbowArrow.ts
++++ formatter/packages/element/src/elbowArrow.ts
+@@ -2008,14 +2008,16 @@ const calculateGrid = (
+     col: _horizontal.length,
+     data: _vertical.flatMap((y, row) =>
+-      _horizontal.map((x, col): Node => ({
+-        f: 0,
+-        g: 0,
+-        h: 0,
+-        closed: false,
+-        visited: false,
+-        parent: null,
+-        addr: [col, row] as GridAddress,
+-        pos: [x, y] as GlobalPoint,
+-      })),
++      _horizontal.map(
++        (x, col): Node => ({
++          f: 0,
++          g: 0,
++          h: 0,
++          closed: false,
++          visited: false,
++          parent: null,
++          addr: [col, row] as GridAddress,
++          pos: [x, y] as GlobalPoint,
++        }),
++      ),
+     ),
+   };
+
+
+--- reference/packages/element/src/linearElementEditor.ts
++++ formatter/packages/element/src/linearElementEditor.ts
+@@ -2506,5 +2506,6 @@ const pointDraggingUpdates = (
+     if (element.startBinding) {
+       const startBindable = elementsMap.get(element.startBinding.elementId) as
+-        ExcalidrawBindableElement | undefined;
++        | ExcalidrawBindableElement
++        | undefined;
+       if (startBindable) {
+         const startPoint =
+@@ -2524,5 +2525,6 @@ const pointDraggingUpdates = (
+     if (element.endBinding) {
+       const endBindable = elementsMap.get(element.endBinding.elementId) as
+-        ExcalidrawBindableElement | undefined;
++        | ExcalidrawBindableElement
++        | undefined;
+       if (endBindable) {
+         const endPoint =
+
+
+--- reference/packages/element/src/resizeElements.ts
++++ formatter/packages/element/src/resizeElements.ts
+@@ -1123,6 +1123,6 @@ const getNextMultipleWidthAndHeightFromPointer = (
+   } = {},
+ ) => {
+-  const originalElementsArray = selectedElements.map((el) =>
+-    originalElementsMap.get(el.id)!,
++  const originalElementsArray = selectedElements.map(
++    (el) => originalElementsMap.get(el.id)!,
+   );
+ 
+@@ -1293,5 +1293,6 @@ export const resizeMultipleElements = (
+       // originalElementsMap holds snapshots of the (non-deleted) selection
+       const origElement = originalElementsMap!.get(element.id) as
+-        NonDeletedExcalidrawElement | undefined;
++        | NonDeletedExcalidrawElement
++        | undefined;
+       if (origElement) {
+         acc.push({ orig: origElement, latest: element });
+
+
+--- reference/packages/element/src/selection.ts
++++ formatter/packages/element/src/selection.ts
+@@ -256,5 +256,6 @@ export const getActiveTextElement = (
+     appState.editingTextElement &&
+     ((elementsMap.get(appState.editingTextElement.id) as
+-      ExcalidrawTextElement | undefined) ||
++      | ExcalidrawTextElement
++      | undefined) ||
+       appState.editingTextElement);
+ 
+
+
+--- reference/packages/element/src/showSelectedShapeActions.ts
++++ formatter/packages/element/src/showSelectedShapeActions.ts
+@@ -11,12 +11,12 @@ export const showSelectedShapeActions = (
+   Boolean(
+     !appState.viewModeEnabled &&
+-    appState.openDialog?.name !== "elementLinkSelector" &&
+-    ((appState.activeTool.type !== "custom" &&
+-      (appState.editingTextElement ||
+-        (appState.activeTool.type !== "selection" &&
+-          appState.activeTool.type !== "lasso" &&
+-          appState.activeTool.type !== "eraser" &&
+-          appState.activeTool.type !== "hand" &&
+-          appState.activeTool.type !== "laser"))) ||
+-      getSelectedElements(elements, appState).length),
++      appState.openDialog?.name !== "elementLinkSelector" &&
++      ((appState.activeTool.type !== "custom" &&
++        (appState.editingTextElement ||
++          (appState.activeTool.type !== "selection" &&
++            appState.activeTool.type !== "lasso" &&
++            appState.activeTool.type !== "eraser" &&
++            appState.activeTool.type !== "hand" &&
++            appState.activeTool.type !== "laser"))) ||
++        getSelectedElements(elements, appState).length),
+   );
+
+
+--- reference/packages/element/src/stickyNote.ts
++++ formatter/packages/element/src/stickyNote.ts
+@@ -299,8 +299,10 @@ export const getStickyNotePathCommands = (
+     return [
+       { type: "move", point: points[0] },
+-      ...points.slice(1).map((point): StickyNotePathCommand => ({
+-        type: "line",
+-        point,
+-      })),
++      ...points.slice(1).map(
++        (point): StickyNotePathCommand => ({
++          type: "line",
++          point,
++        }),
++      ),
+     ];
+   }
+
+
+--- reference/packages/element/src/store.ts
++++ formatter/packages/element/src/store.ts
+@@ -410,8 +410,11 @@ export class Store {
+    */
+   private satisfiesScheduledActionsInvariant() {
+-    if (!(
+-      this.scheduledMacroActions.size >= 0 &&
+-      this.scheduledMacroActions.size <= Object.keys(CaptureUpdateAction).length
+-    )) {
++    if (
++      !(
++        this.scheduledMacroActions.size >= 0 &&
++        this.scheduledMacroActions.size <=
++          Object.keys(CaptureUpdateAction).length
++      )
++    ) {
+       const message = `There can be at most three store actions scheduled at the same time, but there are "${this.scheduledMacroActions.size}".`;
+       console.error(message, this.scheduledMacroActions.values());
+
+
+--- reference/packages/element/src/transformHandles.ts
++++ formatter/packages/element/src/transformHandles.ts
+@@ -30,5 +30,12 @@ import type {
+ 
+ export type TransformHandleDirection =
+-  "n" | "s" | "w" | "e" | "nw" | "ne" | "sw" | "se";
++  | "n"
++  | "s"
++  | "w"
++  | "e"
++  | "nw"
++  | "ne"
++  | "sw"
++  | "se";
+ 
+ export type TransformHandleType = TransformHandleDirection | "rotation";
+
+
+--- reference/packages/element/src/types.ts
++++ formatter/packages/element/src/types.ts
+@@ -137,5 +137,6 @@ export type ExcalidrawIframeElement = _ExcalidrawElementBase &
+ 
+ export type ExcalidrawIframeLikeElement =
+-  ExcalidrawIframeElement | ExcalidrawEmbeddableElement;
++  | ExcalidrawIframeElement
++  | ExcalidrawEmbeddableElement;
+ 
+ export type IframeData = {
+@@ -185,5 +186,6 @@ export type ExcalidrawMagicFrameElement = _ExcalidrawElementBase & {
+ 
+ export type ExcalidrawFrameLikeElement =
+-  ExcalidrawFrameElement | ExcalidrawMagicFrameElement;
++  | ExcalidrawFrameElement
++  | ExcalidrawMagicFrameElement;
+ 
+ /**
+@@ -346,5 +348,8 @@ export type CardinalityArrowhead =
+ 
+ export type ArrowheadLegacy =
+-  "dot" | "crowfoot_one" | "crowfoot_many" | "crowfoot_one_or_many";
++  | "dot"
++  | "crowfoot_one"
++  | "crowfoot_many"
++  | "crowfoot_one_or_many";
+ 
+ export type Arrowhead =
+@@ -473,5 +478,6 @@ export type NonDeletedSceneElementsMap = Map<
+ 
+ export type ElementsMapOrArray =
+-  readonly ExcalidrawElement[] | Readonly<ElementsMap>;
++  | readonly ExcalidrawElement[]
++  | Readonly<ElementsMap>;
+ 
+ export type NonDeletedElementsMapOrArray =
+@@ -480,5 +486,8 @@ export type NonDeletedElementsMapOrArray =
+ 
+ export type ExcalidrawLinearElementSubType =
+-  "line" | "sharpArrow" | "curvedArrow" | "elbowArrow";
++  | "line"
++  | "sharpArrow"
++  | "curvedArrow"
++  | "elbowArrow";
+ 
+ export type ConvertibleGenericTypes = "rectangle" | "diamond" | "ellipse";
+
+
+--- reference/packages/element/src/utils.ts
++++ formatter/packages/element/src/utils.ts
+@@ -337,6 +337,9 @@ export function deconstructRectanguloidElement(
+   const corners =
+     offset > 0
+-      ? baseCorners.map((corner) =>
+-          curveCatmullRomCubicApproxPoints(curveOffsetPoints(corner, offset))!,
++      ? baseCorners.map(
++          (corner) =>
++            curveCatmullRomCubicApproxPoints(
++              curveOffsetPoints(corner, offset),
++            )!,
+         )
+       : [
+@@ -466,6 +469,9 @@ export function deconstructDiamondElement(
+   const corners =
+     offset > 0
+-      ? baseCorners.map((corner) =>
+-          curveCatmullRomCubicApproxPoints(curveOffsetPoints(corner, offset))!,
++      ? baseCorners.map(
++          (corner) =>
++            curveCatmullRomCubicApproxPoints(
++              curveOffsetPoints(corner, offset),
++            )!,
+         )
+       : [
+@@ -851,5 +857,6 @@ export const projectFixedPointOntoDiagonal = (
+       otherBinding &&
+       (elementsMap.get(otherBinding.elementId) as
+-        ExcalidrawBindableElement | undefined);
++        | ExcalidrawBindableElement
++        | undefined);
+     const otherFocusPoint =
+       otherBinding &&
+
+
+--- reference/packages/element/tests/bucketFill.test.ts
++++ formatter/packages/element/tests/bucketFill.test.ts
+@@ -1875,5 +1875,43 @@ describe("computeBucketFillPolygon", () => {
+     // sample that same path, not the raw chords (which visibly poke out)
+     // prettier-ignore
+-    const CIRCLE_POINTS: [number, number][] = [[240,120],[238.18,140.84],[232.76,161.04],[223.92,180],[211.93,197.13],[197.13,211.93],[180,223.92],[161.04,232.76],[140.84,238.18],[120,240],[99.16,238.18],[78.96,232.76],[60,223.92],[42.87,211.93],[28.07,197.13],[16.08,180],[7.24,161.04],[1.82,140.84],[0,120],[1.82,99.16],[7.24,78.96],[16.08,60],[28.07,42.87],[42.87,28.07],[60,16.08],[78.96,7.24],[99.16,1.82],[120,0],[140.84,1.82],[161.04,7.24],[180,16.08],[197.13,28.07],[211.93,42.87],[223.92,60],[232.76,78.96],[238.18,99.16],[239.93,115.81]];
++    const CIRCLE_POINTS: [number, number][] = [
++      [240, 120],
++      [238.18, 140.84],
++      [232.76, 161.04],
++      [223.92, 180],
++      [211.93, 197.13],
++      [197.13, 211.93],
++      [180, 223.92],
++      [161.04, 232.76],
++      [140.84, 238.18],
++      [120, 240],
++      [99.16, 238.18],
++      [78.96, 232.76],
++      [60, 223.92],
++      [42.87, 211.93],
++      [28.07, 197.13],
++      [16.08, 180],
++      [7.24, 161.04],
++      [1.82, 140.84],
++      [0, 120],
++      [1.82, 99.16],
++      [7.24, 78.96],
++      [16.08, 60],
++      [28.07, 42.87],
++      [42.87, 28.07],
++      [60, 16.08],
++      [78.96, 7.24],
++      [99.16, 1.82],
++      [120, 0],
++      [140.84, 1.82],
++      [161.04, 7.24],
++      [180, 16.08],
++      [197.13, 28.07],
++      [211.93, 42.87],
++      [223.92, 60],
++      [232.76, 78.96],
++      [238.18, 99.16],
++      [239.93, 115.81],
++    ];
+     const circle = API.createElement({
+       type: "freedraw",
+@@ -1941,5 +1979,130 @@ describe("computeBucketFillPolygon", () => {
+     // be bridgeable
+     // prettier-ignore
+-    const BLOB_POINTS: [number, number][] = [[0,0],[0,-0.3],[0,-0.6],[-0.6,-0.6],[-2.1,-0.6],[-4.7,-0.6],[-7.9,-0.6],[-11.2,0.3],[-18.2,3.8],[-26.2,7.9],[-33.8,13.2],[-42.3,20.0],[-50.9,27.6],[-56.7,34.7],[-62.0,43.5],[-63.2,50.3],[-63.8,54.7],[-60.0,60.3],[-51.7,65.3],[-38.2,69.1],[-21.5,72.3],[-3.5,73.8],[16.5,75.0],[36.7,75.0],[66.7,75.0],[74.4,75.8],[76.1,75.8],[76.1,76.1],[75.6,76.7],[71.1,77.9],[59.7,80.5],[46.2,85.0],[33.5,89.1],[21.2,95.0],[12.6,101.1],[6.8,106.7],[4.4,112.6],[4.4,116.4],[5.6,119.9],[10.3,124.1],[18.8,127.3],[32.0,129.6],[47.3,131.7],[62.6,131.7],[80.5,131.7],[97.3,129.1],[114.4,126.4],[139.0,123.5],[147.0,122.0],[150.2,122.0],[152.9,121.7],[154.6,120.2],[155.8,118.5],[157.9,114.1],[162.0,104.9],[167.0,93.2],[172.3,81.4],[177.3,69.7],[181.4,60.6],[184.6,52.0],[186.4,46.2],[187.3,42.3],[187.8,39.7],[187.8,37.6],[187.8,36.2],[185.5,34.4],[181.1,32.0],[172.9,29.4],[158.7,25.0],[144.3,21.8],[128.2,19.1],[100.0,14.4],[90.8,13.2],[86.7,12.1],[85.8,11.5],[85.5,11.5],[85.5,11.2],[86.1,10.9],[87.6,9.7],[88.8,7.9],[89.4,6.5],[89.4,5.6],[89.4,4.4],[86.7,2.9],[81.4,1.5],[74.1,0.3],[62.6,-0.6],[50.9,-1.2],[42.0,-1.2],[31.7,-1.2],[23.2,-0.6],[17.1,0.6],[12.1,1.5],[9.7,2.1],[8.5,2.1],[7.9,2.1],[7.6,2.1],[7.3,2.1],[6.5,1.5],[4.7,0],[1.8,-1.2],[-1.5,-2.4],[-5.6,-2.9],[-10.0,-3.8],[-14.7,-4.1],[-17.6,-4.4],[-21.5,-5.3],[-23.8,-5.6],[-25.6,-5.9],[-26.8,-6.2],[-27.0,-6.2],[-27.3,-6.2],[-27.3,-5.3],[-27.3,-4.4],[-26.8,-2.9],[-25.9,-1.5],[-24.7,-0.3],[-24.1,0.3],[-23.2,1.2],[-22.6,1.5],[-22.0,1.8],[-21.8,2.1],[-21.5,2.1],[-21.5,2.1]];
++    const BLOB_POINTS: [number, number][] = [
++      [0, 0],
++      [0, -0.3],
++      [0, -0.6],
++      [-0.6, -0.6],
++      [-2.1, -0.6],
++      [-4.7, -0.6],
++      [-7.9, -0.6],
++      [-11.2, 0.3],
+... 120 more lines
+
+--- reference/packages/element/tests/linearElementEditor.test.tsx
++++ formatter/packages/element/tests/linearElementEditor.test.tsx
+@@ -717,6 +717,7 @@ describe("Test Linear Elements", () => {
+         expect(line.points.length).toEqual(5);
+ 
+-        expect((h.elements[0] as ExcalidrawLinearElement).points)
+-          .toMatchInlineSnapshot(`
++        expect(
++          (h.elements[0] as ExcalidrawLinearElement).points,
++        ).toMatchInlineSnapshot(`
+             [
+               [
+@@ -914,6 +915,7 @@ describe("Test Linear Elements", () => {
+         expect(line.points.length).toEqual(5);
+ 
+-        expect((h.elements[0] as ExcalidrawLinearElement).points)
+-          .toMatchInlineSnapshot(`
++        expect(
++          (h.elements[0] as ExcalidrawLinearElement).points,
++        ).toMatchInlineSnapshot(`
+             [
+               [
+@@ -1448,6 +1450,8 @@ describe("Test Linear Elements", () => {
+       UI.resize(container, "ne", [300, 200]);
+ 
+-      expect({ width: container.width, height: container.height })
+-        .toMatchInlineSnapshot(`
++      expect({
++        width: container.width,
++        height: container.height,
++      }).toMatchInlineSnapshot(`
+           {
+             "height": 150,
+@@ -1499,6 +1503,7 @@ describe("Test Linear Elements", () => {
+       expect(container.width).toBe(40);
+       const elementsMap = arrayToMap(h.elements);
+-      expect(getBoundTextElementPosition(container, textElement, elementsMap))
+-        .toMatchInlineSnapshot(`
++      expect(
++        getBoundTextElementPosition(container, textElement, elementsMap),
++      ).toMatchInlineSnapshot(`
+           {
+             "x": 25,
+@@ -1515,6 +1520,8 @@ describe("Test Linear Elements", () => {
+       drag(points[1], pointFrom(points[1][0] + 300, points[1][1]));
+ 
+-      expect({ width: container.width, height: container.height })
+-        .toMatchInlineSnapshot(`
++      expect({
++        width: container.width,
++        height: container.height,
++      }).toMatchInlineSnapshot(`
+           {
+             "height": 0,
+@@ -1523,6 +1530,7 @@ describe("Test Linear Elements", () => {
+         `);
+ 
+-      expect(getBoundTextElementPosition(container, textElement, elementsMap))
+-        .toMatchInlineSnapshot(`
++      expect(
+... 5 more lines
+
+--- reference/packages/excalidraw/actions/actionProperties.tsx
++++ formatter/packages/excalidraw/actions/actionProperties.tsx
+@@ -2199,6 +2199,7 @@ export const actionChangeArrowType = register<keyof typeof ARROW_TYPE>({
+           endBinding,
+           ...updateElbowArrowPoints(newElement, elementsMap, {
+-            points: [startGlobalPoint, endGlobalPoint].map((p): LocalPoint =>
+-              pointFrom(p[0] - newElement.x, p[1] - newElement.y),
++            points: [startGlobalPoint, endGlobalPoint].map(
++              (p): LocalPoint =>
++                pointFrom(p[0] - newElement.x, p[1] - newElement.y),
+             ),
+             startBinding,
+
+
+--- reference/packages/excalidraw/actions/types.ts
++++ formatter/packages/excalidraw/actions/types.ts
+@@ -16,5 +16,9 @@ import type React from "react";
+ 
+ export type ActionSource =
+-  "ui" | "keyboard" | "contextMenu" | "api" | "commandPalette";
++  | "ui"
++  | "keyboard"
++  | "contextMenu"
++  | "api"
++  | "commandPalette";
+ 
+ /** if false, the action should be prevented */
+
+
+--- reference/packages/excalidraw/appState.ts
++++ formatter/packages/excalidraw/appState.ts
+@@ -169,6 +169,7 @@ const APP_STATE_STORAGE_CONF = (<
+   },
+   T extends Record<keyof AppState, Values>,
+->(config: { [K in keyof T]: K extends keyof AppState ? T[K] : never }) =>
+-  config)({
++>(
++  config: { [K in keyof T]: K extends keyof AppState ? T[K] : never },
++) => config)({
+   showWelcomeScreen: { browser: true, export: false, server: false },
+   theme: { browser: true, export: false, server: false },
+@@ -308,7 +309,7 @@ const _clearAppStateForStorage = <
+ ) => {
+   type ExportableKeys = {
+-    [
+-      K in keyof typeof APP_STATE_STORAGE_CONF
+-    ]: (typeof APP_STATE_STORAGE_CONF)[K][ExportType] extends true ? K : never;
++    [K in keyof typeof APP_STATE_STORAGE_CONF]: (typeof APP_STATE_STORAGE_CONF)[K][ExportType] extends true
++      ? K
++      : never;
+   }[keyof typeof APP_STATE_STORAGE_CONF];
+   const stateForExport = {} as { [K in ExportableKeys]?: (typeof appState)[K] };
+
+
+--- reference/packages/excalidraw/charts/charts.types.ts
++++ formatter/packages/excalidraw/charts/charts.types.ts
+@@ -15,3 +15,4 @@ export interface SpreadsheetSeries {
+ 
+ export type ParseSpreadsheetResult =
+-  { ok: false; reason: string } | { ok: true; data: Spreadsheet };
++  | { ok: false; reason: string }
++  | { ok: true; data: Spreadsheet };
+
+
+--- reference/packages/excalidraw/components/App.cursor.ts
++++ formatter/packages/excalidraw/components/App.cursor.ts
+@@ -53,5 +53,6 @@ export class AppCursor {
+ 
+   private eraserCanvasCache:
+-    (HTMLCanvasElement & { theme?: AppState["theme"] }) | null = null;
++    | (HTMLCanvasElement & { theme?: AppState["theme"] })
++    | null = null;
+   private eraserPreviewDataURL: DataURL | null = null;
+ 
+

@@ -1,0 +1,1256 @@
+# 533 of 735 files differ from prettier@3.10.1
+dev-docs/docusaurus.config.js
+dev-docs/sidebars.js
+dev-docs/src/components/Homepage/index.js
+dev-docs/src/components/Homepage/index.tsx
+dev-docs/src/theme/ReactLiveScope/index.js
+examples/with-script-in-browser/components/CustomFooter.tsx
+examples/with-script-in-browser/components/ExampleApp.tsx
+examples/with-script-in-browser/components/sidebar/ExampleSidebar.tsx
+examples/with-script-in-browser/utils.ts
+excalidraw-app/App.tsx
+excalidraw-app/CustomStats.tsx
+excalidraw-app/ExcalidrawPlusIframeExport.tsx
+excalidraw-app/app-jotai.ts
+excalidraw-app/app-language/LanguageList.tsx
+excalidraw-app/app-language/language-detector.ts
+excalidraw-app/collab/Collab.tsx
+excalidraw-app/collab/CollabError.tsx
+excalidraw-app/collab/Portal.tsx
+excalidraw-app/components/AI.tsx
+excalidraw-app/components/AppFooter.tsx
+excalidraw-app/components/AppMainMenu.tsx
+excalidraw-app/components/AppSidebar.tsx
+excalidraw-app/components/AppWelcomeScreen.tsx
+excalidraw-app/components/DebugCanvas.tsx
+excalidraw-app/components/EncryptedIcon.tsx
+excalidraw-app/components/ExcalidrawPlusPromoBanner.tsx
+excalidraw-app/components/ExportToExcalidrawPlus.tsx
+excalidraw-app/data/FileManager.ts
+excalidraw-app/data/LocalData.ts
+excalidraw-app/data/cacheMermaidChunks.ts
+excalidraw-app/data/firebase.ts
+excalidraw-app/data/firebaseSDK.ts
+excalidraw-app/data/index.ts
+excalidraw-app/sentry.ts
+excalidraw-app/share/QRCode.tsx
+excalidraw-app/share/ShareDialog.tsx
+excalidraw-app/tests/LanguageList.test.tsx
+excalidraw-app/tests/appRoutes.test.ts
+excalidraw-app/tests/collab.test.tsx
+excalidraw-app/useHandleAppTheme.ts
+excalidraw-app/vite.config.mts
+packages/common/debug.ts
+packages/common/src/appEventBus.test.ts
+packages/common/src/appEventBus.ts
+packages/common/src/bounds.ts
+packages/common/src/colors.test.ts
+packages/common/src/colors.ts
+packages/common/src/constants.ts
+packages/common/src/editorInterface.ts
+packages/common/src/font-metadata.ts
+packages/common/src/index.ts
+packages/common/src/keys.ts
+packages/common/src/points.ts
+packages/common/src/promise-pool.ts
+packages/common/src/utility-types.ts
+packages/common/src/utils.ts
+packages/common/tests/binary-heap.test.ts
+packages/element/src/Scene.ts
+packages/element/src/__tests__/flowchart.test.ts
+packages/element/src/__tests__/stickyNote.test.ts
+packages/element/src/__tests__/transform.test.ts
+packages/element/src/align.ts
+packages/element/src/arrowEndpointText.ts
+packages/element/src/arrowheads.ts
+packages/element/src/arrows/focus.ts
+packages/element/src/arrows/helpers.ts
+packages/element/src/binding.ts
+packages/element/src/bounds.ts
+packages/element/src/bucketFill.ts
+packages/element/src/collision.ts
+packages/element/src/comparisons.ts
+packages/element/src/containerCache.ts
+packages/element/src/convertToShape.ts
+packages/element/src/cropElement.ts
+packages/element/src/delta.ts
+packages/element/src/distribute.ts
+packages/element/src/dragElements.ts
+packages/element/src/duplicate.ts
+packages/element/src/elbowArrow.ts
+packages/element/src/elementLink.ts
+packages/element/src/embeddable.ts
+packages/element/src/flowchart.ts
+packages/element/src/fractionalIndex.ts
+packages/element/src/frame.ts
+packages/element/src/groups.ts
+packages/element/src/heading.ts
+packages/element/src/image.ts
+packages/element/src/index.ts
+packages/element/src/linearElementEditor.ts
+packages/element/src/listMarker.ts
+packages/element/src/mutateElement.ts
+packages/element/src/newElement.ts
+packages/element/src/positionElementsOnGrid.ts
+packages/element/src/renderElement.ts
+packages/element/src/renderEnvironment.ts
+packages/element/src/resizeElements.ts
+packages/element/src/resizeTest.ts
+packages/element/src/selection.ts
+packages/element/src/shape.ts
+packages/element/src/showSelectedShapeActions.ts
+packages/element/src/sizeHelpers.ts
+packages/element/src/sortElements.ts
+packages/element/src/stickyNote.ts
+packages/element/src/store.ts
+packages/element/src/textElement.ts
+packages/element/src/textMeasurements.ts
+packages/element/src/textWrapping.ts
+packages/element/src/transform.ts
+packages/element/src/transformHandles.ts
+packages/element/src/typeChecks.ts
+packages/element/src/types.ts
+packages/element/src/utils.ts
+packages/element/src/visualdebug.ts
+packages/element/src/zindex.ts
+packages/element/tests/align.test.tsx
+packages/element/tests/binding.test.tsx
+packages/element/tests/bounds.test.ts
+packages/element/tests/bucketFill.test.ts
+packages/element/tests/collision.test.tsx
+packages/element/tests/cropElement.test.tsx
+packages/element/tests/delta.test.tsx
+packages/element/tests/distribute.test.tsx
+packages/element/tests/dragElements.test.ts
+packages/element/tests/duplicate.test.tsx
+packages/element/tests/elbowArrow.test.tsx
+packages/element/tests/embeddable.test.ts
+packages/element/tests/flowchart.test.tsx
+packages/element/tests/fractionalIndex.test.ts
+packages/element/tests/frame.test.tsx
+packages/element/tests/linearElementEditor.test.tsx
+packages/element/tests/newElement.test.ts
+packages/element/tests/renderEnvironmentCaches.test.ts
+packages/element/tests/resize.test.tsx
+packages/element/tests/selection.test.ts
+packages/element/tests/sizeHelpers.test.ts
+packages/element/tests/textElement.test.ts
+packages/element/tests/textWrapping.test.ts
+packages/element/tests/typeChecks.test.ts
+packages/element/tests/zindex.test.tsx
+packages/excalidraw/actions/actionAlign.tsx
+packages/excalidraw/actions/actionBoundText.tsx
+packages/excalidraw/actions/actionCanvas.tsx
+packages/excalidraw/actions/actionClipboard.tsx
+packages/excalidraw/actions/actionCropEditor.tsx
+packages/excalidraw/actions/actionDeleteSelected.tsx
+packages/excalidraw/actions/actionDeselect.ts
+packages/excalidraw/actions/actionDistribute.tsx
+packages/excalidraw/actions/actionDuplicateSelection.tsx
+packages/excalidraw/actions/actionElementLink.ts
+packages/excalidraw/actions/actionElementLock.test.tsx
+packages/excalidraw/actions/actionElementLock.ts
+packages/excalidraw/actions/actionExport.tsx
+packages/excalidraw/actions/actionFinalize.tsx
+packages/excalidraw/actions/actionFlip.ts
+packages/excalidraw/actions/actionFrame.ts
+packages/excalidraw/actions/actionGroup.tsx
+packages/excalidraw/actions/actionHistory.tsx
+packages/excalidraw/actions/actionLinearEditor.tsx
+packages/excalidraw/actions/actionLink.tsx
+packages/excalidraw/actions/actionMenu.tsx
+packages/excalidraw/actions/actionNavigate.tsx
+packages/excalidraw/actions/actionProperties.test.tsx
+packages/excalidraw/actions/actionProperties.tsx
+packages/excalidraw/actions/actionSelectAll.ts
+packages/excalidraw/actions/actionStyles.ts
+packages/excalidraw/actions/actionTextAutoResize.ts
+packages/excalidraw/actions/actionToggleArrowBinding.tsx
+packages/excalidraw/actions/actionToggleMinimap.tsx
+packages/excalidraw/actions/actionToggleSearchMenu.ts
+packages/excalidraw/actions/actionToggleShapeSwitch.tsx
+packages/excalidraw/actions/actionToggleViewMode.tsx
+packages/excalidraw/actions/actionToggleWrap.ts
+packages/excalidraw/actions/actionToggleZenMode.tsx
+packages/excalidraw/actions/actionZindex.tsx
+packages/excalidraw/actions/colorTargets.ts
+packages/excalidraw/actions/index.ts
+packages/excalidraw/actions/manager.tsx
+packages/excalidraw/actions/shortcuts.ts
+packages/excalidraw/actions/types.ts
+packages/excalidraw/analytics.ts
+packages/excalidraw/animatedTrail.ts
+packages/excalidraw/appState.ts
+packages/excalidraw/charts/charts.bar.ts
+packages/excalidraw/charts/charts.helpers.ts
+packages/excalidraw/charts/charts.line.ts
+packages/excalidraw/charts/charts.parse.ts
+packages/excalidraw/charts/charts.radar.ts
+packages/excalidraw/charts/charts.types.ts
+packages/excalidraw/charts/index.ts
+packages/excalidraw/charts.test.ts
+packages/excalidraw/clients.ts
+packages/excalidraw/clipboard.test.ts
+packages/excalidraw/clipboard.ts
+packages/excalidraw/components/Actions.tsx
+packages/excalidraw/components/App.arrowText.ts
+packages/excalidraw/components/App.bucketFill.ts
+packages/excalidraw/components/App.clipboard.ts
+packages/excalidraw/components/App.cursor.ts
+packages/excalidraw/components/App.drawshape.ts
+packages/excalidraw/components/App.duplicate.ts
+packages/excalidraw/components/App.flowchart.ts
+packages/excalidraw/components/App.host.ts
+packages/excalidraw/components/App.modifiers.ts
+packages/excalidraw/components/App.pan.ts
+packages/excalidraw/components/App.selection.ts
+packages/excalidraw/components/App.selectionTool.ts
+packages/excalidraw/components/App.text.ts
+packages/excalidraw/components/App.textTool.ts
+packages/excalidraw/components/App.toolDrag.ts
+packages/excalidraw/components/App.tsx
+packages/excalidraw/components/App.viewport.ts
+packages/excalidraw/components/App.wheel.ts
+packages/excalidraw/components/App.wrap.ts
+packages/excalidraw/components/AppStateObserver.ts
+packages/excalidraw/components/Avatar.tsx
+packages/excalidraw/components/Button.tsx
+packages/excalidraw/components/ButtonIconCycle.tsx
+packages/excalidraw/components/ColorPicker/ColorInput.tsx
+packages/excalidraw/components/ColorPicker/ColorPicker.tsx
+packages/excalidraw/components/ColorPicker/CustomColorList.tsx
+packages/excalidraw/components/ColorPicker/HotkeyLabel.tsx
+packages/excalidraw/components/ColorPicker/Picker.tsx
+packages/excalidraw/components/ColorPicker/PickerColorList.tsx
+packages/excalidraw/components/ColorPicker/PickerHeading.tsx
+packages/excalidraw/components/ColorPicker/ShadeList.tsx
+packages/excalidraw/components/ColorPicker/TopPicks.tsx
+packages/excalidraw/components/ColorPicker/colorPickerUtils.ts
+packages/excalidraw/components/ColorPicker/colorTopPicksDnD.ts
+packages/excalidraw/components/ColorPicker/keyboardNavHandlers.ts
+packages/excalidraw/components/CommandPalette/CommandPalette.tsx
+packages/excalidraw/components/ConfirmDialog.tsx
+packages/excalidraw/components/ContextMenu.tsx
+packages/excalidraw/components/ConvertElementTypePopup.tsx
+packages/excalidraw/components/CursorHint.tsx
+packages/excalidraw/components/DarkModeToggle.tsx
+packages/excalidraw/components/DefaultSidebar.tsx
+packages/excalidraw/components/Dialog.tsx
+packages/excalidraw/components/ElementCanvasButtons.tsx
+packages/excalidraw/components/ElementLinkDialog.tsx
+packages/excalidraw/components/Ellipsify.tsx
+packages/excalidraw/components/EyeDropper.tsx
+packages/excalidraw/components/FileDropOverlay.tsx
+packages/excalidraw/components/FilledButton.tsx
+packages/excalidraw/components/FixedSideContainer.tsx
+packages/excalidraw/components/FontPicker/FontPicker.test.tsx
+packages/excalidraw/components/FontPicker/FontPicker.tsx
+packages/excalidraw/components/FontPicker/FontPickerList.tsx
+packages/excalidraw/components/FontPicker/FontPickerTrigger.tsx
+packages/excalidraw/components/FontPicker/fontTopPicksDnD.ts
+packages/excalidraw/components/FontPicker/keyboardNavHandlers.ts
+packages/excalidraw/components/HelpDialog.tsx
+packages/excalidraw/components/HintViewer.tsx
+packages/excalidraw/components/IconButton.tsx
+packages/excalidraw/components/IconPicker.tsx
+packages/excalidraw/components/ImageExportDialog.tsx
+packages/excalidraw/components/InitializeApp.tsx
+packages/excalidraw/components/Island.tsx
+packages/excalidraw/components/JSONExportDialog.tsx
+packages/excalidraw/components/LayerUI.tsx
+packages/excalidraw/components/LibraryMenu.tsx
+packages/excalidraw/components/LibraryMenuBrowseButton.tsx
+packages/excalidraw/components/LibraryMenuHeaderContent.tsx
+packages/excalidraw/components/LibraryMenuItems.tsx
+packages/excalidraw/components/LibraryMenuSection.tsx
+packages/excalidraw/components/LibraryUnit.tsx
+packages/excalidraw/components/LoadingMessage.tsx
+packages/excalidraw/components/Minimap/Minimap.tsx
+packages/excalidraw/components/Minimap/MinimapAnnouncementDot.tsx
+packages/excalidraw/components/Minimap/minimap-controller.chunk.ts
+packages/excalidraw/components/Minimap/minimap-shared.chunk.ts
+packages/excalidraw/components/Minimap/minimap-worker.chunk.ts
+packages/excalidraw/components/MobileMenu.tsx
+packages/excalidraw/components/MobileToolbar.tsx
+packages/excalidraw/components/OverwriteConfirm/OverwriteConfirm.tsx
+packages/excalidraw/components/OverwriteConfirm/OverwriteConfirmActions.tsx
+packages/excalidraw/components/OverwriteConfirm/OverwriteConfirmState.ts
+packages/excalidraw/components/Popover.test.tsx
+packages/excalidraw/components/Popover.tsx
+packages/excalidraw/components/PropertiesPopover.tsx
+packages/excalidraw/components/PublishLibrary.tsx
+packages/excalidraw/components/RadioGroup.tsx
+packages/excalidraw/components/RadioSelection.tsx
+packages/excalidraw/components/SearchMenu.tsx
+packages/excalidraw/components/Section.tsx
+packages/excalidraw/components/ShareableLinkDialog.tsx
+packages/excalidraw/components/Sidebar/Sidebar.tsx
+packages/excalidraw/components/Sidebar/SidebarHeader.tsx
+packages/excalidraw/components/Sidebar/SidebarTabTriggers.tsx
+packages/excalidraw/components/Sidebar/SidebarTabs.tsx
+packages/excalidraw/components/Sidebar/common.ts
+packages/excalidraw/components/Sidebar/siderbar.test.helpers.tsx
+packages/excalidraw/components/Stack.tsx
+packages/excalidraw/components/Stats/Angle.tsx
+packages/excalidraw/components/Stats/CanvasGrid.tsx
+packages/excalidraw/components/Stats/Collapsible.tsx
+packages/excalidraw/components/Stats/Dimension.tsx
+packages/excalidraw/components/Stats/DragInput.tsx
+packages/excalidraw/components/Stats/FontSize.tsx
+packages/excalidraw/components/Stats/MultiAngle.tsx
+packages/excalidraw/components/Stats/MultiDimension.tsx
+packages/excalidraw/components/Stats/MultiFontSize.tsx
+packages/excalidraw/components/Stats/MultiPosition.tsx
+packages/excalidraw/components/Stats/Position.tsx
+packages/excalidraw/components/Stats/index.tsx
+packages/excalidraw/components/Stats/stats.test.tsx
+packages/excalidraw/components/Stats/utils.ts
+packages/excalidraw/components/TTDDialog/Chat/ChatHistoryMenu.tsx
+packages/excalidraw/components/TTDDialog/Chat/ChatInterface.tsx
+packages/excalidraw/components/TTDDialog/Chat/ChatMessage.tsx
+packages/excalidraw/components/TTDDialog/Chat/TTDChatPanel.tsx
+packages/excalidraw/components/TTDDialog/Chat/useChatAgent.ts
+packages/excalidraw/components/TTDDialog/CodeMirrorEditor.tsx
+packages/excalidraw/components/TTDDialog/MermaidToExcalidraw.tsx
+packages/excalidraw/components/TTDDialog/TTDDialog.tsx
+packages/excalidraw/components/TTDDialog/TTDDialogInput.tsx
+packages/excalidraw/components/TTDDialog/TTDDialogOutput.tsx
+packages/excalidraw/components/TTDDialog/TTDDialogPanels.tsx
+packages/excalidraw/components/TTDDialog/TTDDialogTabTriggers.tsx
+packages/excalidraw/components/TTDDialog/TTDDialogTabs.tsx
+packages/excalidraw/components/TTDDialog/TTDPreviewPanel.tsx
+packages/excalidraw/components/TTDDialog/TextToDiagram.tsx
+packages/excalidraw/components/TTDDialog/common.test.ts
+packages/excalidraw/components/TTDDialog/common.ts
+packages/excalidraw/components/TTDDialog/hooks/useChatManagement.ts
+packages/excalidraw/components/TTDDialog/hooks/useMermaidRenderer.ts
+packages/excalidraw/components/TTDDialog/hooks/useTextGeneration.ts
+packages/excalidraw/components/TTDDialog/types.ts
+packages/excalidraw/components/TTDDialog/useTTDChatStorage.ts
+packages/excalidraw/components/TTDDialog/utils/TTDStreamFetch.ts
+packages/excalidraw/components/TTDDialog/utils/TTDstreamFetch.test.ts
+packages/excalidraw/components/TTDDialog/utils/mermaidAutoFix.ts
+packages/excalidraw/components/TTDDialog/utils/mermaidError.test.ts
+packages/excalidraw/components/TTDDialog/utils/mermaidError.ts
+packages/excalidraw/components/TTDDialog/utils/mermaidValidation.ts
+packages/excalidraw/components/TextField.tsx
+packages/excalidraw/components/Toast.test.tsx
+packages/excalidraw/components/Toast.tsx
+packages/excalidraw/components/ToolPopover.tsx
+packages/excalidraw/components/Toolbar.tsx
+packages/excalidraw/components/Tools.tsx
+packages/excalidraw/components/Tooltip.tsx
+packages/excalidraw/components/TopPicksDnD/TopPicksTip.tsx
+packages/excalidraw/components/TopPicksDnD/topPicksDnD.tsx
+packages/excalidraw/components/Trans.test.tsx
+packages/excalidraw/components/Trans.tsx
+packages/excalidraw/components/UnlockPopup.tsx
+packages/excalidraw/components/UserList.test.tsx
+packages/excalidraw/components/UserList.tsx
+packages/excalidraw/components/ViewportStatusFrame/ViewportStatusFrame.tsx
+packages/excalidraw/components/canvases/InteractiveCanvas.tsx
+packages/excalidraw/components/canvases/NewElementCanvas.tsx
+packages/excalidraw/components/canvases/StaticCanvas.tsx
+packages/excalidraw/components/dropdownMenu/DropdownMenu.test.tsx
+packages/excalidraw/components/dropdownMenu/DropdownMenu.tsx
+packages/excalidraw/components/dropdownMenu/DropdownMenuContent.tsx
+packages/excalidraw/components/dropdownMenu/DropdownMenuItemCheckbox.tsx
+packages/excalidraw/components/dropdownMenu/DropdownMenuItemLink.tsx
+packages/excalidraw/components/dropdownMenu/DropdownMenuSub.tsx
+packages/excalidraw/components/dropdownMenu/DropdownMenuSubContent.tsx
+packages/excalidraw/components/dropdownMenu/DropdownMenuSubTrigger.tsx
+packages/excalidraw/components/dropdownMenu/dropdownMenuUtils.ts
+packages/excalidraw/components/footer/Footer.tsx
+packages/excalidraw/components/footer/FooterCenter.tsx
+packages/excalidraw/components/hoc/withInternalFallback.test.tsx
+packages/excalidraw/components/hoc/withInternalFallback.tsx
+packages/excalidraw/components/hyperlink/Hyperlink.tsx
+packages/excalidraw/components/hyperlink/helpers.ts
+packages/excalidraw/components/icons.tsx
+packages/excalidraw/components/live-collaboration/LiveCollaborationTrigger.tsx
+packages/excalidraw/components/main-menu/DefaultItems.tsx
+packages/excalidraw/components/main-menu/MainMenu.tsx
+packages/excalidraw/components/positionElementBesideCursor.ts
+packages/excalidraw/components/shapeActionPredicates.ts
+packages/excalidraw/components/welcome-screen/WelcomeScreen.Center.tsx
+packages/excalidraw/components/welcome-screen/WelcomeScreen.Hints.tsx
+packages/excalidraw/components/welcome-screen/WelcomeScreen.tsx
+packages/excalidraw/data/EditorLocalStorage.ts
+packages/excalidraw/data/ai/types.ts
+packages/excalidraw/data/blob.ts
+packages/excalidraw/data/encode.ts
+packages/excalidraw/data/encryption.ts
+packages/excalidraw/data/image.ts
+packages/excalidraw/data/index.ts
+packages/excalidraw/data/json.ts
+packages/excalidraw/data/library.test.ts
+packages/excalidraw/data/library.ts
+packages/excalidraw/data/reconcile.ts
+packages/excalidraw/data/restore.ts
+packages/excalidraw/data/types.ts
+packages/excalidraw/deburr.ts
+packages/excalidraw/drawShapeTrail.ts
+packages/excalidraw/eraser/index.ts
+packages/excalidraw/errors.ts
+packages/excalidraw/fonts/ExcalidrawFontFace.ts
+packages/excalidraw/fonts/Excalifont/index.ts
+packages/excalidraw/fonts/Fonts.ts
+packages/excalidraw/fonts/Nunito/index.ts
+packages/excalidraw/fonts/Xiaolai/index.ts
+packages/excalidraw/global.d.ts
+packages/excalidraw/history.ts
+packages/excalidraw/hooks/useAppStateValue.ts
+packages/excalidraw/hooks/useCreatePortalContainer.ts
+packages/excalidraw/hooks/useOutsideClick.ts
+packages/excalidraw/hooks/useStableCallback.ts
+packages/excalidraw/hooks/useTextEditorFocus.ts
+packages/excalidraw/i18n.ts
+packages/excalidraw/index.tsx
+packages/excalidraw/laserTrails.ts
+packages/excalidraw/lasso/index.ts
+packages/excalidraw/lasso/utils.ts
+packages/excalidraw/polyfill.ts
+packages/excalidraw/renderOverrides.ts
+packages/excalidraw/renderer/animation.ts
+packages/excalidraw/renderer/helpers.ts
+packages/excalidraw/renderer/interactiveScene.ts
+packages/excalidraw/renderer/renderNewElementScene.ts
+packages/excalidraw/renderer/renderSnaps.ts
+packages/excalidraw/renderer/staticScene.ts
+packages/excalidraw/renderer/staticSvgScene.ts
+packages/excalidraw/scene/Renderer.ts
+packages/excalidraw/scene/export.ts
+packages/excalidraw/scene/index.ts
+packages/excalidraw/scene/scrollbars.ts
+packages/excalidraw/scene/types.ts
+packages/excalidraw/snapping.ts
+packages/excalidraw/subset/harfbuzz/harfbuzz-bindings.ts
+packages/excalidraw/subset/harfbuzz/harfbuzz-wasm.ts
+packages/excalidraw/subset/subset-main.ts
+packages/excalidraw/subset/woff2/woff2-bindings.ts
+packages/excalidraw/subset/woff2/woff2-wasm.ts
+packages/excalidraw/tests/App.test.tsx
+packages/excalidraw/tests/MermaidToExcalidraw.test.tsx
+packages/excalidraw/tests/actionStyles.test.tsx
+packages/excalidraw/tests/animation.test.ts
+packages/excalidraw/tests/arrowBinding.test.tsx
+packages/excalidraw/tests/arrowEndpointTextBinding.test.tsx
+packages/excalidraw/tests/bucketFill.test.tsx
+packages/excalidraw/tests/clients.test.ts
+packages/excalidraw/tests/clipboard.test.tsx
+packages/excalidraw/tests/colorInput.test.tsx
+packages/excalidraw/tests/colorTargets.test.ts
+packages/excalidraw/tests/contextmenu.test.tsx
+packages/excalidraw/tests/convertElementType.binding.test.tsx
+packages/excalidraw/tests/created.test.tsx
+packages/excalidraw/tests/crossDocument.test.tsx
+packages/excalidraw/tests/cursorHint.test.tsx
+packages/excalidraw/tests/data/reconcile.test.ts
+packages/excalidraw/tests/data/restore.test.ts
+packages/excalidraw/tests/dragCreate.test.tsx
+packages/excalidraw/tests/drawShape.test.tsx
+packages/excalidraw/tests/excalidraw.test.tsx
+packages/excalidraw/tests/eyeDropper.test.tsx
+packages/excalidraw/tests/fileDrop.test.tsx
+packages/excalidraw/tests/fitToContent.test.tsx
+packages/excalidraw/tests/flip.test.tsx
+packages/excalidraw/tests/helpers/api.ts
+packages/excalidraw/tests/helpers/mocks.ts
+packages/excalidraw/tests/helpers/ui.ts
+packages/excalidraw/tests/history.test.tsx
+packages/excalidraw/tests/hostAbstraction.test.tsx
+packages/excalidraw/tests/image.test.tsx
+packages/excalidraw/tests/interactivity.test.tsx
+packages/excalidraw/tests/laser.test.tsx
+packages/excalidraw/tests/lasso.test.tsx
+packages/excalidraw/tests/library.test.tsx
+packages/excalidraw/tests/minimap.test.tsx
+packages/excalidraw/tests/move.test.tsx
+packages/excalidraw/tests/multiPointCreate.test.tsx
+packages/excalidraw/tests/onDuplicate.test.tsx
+packages/excalidraw/tests/packages/events.test.tsx
+packages/excalidraw/tests/pan.test.tsx
+packages/excalidraw/tests/pixelSnap.test.tsx
+packages/excalidraw/tests/queries/dom.ts
+packages/excalidraw/tests/queries/toolQueries.ts
+packages/excalidraw/tests/regressionTests.test.tsx
+packages/excalidraw/tests/renderCaches.test.ts
+packages/excalidraw/tests/renderEnvironmentLabels.test.tsx
+packages/excalidraw/tests/renderOverrides.test.tsx
+packages/excalidraw/tests/scene/export.test.ts
+packages/excalidraw/tests/scrollConstraints.test.tsx
+packages/excalidraw/tests/search.test.tsx
+packages/excalidraw/tests/selection.test.tsx
+packages/excalidraw/tests/shortcuts.test.tsx
+packages/excalidraw/tests/stickyNotes.test.tsx
+packages/excalidraw/tests/test-utils.ts
+packages/excalidraw/tests/tool.test.tsx
+packages/excalidraw/tests/tooltip.test.tsx
+packages/excalidraw/tests/viewMode.test.tsx
+packages/excalidraw/tests/wheel.test.tsx
+packages/excalidraw/tests/wrap.test.tsx
+packages/excalidraw/tests/zoomMenu.test.tsx
+packages/excalidraw/textAutoResizeHandle.ts
+packages/excalidraw/types.ts
+packages/excalidraw/viewport.ts
+packages/excalidraw/vite-env.d.ts
+packages/excalidraw/workers.ts
+packages/excalidraw/wysiwyg/textWysiwyg.outside.test.tsx
+packages/excalidraw/wysiwyg/textWysiwyg.test.tsx
+packages/excalidraw/wysiwyg/textWysiwyg.tsx
+packages/laser-pointer/src/index.ts
+packages/laser-pointer/src/math.ts
+packages/laser-pointer/src/simplify.ts
+packages/laser-pointer/src/state.ts
+packages/math/src/curve.ts
+packages/math/src/ellipse.ts
+packages/math/src/index.ts
+packages/math/src/pca.ts
+packages/math/src/point.ts
+packages/math/src/polygon.ts
+packages/math/src/segment.ts
+packages/math/src/types.ts
+packages/math/src/vector.ts
+packages/math/tests/curve.test.ts
+packages/math/tests/ellipse.test.ts
+packages/math/tests/pca.test.ts
+packages/math/tests/polygon.test.ts
+packages/math/tests/segment.test.ts
+packages/utils/src/index.ts
+packages/utils/src/shape.ts
+packages/utils/src/test-utils.ts
+packages/utils/tests/export.test.ts
+packages/utils/tests/geometry.test.ts
+scripts/buildWasm.js
+scripts/locales-coverage-description.js
+scripts/release.js
+scripts/stats/bundle-stats-plugin.mts
+scripts/stats/perf.mjs
+scripts/stats/post.mjs
+scripts/stats/vite.config.mts
+scripts/updateChangelog.js
+scripts/woff2/woff2-esbuild-plugins.js
+setupTests.ts
+vitest.config.mts
+
+# Left as they were staged (4)
+excalidraw-app/useHandleAppTheme.ts
+packages/excalidraw/data/EditorLocalStorage.ts
+scripts/buildWasm.js
+scripts/release.js
+
+# The first 25, reference first
+
+--- reference/dev-docs/docusaurus.config.js
++++ formatter/dev-docs/docusaurus.config.js
+@@ -121,5 +121,6 @@ const config = {
+           },
+         ],
+-        copyright: `Copyright © 2023 Excalidraw community. Built with Docusaurus ❤️`,
++        copyright:
++          `Copyright © 2023 Excalidraw community. Built with Docusaurus ❤️`,
+       },
+       prism: {
+@@ -150,5 +151,5 @@ const config = {
+       },
+     ],
+-    function () {
++    function() {
+       return {
+         name: "disable-fully-specified-error",
+
+
+--- reference/dev-docs/sidebars.js
++++ formatter/dev-docs/sidebars.js
+@@ -64,5 +64,6 @@ const sidebars = {
+               link: {
+                 type: "doc",
+-                id: "@excalidraw/excalidraw/api/children-components/children-components-intro",
++                id:
++                  "@excalidraw/excalidraw/api/children-components/children-components-intro",
+               },
+               items: [
+
+
+--- reference/dev-docs/src/components/Homepage/index.js
++++ formatter/dev-docs/src/components/Homepage/index.js
+@@ -54,7 +54,5 @@ export default function HomepageFeatures() {
+       <div className="container">
+         <div className="row">
+-          {FeatureList.map((props, idx) => (
+-            <Feature key={idx} {...props} />
+-          ))}
++          {FeatureList.map((props, idx) => <Feature key={idx} {...props} />)}
+         </div>
+       </div>
+
+
+--- reference/dev-docs/src/components/Homepage/index.tsx
++++ formatter/dev-docs/src/components/Homepage/index.tsx
+@@ -62,7 +62,5 @@ export default function HomepageFeatures(): JSX.Element {
+       <div className="container">
+         <div className="row">
+-          {FeatureList.map((props, idx) => (
+-            <Feature key={idx} {...props} />
+-          ))}
++          {FeatureList.map((props, idx) => <Feature key={idx} {...props} />)}
+         </div>
+       </div>
+
+
+--- reference/dev-docs/src/theme/ReactLiveScope/index.js
++++ formatter/dev-docs/src/theme/ReactLiveScope/index.js
+@@ -1,6 +1,6 @@
+-import React from "react";
+ import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
+-import initialData from "@site/src/initialData";
+ import { useColorMode } from "@docusaurus/theme-common";
++import initialData from "@site/src/initialData";
++import React from "react";
+ 
+ import "@excalidraw/excalidraw/index.css";
+
+
+--- reference/examples/with-script-in-browser/components/CustomFooter.tsx
++++ formatter/examples/with-script-in-browser/components/CustomFooter.tsx
+@@ -46,6 +46,7 @@ const CustomFooter = ({
+             customType: "comment",
+           });
+-          const url = `data:${MIME_TYPES.svg},${encodeURIComponent(
+-            `<svg
++          const url = `data:${MIME_TYPES.svg},${
++            encodeURIComponent(
++              `<svg
+     xmlns="http://www.w3.org/2000/svg"
+     width="24"
+@@ -61,5 +62,6 @@ const CustomFooter = ({
+     <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+   </svg>`,
+-          )}`;
++            )
++          }`;
+           excalidrawAPI?.setCursor(`url(${url}), auto`);
+         }}
+
+
+--- reference/examples/with-script-in-browser/components/ExampleApp.tsx
++++ formatter/examples/with-script-in-browser/components/ExampleApp.tsx
+@@ -1,10 +1,10 @@
+ import { nanoid } from "nanoid";
+ import React, {
+-  useEffect,
+-  useState,
+-  useRef,
+-  useCallback,
+   Children,
+   cloneElement,
++  useCallback,
++  useEffect,
++  useRef,
++  useState,
+ } from "react";
+ 
+@@ -27,7 +27,7 @@ import type {
+ import initialData from "../initialData";
+ import {
+-  resolvablePromise,
+   distance2d,
+   fileOpen,
++  resolvablePromise,
+   withBatchedUpdates,
+   withBatchedUpdatesThrottled,
+@@ -121,5 +121,5 @@ export default function ExampleApp({
+   const [disableImageTool, setDisableImageTool] = useState(false);
+   const [isCollaborating, setIsCollaborating] = useState(false);
+-  const [commentIcons, setCommentIcons] = useState<{ [id: string]: Comment }>(
++  const [commentIcons, setCommentIcons] = useState<{ [id: string]: Comment; }>(
+     {},
+   );
+@@ -130,10 +130,12 @@ export default function ExampleApp({
+   }>({ promise: null! });
+   if (!initialStatePromiseRef.current.promise) {
+-    initialStatePromiseRef.current.promise =
+-      resolvablePromise<ExcalidrawInitialDataState | null>();
++    initialStatePromiseRef.current.promise = resolvablePromise<
++      ExcalidrawInitialDataState | null
++    >();
+   }
+ 
+-  const [excalidrawAPI, setExcalidrawAPI] =
+-    useState<ExcalidrawImperativeAPI | null>(null);
++  const [excalidrawAPI, setExcalidrawAPI] = useState<
++    ExcalidrawImperativeAPI | null
++  >(null);
+ 
+   useCustom(excalidrawAPI, customArgs);
+@@ -151,5 +153,5 @@ export default function ExampleApp({
+       reader.readAsDataURL(imageData);
+ 
+-      reader.onload = function () {
++      reader.onload = function() {
+         const imagesArray: BinaryFileData[] = [
+           {
+@@ -162,5 +164,5 @@ export default function ExampleApp({
+         ];
+ 
+... 110 more lines
+
+--- reference/examples/with-script-in-browser/components/sidebar/ExampleSidebar.tsx
++++ formatter/examples/with-script-in-browser/components/sidebar/ExampleSidebar.tsx
+@@ -3,5 +3,5 @@ import React, { useState } from "react";
+ import "./ExampleSidebar.scss";
+ 
+-export default function Sidebar({ children }: { children: React.ReactNode }) {
++export default function Sidebar({ children }: { children: React.ReactNode; }) {
+   const [open, setOpen] = useState(false);
+ 
+
+
+--- reference/examples/with-script-in-browser/utils.ts
++++ formatter/examples/with-script-in-browser/utils.ts
+@@ -104,6 +104,8 @@ export const withBatchedUpdatesThrottled = <
+ ) => {
+   // @ts-ignore
+-  return throttleRAF<Parameters<TFunction>>(((event) => {
+-    unstable_batchedUpdates(func, event);
+-  }) as TFunction);
++  return throttleRAF<Parameters<TFunction>>(
++    ((event) => {
++      unstable_batchedUpdates(func, event);
++    }) as TFunction,
++  );
+ };
+
+
+--- reference/excalidraw-app/App.tsx
++++ formatter/excalidraw-app/App.tsx
+@@ -1,10 +1,23 @@
+ import {
++  APP_NAME,
++  debounce,
++  EVENT,
++  getFrame,
++  getVersion,
++  isDevEnv,
++  isRunningInIframe,
++  isTestEnv,
++  preventUnload,
++  resolvablePromise,
++  VERSION_TIMEOUT,
++} from "@excalidraw/common";
++import {
++  CaptureUpdateAction,
+   Excalidraw,
++  ExcalidrawAPIProvider,
+   LiveCollaborationTrigger,
+-  TTDDialogTrigger,
+-  CaptureUpdateAction,
+   reconcileElements,
++  TTDDialogTrigger,
+   useEditorInterface,
+-  ExcalidrawAPIProvider,
+   useExcalidrawAPI,
+ } from "@excalidraw/excalidraw";
+@@ -20,33 +33,26 @@ import { openConfirmModal } from "@excalidraw/excalidraw/components/OverwriteCon
+ import { ShareableLinkDialog } from "@excalidraw/excalidraw/components/ShareableLinkDialog";
+ import Trans from "@excalidraw/excalidraw/components/Trans";
+-import {
+-  APP_NAME,
+-  EVENT,
+-  VERSION_TIMEOUT,
+-  debounce,
+-  getVersion,
+-  getFrame,
+-  isTestEnv,
+-  preventUnload,
+-  resolvablePromise,
+-  isRunningInIframe,
+-  isDevEnv,
+-} from "@excalidraw/common";
+-import polyfill from "@excalidraw/excalidraw/polyfill";
+-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+ import { loadFromBlob } from "@excalidraw/excalidraw/data/blob";
+ import { t } from "@excalidraw/excalidraw/i18n";
++import polyfill from "@excalidraw/excalidraw/polyfill";
++import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+ 
++import { isElementLink } from "@excalidraw/element";
++import { newElementWith } from "@excalidraw/element";
++import { isInitializedImageElement } from "@excalidraw/element";
+ import {
+-  GithubIcon,
+-  XBrandIcon,
+   DiscordIcon,
+   ExcalLogo,
+... 451 more lines
+
+--- reference/excalidraw-app/CustomStats.tsx
++++ formatter/excalidraw-app/CustomStats.tsx
+@@ -1,10 +1,10 @@
+-import { Stats } from "@excalidraw/excalidraw";
+-import { copyTextToSystemClipboard } from "@excalidraw/excalidraw/clipboard";
+ import {
+-  DEFAULT_VERSION,
+   debounce,
++  DEFAULT_VERSION,
+   getVersion,
+   nFormatter,
+ } from "@excalidraw/common";
++import { Stats } from "@excalidraw/excalidraw";
++import { copyTextToSystemClipboard } from "@excalidraw/excalidraw/clipboard";
+ import { t } from "@excalidraw/excalidraw/i18n";
+ import { useEffect, useState } from "react";
+@@ -18,5 +18,5 @@ import {
+ } from "./data/localStorage";
+ 
+-type StorageSizes = { scene: number; total: number };
++type StorageSizes = { scene: number; total: number; };
+ 
+ const STORAGE_SIZE_TIMEOUT = 500;
+
+
+--- reference/excalidraw-app/ExcalidrawPlusIframeExport.tsx
++++ formatter/excalidraw-app/ExcalidrawPlusIframeExport.tsx
+@@ -28,11 +28,11 @@ type MESSAGE_FROM_PLUS = MESSAGE_REQUEST_SCENE;
+ // incoming messages
+ // -----------------------------------------------------------------------------
+-type MESSAGE_READY = { type: "READY" };
+-type MESSAGE_ERROR = { type: "ERROR"; message: string };
++type MESSAGE_READY = { type: "READY"; };
++type MESSAGE_ERROR = { type: "ERROR"; message: string; };
+ type MESSAGE_SCENE_DATA = {
+   type: "SCENE_DATA";
+   elements: OrderedExcalidrawElement[];
+   appState: Pick<AppState, "viewBackgroundColor">;
+-  files: { loadedFiles: BinaryFileData[]; erroredFiles: Map<FileId, true> };
++  files: { loadedFiles: BinaryFileData[]; erroredFiles: Map<FileId, true>; };
+ };
+ 
+@@ -110,11 +110,13 @@ const verifyJWT = async ({
+ 
+     const data = `${header}.${payload}`;
+-    const signatureArrayBuffer = Uint8Array.from(decodedSignature, (c) =>
+-      c.charCodeAt(0),
++    const signatureArrayBuffer = Uint8Array.from(
++      decodedSignature,
++      (c) => c.charCodeAt(0),
+     );
+ 
+     const keyData = publicKey.replace(/-----\w+ PUBLIC KEY-----/g, "");
+-    const keyArrayBuffer = Uint8Array.from(atob(keyData), (c) =>
+-      c.charCodeAt(0),
++    const keyArrayBuffer = Uint8Array.from(
++      atob(keyData),
++      (c) => c.charCodeAt(0),
+     );
+ 
+@@ -191,8 +193,7 @@ export const ExcalidrawPlusIframeExport = () => {
+           const responseData: MESSAGE_ERROR = {
+             type: "ERROR",
+-            message:
+-              error instanceof ExcalidrawError
+-                ? error.message
+-                : "Failed to export scene data",
++            message: error instanceof ExcalidrawError
++              ? error.message
++              : "Failed to export scene data",
+           };
+           event.source!.postMessage(responseData, {
+
+
+--- reference/excalidraw-app/app-jotai.ts
++++ formatter/excalidraw-app/app-jotai.ts
+@@ -2,10 +2,10 @@
+ import {
+   atom,
++  createStore,
++  type PrimitiveAtom,
+   Provider,
+   useAtom,
+   useAtomValue,
+   useSetAtom,
+-  createStore,
+-  type PrimitiveAtom,
+ } from "jotai";
+ import { useLayoutEffect } from "react";
+
+
+--- reference/excalidraw-app/app-language/LanguageList.tsx
++++ formatter/excalidraw-app/app-language/LanguageList.tsx
+@@ -1,3 +1,3 @@
+-import { useI18n, languages } from "@excalidraw/excalidraw/i18n";
++import { languages, useI18n } from "@excalidraw/excalidraw/i18n";
+ import React from "react";
+ 
+@@ -6,5 +6,5 @@ import { useSetAtom } from "../app-jotai";
+ import { appLangCodeAtom } from "./language-state";
+ 
+-export const LanguageList = ({ style }: { style?: React.CSSProperties }) => {
++export const LanguageList = ({ style }: { style?: React.CSSProperties; }) => {
+   const { t, langCode } = useI18n();
+   const setLangCode = useSetAtom(appLangCodeAtom);
+
+
+--- reference/excalidraw-app/app-language/language-detector.ts
++++ formatter/excalidraw-app/app-language/language-detector.ts
+@@ -15,10 +15,9 @@ export const getPreferredLanguage = () => {
+     : detectedLanguages;
+ 
+-  const initialLanguage =
+-    (detectedLanguage
+-      ? // region code may not be defined if user uses generic preferred language
+-        // (e.g. chinese vs instead of chinese-simplified)
+-        languages.find((lang) => lang.code.startsWith(detectedLanguage))?.code
+-      : null) || defaultLang.code;
++  const initialLanguage = (detectedLanguage
++    // region code may not be defined if user uses generic preferred language
++    // (e.g. chinese vs instead of chinese-simplified)
++    ? languages.find((lang) => lang.code.startsWith(detectedLanguage))?.code
++    : null) || defaultLang.code;
+ 
+   return initialLanguage;
+
+
+--- reference/excalidraw-app/collab/Collab.tsx
++++ formatter/excalidraw-app/collab/Collab.tsx
+@@ -1,17 +1,8 @@
+-import {
+-  CaptureUpdateAction,
+-  getSceneVersion,
+-  restoreElements,
+-  zoomToFitBounds,
+-  reconcileElements,
+-} from "@excalidraw/excalidraw";
+-import { ErrorDialog } from "@excalidraw/excalidraw/components/ErrorDialog";
+ import { APP_NAME, cloneJSON, EVENT, toBrandedType } from "@excalidraw/common";
+ import {
+-  IDLE_THRESHOLD,
+   ACTIVE_THRESHOLD,
+-  UserIdleState,
+   assertNever,
+   debounce,
++  IDLE_THRESHOLD,
+   isDevEnv,
+   isTestEnv,
+@@ -19,9 +10,18 @@ import {
+   resolvablePromise,
+   throttleRAF,
++  UserIdleState,
+ } from "@excalidraw/common";
+-import { decryptData } from "@excalidraw/excalidraw/data/encryption";
+ import { getVisibleSceneBounds } from "@excalidraw/element";
+ import { newElementWith } from "@excalidraw/element";
+ import { isImageElement, isInitializedImageElement } from "@excalidraw/element";
++import {
++  CaptureUpdateAction,
++  getSceneVersion,
++  reconcileElements,
++  restoreElements,
++  zoomToFitBounds,
++} from "@excalidraw/excalidraw";
++import { ErrorDialog } from "@excalidraw/excalidraw/components/ErrorDialog";
++import { decryptData } from "@excalidraw/excalidraw/data/encryption";
+ import { AbortError } from "@excalidraw/excalidraw/errors";
+ import { t } from "@excalidraw/excalidraw/i18n";
+@@ -33,9 +33,5 @@ import { PureComponent } from "react";
+ import { bumpElementVersions } from "@excalidraw/excalidraw/data/restore";
+ 
+-import type {
+-  ReconciledExcalidrawElement,
+-  RemoteExcalidrawElement,
+-} from "@excalidraw/excalidraw/data/reconcile";
+-import type { ImportedDataState } from "@excalidraw/excalidraw/data/types";
++import type { Mutable, ValueOf } from "@excalidraw/common/utility-types";
+ import type {
+   ExcalidrawElement,
+@@ -44,13 +40,17 @@ import type {
+   OrderedExcalidrawElement,
+ } from "@excalidraw/element/types";
++import type {
++  ReconciledExcalidrawElement,
++  RemoteExcalidrawElement,
++} from "@excalidraw/excalidraw/data/reconcile";
++import type { ImportedDataState } from "@excalidraw/excalidraw/data/types";
+... 173 more lines
+
+--- reference/excalidraw-app/collab/CollabError.tsx
++++ formatter/excalidraw-app/collab/CollabError.tsx
+@@ -1,4 +1,4 @@
+-import { Tooltip } from "@excalidraw/excalidraw/components/Tooltip";
+ import { warning } from "@excalidraw/excalidraw/components/icons";
++import { Tooltip } from "@excalidraw/excalidraw/components/Tooltip";
+ import clsx from "clsx";
+ import { useEffect, useRef, useState } from "react";
+@@ -19,5 +19,5 @@ export const collabErrorIndicatorAtom = atom<ErrorIndicator>({
+ });
+ 
+-const CollabError = ({ collabError }: { collabError: ErrorIndicator }) => {
++const CollabError = ({ collabError }: { collabError: ErrorIndicator; }) => {
+   const [isAnimating, setIsAnimating] = useState(false);
+   const clearAnimationRef = useRef<string | number>(0);
+
+
+--- reference/excalidraw-app/collab/Portal.tsx
++++ formatter/excalidraw-app/collab/Portal.tsx
+@@ -1,6 +1,6 @@
++import { newElementWith } from "@excalidraw/element";
+ import { CaptureUpdateAction } from "@excalidraw/excalidraw";
+ import { trackEvent } from "@excalidraw/excalidraw/analytics";
+ import { encryptData } from "@excalidraw/excalidraw/data/encryption";
+-import { newElementWith } from "@excalidraw/element";
+ import throttle from "lodash.throttle";
+ 
+@@ -12,7 +12,8 @@ import type {
+ } from "@excalidraw/excalidraw/types";
+ 
+-import { WS_EVENTS, FILE_UPLOAD_TIMEOUT, WS_SUBTYPES } from "../app_constants";
++import { FILE_UPLOAD_TIMEOUT, WS_EVENTS, WS_SUBTYPES } from "../app_constants";
+ import { isSyncableElement } from "../data";
+ 
++import type { Socket } from "socket.io-client";
+ import type {
+   SocketUpdateData,
+@@ -21,5 +22,4 @@ import type {
+ } from "../data";
+ import type { TCollabClass } from "./Collab";
+-import type { Socket } from "socket.io-client";
+ 
+ class Portal {
+@@ -76,8 +76,8 @@ class Portal {
+   isOpen() {
+     return !!(
+-      this.socketInitialized &&
+-      this.socket &&
+-      this.roomId &&
+-      this.roomKey
++      this.socketInitialized
++      && this.socket
++      && this.roomId
++      && this.roomKey
+     );
+   }
+@@ -154,8 +154,8 @@ class Portal {
+     const syncableElements = elements.reduce((acc, element) => {
+       if (
+-        (syncAll ||
+-          !this.broadcastedElementVersions.has(element.id) ||
+-          element.version > this.broadcastedElementVersions.get(element.id)!) &&
+-        isSyncableElement(element)
++        (syncAll
++          || !this.broadcastedElementVersions.has(element.id)
++          || element.version > this.broadcastedElementVersions.get(element.id)!)
++        && isSyncableElement(element)
+       ) {
+         acc.push(element);
+@@ -226,5 +226,8 @@ class Portal {
+   broadcastVisibleSceneBounds = (
+     payload: {
+-      sceneBounds: SocketUpdateDataSource["USER_VISIBLE_SCENE_BOUNDS"]["payload"]["sceneBounds"];
++      sceneBounds:
++        SocketUpdateDataSource["USER_VISIBLE_SCENE_BOUNDS"]["payload"][
++          "sceneBounds"
++        ];
+... 3 more lines
+
+--- reference/excalidraw-app/components/AI.tsx
++++ formatter/excalidraw-app/components/AI.tsx
+@@ -1,2 +1,3 @@
++import { safelyParseJSON } from "@excalidraw/common";
+ import {
+   DiagramToCodePlugin,
+@@ -5,11 +6,10 @@ import {
+   getTextFromElements,
+   parseSSEStream,
++  THEME,
+   TTDDialog,
+   TTDStreamFetch,
+-  THEME,
+   useOnExcalidrawStateChange,
+ } from "@excalidraw/excalidraw";
+ import { getDataURL } from "@excalidraw/excalidraw/data/blob";
+-import { safelyParseJSON } from "@excalidraw/common";
+ 
+ import type { StreamChunk } from "@excalidraw/excalidraw";
+@@ -64,7 +64,5 @@ export const AIComponents = ({
+ 
+           const response = await fetch(
+-            `${
+-              import.meta.env.VITE_APP_AI_BACKEND
+-            }/v1/ai/diagram-to-code/generate-streaming`,
++            `${import.meta.env.VITE_APP_AI_BACKEND}/v1/ai/diagram-to-code/generate-streaming`,
+             {
+               method: "POST",
+@@ -97,7 +95,5 @@ export const AIComponents = ({
+                   </br>
+                   </br>
+-                  <div>You can also try <a href="${
+-                    import.meta.env.VITE_APP_PLUS_LP
+-                  }/plus?utm_source=excalidraw&utm_medium=app&utm_content=d2c" target="_blank" rel="noopener">Excalidraw+</a> to get more requests.</div>
++                  <div>You can also try <a href="${import.meta.env.VITE_APP_PLUS_LP}/plus?utm_source=excalidraw&utm_medium=app&utm_content=d2c" target="_blank" rel="noopener">Excalidraw+</a> to get more requests.</div>
+                 </div>
+                 </body>
+@@ -168,7 +164,6 @@ export const AIComponents = ({
+ 
+           const result = await TTDStreamFetch({
+-            url: `${
+-              import.meta.env.VITE_APP_AI_BACKEND
+-            }/v1/ai/text-to-diagram/chat-streaming`,
++            url:
++              `${import.meta.env.VITE_APP_AI_BACKEND}/v1/ai/text-to-diagram/chat-streaming`,
+             messages,
+             onChunk,
+
+
+--- reference/excalidraw-app/components/AppFooter.tsx
++++ formatter/excalidraw-app/components/AppFooter.tsx
+@@ -8,5 +8,5 @@ import { EncryptedIcon } from "./EncryptedIcon";
+ 
+ export const AppFooter = React.memo(
+-  ({ onChange }: { onChange: () => void }) => {
++  ({ onChange }: { onChange: () => void; }) => {
+     return (
+       <Footer>
+
+
+--- reference/excalidraw-app/components/AppMainMenu.tsx
++++ formatter/excalidraw-app/components/AppMainMenu.tsx
+@@ -1,6 +1,6 @@
+ import {
+-  loginIcon,
+   ExcalLogo,
+   eyeIcon,
++  loginIcon,
+ } from "@excalidraw/excalidraw/components/icons";
+ import { useI18n } from "@excalidraw/excalidraw/i18n";
+@@ -44,7 +44,5 @@ export const AppMainMenu: React.FC<{
+       <MainMenu.ItemLink
+         icon={ExcalLogo}
+-        href={`${
+-          import.meta.env.VITE_APP_PLUS_LP
+-        }/plus?utm_source=excalidraw&utm_medium=app&utm_content=hamburger`}
++        href={`${import.meta.env.VITE_APP_PLUS_LP}/plus?utm_source=excalidraw&utm_medium=app&utm_content=hamburger`}
+         className=""
+       >
+
+
+--- reference/excalidraw-app/components/AppSidebar.tsx
++++ formatter/excalidraw-app/components/AppSidebar.tsx
+@@ -98,7 +98,5 @@ export const AppSidebar = () => {
+           <SidebarPromoCopy text="Make comments with Excalidraw+" />
+           <LinkButton
+-            href={`${
+-              import.meta.env.VITE_APP_PLUS_LP
+-            }/plus?utm_source=excalidraw&utm_medium=app&utm_content=comments_promo#excalidraw-redirect`}
++            href={`${import.meta.env.VITE_APP_PLUS_LP}/plus?utm_source=excalidraw&utm_medium=app&utm_content=comments_promo#excalidraw-redirect`}
+           >
+             Sign up now
+@@ -119,7 +117,5 @@ export const AppSidebar = () => {
+           <SidebarPromoCopy text="Create presentation with Excalidraw+" />
+           <LinkButton
+-            href={`${
+-              import.meta.env.VITE_APP_PLUS_LP
+-            }/plus?utm_source=excalidraw&utm_medium=app&utm_content=presentations_promo#excalidraw-redirect`}
++            href={`${import.meta.env.VITE_APP_PLUS_LP}/plus?utm_source=excalidraw&utm_medium=app&utm_content=presentations_promo#excalidraw-redirect`}
+           >
+             Sign up now
+
+
+--- reference/excalidraw-app/components/AppWelcomeScreen.tsx
++++ formatter/excalidraw-app/components/AppWelcomeScreen.tsx
+@@ -1,4 +1,4 @@
+-import { loginIcon } from "@excalidraw/excalidraw/components/icons";
+ import { POINTER_EVENTS } from "@excalidraw/common";
++import { loginIcon } from "@excalidraw/excalidraw/components/icons";
+ import { useI18n } from "@excalidraw/excalidraw/i18n";
+ import { WelcomeScreen } from "@excalidraw/excalidraw/index";
+@@ -22,7 +22,5 @@ export const AppWelcomeScreen: React.FC<{
+             <a
+               style={{ pointerEvents: POINTER_EVENTS.inheritFromUI }}
+-              href={`${
+-                import.meta.env.VITE_APP_PLUS_APP
+-              }?utm_source=excalidraw&utm_medium=app&utm_content=welcomeScreenSignedInUser`}
++              href={`${import.meta.env.VITE_APP_PLUS_APP}?utm_source=excalidraw&utm_medium=app&utm_content=welcomeScreenSignedInUser`}
+               key={idx}
+             >
+@@ -67,7 +65,5 @@ export const AppWelcomeScreen: React.FC<{
+           {!isExcalidrawPlusSignedUser && (
+             <WelcomeScreen.Center.MenuItemLink
+-              href={`${
+-                import.meta.env.VITE_APP_PLUS_LP
+-              }/plus?utm_source=excalidraw&utm_medium=app&utm_content=welcomeScreenGuest`}
++              href={`${import.meta.env.VITE_APP_PLUS_LP}/plus?utm_source=excalidraw&utm_medium=app&utm_content=welcomeScreenGuest`}
+               shortcut={null}
+               icon={loginIcon}
+
+
+--- reference/excalidraw-app/components/DebugCanvas.tsx
++++ formatter/excalidraw-app/components/DebugCanvas.tsx
+@@ -1,2 +1,3 @@
++import { arrayToMap, throttleRAF } from "@excalidraw/common";
+ import {
+   ArrowheadArrowIcon,
+@@ -9,5 +10,4 @@ import {
+ } from "@excalidraw/excalidraw/renderer/helpers";
+ import { type AppState } from "@excalidraw/excalidraw/types";
+-import { arrayToMap, throttleRAF } from "@excalidraw/common";
+ import { useCallback } from "react";
+ 
+@@ -19,6 +19,6 @@ import {
+ 
+ import {
+-  isLineSegment,
+   type GlobalPoint,
++  isLineSegment,
+   type LineSegment,
+ } from "@excalidraw/math";
+@@ -27,9 +27,4 @@ import { isCurve } from "@excalidraw/math/curve";
+ import React from "react";
+ 
+-import type { Curve } from "@excalidraw/math";
+-import type {
+-  DebugElement,
+-  DebugPolygon,
+-} from "@excalidraw/element/visualdebug";
+ import type {
+   ElementsMap,
+@@ -39,4 +34,9 @@ import type {
+   OrderedExcalidrawElement,
+ } from "@excalidraw/element/types";
++import type {
++  DebugElement,
++  DebugPolygon,
++} from "@excalidraw/element/visualdebug";
++import type { Curve } from "@excalidraw/math";
+ 
+ import { STORAGE_KEYS } from "../app_constants";
+@@ -361,7 +361,7 @@ const _debugRenderer = (
+ 
+   if (
+-    window.visualDebug?.currentFrame &&
+-    window.visualDebug?.data &&
+-    window.visualDebug.data.length > 0
++    window.visualDebug?.currentFrame
++    && window.visualDebug?.data
++    && window.visualDebug.data.length > 0
+   ) {
+     // Render only one frame
+@@ -379,5 +379,5 @@ const _debugRenderer = (
+     window.visualDebug!.data =
+       window.visualDebug?.data.map((frame) =>
+-        frame.filter((el) => el.permanent),
++        frame.filter((el) => el.permanent)
+       ) ?? [];
+   }
+@@ -395,5 +395,5 @@ const debugFrameData = (): [number, number] => {
+ };
+... 37 more lines
+
+--- reference/excalidraw-app/components/EncryptedIcon.tsx
++++ formatter/excalidraw-app/components/EncryptedIcon.tsx
+@@ -1,4 +1,4 @@
+-import { Tooltip } from "@excalidraw/excalidraw/components/Tooltip";
+ import { shield } from "@excalidraw/excalidraw/components/icons";
++import { Tooltip } from "@excalidraw/excalidraw/components/Tooltip";
+ import { useI18n } from "@excalidraw/excalidraw/i18n";
+ 
+

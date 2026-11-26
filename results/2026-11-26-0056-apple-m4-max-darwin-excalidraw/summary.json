@@ -1,0 +1,2415 @@
+{
+  "schema": 1,
+  "id": "2026-11-26-0056-apple-m4-max-darwin-excalidraw",
+  "label": "excalidraw",
+  "date": "2026-11-26T00:56:09.204Z",
+  "source": {
+    "kind": "local"
+  },
+  "machine": {
+    "platform": "darwin-arm64",
+    "cpu": "Apple M4 Max",
+    "cores": 16,
+    "memoryGiB": 48,
+    "os": "macOS 27.0.1 (26A434)",
+    "node": "v26.0.0"
+  },
+  "reference": "prettier@3.10.1",
+  "rounds": 7,
+  "languages": [
+    {
+      "language": "js",
+      "name": "JavaScript and TypeScript",
+      "files": 735,
+      "bytes": 8989173,
+      "rejected": 0,
+      "settings": [
+        {
+          "threads": "default",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.024992583,
+              "min": 0.020801416,
+              "max": 0.032474875,
+              "cpu": 0.22999999999999998,
+              "rssMiB": 48.21875,
+              "speedup": 162.20508800550948
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.025983458,
+              "min": 0.025068708,
+              "max": 0.03161125,
+              "cpu": 0.22,
+              "rssMiB": 75.78125,
+              "speedup": 156.0194230113636
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.052195,
+              "min": 0.049415917,
+              "max": 0.05538925,
+              "cpu": 0.24,
+              "rssMiB": 137.046875,
+              "speedup": 77.6688212472459
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.052611958,
+              "min": 0.050883625,
+              "max": 0.054266,
+              "cpu": 0.24,
+              "rssMiB": 137.203125,
+              "speedup": 77.05328368505121
+            },
+            {
+              "id": "biome@2.6.8",
+              "family": "biome",
+              "version": "2.6.8",
+              "runs": 7,
+              "median": 0.071127125,
+              "min": 0.068869333,
+              "max": 0.0837855,
+              "cpu": 0.69,
+              "rssMiB": 178.0625,
+              "speedup": 56.995472894482944
+            },
+            {
+              "id": "biome@2.6.7",
+              "family": "biome",
+              "version": "2.6.7",
+              "runs": 7,
+              "median": 0.07147125,
+              "min": 0.06735175,
+              "max": 0.077006958,
+              "cpu": 0.69,
+              "rssMiB": 177.71875,
+              "speedup": 56.721046924462634
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.095349375,
+              "min": 0.093553125,
+              "max": 0.138504375,
+              "cpu": 0.98,
+              "rssMiB": 201.046875,
+              "speedup": 42.516525409841435
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.098144625,
+              "min": 0.096561959,
+              "max": 0.107151583,
+              "cpu": 0.99,
+              "rssMiB": 201.609375,
+              "speedup": 41.30561531005901
+            },
+            {
+              "id": "prettier@3.10.1",
+              "family": "prettier",
+              "version": "3.10.1",
+              "runs": 7,
+              "median": 4.053924125,
+              "min": 3.815950375,
+              "max": 4.12272125,
+              "cpu": 7.8100000000000005,
+              "rssMiB": 460.71875,
+              "speedup": 1
+            },
+            {
+              "id": "prettier@3.9.10",
+              "family": "prettier",
+              "version": "3.9.10",
+              "runs": 7,
+              "median": 4.21462975,
+              "min": 4.0462285,
+              "max": 4.361443208,
+              "cpu": 8.1,
+              "rssMiB": 573.46875,
+              "speedup": 0.9618695746642988
+            }
+          ],
+          "versusDefault": false
+        },
+        {
+          "threads": "1",
+          "formatters": [
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.110051416,
+              "min": 0.108604958,
+              "max": 0.114170375,
+              "cpu": 0.09,
+              "rssMiB": 22.765625,
+              "speedup": 36.83663756766201
+            },
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.13564725,
+              "min": 0.130857208,
+              "max": 0.150628292,
+              "cpu": 0.12,
+              "rssMiB": 17.203125,
+              "speedup": 29.8857818717298
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.180754666,
+              "min": 0.177457833,
+              "max": 0.1948455,
+              "cpu": 0.16999999999999998,
+              "rssMiB": 76.90625,
+              "speedup": 22.427770273991154
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.180863708,
+              "min": 0.17621875,
+              "max": 0.191469542,
+              "cpu": 0.16999999999999998,
+              "rssMiB": 77.09375,
+              "speedup": 22.41424866176027
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.835160541,
+              "min": 0.816414125,
+              "max": 0.905180167,
+              "cpu": 0.8400000000000001,
+              "rssMiB": 69.234375,
+              "speedup": 4.854065686755189
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.846828625,
+              "min": 0.821149209,
+              "max": 0.925409667,
+              "cpu": 0.8500000000000001,
+              "rssMiB": 70.5,
+              "speedup": 4.787183622896546
+            }
+          ],
+          "versusDefault": true
+        }
+      ],
+      "parity": [
+        {
+          "id": "prettier@3.10.1",
+          "parity": "identical",
+          "files": 735,
+          "identical": 735,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "biome@2.6.7",
+          "parity": "differs",
+          "files": 735,
+          "identical": 674,
+          "differs": 61,
+          "untouched": 31,
+          "agreement": 0.9170068027210885,
+          "sample": [
+            "excalidraw-app/data/index.ts",
+            "excalidraw-app/useHandleAppTheme.ts",
+            "packages/common/src/editorInterface.ts",
+            "packages/common/src/utils.ts",
+            "packages/element/src/binding.ts",
+            "packages/element/src/bounds.ts",
+            "packages/element/src/bucketFill.ts",
+            "packages/element/src/collision.ts",
+            "packages/element/src/elbowArrow.ts",
+            "packages/element/src/linearElementEditor.ts"
+          ]
+        },
+        {
+          "id": "biome@2.6.8",
+          "parity": "differs",
+          "files": 735,
+          "identical": 674,
+          "differs": 61,
+          "untouched": 31,
+          "agreement": 0.9170068027210885,
+          "sample": [
+            "excalidraw-app/data/index.ts",
+            "excalidraw-app/useHandleAppTheme.ts",
+            "packages/common/src/editorInterface.ts",
+            "packages/common/src/utils.ts",
+            "packages/element/src/binding.ts",
+            "packages/element/src/bounds.ts",
+            "packages/element/src/bucketFill.ts",
+            "packages/element/src/collision.ts",
+            "packages/element/src/elbowArrow.ts",
+            "packages/element/src/linearElementEditor.ts"
+          ]
+        },
+        {
+          "id": "bun@1.4.4",
+          "parity": "identical",
+          "files": 735,
+          "identical": 735,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "dprint@0.64.3",
+          "parity": "differs",
+          "files": 735,
+          "identical": 202,
+          "differs": 533,
+          "untouched": 4,
+          "agreement": 0.2748299319727891,
+          "sample": [
+            "dev-docs/docusaurus.config.js",
+            "dev-docs/sidebars.js",
+            "dev-docs/src/components/Homepage/index.js",
+            "dev-docs/src/components/Homepage/index.tsx",
+            "dev-docs/src/theme/ReactLiveScope/index.js",
+            "examples/with-script-in-browser/components/CustomFooter.tsx",
+            "examples/with-script-in-browser/components/ExampleApp.tsx",
+            "examples/with-script-in-browser/components/sidebar/ExampleSidebar.tsx",
+            "examples/with-script-in-browser/utils.ts",
+            "excalidraw-app/App.tsx"
+          ]
+        },
+        {
+          "id": "dprint@0.65.0",
+          "parity": "differs",
+          "files": 735,
+          "identical": 202,
+          "differs": 533,
+          "untouched": 4,
+          "agreement": 0.2748299319727891,
+          "sample": [
+            "dev-docs/docusaurus.config.js",
+            "dev-docs/sidebars.js",
+            "dev-docs/src/components/Homepage/index.js",
+            "dev-docs/src/components/Homepage/index.tsx",
+            "dev-docs/src/theme/ReactLiveScope/index.js",
+            "examples/with-script-in-browser/components/CustomFooter.tsx",
+            "examples/with-script-in-browser/components/ExampleApp.tsx",
+            "examples/with-script-in-browser/components/sidebar/ExampleSidebar.tsx",
+            "examples/with-script-in-browser/utils.ts",
+            "excalidraw-app/App.tsx"
+          ]
+        },
+        {
+          "id": "oxfmt@0.78.0",
+          "parity": "differs",
+          "files": 735,
+          "identical": 691,
+          "differs": 44,
+          "untouched": 24,
+          "agreement": 0.9401360544217687,
+          "sample": [
+            "excalidraw-app/data/index.ts",
+            "excalidraw-app/useHandleAppTheme.ts",
+            "packages/common/src/editorInterface.ts",
+            "packages/common/src/utils.ts",
+            "packages/element/src/binding.ts",
+            "packages/element/src/bounds.ts",
+            "packages/element/src/bucketFill.ts",
+            "packages/element/src/linearElementEditor.ts",
+            "packages/element/src/resizeElements.ts",
+            "packages/element/src/selection.ts"
+          ]
+        },
+        {
+          "id": "oxfmt@0.79.0",
+          "parity": "differs",
+          "files": 735,
+          "identical": 692,
+          "differs": 43,
+          "untouched": 24,
+          "agreement": 0.9414965986394558,
+          "sample": [
+            "excalidraw-app/data/index.ts",
+            "excalidraw-app/useHandleAppTheme.ts",
+            "packages/common/src/editorInterface.ts",
+            "packages/common/src/utils.ts",
+            "packages/element/src/binding.ts",
+            "packages/element/src/bounds.ts",
+            "packages/element/src/bucketFill.ts",
+            "packages/element/src/linearElementEditor.ts",
+            "packages/element/src/resizeElements.ts",
+            "packages/element/src/selection.ts"
+          ]
+        },
+        {
+          "id": "prettier@3.9.10",
+          "parity": "identical",
+          "files": 735,
+          "identical": 735,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "tidy@2.0.0",
+          "parity": "identical",
+          "files": 735,
+          "identical": 735,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        }
+      ],
+      "untimed": []
+    },
+    {
+      "language": "json",
+      "name": "JSON",
+      "files": 89,
+      "bytes": 2105519,
+      "rejected": 0,
+      "settings": [
+        {
+          "threads": "default",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.007307208,
+              "min": 0.007073666,
+              "max": 0.007438458,
+              "cpu": 0.02,
+              "rssMiB": 14.25,
+              "speedup": 44.260606650310216
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.0092675,
+              "min": 0.009096083,
+              "max": 0.00954825,
+              "cpu": 0.02,
+              "rssMiB": 18.109375,
+              "speedup": 34.89845794442946
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.015551584,
+              "min": 0.014763417,
+              "max": 0.017084417,
+              "cpu": 0.07,
+              "rssMiB": 61.65625,
+              "speedup": 20.796689198990922
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.015937875,
+              "min": 0.01548175,
+              "max": 0.016243625,
+              "cpu": 0.07,
+              "rssMiB": 62.9375,
+              "speedup": 20.292633679207547
+            },
+            {
+              "id": "biome@2.6.8",
+              "family": "biome",
+              "version": "2.6.8",
+              "runs": 7,
+              "median": 0.016680292,
+              "min": 0.015973292,
+              "max": 0.017400208,
+              "cpu": 0.06,
+              "rssMiB": 59.65625,
+              "speedup": 19.3894362880458
+            },
+            {
+              "id": "biome@2.6.7",
+              "family": "biome",
+              "version": "2.6.7",
+              "runs": 7,
+              "median": 0.016742334,
+              "min": 0.016178583,
+              "max": 0.018541125,
+              "cpu": 0.06,
+              "rssMiB": 59.265625,
+              "speedup": 19.317584931706655
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.036272917,
+              "min": 0.035776583,
+              "max": 0.040700958,
+              "cpu": 0.04,
+              "rssMiB": 84.609375,
+              "speedup": 8.91633443761912
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.036705209,
+              "min": 0.035958458,
+              "max": 0.038444333,
+              "cpu": 0.04,
+              "rssMiB": 84.609375,
+              "speedup": 8.811323183039224
+            },
+            {
+              "id": "prettier@3.9.10",
+              "family": "prettier",
+              "version": "3.9.10",
+              "runs": 7,
+              "median": 0.301917708,
+              "min": 0.295802792,
+              "max": 0.311073875,
+              "cpu": 0.53,
+              "rssMiB": 173.328125,
+              "speedup": 1.0712238813100687
+            },
+            {
+              "id": "prettier@3.10.1",
+              "family": "prettier",
+              "version": "3.10.1",
+              "runs": 7,
+              "median": 0.323421459,
+              "min": 0.307576917,
+              "max": 0.335852542,
+              "cpu": 0.56,
+              "rssMiB": 173.796875,
+              "speedup": 1
+            }
+          ],
+          "versusDefault": false
+        },
+        {
+          "threads": "1",
+          "formatters": [
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.015086917,
+              "min": 0.014859041,
+              "max": 0.016184875,
+              "cpu": 0,
+              "rssMiB": 7.640625,
+              "speedup": 21.437213381633903
+            },
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.01754475,
+              "min": 0.017182708,
+              "max": 0.017800458,
+              "cpu": 0.01,
+              "rssMiB": 4.625,
+              "speedup": 18.434087633052624
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.043568041,
+              "min": 0.042606916,
+              "max": 0.053958666,
+              "cpu": 0.03,
+              "rssMiB": 64.671875,
+              "speedup": 7.423364731960292
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.043736042,
+              "min": 0.041562958,
+              "max": 0.044360167,
+              "cpu": 0.04,
+              "rssMiB": 64.90625,
+              "speedup": 7.39484974429099
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.047369166,
+              "min": 0.046649791,
+              "max": 0.047814,
+              "cpu": 0.04,
+              "rssMiB": 31.9375,
+              "speedup": 6.827678980035241
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.048395959,
+              "min": 0.047185417,
+              "max": 0.050690791,
+              "cpu": 0.05,
+              "rssMiB": 32.921875,
+              "speedup": 6.682819509785931
+            }
+          ],
+          "versusDefault": true
+        }
+      ],
+      "parity": [
+        {
+          "id": "prettier@3.10.1",
+          "parity": "identical",
+          "files": 89,
+          "identical": 89,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "biome@2.6.7",
+          "parity": "identical",
+          "files": 89,
+          "identical": 89,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "biome@2.6.8",
+          "parity": "identical",
+          "files": 89,
+          "identical": 89,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "bun@1.4.4",
+          "parity": "identical",
+          "files": 89,
+          "identical": 89,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "dprint@0.64.3",
+          "parity": "differs",
+          "files": 89,
+          "identical": 78,
+          "differs": 11,
+          "untouched": 0,
+          "agreement": 0.8764044943820225,
+          "sample": [
+            "dev-docs/package.json",
+            "examples/with-script-in-browser/package.json",
+            "excalidraw-app/package.json",
+            "package.json",
+            "packages/common/package.json",
+            "packages/element/package.json",
+            "packages/excalidraw/package.json",
+            "packages/fractional-indexing/package.json",
+            "packages/laser-pointer/package.json",
+            "packages/math/package.json"
+          ]
+        },
+        {
+          "id": "dprint@0.65.0",
+          "parity": "differs",
+          "files": 89,
+          "identical": 78,
+          "differs": 11,
+          "untouched": 0,
+          "agreement": 0.8764044943820225,
+          "sample": [
+            "dev-docs/package.json",
+            "examples/with-script-in-browser/package.json",
+            "excalidraw-app/package.json",
+            "package.json",
+            "packages/common/package.json",
+            "packages/element/package.json",
+            "packages/excalidraw/package.json",
+            "packages/fractional-indexing/package.json",
+            "packages/laser-pointer/package.json",
+            "packages/math/package.json"
+          ]
+        },
+        {
+          "id": "oxfmt@0.78.0",
+          "parity": "identical",
+          "files": 89,
+          "identical": 89,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "oxfmt@0.79.0",
+          "parity": "identical",
+          "files": 89,
+          "identical": 89,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "prettier@3.9.10",
+          "parity": "identical",
+          "files": 89,
+          "identical": 89,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "tidy@2.0.0",
+          "parity": "identical",
+          "files": 89,
+          "identical": 89,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        }
+      ],
+      "untimed": []
+    },
+    {
+      "language": "css",
+      "name": "CSS",
+      "files": 3,
+      "bytes": 1455,
+      "rejected": 0,
+      "settings": [
+        {
+          "threads": "default",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.00509125,
+              "min": 0.004944125,
+              "max": 0.006010291,
+              "cpu": 0,
+              "rssMiB": 4.125,
+              "speedup": 12.895907881168672
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.007206458,
+              "min": 0.006727042,
+              "max": 0.009335209,
+              "cpu": 0,
+              "rssMiB": 9.46875,
+              "speedup": 9.110757462265097
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.009967625,
+              "min": 0.00939725,
+              "max": 0.011854875,
+              "cpu": 0.01,
+              "rssMiB": 29.625,
+              "speedup": 6.586954364755897
+            },
+            {
+              "id": "biome@2.6.8",
+              "family": "biome",
+              "version": "2.6.8",
+              "runs": 7,
+              "median": 0.01027075,
+              "min": 0.009794541,
+              "max": 0.01223175,
+              "cpu": 0,
+              "rssMiB": 28.40625,
+              "speedup": 6.3925507874303245
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.0108265,
+              "min": 0.009953167,
+              "max": 0.012446125,
+              "cpu": 0,
+              "rssMiB": 30.578125,
+              "speedup": 6.064405948367432
+            },
+            {
+              "id": "biome@2.6.7",
+              "family": "biome",
+              "version": "2.6.7",
+              "runs": 7,
+              "median": 0.011055083,
+              "min": 0.009777375,
+              "max": 0.012444125,
+              "cpu": 0,
+              "rssMiB": 28.390625,
+              "speedup": 5.93901384548628
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.036912167,
+              "min": 0.034933208,
+              "max": 0.039891333,
+              "cpu": 0.03,
+              "rssMiB": 66.625,
+              "speedup": 1.7787167846309322
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.037688375,
+              "min": 0.036419708,
+              "max": 0.038969708,
+              "cpu": 0.03,
+              "rssMiB": 66.421875,
+              "speedup": 1.7420833612486608
+            },
+            {
+              "id": "prettier@3.9.10",
+              "family": "prettier",
+              "version": "3.9.10",
+              "runs": 7,
+              "median": 0.065359541,
+              "min": 0.061415042,
+              "max": 0.07031325,
+              "cpu": 0.06,
+              "rssMiB": 74.890625,
+              "speedup": 1.0045402705627937
+            },
+            {
+              "id": "prettier@3.10.1",
+              "family": "prettier",
+              "version": "3.10.1",
+              "runs": 7,
+              "median": 0.065656291,
+              "min": 0.061074542,
+              "max": 0.072068375,
+              "cpu": 0.06,
+              "rssMiB": 74.296875,
+              "speedup": 1
+            }
+          ],
+          "versusDefault": false
+        },
+        {
+          "threads": "1",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.004263334,
+              "min": 0.004069833,
+              "max": 0.004667917,
+              "cpu": 0,
+              "rssMiB": 3.484375,
+              "speedup": 15.400222220450008
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.006633833,
+              "min": 0.006290209,
+              "max": 0.00710725,
+              "cpu": 0,
+              "rssMiB": 7.421875,
+              "speedup": 9.897187794748527
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.009956917,
+              "min": 0.009612166,
+              "max": 0.010505,
+              "cpu": 0.01,
+              "rssMiB": 29.28125,
+              "speedup": 6.594038194754462
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.010568417,
+              "min": 0.010379125,
+              "max": 0.010909041,
+              "cpu": 0,
+              "rssMiB": 30.265625,
+              "speedup": 6.212500036665851
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.031233209,
+              "min": 0.030553584,
+              "max": 0.033456167,
+              "cpu": 0.02,
+              "rssMiB": 62.765625,
+              "speedup": 2.102130812110917
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.032142542,
+              "min": 0.031026625,
+              "max": 0.033411292,
+              "cpu": 0.02,
+              "rssMiB": 62.59375,
+              "speedup": 2.042660191592812
+            }
+          ],
+          "versusDefault": true
+        }
+      ],
+      "parity": [
+        {
+          "id": "prettier@3.10.1",
+          "parity": "identical",
+          "files": 3,
+          "identical": 3,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "biome@2.6.7",
+          "parity": "identical",
+          "files": 3,
+          "identical": 3,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "biome@2.6.8",
+          "parity": "identical",
+          "files": 3,
+          "identical": 3,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "bun@1.4.4",
+          "parity": "identical",
+          "files": 3,
+          "identical": 3,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "dprint@0.64.3",
+          "parity": "identical",
+          "files": 3,
+          "identical": 3,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "dprint@0.65.0",
+          "parity": "identical",
+          "files": 3,
+          "identical": 3,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "oxfmt@0.78.0",
+          "parity": "identical",
+          "files": 3,
+          "identical": 3,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "oxfmt@0.79.0",
+          "parity": "identical",
+          "files": 3,
+          "identical": 3,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "prettier@3.9.10",
+          "parity": "identical",
+          "files": 3,
+          "identical": 3,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "tidy@2.0.0",
+          "parity": "identical",
+          "files": 3,
+          "identical": 3,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        }
+      ],
+      "untimed": []
+    },
+    {
+      "language": "scss",
+      "name": "SCSS",
+      "files": 85,
+      "bytes": 225887,
+      "rejected": 0,
+      "settings": [
+        {
+          "threads": "default",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.006356084,
+              "min": 0.006190375,
+              "max": 0.006874833,
+              "cpu": 0.01,
+              "rssMiB": 7.4375,
+              "speedup": 50.650611602993294
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.009562291,
+              "min": 0.009357834,
+              "max": 0.01076525,
+              "cpu": 0.01,
+              "rssMiB": 21.890625,
+              "speedup": 33.667616055608434
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.013749291,
+              "min": 0.013186042,
+              "max": 0.015523291,
+              "cpu": 0.04,
+              "rssMiB": 37.34375,
+              "speedup": 23.41499223487233
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.014222042,
+              "min": 0.01362075,
+              "max": 0.015395583,
+              "cpu": 0.04,
+              "rssMiB": 38.296875,
+              "speedup": 22.63666089581229
+            },
+            {
+              "id": "biome@2.6.8",
+              "family": "biome",
+              "version": "2.6.8",
+              "runs": 7,
+              "median": 0.015772791,
+              "min": 0.015222375,
+              "max": 0.017657833,
+              "cpu": 0.04,
+              "rssMiB": 43.640625,
+              "speedup": 20.4110700509504
+            },
+            {
+              "id": "biome@2.6.7",
+              "family": "biome",
+              "version": "2.6.7",
+              "runs": 7,
+              "median": 0.016333333,
+              "min": 0.014833542,
+              "max": 0.017089459,
+              "cpu": 0.04,
+              "rssMiB": 43.8125,
+              "speedup": 19.710584606338465
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.038071375,
+              "min": 0.037094041,
+              "max": 0.040061541,
+              "cpu": 0.05,
+              "rssMiB": 77.375,
+              "speedup": 8.4562100002955
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.038096375,
+              "min": 0.035937625,
+              "max": 0.039378458,
+              "cpu": 0.05,
+              "rssMiB": 77.265625,
+              "speedup": 8.450660778092404
+            },
+            {
+              "id": "prettier@3.9.10",
+              "family": "prettier",
+              "version": "3.9.10",
+              "runs": 7,
+              "median": 0.309177667,
+              "min": 0.303372,
+              "max": 0.314816375,
+              "cpu": 0.54,
+              "rssMiB": 132.734375,
+              "speedup": 1.0412768332325892
+            },
+            {
+              "id": "prettier@3.10.1",
+              "family": "prettier",
+              "version": "3.10.1",
+              "runs": 7,
+              "median": 0.321939542,
+              "min": 0.300727875,
+              "max": 0.344540666,
+              "cpu": 0.56,
+              "rssMiB": 130.875,
+              "speedup": 1
+            }
+          ],
+          "versusDefault": false
+        },
+        {
+          "threads": "1",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.0091175,
+              "min": 0.008885167,
+              "max": 0.010554709,
+              "cpu": 0,
+              "rssMiB": 5.515625,
+              "speedup": 35.310067672059226
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.011657708,
+              "min": 0.011204708,
+              "max": 0.012609459,
+              "cpu": 0,
+              "rssMiB": 8.765625,
+              "speedup": 27.616023835903253
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.026145583,
+              "min": 0.025507708,
+              "max": 0.028969916,
+              "cpu": 0.03,
+              "rssMiB": 30.953125,
+              "speedup": 12.31334340488793
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.027386416,
+              "min": 0.026262916,
+              "max": 0.028658042,
+              "cpu": 0.03,
+              "rssMiB": 31.8125,
+              "speedup": 11.755446276723468
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.039270875,
+              "min": 0.03672625,
+              "max": 0.041191708,
+              "cpu": 0.04,
+              "rssMiB": 64.828125,
+              "speedup": 8.197921283903149
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.039798,
+              "min": 0.036933375,
+              "max": 0.041602542,
+              "cpu": 0.04,
+              "rssMiB": 64.8125,
+              "speedup": 8.089339715563597
+            }
+          ],
+          "versusDefault": true
+        }
+      ],
+      "parity": [
+        {
+          "id": "prettier@3.10.1",
+          "parity": "identical",
+          "files": 85,
+          "identical": 85,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "biome@2.6.7",
+          "parity": "differs",
+          "files": 85,
+          "identical": 80,
+          "differs": 5,
+          "untouched": 0,
+          "agreement": 0.9411764705882353,
+          "sample": [
+            "packages/excalidraw/components/FontPicker/FontPicker.scss",
+            "packages/excalidraw/components/Range.scss",
+            "packages/excalidraw/components/Tooltip.scss",
+            "packages/excalidraw/css/styles.scss",
+            "packages/excalidraw/css/theme.scss"
+          ]
+        },
+        {
+          "id": "biome@2.6.8",
+          "parity": "differs",
+          "files": 85,
+          "identical": 80,
+          "differs": 5,
+          "untouched": 0,
+          "agreement": 0.9411764705882353,
+          "sample": [
+            "packages/excalidraw/components/FontPicker/FontPicker.scss",
+            "packages/excalidraw/components/Range.scss",
+            "packages/excalidraw/components/Tooltip.scss",
+            "packages/excalidraw/css/styles.scss",
+            "packages/excalidraw/css/theme.scss"
+          ]
+        },
+        {
+          "id": "bun@1.4.4",
+          "parity": "identical",
+          "files": 85,
+          "identical": 85,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "dprint@0.64.3",
+          "parity": "differs",
+          "files": 85,
+          "identical": 74,
+          "differs": 11,
+          "untouched": 2,
+          "agreement": 0.8705882352941177,
+          "sample": [
+            "excalidraw-app/components/AppSidebar.scss",
+            "excalidraw-app/index.scss",
+            "packages/excalidraw/components/FileDropOverlay.scss",
+            "packages/excalidraw/components/FontPicker/FontPicker.scss",
+            "packages/excalidraw/components/LayerUI.scss",
+            "packages/excalidraw/components/Range.scss",
+            "packages/excalidraw/components/Tooltip.scss",
+            "packages/excalidraw/components/TopPicksDnD/TopPicksDnD.scss",
+            "packages/excalidraw/components/UserList.scss",
+            "packages/excalidraw/css/styles.scss"
+          ]
+        },
+        {
+          "id": "dprint@0.65.0",
+          "parity": "differs",
+          "files": 85,
+          "identical": 74,
+          "differs": 11,
+          "untouched": 2,
+          "agreement": 0.8705882352941177,
+          "sample": [
+            "excalidraw-app/components/AppSidebar.scss",
+            "excalidraw-app/index.scss",
+            "packages/excalidraw/components/FileDropOverlay.scss",
+            "packages/excalidraw/components/FontPicker/FontPicker.scss",
+            "packages/excalidraw/components/LayerUI.scss",
+            "packages/excalidraw/components/Range.scss",
+            "packages/excalidraw/components/Tooltip.scss",
+            "packages/excalidraw/components/TopPicksDnD/TopPicksDnD.scss",
+            "packages/excalidraw/components/UserList.scss",
+            "packages/excalidraw/css/styles.scss"
+          ]
+        },
+        {
+          "id": "oxfmt@0.78.0",
+          "parity": "differs",
+          "files": 85,
+          "identical": 83,
+          "differs": 2,
+          "untouched": 0,
+          "agreement": 0.9764705882352941,
+          "sample": [
+            "packages/excalidraw/components/FontPicker/FontPicker.scss",
+            "packages/excalidraw/css/styles.scss"
+          ]
+        },
+        {
+          "id": "oxfmt@0.79.0",
+          "parity": "differs",
+          "files": 85,
+          "identical": 83,
+          "differs": 2,
+          "untouched": 0,
+          "agreement": 0.9764705882352941,
+          "sample": [
+            "packages/excalidraw/components/FontPicker/FontPicker.scss",
+            "packages/excalidraw/css/styles.scss"
+          ]
+        },
+        {
+          "id": "prettier@3.9.10",
+          "parity": "identical",
+          "files": 85,
+          "identical": 85,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "tidy@2.0.0",
+          "parity": "identical",
+          "files": 85,
+          "identical": 85,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        }
+      ],
+      "untimed": []
+    },
+    {
+      "language": "markdown",
+      "name": "Markdown",
+      "files": 17,
+      "bytes": 208263,
+      "rejected": 0,
+      "settings": [
+        {
+          "threads": "default",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.0068015,
+              "min": 0.006454542,
+              "max": 0.007103375,
+              "cpu": 0,
+              "rssMiB": 8.625,
+              "speedup": 48.31497331470999
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.009950042,
+              "min": 0.009660541,
+              "max": 0.011646792,
+              "cpu": 0,
+              "rssMiB": 25,
+              "speedup": 33.02642250153316
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.017103834,
+              "min": 0.016008959,
+              "max": 0.018092209,
+              "cpu": 0.03,
+              "rssMiB": 38.15625,
+              "speedup": 19.212902265071097
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.017457667,
+              "min": 0.016511167,
+              "max": 0.018555125,
+              "cpu": 0.03,
+              "rssMiB": 39.046875,
+              "speedup": 18.823494055649018
+            },
+            {
+              "id": "biome@2.6.8",
+              "family": "biome",
+              "version": "2.6.8",
+              "runs": 7,
+              "median": 0.020965708,
+              "min": 0.020381583,
+              "max": 0.02248325,
+              "cpu": 0.02,
+              "rssMiB": 43.328125,
+              "speedup": 15.673894294435467
+            },
+            {
+              "id": "biome@2.6.7",
+              "family": "biome",
+              "version": "2.6.7",
+              "runs": 7,
+              "median": 0.021696667,
+              "min": 0.020800083,
+              "max": 0.023838792,
+              "cpu": 0.02,
+              "rssMiB": 43.40625,
+              "speedup": 15.145842031866001
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.035650834,
+              "min": 0.034363375,
+              "max": 0.040334583,
+              "cpu": 0.03,
+              "rssMiB": 76.03125,
+              "speedup": 9.217576536919164
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.035978916,
+              "min": 0.034432334,
+              "max": 0.037966417,
+              "cpu": 0.03,
+              "rssMiB": 75.765625,
+              "speedup": 9.133523950527026
+            },
+            {
+              "id": "prettier@3.10.1",
+              "family": "prettier",
+              "version": "3.10.1",
+              "runs": 7,
+              "median": 0.328614291,
+              "min": 0.323297166,
+              "max": 0.35238075,
+              "cpu": 0.63,
+              "rssMiB": 219.375,
+              "speedup": 1
+            },
+            {
+              "id": "prettier@3.9.10",
+              "family": "prettier",
+              "version": "3.9.10",
+              "runs": 7,
+              "median": 0.331023917,
+              "min": 0.320729959,
+              "max": 0.337504791,
+              "cpu": 0.62,
+              "rssMiB": 216.125,
+              "speedup": 0.9927206891216867
+            }
+          ],
+          "versusDefault": false
+        },
+        {
+          "threads": "1",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.00709775,
+              "min": 0.006537791,
+              "max": 0.007486834,
+              "cpu": 0,
+              "rssMiB": 7.9375,
+              "speedup": 46.29837497798598
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.01041175,
+              "min": 0.009976583,
+              "max": 0.0125855,
+              "cpu": 0,
+              "rssMiB": 15.921875,
+              "speedup": 31.561869138233245
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.019758875,
+              "min": 0.018007041,
+              "max": 0.021225792,
+              "cpu": 0.01,
+              "rssMiB": 33.9375,
+              "speedup": 16.631224753433585
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.02011825,
+              "min": 0.019428584,
+              "max": 0.0212575,
+              "cpu": 0.01,
+              "rssMiB": 34.828125,
+              "speedup": 16.334138953437797
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.036947917,
+              "min": 0.03539,
+              "max": 0.039426167,
+              "cpu": 0.02,
+              "rssMiB": 68.125,
+              "speedup": 8.893986933011679
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.037382542,
+              "min": 0.035015958,
+              "max": 0.039133125,
+              "cpu": 0.02,
+              "rssMiB": 68.328125,
+              "speedup": 8.790581737325407
+            }
+          ],
+          "versusDefault": true
+        }
+      ],
+      "parity": [
+        {
+          "id": "prettier@3.10.1",
+          "parity": "identical",
+          "files": 17,
+          "identical": 17,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "biome@2.6.7",
+          "parity": "differs",
+          "files": 17,
+          "identical": 12,
+          "differs": 5,
+          "untouched": 0,
+          "agreement": 0.7058823529411765,
+          "sample": [
+            "README.md",
+            "dev-docs/docs/@excalidraw/excalidraw/api/utils/utils-intro.md",
+            "dev-docs/src/pages/markdown-page.md",
+            "packages/excalidraw/CHANGELOG.md",
+            "packages/utils/README.md"
+          ]
+        },
+        {
+          "id": "biome@2.6.8",
+          "parity": "differs",
+          "files": 17,
+          "identical": 12,
+          "differs": 5,
+          "untouched": 0,
+          "agreement": 0.7058823529411765,
+          "sample": [
+            "README.md",
+            "dev-docs/docs/@excalidraw/excalidraw/api/utils/utils-intro.md",
+            "dev-docs/src/pages/markdown-page.md",
+            "packages/excalidraw/CHANGELOG.md",
+            "packages/utils/README.md"
+          ]
+        },
+        {
+          "id": "bun@1.4.4",
+          "parity": "identical",
+          "files": 17,
+          "identical": 17,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "dprint@0.64.3",
+          "parity": "differs",
+          "files": 17,
+          "identical": 12,
+          "differs": 5,
+          "untouched": 0,
+          "agreement": 0.7058823529411765,
+          "sample": [
+            "README.md",
+            "dev-docs/docs/@excalidraw/excalidraw/api/utils/utils-intro.md",
+            "packages/excalidraw/CHANGELOG.md",
+            "packages/excalidraw/README.md",
+            "packages/utils/README.md"
+          ]
+        },
+        {
+          "id": "dprint@0.65.0",
+          "parity": "differs",
+          "files": 17,
+          "identical": 12,
+          "differs": 5,
+          "untouched": 0,
+          "agreement": 0.7058823529411765,
+          "sample": [
+            "README.md",
+            "dev-docs/docs/@excalidraw/excalidraw/api/utils/utils-intro.md",
+            "packages/excalidraw/CHANGELOG.md",
+            "packages/excalidraw/README.md",
+            "packages/utils/README.md"
+          ]
+        },
+        {
+          "id": "oxfmt@0.78.0",
+          "parity": "identical",
+          "files": 17,
+          "identical": 17,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "oxfmt@0.79.0",
+          "parity": "identical",
+          "files": 17,
+          "identical": 17,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "prettier@3.9.10",
+          "parity": "identical",
+          "files": 17,
+          "identical": 17,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "tidy@2.0.0",
+          "parity": "differs",
+          "files": 17,
+          "identical": 16,
+          "differs": 1,
+          "untouched": 0,
+          "agreement": 0.9411764705882353,
+          "sample": [
+            "packages/excalidraw/CHANGELOG.md"
+          ]
+        }
+      ],
+      "untimed": []
+    },
+    {
+      "language": "yaml",
+      "name": "YAML",
+      "files": 2,
+      "bytes": 613,
+      "rejected": 0,
+      "settings": [
+        {
+          "threads": "default",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.00481225,
+              "min": 0.004621708,
+              "max": 0.005685541,
+              "cpu": 0,
+              "rssMiB": 4.015625,
+              "speedup": 11.515559249831162
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.006733833,
+              "min": 0.006557541,
+              "max": 0.007096041,
+              "cpu": 0,
+              "rssMiB": 8.4375,
+              "speedup": 8.229451190725996
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.009327334,
+              "min": 0.008994791,
+              "max": 0.0100315,
+              "cpu": 0,
+              "rssMiB": 28.921875,
+              "speedup": 5.9412207175169245
+            },
+            {
+              "id": "biome@2.6.8",
+              "family": "biome",
+              "version": "2.6.8",
+              "runs": 7,
+              "median": 0.009884083,
+              "min": 0.009582167,
+              "max": 0.011060459,
+              "cpu": 0,
+              "rssMiB": 26.5,
+              "speedup": 5.606564615048255
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.010227584,
+              "min": 0.009613042,
+              "max": 0.01118375,
+              "cpu": 0.01,
+              "rssMiB": 29.890625,
+              "speedup": 5.41826398101448
+            },
+            {
+              "id": "biome@2.6.7",
+              "family": "biome",
+              "version": "2.6.7",
+              "runs": 7,
+              "median": 0.010343208,
+              "min": 0.00944775,
+              "max": 0.010864625,
+              "cpu": 0,
+              "rssMiB": 26.171875,
+              "speedup": 5.357694634005234
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.034871834,
+              "min": 0.034205042,
+              "max": 0.037750417,
+              "cpu": 0.03,
+              "rssMiB": 65.671875,
+              "speedup": 1.5891263419067665
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.035820542,
+              "min": 0.033618167,
+              "max": 0.037545625,
+              "cpu": 0.03,
+              "rssMiB": 65.5625,
+              "speedup": 1.5470382888120455
+            },
+            {
+              "id": "prettier@3.9.10",
+              "family": "prettier",
+              "version": "3.9.10",
+              "runs": 7,
+              "median": 0.055086458,
+              "min": 0.053956166,
+              "max": 0.058299333,
+              "cpu": 0.05,
+              "rssMiB": 71.75,
+              "speedup": 1.0059777304977569
+            },
+            {
+              "id": "prettier@3.10.1",
+              "family": "prettier",
+              "version": "3.10.1",
+              "runs": 7,
+              "median": 0.05541575,
+              "min": 0.054211917,
+              "max": 0.062088959,
+              "cpu": 0.05,
+              "rssMiB": 71.625,
+              "speedup": 1
+            }
+          ],
+          "versusDefault": false
+        },
+        {
+          "threads": "1",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.004334959,
+              "min": 0.0039715,
+              "max": 0.005203459,
+              "cpu": 0,
+              "rssMiB": 3.453125,
+              "speedup": 12.78345423797549
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.006383,
+              "min": 0.006128792,
+              "max": 0.0075535,
+              "cpu": 0,
+              "rssMiB": 6.96875,
+              "speedup": 8.681771894093687
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.009623958,
+              "min": 0.0083925,
+              "max": 0.010782958,
+              "cpu": 0.01,
+              "rssMiB": 28.84375,
+              "speedup": 5.758103890312073
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.01038625,
+              "min": 0.00906125,
+              "max": 0.011140375,
+              "cpu": 0,
+              "rssMiB": 29.84375,
+              "speedup": 5.335491635575882
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.0318865,
+              "min": 0.030759459,
+              "max": 0.035852417,
+              "cpu": 0.02,
+              "rssMiB": 62.046875,
+              "speedup": 1.7379063239929124
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.033526459,
+              "min": 0.030632792,
+              "max": 0.03584175,
+              "cpu": 0.02,
+              "rssMiB": 62.09375,
+              "speedup": 1.6528960007378053
+            }
+          ],
+          "versusDefault": true
+        }
+      ],
+      "parity": [
+        {
+          "id": "prettier@3.10.1",
+          "parity": "identical",
+          "files": 2,
+          "identical": 2,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "biome@2.6.7",
+          "parity": "identical",
+          "files": 2,
+          "identical": 2,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "biome@2.6.8",
+          "parity": "identical",
+          "files": 2,
+          "identical": 2,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "bun@1.4.4",
+          "parity": "identical",
+          "files": 2,
+          "identical": 2,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "dprint@0.64.3",
+          "parity": "identical",
+          "files": 2,
+          "identical": 2,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "dprint@0.65.0",
+          "parity": "identical",
+          "files": 2,
+          "identical": 2,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "oxfmt@0.78.0",
+          "parity": "identical",
+          "files": 2,
+          "identical": 2,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "oxfmt@0.79.0",
+          "parity": "identical",
+          "files": 2,
+          "identical": 2,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "prettier@3.9.10",
+          "parity": "identical",
+          "files": 2,
+          "identical": 2,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "tidy@2.0.0",
+          "parity": "identical",
+          "files": 2,
+          "identical": 2,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        }
+      ],
+      "untimed": []
+    },
+    {
+      "language": "html",
+      "name": "HTML",
+      "files": 3,
+      "bytes": 31246,
+      "rejected": 0,
+      "settings": [
+        {
+          "threads": "default",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.005426334,
+              "min": 0.005234959,
+              "max": 0.006036334,
+              "cpu": 0,
+              "rssMiB": 6.640625,
+              "speedup": 21.601500939676768
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.007455333,
+              "min": 0.007163417,
+              "max": 0.007623709,
+              "cpu": 0,
+              "rssMiB": 14.328125,
+              "speedup": 15.722565175827826
+            },
+            {
+              "id": "biome@2.6.8",
+              "family": "biome",
+              "version": "2.6.8",
+              "runs": 7,
+              "median": 0.011159833,
+              "min": 0.010787209,
+              "max": 0.012591959,
+              "cpu": 0,
+              "rssMiB": 32.71875,
+              "speedup": 10.503468913916544
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.011549625,
+              "min": 0.010684667,
+              "max": 0.01175525,
+              "cpu": 0.01,
+              "rssMiB": 30.96875,
+              "speedup": 10.14898397134106
+            },
+            {
+              "id": "biome@2.6.7",
+              "family": "biome",
+              "version": "2.6.7",
+              "runs": 7,
+              "median": 0.011827583,
+              "min": 0.011109917,
+              "max": 0.011984959,
+              "cpu": 0,
+              "rssMiB": 32.625,
+              "speedup": 9.910474439283158
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.012546834,
+              "min": 0.011689083,
+              "max": 0.013134958,
+              "cpu": 0.01,
+              "rssMiB": 32.015625,
+              "speedup": 9.342353537155269
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.035671375,
+              "min": 0.034765959,
+              "max": 0.038030625,
+              "cpu": 0.03,
+              "rssMiB": 68.984375,
+              "speedup": 3.2860230086448867
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.036118541,
+              "min": 0.0344415,
+              "max": 0.038978583,
+              "cpu": 0.03,
+              "rssMiB": 68.859375,
+              "speedup": 3.2453403641082845
+            },
+            {
+              "id": "prettier@3.9.10",
+              "family": "prettier",
+              "version": "3.9.10",
+              "runs": 7,
+              "median": 0.115188833,
+              "min": 0.110529875,
+              "max": 0.121740208,
+              "cpu": 0.16,
+              "rssMiB": 116.765625,
+              "speedup": 1.0176069671614782
+            },
+            {
+              "id": "prettier@3.10.1",
+              "family": "prettier",
+              "version": "3.10.1",
+              "runs": 7,
+              "median": 0.117216959,
+              "min": 0.114891667,
+              "max": 0.120840834,
+              "cpu": 0.17,
+              "rssMiB": 117.03125,
+              "speedup": 1
+            }
+          ],
+          "versusDefault": false
+        },
+        {
+          "threads": "1",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.005235791,
+              "min": 0.004804959,
+              "max": 0.007001125,
+              "cpu": 0,
+              "rssMiB": 5.859375,
+              "speedup": 22.387631400871424
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.00747075,
+              "min": 0.00722525,
+              "max": 0.008672625,
+              "cpu": 0,
+              "rssMiB": 10.734375,
+              "speedup": 15.690119332061707
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.012131666,
+              "min": 0.010647167,
+              "max": 0.012913041,
+              "cpu": 0,
+              "rssMiB": 30.09375,
+              "speedup": 9.662066116887821
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.012697666,
+              "min": 0.011459917,
+              "max": 0.014533834,
+              "cpu": 0,
+              "rssMiB": 31.03125,
+              "speedup": 9.231378349375388
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.034353209,
+              "min": 0.031421041,
+              "max": 0.036885083,
+              "cpu": 0.02,
+              "rssMiB": 64.640625,
+              "speedup": 3.412110903525781
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.036131042,
+              "min": 0.031105084,
+              "max": 0.039136083,
+              "cpu": 0.02,
+              "rssMiB": 65,
+              "speedup": 3.2442175069293597
+            }
+          ],
+          "versusDefault": true
+        }
+      ],
+      "parity": [
+        {
+          "id": "prettier@3.10.1",
+          "parity": "identical",
+          "files": 3,
+          "identical": 3,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "biome@2.6.7",
+          "parity": "differs",
+          "files": 3,
+          "identical": 0,
+          "differs": 3,
+          "untouched": 1,
+          "agreement": 0,
+          "sample": [
+            "examples/with-script-in-browser/index.html",
+            "excalidraw-app/index.html",
+            "public/404.html"
+          ],
+          "error": "exited 1: Some errors were emitted while running checks."
+        },
+        {
+          "id": "biome@2.6.8",
+          "parity": "differs",
+          "files": 3,
+          "identical": 0,
+          "differs": 3,
+          "untouched": 1,
+          "agreement": 0,
+          "sample": [
+            "examples/with-script-in-browser/index.html",
+            "excalidraw-app/index.html",
+            "public/404.html"
+          ],
+          "error": "exited 1: Some errors were emitted while running checks."
+        },
+        {
+          "id": "bun@1.4.4",
+          "parity": "identical",
+          "files": 3,
+          "identical": 3,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "dprint@0.64.3",
+          "parity": "differs",
+          "files": 3,
+          "identical": 0,
+          "differs": 3,
+          "untouched": 0,
+          "agreement": 0,
+          "sample": [
+            "examples/with-script-in-browser/index.html",
+            "excalidraw-app/index.html",
+            "public/404.html"
+          ]
+        },
+        {
+          "id": "dprint@0.65.0",
+          "parity": "differs",
+          "files": 3,
+          "identical": 0,
+          "differs": 3,
+          "untouched": 0,
+          "agreement": 0,
+          "sample": [
+            "examples/with-script-in-browser/index.html",
+            "excalidraw-app/index.html",
+            "public/404.html"
+          ]
+        },
+        {
+          "id": "oxfmt@0.78.0",
+          "parity": "differs",
+          "files": 3,
+          "identical": 2,
+          "differs": 1,
+          "untouched": 0,
+          "agreement": 0.6666666666666666,
+          "sample": [
+            "public/404.html"
+          ]
+        },
+        {
+          "id": "oxfmt@0.79.0",
+          "parity": "differs",
+          "files": 3,
+          "identical": 2,
+          "differs": 1,
+          "untouched": 0,
+          "agreement": 0.6666666666666666,
+          "sample": [
+            "public/404.html"
+          ]
+        },
+        {
+          "id": "prettier@3.9.10",
+          "parity": "identical",
+          "files": 3,
+          "identical": 3,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "tidy@2.0.0",
+          "parity": "identical",
+          "files": 3,
+          "identical": 3,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        }
+      ],
+      "untimed": []
+    }
+  ],
+  "unavailable": [],
+  "project": {
+    "repo": "https://github.com/excalidraw/excalidraw",
+    "commit": "dabd83c4aa6b9e42d0dd0a42be62200eb8e3cce9",
+    "description": "A whiteboard app in React and TypeScript: mostly TSX, with a few large modules"
+  }
+}

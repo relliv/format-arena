@@ -1,0 +1,2797 @@
+{
+  "schema": 1,
+  "id": "2026-11-26-0053-apple-m4-max-darwin-vite",
+  "label": "vite",
+  "date": "2026-11-26T00:53:30.782Z",
+  "source": {
+    "kind": "local"
+  },
+  "machine": {
+    "platform": "darwin-arm64",
+    "cpu": "Apple M4 Max",
+    "cores": 16,
+    "memoryGiB": 48,
+    "os": "macOS 27.0.1 (26A434)",
+    "node": "v26.0.0"
+  },
+  "reference": "prettier@3.10.1",
+  "rounds": 7,
+  "languages": [
+    {
+      "language": "js",
+      "name": "JavaScript and TypeScript",
+      "files": 1621,
+      "bytes": 3274707,
+      "rejected": 2,
+      "settings": [
+        {
+          "threads": "default",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.031047625,
+              "min": 0.030395625,
+              "max": 0.05596625,
+              "cpu": 0.23,
+              "rssMiB": 26.28125,
+              "speedup": 81.9417105173101
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.052011708,
+              "min": 0.051089042,
+              "max": 0.054527167,
+              "cpu": 0.55,
+              "rssMiB": 56.4375,
+              "speedup": 48.91390030875356
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.059775042,
+              "min": 0.059169334,
+              "max": 0.064583292,
+              "cpu": 0.62,
+              "rssMiB": 116.28125,
+              "speedup": 42.56116624727758
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.060702917,
+              "min": 0.059861084,
+              "max": 0.068563375,
+              "cpu": 0.62,
+              "rssMiB": 118,
+              "speedup": 41.91059714642708
+            },
+            {
+              "id": "biome@2.6.7",
+              "family": "biome",
+              "version": "2.6.7",
+              "runs": 7,
+              "median": 0.069376542,
+              "min": 0.068848625,
+              "max": 0.093543208,
+              "cpu": 0.71,
+              "rssMiB": 111.171875,
+              "speedup": 36.670831763278144
+            },
+            {
+              "id": "biome@2.6.8",
+              "family": "biome",
+              "version": "2.6.8",
+              "runs": 7,
+              "median": 0.070195333,
+              "min": 0.069469042,
+              "max": 0.100062041,
+              "cpu": 0.71,
+              "rssMiB": 110.71875,
+              "speedup": 36.24308613223617
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.073721167,
+              "min": 0.072068625,
+              "max": 0.075216292,
+              "cpu": 0.59,
+              "rssMiB": 107,
+              "speedup": 34.50970194218439
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.074046958,
+              "min": 0.070880333,
+              "max": 0.0808955,
+              "cpu": 0.5800000000000001,
+              "rssMiB": 106.890625,
+              "speedup": 34.357866531127456
+            },
+            {
+              "id": "prettier@3.9.10",
+              "family": "prettier",
+              "version": "3.9.10",
+              "runs": 7,
+              "median": 2.505677416,
+              "min": 2.426217959,
+              "max": 2.804587708,
+              "cpu": 5.12,
+              "rssMiB": 371.765625,
+              "speedup": 1.015332414202515
+            },
+            {
+              "id": "prettier@3.10.1",
+              "family": "prettier",
+              "version": "3.10.1",
+              "runs": 7,
+              "median": 2.5440955,
+              "min": 2.421704584,
+              "max": 2.918655792,
+              "cpu": 5.17,
+              "rssMiB": 371.828125,
+              "speedup": 1
+            }
+          ],
+          "versusDefault": false
+        },
+        {
+          "threads": "1",
+          "formatters": [
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.09587175,
+              "min": 0.090969958,
+              "max": 0.11782675,
+              "cpu": 0.09,
+              "rssMiB": 17.25,
+              "speedup": 26.536445824760683
+            },
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.104775667,
+              "min": 0.102157708,
+              "max": 0.113649375,
+              "cpu": 0.09,
+              "rssMiB": 12.1875,
+              "speedup": 24.28135818977893
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.122568625,
+              "min": 0.1215235,
+              "max": 0.126218958,
+              "cpu": 0.13,
+              "rssMiB": 71.046875,
+              "speedup": 20.75649865534512
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.12537775,
+              "min": 0.1228945,
+              "max": 0.132550083,
+              "cpu": 0.13,
+              "rssMiB": 70.765625,
+              "speedup": 20.291443258472892
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.424753458,
+              "min": 0.418503208,
+              "max": 0.45462725,
+              "cpu": 0.48,
+              "rssMiB": 47.5625,
+              "speedup": 5.9895816080678035
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.428361041,
+              "min": 0.41459275,
+              "max": 0.471937292,
+              "cpu": 0.48,
+              "rssMiB": 46.71875,
+              "speedup": 5.9391383821013735
+            }
+          ],
+          "versusDefault": true
+        }
+      ],
+      "parity": [
+        {
+          "id": "prettier@3.10.1",
+          "parity": "identical",
+          "files": 1621,
+          "identical": 1621,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "biome@2.6.7",
+          "parity": "differs",
+          "files": 1621,
+          "identical": 1560,
+          "differs": 61,
+          "untouched": 1,
+          "agreement": 0.9623689080814312,
+          "sample": [
+            "packages/create-vite/template-lit/src/my-element.js",
+            "packages/create-vite/template-lit-ts/src/my-element.ts",
+            "packages/plugin-legacy/src/index.ts",
+            "packages/vite/src/module-runner/types.ts",
+            "packages/vite/src/node/__tests__/env.spec.ts",
+            "packages/vite/src/node/__tests__/environment.spec.ts",
+            "packages/vite/src/node/__tests__/fixtures/config/import-meta/vite.config.ts",
+            "packages/vite/src/node/__tests__/optimizer/rolldownDepPlugin.spec.ts",
+            "packages/vite/src/node/__tests__/plugins/import.spec.ts",
+            "packages/vite/src/node/__tests__/plugins/importGlob/fixture-a/index.ts"
+          ],
+          "error": "exited 1: Some errors were emitted while running checks."
+        },
+        {
+          "id": "biome@2.6.8",
+          "parity": "differs",
+          "files": 1621,
+          "identical": 1560,
+          "differs": 61,
+          "untouched": 1,
+          "agreement": 0.9623689080814312,
+          "sample": [
+            "packages/create-vite/template-lit/src/my-element.js",
+            "packages/create-vite/template-lit-ts/src/my-element.ts",
+            "packages/plugin-legacy/src/index.ts",
+            "packages/vite/src/module-runner/types.ts",
+            "packages/vite/src/node/__tests__/env.spec.ts",
+            "packages/vite/src/node/__tests__/environment.spec.ts",
+            "packages/vite/src/node/__tests__/fixtures/config/import-meta/vite.config.ts",
+            "packages/vite/src/node/__tests__/optimizer/rolldownDepPlugin.spec.ts",
+            "packages/vite/src/node/__tests__/plugins/import.spec.ts",
+            "packages/vite/src/node/__tests__/plugins/importGlob/fixture-a/index.ts"
+          ],
+          "error": "exited 1: Some errors were emitted while running checks."
+        },
+        {
+          "id": "bun@1.4.4",
+          "parity": "differs",
+          "files": 1621,
+          "identical": 1619,
+          "differs": 2,
+          "untouched": 0,
+          "agreement": 0.9987661937075879,
+          "sample": [
+            "packages/create-vite/template-lit/src/my-element.js",
+            "packages/create-vite/template-lit-ts/src/my-element.ts"
+          ]
+        },
+        {
+          "id": "dprint@0.64.3",
+          "parity": "differs",
+          "files": 1621,
+          "identical": 1213,
+          "differs": 408,
+          "untouched": 0,
+          "agreement": 0.7483035163479334,
+          "sample": [
+            "docs/_data/acknowledgements.data.ts",
+            "packages/create-vite/__tests__/cli.spec.ts",
+            "packages/create-vite/src/index.ts",
+            "packages/create-vite/template-lit/src/my-element.js",
+            "packages/create-vite/template-lit-ts/src/my-element.ts",
+            "packages/create-vite/tsdown.config.ts",
+            "packages/plugin-legacy/src/__tests__/index.spec.ts",
+            "packages/plugin-legacy/src/index.ts",
+            "packages/plugin-legacy/src/snippets.ts",
+            "packages/plugin-legacy/tsdown.config.ts"
+          ]
+        },
+        {
+          "id": "dprint@0.65.0",
+          "parity": "differs",
+          "files": 1621,
+          "identical": 1213,
+          "differs": 408,
+          "untouched": 0,
+          "agreement": 0.7483035163479334,
+          "sample": [
+            "docs/_data/acknowledgements.data.ts",
+            "packages/create-vite/__tests__/cli.spec.ts",
+            "packages/create-vite/src/index.ts",
+            "packages/create-vite/template-lit/src/my-element.js",
+            "packages/create-vite/template-lit-ts/src/my-element.ts",
+            "packages/create-vite/tsdown.config.ts",
+            "packages/plugin-legacy/src/__tests__/index.spec.ts",
+            "packages/plugin-legacy/src/index.ts",
+            "packages/plugin-legacy/src/snippets.ts",
+            "packages/plugin-legacy/tsdown.config.ts"
+          ]
+        },
+        {
+          "id": "oxfmt@0.78.0",
+          "parity": "differs",
+          "files": 1621,
+          "identical": 1599,
+          "differs": 22,
+          "untouched": 0,
+          "agreement": 0.986428130783467,
+          "sample": [
+            "packages/create-vite/src/index.ts",
+            "packages/plugin-legacy/src/index.ts",
+            "packages/vite/src/module-runner/types.ts",
+            "packages/vite/src/node/__tests__/plugins/importGlob/fixture-a/index.ts",
+            "packages/vite/src/node/build.ts",
+            "packages/vite/src/node/config.ts",
+            "packages/vite/src/node/plugins/css.ts",
+            "packages/vite/src/node/plugins/html.ts",
+            "packages/vite/src/node/server/hmr.ts",
+            "packages/vite/src/node/server/index.ts"
+          ]
+        },
+        {
+          "id": "oxfmt@0.79.0",
+          "parity": "differs",
+          "files": 1621,
+          "identical": 1599,
+          "differs": 22,
+          "untouched": 0,
+          "agreement": 0.986428130783467,
+          "sample": [
+            "packages/create-vite/src/index.ts",
+            "packages/plugin-legacy/src/index.ts",
+            "packages/vite/src/module-runner/types.ts",
+            "packages/vite/src/node/__tests__/plugins/importGlob/fixture-a/index.ts",
+            "packages/vite/src/node/build.ts",
+            "packages/vite/src/node/config.ts",
+            "packages/vite/src/node/plugins/css.ts",
+            "packages/vite/src/node/plugins/html.ts",
+            "packages/vite/src/node/server/hmr.ts",
+            "packages/vite/src/node/server/index.ts"
+          ]
+        },
+        {
+          "id": "prettier@3.9.10",
+          "parity": "identical",
+          "files": 1621,
+          "identical": 1621,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "tidy@2.0.0",
+          "parity": "differs",
+          "files": 1621,
+          "identical": 1619,
+          "differs": 2,
+          "untouched": 0,
+          "agreement": 0.9987661937075879,
+          "sample": [
+            "packages/create-vite/template-lit/src/my-element.js",
+            "packages/create-vite/template-lit-ts/src/my-element.ts"
+          ]
+        }
+      ],
+      "untimed": []
+    },
+    {
+      "language": "json",
+      "name": "JSON",
+      "files": 397,
+      "bytes": 109286,
+      "rejected": 1,
+      "settings": [
+        {
+          "threads": "default",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.011883375,
+              "min": 0.011343084,
+              "max": 0.012586917,
+              "cpu": 0.04,
+              "rssMiB": 5.5625,
+              "speedup": 20.426709583767238
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.019293417,
+              "min": 0.01865225,
+              "max": 0.021301916,
+              "cpu": 0.1,
+              "rssMiB": 34.171875,
+              "speedup": 12.58140276551323
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.019843125,
+              "min": 0.019177334,
+              "max": 0.023041291,
+              "cpu": 0.09000000000000001,
+              "rssMiB": 35.21875,
+              "speedup": 12.232864027213456
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.02029075,
+              "min": 0.0201315,
+              "max": 0.022004375,
+              "cpu": 0.15,
+              "rssMiB": 21.046875,
+              "speedup": 11.963000381947438
+            },
+            {
+              "id": "biome@2.6.8",
+              "family": "biome",
+              "version": "2.6.8",
+              "runs": 7,
+              "median": 0.024163459,
+              "min": 0.0237045,
+              "max": 0.024868417,
+              "cpu": 0.18,
+              "rssMiB": 35.203125,
+              "speedup": 10.04567475211227
+            },
+            {
+              "id": "biome@2.6.7",
+              "family": "biome",
+              "version": "2.6.7",
+              "runs": 7,
+              "median": 0.024673208,
+              "min": 0.023864333,
+              "max": 0.026317667,
+              "cpu": 0.18,
+              "rssMiB": 35.125,
+              "speedup": 9.838130898908647
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.047749375,
+              "min": 0.046548708,
+              "max": 0.052362542,
+              "cpu": 0.22,
+              "rssMiB": 74.109375,
+              "speedup": 5.08359009934685
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.049302541,
+              "min": 0.047231292,
+              "max": 0.0532665,
+              "cpu": 0.22,
+              "rssMiB": 73.984375,
+              "speedup": 4.923442992522434
+            },
+            {
+              "id": "prettier@3.10.1",
+              "family": "prettier",
+              "version": "3.10.1",
+              "runs": 7,
+              "median": 0.24273825,
+              "min": 0.239144625,
+              "max": 0.25982375,
+              "cpu": 0.35,
+              "rssMiB": 146.109375,
+              "speedup": 1
+            },
+            {
+              "id": "prettier@3.9.10",
+              "family": "prettier",
+              "version": "3.9.10",
+              "runs": 7,
+              "median": 0.245095166,
+              "min": 0.241967958,
+              "max": 0.24767275,
+              "cpu": 0.35,
+              "rssMiB": 147,
+              "speedup": 0.9903836699904558
+            }
+          ],
+          "versusDefault": false
+        },
+        {
+          "threads": "1",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.01638325,
+              "min": 0.016040791,
+              "max": 0.018928833,
+              "cpu": 0.01,
+              "rssMiB": 4.40625,
+              "speedup": 14.816245250484489
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.0178685,
+              "min": 0.017278333,
+              "max": 0.020505166,
+              "cpu": 0.01,
+              "rssMiB": 8.046875,
+              "speedup": 13.584702129445672
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.037288958,
+              "min": 0.035141167,
+              "max": 0.040827375,
+              "cpu": 0.06,
+              "rssMiB": 31.078125,
+              "speedup": 6.509654949328431
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.037398583,
+              "min": 0.036118583,
+              "max": 0.042819583,
+              "cpu": 0.06,
+              "rssMiB": 32.15625,
+              "speedup": 6.490573453010239
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.038691,
+              "min": 0.03782275,
+              "max": 0.044928667,
+              "cpu": 0.03,
+              "rssMiB": 63.203125,
+              "speedup": 6.273765216717065
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.038788958,
+              "min": 0.037046583,
+              "max": 0.048009375,
+              "cpu": 0.03,
+              "rssMiB": 63.4375,
+              "speedup": 6.2579213909278
+            }
+          ],
+          "versusDefault": true
+        }
+      ],
+      "parity": [
+        {
+          "id": "prettier@3.10.1",
+          "parity": "identical",
+          "files": 397,
+          "identical": 397,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "biome@2.6.7",
+          "parity": "differs",
+          "files": 397,
+          "identical": 396,
+          "differs": 1,
+          "untouched": 0,
+          "agreement": 0.9974811083123426,
+          "sample": [
+            "playground/tsconfig-json/nested/tsconfig.json"
+          ],
+          "error": "exited 1: Some errors were emitted while running checks."
+        },
+        {
+          "id": "biome@2.6.8",
+          "parity": "differs",
+          "files": 397,
+          "identical": 396,
+          "differs": 1,
+          "untouched": 0,
+          "agreement": 0.9974811083123426,
+          "sample": [
+            "playground/tsconfig-json/nested/tsconfig.json"
+          ],
+          "error": "exited 1: Some errors were emitted while running checks."
+        },
+        {
+          "id": "bun@1.4.4",
+          "parity": "identical",
+          "files": 397,
+          "identical": 397,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "dprint@0.64.3",
+          "parity": "differs",
+          "files": 397,
+          "identical": 134,
+          "differs": 263,
+          "untouched": 0,
+          "agreement": 0.33753148614609574,
+          "sample": [
+            "package.json",
+            "packages/create-vite/package.json",
+            "packages/create-vite/template-lit/package.json",
+            "packages/create-vite/template-lit-ts/package.json",
+            "packages/create-vite/template-preact/package.json",
+            "packages/create-vite/template-preact-ts/package.json",
+            "packages/create-vite/template-qwik/package.json",
+            "packages/create-vite/template-qwik-ts/package.json",
+            "packages/create-vite/template-react/package.json",
+            "packages/create-vite/template-react-ts/package.json"
+          ]
+        },
+        {
+          "id": "dprint@0.65.0",
+          "parity": "differs",
+          "files": 397,
+          "identical": 134,
+          "differs": 263,
+          "untouched": 0,
+          "agreement": 0.33753148614609574,
+          "sample": [
+            "package.json",
+            "packages/create-vite/package.json",
+            "packages/create-vite/template-lit/package.json",
+            "packages/create-vite/template-lit-ts/package.json",
+            "packages/create-vite/template-preact/package.json",
+            "packages/create-vite/template-preact-ts/package.json",
+            "packages/create-vite/template-qwik/package.json",
+            "packages/create-vite/template-qwik-ts/package.json",
+            "packages/create-vite/template-react/package.json",
+            "packages/create-vite/template-react-ts/package.json"
+          ]
+        },
+        {
+          "id": "oxfmt@0.78.0",
+          "parity": "identical",
+          "files": 397,
+          "identical": 397,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "oxfmt@0.79.0",
+          "parity": "identical",
+          "files": 397,
+          "identical": 397,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "prettier@3.9.10",
+          "parity": "identical",
+          "files": 397,
+          "identical": 397,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "tidy@2.0.0",
+          "parity": "identical",
+          "files": 397,
+          "identical": 397,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        }
+      ],
+      "untimed": []
+    },
+    {
+      "language": "css",
+      "name": "CSS",
+      "files": 207,
+      "bytes": 100512,
+      "rejected": 0,
+      "settings": [
+        {
+          "threads": "default",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.00859125,
+              "min": 0.008127,
+              "max": 0.008907667,
+              "cpu": 0.02,
+              "rssMiB": 6.359375,
+              "speedup": 31.462481129055725
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.012525709,
+              "min": 0.012262458,
+              "max": 0.013060583,
+              "cpu": 0.06,
+              "rssMiB": 22.5,
+              "speedup": 21.579779715463612
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.014747708,
+              "min": 0.013986041,
+              "max": 0.02509125,
+              "cpu": 0.05,
+              "rssMiB": 36.1875,
+              "speedup": 18.328410150241652
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.01513225,
+              "min": 0.014759917,
+              "max": 0.01717325,
+              "cpu": 0.05,
+              "rssMiB": 36.796875,
+              "speedup": 17.862647061739
+            },
+            {
+              "id": "biome@2.6.7",
+              "family": "biome",
+              "version": "2.6.7",
+              "runs": 7,
+              "median": 0.017559708,
+              "min": 0.01670075,
+              "max": 0.018580292,
+              "cpu": 0.09,
+              "rssMiB": 41.046875,
+              "speedup": 15.393310697421619
+            },
+            {
+              "id": "biome@2.6.8",
+              "family": "biome",
+              "version": "2.6.8",
+              "runs": 7,
+              "median": 0.017567292,
+              "min": 0.017233125,
+              "max": 0.018288833,
+              "cpu": 0.09,
+              "rssMiB": 41.015625,
+              "speedup": 15.386665229905667
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.039164625,
+              "min": 0.037701125,
+              "max": 0.04181825,
+              "cpu": 0.09,
+              "rssMiB": 75.9375,
+              "speedup": 6.901688475250305
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.040361583,
+              "min": 0.038677375,
+              "max": 0.042334875,
+              "cpu": 0.09,
+              "rssMiB": 76.109375,
+              "speedup": 6.697012874841901
+            },
+            {
+              "id": "prettier@3.10.1",
+              "family": "prettier",
+              "version": "3.10.1",
+              "runs": 7,
+              "median": 0.270302041,
+              "min": 0.265568708,
+              "max": 0.291789417,
+              "cpu": 0.43999999999999995,
+              "rssMiB": 136.203125,
+              "speedup": 1
+            },
+            {
+              "id": "prettier@3.9.10",
+              "family": "prettier",
+              "version": "3.9.10",
+              "runs": 7,
+              "median": 0.272016375,
+              "min": 0.260517417,
+              "max": 0.284223917,
+              "cpu": 0.43999999999999995,
+              "rssMiB": 136.796875,
+              "speedup": 0.9936976808841013
+            }
+          ],
+          "versusDefault": false
+        },
+        {
+          "threads": "1",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.011282125,
+              "min": 0.010914041,
+              "max": 0.0123155,
+              "cpu": 0,
+              "rssMiB": 4.984375,
+              "speedup": 23.958433451145062
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.012973916,
+              "min": 0.012407208,
+              "max": 0.013649041,
+              "cpu": 0,
+              "rssMiB": 8.484375,
+              "speedup": 20.834267849429576
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.025081667,
+              "min": 0.023683333,
+              "max": 0.027633792,
+              "cpu": 0.03,
+              "rssMiB": 31.625,
+              "speedup": 10.776877031339264
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.02575775,
+              "min": 0.023302458,
+              "max": 0.026294,
+              "cpu": 0.03,
+              "rssMiB": 30.6875,
+              "speedup": 10.49400824994419
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.0382235,
+              "min": 0.036140041,
+              "max": 0.045407917,
+              "cpu": 0.03,
+              "rssMiB": 63.890625,
+              "speedup": 7.071619317958847
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.038842583,
+              "min": 0.037357917,
+              "max": 0.041447667,
+              "cpu": 0.03,
+              "rssMiB": 63.828125,
+              "speedup": 6.958910044679572
+            }
+          ],
+          "versusDefault": true
+        }
+      ],
+      "parity": [
+        {
+          "id": "prettier@3.10.1",
+          "parity": "identical",
+          "files": 207,
+          "identical": 207,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "biome@2.6.7",
+          "parity": "differs",
+          "files": 207,
+          "identical": 191,
+          "differs": 16,
+          "untouched": 1,
+          "agreement": 0.9227053140096618,
+          "sample": [
+            "packages/create-vite/template-preact/src/index.css",
+            "packages/create-vite/template-preact-ts/src/index.css",
+            "packages/create-vite/template-qwik/src/index.css",
+            "packages/create-vite/template-qwik-ts/src/index.css",
+            "packages/create-vite/template-react/src/index.css",
+            "packages/create-vite/template-react-ts/src/index.css",
+            "packages/create-vite/template-solid/src/index.css",
+            "packages/create-vite/template-solid-ts/src/index.css",
+            "packages/create-vite/template-svelte/src/app.css",
+            "packages/create-vite/template-svelte-ts/src/app.css"
+          ],
+          "error": "exited 1: Some errors were emitted while running checks."
+        },
+        {
+          "id": "biome@2.6.8",
+          "parity": "differs",
+          "files": 207,
+          "identical": 191,
+          "differs": 16,
+          "untouched": 1,
+          "agreement": 0.9227053140096618,
+          "sample": [
+            "packages/create-vite/template-preact/src/index.css",
+            "packages/create-vite/template-preact-ts/src/index.css",
+            "packages/create-vite/template-qwik/src/index.css",
+            "packages/create-vite/template-qwik-ts/src/index.css",
+            "packages/create-vite/template-react/src/index.css",
+            "packages/create-vite/template-react-ts/src/index.css",
+            "packages/create-vite/template-solid/src/index.css",
+            "packages/create-vite/template-solid-ts/src/index.css",
+            "packages/create-vite/template-svelte/src/app.css",
+            "packages/create-vite/template-svelte-ts/src/app.css"
+          ],
+          "error": "exited 1: Some errors were emitted while running checks."
+        },
+        {
+          "id": "bun@1.4.4",
+          "parity": "differs",
+          "files": 207,
+          "identical": 192,
+          "differs": 15,
+          "untouched": 8,
+          "agreement": 0.927536231884058,
+          "sample": [
+            "packages/create-vite/template-preact/src/index.css",
+            "packages/create-vite/template-preact-ts/src/index.css",
+            "packages/create-vite/template-qwik/src/index.css",
+            "packages/create-vite/template-qwik-ts/src/index.css",
+            "packages/create-vite/template-react/src/index.css",
+            "packages/create-vite/template-react-ts/src/index.css",
+            "packages/create-vite/template-solid/src/index.css",
+            "packages/create-vite/template-solid-ts/src/index.css",
+            "packages/create-vite/template-svelte/src/app.css",
+            "packages/create-vite/template-svelte-ts/src/app.css"
+          ]
+        },
+        {
+          "id": "dprint@0.64.3",
+          "parity": "differs",
+          "files": 207,
+          "identical": 188,
+          "differs": 19,
+          "untouched": 0,
+          "agreement": 0.9082125603864735,
+          "sample": [
+            "packages/create-vite/template-preact/src/index.css",
+            "packages/create-vite/template-preact-ts/src/index.css",
+            "packages/create-vite/template-qwik/src/index.css",
+            "packages/create-vite/template-qwik-ts/src/index.css",
+            "packages/create-vite/template-react/src/index.css",
+            "packages/create-vite/template-react-ts/src/index.css",
+            "packages/create-vite/template-solid/src/index.css",
+            "packages/create-vite/template-solid-ts/src/index.css",
+            "packages/create-vite/template-svelte/src/app.css",
+            "packages/create-vite/template-svelte-ts/src/app.css"
+          ]
+        },
+        {
+          "id": "dprint@0.65.0",
+          "parity": "differs",
+          "files": 207,
+          "identical": 188,
+          "differs": 19,
+          "untouched": 0,
+          "agreement": 0.9082125603864735,
+          "sample": [
+            "packages/create-vite/template-preact/src/index.css",
+            "packages/create-vite/template-preact-ts/src/index.css",
+            "packages/create-vite/template-qwik/src/index.css",
+            "packages/create-vite/template-qwik-ts/src/index.css",
+            "packages/create-vite/template-react/src/index.css",
+            "packages/create-vite/template-react-ts/src/index.css",
+            "packages/create-vite/template-solid/src/index.css",
+            "packages/create-vite/template-solid-ts/src/index.css",
+            "packages/create-vite/template-svelte/src/app.css",
+            "packages/create-vite/template-svelte-ts/src/app.css"
+          ]
+        },
+        {
+          "id": "oxfmt@0.78.0",
+          "parity": "identical",
+          "files": 207,
+          "identical": 207,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "oxfmt@0.79.0",
+          "parity": "identical",
+          "files": 207,
+          "identical": 207,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "prettier@3.9.10",
+          "parity": "identical",
+          "files": 207,
+          "identical": 207,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "tidy@2.0.0",
+          "parity": "differs",
+          "files": 207,
+          "identical": 192,
+          "differs": 15,
+          "untouched": 8,
+          "agreement": 0.927536231884058,
+          "sample": [
+            "packages/create-vite/template-preact/src/index.css",
+            "packages/create-vite/template-preact-ts/src/index.css",
+            "packages/create-vite/template-qwik/src/index.css",
+            "packages/create-vite/template-qwik-ts/src/index.css",
+            "packages/create-vite/template-react/src/index.css",
+            "packages/create-vite/template-react-ts/src/index.css",
+            "packages/create-vite/template-solid/src/index.css",
+            "packages/create-vite/template-solid-ts/src/index.css",
+            "packages/create-vite/template-svelte/src/app.css",
+            "packages/create-vite/template-svelte-ts/src/app.css"
+          ]
+        }
+      ],
+      "untimed": []
+    },
+    {
+      "language": "scss",
+      "name": "SCSS",
+      "files": 29,
+      "bytes": 3292,
+      "rejected": 0,
+      "settings": [
+        {
+          "threads": "default",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.005682667,
+              "min": 0.00518875,
+              "max": 0.006441,
+              "cpu": 0.01,
+              "rssMiB": 4.640625,
+              "speedup": 14.395294674138041
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.007587709,
+              "min": 0.007033542,
+              "max": 0.008078125,
+              "cpu": 0,
+              "rssMiB": 13.34375,
+              "speedup": 10.781075816165327
+            },
+            {
+              "id": "biome@2.6.8",
+              "family": "biome",
+              "version": "2.6.8",
+              "runs": 7,
+              "median": 0.011051792,
+              "min": 0.010616917,
+              "max": 0.012186917,
+              "cpu": 0.01,
+              "rssMiB": 33.09375,
+              "speedup": 7.4018463250122695
+            },
+            {
+              "id": "biome@2.6.7",
+              "family": "biome",
+              "version": "2.6.7",
+              "runs": 7,
+              "median": 0.01131275,
+              "min": 0.010954833,
+              "max": 0.012188833,
+              "cpu": 0.01,
+              "rssMiB": 33.171875,
+              "speedup": 7.231103489425648
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.011585709,
+              "min": 0.010798791,
+              "max": 0.013224625,
+              "cpu": 0.03,
+              "rssMiB": 33.609375,
+              "speedup": 7.060738880978281
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.011768083,
+              "min": 0.010142333,
+              "max": 0.012458667,
+              "cpu": 0.02,
+              "rssMiB": 32.671875,
+              "speedup": 6.951316199928229
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.035956542,
+              "min": 0.034829083,
+              "max": 0.03845125,
+              "cpu": 0.03,
+              "rssMiB": 67.875,
+              "speedup": 2.275070444760789
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.036030375,
+              "min": 0.035235333,
+              "max": 0.037848167,
+              "cpu": 0.03,
+              "rssMiB": 68.03125,
+              "speedup": 2.2704083984693466
+            },
+            {
+              "id": "prettier@3.10.1",
+              "family": "prettier",
+              "version": "3.10.1",
+              "runs": 7,
+              "median": 0.081803666,
+              "min": 0.078142209,
+              "max": 0.095384,
+              "cpu": 0.09999999999999999,
+              "rssMiB": 86.328125,
+              "speedup": 1
+            },
+            {
+              "id": "prettier@3.9.10",
+              "family": "prettier",
+              "version": "3.9.10",
+              "runs": 7,
+              "median": 0.082986666,
+              "min": 0.08116175,
+              "max": 0.093335709,
+              "cpu": 0.09999999999999999,
+              "rssMiB": 86.328125,
+              "speedup": 0.9857446978289258
+            }
+          ],
+          "versusDefault": false
+        },
+        {
+          "threads": "1",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.005308875,
+              "min": 0.004975708,
+              "max": 0.006144459,
+              "cpu": 0,
+              "rssMiB": 3.859375,
+              "speedup": 15.408851404487766
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.007272,
+              "min": 0.006596084,
+              "max": 0.017798,
+              "cpu": 0,
+              "rssMiB": 7.6875,
+              "speedup": 11.24912898789879
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.01153,
+              "min": 0.011000125,
+              "max": 0.011818292,
+              "cpu": 0.01,
+              "rssMiB": 29.890625,
+              "speedup": 7.094853946227233
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.012035416,
+              "min": 0.010672625,
+              "max": 0.012232292,
+              "cpu": 0.01,
+              "rssMiB": 30.859375,
+              "speedup": 6.796912213088438
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.032949708,
+              "min": 0.031376667,
+              "max": 0.034660834,
+              "cpu": 0.02,
+              "rssMiB": 63.03125,
+              "speedup": 2.482682577945759
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.033542291,
+              "min": 0.030639167,
+              "max": 0.044458833,
+              "cpu": 0.02,
+              "rssMiB": 62.84375,
+              "speedup": 2.438821665461074
+            }
+          ],
+          "versusDefault": true
+        }
+      ],
+      "parity": [
+        {
+          "id": "prettier@3.10.1",
+          "parity": "identical",
+          "files": 29,
+          "identical": 29,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "biome@2.6.7",
+          "parity": "differs",
+          "files": 29,
+          "identical": 28,
+          "differs": 1,
+          "untouched": 1,
+          "agreement": 0.9655172413793104,
+          "sample": [
+            "playground/css/nested/_index.scss"
+          ],
+          "error": "exited 1: Some errors were emitted while running checks."
+        },
+        {
+          "id": "biome@2.6.8",
+          "parity": "differs",
+          "files": 29,
+          "identical": 28,
+          "differs": 1,
+          "untouched": 1,
+          "agreement": 0.9655172413793104,
+          "sample": [
+            "playground/css/nested/_index.scss"
+          ],
+          "error": "exited 1: Some errors were emitted while running checks."
+        },
+        {
+          "id": "bun@1.4.4",
+          "parity": "identical",
+          "files": 29,
+          "identical": 29,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "dprint@0.64.3",
+          "parity": "identical",
+          "files": 29,
+          "identical": 29,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "dprint@0.65.0",
+          "parity": "identical",
+          "files": 29,
+          "identical": 29,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "oxfmt@0.78.0",
+          "parity": "identical",
+          "files": 29,
+          "identical": 29,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "oxfmt@0.79.0",
+          "parity": "identical",
+          "files": 29,
+          "identical": 29,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "prettier@3.9.10",
+          "parity": "identical",
+          "files": 29,
+          "identical": 29,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "tidy@2.0.0",
+          "parity": "identical",
+          "files": 29,
+          "identical": 29,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        }
+      ],
+      "untimed": []
+    },
+    {
+      "language": "less",
+      "name": "Less",
+      "files": 11,
+      "bytes": 1699,
+      "rejected": 0,
+      "settings": [
+        {
+          "threads": "default",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.005312417,
+              "min": 0.005126334,
+              "max": 0.005546875,
+              "cpu": 0,
+              "rssMiB": 4.421875,
+              "speedup": 13.297000028423973
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.007376041,
+              "min": 0.007058709,
+              "max": 0.007861792,
+              "cpu": 0,
+              "rssMiB": 10.96875,
+              "speedup": 9.576846034342813
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.010754708,
+              "min": 0.009791292,
+              "max": 0.011062292,
+              "cpu": 0.01,
+              "rssMiB": 31.296875,
+              "speedup": 6.56821263766529
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.011057417,
+              "min": 0.010908875,
+              "max": 0.012159542,
+              "cpu": 0.01,
+              "rssMiB": 32.1875,
+              "speedup": 6.388400564073869
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.036400709,
+              "min": 0.034594208,
+              "max": 0.038187917,
+              "cpu": 0.03,
+              "rssMiB": 67.53125,
+              "speedup": 1.9405998108443434
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.036672042,
+              "min": 0.034200416,
+              "max": 0.039436292,
+              "cpu": 0.03,
+              "rssMiB": 67.296875,
+              "speedup": 1.9262414948150417
+            },
+            {
+              "id": "prettier@3.10.1",
+              "family": "prettier",
+              "version": "3.10.1",
+              "runs": 7,
+              "median": 0.070639209,
+              "min": 0.065999791,
+              "max": 0.0734145,
+              "cpu": 0.08,
+              "rssMiB": 77.765625,
+              "speedup": 1
+            },
+            {
+              "id": "prettier@3.9.10",
+              "family": "prettier",
+              "version": "3.9.10",
+              "runs": 7,
+              "median": 0.071603792,
+              "min": 0.068501792,
+              "max": 0.075788333,
+              "cpu": 0.08,
+              "rssMiB": 77.203125,
+              "speedup": 0.9865288838334147
+            }
+          ],
+          "versusDefault": false
+        },
+        {
+          "threads": "1",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.004693292,
+              "min": 0.004327625,
+              "max": 0.005417292,
+              "cpu": 0,
+              "rssMiB": 3.578125,
+              "speedup": 15.051100379009018
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.006285291,
+              "min": 0.006103334,
+              "max": 0.007464084,
+              "cpu": 0,
+              "rssMiB": 7.46875,
+              "speedup": 11.238812809144397
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.010397083,
+              "min": 0.009392167,
+              "max": 0.012222208,
+              "cpu": 0.01,
+              "rssMiB": 29.375,
+              "speedup": 6.794137259460177
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.01088,
+              "min": 0.009934583,
+              "max": 0.012510042,
+              "cpu": 0,
+              "rssMiB": 30.359375,
+              "speedup": 6.492574356617646
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.031886083,
+              "min": 0.030745875,
+              "max": 0.035890375,
+              "cpu": 0.02,
+              "rssMiB": 62.71875,
+              "speedup": 2.215361761430527
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.032847,
+              "min": 0.030632458,
+              "max": 0.036331375,
+              "cpu": 0.02,
+              "rssMiB": 62.828125,
+              "speedup": 2.150552835875422
+            }
+          ],
+          "versusDefault": true
+        }
+      ],
+      "parity": [
+        {
+          "id": "prettier@3.10.1",
+          "parity": "identical",
+          "files": 11,
+          "identical": 11,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "bun@1.4.4",
+          "parity": "identical",
+          "files": 11,
+          "identical": 11,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "dprint@0.64.3",
+          "parity": "identical",
+          "files": 11,
+          "identical": 11,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "dprint@0.65.0",
+          "parity": "identical",
+          "files": 11,
+          "identical": 11,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "oxfmt@0.78.0",
+          "parity": "identical",
+          "files": 11,
+          "identical": 11,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "oxfmt@0.79.0",
+          "parity": "identical",
+          "files": 11,
+          "identical": 11,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "prettier@3.9.10",
+          "parity": "identical",
+          "files": 11,
+          "identical": 11,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "tidy@2.0.0",
+          "parity": "identical",
+          "files": 11,
+          "identical": 11,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        }
+      ],
+      "untimed": []
+    },
+    {
+      "language": "markdown",
+      "name": "Markdown",
+      "files": 80,
+      "bytes": 1257684,
+      "rejected": 0,
+      "settings": [
+        {
+          "threads": "default",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.010034333,
+              "min": 0.009787958,
+              "max": 0.01117175,
+              "cpu": 0.05,
+              "rssMiB": 15.453125,
+              "speedup": 118.6298331936961
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.012666791,
+              "min": 0.012393042,
+              "max": 0.0137395,
+              "cpu": 0.03,
+              "rssMiB": 53.46875,
+              "speedup": 93.97575518535042
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.020870625,
+              "min": 0.018930125,
+              "max": 0.021269375,
+              "cpu": 0.1,
+              "rssMiB": 59.828125,
+              "speedup": 57.035726050369846
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.021130958,
+              "min": 0.019686958,
+              "max": 0.022794125,
+              "cpu": 0.1,
+              "rssMiB": 61.03125,
+              "speedup": 56.33304699200104
+            },
+            {
+              "id": "biome@2.6.8",
+              "family": "biome",
+              "version": "2.6.8",
+              "runs": 7,
+              "median": 0.032883416,
+              "min": 0.032171333,
+              "max": 0.035441708,
+              "cpu": 0.1,
+              "rssMiB": 69.640625,
+              "speedup": 36.1997442723104
+            },
+            {
+              "id": "biome@2.6.7",
+              "family": "biome",
+              "version": "2.6.7",
+              "runs": 7,
+              "median": 0.033027292,
+              "min": 0.032318292,
+              "max": 0.034147875,
+              "cpu": 0.1,
+              "rssMiB": 70.265625,
+              "speedup": 36.04204819456588
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.039312875,
+              "min": 0.038445583,
+              "max": 0.044540584,
+              "cpu": 0.05,
+              "rssMiB": 98.09375,
+              "speedup": 30.2794249975358
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.039355375,
+              "min": 0.038006584,
+              "max": 0.044746417,
+              "cpu": 0.05,
+              "rssMiB": 98.0625,
+              "speedup": 30.2467261460474
+            },
+            {
+              "id": "prettier@3.10.1",
+              "family": "prettier",
+              "version": "3.10.1",
+              "runs": 7,
+              "median": 1.19037125,
+              "min": 1.177316875,
+              "max": 1.213120667,
+              "cpu": 2.25,
+              "rssMiB": 357.984375,
+              "speedup": 1
+            },
+            {
+              "id": "prettier@3.9.10",
+              "family": "prettier",
+              "version": "3.9.10",
+              "runs": 7,
+              "median": 1.223082292,
+              "min": 1.206895292,
+              "max": 1.258846958,
+              "cpu": 2.2399999999999998,
+              "rssMiB": 350.390625,
+              "speedup": 0.9732552402941667
+            }
+          ],
+          "versusDefault": false
+        },
+        {
+          "threads": "1",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.017067041,
+              "min": 0.016686666,
+              "max": 0.019275,
+              "cpu": 0.01,
+              "rssMiB": 10.390625,
+              "speedup": 69.74678563202608
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.022958417,
+              "min": 0.02252875,
+              "max": 0.026465792,
+              "cpu": 0.01,
+              "rssMiB": 22.859375,
+              "speedup": 51.84901249942451
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.052270709,
+              "min": 0.050949958,
+              "max": 0.059473,
+              "cpu": 0.05,
+              "rssMiB": 71.9375,
+              "speedup": 22.77319884832632
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.052878709,
+              "min": 0.052224416,
+              "max": 0.058647625,
+              "cpu": 0.05,
+              "rssMiB": 71.703125,
+              "speedup": 22.51135234787975
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.063930334,
+              "min": 0.062921042,
+              "max": 0.06677575,
+              "cpu": 0.060000000000000005,
+              "rssMiB": 39.25,
+              "speedup": 18.619819036140182
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.064213125,
+              "min": 0.063245833,
+              "max": 0.065374708,
+              "cpu": 0.060000000000000005,
+              "rssMiB": 39.890625,
+              "speedup": 18.53781839771854
+            }
+          ],
+          "versusDefault": true
+        }
+      ],
+      "parity": [
+        {
+          "id": "prettier@3.10.1",
+          "parity": "identical",
+          "files": 80,
+          "identical": 80,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "biome@2.6.7",
+          "parity": "differs",
+          "files": 80,
+          "identical": 48,
+          "differs": 32,
+          "untouched": 1,
+          "agreement": 0.6,
+          "sample": [
+            "README.md",
+            "docs/acknowledgements.md",
+            "docs/blog/announcing-vite2.md",
+            "docs/blog/announcing-vite3.md",
+            "docs/blog/announcing-vite4-3.md",
+            "docs/blog/announcing-vite4.md",
+            "docs/blog/announcing-vite5-1.md",
+            "docs/blog/announcing-vite5.md",
+            "docs/blog/announcing-vite6.md",
+            "docs/blog/announcing-vite7.md"
+          ]
+        },
+        {
+          "id": "biome@2.6.8",
+          "parity": "differs",
+          "files": 80,
+          "identical": 48,
+          "differs": 32,
+          "untouched": 1,
+          "agreement": 0.6,
+          "sample": [
+            "README.md",
+            "docs/acknowledgements.md",
+            "docs/blog/announcing-vite2.md",
+            "docs/blog/announcing-vite3.md",
+            "docs/blog/announcing-vite4-3.md",
+            "docs/blog/announcing-vite4.md",
+            "docs/blog/announcing-vite5-1.md",
+            "docs/blog/announcing-vite5.md",
+            "docs/blog/announcing-vite6.md",
+            "docs/blog/announcing-vite7.md"
+          ]
+        },
+        {
+          "id": "bun@1.4.4",
+          "parity": "identical",
+          "files": 80,
+          "identical": 80,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "dprint@0.64.3",
+          "parity": "differs",
+          "files": 80,
+          "identical": 60,
+          "differs": 20,
+          "untouched": 0,
+          "agreement": 0.75,
+          "sample": [
+            "README.md",
+            "docs/acknowledgements.md",
+            "docs/blog/announcing-vite3.md",
+            "docs/changes/shared-plugins-during-build.md",
+            "docs/config/build-options.md",
+            "docs/config/shared-options.md",
+            "docs/guide/api-environment-frameworks.md",
+            "docs/guide/api-environment-instances.md",
+            "docs/guide/api-environment-plugins.md",
+            "docs/guide/api-environment-runtimes.md"
+          ]
+        },
+        {
+          "id": "dprint@0.65.0",
+          "parity": "differs",
+          "files": 80,
+          "identical": 60,
+          "differs": 20,
+          "untouched": 0,
+          "agreement": 0.75,
+          "sample": [
+            "README.md",
+            "docs/acknowledgements.md",
+            "docs/blog/announcing-vite3.md",
+            "docs/changes/shared-plugins-during-build.md",
+            "docs/config/build-options.md",
+            "docs/config/shared-options.md",
+            "docs/guide/api-environment-frameworks.md",
+            "docs/guide/api-environment-instances.md",
+            "docs/guide/api-environment-plugins.md",
+            "docs/guide/api-environment-runtimes.md"
+          ]
+        },
+        {
+          "id": "oxfmt@0.78.0",
+          "parity": "differs",
+          "files": 80,
+          "identical": 75,
+          "differs": 5,
+          "untouched": 0,
+          "agreement": 0.9375,
+          "sample": [
+            "docs/config/shared-options.md",
+            "docs/guide/api-environment-frameworks.md",
+            "docs/guide/api-environment-runtimes.md",
+            "docs/guide/api-plugin.md",
+            "docs/guide/assets.md"
+          ]
+        },
+        {
+          "id": "oxfmt@0.79.0",
+          "parity": "differs",
+          "files": 80,
+          "identical": 75,
+          "differs": 5,
+          "untouched": 0,
+          "agreement": 0.9375,
+          "sample": [
+            "docs/config/shared-options.md",
+            "docs/guide/api-environment-frameworks.md",
+            "docs/guide/api-environment-runtimes.md",
+            "docs/guide/api-plugin.md",
+            "docs/guide/assets.md"
+          ]
+        },
+        {
+          "id": "prettier@3.9.10",
+          "parity": "identical",
+          "files": 80,
+          "identical": 80,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "tidy@2.0.0",
+          "parity": "identical",
+          "files": 80,
+          "identical": 80,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        }
+      ],
+      "untimed": []
+    },
+    {
+      "language": "yaml",
+      "name": "YAML",
+      "files": 3,
+      "bytes": 3567,
+      "rejected": 0,
+      "settings": [
+        {
+          "threads": "default",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.004984125,
+              "min": 0.004833792,
+              "max": 0.005392125,
+              "cpu": 0,
+              "rssMiB": 4.59375,
+              "speedup": 12.972195119504427
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.006784917,
+              "min": 0.006334583,
+              "max": 0.007523667,
+              "cpu": 0,
+              "rssMiB": 9.453125,
+              "speedup": 9.52923108713047
+            },
+            {
+              "id": "biome@2.6.8",
+              "family": "biome",
+              "version": "2.6.8",
+              "runs": 7,
+              "median": 0.010160458,
+              "min": 0.009693833,
+              "max": 0.010677375,
+              "cpu": 0,
+              "rssMiB": 27.890625,
+              "speedup": 6.36339838223828
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.010262875,
+              "min": 0.009599625,
+              "max": 0.022808666,
+              "cpu": 0.01,
+              "rssMiB": 29.53125,
+              "speedup": 6.299895691996638
+            },
+            {
+              "id": "biome@2.6.7",
+              "family": "biome",
+              "version": "2.6.7",
+              "runs": 7,
+              "median": 0.010352917,
+              "min": 0.009540125,
+              "max": 0.010699125,
+              "cpu": 0,
+              "rssMiB": 27.53125,
+              "speedup": 6.245103867827782
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.010765667,
+              "min": 0.010256208,
+              "max": 0.011223583,
+              "cpu": 0.01,
+              "rssMiB": 30.5,
+              "speedup": 6.00566987628356
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.035086459,
+              "min": 0.032868208,
+              "max": 0.040167625,
+              "cpu": 0.03,
+              "rssMiB": 65.625,
+              "speedup": 1.8427348852729766
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.036693666,
+              "min": 0.033950042,
+              "max": 0.042352792,
+              "cpu": 0.03,
+              "rssMiB": 65.640625,
+              "speedup": 1.7620218704775914
+            },
+            {
+              "id": "prettier@3.9.10",
+              "family": "prettier",
+              "version": "3.9.10",
+              "runs": 7,
+              "median": 0.062656542,
+              "min": 0.060404292,
+              "max": 0.070654875,
+              "cpu": 0.06,
+              "rssMiB": 76.546875,
+              "speedup": 1.0318961107046092
+            },
+            {
+              "id": "prettier@3.10.1",
+              "family": "prettier",
+              "version": "3.10.1",
+              "runs": 7,
+              "median": 0.064655042,
+              "min": 0.060859958,
+              "max": 0.072445958,
+              "cpu": 0.06,
+              "rssMiB": 75.890625,
+              "speedup": 1
+            }
+          ],
+          "versusDefault": false
+        },
+        {
+          "threads": "1",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.004651292,
+              "min": 0.004140375,
+              "max": 0.005232291,
+              "cpu": 0,
+              "rssMiB": 3.828125,
+              "speedup": 13.900447875558017
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.006360916,
+              "min": 0.006020875,
+              "max": 0.007172458,
+              "cpu": 0,
+              "rssMiB": 7.453125,
+              "speedup": 10.164423174272384
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.010377375,
+              "min": 0.009474417,
+              "max": 0.010530792,
+              "cpu": 0.01,
+              "rssMiB": 29.296875,
+              "speedup": 6.230385044387429
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.010566416,
+              "min": 0.010226125,
+              "max": 0.010897,
+              "cpu": 0,
+              "rssMiB": 30.25,
+              "speedup": 6.118918846276731
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.031974,
+              "min": 0.031294833,
+              "max": 0.034666833,
+              "cpu": 0.02,
+              "rssMiB": 62.171875,
+              "speedup": 2.0221130293363356
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.033300833,
+              "min": 0.030383875,
+              "max": 0.034119583,
+              "cpu": 0.02,
+              "rssMiB": 62.171875,
+              "speedup": 1.9415442850934086
+            }
+          ],
+          "versusDefault": true
+        }
+      ],
+      "parity": [
+        {
+          "id": "prettier@3.10.1",
+          "parity": "identical",
+          "files": 3,
+          "identical": 3,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "biome@2.6.7",
+          "parity": "differs",
+          "files": 3,
+          "identical": 2,
+          "differs": 1,
+          "untouched": 0,
+          "agreement": 0.6666666666666666,
+          "sample": [
+            "docs/guide/static-deploy-github-pages.yaml"
+          ]
+        },
+        {
+          "id": "biome@2.6.8",
+          "parity": "differs",
+          "files": 3,
+          "identical": 2,
+          "differs": 1,
+          "untouched": 0,
+          "agreement": 0.6666666666666666,
+          "sample": [
+            "docs/guide/static-deploy-github-pages.yaml"
+          ]
+        },
+        {
+          "id": "bun@1.4.4",
+          "parity": "identical",
+          "files": 3,
+          "identical": 3,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "dprint@0.64.3",
+          "parity": "differs",
+          "files": 3,
+          "identical": 2,
+          "differs": 1,
+          "untouched": 0,
+          "agreement": 0.6666666666666666,
+          "sample": [
+            "packages/vite/src/node/server/__tests__/fixtures/pnpm/pnpm-workspace.yaml"
+          ]
+        },
+        {
+          "id": "dprint@0.65.0",
+          "parity": "differs",
+          "files": 3,
+          "identical": 2,
+          "differs": 1,
+          "untouched": 0,
+          "agreement": 0.6666666666666666,
+          "sample": [
+            "packages/vite/src/node/server/__tests__/fixtures/pnpm/pnpm-workspace.yaml"
+          ]
+        },
+        {
+          "id": "oxfmt@0.78.0",
+          "parity": "identical",
+          "files": 3,
+          "identical": 3,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "oxfmt@0.79.0",
+          "parity": "identical",
+          "files": 3,
+          "identical": 3,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "prettier@3.9.10",
+          "parity": "identical",
+          "files": 3,
+          "identical": 3,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "tidy@2.0.0",
+          "parity": "identical",
+          "files": 3,
+          "identical": 3,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        }
+      ],
+      "untimed": []
+    },
+    {
+      "language": "html",
+      "name": "HTML",
+      "files": 158,
+      "bytes": 152967,
+      "rejected": 4,
+      "settings": [
+        {
+          "threads": "default",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.008656083,
+              "min": 0.007718125,
+              "max": 0.010928792,
+              "cpu": 0.03,
+              "rssMiB": 11.15625,
+              "speedup": 40.73682923326867
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.013525375,
+              "min": 0.012268583,
+              "max": 0.014360167,
+              "cpu": 0.05,
+              "rssMiB": 37.109375,
+              "speedup": 26.07109784386755
+            },
+            {
+              "id": "biome@2.6.8",
+              "family": "biome",
+              "version": "2.6.8",
+              "runs": 7,
+              "median": 0.018611875,
+              "min": 0.017619709,
+              "max": 0.01932275,
+              "cpu": 0.08,
+              "rssMiB": 45.3125,
+              "speedup": 18.94604251318043
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.019484667,
+              "min": 0.017238542,
+              "max": 0.020226333,
+              "cpu": 0.08,
+              "rssMiB": 40.484375,
+              "speedup": 18.09737754307015
+            },
+            {
+              "id": "biome@2.6.7",
+              "family": "biome",
+              "version": "2.6.7",
+              "runs": 7,
+              "median": 0.019764125,
+              "min": 0.017645791,
+              "max": 0.027040333,
+              "cpu": 0.08,
+              "rssMiB": 45.40625,
+              "speedup": 17.841486784767856
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.019849041,
+              "min": 0.017738584,
+              "max": 0.034946625,
+              "cpu": 0.07,
+              "rssMiB": 41.90625,
+              "speedup": 17.765159284017802
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.042121916,
+              "min": 0.040997416,
+              "max": 0.044406792,
+              "cpu": 0.09,
+              "rssMiB": 78.625,
+              "speedup": 8.371446707220061
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.043363417,
+              "min": 0.039157042,
+              "max": 0.047961709,
+              "cpu": 0.08,
+              "rssMiB": 79.046875,
+              "speedup": 8.131770957994386
+            },
+            {
+              "id": "prettier@3.10.1",
+              "family": "prettier",
+              "version": "3.10.1",
+              "runs": 7,
+              "median": 0.352621375,
+              "min": 0.333951542,
+              "max": 0.385645875,
+              "cpu": 0.65,
+              "rssMiB": 164.140625,
+              "speedup": 1
+            },
+            {
+              "id": "prettier@3.9.10",
+              "family": "prettier",
+              "version": "3.9.10",
+              "runs": 7,
+              "median": 0.36161325,
+              "min": 0.3360295,
+              "max": 0.415019458,
+              "cpu": 0.63,
+              "rssMiB": 167.796875,
+              "speedup": 0.9751340002060213
+            }
+          ],
+          "versusDefault": false
+        },
+        {
+          "threads": "1",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.013796083,
+              "min": 0.012698791,
+              "max": 0.014678958,
+              "cpu": 0,
+              "rssMiB": 8.015625,
+              "speedup": 25.559528382077726
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.014159917,
+              "min": 0.014042,
+              "max": 0.015707291,
+              "cpu": 0,
+              "rssMiB": 13.1875,
+              "speedup": 24.902785447118088
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.034195792,
+              "min": 0.033324375,
+              "max": 0.036078208,
+              "cpu": 0.04,
+              "rssMiB": 33,
+              "speedup": 10.311835298331443
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.034383916,
+              "min": 0.032234958,
+              "max": 0.036499125,
+              "cpu": 0.04,
+              "rssMiB": 32.078125,
+              "speedup": 10.255416369677032
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.038447792,
+              "min": 0.036461584,
+              "max": 0.041723084,
+              "cpu": 0.03,
+              "rssMiB": 66.28125,
+              "speedup": 9.171433693773624
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.038829625,
+              "min": 0.03767425,
+              "max": 0.040406125,
+              "cpu": 0.03,
+              "rssMiB": 66.109375,
+              "speedup": 9.081245955890639
+            }
+          ],
+          "versusDefault": true
+        }
+      ],
+      "parity": [
+        {
+          "id": "prettier@3.10.1",
+          "parity": "identical",
+          "files": 158,
+          "identical": 158,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "biome@2.6.7",
+          "parity": "differs",
+          "files": 158,
+          "identical": 58,
+          "differs": 100,
+          "untouched": 0,
+          "agreement": 0.3670886075949367,
+          "sample": [
+            "packages/create-vite/template-lit/index.html",
+            "packages/create-vite/template-lit-ts/index.html",
+            "packages/create-vite/template-preact/index.html",
+            "packages/create-vite/template-preact-ts/index.html",
+            "packages/create-vite/template-qwik/index.html",
+            "packages/create-vite/template-qwik-ts/index.html",
+            "packages/create-vite/template-react/index.html",
+            "packages/create-vite/template-react-ts/index.html",
+            "packages/create-vite/template-solid/index.html",
+            "packages/create-vite/template-solid-ts/index.html"
+          ]
+        },
+        {
+          "id": "biome@2.6.8",
+          "parity": "differs",
+          "files": 158,
+          "identical": 58,
+          "differs": 100,
+          "untouched": 0,
+          "agreement": 0.3670886075949367,
+          "sample": [
+            "packages/create-vite/template-lit/index.html",
+            "packages/create-vite/template-lit-ts/index.html",
+            "packages/create-vite/template-preact/index.html",
+            "packages/create-vite/template-preact-ts/index.html",
+            "packages/create-vite/template-qwik/index.html",
+            "packages/create-vite/template-qwik-ts/index.html",
+            "packages/create-vite/template-react/index.html",
+            "packages/create-vite/template-react-ts/index.html",
+            "packages/create-vite/template-solid/index.html",
+            "packages/create-vite/template-solid-ts/index.html"
+          ]
+        },
+        {
+          "id": "bun@1.4.4",
+          "parity": "identical",
+          "files": 158,
+          "identical": 158,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "dprint@0.64.3",
+          "parity": "differs",
+          "files": 158,
+          "identical": 73,
+          "differs": 85,
+          "untouched": 0,
+          "agreement": 0.4620253164556962,
+          "sample": [
+            "packages/create-vite/template-lit/index.html",
+            "packages/create-vite/template-lit-ts/index.html",
+            "packages/create-vite/template-preact/index.html",
+            "packages/create-vite/template-preact-ts/index.html",
+            "packages/create-vite/template-qwik/index.html",
+            "packages/create-vite/template-qwik-ts/index.html",
+            "packages/create-vite/template-react/index.html",
+            "packages/create-vite/template-react-ts/index.html",
+            "packages/create-vite/template-solid/index.html",
+            "packages/create-vite/template-solid-ts/index.html"
+          ]
+        },
+        {
+          "id": "dprint@0.65.0",
+          "parity": "differs",
+          "files": 158,
+          "identical": 73,
+          "differs": 85,
+          "untouched": 0,
+          "agreement": 0.4620253164556962,
+          "sample": [
+            "packages/create-vite/template-lit/index.html",
+            "packages/create-vite/template-lit-ts/index.html",
+            "packages/create-vite/template-preact/index.html",
+            "packages/create-vite/template-preact-ts/index.html",
+            "packages/create-vite/template-qwik/index.html",
+            "packages/create-vite/template-qwik-ts/index.html",
+            "packages/create-vite/template-react/index.html",
+            "packages/create-vite/template-react-ts/index.html",
+            "packages/create-vite/template-solid/index.html",
+            "packages/create-vite/template-solid-ts/index.html"
+          ]
+        },
+        {
+          "id": "oxfmt@0.78.0",
+          "parity": "identical",
+          "files": 158,
+          "identical": 158,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "oxfmt@0.79.0",
+          "parity": "identical",
+          "files": 158,
+          "identical": 158,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "prettier@3.9.10",
+          "parity": "identical",
+          "files": 158,
+          "identical": 158,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "tidy@2.0.0",
+          "parity": "differs",
+          "files": 158,
+          "identical": 157,
+          "differs": 1,
+          "untouched": 0,
+          "agreement": 0.9936708860759493,
+          "sample": [
+            "playground/assets/index.html"
+          ]
+        }
+      ],
+      "untimed": []
+    }
+  ],
+  "unavailable": [],
+  "project": {
+    "repo": "https://github.com/vitejs/vite",
+    "commit": "cce559ab158cc6b177d0911a0bea73436b48faff",
+    "description": "Frontend tooling monorepo: the dev server, build pipeline, playgrounds and templates, in TypeScript and JavaScript"
+  }
+}

@@ -1,0 +1,2636 @@
+{
+  "schema": 1,
+  "id": "2026-11-26-0058-apple-m4-max-darwin-angular-components",
+  "label": "angular-components",
+  "date": "2026-11-26T00:58:45.009Z",
+  "source": {
+    "kind": "local"
+  },
+  "machine": {
+    "platform": "darwin-arm64",
+    "cpu": "Apple M4 Max",
+    "cores": 16,
+    "memoryGiB": 48,
+    "os": "macOS 27.0.1 (26A434)",
+    "node": "v26.0.0"
+  },
+  "reference": "prettier@3.10.1",
+  "rounds": 7,
+  "languages": [
+    {
+      "language": "js",
+      "name": "JavaScript and TypeScript",
+      "files": 2433,
+      "bytes": 11528727,
+      "rejected": 0,
+      "settings": [
+        {
+          "threads": "default",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.04811,
+              "min": 0.043686875,
+              "max": 0.097716458,
+              "cpu": 0.45,
+              "rssMiB": 44.53125,
+              "speedup": 149.34429085429224
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.073163083,
+              "min": 0.069749333,
+              "max": 0.099157416,
+              "cpu": 0.81,
+              "rssMiB": 91.0625,
+              "speedup": 98.20463461059998
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.121942125,
+              "min": 0.120979417,
+              "max": 0.144520667,
+              "cpu": 1.47,
+              "rssMiB": 181.625,
+              "speedup": 58.921015465328324
+            },
+            {
+              "id": "biome@2.6.7",
+              "family": "biome",
+              "version": "2.6.7",
+              "runs": 7,
+              "median": 0.126297416,
+              "min": 0.123456625,
+              "max": 0.234856667,
+              "cpu": 1.38,
+              "rssMiB": 223.15625,
+              "speedup": 56.88915941874852
+            },
+            {
+              "id": "biome@2.6.8",
+              "family": "biome",
+              "version": "2.6.8",
+              "runs": 7,
+              "median": 0.127934667,
+              "min": 0.124497208,
+              "max": 0.173892167,
+              "cpu": 1.38,
+              "rssMiB": 223.890625,
+              "speedup": 56.16111724431971
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.129744084,
+              "min": 0.119545083,
+              "max": 0.174492834,
+              "cpu": 1.49,
+              "rssMiB": 184,
+              "speedup": 55.377891704102666
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.42430925,
+              "min": 0.392603125,
+              "max": 0.441970541,
+              "cpu": 4.630000000000001,
+              "rssMiB": 1165.109375,
+              "speedup": 16.933295309965548
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.439900875,
+              "min": 0.395997708,
+              "max": 0.54151125,
+              "cpu": 4.66,
+              "rssMiB": 1171.984375,
+              "speedup": 16.33312012166377
+            },
+            {
+              "id": "prettier@3.10.1",
+              "family": "prettier",
+              "version": "3.10.1",
+              "runs": 7,
+              "median": 7.184953833,
+              "min": 7.094160791,
+              "max": 7.660137167,
+              "cpu": 12.66,
+              "rssMiB": 442.921875,
+              "speedup": 1
+            },
+            {
+              "id": "prettier@3.9.10",
+              "family": "prettier",
+              "version": "3.9.10",
+              "runs": 7,
+              "median": 7.208063333,
+              "min": 6.826330917,
+              "max": 7.378181792,
+              "cpu": 12.559999999999999,
+              "rssMiB": 532.6875,
+              "speedup": 0.9967939377149754
+            }
+          ],
+          "versusDefault": false
+        },
+        {
+          "threads": "1",
+          "formatters": [
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.198729584,
+              "min": 0.193952208,
+              "max": 0.219229667,
+              "cpu": 0.19,
+              "rssMiB": 21.984375,
+              "speedup": 36.15442496472996
+            },
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.246221167,
+              "min": 0.233428041,
+              "max": 0.272060708,
+              "cpu": 0.22999999999999998,
+              "rssMiB": 17,
+              "speedup": 29.180894236440686
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 1.102529917,
+              "min": 1.073241833,
+              "max": 1.222936541,
+              "cpu": 1.51,
+              "rssMiB": 275.796875,
+              "speedup": 6.516788090930325
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 1.1144295,
+              "min": 1.079842209,
+              "max": 1.160782,
+              "cpu": 1.5,
+              "rssMiB": 278.453125,
+              "speedup": 6.447203553926022
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 1.165836792,
+              "min": 1.13652375,
+              "max": 1.261248083,
+              "cpu": 1.23,
+              "rssMiB": 60.15625,
+              "speedup": 6.162915669074201
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 1.167348833,
+              "min": 1.149809667,
+              "max": 1.288938041,
+              "cpu": 1.24,
+              "rssMiB": 59.03125,
+              "speedup": 6.1549329813738725
+            }
+          ],
+          "versusDefault": true
+        }
+      ],
+      "parity": [
+        {
+          "id": "prettier@3.10.1",
+          "parity": "identical",
+          "files": 2433,
+          "identical": 2433,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "biome@2.6.7",
+          "parity": "differs",
+          "files": 2433,
+          "identical": 2134,
+          "differs": 299,
+          "untouched": 2,
+          "agreement": 0.8771064529387588,
+          "sample": [
+            "docs/scenes/src/app/scenes/dialog/dialog-scene.ts",
+            "docs/src/app/material-docs-app.ts",
+            "docs/src/app/pages/component-viewer/token-name.ts",
+            "docs/src/app/shared/carousel/carousel.spec.ts",
+            "docs/src/app/shared/doc-viewer/deprecated-tooltip.ts",
+            "docs/src/app/shared/doc-viewer/header-link.ts",
+            "docs/src/app/shared/doc-viewer/module-import-copy-button.ts",
+            "docs/src/app/shared/stackblitz/stackblitz-writer.spec.ts",
+            "src/aria/accordion/accordion.spec.ts",
+            "src/aria/combobox/combobox.spec.ts"
+          ],
+          "error": "exited 1: Some errors were emitted while running checks."
+        },
+        {
+          "id": "biome@2.6.8",
+          "parity": "differs",
+          "files": 2433,
+          "identical": 2134,
+          "differs": 299,
+          "untouched": 2,
+          "agreement": 0.8771064529387588,
+          "sample": [
+            "docs/scenes/src/app/scenes/dialog/dialog-scene.ts",
+            "docs/src/app/material-docs-app.ts",
+            "docs/src/app/pages/component-viewer/token-name.ts",
+            "docs/src/app/shared/carousel/carousel.spec.ts",
+            "docs/src/app/shared/doc-viewer/deprecated-tooltip.ts",
+            "docs/src/app/shared/doc-viewer/header-link.ts",
+            "docs/src/app/shared/doc-viewer/module-import-copy-button.ts",
+            "docs/src/app/shared/stackblitz/stackblitz-writer.spec.ts",
+            "src/aria/accordion/accordion.spec.ts",
+            "src/aria/combobox/combobox.spec.ts"
+          ],
+          "error": "exited 1: Some errors were emitted while running checks."
+        },
+        {
+          "id": "bun@1.4.4",
+          "parity": "differs",
+          "files": 2433,
+          "identical": 2432,
+          "differs": 1,
+          "untouched": 0,
+          "agreement": 0.9995889847924373,
+          "sample": [
+            "src/material/input/input.spec.ts"
+          ]
+        },
+        {
+          "id": "dprint@0.64.3",
+          "parity": "differs",
+          "files": 2433,
+          "identical": 787,
+          "differs": 1646,
+          "untouched": 0,
+          "agreement": 0.32346896835182903,
+          "sample": [
+            "docs/e2e/src/app.e2e-spec.ts",
+            "docs/karma.conf.js",
+            "docs/scenes/e2e/src/app.e2e-spec.ts",
+            "docs/scenes/karma.conf.js",
+            "docs/scenes/src/app/app.component.spec.ts",
+            "docs/scenes/src/app/scene-overlay-container.ts",
+            "docs/scenes/src/app/scene-viewer/scene-viewer.ts",
+            "docs/scenes/src/app/scenes/autocomplete/autocomplete-scene.ts",
+            "docs/scenes/src/app/scenes/badge/badge-scene.ts",
+            "docs/scenes/src/app/scenes/bottom-sheet/bottom-sheet-scene.ts"
+          ]
+        },
+        {
+          "id": "dprint@0.65.0",
+          "parity": "differs",
+          "files": 2433,
+          "identical": 787,
+          "differs": 1646,
+          "untouched": 0,
+          "agreement": 0.32346896835182903,
+          "sample": [
+            "docs/e2e/src/app.e2e-spec.ts",
+            "docs/karma.conf.js",
+            "docs/scenes/e2e/src/app.e2e-spec.ts",
+            "docs/scenes/karma.conf.js",
+            "docs/scenes/src/app/app.component.spec.ts",
+            "docs/scenes/src/app/scene-overlay-container.ts",
+            "docs/scenes/src/app/scene-viewer/scene-viewer.ts",
+            "docs/scenes/src/app/scenes/autocomplete/autocomplete-scene.ts",
+            "docs/scenes/src/app/scenes/badge/badge-scene.ts",
+            "docs/scenes/src/app/scenes/bottom-sheet/bottom-sheet-scene.ts"
+          ]
+        },
+        {
+          "id": "oxfmt@0.78.0",
+          "parity": "differs",
+          "files": 2433,
+          "identical": 2394,
+          "differs": 39,
+          "untouched": 0,
+          "agreement": 0.9839704069050554,
+          "sample": [
+            "src/aria/toolbar/testing/toolbar-harness.ts",
+            "src/aria/tree/tree.spec.ts",
+            "src/cdk/a11y/key-manager/list-key-manager.ts",
+            "src/cdk/a11y/key-manager/tree-key-manager.spec.ts",
+            "src/cdk/drag-drop/directives/drag.ts",
+            "src/cdk/drag-drop/directives/drop-list.ts",
+            "src/cdk/drag-drop/drag-ref.ts",
+            "src/cdk/overlay/position/connected-position.ts",
+            "src/cdk/overlay/position/flexible-connected-position-strategy.ts",
+            "src/cdk/overlay/position/position-strategy.ts"
+          ]
+        },
+        {
+          "id": "oxfmt@0.79.0",
+          "parity": "differs",
+          "files": 2433,
+          "identical": 2394,
+          "differs": 39,
+          "untouched": 0,
+          "agreement": 0.9839704069050554,
+          "sample": [
+            "src/aria/toolbar/testing/toolbar-harness.ts",
+            "src/aria/tree/tree.spec.ts",
+            "src/cdk/a11y/key-manager/list-key-manager.ts",
+            "src/cdk/a11y/key-manager/tree-key-manager.spec.ts",
+            "src/cdk/drag-drop/directives/drag.ts",
+            "src/cdk/drag-drop/directives/drop-list.ts",
+            "src/cdk/drag-drop/drag-ref.ts",
+            "src/cdk/overlay/position/connected-position.ts",
+            "src/cdk/overlay/position/flexible-connected-position-strategy.ts",
+            "src/cdk/overlay/position/position-strategy.ts"
+          ]
+        },
+        {
+          "id": "prettier@3.9.10",
+          "parity": "identical",
+          "files": 2433,
+          "identical": 2433,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "tidy@2.0.0",
+          "parity": "differs",
+          "files": 2433,
+          "identical": 2338,
+          "differs": 95,
+          "untouched": 0,
+          "agreement": 0.9609535552815455,
+          "sample": [
+            "docs/src/app/shared/carousel/carousel.spec.ts",
+            "docs/src/app/shared/doc-viewer/doc-viewer.ts",
+            "src/aria/accordion/accordion.spec.ts",
+            "src/aria/combobox/combobox.spec.ts",
+            "src/aria/combobox/combobox.zone.spec.ts",
+            "src/aria/combobox/testing/combobox-harness.spec.ts",
+            "src/aria/grid/grid.spec.ts",
+            "src/aria/grid/testing/grid-harness-filters.ts",
+            "src/aria/listbox/listbox.spec.ts",
+            "src/aria/menu/menu.spec.ts"
+          ]
+        }
+      ],
+      "untimed": []
+    },
+    {
+      "language": "json",
+      "name": "JSON",
+      "files": 124,
+      "bytes": 119799,
+      "rejected": 0,
+      "settings": [
+        {
+          "threads": "default",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.006257792,
+              "min": 0.005982709,
+              "max": 0.007003791,
+              "cpu": 0.01,
+              "rssMiB": 5.703125,
+              "speedup": 23.21103561767473
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.009724083,
+              "min": 0.009226958,
+              "max": 0.010660583,
+              "cpu": 0.02,
+              "rssMiB": 18.390625,
+              "speedup": 14.937123942689507
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.01261975,
+              "min": 0.0122775,
+              "max": 0.013893708,
+              "cpu": 0.04,
+              "rssMiB": 34.46875,
+              "speedup": 11.509723488975613
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.013243625,
+              "min": 0.01309975,
+              "max": 0.014091417,
+              "cpu": 0.04,
+              "rssMiB": 35.4375,
+              "speedup": 10.967528376860564
+            },
+            {
+              "id": "biome@2.6.7",
+              "family": "biome",
+              "version": "2.6.7",
+              "runs": 7,
+              "median": 0.013546125,
+              "min": 0.013136209,
+              "max": 0.014487667,
+              "cpu": 0.03,
+              "rssMiB": 36.15625,
+              "speedup": 10.7226113002796
+            },
+            {
+              "id": "biome@2.6.8",
+              "family": "biome",
+              "version": "2.6.8",
+              "runs": 7,
+              "median": 0.013791833,
+              "min": 0.01362275,
+              "max": 0.015118667,
+              "cpu": 0.03,
+              "rssMiB": 36.34375,
+              "speedup": 10.53158293027475
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.036710125,
+              "min": 0.035975291,
+              "max": 0.040818167,
+              "cpu": 0.05,
+              "rssMiB": 71.125,
+              "speedup": 3.9566695291830247
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.037082583,
+              "min": 0.035386417,
+              "max": 0.040350333,
+              "cpu": 0.04,
+              "rssMiB": 70.96875,
+              "speedup": 3.9169286832041874
+            },
+            {
+              "id": "prettier@3.9.10",
+              "family": "prettier",
+              "version": "3.9.10",
+              "runs": 7,
+              "median": 0.144696209,
+              "min": 0.142500375,
+              "max": 0.160401583,
+              "cpu": 0.22,
+              "rssMiB": 119.421875,
+              "speedup": 1.0038261126799806
+            },
+            {
+              "id": "prettier@3.10.1",
+              "family": "prettier",
+              "version": "3.10.1",
+              "runs": 7,
+              "median": 0.145249833,
+              "min": 0.14196425,
+              "max": 0.152277083,
+              "cpu": 0.22,
+              "rssMiB": 118.625,
+              "speedup": 1
+            }
+          ],
+          "versusDefault": false
+        },
+        {
+          "threads": "1",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.007543,
+              "min": 0.007191875,
+              "max": 0.009209292,
+              "cpu": 0,
+              "rssMiB": 4.203125,
+              "speedup": 19.256241946175262
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.009186333,
+              "min": 0.008960917,
+              "max": 0.009650709,
+              "cpu": 0,
+              "rssMiB": 7.609375,
+              "speedup": 15.811514017617258
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.019840041,
+              "min": 0.019206584,
+              "max": 0.02104425,
+              "cpu": 0.02,
+              "rssMiB": 31.5625,
+              "speedup": 7.321045001872728
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.019865167,
+              "min": 0.019424625,
+              "max": 0.020600542,
+              "cpu": 0.02,
+              "rssMiB": 30.5625,
+              "speedup": 7.311785146331768
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.034333084,
+              "min": 0.033417625,
+              "max": 0.035452041,
+              "cpu": 0.03,
+              "rssMiB": 63.03125,
+              "speedup": 4.230608383447289
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.034646208,
+              "min": 0.032881125,
+              "max": 0.035722709,
+              "cpu": 0.03,
+              "rssMiB": 63.1875,
+              "speedup": 4.192373173999302
+            }
+          ],
+          "versusDefault": true
+        }
+      ],
+      "parity": [
+        {
+          "id": "prettier@3.10.1",
+          "parity": "identical",
+          "files": 124,
+          "identical": 124,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "biome@2.6.7",
+          "parity": "differs",
+          "files": 124,
+          "identical": 123,
+          "differs": 1,
+          "untouched": 1,
+          "agreement": 0.9919354838709677,
+          "sample": [
+            "src/tsconfig-legacy.json"
+          ],
+          "error": "exited 1: Some errors were emitted while running checks."
+        },
+        {
+          "id": "biome@2.6.8",
+          "parity": "differs",
+          "files": 124,
+          "identical": 123,
+          "differs": 1,
+          "untouched": 1,
+          "agreement": 0.9919354838709677,
+          "sample": [
+            "src/tsconfig-legacy.json"
+          ],
+          "error": "exited 1: Some errors were emitted while running checks."
+        },
+        {
+          "id": "bun@1.4.4",
+          "parity": "identical",
+          "files": 124,
+          "identical": 124,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "dprint@0.64.3",
+          "parity": "differs",
+          "files": 124,
+          "identical": 102,
+          "differs": 22,
+          "untouched": 0,
+          "agreement": 0.8225806451612904,
+          "sample": [
+            "docs/package.json",
+            "docs/src/assets/stackblitz/package.json",
+            "integration/ng-add/package.json",
+            "integration/ng-add-standalone/package.json",
+            "integration/package.json",
+            "integration/vitest/package.json",
+            "integration/yarn-pnp-compat/package.json",
+            "package.json",
+            "src/aria/package.json",
+            "src/cdk/package.json"
+          ]
+        },
+        {
+          "id": "dprint@0.65.0",
+          "parity": "differs",
+          "files": 124,
+          "identical": 102,
+          "differs": 22,
+          "untouched": 0,
+          "agreement": 0.8225806451612904,
+          "sample": [
+            "docs/package.json",
+            "docs/src/assets/stackblitz/package.json",
+            "integration/ng-add/package.json",
+            "integration/ng-add-standalone/package.json",
+            "integration/package.json",
+            "integration/vitest/package.json",
+            "integration/yarn-pnp-compat/package.json",
+            "package.json",
+            "src/aria/package.json",
+            "src/cdk/package.json"
+          ]
+        },
+        {
+          "id": "oxfmt@0.78.0",
+          "parity": "identical",
+          "files": 124,
+          "identical": 124,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "oxfmt@0.79.0",
+          "parity": "identical",
+          "files": 124,
+          "identical": 124,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "prettier@3.9.10",
+          "parity": "identical",
+          "files": 124,
+          "identical": 124,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "tidy@2.0.0",
+          "parity": "identical",
+          "files": 124,
+          "identical": 124,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        }
+      ],
+      "untimed": []
+    },
+    {
+      "language": "css",
+      "name": "CSS",
+      "files": 276,
+      "bytes": 95583,
+      "rejected": 0,
+      "settings": [
+        {
+          "threads": "default",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.010845833,
+              "min": 0.010380458,
+              "max": 0.012407542,
+              "cpu": 0.03,
+              "rssMiB": 6.390625,
+              "speedup": 26.72950145922402
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.017398291,
+              "min": 0.017002333,
+              "max": 0.019256,
+              "cpu": 0.08,
+              "rssMiB": 34.859375,
+              "speedup": 16.66276929153559
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.018120083,
+              "min": 0.017843042,
+              "max": 0.020407875,
+              "cpu": 0.08,
+              "rssMiB": 35.703125,
+              "speedup": 15.99902765346053
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.019087,
+              "min": 0.018705833,
+              "max": 0.033215542,
+              "cpu": 0.13,
+              "rssMiB": 23.546875,
+              "speedup": 15.188542411065123
+            },
+            {
+              "id": "biome@2.6.7",
+              "family": "biome",
+              "version": "2.6.7",
+              "runs": 7,
+              "median": 0.022834041,
+              "min": 0.021937333,
+              "max": 0.023760584,
+              "cpu": 0.15,
+              "rssMiB": 39.4375,
+              "speedup": 12.69611931589332
+            },
+            {
+              "id": "biome@2.6.8",
+              "family": "biome",
+              "version": "2.6.8",
+              "runs": 7,
+              "median": 0.0230425,
+              "min": 0.022196208,
+              "max": 0.02498825,
+              "cpu": 0.15,
+              "rssMiB": 39.484375,
+              "speedup": 12.58126110448085
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.048073833,
+              "min": 0.045744333,
+              "max": 0.049983375,
+              "cpu": 0.19,
+              "rssMiB": 75.859375,
+              "speedup": 6.030384741736737
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.048117041,
+              "min": 0.047059,
+              "max": 0.052313292,
+              "cpu": 0.19,
+              "rssMiB": 75.6875,
+              "speedup": 6.024969594451995
+            },
+            {
+              "id": "prettier@3.9.10",
+              "family": "prettier",
+              "version": "3.9.10",
+              "runs": 7,
+              "median": 0.289902042,
+              "min": 0.288202208,
+              "max": 0.324624375,
+              "cpu": 0.45999999999999996,
+              "rssMiB": 155.203125,
+              "speedup": 1.0000057502182065
+            },
+            {
+              "id": "prettier@3.10.1",
+              "family": "prettier",
+              "version": "3.10.1",
+              "runs": 7,
+              "median": 0.289903709,
+              "min": 0.28711675,
+              "max": 0.314885875,
+              "cpu": 0.45999999999999996,
+              "rssMiB": 153.609375,
+              "speedup": 1
+            }
+          ],
+          "versusDefault": false
+        },
+        {
+          "threads": "1",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.015463792,
+              "min": 0.015348334,
+              "max": 0.016329458,
+              "cpu": 0,
+              "rssMiB": 5.328125,
+              "speedup": 18.747258693081232
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.017197167,
+              "min": 0.0171285,
+              "max": 0.017721375,
+              "cpu": 0.01,
+              "rssMiB": 8.765625,
+              "speedup": 16.857643413010994
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.02964375,
+              "min": 0.029030583,
+              "max": 0.030334334,
+              "cpu": 0.05,
+              "rssMiB": 30.90625,
+              "speedup": 9.779589593084546
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.02967775,
+              "min": 0.029293416,
+              "max": 0.031103542,
+              "cpu": 0.05,
+              "rssMiB": 32,
+              "speedup": 9.768385709833124
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.038282916,
+              "min": 0.037848,
+              "max": 0.041578834,
+              "cpu": 0.03,
+              "rssMiB": 63.9375,
+              "speedup": 7.572665284953738
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.038814542,
+              "min": 0.037628833,
+              "max": 0.03984475,
+              "cpu": 0.03,
+              "rssMiB": 64.078125,
+              "speedup": 7.468945762647412
+            }
+          ],
+          "versusDefault": true
+        }
+      ],
+      "parity": [
+        {
+          "id": "prettier@3.10.1",
+          "parity": "identical",
+          "files": 276,
+          "identical": 276,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "biome@2.6.7",
+          "parity": "differs",
+          "files": 276,
+          "identical": 275,
+          "differs": 1,
+          "untouched": 0,
+          "agreement": 0.9963768115942029,
+          "sample": [
+            "src/components-examples/aria/autocomplete/autocomplete.css"
+          ]
+        },
+        {
+          "id": "biome@2.6.8",
+          "parity": "differs",
+          "files": 276,
+          "identical": 275,
+          "differs": 1,
+          "untouched": 0,
+          "agreement": 0.9963768115942029,
+          "sample": [
+            "src/components-examples/aria/autocomplete/autocomplete.css"
+          ]
+        },
+        {
+          "id": "bun@1.4.4",
+          "parity": "identical",
+          "files": 276,
+          "identical": 276,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "dprint@0.64.3",
+          "parity": "differs",
+          "files": 276,
+          "identical": 245,
+          "differs": 31,
+          "untouched": 8,
+          "agreement": 0.8876811594202898,
+          "sample": [
+            "src/components-examples/aria/autocomplete/autocomplete.css",
+            "src/components-examples/aria/combobox/combobox-datepicker/combobox-datepicker-example.css",
+            "src/components-examples/aria/combobox/combobox-example.css",
+            "src/components-examples/aria/grid/grid-calendar/grid-calendar-example.css",
+            "src/components-examples/aria/grid/grid-common.css",
+            "src/components-examples/aria/grid/grid-configurable/grid-configurable-example.css",
+            "src/components-examples/aria/menu/menu-example.css",
+            "src/components-examples/aria/toolbar/toolbar-common.css",
+            "src/components-examples/cdk/listbox/cdk-listbox-activedescendant/cdk-listbox-activedescendant-example.css",
+            "src/components-examples/cdk/listbox/cdk-listbox-compare-with/cdk-listbox-compare-with-example.css"
+          ]
+        },
+        {
+          "id": "dprint@0.65.0",
+          "parity": "differs",
+          "files": 276,
+          "identical": 245,
+          "differs": 31,
+          "untouched": 8,
+          "agreement": 0.8876811594202898,
+          "sample": [
+            "src/components-examples/aria/autocomplete/autocomplete.css",
+            "src/components-examples/aria/combobox/combobox-datepicker/combobox-datepicker-example.css",
+            "src/components-examples/aria/combobox/combobox-example.css",
+            "src/components-examples/aria/grid/grid-calendar/grid-calendar-example.css",
+            "src/components-examples/aria/grid/grid-common.css",
+            "src/components-examples/aria/grid/grid-configurable/grid-configurable-example.css",
+            "src/components-examples/aria/menu/menu-example.css",
+            "src/components-examples/aria/toolbar/toolbar-common.css",
+            "src/components-examples/cdk/listbox/cdk-listbox-activedescendant/cdk-listbox-activedescendant-example.css",
+            "src/components-examples/cdk/listbox/cdk-listbox-compare-with/cdk-listbox-compare-with-example.css"
+          ]
+        },
+        {
+          "id": "oxfmt@0.78.0",
+          "parity": "identical",
+          "files": 276,
+          "identical": 276,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "oxfmt@0.79.0",
+          "parity": "identical",
+          "files": 276,
+          "identical": 276,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "prettier@3.9.10",
+          "parity": "identical",
+          "files": 276,
+          "identical": 276,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "tidy@2.0.0",
+          "parity": "identical",
+          "files": 276,
+          "identical": 276,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        }
+      ],
+      "untimed": []
+    },
+    {
+      "language": "scss",
+      "name": "SCSS",
+      "files": 434,
+      "bytes": 1104423,
+      "rejected": 0,
+      "settings": [
+        {
+          "threads": "default",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.012282708,
+              "min": 0.011816625,
+              "max": 0.0129905,
+              "cpu": 0.08,
+              "rssMiB": 10.09375,
+              "speedup": 69.11123206706534
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.018309875,
+              "min": 0.017870625,
+              "max": 0.018872417,
+              "cpu": 0.13,
+              "rssMiB": 30.09375,
+              "speedup": 46.36148979717229
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.01977425,
+              "min": 0.01950925,
+              "max": 0.021267083,
+              "cpu": 0.12,
+              "rssMiB": 40.0625,
+              "speedup": 42.928206278367064
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.020767833,
+              "min": 0.02019875,
+              "max": 0.022749834,
+              "cpu": 0.12,
+              "rssMiB": 41.03125,
+              "speedup": 40.87441780757771
+            },
+            {
+              "id": "biome@2.6.7",
+              "family": "biome",
+              "version": "2.6.7",
+              "runs": 7,
+              "median": 0.025235334,
+              "min": 0.024634292,
+              "max": 0.026880833,
+              "cpu": 0.18,
+              "rssMiB": 62.71875,
+              "speedup": 33.6382741357812
+            },
+            {
+              "id": "biome@2.6.8",
+              "family": "biome",
+              "version": "2.6.8",
+              "runs": 7,
+              "median": 0.026370541,
+              "min": 0.025254833,
+              "max": 0.03423,
+              "cpu": 0.18,
+              "rssMiB": 62.96875,
+              "speedup": 32.19020356844404
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.043500167,
+              "min": 0.042910583,
+              "max": 0.045265458,
+              "cpu": 0.18,
+              "rssMiB": 90.5,
+              "speedup": 19.514248830355065
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.043526125,
+              "min": 0.04301225,
+              "max": 0.044440667,
+              "cpu": 0.17,
+              "rssMiB": 90.296875,
+              "speedup": 19.502610972146037
+            },
+            {
+              "id": "prettier@3.9.10",
+              "family": "prettier",
+              "version": "3.9.10",
+              "runs": 7,
+              "median": 0.838654625,
+              "min": 0.825357,
+              "max": 0.900642333,
+              "cpu": 1.3800000000000001,
+              "rssMiB": 183.640625,
+              "speedup": 1.0121843458503552
+            },
+            {
+              "id": "prettier@3.10.1",
+              "family": "prettier",
+              "version": "3.10.1",
+              "runs": 7,
+              "median": 0.848873083,
+              "min": 0.821617,
+              "max": 0.903310667,
+              "cpu": 1.36,
+              "rssMiB": 181.328125,
+              "speedup": 1
+            }
+          ],
+          "versusDefault": false
+        },
+        {
+          "threads": "1",
+          "formatters": [
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.030081917,
+              "min": 0.028512209,
+              "max": 0.03155875,
+              "cpu": 0.02,
+              "rssMiB": 10.078125,
+              "speedup": 28.21871634709982
+            },
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.030196292,
+              "min": 0.028794791,
+              "max": 0.03211425,
+              "cpu": 0.02,
+              "rssMiB": 6.421875,
+              "speedup": 28.111831843459456
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.054549417,
+              "min": 0.054073041,
+              "max": 0.05708625,
+              "cpu": 0.05,
+              "rssMiB": 66.84375,
+              "speedup": 15.561542720062434
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.055073833,
+              "min": 0.053922958,
+              "max": 0.05801625,
+              "cpu": 0.05,
+              "rssMiB": 66.671875,
+              "speedup": 15.413364873296542
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.073112125,
+              "min": 0.071443666,
+              "max": 0.073558292,
+              "cpu": 0.09,
+              "rssMiB": 31.6875,
+              "speedup": 11.610565046495365
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.073488708,
+              "min": 0.070566958,
+              "max": 0.075225792,
+              "cpu": 0.08,
+              "rssMiB": 32.71875,
+              "speedup": 11.551068267522133
+            }
+          ],
+          "versusDefault": true
+        }
+      ],
+      "parity": [
+        {
+          "id": "prettier@3.10.1",
+          "parity": "identical",
+          "files": 434,
+          "identical": 434,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "biome@2.6.7",
+          "parity": "differs",
+          "files": 434,
+          "identical": 257,
+          "differs": 177,
+          "untouched": 2,
+          "agreement": 0.5921658986175116,
+          "sample": [
+            "docs/src/highlightjs/material-dark.scss",
+            "docs/src/highlightjs/material-light.scss",
+            "docs/src/styles/general.scss",
+            "src/cdk/_index.scss",
+            "src/cdk/a11y/_index.scss",
+            "src/dev-app/theme-m3.scss",
+            "src/material/_index.scss",
+            "src/material/autocomplete/_autocomplete-theme.scss",
+            "src/material/autocomplete/_m2-autocomplete.scss",
+            "src/material/badge/_badge-theme.scss"
+          ]
+        },
+        {
+          "id": "biome@2.6.8",
+          "parity": "differs",
+          "files": 434,
+          "identical": 257,
+          "differs": 177,
+          "untouched": 2,
+          "agreement": 0.5921658986175116,
+          "sample": [
+            "docs/src/highlightjs/material-dark.scss",
+            "docs/src/highlightjs/material-light.scss",
+            "docs/src/styles/general.scss",
+            "src/cdk/_index.scss",
+            "src/cdk/a11y/_index.scss",
+            "src/dev-app/theme-m3.scss",
+            "src/material/_index.scss",
+            "src/material/autocomplete/_autocomplete-theme.scss",
+            "src/material/autocomplete/_m2-autocomplete.scss",
+            "src/material/badge/_badge-theme.scss"
+          ]
+        },
+        {
+          "id": "bun@1.4.4",
+          "parity": "differs",
+          "files": 434,
+          "identical": 380,
+          "differs": 54,
+          "untouched": 0,
+          "agreement": 0.8755760368663594,
+          "sample": [
+            "src/cdk/a11y/_index.scss",
+            "src/dev-app/theme.scss",
+            "src/material/autocomplete/_autocomplete-theme.scss",
+            "src/material/badge/_badge-theme.scss",
+            "src/material/badge/_m2-badge.scss",
+            "src/material/bottom-sheet/_bottom-sheet-theme.scss",
+            "src/material/button/_button-theme.scss",
+            "src/material/button/_fab-theme.scss",
+            "src/material/button/_icon-button-theme.scss",
+            "src/material/button-toggle/_button-toggle-theme.scss"
+          ]
+        },
+        {
+          "id": "dprint@0.64.3",
+          "parity": "differs",
+          "files": 434,
+          "identical": 211,
+          "differs": 223,
+          "untouched": 14,
+          "agreement": 0.4861751152073733,
+          "sample": [
+            "docs/scenes/src/app/app.component.scss",
+            "docs/scenes/src/app/scenes/placeholder/_placeholder-scene-theme.scss",
+            "docs/scenes/src/styles.scss",
+            "docs/src/app/pages/component-category-list/component-category-list.scss",
+            "docs/src/app/pages/homepage/homepage.scss",
+            "docs/src/highlightjs/material-dark.scss",
+            "docs/src/highlightjs/material-light.scss",
+            "docs/src/styles/_markdown.scss",
+            "docs/src/styles/custom-themes/azure-blue.scss",
+            "docs/src/styles/custom-themes/cyan-orange.scss"
+          ],
+          "error": "exited 1: Error formatting <work>/scss/out/dprint@0.64.3/src/cdk/_index.scss. Message: Formatti"
+        },
+        {
+          "id": "dprint@0.65.0",
+          "parity": "differs",
+          "files": 434,
+          "identical": 211,
+          "differs": 223,
+          "untouched": 14,
+          "agreement": 0.4861751152073733,
+          "sample": [
+            "docs/scenes/src/app/app.component.scss",
+            "docs/scenes/src/app/scenes/placeholder/_placeholder-scene-theme.scss",
+            "docs/scenes/src/styles.scss",
+            "docs/src/app/pages/component-category-list/component-category-list.scss",
+            "docs/src/app/pages/homepage/homepage.scss",
+            "docs/src/highlightjs/material-dark.scss",
+            "docs/src/highlightjs/material-light.scss",
+            "docs/src/styles/_markdown.scss",
+            "docs/src/styles/custom-themes/azure-blue.scss",
+            "docs/src/styles/custom-themes/cyan-orange.scss"
+          ],
+          "error": "exited 1: Error formatting <work>/scss/out/dprint@0.65.0/src/cdk/_index.scss. Message: Formatti"
+        },
+        {
+          "id": "oxfmt@0.78.0",
+          "parity": "differs",
+          "files": 434,
+          "identical": 312,
+          "differs": 122,
+          "untouched": 0,
+          "agreement": 0.7188940092165899,
+          "sample": [
+            "src/cdk/a11y/_index.scss",
+            "src/dev-app/theme-m3.scss",
+            "src/material/_index.scss",
+            "src/material/autocomplete/_autocomplete-theme.scss",
+            "src/material/autocomplete/_m2-autocomplete.scss",
+            "src/material/badge/_m2-badge.scss",
+            "src/material/badge/_m3-badge.scss",
+            "src/material/bottom-sheet/_bottom-sheet-theme.scss",
+            "src/material/bottom-sheet/_m2-bottom-sheet.scss",
+            "src/material/bottom-sheet/_m3-bottom-sheet.scss"
+          ]
+        },
+        {
+          "id": "oxfmt@0.79.0",
+          "parity": "differs",
+          "files": 434,
+          "identical": 313,
+          "differs": 121,
+          "untouched": 0,
+          "agreement": 0.7211981566820277,
+          "sample": [
+            "src/cdk/a11y/_index.scss",
+            "src/dev-app/theme-m3.scss",
+            "src/material/_index.scss",
+            "src/material/autocomplete/_autocomplete-theme.scss",
+            "src/material/autocomplete/_m2-autocomplete.scss",
+            "src/material/badge/_m2-badge.scss",
+            "src/material/badge/_m3-badge.scss",
+            "src/material/bottom-sheet/_bottom-sheet-theme.scss",
+            "src/material/bottom-sheet/_m2-bottom-sheet.scss",
+            "src/material/bottom-sheet/_m3-bottom-sheet.scss"
+          ]
+        },
+        {
+          "id": "prettier@3.9.10",
+          "parity": "differs",
+          "files": 434,
+          "identical": 380,
+          "differs": 54,
+          "untouched": 0,
+          "agreement": 0.8755760368663594,
+          "sample": [
+            "src/cdk/a11y/_index.scss",
+            "src/dev-app/theme.scss",
+            "src/material/autocomplete/_autocomplete-theme.scss",
+            "src/material/badge/_badge-theme.scss",
+            "src/material/badge/_m2-badge.scss",
+            "src/material/bottom-sheet/_bottom-sheet-theme.scss",
+            "src/material/button/_button-theme.scss",
+            "src/material/button/_fab-theme.scss",
+            "src/material/button/_icon-button-theme.scss",
+            "src/material/button-toggle/_button-toggle-theme.scss"
+          ]
+        },
+        {
+          "id": "tidy@2.0.0",
+          "parity": "differs",
+          "files": 434,
+          "identical": 380,
+          "differs": 54,
+          "untouched": 0,
+          "agreement": 0.8755760368663594,
+          "sample": [
+            "src/cdk/a11y/_index.scss",
+            "src/dev-app/theme.scss",
+            "src/material/autocomplete/_autocomplete-theme.scss",
+            "src/material/badge/_badge-theme.scss",
+            "src/material/badge/_m2-badge.scss",
+            "src/material/bottom-sheet/_bottom-sheet-theme.scss",
+            "src/material/button/_button-theme.scss",
+            "src/material/button/_fab-theme.scss",
+            "src/material/button/_icon-button-theme.scss",
+            "src/material/button-toggle/_button-toggle-theme.scss"
+          ]
+        }
+      ],
+      "untimed": []
+    },
+    {
+      "language": "markdown",
+      "name": "Markdown",
+      "files": 278,
+      "bytes": 3263476,
+      "rejected": 0,
+      "settings": [
+        {
+          "threads": "default",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.018351584,
+              "min": 0.017743166,
+              "max": 0.019117833,
+              "cpu": 0.08,
+              "rssMiB": 33.96875,
+              "speedup": 142.1100897884346
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.026061958,
+              "min": 0.025278375,
+              "max": 0.0290295,
+              "cpu": 0.12,
+              "rssMiB": 86.71875,
+              "speedup": 100.06712657583134
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.050215459,
+              "min": 0.0496885,
+              "max": 0.051213708,
+              "cpu": 0.29,
+              "rssMiB": 127.171875,
+              "speedup": 51.935107274435154
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.051202125,
+              "min": 0.050752833,
+              "max": 0.052310208,
+              "cpu": 0.29,
+              "rssMiB": 127.484375,
+              "speedup": 50.93431669095765
+            },
+            {
+              "id": "biome@2.6.8",
+              "family": "biome",
+              "version": "2.6.8",
+              "runs": 7,
+              "median": 0.07647875,
+              "min": 0.075144541,
+              "max": 0.083586625,
+              "cpu": 0.27,
+              "rssMiB": 111.34375,
+              "speedup": 34.100259876109384
+            },
+            {
+              "id": "biome@2.6.7",
+              "family": "biome",
+              "version": "2.6.7",
+              "runs": 7,
+              "median": 0.076747208,
+              "min": 0.075310208,
+              "max": 0.080646458,
+              "cpu": 0.27,
+              "rssMiB": 108.375,
+              "speedup": 33.98097882596589
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.094095292,
+              "min": 0.092322792,
+              "max": 0.09836625,
+              "cpu": 0.27,
+              "rssMiB": 206.953125,
+              "speedup": 27.716001455205646
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.097057542,
+              "min": 0.096194709,
+              "max": 0.10075475,
+              "cpu": 0.27,
+              "rssMiB": 209.84375,
+              "speedup": 26.87009372234051
+            },
+            {
+              "id": "prettier@3.10.1",
+              "family": "prettier",
+              "version": "3.10.1",
+              "runs": 7,
+              "median": 2.60794525,
+              "min": 2.549446375,
+              "max": 2.763272834,
+              "cpu": 4.88,
+              "rssMiB": 826.78125,
+              "speedup": 1
+            },
+            {
+              "id": "prettier@3.9.10",
+              "family": "prettier",
+              "version": "3.9.10",
+              "runs": 7,
+              "median": 2.721789125,
+              "min": 2.693323875,
+              "max": 2.920803417,
+              "cpu": 4.890000000000001,
+              "rssMiB": 757.34375,
+              "speedup": 0.9581731464960572
+            }
+          ],
+          "versusDefault": false
+        },
+        {
+          "threads": "1",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.050253875,
+              "min": 0.04979575,
+              "max": 0.057877917,
+              "cpu": 0.03,
+              "rssMiB": 23.8125,
+              "speedup": 51.89540607565088
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.05326475,
+              "min": 0.052632459,
+              "max": 0.057791834,
+              "cpu": 0.04,
+              "rssMiB": 44.109375,
+              "speedup": 48.96193542633731
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.134927,
+              "min": 0.132244,
+              "max": 0.142251959,
+              "cpu": 0.15,
+              "rssMiB": 138.234375,
+              "speedup": 19.3285647053592
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.1353825,
+              "min": 0.133974458,
+              "max": 0.150702209,
+              "cpu": 0.15,
+              "rssMiB": 138.5,
+              "speedup": 19.263532952929665
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.207027708,
+              "min": 0.204146541,
+              "max": 0.220342375,
+              "cpu": 0.22,
+              "rssMiB": 76.25,
+              "speedup": 12.597083140194936
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.211659375,
+              "min": 0.204482333,
+              "max": 0.212871125,
+              "cpu": 0.23,
+              "rssMiB": 77.015625,
+              "speedup": 12.321425639662785
+            }
+          ],
+          "versusDefault": true
+        }
+      ],
+      "parity": [
+        {
+          "id": "prettier@3.10.1",
+          "parity": "identical",
+          "files": 278,
+          "identical": 278,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "biome@2.6.7",
+          "parity": "differs",
+          "files": 278,
+          "identical": 166,
+          "differs": 112,
+          "untouched": 65,
+          "agreement": 0.5971223021582733,
+          "sample": [
+            "CHANGELOG.md",
+            "CHANGELOG_ARCHIVE.md",
+            "CODING_STANDARDS.md",
+            "goldens/aria/accordion/index.api.md",
+            "goldens/aria/combobox/index.api.md",
+            "goldens/aria/grid/index.api.md",
+            "goldens/aria/index.api.md",
+            "goldens/aria/listbox/index.api.md",
+            "goldens/aria/menu/index.api.md",
+            "goldens/aria/private/index.api.md"
+          ]
+        },
+        {
+          "id": "biome@2.6.8",
+          "parity": "differs",
+          "files": 278,
+          "identical": 166,
+          "differs": 112,
+          "untouched": 65,
+          "agreement": 0.5971223021582733,
+          "sample": [
+            "CHANGELOG.md",
+            "CHANGELOG_ARCHIVE.md",
+            "CODING_STANDARDS.md",
+            "goldens/aria/accordion/index.api.md",
+            "goldens/aria/combobox/index.api.md",
+            "goldens/aria/grid/index.api.md",
+            "goldens/aria/index.api.md",
+            "goldens/aria/listbox/index.api.md",
+            "goldens/aria/menu/index.api.md",
+            "goldens/aria/private/index.api.md"
+          ]
+        },
+        {
+          "id": "bun@1.4.4",
+          "parity": "differs",
+          "files": 278,
+          "identical": 275,
+          "differs": 3,
+          "untouched": 0,
+          "agreement": 0.9892086330935251,
+          "sample": [
+            "guides/material-2.md",
+            "guides/theming-your-components.md",
+            "src/material/table/table.md"
+          ]
+        },
+        {
+          "id": "dprint@0.64.3",
+          "parity": "differs",
+          "files": 278,
+          "identical": 128,
+          "differs": 150,
+          "untouched": 0,
+          "agreement": 0.460431654676259,
+          "sample": [
+            "CHANGELOG.md",
+            "CHANGELOG_ARCHIVE.md",
+            "CODING_STANDARDS.md",
+            "DEV_ENVIRONMENT.md",
+            "goldens/aria/accordion/index.api.md",
+            "goldens/aria/accordion/testing/index.api.md",
+            "goldens/aria/combobox/index.api.md",
+            "goldens/aria/combobox/testing/index.api.md",
+            "goldens/aria/grid/index.api.md",
+            "goldens/aria/grid/testing/index.api.md"
+          ]
+        },
+        {
+          "id": "dprint@0.65.0",
+          "parity": "differs",
+          "files": 278,
+          "identical": 128,
+          "differs": 150,
+          "untouched": 0,
+          "agreement": 0.460431654676259,
+          "sample": [
+            "CHANGELOG.md",
+            "CHANGELOG_ARCHIVE.md",
+            "CODING_STANDARDS.md",
+            "DEV_ENVIRONMENT.md",
+            "goldens/aria/accordion/index.api.md",
+            "goldens/aria/accordion/testing/index.api.md",
+            "goldens/aria/combobox/index.api.md",
+            "goldens/aria/combobox/testing/index.api.md",
+            "goldens/aria/grid/index.api.md",
+            "goldens/aria/grid/testing/index.api.md"
+          ]
+        },
+        {
+          "id": "oxfmt@0.78.0",
+          "parity": "differs",
+          "files": 278,
+          "identical": 214,
+          "differs": 64,
+          "untouched": 53,
+          "agreement": 0.7697841726618705,
+          "sample": [
+            "goldens/aria/accordion/index.api.md",
+            "goldens/aria/combobox/index.api.md",
+            "goldens/aria/grid/index.api.md",
+            "goldens/aria/index.api.md",
+            "goldens/aria/listbox/index.api.md",
+            "goldens/aria/menu/index.api.md",
+            "goldens/aria/tabs/index.api.md",
+            "goldens/aria/toolbar/index.api.md",
+            "goldens/cdk/a11y/index.api.md",
+            "goldens/cdk/accordion/index.api.md"
+          ]
+        },
+        {
+          "id": "oxfmt@0.79.0",
+          "parity": "differs",
+          "files": 278,
+          "identical": 215,
+          "differs": 63,
+          "untouched": 53,
+          "agreement": 0.7733812949640287,
+          "sample": [
+            "goldens/aria/accordion/index.api.md",
+            "goldens/aria/combobox/index.api.md",
+            "goldens/aria/grid/index.api.md",
+            "goldens/aria/index.api.md",
+            "goldens/aria/listbox/index.api.md",
+            "goldens/aria/menu/index.api.md",
+            "goldens/aria/tabs/index.api.md",
+            "goldens/aria/toolbar/index.api.md",
+            "goldens/cdk/a11y/index.api.md",
+            "goldens/cdk/accordion/index.api.md"
+          ]
+        },
+        {
+          "id": "prettier@3.9.10",
+          "parity": "differs",
+          "files": 278,
+          "identical": 276,
+          "differs": 2,
+          "untouched": 0,
+          "agreement": 0.9928057553956835,
+          "sample": [
+            "guides/material-2.md",
+            "src/material/table/table.md"
+          ]
+        },
+        {
+          "id": "tidy@2.0.0",
+          "parity": "differs",
+          "files": 278,
+          "identical": 268,
+          "differs": 10,
+          "untouched": 0,
+          "agreement": 0.9640287769784173,
+          "sample": [
+            "CHANGELOG_ARCHIVE.md",
+            "guides/material-2.md",
+            "guides/theming-your-components.md",
+            "src/aria/private/ui-pattern-rules.md",
+            "src/cdk/tree/tree.md",
+            "src/material/datepicker/datepicker.md",
+            "src/material/expansion/expansion.md",
+            "src/material/table/table.md",
+            "src/material/toolbar/toolbar.md",
+            "src/material/tree/tree.md"
+          ]
+        }
+      ],
+      "untimed": []
+    },
+    {
+      "language": "yaml",
+      "name": "YAML",
+      "files": 4,
+      "bytes": 4047,
+      "rejected": 0,
+      "settings": [
+        {
+          "threads": "default",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.005027125,
+              "min": 0.004720084,
+              "max": 0.005231167,
+              "cpu": 0,
+              "rssMiB": 4.484375,
+              "speedup": 12.767461521247231
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.00710725,
+              "min": 0.006715,
+              "max": 0.008190458,
+              "cpu": 0,
+              "rssMiB": 9.9375,
+              "speedup": 9.030725667452248
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.010036583,
+              "min": 0.009273917,
+              "max": 0.010943042,
+              "cpu": 0.01,
+              "rssMiB": 29.625,
+              "speedup": 6.39496778933627
+            },
+            {
+              "id": "biome@2.6.7",
+              "family": "biome",
+              "version": "2.6.7",
+              "runs": 7,
+              "median": 0.010642375,
+              "min": 0.009861125,
+              "max": 0.012115958,
+              "cpu": 0,
+              "rssMiB": 28.078125,
+              "speedup": 6.0309493886468
+            },
+            {
+              "id": "biome@2.6.8",
+              "family": "biome",
+              "version": "2.6.8",
+              "runs": 7,
+              "median": 0.010903542,
+              "min": 0.010091375,
+              "max": 0.011386291,
+              "cpu": 0,
+              "rssMiB": 28.234375,
+              "speedup": 5.886493123060378
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.01127875,
+              "min": 0.010419334,
+              "max": 0.012708417,
+              "cpu": 0.01,
+              "rssMiB": 30.625,
+              "speedup": 5.690668292142302
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.036474083,
+              "min": 0.034638334,
+              "max": 0.039841625,
+              "cpu": 0.03,
+              "rssMiB": 65.890625,
+              "speedup": 1.759704966400389
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.037199625,
+              "min": 0.034973417,
+              "max": 0.040706875,
+              "cpu": 0.03,
+              "rssMiB": 65.765625,
+              "speedup": 1.7253836564212675
+            },
+            {
+              "id": "prettier@3.9.10",
+              "family": "prettier",
+              "version": "3.9.10",
+              "runs": 7,
+              "median": 0.062354834,
+              "min": 0.0606835,
+              "max": 0.068723792,
+              "cpu": 0.06,
+              "rssMiB": 77.59375,
+              "speedup": 1.0293287766590797
+            },
+            {
+              "id": "prettier@3.10.1",
+              "family": "prettier",
+              "version": "3.10.1",
+              "runs": 7,
+              "median": 0.064183625,
+              "min": 0.06175325,
+              "max": 0.067578667,
+              "cpu": 0.07,
+              "rssMiB": 78.0625,
+              "speedup": 1
+            }
+          ],
+          "versusDefault": false
+        },
+        {
+          "threads": "1",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.00466425,
+              "min": 0.004476625,
+              "max": 0.005050833,
+              "cpu": 0,
+              "rssMiB": 3.84375,
+              "speedup": 13.760760036447445
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.006806875,
+              "min": 0.00654725,
+              "max": 0.007506292,
+              "cpu": 0,
+              "rssMiB": 7.359375,
+              "speedup": 9.429235148287576
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.010322666,
+              "min": 0.009549458,
+              "max": 0.011470208,
+              "cpu": 0.01,
+              "rssMiB": 29.34375,
+              "speedup": 6.21773725896004
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.01123275,
+              "min": 0.009695708,
+              "max": 0.011533875,
+              "cpu": 0,
+              "rssMiB": 30.21875,
+              "speedup": 5.713972535665798
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.032215,
+              "min": 0.031558917,
+              "max": 0.033747417,
+              "cpu": 0.02,
+              "rssMiB": 62.25,
+              "speedup": 1.9923521651404623
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.032921042,
+              "min": 0.031131625,
+              "max": 0.03451675,
+              "cpu": 0.02,
+              "rssMiB": 62.15625,
+              "speedup": 1.9496231316129058
+            }
+          ],
+          "versusDefault": true
+        }
+      ],
+      "parity": [
+        {
+          "id": "prettier@3.10.1",
+          "parity": "identical",
+          "files": 4,
+          "identical": 4,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "biome@2.6.7",
+          "parity": "identical",
+          "files": 4,
+          "identical": 4,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "biome@2.6.8",
+          "parity": "identical",
+          "files": 4,
+          "identical": 4,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "bun@1.4.4",
+          "parity": "identical",
+          "files": 4,
+          "identical": 4,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "dprint@0.64.3",
+          "parity": "identical",
+          "files": 4,
+          "identical": 4,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "dprint@0.65.0",
+          "parity": "identical",
+          "files": 4,
+          "identical": 4,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "oxfmt@0.78.0",
+          "parity": "identical",
+          "files": 4,
+          "identical": 4,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "oxfmt@0.79.0",
+          "parity": "identical",
+          "files": 4,
+          "identical": 4,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "prettier@3.9.10",
+          "parity": "identical",
+          "files": 4,
+          "identical": 4,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "tidy@2.0.0",
+          "parity": "identical",
+          "files": 4,
+          "identical": 4,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        }
+      ],
+      "untimed": []
+    },
+    {
+      "language": "angular",
+      "name": "Angular templates",
+      "files": 684,
+      "bytes": 929632,
+      "rejected": 12,
+      "settings": [
+        {
+          "threads": "default",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.022470833,
+              "min": 0.019288334,
+              "max": 0.036103292,
+              "cpu": 0.13,
+              "rssMiB": 14.46875,
+              "speedup": 73.48589391412415
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.03562575,
+              "min": 0.035249666,
+              "max": 0.03852875,
+              "cpu": 0.32999999999999996,
+              "rssMiB": 45.9375,
+              "speedup": 46.35100313677607
+            },
+            {
+              "id": "biome@2.6.8",
+              "family": "biome",
+              "version": "2.6.8",
+              "runs": 7,
+              "median": 0.042895959,
+              "min": 0.041462209,
+              "max": 0.0759425,
+              "cpu": 0.36,
+              "rssMiB": 62.828125,
+              "speedup": 38.495216997013635
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.065530292,
+              "min": 0.064161333,
+              "max": 0.071253125,
+              "cpu": 0.43,
+              "rssMiB": 45.859375,
+              "speedup": 25.198869097058196
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.067554167,
+              "min": 0.066204833,
+              "max": 0.070754583,
+              "cpu": 0.43,
+              "rssMiB": 46.5625,
+              "speedup": 24.443928825293636
+            },
+            {
+              "id": "biome@2.6.7",
+              "family": "biome",
+              "version": "2.6.7",
+              "runs": 7,
+              "median": 0.070975625,
+              "min": 0.041069917,
+              "max": 0.076702625,
+              "cpu": 0.72,
+              "rssMiB": 62.46875,
+              "speedup": 23.26558237423059
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 0.588653542,
+              "min": 0.513090833,
+              "max": 0.644797625,
+              "cpu": 7.57,
+              "rssMiB": 1489.5,
+              "speedup": 2.8051971697810663
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 0.591012125,
+              "min": 0.527875208,
+              "max": 0.710705583,
+              "cpu": 7.65,
+              "rssMiB": 1532.03125,
+              "speedup": 2.7940023227103845
+            },
+            {
+              "id": "prettier@3.9.10",
+              "family": "prettier",
+              "version": "3.9.10",
+              "runs": 7,
+              "median": 1.601536917,
+              "min": 1.532116792,
+              "max": 1.854441709,
+              "cpu": 2.5100000000000002,
+              "rssMiB": 230.546875,
+              "speedup": 1.031065367567796
+            },
+            {
+              "id": "prettier@3.10.1",
+              "family": "prettier",
+              "version": "3.10.1",
+              "runs": 7,
+              "median": 1.65128925,
+              "min": 1.618771458,
+              "max": 1.873148042,
+              "cpu": 2.54,
+              "rssMiB": 235.03125,
+              "speedup": 1
+            }
+          ],
+          "versusDefault": false
+        },
+        {
+          "threads": "1",
+          "formatters": [
+            {
+              "id": "tidy@2.0.0",
+              "family": "tidy",
+              "version": "2.0.0",
+              "runs": 7,
+              "median": 0.041622042,
+              "min": 0.040919875,
+              "max": 0.046741792,
+              "cpu": 0.03,
+              "rssMiB": 8.484375,
+              "speedup": 39.673431928207656
+            },
+            {
+              "id": "bun@1.4.4",
+              "family": "bun",
+              "version": "1.4.4",
+              "runs": 7,
+              "median": 0.047673333,
+              "min": 0.0472775,
+              "max": 0.05983425,
+              "cpu": 0.04,
+              "rssMiB": 15.140625,
+              "speedup": 34.637587642550606
+            },
+            {
+              "id": "dprint@0.64.3",
+              "family": "dprint",
+              "version": "0.64.3",
+              "runs": 7,
+              "median": 0.289311834,
+              "min": 0.282042375,
+              "max": 0.309141625,
+              "cpu": 0.34,
+              "rssMiB": 33.453125,
+              "speedup": 5.707645024987122
+            },
+            {
+              "id": "dprint@0.65.0",
+              "family": "dprint",
+              "version": "0.65.0",
+              "runs": 7,
+              "median": 0.292892916,
+              "min": 0.288126375,
+              "max": 0.322989167,
+              "cpu": 0.35,
+              "rssMiB": 34.4375,
+              "speedup": 5.6378599815640476
+            },
+            {
+              "id": "oxfmt@0.78.0",
+              "family": "oxfmt",
+              "version": "0.78.0",
+              "runs": 7,
+              "median": 1.409866625,
+              "min": 1.376293,
+              "max": 1.569130375,
+              "cpu": 2.17,
+              "rssMiB": 281.328125,
+              "speedup": 1.171237917629265
+            },
+            {
+              "id": "oxfmt@0.79.0",
+              "family": "oxfmt",
+              "version": "0.79.0",
+              "runs": 7,
+              "median": 1.450175084,
+              "min": 1.431623709,
+              "max": 1.501068708,
+              "cpu": 2.21,
+              "rssMiB": 281.640625,
+              "speedup": 1.1386826792288205
+            }
+          ],
+          "versusDefault": true
+        }
+      ],
+      "parity": [
+        {
+          "id": "prettier@3.10.1",
+          "parity": "identical",
+          "files": 684,
+          "identical": 684,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "biome@2.6.7",
+          "parity": "differs",
+          "files": 684,
+          "identical": 207,
+          "differs": 477,
+          "untouched": 50,
+          "agreement": 0.3026315789473684,
+          "sample": [
+            "docs/scenes/src/app/scenes/autocomplete/autocomplete-scene.html",
+            "docs/scenes/src/app/scenes/expansion/expansion-scene.html",
+            "docs/scenes/src/app/scenes/form-field/form-field-scene.html",
+            "docs/scenes/src/app/scenes/grid-list/grid-list-scene.html",
+            "docs/scenes/src/app/scenes/input/input-scene.html",
+            "docs/scenes/src/app/scenes/slider/slider-scene.html",
+            "docs/scenes/src/app/scenes/sort/sort-scene.html",
+            "docs/scenes/src/app/scenes/stepper/stepper-scene.html",
+            "docs/scenes/src/app/scenes/table/table-scene.html",
+            "docs/scenes/src/app/scenes/timepicker/timepicker-scene.html"
+          ],
+          "error": "exited 1: Some errors were emitted while running checks."
+        },
+        {
+          "id": "biome@2.6.8",
+          "parity": "differs",
+          "files": 684,
+          "identical": 209,
+          "differs": 475,
+          "untouched": 50,
+          "agreement": 0.3055555555555556,
+          "sample": [
+            "docs/scenes/src/app/scenes/autocomplete/autocomplete-scene.html",
+            "docs/scenes/src/app/scenes/form-field/form-field-scene.html",
+            "docs/scenes/src/app/scenes/grid-list/grid-list-scene.html",
+            "docs/scenes/src/app/scenes/input/input-scene.html",
+            "docs/scenes/src/app/scenes/slider/slider-scene.html",
+            "docs/scenes/src/app/scenes/sort/sort-scene.html",
+            "docs/scenes/src/app/scenes/stepper/stepper-scene.html",
+            "docs/scenes/src/app/scenes/table/table-scene.html",
+            "docs/scenes/src/app/scenes/timepicker/timepicker-scene.html",
+            "docs/scenes/src/app/scenes/tree/tree-scene.html"
+          ],
+          "error": "exited 1: Some errors were emitted while running checks."
+        },
+        {
+          "id": "bun@1.4.4",
+          "parity": "differs",
+          "files": 684,
+          "identical": 679,
+          "differs": 5,
+          "untouched": 0,
+          "agreement": 0.9926900584795322,
+          "sample": [
+            "src/components-examples/cdk/listbox/cdk-listbox-compare-with/cdk-listbox-compare-with-example.html",
+            "src/components-examples/cdk/listbox/cdk-listbox-forms-validation/cdk-listbox-forms-validation-example.html",
+            "src/components-examples/cdk/listbox/cdk-listbox-reactive-forms/cdk-listbox-reactive-forms-example.html",
+            "src/components-examples/cdk/listbox/cdk-listbox-template-forms/cdk-listbox-template-forms-example.html",
+            "src/components-examples/cdk/listbox/cdk-listbox-value-binding/cdk-listbox-value-binding-example.html"
+          ]
+        },
+        {
+          "id": "dprint@0.64.3",
+          "parity": "differs",
+          "files": 684,
+          "identical": 274,
+          "differs": 410,
+          "untouched": 45,
+          "agreement": 0.40058479532163743,
+          "sample": [
+            "docs/scenes/src/app/scenes/autocomplete/autocomplete-scene.html",
+            "docs/scenes/src/app/scenes/checkbox/checkbox-scene.html",
+            "docs/scenes/src/app/scenes/expansion/expansion-scene.html",
+            "docs/scenes/src/app/scenes/form-field/form-field-scene.html",
+            "docs/scenes/src/app/scenes/input/input-scene.html",
+            "docs/scenes/src/app/scenes/ripples/ripples-scene.html",
+            "docs/scenes/src/app/scenes/slider/slider-scene.html",
+            "docs/scenes/src/app/scenes/stepper/stepper-scene.html",
+            "docs/scenes/src/app/scenes/table/table-scene.html",
+            "docs/scenes/src/app/scenes/timepicker/timepicker-scene.html"
+          ],
+          "error": "exited 1: Error formatting <work>/angular/out/dprint@0.64.3/docs/src/index.component.html. Mess"
+        },
+        {
+          "id": "dprint@0.65.0",
+          "parity": "differs",
+          "files": 684,
+          "identical": 274,
+          "differs": 410,
+          "untouched": 45,
+          "agreement": 0.40058479532163743,
+          "sample": [
+            "docs/scenes/src/app/scenes/autocomplete/autocomplete-scene.html",
+            "docs/scenes/src/app/scenes/checkbox/checkbox-scene.html",
+            "docs/scenes/src/app/scenes/expansion/expansion-scene.html",
+            "docs/scenes/src/app/scenes/form-field/form-field-scene.html",
+            "docs/scenes/src/app/scenes/input/input-scene.html",
+            "docs/scenes/src/app/scenes/ripples/ripples-scene.html",
+            "docs/scenes/src/app/scenes/slider/slider-scene.html",
+            "docs/scenes/src/app/scenes/stepper/stepper-scene.html",
+            "docs/scenes/src/app/scenes/table/table-scene.html",
+            "docs/scenes/src/app/scenes/timepicker/timepicker-scene.html"
+          ],
+          "error": "exited 1: Error formatting <work>/angular/out/dprint@0.65.0/src/e2e-app/index.component.html. M"
+        },
+        {
+          "id": "oxfmt@0.78.0",
+          "parity": "differs",
+          "files": 684,
+          "identical": 679,
+          "differs": 5,
+          "untouched": 0,
+          "agreement": 0.9926900584795322,
+          "sample": [
+            "src/components-examples/cdk/listbox/cdk-listbox-compare-with/cdk-listbox-compare-with-example.html",
+            "src/components-examples/cdk/listbox/cdk-listbox-forms-validation/cdk-listbox-forms-validation-example.html",
+            "src/components-examples/cdk/listbox/cdk-listbox-reactive-forms/cdk-listbox-reactive-forms-example.html",
+            "src/components-examples/cdk/listbox/cdk-listbox-template-forms/cdk-listbox-template-forms-example.html",
+            "src/components-examples/cdk/listbox/cdk-listbox-value-binding/cdk-listbox-value-binding-example.html"
+          ]
+        },
+        {
+          "id": "oxfmt@0.79.0",
+          "parity": "identical",
+          "files": 684,
+          "identical": 684,
+          "differs": 0,
+          "untouched": 0,
+          "agreement": 1,
+          "sample": []
+        },
+        {
+          "id": "prettier@3.9.10",
+          "parity": "differs",
+          "files": 684,
+          "identical": 679,
+          "differs": 5,
+          "untouched": 0,
+          "agreement": 0.9926900584795322,
+          "sample": [
+            "src/components-examples/cdk/listbox/cdk-listbox-compare-with/cdk-listbox-compare-with-example.html",
+            "src/components-examples/cdk/listbox/cdk-listbox-forms-validation/cdk-listbox-forms-validation-example.html",
+            "src/components-examples/cdk/listbox/cdk-listbox-reactive-forms/cdk-listbox-reactive-forms-example.html",
+            "src/components-examples/cdk/listbox/cdk-listbox-template-forms/cdk-listbox-template-forms-example.html",
+            "src/components-examples/cdk/listbox/cdk-listbox-value-binding/cdk-listbox-value-binding-example.html"
+          ]
+        },
+        {
+          "id": "tidy@2.0.0",
+          "parity": "differs",
+          "files": 684,
+          "identical": 299,
+          "differs": 385,
+          "untouched": 25,
+          "agreement": 0.4371345029239766,
+          "sample": [
+            "docs/scenes/src/app/scenes/autocomplete/autocomplete-scene.html",
+            "docs/scenes/src/app/scenes/grid-list/grid-list-scene.html",
+            "docs/scenes/src/app/scenes/sort/sort-scene.html",
+            "docs/scenes/src/app/scenes/table/table-scene.html",
+            "docs/scenes/src/app/scenes/tree/tree-scene.html",
+            "docs/src/app/pages/component-category-list/component-category-list.html",
+            "docs/src/app/pages/component-sidenav/component-nav.html",
+            "docs/src/app/pages/component-sidenav/component-sidenav.html",
+            "docs/src/app/pages/component-viewer/component-api.html",
+            "docs/src/app/pages/component-viewer/component-examples.html"
+          ]
+        }
+      ],
+      "untimed": []
+    }
+  ],
+  "unavailable": [],
+  "project": {
+    "repo": "https://github.com/angular/components",
+    "commit": "6f98996b8250f0b81e599330a1a91351507f436d",
+    "description": "Angular Material and the CDK: TypeScript, SCSS, and Angular templates with control flow"
+  }
+}

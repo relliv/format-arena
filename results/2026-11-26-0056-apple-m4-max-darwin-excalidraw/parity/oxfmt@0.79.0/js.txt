@@ -1,0 +1,534 @@
+# 43 of 735 files differ from prettier@3.10.1
+excalidraw-app/data/index.ts
+excalidraw-app/useHandleAppTheme.ts
+packages/common/src/editorInterface.ts
+packages/common/src/utils.ts
+packages/element/src/binding.ts
+packages/element/src/bounds.ts
+packages/element/src/bucketFill.ts
+packages/element/src/linearElementEditor.ts
+packages/element/src/resizeElements.ts
+packages/element/src/selection.ts
+packages/element/src/store.ts
+packages/element/src/transformHandles.ts
+packages/element/src/types.ts
+packages/element/src/utils.ts
+packages/excalidraw/actions/types.ts
+packages/excalidraw/charts/charts.types.ts
+packages/excalidraw/components/App.cursor.ts
+packages/excalidraw/components/App.pan.ts
+packages/excalidraw/components/App.tsx
+packages/excalidraw/components/App.viewport.ts
+packages/excalidraw/components/AppStateObserver.ts
+packages/excalidraw/components/ColorPicker/colorPickerUtils.ts
+packages/excalidraw/components/ConvertElementTypePopup.tsx
+packages/excalidraw/components/FilledButton.tsx
+packages/excalidraw/components/Minimap/minimap-shared.chunk.ts
+packages/excalidraw/components/Stats/utils.ts
+packages/excalidraw/components/TTDDialog/types.ts
+packages/excalidraw/components/TTDDialog/utils/mermaidError.ts
+packages/excalidraw/components/UserList.tsx
+packages/excalidraw/data/ai/types.ts
+packages/excalidraw/data/library.ts
+packages/excalidraw/data/restore.ts
+packages/excalidraw/errors.ts
+packages/excalidraw/hooks/useAppStateValue.ts
+packages/excalidraw/index.tsx
+packages/excalidraw/renderer/animation.ts
+packages/excalidraw/renderer/interactiveScene.ts
+packages/excalidraw/scene/types.ts
+packages/excalidraw/subset/woff2/woff2-bindings.ts
+packages/excalidraw/tests/crossDocument.test.tsx
+packages/excalidraw/tests/data/restore.test.ts
+packages/excalidraw/types.ts
+packages/excalidraw/wysiwyg/textWysiwyg.tsx
+
+# Left as they were staged (24)
+excalidraw-app/data/index.ts
+excalidraw-app/useHandleAppTheme.ts
+packages/common/src/editorInterface.ts
+packages/element/src/bounds.ts
+packages/element/src/store.ts
+packages/excalidraw/actions/types.ts
+packages/excalidraw/charts/charts.types.ts
+packages/excalidraw/components/App.cursor.ts
+packages/excalidraw/components/App.pan.ts
+packages/excalidraw/components/App.viewport.ts
+packages/excalidraw/components/AppStateObserver.ts
+packages/excalidraw/components/ColorPicker/colorPickerUtils.ts
+packages/excalidraw/components/FilledButton.tsx
+packages/excalidraw/components/Stats/utils.ts
+packages/excalidraw/components/UserList.tsx
+packages/excalidraw/data/ai/types.ts
+packages/excalidraw/errors.ts
+packages/excalidraw/hooks/useAppStateValue.ts
+packages/excalidraw/index.tsx
+packages/excalidraw/renderer/animation.ts
+packages/excalidraw/scene/types.ts
+packages/excalidraw/tests/crossDocument.test.tsx
+packages/excalidraw/tests/data/restore.test.ts
+packages/excalidraw/types.ts
+
+# The first 25, reference first
+
+--- reference/excalidraw-app/data/index.ts
++++ formatter/excalidraw-app/data/index.ts
+@@ -243,5 +243,6 @@ export const importFromBackend = async (
+ 
+ type ExportToBackendResult =
+-  { url: null; errorMessage: string } | { url: string; errorMessage: null };
++  | { url: null; errorMessage: string }
++  | { url: string; errorMessage: null };
+ 
+ export const exportToBackend = async (
+
+
+--- reference/excalidraw-app/useHandleAppTheme.ts
++++ formatter/excalidraw-app/useHandleAppTheme.ts
+@@ -13,5 +13,7 @@ export const useHandleAppTheme = () => {
+     return (
+       (localStorage.getItem(STORAGE_KEYS.LOCAL_STORAGE_THEME) as
+-        Theme | "system" | null) || THEME.LIGHT
++        | Theme
++        | "system"
++        | null) || THEME.LIGHT
+     );
+   });
+
+
+--- reference/packages/common/src/editorInterface.ts
++++ formatter/packages/common/src/editorInterface.ts
+@@ -91,5 +91,6 @@ const isMobileOrTablet = (): boolean => {
+   const platform = navigator.platform || "";
+   const uaData = (navigator as any).userAgentData as
+-    { mobile?: boolean; platform?: string } | undefined;
++    | { mobile?: boolean; platform?: string }
++    | undefined;
+ 
+   // --- 1) chromium: prefer ua client hints -------------------------------
+
+
+--- reference/packages/common/src/utils.ts
++++ formatter/packages/common/src/utils.ts
+@@ -114,5 +114,8 @@ export const isWritableElement = (
+   target: Element | EventTarget | null,
+ ): target is
+-  HTMLInputElement | HTMLTextAreaElement | HTMLBRElement | HTMLDivElement => {
++  | HTMLInputElement
++  | HTMLTextAreaElement
++  | HTMLBRElement
++  | HTMLDivElement => {
+   const targetWindow = getTargetWindow(target);
+   return (
+
+
+--- reference/packages/element/src/binding.ts
++++ formatter/packages/element/src/binding.ts
+@@ -2607,5 +2607,6 @@ const newBoundElements = (
+       (x) =>
+         ({ id: x.id, type: x.type }) as
+-          ExcalidrawArrowElement | ExcalidrawTextElement,
++          | ExcalidrawArrowElement
++          | ExcalidrawTextElement,
+     ),
+   );
+@@ -2625,5 +2626,8 @@ export type BindableProp = "boundElements";
+ 
+ export type BindingProp =
+-  "frameId" | "containerId" | "startBinding" | "endBinding";
++  | "frameId"
++  | "containerId"
++  | "startBinding"
++  | "endBinding";
+ 
+ type BoundElementsVisitingFunc = (
+@@ -2943,9 +2947,11 @@ export const getGlobalFixedPoints = (
+     arrow.startBinding &&
+     (elementsMap.get(arrow.startBinding.elementId) as
+-      ExcalidrawBindableElement | undefined);
++      | ExcalidrawBindableElement
++      | undefined);
+   const endElement =
+     arrow.endBinding &&
+     (elementsMap.get(arrow.endBinding.elementId) as
+-      ExcalidrawBindableElement | undefined);
++      | ExcalidrawBindableElement
++      | undefined);
+   const startPoint =
+     startElement && arrow.startBinding
+
+
+--- reference/packages/element/src/bounds.ts
++++ formatter/packages/element/src/bounds.ts
+@@ -1387,5 +1387,6 @@ export interface BoundingBox {
+ export const getCommonBoundingBox = (
+   elements:
+-    readonly ExcalidrawElement[] | readonly NonDeleted<ExcalidrawElement>[],
++    | readonly ExcalidrawElement[]
++    | readonly NonDeleted<ExcalidrawElement>[],
+ ): BoundingBox => {
+   const [minX, minY, maxX, maxY] = getCommonBounds(elements);
+
+
+--- reference/packages/element/src/bucketFill.ts
++++ formatter/packages/element/src/bucketFill.ts
+@@ -174,5 +174,9 @@ export const DEFAULT_BUCKET_FILL_OPTIONS: BucketFillOptions = {
+ 
+ export type BucketFillFailureReason =
+-  "no_owner" | "open_region" | "too_complex" | "too_small" | "invalid_polygon";
++  | "no_owner"
++  | "open_region"
++  | "too_complex"
++  | "too_small"
++  | "invalid_polygon";
+ 
+ /**
+
+
+--- reference/packages/element/src/linearElementEditor.ts
++++ formatter/packages/element/src/linearElementEditor.ts
+@@ -2506,5 +2506,6 @@ const pointDraggingUpdates = (
+     if (element.startBinding) {
+       const startBindable = elementsMap.get(element.startBinding.elementId) as
+-        ExcalidrawBindableElement | undefined;
++        | ExcalidrawBindableElement
++        | undefined;
+       if (startBindable) {
+         const startPoint =
+@@ -2524,5 +2525,6 @@ const pointDraggingUpdates = (
+     if (element.endBinding) {
+       const endBindable = elementsMap.get(element.endBinding.elementId) as
+-        ExcalidrawBindableElement | undefined;
++        | ExcalidrawBindableElement
++        | undefined;
+       if (endBindable) {
+         const endPoint =
+
+
+--- reference/packages/element/src/resizeElements.ts
++++ formatter/packages/element/src/resizeElements.ts
+@@ -1293,5 +1293,6 @@ export const resizeMultipleElements = (
+       // originalElementsMap holds snapshots of the (non-deleted) selection
+       const origElement = originalElementsMap!.get(element.id) as
+-        NonDeletedExcalidrawElement | undefined;
++        | NonDeletedExcalidrawElement
++        | undefined;
+       if (origElement) {
+         acc.push({ orig: origElement, latest: element });
+
+
+--- reference/packages/element/src/selection.ts
++++ formatter/packages/element/src/selection.ts
+@@ -256,5 +256,6 @@ export const getActiveTextElement = (
+     appState.editingTextElement &&
+     ((elementsMap.get(appState.editingTextElement.id) as
+-      ExcalidrawTextElement | undefined) ||
++      | ExcalidrawTextElement
++      | undefined) ||
+       appState.editingTextElement);
+ 
+
+
+--- reference/packages/element/src/store.ts
++++ formatter/packages/element/src/store.ts
+@@ -410,8 +410,11 @@ export class Store {
+    */
+   private satisfiesScheduledActionsInvariant() {
+-    if (!(
+-      this.scheduledMacroActions.size >= 0 &&
+-      this.scheduledMacroActions.size <= Object.keys(CaptureUpdateAction).length
+-    )) {
++    if (
++      !(
++        this.scheduledMacroActions.size >= 0 &&
++        this.scheduledMacroActions.size <=
++          Object.keys(CaptureUpdateAction).length
++      )
++    ) {
+       const message = `There can be at most three store actions scheduled at the same time, but there are "${this.scheduledMacroActions.size}".`;
+       console.error(message, this.scheduledMacroActions.values());
+
+
+--- reference/packages/element/src/transformHandles.ts
++++ formatter/packages/element/src/transformHandles.ts
+@@ -30,5 +30,12 @@ import type {
+ 
+ export type TransformHandleDirection =
+-  "n" | "s" | "w" | "e" | "nw" | "ne" | "sw" | "se";
++  | "n"
++  | "s"
++  | "w"
++  | "e"
++  | "nw"
++  | "ne"
++  | "sw"
++  | "se";
+ 
+ export type TransformHandleType = TransformHandleDirection | "rotation";
+
+
+--- reference/packages/element/src/types.ts
++++ formatter/packages/element/src/types.ts
+@@ -137,5 +137,6 @@ export type ExcalidrawIframeElement = _ExcalidrawElementBase &
+ 
+ export type ExcalidrawIframeLikeElement =
+-  ExcalidrawIframeElement | ExcalidrawEmbeddableElement;
++  | ExcalidrawIframeElement
++  | ExcalidrawEmbeddableElement;
+ 
+ export type IframeData = {
+@@ -185,5 +186,6 @@ export type ExcalidrawMagicFrameElement = _ExcalidrawElementBase & {
+ 
+ export type ExcalidrawFrameLikeElement =
+-  ExcalidrawFrameElement | ExcalidrawMagicFrameElement;
++  | ExcalidrawFrameElement
++  | ExcalidrawMagicFrameElement;
+ 
+ /**
+@@ -346,5 +348,8 @@ export type CardinalityArrowhead =
+ 
+ export type ArrowheadLegacy =
+-  "dot" | "crowfoot_one" | "crowfoot_many" | "crowfoot_one_or_many";
++  | "dot"
++  | "crowfoot_one"
++  | "crowfoot_many"
++  | "crowfoot_one_or_many";
+ 
+ export type Arrowhead =
+@@ -473,5 +478,6 @@ export type NonDeletedSceneElementsMap = Map<
+ 
+ export type ElementsMapOrArray =
+-  readonly ExcalidrawElement[] | Readonly<ElementsMap>;
++  | readonly ExcalidrawElement[]
++  | Readonly<ElementsMap>;
+ 
+ export type NonDeletedElementsMapOrArray =
+@@ -480,5 +486,8 @@ export type NonDeletedElementsMapOrArray =
+ 
+ export type ExcalidrawLinearElementSubType =
+-  "line" | "sharpArrow" | "curvedArrow" | "elbowArrow";
++  | "line"
++  | "sharpArrow"
++  | "curvedArrow"
++  | "elbowArrow";
+ 
+ export type ConvertibleGenericTypes = "rectangle" | "diamond" | "ellipse";
+
+
+--- reference/packages/element/src/utils.ts
++++ formatter/packages/element/src/utils.ts
+@@ -851,5 +851,6 @@ export const projectFixedPointOntoDiagonal = (
+       otherBinding &&
+       (elementsMap.get(otherBinding.elementId) as
+-        ExcalidrawBindableElement | undefined);
++        | ExcalidrawBindableElement
++        | undefined);
+     const otherFocusPoint =
+       otherBinding &&
+
+
+--- reference/packages/excalidraw/actions/types.ts
++++ formatter/packages/excalidraw/actions/types.ts
+@@ -16,5 +16,9 @@ import type React from "react";
+ 
+ export type ActionSource =
+-  "ui" | "keyboard" | "contextMenu" | "api" | "commandPalette";
++  | "ui"
++  | "keyboard"
++  | "contextMenu"
++  | "api"
++  | "commandPalette";
+ 
+ /** if false, the action should be prevented */
+
+
+--- reference/packages/excalidraw/charts/charts.types.ts
++++ formatter/packages/excalidraw/charts/charts.types.ts
+@@ -15,3 +15,4 @@ export interface SpreadsheetSeries {
+ 
+ export type ParseSpreadsheetResult =
+-  { ok: false; reason: string } | { ok: true; data: Spreadsheet };
++  | { ok: false; reason: string }
++  | { ok: true; data: Spreadsheet };
+
+
+--- reference/packages/excalidraw/components/App.cursor.ts
++++ formatter/packages/excalidraw/components/App.cursor.ts
+@@ -53,5 +53,6 @@ export class AppCursor {
+ 
+   private eraserCanvasCache:
+-    (HTMLCanvasElement & { theme?: AppState["theme"] }) | null = null;
++    | (HTMLCanvasElement & { theme?: AppState["theme"] })
++    | null = null;
+   private eraserPreviewDataURL: DataURL | null = null;
+ 
+
+
+--- reference/packages/excalidraw/components/App.pan.ts
++++ formatter/packages/excalidraw/components/App.pan.ts
+@@ -104,16 +104,18 @@ export class AppPan {
+     this.suppressNextContextMenu = false;
+     const isSecondary = event.button === POINTER_BUTTON.SECONDARY;
+-    if (!(
+-      this.dependencies.getPointerCount() <= 1 &&
+-      (((event.button === POINTER_BUTTON.WHEEL ||
+-        isSecondary ||
+-        (event.button === POINTER_BUTTON.MAIN && this.spaceHeld) ||
+-        isHandToolActive(app.state)) &&
+-        // reachable while non-interactive when the active tool is allowed
+-        // via `interaction.enabled.tools` — panning must remain gated on
+-        // `navigation` then
+-        (app.isInteractionEnabled() || app.isNavigationEnabled())) ||
+-        (app.state.viewModeEnabled && !app.isActiveToolPointerCapturing()))
+-    )) {
++    if (
++      !(
++        this.dependencies.getPointerCount() <= 1 &&
++        (((event.button === POINTER_BUTTON.WHEEL ||
++          isSecondary ||
++          (event.button === POINTER_BUTTON.MAIN && this.spaceHeld) ||
++          isHandToolActive(app.state)) &&
++          // reachable while non-interactive when the active tool is allowed
++          // via `interaction.enabled.tools` — panning must remain gated on
++          // `navigation` then
++          (app.isInteractionEnabled() || app.isNavigationEnabled())) ||
++          (app.state.viewModeEnabled && !app.isActiveToolPointerCapturing()))
++      )
++    ) {
+       return false;
+     }
+
+
+--- reference/packages/excalidraw/components/App.tsx
++++ formatter/packages/excalidraw/components/App.tsx
+@@ -1736,5 +1736,8 @@ class App extends React.Component<AppProps, AppState> {
+   private isDoubleClick = (
+     lastPointerEvent:
+-      PointerEvent | React.PointerEvent<HTMLElement> | undefined | null,
++      | PointerEvent
++      | React.PointerEvent<HTMLElement>
++      | undefined
++      | null,
+     currentPointerEvent: PointerEvent | React.PointerEvent<HTMLElement>,
+   ) => {
+@@ -3016,5 +3019,6 @@ class App extends React.Component<AppProps, AppState> {
+     } else {
+       const selectedMagicFrame:
+-        NonDeleted<ExcalidrawMagicFrameElement> | false =
++        | NonDeleted<ExcalidrawMagicFrameElement>
++        | false =
+         selectedElements.length === 1 &&
+         isMagicFrameElement(selectedElements[0]) &&
+@@ -8237,7 +8241,7 @@ class App extends React.Component<AppProps, AppState> {
+     pointerDownState: PointerDownState,
+   ): boolean {
+-    if (!(
+-      pointerDownState.scrollbars.isOverEither && !this.state.multiElement
+-    )) {
++    if (
++      !(pointerDownState.scrollbars.isOverEither && !this.state.multiElement)
++    ) {
+       return false;
+     }
+
+
+--- reference/packages/excalidraw/components/App.viewport.ts
++++ formatter/packages/excalidraw/components/App.viewport.ts
+@@ -671,5 +671,6 @@ export class AppViewport {
+ 
+             const name = node.dataset.viewportUiName as
+-              ViewportUIName | undefined;
++              | ViewportUIName
++              | undefined;
+             if (name) {
+               renderedSurfaces.add(name);
+
+
+--- reference/packages/excalidraw/components/AppStateObserver.ts
++++ formatter/packages/excalidraw/components/AppStateObserver.ts
+@@ -2,5 +2,7 @@ import type { AppState, UnsubscribeCallback } from "../types";
+ 
+ type StateChangeSelector =
+-  keyof AppState | (keyof AppState)[] | ((appState: AppState) => unknown);
++  | keyof AppState
++  | (keyof AppState)[]
++  | ((appState: AppState) => unknown);
+ 
+ type StateChangePredicateOptions = {
+
+
+--- reference/packages/excalidraw/components/ColorPicker/colorPickerUtils.ts
++++ formatter/packages/excalidraw/components/ColorPicker/colorPickerUtils.ts
+@@ -94,8 +94,14 @@ export const getMostUsedCustomColors = (
+ 
+ export type ActiveColorPickerSectionAtomType =
+-  "custom" | "baseColors" | "shades" | "hex" | null;
++  | "custom"
++  | "baseColors"
++  | "shades"
++  | "hex"
++  | null;
+ export const activeColorPickerSectionAtom =
+   atom<ActiveColorPickerSectionAtomType>(null);
+ 
+ export type ColorPickerType =
+-  "canvasBackground" | "elementBackground" | "elementStroke";
++  | "canvasBackground"
++  | "elementBackground"
++  | "elementStroke";
+
+
+--- reference/packages/excalidraw/components/ConvertElementTypePopup.tsx
++++ formatter/packages/excalidraw/components/ConvertElementTypePopup.tsx
+@@ -358,5 +358,6 @@ const Panel = ({
+                 conversionType,
+                 nextType: type as
+-                  ConvertibleGenericTypes | ConvertibleLinearTypes,
++                  | ConvertibleGenericTypes
++                  | ConvertibleLinearTypes,
+               });
+               panelRef.current?.focus();
+@@ -745,8 +746,10 @@ const convertLineToElbow = (line: ExcalidrawLinearElement): LocalPoint[] => {
+   const trimmed: LocalPoint[] = [ortho[0]];
+   for (let i = 1; i < ortho.length - 1; ++i) {
+-    if (!(
+-      (isVert(ortho[i - 1], ortho[i]) && isVert(ortho[i], ortho[i + 1])) ||
+-      (isHorz(ortho[i - 1], ortho[i]) && isHorz(ortho[i], ortho[i + 1]))
+-    )) {
++    if (
++      !(
++        (isVert(ortho[i - 1], ortho[i]) && isVert(ortho[i], ortho[i + 1])) ||
++        (isHorz(ortho[i - 1], ortho[i]) && isHorz(ortho[i], ortho[i + 1]))
++      )
++    ) {
+       trimmed.push(ortho[i]);
+     }
+
+
+--- reference/packages/excalidraw/components/FilledButton.tsx
++++ formatter/packages/excalidraw/components/FilledButton.tsx
+@@ -13,5 +13,9 @@ import "./FilledButton.scss";
+ export type ButtonVariant = "filled" | "outlined" | "icon";
+ export type ButtonColor =
+-  "primary" | "danger" | "warning" | "muted" | "success";
++  | "primary"
++  | "danger"
++  | "warning"
++  | "muted"
++  | "success";
+ export type ButtonSize = "medium" | "large";
+ 
+
+
+--- reference/packages/excalidraw/components/Minimap/minimap-shared.chunk.ts
++++ formatter/packages/excalidraw/components/Minimap/minimap-shared.chunk.ts
+@@ -241,5 +241,7 @@ const getPathBounds = (records: Float32Array, offset: number): Bounds => {
+ 
+ type Context2D =
+-  OffscreenCanvasRenderingContext2D | CanvasRenderingContext2D | null;
++  | OffscreenCanvasRenderingContext2D
++  | CanvasRenderingContext2D
++  | null;
+ 
+ class MinimapRenderer {
+

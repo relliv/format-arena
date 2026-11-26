@@ -1,0 +1,386 @@
+# 31 of 276 files differ from prettier@3.10.1
+src/components-examples/aria/autocomplete/autocomplete.css
+src/components-examples/aria/combobox/combobox-datepicker/combobox-datepicker-example.css
+src/components-examples/aria/combobox/combobox-example.css
+src/components-examples/aria/grid/grid-calendar/grid-calendar-example.css
+src/components-examples/aria/grid/grid-common.css
+src/components-examples/aria/grid/grid-configurable/grid-configurable-example.css
+src/components-examples/aria/menu/menu-example.css
+src/components-examples/aria/toolbar/toolbar-common.css
+src/components-examples/cdk/listbox/cdk-listbox-activedescendant/cdk-listbox-activedescendant-example.css
+src/components-examples/cdk/listbox/cdk-listbox-compare-with/cdk-listbox-compare-with-example.css
+src/components-examples/cdk/listbox/cdk-listbox-custom-navigation/cdk-listbox-custom-navigation-example.css
+src/components-examples/cdk/listbox/cdk-listbox-custom-typeahead/cdk-listbox-custom-typeahead-example.css
+src/components-examples/cdk/listbox/cdk-listbox-disabled/cdk-listbox-disabled-example.css
+src/components-examples/cdk/listbox/cdk-listbox-forms-validation/cdk-listbox-forms-validation-example.css
+src/components-examples/cdk/listbox/cdk-listbox-multiple/cdk-listbox-multiple-example.css
+src/components-examples/cdk/listbox/cdk-listbox-overview/cdk-listbox-overview-example.css
+src/components-examples/cdk/listbox/cdk-listbox-reactive-forms/cdk-listbox-reactive-forms-example.css
+src/components-examples/cdk/listbox/cdk-listbox-template-forms/cdk-listbox-template-forms-example.css
+src/components-examples/cdk/listbox/cdk-listbox-value-binding/cdk-listbox-value-binding-example.css
+src/components-examples/cdk/stepper/cdk-custom-stepper-without-form/cdk-custom-stepper-without-form-example.css
+src/components-examples/cdk/table/cdk-table-flex-basic/cdk-table-flex-basic-example.css
+src/components-examples/cdk-experimental/popover-edit/cdk-popover-edit-cdk-table-flex/cdk-popover-edit-cdk-table-flex-example.css
+src/components-examples/material/chips/chips-avatar/chips-avatar-example.css
+src/components-examples/material/chips/chips-icons/chips-icons-example.css
+src/components-examples/material/table/table-overview/table-overview-example.css
+src/components-examples/material/table/table-sticky-columns/table-sticky-columns-example.css
+src/components-examples/material/table/table-sticky-complex/table-sticky-complex-example.css
+src/components-examples/material/table/table-sticky-complex-flex/table-sticky-complex-flex-example.css
+src/components-examples/material/tabs/tab-group-dynamic-height/tab-group-dynamic-height-example.css
+src/components-examples/material/tree/tree-loadmore/tree-loadmore-example.css
+src/dev-app/common-classes.css
+
+# Left as they were staged (8)
+src/components-examples/cdk/table/cdk-table-flex-basic/cdk-table-flex-basic-example.css
+src/components-examples/cdk-experimental/popover-edit/cdk-popover-edit-cdk-table-flex/cdk-popover-edit-cdk-table-flex-example.css
+src/components-examples/material/chips/chips-icons/chips-icons-example.css
+src/components-examples/material/table/table-overview/table-overview-example.css
+src/components-examples/material/table/table-sticky-columns/table-sticky-columns-example.css
+src/components-examples/material/table/table-sticky-complex/table-sticky-complex-example.css
+src/components-examples/material/table/table-sticky-complex-flex/table-sticky-complex-flex-example.css
+src/components-examples/material/tabs/tab-group-dynamic-height/tab-group-dynamic-height-example.css
+
+# The first 25, reference first
+
+--- reference/src/components-examples/aria/autocomplete/autocomplete.css
++++ formatter/src/components-examples/aria/autocomplete/autocomplete.css
+@@ -28,5 +28,5 @@
+   }
+ 
+-  input:-moz-placeholder  /* Firefox 18- */ {
++  input:-moz-placeholder /* Firefox 18- */ {
+     color: var(--mat-sys-on-surface-variant);
+   }
+
+
+--- reference/src/components-examples/aria/combobox/combobox-datepicker/combobox-datepicker-example.css
++++ formatter/src/components-examples/aria/combobox/combobox-datepicker/combobox-datepicker-example.css
+@@ -81,7 +81,5 @@
+   font-size: 0.85rem;
+   color: var(--mat-sys-on-surface);
+-  transition:
+-    background-color 0.2s ease,
+-    color 0.2s ease;
++  transition: background-color 0.2s ease, color 0.2s ease;
+ }
+ 
+
+
+--- reference/src/components-examples/aria/combobox/combobox-example.css
++++ formatter/src/components-examples/aria/combobox/combobox-example.css
+@@ -6,7 +6,5 @@
+   border: 1px solid var(--mat-sys-outline);
+   border-radius: var(--mat-sys-corner-extra-small);
+-  transition:
+-    box-shadow 0.2s ease,
+-    border-color 0.2s ease;
++  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+ }
+ 
+@@ -167,5 +165,6 @@
+ .example-combobox-container:not(.example-no-active-outline):focus-within
+   [data-active="true"]:not(.example-no-active-outline) {
+-  outline: 2px solid color-mix(in srgb, var(--mat-sys-primary) 80%, transparent);
++  outline: 2px solid
++    color-mix(in srgb, var(--mat-sys-primary) 80%, transparent);
+   outline-offset: -2px;
+ }
+@@ -321,8 +320,5 @@ ul[role="group"] {
+   place-items: center;
+   color: var(--mat-sys-on-surface);
+-  transition:
+-    opacity 0.2s,
+-    color 0.2s,
+-    transform 0.2s;
++  transition: opacity 0.2s, color 0.2s, transform 0.2s;
+ }
+ 
+
+
+--- reference/src/components-examples/aria/grid/grid-calendar/grid-calendar-example.css
++++ formatter/src/components-examples/aria/grid/grid-calendar/grid-calendar-example.css
+@@ -28,6 +28,7 @@
+   background: color-mix(
+     in srgb,
+-    var(--mat-sys-on-surface)
+-      calc(var(--mat-sys-hover-state-layer-opacity) * 100%),
++    var(--mat-sys-on-surface) calc(
++      var(--mat-sys-hover-state-layer-opacity) * 100%
++    ),
+     transparent
+   );
+@@ -56,6 +57,7 @@
+   background: color-mix(
+     in srgb,
+-    var(--mat-sys-on-surface)
+-      calc(var(--mat-sys-hover-state-layer-opacity) * 100%),
++    var(--mat-sys-on-surface) calc(
++      var(--mat-sys-hover-state-layer-opacity) * 100%
++    ),
+     transparent
+   );
+
+
+--- reference/src/components-examples/aria/grid/grid-common.css
++++ formatter/src/components-examples/aria/grid/grid-common.css
+@@ -40,6 +40,7 @@
+   background: color-mix(
+     in srgb,
+-    var(--mat-sys-on-surface)
+-      calc(var(--mat-sys-hover-state-layer-opacity) * 100%),
++    var(--mat-sys-on-surface) calc(
++      var(--mat-sys-hover-state-layer-opacity) * 100%
++    ),
+     transparent
+   );
+@@ -49,6 +50,7 @@
+   background: color-mix(
+     in srgb,
+-    var(--mat-sys-primary)
+-      calc(var(--mat-sys-pressed-state-layer-opacity) * 100%),
++    var(--mat-sys-primary) calc(
++      var(--mat-sys-pressed-state-layer-opacity) * 100%
++    ),
+     transparent
+   );
+
+
+--- reference/src/components-examples/aria/grid/grid-configurable/grid-configurable-example.css
++++ formatter/src/components-examples/aria/grid/grid-configurable/grid-configurable-example.css
+@@ -11,6 +11,7 @@
+   background: color-mix(
+     in srgb,
+-    var(--mat-sys-on-surface)
+-      calc(var(--mat-sys-focus-state-layer-opacity) * 100%),
++    var(--mat-sys-on-surface) calc(
++      var(--mat-sys-focus-state-layer-opacity) * 100%
++    ),
+     transparent
+   );
+
+
+--- reference/src/components-examples/aria/menu/menu-example.css
++++ formatter/src/components-examples/aria/menu/menu-example.css
+@@ -83,6 +83,7 @@
+   background: color-mix(
+     in srgb,
+-    var(--mat-sys-on-surface)
+-      calc(var(--mat-sys-hover-state-layer-opacity) * 100%),
++    var(--mat-sys-on-surface) calc(
++      var(--mat-sys-hover-state-layer-opacity) * 100%
++    ),
+     transparent
+   );
+
+
+--- reference/src/components-examples/aria/toolbar/toolbar-common.css
++++ formatter/src/components-examples/aria/toolbar/toolbar-common.css
+@@ -60,5 +60,6 @@
+ .example-button:focus {
+   border-color: var(--mat-sys-primary);
+-  outline: 2px solid color-mix(in srgb, var(--mat-sys-primary) 50%, transparent);
++  outline: 2px solid
++    color-mix(in srgb, var(--mat-sys-primary) 50%, transparent);
+ }
+ 
+@@ -85,5 +86,6 @@
+ .example-combobox-container:focus-within {
+   border-color: var(--mat-sys-primary);
+-  outline: 2px solid color-mix(in srgb, var(--mat-sys-primary) 50%, transparent);
++  outline: 2px solid
++    color-mix(in srgb, var(--mat-sys-primary) 50%, transparent);
+ }
+ 
+
+
+--- reference/src/components-examples/cdk/listbox/cdk-listbox-activedescendant/cdk-listbox-activedescendant-example.css
++++ formatter/src/components-examples/cdk/listbox/cdk-listbox-activedescendant/cdk-listbox-activedescendant-example.css
+@@ -26,5 +26,5 @@
+   width: 20px;
+   height: 20px;
+-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="m9.55 18-5.7-5.7 1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4Z"/></svg>'); /* stylelint-disable-line */
++  background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24\" width=\"24\"><path d=\"m9.55 18-5.7-5.7 1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4Z\"/></svg>"); /* stylelint-disable-line */
+   background-size: cover;
+   position: absolute;
+
+
+--- reference/src/components-examples/cdk/listbox/cdk-listbox-compare-with/cdk-listbox-compare-with-example.css
++++ formatter/src/components-examples/cdk/listbox/cdk-listbox-compare-with/cdk-listbox-compare-with-example.css
+@@ -26,5 +26,5 @@
+   width: 20px;
+   height: 20px;
+-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="m9.55 18-5.7-5.7 1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4Z"/></svg>'); /* stylelint-disable-line */
++  background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24\" width=\"24\"><path d=\"m9.55 18-5.7-5.7 1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4Z\"/></svg>"); /* stylelint-disable-line */
+   background-size: cover;
+   position: absolute;
+
+
+--- reference/src/components-examples/cdk/listbox/cdk-listbox-custom-navigation/cdk-listbox-custom-navigation-example.css
++++ formatter/src/components-examples/cdk/listbox/cdk-listbox-custom-navigation/cdk-listbox-custom-navigation-example.css
+@@ -26,5 +26,5 @@
+   width: 20px;
+   height: 20px;
+-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="m9.55 18-5.7-5.7 1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4Z"/></svg>'); /* stylelint-disable-line */
++  background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24\" width=\"24\"><path d=\"m9.55 18-5.7-5.7 1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4Z\"/></svg>"); /* stylelint-disable-line */
+   background-size: cover;
+   position: absolute;
+
+
+--- reference/src/components-examples/cdk/listbox/cdk-listbox-custom-typeahead/cdk-listbox-custom-typeahead-example.css
++++ formatter/src/components-examples/cdk/listbox/cdk-listbox-custom-typeahead/cdk-listbox-custom-typeahead-example.css
+@@ -26,5 +26,5 @@
+   width: 20px;
+   height: 20px;
+-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="m9.55 18-5.7-5.7 1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4Z"/></svg>'); /* stylelint-disable-line */
++  background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24\" width=\"24\"><path d=\"m9.55 18-5.7-5.7 1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4Z\"/></svg>"); /* stylelint-disable-line */
+   background-size: cover;
+   position: absolute;
+
+
+--- reference/src/components-examples/cdk/listbox/cdk-listbox-disabled/cdk-listbox-disabled-example.css
++++ formatter/src/components-examples/cdk/listbox/cdk-listbox-disabled/cdk-listbox-disabled-example.css
+@@ -34,5 +34,5 @@
+   width: 20px;
+   height: 20px;
+-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="m9.55 18-5.7-5.7 1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4Z"/></svg>'); /* stylelint-disable-line */
++  background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24\" width=\"24\"><path d=\"m9.55 18-5.7-5.7 1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4Z\"/></svg>"); /* stylelint-disable-line */
+   background-size: cover;
+   position: absolute;
+
+
+--- reference/src/components-examples/cdk/listbox/cdk-listbox-forms-validation/cdk-listbox-forms-validation-example.css
++++ formatter/src/components-examples/cdk/listbox/cdk-listbox-forms-validation/cdk-listbox-forms-validation-example.css
+@@ -36,5 +36,5 @@
+   width: 20px;
+   height: 20px;
+-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="m9.55 18-5.7-5.7 1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4Z"/></svg>'); /* stylelint-disable-line */
++  background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24\" width=\"24\"><path d=\"m9.55 18-5.7-5.7 1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4Z\"/></svg>"); /* stylelint-disable-line */
+   background-size: cover;
+   position: absolute;
+
+
+--- reference/src/components-examples/cdk/listbox/cdk-listbox-multiple/cdk-listbox-multiple-example.css
++++ formatter/src/components-examples/cdk/listbox/cdk-listbox-multiple/cdk-listbox-multiple-example.css
+@@ -26,5 +26,5 @@
+   width: 20px;
+   height: 20px;
+-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="m9.55 18-5.7-5.7 1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4Z"/></svg>'); /* stylelint-disable-line */
++  background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24\" width=\"24\"><path d=\"m9.55 18-5.7-5.7 1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4Z\"/></svg>"); /* stylelint-disable-line */
+   background-size: cover;
+   position: absolute;
+
+
+--- reference/src/components-examples/cdk/listbox/cdk-listbox-overview/cdk-listbox-overview-example.css
++++ formatter/src/components-examples/cdk/listbox/cdk-listbox-overview/cdk-listbox-overview-example.css
+@@ -26,5 +26,5 @@
+   width: 20px;
+   height: 20px;
+-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="m9.55 18-5.7-5.7 1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4Z"/></svg>'); /* stylelint-disable-line */
++  background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24\" width=\"24\"><path d=\"m9.55 18-5.7-5.7 1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4Z\"/></svg>"); /* stylelint-disable-line */
+   background-size: cover;
+   position: absolute;
+
+
+--- reference/src/components-examples/cdk/listbox/cdk-listbox-reactive-forms/cdk-listbox-reactive-forms-example.css
++++ formatter/src/components-examples/cdk/listbox/cdk-listbox-reactive-forms/cdk-listbox-reactive-forms-example.css
+@@ -26,5 +26,5 @@
+   width: 20px;
+   height: 20px;
+-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="m9.55 18-5.7-5.7 1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4Z"/></svg>'); /* stylelint-disable-line */
++  background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24\" width=\"24\"><path d=\"m9.55 18-5.7-5.7 1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4Z\"/></svg>"); /* stylelint-disable-line */
+   background-size: cover;
+   position: absolute;
+
+
+--- reference/src/components-examples/cdk/listbox/cdk-listbox-template-forms/cdk-listbox-template-forms-example.css
++++ formatter/src/components-examples/cdk/listbox/cdk-listbox-template-forms/cdk-listbox-template-forms-example.css
+@@ -26,5 +26,5 @@
+   width: 20px;
+   height: 20px;
+-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="m9.55 18-5.7-5.7 1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4Z"/></svg>'); /* stylelint-disable-line */
++  background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24\" width=\"24\"><path d=\"m9.55 18-5.7-5.7 1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4Z\"/></svg>"); /* stylelint-disable-line */
+   background-size: cover;
+   position: absolute;
+
+
+--- reference/src/components-examples/cdk/listbox/cdk-listbox-value-binding/cdk-listbox-value-binding-example.css
++++ formatter/src/components-examples/cdk/listbox/cdk-listbox-value-binding/cdk-listbox-value-binding-example.css
+@@ -26,5 +26,5 @@
+   width: 20px;
+   height: 20px;
+-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="m9.55 18-5.7-5.7 1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4Z"/></svg>'); /* stylelint-disable-line */
++  background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24\" width=\"24\"><path d=\"m9.55 18-5.7-5.7 1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4Z\"/></svg>"); /* stylelint-disable-line */
+   background-size: cover;
+   position: absolute;
+
+
+--- reference/src/components-examples/cdk/stepper/cdk-custom-stepper-without-form/cdk-custom-stepper-without-form-example.css
++++ formatter/src/components-examples/cdk/stepper/cdk-custom-stepper-without-form/cdk-custom-stepper-without-form-example.css
+@@ -0,0 +1 @@
++
+
+
+--- reference/src/components-examples/cdk/table/cdk-table-flex-basic/cdk-table-flex-basic-example.css
++++ formatter/src/components-examples/cdk/table/cdk-table-flex-basic/cdk-table-flex-basic-example.css
+@@ -2,13 +2,9 @@
+  * Add basic flex styling so that the cells evenly space themselves in the row.
+  */
+-cdk-row,
+-cdk-header-row,
+-cdk-footer-row {
++cdk-row, cdk-header-row, cdk-footer-row {
+   display: flex;
+ }
+ 
+-cdk-cell,
+-cdk-header-cell,
+-cdk-footer-cell {
++cdk-cell, cdk-header-cell, cdk-footer-cell {
+   flex: 1;
+ }
+
+
+--- reference/src/components-examples/cdk-experimental/popover-edit/cdk-popover-edit-cdk-table-flex/cdk-popover-edit-cdk-table-flex-example.css
++++ formatter/src/components-examples/cdk-experimental/popover-edit/cdk-popover-edit-cdk-table-flex/cdk-popover-edit-cdk-table-flex-example.css
+@@ -2,13 +2,9 @@
+  * Add basic flex styling so that the cells evenly space themselves in the row.
+  */
+-.example-table cdk-row,
+-cdk-header-row,
+-cdk-footer-row {
++.example-table cdk-row, cdk-header-row, cdk-footer-row {
+   display: flex;
+ }
+ 
+-.example-table cdk-cell,
+-cdk-header-cell,
+-cdk-footer-cell {
++.example-table cdk-cell, cdk-header-cell, cdk-footer-cell {
+   flex: 1;
+ }
+
+
+--- reference/src/components-examples/material/chips/chips-avatar/chips-avatar-example.css
++++ formatter/src/components-examples/material/chips/chips-avatar/chips-avatar-example.css
+@@ -0,0 +1 @@
++
+
+
+--- reference/src/components-examples/material/chips/chips-icons/chips-icons-example.css
++++ formatter/src/components-examples/material/chips/chips-icons/chips-icons-example.css
+@@ -0,0 +1 @@
++
+
+
+--- reference/src/components-examples/material/table/table-overview/table-overview-example.css
++++ formatter/src/components-examples/material/table/table-overview/table-overview-example.css
+@@ -8,6 +8,5 @@ table {
+ }
+ 
+-td,
+-th {
++td, th {
+   width: 25%;
+ }
+

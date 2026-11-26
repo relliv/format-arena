@@ -1,0 +1,258 @@
+# 11 of 85 files differ from prettier@3.10.1
+excalidraw-app/components/AppSidebar.scss
+excalidraw-app/index.scss
+packages/excalidraw/components/FileDropOverlay.scss
+packages/excalidraw/components/FontPicker/FontPicker.scss
+packages/excalidraw/components/LayerUI.scss
+packages/excalidraw/components/Range.scss
+packages/excalidraw/components/Tooltip.scss
+packages/excalidraw/components/TopPicksDnD/TopPicksDnD.scss
+packages/excalidraw/components/UserList.scss
+packages/excalidraw/css/styles.scss
+packages/excalidraw/css/theme.scss
+
+# Left as they were staged (2)
+excalidraw-app/index.scss
+packages/excalidraw/components/FileDropOverlay.scss
+
+# The first 11, reference first
+
+--- reference/excalidraw-app/components/AppSidebar.scss
++++ formatter/excalidraw-app/components/AppSidebar.scss
+@@ -29,5 +29,9 @@
+ 
+     background-image:
+-      radial-gradient(circle, transparent 0%, var(--sidebar-bg-color) 100%),
++      radial-gradient(
++        circle,
++        transparent 0%,
++        var(--sidebar-bg-color) 100%
++      ),
+       var(--image-source);
+ 
+
+
+--- reference/excalidraw-app/index.scss
++++ formatter/excalidraw-app/index.scss
+@@ -107,7 +107,5 @@
+   height: var(--lg-button-size);
+   white-space: nowrap;
+-  transition:
+-    background-color 0.15s ease,
+-    border-color 0.15s ease;
++  transition: background-color 0.15s ease, border-color 0.15s ease;
+ 
+   &:hover {
+
+
+--- reference/packages/excalidraw/components/FileDropOverlay.scss
++++ formatter/packages/excalidraw/components/FileDropOverlay.scss
+@@ -22,7 +22,5 @@
+     border-radius: 1.5rem;
+     background: var(--island-bg-color);
+-    box-shadow:
+-      0 16px 48px rgba(0, 0, 0, 0.08),
+-      0 2px 8px rgba(0, 0, 0, 0.04);
++    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+     text-align: center;
+   }
+
+
+--- reference/packages/excalidraw/components/FontPicker/FontPicker.scss
++++ formatter/packages/excalidraw/components/FontPicker/FontPicker.scss
+@@ -4,5 +4,8 @@
+   .FontPicker__container {
+     display: grid;
+-    grid-template-columns: calc(1rem + 3 * var(--default-button-size)) 1rem 1fr; // calc ~ 2 gaps + 4 buttons
++    grid-template-columns:
++      calc(
++        1rem + 3 * var(--default-button-size)
++      ) 1rem 1fr; // calc ~ 2 gaps + 4 buttons
+     align-items: center;
+ 
+
+
+--- reference/packages/excalidraw/components/LayerUI.scss
++++ formatter/packages/excalidraw/components/LayerUI.scss
+@@ -81,7 +81,5 @@
+       opacity: 0;
+       visibility: hidden;
+-      transition:
+-        visibility 0s linear 0s,
+-        opacity 0.5s;
++      transition: visibility 0s linear 0s, opacity 0.5s;
+ 
+       font-family: var(--ui-font);
+@@ -105,7 +103,5 @@
+         opacity: 1;
+         visibility: visible;
+-        transition:
+-          visibility 0s linear 300ms,
+-          opacity 0.5s;
++        transition: visibility 0s linear 300ms, opacity 0.5s;
+         transition-delay: 0.8s;
+ 
+
+
+--- reference/packages/excalidraw/components/Range.scss
++++ formatter/packages/excalidraw/components/Range.scss
+@@ -53,6 +53,6 @@
+     // centered on the thumb, which travels (width - thumb size)
+     left: calc(
+-      var(--slider-thumb-size) / 2 + (100% - var(--slider-thumb-size)) *
+-        var(--range-progress)
++      var(--slider-thumb-size) / 2 +
++        (100% - var(--slider-thumb-size)) * var(--range-progress)
+     );
+     transform: translateX(-50%);
+
+
+--- reference/packages/excalidraw/components/Tooltip.scss
++++ formatter/packages/excalidraw/components/Tooltip.scss
+@@ -4,6 +4,13 @@
+ .excalidraw-tooltip {
+   --ui-font:
+-    Assistant, system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto,
+-    Helvetica, Arial, sans-serif;
++    Assistant,
++    system-ui,
++    BlinkMacSystemFont,
++    -apple-system,
++    Segoe UI,
++    Roboto,
++    Helvetica,
++    Arial,
++    sans-serif;
+   font-family: var(--ui-font);
+   position: fixed;
+
+
+--- reference/packages/excalidraw/components/TopPicksDnD/TopPicksDnD.scss
++++ formatter/packages/excalidraw/components/TopPicksDnD/TopPicksDnD.scss
+@@ -147,7 +147,5 @@
+   // NOTE transform is deliberately not transitioned here (tracks the pointer
+   // every frame); --dropping adds it for the fly-to-target animation
+-  transition:
+-    width 0.15s ease,
+-    height 0.15s ease;
++  transition: width 0.15s ease, height 0.15s ease;
+ 
+   // content may set `--top-picks-dnd-ghost-ring` (a hairline box-shadow)
+@@ -158,8 +156,5 @@
+     box-sizing: border-box;
+     box-shadow: var(--top-picks-dnd-ghost-ring, 0 0 transparent);
+-    transition:
+-      transform 0.15s ease,
+-      opacity 0.15s ease,
+-      box-shadow 0.15s ease;
++    transition: transform 0.15s ease, opacity 0.15s ease, box-shadow 0.15s ease;
+   }
+ 
+
+
+--- reference/packages/excalidraw/components/UserList.scss
++++ formatter/packages/excalidraw/components/UserList.scss
+@@ -41,6 +41,7 @@
+ 
+     --max-size: calc(
+-      var(--avatar-size) * var(--max-avatars, 2) + var(--avatarList-gap) *
+-        (var(--max-avatars, 2) - 1) + var(--userList-padding) * 2
++      var(--avatar-size) * var(--max-avatars, 2) +
++        var(--avatarList-gap) * (var(--max-avatars, 2) - 1) +
++        var(--userList-padding) * 2
+     );
+ 
+
+
+--- reference/packages/excalidraw/css/styles.scss
++++ formatter/packages/excalidraw/css/styles.scss
+@@ -41,6 +41,13 @@ body.excalidraw-cursor-resize * {
+ .excalidraw {
+   --ui-font:
+-    Assistant, system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto,
+-    Helvetica, Arial, sans-serif;
++    Assistant,
++    system-ui,
++    BlinkMacSystemFont,
++    -apple-system,
++    Segoe UI,
++    Roboto,
++    Helvetica,
++    Arial,
++    sans-serif;
+   --viewport-status-frame-border-width: 0px;
+ 
+@@ -536,17 +543,11 @@ body.excalidraw-cursor-resize * {
+     background-image: var(--dropdown-icon);
+     background-repeat: no-repeat;
+-    background-position:
+-      right 0.7rem top 50%,
+-      0 0;
++    background-position: right 0.7rem top 50%, 0 0;
+ 
+     :root[dir="rtl"] & {
+-      background-position:
+-        left 0.7rem top 50%,
+-        0 0;
++      background-position: left 0.7rem top 50%, 0 0;
+     }
+ 
+-    background-size:
+-      0.65em auto,
+-      100%;
++    background-size: 0.65em auto, 100%;
+ 
+     &:focus {
+@@ -587,7 +588,6 @@ body.excalidraw-cursor-resize * {
+     box-sizing: border-box;
+     max-width: calc(
+-      100% - var(--viewport-status-frame-border-width) - var(
+-          --viewport-status-frame-border-width
+-        )
++      100% - var(--viewport-status-frame-border-width) -
++        var(--viewport-status-frame-border-width)
+     );
+     pointer-events: var(--ui-pointerEvents);
+
+
+--- reference/packages/excalidraw/css/theme.scss
++++ formatter/packages/excalidraw/css/theme.scss
+@@ -13,5 +13,5 @@
+   --button-special-active-bg-color: #{$color-green-0};
+   --dialog-border-color: var(--color-gray-20);
+-  --dropdown-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="292.4" height="292.4" viewBox="0 0 292 292"><path d="M287 197L159 69c-4-3-8-5-13-5s-9 2-13 5L5 197c-3 4-5 8-5 13s2 9 5 13c4 4 8 5 13 5h256c5 0 9-1 13-5s5-8 5-13-1-9-5-13z"/></svg>');
++  --dropdown-icon: url("data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"292.4\" height=\"292.4\" viewBox=\"0 0 292 292\"><path d=\"M287 197L159 69c-4-3-8-5-13-5s-9 2-13 5L5 197c-3 4-5 8-5 13s2 9 5 13c4 4 8 5 13 5h256c5 0 9-1 13-5s5-8 5-13-1-9-5-13z\"/></svg>");
+   --focus-highlight-color: #{$color-blue-2};
+   --icon-fill-color: var(--color-on-surface);
+@@ -35,8 +35,10 @@
+   --select-highlight-color: #{$color-blue-5};
+   --shadow-island:
+-    0px 0px 1px 0px rgba(0, 0, 0, 0.17), 0px 0px 3px 0px rgba(0, 0, 0, 0.08),
++    0px 0px 1px 0px rgba(0, 0, 0, 0.17),
++    0px 0px 3px 0px rgba(0, 0, 0, 0.08),
+     0px 7px 14px 0px rgba(0, 0, 0, 0.05);
+   --shadow-island-stronger:
+-    0px 0px 1px 0px rgba(0, 0, 0, 0.17), 0px 0px 3px 0px rgba(0, 0, 0, 0.08),
++    0px 0px 1px 0px rgba(0, 0, 0, 0.17),
++    0px 0px 3px 0px rgba(0, 0, 0, 0.08),
+     0px 7px 14px 0px rgb(0 0 0 / 18%);
+ 
+@@ -77,6 +79,8 @@
+   --sidebar-bg-color: var(--island-bg-color);
+   --library-dropdown-shadow:
+-    0px 15px 6px rgba(0, 0, 0, 0.01), 0px 8px 5px rgba(0, 0, 0, 0.05),
+-    0px 4px 4px rgba(0, 0, 0, 0.09), 0px 1px 2px rgba(0, 0, 0, 0.1),
++    0px 15px 6px rgba(0, 0, 0, 0.01),
++    0px 8px 5px rgba(0, 0, 0, 0.05),
++    0px 4px 4px rgba(0, 0, 0, 0.09),
++    0px 1px 2px rgba(0, 0, 0, 0.1),
+     0px 0px 0px rgba(0, 0, 0, 0.1);
+   --chat-msg-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+@@ -198,5 +202,5 @@
+     --button-special-active-bg-color: #204624;
+     --dialog-border-color: var(--color-gray-80);
+-    --dropdown-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="292.4" height="292.4" viewBox="0 0 292 292"><path fill="%23ced4da" d="M287 197L159 69c-4-3-8-5-13-5s-9 2-13 5L5 197c-3 4-5 8-5 13s2 9 5 13c4 4 8 5 13 5h256c5 0 9-1 13-5s5-8 5-13-1-9-5-13z"/></svg>');
++    --dropdown-icon: url("data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"292.4\" height=\"292.4\" viewBox=\"0 0 292 292\"><path fill=\"%23ced4da\" d=\"M287 197L159 69c-4-3-8-5-13-5s-9 2-13 5L5 197c-3 4-5 8-5 13s2 9 5 13c4 4 8 5 13 5h256c5 0 9-1 13-5s5-8 5-13-1-9-5-13z\"/></svg>");
+     --focus-highlight-color: #{$color-blue-6};
+     --icon-green-fill-color: #{$color-green-4};
+

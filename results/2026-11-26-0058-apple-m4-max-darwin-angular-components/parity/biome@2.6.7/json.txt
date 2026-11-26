@@ -1,0 +1,53 @@
+# 1 of 124 files differ from prettier@3.10.1
+src/tsconfig-legacy.json
+
+# Left as they were staged (1)
+src/tsconfig-legacy.json
+
+# biome@2.6.7 exited 1; its output
+
+format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Some errors were emitted while running checks.
+  
+
+
+reporter/parse ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  i The following files have parsing errors:
+  
+  - docs/firebase.json
+  - src/bazel-tsconfig-build.json
+  - src/bazel-tsconfig-test.json
+  - src/tsconfig-legacy.json
+  
+reporter/format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  i The following files need to be formatted:
+  
+  - docs/firebase.json
+  - src/bazel-tsconfig-build.json
+  - src/bazel-tsconfig-test.json
+  - src/tsconfig-legacy.json
+  
+
+Formatted 124 files in 5ms. Fixed 12 files.
+Found 173 errors.
+
+
+# The first 1, reference first
+
+--- reference/src/tsconfig-legacy.json
++++ formatter/src/tsconfig-legacy.json
+@@ -14,9 +14,5 @@
+     "experimentalDecorators": true
+   },
+-  "include": [
+-    "**/*.spec.ts",
+-    "dev-mode-types.d.ts",
+-    "../node_modules/zone.js/zone.d.ts"
+-  ],
++  "include": ["**/*.spec.ts", "dev-mode-types.d.ts", "../node_modules/zone.js/zone.d.ts"],
+   "exclude": [
+     "**/*.e2e.spec.ts",
+

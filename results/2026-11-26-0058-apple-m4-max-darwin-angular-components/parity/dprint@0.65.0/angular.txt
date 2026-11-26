@@ -1,0 +1,941 @@
+# 410 of 684 files differ from prettier@3.10.1
+docs/scenes/src/app/scenes/autocomplete/autocomplete-scene.html
+docs/scenes/src/app/scenes/checkbox/checkbox-scene.html
+docs/scenes/src/app/scenes/expansion/expansion-scene.html
+docs/scenes/src/app/scenes/form-field/form-field-scene.html
+docs/scenes/src/app/scenes/input/input-scene.html
+docs/scenes/src/app/scenes/ripples/ripples-scene.html
+docs/scenes/src/app/scenes/slider/slider-scene.html
+docs/scenes/src/app/scenes/stepper/stepper-scene.html
+docs/scenes/src/app/scenes/table/table-scene.html
+docs/scenes/src/app/scenes/timepicker/timepicker-scene.html
+docs/scenes/src/app/scenes/tree/tree-scene.html
+docs/scenes/src/index.html
+docs/src/app/pages/component-category-list/component-category-list.html
+docs/src/app/pages/component-sidenav/component-nav.html
+docs/src/app/pages/component-viewer/component-api.html
+docs/src/app/pages/component-viewer/component-examples.html
+docs/src/app/pages/component-viewer/component-overview.html
+docs/src/app/pages/component-viewer/component-styling.html
+docs/src/app/pages/component-viewer/component-viewer.html
+docs/src/app/pages/component-viewer/token-table.html
+docs/src/app/pages/guide-list/guide-list.html
+docs/src/app/pages/guide-viewer/guide-viewer.html
+docs/src/app/pages/homepage/homepage.html
+docs/src/app/shared/cookie-popup/cookie-popup.html
+docs/src/app/shared/doc-viewer/angular-aria-banner/angular-aria-banner.html
+docs/src/app/shared/example-viewer/code-snippet.html
+docs/src/app/shared/example-viewer/example-viewer.html
+docs/src/app/shared/footer/footer.html
+docs/src/app/shared/navbar/navbar.html
+docs/src/app/shared/stackblitz/stackblitz-button.html
+docs/src/app/shared/support/support.html
+docs/src/app/shared/table-of-contents/table-of-contents.html
+docs/src/app/shared/theme-picker/theme-picker.html
+docs/src/index.html
+integration/yarn-pnp-compat/src/index.html
+src/cdk/scrolling/virtual-scroll-viewport.html
+src/cdk/testing/tests/test-main-component.html
+src/components-examples/aria/accordion/accordion-configurable/accordion-configurable-example.html
+src/components-examples/aria/accordion/accordion-multi-expansion/accordion-multi-expansion-example.html
+src/components-examples/aria/accordion/accordion-single-expansion/accordion-single-expansion-example.html
+src/components-examples/aria/autocomplete/autocomplete-auto-select/autocomplete-auto-select-example.html
+src/components-examples/aria/autocomplete/autocomplete-disabled/autocomplete-disabled-example.html
+src/components-examples/aria/autocomplete/autocomplete-highlight/autocomplete-highlight-example.html
+src/components-examples/aria/autocomplete/autocomplete-manual/autocomplete-manual-example.html
+src/components-examples/aria/combobox/combobox-auto-select/combobox-auto-select-example.html
+src/components-examples/aria/combobox/combobox-datepicker/combobox-datepicker-example.html
+src/components-examples/aria/combobox/combobox-dialog/combobox-dialog-example.html
+src/components-examples/aria/combobox/combobox-disabled/combobox-disabled-example.html
+src/components-examples/aria/combobox/combobox-editable-multiselect/combobox-editable-multiselect-example.html
+src/components-examples/aria/combobox/combobox-grid/combobox-grid-example.html
+src/components-examples/aria/combobox/combobox-hard-disabled/combobox-hard-disabled-example.html
+src/components-examples/aria/combobox/combobox-highlight/combobox-highlight-example.html
+src/components-examples/aria/combobox/combobox-listbox/combobox-listbox-example.html
+src/components-examples/aria/combobox/combobox-multiselect-dialog/combobox-multiselect-dialog-example.html
+src/components-examples/aria/combobox/combobox-readonly/combobox-readonly-example.html
+src/components-examples/aria/combobox/combobox-readonly-disabled/combobox-readonly-disabled-example.html
+src/components-examples/aria/combobox/combobox-readonly-multiselect/combobox-readonly-multiselect-example.html
+src/components-examples/aria/combobox/combobox-select/combobox-select-example.html
+src/components-examples/aria/combobox/combobox-tree/combobox-tree-example.html
+src/components-examples/aria/combobox/combobox-tree-auto-select/combobox-tree-auto-select-example.html
+src/components-examples/aria/combobox/combobox-tree-highlight/combobox-tree-highlight-example.html
+src/components-examples/aria/grid/grid-calendar/grid-calendar-example.html
+src/components-examples/aria/grid/grid-configurable/grid-configurable-example.html
+src/components-examples/aria/grid/grid-table/grid-chips.html
+src/components-examples/aria/grid/grid-table/grid-table-example.html
+src/components-examples/aria/listbox/listbox-active-descendant/listbox-active-descendant-example.html
+src/components-examples/aria/listbox/listbox-configurable/listbox-configurable-example.html
+src/components-examples/aria/listbox/listbox-disabled/listbox-disabled-example.html
+src/components-examples/aria/listbox/listbox-disabled-focusable/listbox-disabled-focusable-example.html
+src/components-examples/aria/listbox/listbox-disabled-skipped/listbox-disabled-skipped-example.html
+src/components-examples/aria/listbox/listbox-horizontal/listbox-horizontal-example.html
+src/components-examples/aria/listbox/listbox-multi-select/listbox-multi-select-example.html
+src/components-examples/aria/listbox/listbox-multi-select-follow-focus/listbox-multi-select-follow-focus-example.html
+src/components-examples/aria/listbox/listbox-readonly/listbox-readonly-example.html
+src/components-examples/aria/listbox/listbox-rtl-horizontal/listbox-rtl-horizontal-example.html
+src/components-examples/aria/listbox/listbox-single-select/listbox-single-select-example.html
+src/components-examples/aria/listbox/listbox-single-select-follow-focus/listbox-single-select-follow-focus-example.html
+src/components-examples/aria/menu/menu-cdk-overlay/menu-cdk-overlay-example.html
+src/components-examples/aria/menu/menu-trigger/menu-trigger-example.html
+src/components-examples/aria/menu/menu-trigger-disabled/menu-trigger-disabled-example.html
+src/components-examples/aria/menubar/menubar/menubar-example.html
+src/components-examples/aria/menubar/menubar-disabled/menubar-disabled-example.html
+src/components-examples/aria/menubar/menubar-rtl/menubar-rtl-example.html
+src/components-examples/aria/tabs/scrollable/tabs-scrollable-example.html
+src/components-examples/aria/toolbar/toolbar-configurable/toolbar-configurable-example.html
+src/components-examples/aria/toolbar/toolbar-select-and-combobox/toolbar-select-and-combobox-example.html
+src/components-examples/aria/tree/tree-active-descendant/tree-active-descendant-example.html
+src/components-examples/aria/tree/tree-configurable/tree-configurable-example.html
+src/components-examples/aria/tree/tree-disabled/tree-disabled-example.html
+src/components-examples/aria/tree/tree-disabled-focusable/tree-disabled-focusable-example.html
+src/components-examples/aria/tree/tree-disabled-skipped/tree-disabled-skipped-example.html
+src/components-examples/aria/tree/tree-multi-select/tree-multi-select-example.html
+src/components-examples/aria/tree/tree-multi-select-follow-focus/tree-multi-select-follow-focus-example.html
+src/components-examples/aria/tree/tree-nav/tree-nav-example.html
+src/components-examples/aria/tree/tree-nav-rtl/tree-nav-rtl-example.html
+src/components-examples/aria/tree/tree-single-select/tree-single-select-example.html
+src/components-examples/aria/tree/tree-single-select-follow-focus/tree-single-select-follow-focus-example.html
+src/components-examples/cdk/a11y/focus-monitor-directives/focus-monitor-directives-example.html
+src/components-examples/cdk/accordion/cdk-accordion-overview/cdk-accordion-overview-example.html
+src/components-examples/cdk/dialog/cdk-dialog-data/cdk-dialog-data-example-dialog.html
+src/components-examples/cdk/dialog/cdk-dialog-overview/cdk-dialog-overview-example-dialog.html
+src/components-examples/cdk/dialog/cdk-dialog-overview/cdk-dialog-overview-example.html
+src/components-examples/cdk/dialog/cdk-dialog-styling/cdk-dialog-styling-example-dialog.html
+src/components-examples/cdk/layout/breakpoint-observer-overview/breakpoint-observer-overview-example.html
+src/components-examples/cdk/listbox/cdk-listbox-compare-with/cdk-listbox-compare-with-example.html
+src/components-examples/cdk/listbox/cdk-listbox-custom-navigation/cdk-listbox-custom-navigation-example.html
+src/components-examples/cdk/listbox/cdk-listbox-custom-typeahead/cdk-listbox-custom-typeahead-example.html
+src/components-examples/cdk/listbox/cdk-listbox-disabled/cdk-listbox-disabled-example.html
+src/components-examples/cdk/listbox/cdk-listbox-reactive-forms/cdk-listbox-reactive-forms-example.html
+src/components-examples/cdk/portal/cdk-portal-overview/cdk-portal-overview-example.html
+src/components-examples/cdk/scrolling/cdk-virtual-scroll-context/cdk-virtual-scroll-context-example.html
+src/components-examples/cdk/stepper/cdk-custom-stepper-without-form/example-custom-stepper.html
+src/components-examples/cdk/stepper/cdk-linear-stepper-with-form/cdk-linear-stepper-with-form-example.html
+src/components-examples/cdk/stepper/cdk-linear-stepper-with-form/example-custom-linear-stepper.html
+src/components-examples/cdk/table/cdk-table-basic/cdk-table-basic-example.html
+src/components-examples/cdk/table/cdk-table-fixed-layout/cdk-table-fixed-layout-example.html
+src/components-examples/cdk/table/cdk-table-flex-basic/cdk-table-flex-basic-example.html
+src/components-examples/cdk/table/cdk-table-recycle-rows/cdk-table-recycle-rows-example.html
+src/components-examples/cdk/table/cdk-table-virtual-scroll/cdk-table-virtual-scroll-example.html
+src/components-examples/cdk/text-field/text-field-autofill-directive/text-field-autofill-directive-example.html
+src/components-examples/cdk/text-field/text-field-autofill-monitor/text-field-autofill-monitor-example.html
+src/components-examples/cdk/tree/cdk-tree-complex/cdk-tree-complex-example.html
+src/components-examples/cdk/tree/cdk-tree-custom-key-manager/cdk-tree-custom-key-manager-example.html
+src/components-examples/cdk/tree/cdk-tree-flat/cdk-tree-flat-example.html
+src/components-examples/cdk/tree/cdk-tree-flat-children-accessor/cdk-tree-flat-children-accessor-example.html
+src/components-examples/cdk/tree/cdk-tree-flat-level-accessor/cdk-tree-flat-level-accessor-example.html
+src/components-examples/cdk/tree/cdk-tree-nested/cdk-tree-nested-example.html
+src/components-examples/cdk/tree/cdk-tree-nested-children-accessor/cdk-tree-nested-children-accessor-example.html
+src/components-examples/cdk/tree/cdk-tree-nested-level-accessor/cdk-tree-nested-level-accessor-example.html
+src/components-examples/cdk-experimental/popover-edit/cdk-popover-edit-cdk-table/cdk-popover-edit-cdk-table-example.html
+src/components-examples/cdk-experimental/popover-edit/cdk-popover-edit-cdk-table-flex/cdk-popover-edit-cdk-table-flex-example.html
+src/components-examples/cdk-experimental/popover-edit/cdk-popover-edit-cell-span-vanilla-table/cdk-popover-edit-cell-span-vanilla-table-example.html
+src/components-examples/cdk-experimental/popover-edit/cdk-popover-edit-tab-out-vanilla-table/cdk-popover-edit-tab-out-vanilla-table-example.html
+src/components-examples/cdk-experimental/popover-edit/cdk-popover-edit-vanilla-table/cdk-popover-edit-vanilla-table-example.html
+src/components-examples/cdk-experimental/selection/cdk-selection-column/cdk-selection-column-example.html
+src/components-examples/cdk-experimental/selection/cdk-selection-list/cdk-selection-list-example.html
+src/components-examples/material/autocomplete/autocomplete-auto-active-first-option/autocomplete-auto-active-first-option-example.html
+src/components-examples/material/autocomplete/autocomplete-auto-active-first-option-signal-form/autocomplete-auto-active-first-option-signal-form-example.html
+src/components-examples/material/autocomplete/autocomplete-display/autocomplete-display-example.html
+src/components-examples/material/autocomplete/autocomplete-filter/autocomplete-filter-example.html
+src/components-examples/material/autocomplete/autocomplete-harness/autocomplete-harness-example.html
+src/components-examples/material/autocomplete/autocomplete-optgroup/autocomplete-optgroup-example.html
+src/components-examples/material/autocomplete/autocomplete-overview/autocomplete-overview-example.html
+src/components-examples/material/autocomplete/autocomplete-plain-input/autocomplete-plain-input-example.html
+src/components-examples/material/autocomplete/autocomplete-require-selection/autocomplete-require-selection-example.html
+src/components-examples/material/autocomplete/autocomplete-simple/autocomplete-simple-example.html
+src/components-examples/material/badge/badge-harness/badge-harness-example.html
+src/components-examples/material/bottom-sheet/bottom-sheet-harness/bottom-sheet-harness-example.html
+src/components-examples/material/button/button-disabled-interactive/button-disabled-interactive-example.html
+src/components-examples/material/button/button-overview/button-overview-example.html
+src/components-examples/material/card/card-actions/card-actions-example.html
+src/components-examples/material/card/card-media-size/card-media-size-example.html
+src/components-examples/material/card/card-overview/card-overview-example.html
+src/components-examples/material/checkbox/checkbox-configurable/checkbox-configurable-example.html
+src/components-examples/material/checkbox/checkbox-signal-forms/checkbox-signal-forms-example.html
+src/components-examples/material/chips/chips-autocomplete/chips-autocomplete-example.html
+src/components-examples/material/chips/chips-form-control/chips-form-control-example.html
+src/components-examples/material/chips/chips-form-field/chips-form-field-example.html
+src/components-examples/material/chips/chips-harness/chips-harness-example.html
+src/components-examples/material/chips/chips-input/chips-input-example.html
+src/components-examples/material/chips/chips-reactive-form/chips-reactive-form-example.html
+src/components-examples/material/chips/chips-signal-form/chips-signal-form-example.html
+src/components-examples/material/chips/chips-template-form/chips-template-form-example.html
+src/components-examples/material/core/ripple-overview/ripple-overview-example.html
+src/components-examples/material/datepicker/date-range-picker-comparison/date-range-picker-comparison-example.html
+src/components-examples/material/datepicker/date-range-picker-forms/date-range-picker-forms-example.html
+src/components-examples/material/datepicker/date-range-picker-overview/date-range-picker-overview-example.html
+src/components-examples/material/datepicker/date-range-picker-selection-strategy/date-range-picker-selection-strategy-example.html
+src/components-examples/material/datepicker/datepicker-api/datepicker-api-example.html
+src/components-examples/material/datepicker/datepicker-custom-header/datepicker-custom-header-example.html
+src/components-examples/material/datepicker/datepicker-custom-icon/datepicker-custom-icon-example.html
+src/components-examples/material/datepicker/datepicker-date-class/datepicker-date-class-example.html
+src/components-examples/material/datepicker/datepicker-dialog/datepicker-dialog-example-dialog.html
+src/components-examples/material/datepicker/datepicker-disabled/datepicker-disabled-example.html
+src/components-examples/material/datepicker/datepicker-events/datepicker-events-example.html
+src/components-examples/material/datepicker/datepicker-filter/datepicker-filter-example.html
+src/components-examples/material/datepicker/datepicker-formats/datepicker-formats-example.html
+src/components-examples/material/datepicker/datepicker-luxon/datepicker-luxon-example.html
+src/components-examples/material/datepicker/datepicker-overview/datepicker-overview-example.html
+src/components-examples/material/datepicker/datepicker-start-view/datepicker-start-view-example.html
+src/components-examples/material/datepicker/datepicker-touch/datepicker-touch-example.html
+src/components-examples/material/datepicker/datepicker-value/datepicker-value-example.html
+src/components-examples/material/datepicker/datepicker-views-selection/datepicker-views-selection-example.html
+src/components-examples/material/dialog/dialog-animations/dialog-animations-example-dialog.html
+src/components-examples/material/dialog/dialog-animations/dialog-animations-example.html
+src/components-examples/material/dialog/dialog-data/dialog-data-example-dialog.html
+src/components-examples/material/dialog/dialog-elements/dialog-elements-example-dialog.html
+src/components-examples/material/dialog/dialog-from-menu/dialog-from-menu-example-dialog.html
+src/components-examples/material/dialog/dialog-harness/dialog-harness-example.html
+src/components-examples/material/expansion/expansion-harness/expansion-harness-example.html
+src/components-examples/material/form-field/form-field-appearance/form-field-appearance-example.html
+src/components-examples/material/form-field/form-field-harness/form-field-harness-example.html
+src/components-examples/material/form-field/form-field-label/form-field-label-example.html
+src/components-examples/material/form-field/form-field-overview/form-field-overview-example.html
+src/components-examples/material/form-field/form-field-prefix-suffix/form-field-prefix-suffix-example.html
+src/components-examples/material/grid-list/grid-list-dynamic/grid-list-dynamic-example.html
+src/components-examples/material/input/input-clearable/input-clearable-example.html
+src/components-examples/material/input/input-error-state-matcher/input-error-state-matcher-example.html
+src/components-examples/material/input/input-errors/input-errors-example.html
+src/components-examples/material/input/input-errors-signal-form/input-errors-signal-form-example.html
+src/components-examples/material/input/input-form/input-form-example.html
+src/components-examples/material/input/input-harness/input-harness-example.html
+src/components-examples/material/input/input-hint/input-hint-example.html
+src/components-examples/material/input/input-overview/input-overview-example.html
+src/components-examples/material/input/input-prefix-suffix/input-prefix-suffix-example.html
+src/components-examples/material/list/list-action/list-action-example.html
+src/components-examples/material/list/list-navigation/list-navigation-example.html
+src/components-examples/material/list/list-selection/list-selection-example.html
+src/components-examples/material/list/list-single-selection/list-single-selection-example.html
+src/components-examples/material/paginator/paginator-configurable/paginator-configurable-example.html
+src/components-examples/material/progress-bar/progress-bar-configurable/progress-bar-configurable-example.html
+src/components-examples/material/progress-spinner/progress-spinner-configurable/progress-spinner-configurable-example.html
+src/components-examples/material/radio/radio-harness/radio-harness-example.html
+src/components-examples/material/radio/radio-ng-model/radio-ng-model-example.html
+src/components-examples/material/select/select-error-state-matcher/select-error-state-matcher-example.html
+src/components-examples/material/select/select-error-state-matcher-signal-form/select-error-state-matcher-signal-form-example.html
+src/components-examples/material/select/select-optgroup/select-optgroup-example.html
+src/components-examples/material/select/select-optgroup-signal-form/select-optgroup-signal-form-example.html
+src/components-examples/material/select/select-panel-class/select-panel-class-example.html
+src/components-examples/material/select/select-panel-class-signal-form/select-panel-class-signal-form-example.html
+src/components-examples/material/sidenav/sidenav-disable-close/sidenav-disable-close-example.html
+src/components-examples/material/sidenav/sidenav-fixed/sidenav-fixed-example.html
+src/components-examples/material/sidenav/sidenav-mode/sidenav-mode-example.html
+src/components-examples/material/sidenav/sidenav-open-close/sidenav-open-close-example.html
+src/components-examples/material/sidenav/sidenav-responsive/sidenav-responsive-example.html
+src/components-examples/material/slide-toggle/slide-toggle-configurable/slide-toggle-configurable-example.html
+src/components-examples/material/slide-toggle/slide-toggle-forms/slide-toggle-forms-example.html
+src/components-examples/material/slide-toggle/slide-toggle-full-width/slide-toggle-full-width-example.html
+src/components-examples/material/slide-toggle/slide-toggle-harness/slide-toggle-harness-example.html
+src/components-examples/material/slide-toggle/slide-toggle-overview/slide-toggle-overview-example.html
+src/components-examples/material/slider/slider-configurable/slider-configurable-example.html
+src/components-examples/material/slider/slider-formatting/slider-formatting-example.html
+src/components-examples/material/slider/slider-harness/slider-harness-example.html
+src/components-examples/material/slider/slider-overview/slider-overview-example.html
+src/components-examples/material/slider/slider-range/slider-range-example.html
+src/components-examples/material/snack-bar/snack-bar-annotated-component/snack-bar-annotated-component-example-snack.html
+src/components-examples/material/snack-bar/snack-bar-annotated-component/snack-bar-annotated-component-example.html
+src/components-examples/material/snack-bar/snack-bar-component/snack-bar-component-example-snack.html
+src/components-examples/material/snack-bar/snack-bar-component/snack-bar-component-example.html
+src/components-examples/material/snack-bar/snack-bar-overview/snack-bar-overview-example.html
+src/components-examples/material/stepper/stepper-animations/stepper-animations-example.html
+src/components-examples/material/stepper/stepper-editable/stepper-editable-example.html
+src/components-examples/material/stepper/stepper-errors/stepper-errors-example.html
+src/components-examples/material/stepper/stepper-header-position/stepper-header-position-example.html
+src/components-examples/material/stepper/stepper-intl/stepper-intl-example.html
+src/components-examples/material/stepper/stepper-label-position-bottom/stepper-label-position-bottom-example.html
+src/components-examples/material/stepper/stepper-optional/stepper-optional-example.html
+src/components-examples/material/stepper/stepper-overview/stepper-overview-example.html
+src/components-examples/material/stepper/stepper-responsive/stepper-responsive-example.html
+src/components-examples/material/stepper/stepper-signal-forms/stepper-signal-forms-example.html
+src/components-examples/material/stepper/stepper-states/stepper-states-example.html
+src/components-examples/material/stepper/stepper-vertical/stepper-vertical-example.html
+src/components-examples/material/table/table-basic/table-basic-example.html
+src/components-examples/material/table/table-column-styling/table-column-styling-example.html
+src/components-examples/material/table/table-drag-drop/table-drag-drop-example.html
+src/components-examples/material/table/table-dynamic-array-data/table-dynamic-array-data-example.html
+src/components-examples/material/table/table-dynamic-columns/table-dynamic-columns-example.html
+src/components-examples/material/table/table-dynamic-observable-data/table-dynamic-observable-data-example.html
+src/components-examples/material/table/table-expandable-rows/table-expandable-rows-example.html
+src/components-examples/material/table/table-filtering/table-filtering-example.html
+src/components-examples/material/table/table-flex-basic/table-flex-basic-example.html
+src/components-examples/material/table/table-flex-large-row/table-flex-large-row-example.html
+src/components-examples/material/table/table-footer-row/table-footer-row-example.html
+src/components-examples/material/table/table-generated-columns/table-generated-columns-example.html
+src/components-examples/material/table/table-harness/table-harness-example.html
+src/components-examples/material/table/table-http/table-http-example.html
+src/components-examples/material/table/table-multiple-header-footer/table-multiple-header-footer-example.html
+src/components-examples/material/table/table-multiple-row-template/table-multiple-row-template-example.html
+src/components-examples/material/table/table-overview/table-overview-example.html
+src/components-examples/material/table/table-pagination/table-pagination-example.html
+src/components-examples/material/table/table-recycle-rows/table-recycle-rows-example.html
+src/components-examples/material/table/table-reorderable/table-reorderable-example.html
+src/components-examples/material/table/table-row-binding/table-row-binding-example.html
+src/components-examples/material/table/table-row-context/table-row-context-example.html
+src/components-examples/material/table/table-rowspan/table-rowspan-example.html
+src/components-examples/material/table/table-selection/table-selection-example.html
+src/components-examples/material/table/table-sorting/table-sorting-example.html
+src/components-examples/material/table/table-sticky-columns/table-sticky-columns-example.html
+src/components-examples/material/table/table-sticky-complex/table-sticky-complex-example.html
+src/components-examples/material/table/table-sticky-complex-flex/table-sticky-complex-flex-example.html
+src/components-examples/material/table/table-sticky-footer/table-sticky-footer-example.html
+src/components-examples/material/table/table-sticky-header/table-sticky-header-example.html
+src/components-examples/material/table/table-text-column/table-text-column-example.html
+src/components-examples/material/table/table-text-column-advanced/table-text-column-advanced-example.html
+src/components-examples/material/table/table-virtual-scroll/table-virtual-scroll-example.html
+src/components-examples/material/table/table-with-ripples/table-with-ripples-example.html
+src/components-examples/material/table/table-wrapped/table-wrapped-example.html
+src/components-examples/material/tabs/tab-group-drag-drop/tab-group-drag-drop-example.html
+src/components-examples/material/tabs/tab-group-dynamic/tab-group-dynamic-example.html
+src/components-examples/material/tabs/tab-group-dynamic-height/tab-group-dynamic-height-example.html
+src/components-examples/material/tabs/tab-group-lazy-loaded/tab-group-lazy-loaded-example.html
+src/components-examples/material/tabs/tab-group-preserve-content/tab-group-preserve-content-example.html
+src/components-examples/material/timepicker/timepicker-custom-icon/timepicker-custom-icon-example.html
+src/components-examples/material/timepicker/timepicker-datepicker-integration/timepicker-datepicker-integration-example.html
+src/components-examples/material/timepicker/timepicker-forms/timepicker-forms-example.html
+src/components-examples/material/timepicker/timepicker-locale/timepicker-locale-example.html
+src/components-examples/material/timepicker/timepicker-options/timepicker-options-example.html
+src/components-examples/material/timepicker/timepicker-overview/timepicker-overview-example.html
+src/components-examples/material/timepicker/timepicker-validation/timepicker-validation-example.html
+src/components-examples/material/toolbar/toolbar-harness/toolbar-harness-example.html
+src/components-examples/material/toolbar/toolbar-multirow/toolbar-multirow-example.html
+src/components-examples/material/tooltip/tooltip-delay/tooltip-delay-example.html
+src/components-examples/material/tooltip/tooltip-message/tooltip-message-example.html
+src/components-examples/material/tree/tree-dynamic/tree-dynamic-example.html
+src/components-examples/material/tree/tree-flat-child-accessor-overview/tree-flat-child-accessor-overview-example.html
+src/components-examples/material/tree/tree-flat-overview/tree-flat-overview-example.html
+src/components-examples/material/tree/tree-harness/tree-harness-example.html
+src/components-examples/material/tree/tree-loadmore/tree-loadmore-example.html
+src/components-examples/material/tree/tree-nested-child-accessor-overview/tree-nested-child-accessor-overview-example.html
+src/components-examples/material/tree/tree-nested-overview/tree-nested-overview-example.html
+src/components-examples/material-experimental/column-resize/default-enabled-column-resize/default-enabled-column-resize-example.html
+src/components-examples/material-experimental/column-resize/default-enabled-column-resize-flex/default-enabled-column-resize-flex-example.html
+src/components-examples/material-experimental/column-resize/opt-in-column-resize/opt-in-column-resize-example.html
+src/components-examples/material-experimental/popover-edit/popover-edit-cell-span-mat-table/popover-edit-cell-span-mat-table-example.html
+src/components-examples/material-experimental/popover-edit/popover-edit-mat-table/popover-edit-mat-table-example.html
+src/components-examples/material-experimental/popover-edit/popover-edit-mat-table-flex/popover-edit-mat-table-flex-example.html
+src/components-examples/material-experimental/popover-edit/popover-edit-tab-out-mat-table/popover-edit-tab-out-mat-table-example.html
+src/components-examples/material-experimental/selection/mat-selection-column/mat-selection-column-example.html
+src/components-examples/material-experimental/selection/mat-selection-list/mat-selection-list-example.html
+src/dev-app/autocomplete/autocomplete-demo.html
+src/dev-app/badge/badge-demo.html
+src/dev-app/baseline/baseline-demo.html
+src/dev-app/bottom-sheet/bottom-sheet-demo.html
+src/dev-app/button/button-demo.html
+src/dev-app/button-toggle/button-toggle-demo.html
+src/dev-app/card/card-demo.html
+src/dev-app/cdk-dialog/dialog-demo.html
+src/dev-app/checkbox/checkbox-demo.html
+src/dev-app/chips/chips-demo.html
+src/dev-app/clipboard/clipboard-demo.html
+src/dev-app/column-resize/column-resize-home.html
+src/dev-app/connected-overlay/connected-overlay-demo.html
+src/dev-app/datepicker/custom-header.html
+src/dev-app/datepicker/datepicker-demo.html
+src/dev-app/dev-app/dev-app-layout.html
+src/dev-app/dialog/dialog-demo.html
+src/dev-app/drag-drop/drag-drop-demo.html
+src/dev-app/drawer/drawer-demo.html
+src/dev-app/expansion/expansion-demo.html
+src/dev-app/focus-origin/focus-origin-demo.html
+src/dev-app/focus-trap/focus-trap-demo.html
+src/dev-app/focus-trap/focus-trap-dialog-demo.html
+src/dev-app/google-map/google-map-demo.html
+src/dev-app/grid-list/grid-list-demo.html
+src/dev-app/icon/icon-demo.html
+src/dev-app/index.html
+src/dev-app/input/input-demo.html
+src/dev-app/input-modality/input-modality-detector-demo.html
+src/dev-app/list/list-demo.html
+src/dev-app/live-announcer/live-announcer-demo.html
+src/dev-app/portal/portal-demo.html
+src/dev-app/progress-spinner/progress-spinner-demo.html
+src/dev-app/radio/radio-demo.html
+src/dev-app/ripple/ripple-demo.html
+src/dev-app/select/select-demo.html
+src/dev-app/sidenav/sidenav-demo.html
+src/dev-app/slide-toggle/slide-toggle-demo.html
+src/dev-app/slider/slider-demo.html
+src/dev-app/snack-bar/snack-bar-demo.html
+src/dev-app/stepper/stepper-demo.html
+src/dev-app/system/system-demo.html
+src/dev-app/system-classes-demo/system-classes-demo.html
+src/dev-app/table-scroll-container/table-scroll-container-demo.html
+src/dev-app/theme/theme-demo.html
+src/dev-app/timepicker/timepicker-demo.html
+src/dev-app/tree/tree-demo.html
+src/dev-app/virtual-scroll/virtual-scroll-demo.html
+src/dev-app/youtube-player/youtube-player-demo.html
+src/e2e-app/index.html
+src/material/autocomplete/autocomplete.html
+src/material/button-toggle/button-toggle.html
+src/material/checkbox/checkbox.html
+src/material/core/option/optgroup.html
+src/material/core/option/option.html
+src/material/datepicker/calendar-body.html
+src/material/datepicker/calendar-header.html
+src/material/datepicker/calendar.html
+src/material/datepicker/date-range-input.html
+src/material/datepicker/datepicker-content.html
+src/material/datepicker/datepicker-toggle.html
+src/material/datepicker/month-view.html
+src/material/datepicker/multi-year-view.html
+src/material/datepicker/year-view.html
+src/material/expansion/expansion-panel.html
+src/material/form-field/form-field.html
+src/material/menu/menu-item.html
+src/material/menu/menu.html
+src/material/paginator/paginator.html
+src/material/progress-bar/progress-bar.html
+src/material/progress-spinner/progress-spinner.html
+src/material/radio/radio.html
+src/material/select/select.html
+src/material/sidenav/drawer-container.html
+src/material/sidenav/sidenav-container.html
+src/material/slide-toggle/slide-toggle.html
+src/material/slider/slider-thumb.html
+src/material/slider/slider.html
+src/material/snack-bar/snack-bar-container.html
+src/material/sort/sort-header.html
+src/material/stepper/step-header.html
+src/material/stepper/stepper.html
+src/material/tabs/tab-body.html
+src/material/tabs/tab-group.html
+src/material/tabs/tab-header.html
+src/material/tabs/tab-nav-bar/tab-link.html
+src/material/tabs/tab-nav-bar/tab-nav-bar.html
+src/material/timepicker/timepicker-toggle.html
+src/material/timepicker/timepicker.html
+src/universal-app/index-source.html
+src/universal-app/kitchen-sink/kitchen-sink.html
+
+# Left as they were staged (45)
+docs/scenes/src/app/scenes/form-field/form-field-scene.html
+docs/scenes/src/app/scenes/slider/slider-scene.html
+docs/scenes/src/index.html
+docs/src/app/shared/example-viewer/code-snippet.html
+docs/src/index.html
+integration/yarn-pnp-compat/src/index.html
+src/components-examples/cdk/text-field/text-field-autofill-directive/text-field-autofill-directive-example.html
+src/components-examples/cdk/text-field/text-field-autofill-monitor/text-field-autofill-monitor-example.html
+src/components-examples/material/autocomplete/autocomplete-harness/autocomplete-harness-example.html
+src/components-examples/material/bottom-sheet/bottom-sheet-harness/bottom-sheet-harness-example.html
+src/components-examples/material/card/card-actions/card-actions-example.html
+src/components-examples/material/datepicker/date-range-picker-overview/date-range-picker-overview-example.html
+src/components-examples/material/datepicker/date-range-picker-selection-strategy/date-range-picker-selection-strategy-example.html
+src/components-examples/material/datepicker/datepicker-api/datepicker-api-example.html
+src/components-examples/material/datepicker/datepicker-custom-icon/datepicker-custom-icon-example.html
+src/components-examples/material/datepicker/datepicker-date-class/datepicker-date-class-example.html
+src/components-examples/material/datepicker/datepicker-dialog/datepicker-dialog-example-dialog.html
+src/components-examples/material/datepicker/datepicker-filter/datepicker-filter-example.html
+src/components-examples/material/datepicker/datepicker-formats/datepicker-formats-example.html
+src/components-examples/material/datepicker/datepicker-luxon/datepicker-luxon-example.html
+src/components-examples/material/datepicker/datepicker-touch/datepicker-touch-example.html
+src/components-examples/material/dialog/dialog-animations/dialog-animations-example-dialog.html
+src/components-examples/material/dialog/dialog-from-menu/dialog-from-menu-example-dialog.html
+src/components-examples/material/dialog/dialog-harness/dialog-harness-example.html
+src/components-examples/material/expansion/expansion-harness/expansion-harness-example.html
+src/components-examples/material/form-field/form-field-appearance/form-field-appearance-example.html
+src/components-examples/material/form-field/form-field-harness/form-field-harness-example.html
+src/components-examples/material/form-field/form-field-overview/form-field-overview-example.html
+src/components-examples/material/input/input-overview/input-overview-example.html
+src/components-examples/material/input/input-prefix-suffix/input-prefix-suffix-example.html
+src/components-examples/material/slider/slider-harness/slider-harness-example.html
+src/components-examples/material/slider/slider-overview/slider-overview-example.html
+src/components-examples/material/slider/slider-range/slider-range-example.html
+src/components-examples/material/snack-bar/snack-bar-component/snack-bar-component-example-snack.html
+src/components-examples/material/table/table-text-column/table-text-column-example.html
+src/components-examples/material/table/table-text-column-advanced/table-text-column-advanced-example.html
+src/components-examples/material/toolbar/toolbar-harness/toolbar-harness-example.html
+src/dev-app/autocomplete/autocomplete-demo.html
+src/dev-app/checkbox/checkbox-demo.html
+src/dev-app/column-resize/column-resize-home.html
+src/dev-app/index.html
+src/dev-app/system-classes-demo/system-classes-demo.html
+src/e2e-app/index.html
+src/material/slide-toggle/slide-toggle.html
+src/universal-app/index-source.html
+
+# dprint@0.65.0 exited 1; its output
+
+Error formatting <work>/angular/out/dprint@0.65.0/src/e2e-app/index.component.html. Message: syntax error 'expected comment' at line 1, column 1
+Error formatting <work>/angular/out/dprint@0.65.0/src/universal-app/index-source.component.html. Message: syntax error 'expected comment' at line 1, column 1
+Error formatting <work>/angular/out/dprint@0.65.0/integration/vitest/src/index.component.html. Message: syntax error 'expected comment' at line 1, column 1
+Error formatting <work>/angular/out/dprint@0.65.0/docs/scenes/src/index.component.html. Message: syntax error 'expected comment' at line 1, column 1
+Error formatting <work>/angular/out/dprint@0.65.0/docs/src/index.component.html. Message: syntax error 'expected comment' at line 1, column 1
+Error formatting <work>/angular/out/dprint@0.65.0/src/dev-app/index.component.html. Message: syntax error 'expected comment' at line 1, column 1
+Error formatting <work>/angular/out/dprint@0.65.0/integration/yarn-pnp-compat/src/index.component.html. Message: syntax error 'expected comment' at line 1, column 1
+Error formatting <work>/angular/out/dprint@0.65.0/src/material/slide-toggle/slide-toggle.component.html. Message: failed to format code with external formatter:
+Expected '(', got '<eof>' at file://<work>/angular/out/dprint@0.65.0/src/material/slide-toggle/slide-toggle.component.html%23.tsxExpected '(', got '<eof>' at file://<work>/angular/out/dprint@0.65.0/src/material/slide-toggle/slide-toggle.component.html%23.tsx:32:35
+
+  switch
+  ~
+
+  switch
+  ~
+Error formatting <work>/angular/out/dprint@0.65.0/src/dev-app/system-classes-demo/system-classes-demo.component.html. Message: syntax error 'expected close tag for opening tag <section> from line 3, column 2' at line 147, column 0
+Error formatting <work>/angular/out/dprint@0.65.0/src/dev-app/autocomplete/autocomplete-demo.component.html. Message: syntax error 'expected close tag for opening tag <p> from line 102, column 6' at line 125, column 5
+Error formatting <work>/angular/out/dprint@0.65.0/src/dev-app/checkbox/checkbox-demo.component.html. Message: syntax error 'expected close tag for opening tag <div> from line 90, column 2' at line 265, column 0
+Had 11 errors formatting.
+
+
+
+# The first 25, reference first
+
+--- reference/docs/scenes/src/app/scenes/autocomplete/autocomplete-scene.html
++++ formatter/docs/scenes/src/app/scenes/autocomplete/autocomplete-scene.html
+@@ -8,5 +8,5 @@
+       [formControl]="myControl"
+       [matAutocomplete]="auto"
+-    />
++    >
+     <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+       @for (option of options; track option) {
+
+
+--- reference/docs/scenes/src/app/scenes/checkbox/checkbox-scene.html
++++ formatter/docs/scenes/src/app/scenes/checkbox/checkbox-scene.html
+@@ -2,6 +2,5 @@
+   <div>
+     <mat-checkbox class="scene-checkbox-all" [indeterminate]="true"
+-      >All</mat-checkbox
+-    >
++    >All</mat-checkbox>
+   </div>
+   <mat-checkbox [checked]="true">Draft</mat-checkbox>
+
+
+--- reference/docs/scenes/src/app/scenes/expansion/expansion-scene.html
++++ formatter/docs/scenes/src/app/scenes/expansion/expansion-scene.html
+@@ -5,5 +5,7 @@
+         <mat-icon>group</mat-icon>
+       </mat-panel-title>
+-      <mat-panel-description> Authorized users </mat-panel-description>
++      <mat-panel-description>
++        Authorized users
++      </mat-panel-description>
+     </mat-expansion-panel-header>
+     <div class="docs-expansion-scene-content">
+@@ -16,5 +18,7 @@
+         <mat-icon>public</mat-icon>
+       </mat-panel-title>
+-      <mat-panel-description> Network settings </mat-panel-description>
++      <mat-panel-description>
++        Network settings
++      </mat-panel-description>
+     </mat-expansion-panel-header>
+     <p>This is the primary content of the panel.</p>
+
+
+--- reference/docs/scenes/src/app/scenes/form-field/form-field-scene.html
++++ formatter/docs/scenes/src/app/scenes/form-field/form-field-scene.html
+@@ -1,5 +1,5 @@
+ <mat-form-field appearance="fill">
+   <mat-label>Password</mat-label>
+-  <input matInput type="password" required />
++  <input matInput type="password" required>
+   <mat-hint align="end">Forgot password?</mat-hint>
+   <mat-icon matSuffix>visibility_off</mat-icon>
+
+
+--- reference/docs/scenes/src/app/scenes/input/input-scene.html
++++ formatter/docs/scenes/src/app/scenes/input/input-scene.html
+@@ -2,5 +2,5 @@
+   <mat-form-field appearance="fill">
+     <mat-label>Title</mat-label>
+-    <input matInput type="text" />
++    <input matInput type="text">
+   </mat-form-field>
+ 
+
+
+--- reference/docs/scenes/src/app/scenes/ripples/ripples-scene.html
++++ formatter/docs/scenes/src/app/scenes/ripples/ripples-scene.html
+@@ -4,5 +4,6 @@
+   matRipple
+   [matRippleDisabled]="true"
+-></div>
++>
++</div>
+ <button
+   mat-raised-button
+
+
+--- reference/docs/scenes/src/app/scenes/slider/slider-scene.html
++++ formatter/docs/scenes/src/app/scenes/slider/slider-scene.html
+@@ -2,5 +2,5 @@
+   <mat-icon>volume_up</mat-icon>
+   <mat-slider min="0" max="100" discrete>
+-    <input value="65" matSliderThumb />
++    <input value="65" matSliderThumb>
+   </mat-slider>
+ </div>
+@@ -8,5 +8,5 @@
+   <mat-icon>brightness_low</mat-icon>
+   <mat-slider min="0" max="100" discrete>
+-    <input value="40" matSliderThumb />
++    <input value="40" matSliderThumb>
+   </mat-slider>
+ </div>
+
+
+--- reference/docs/scenes/src/app/scenes/stepper/stepper-scene.html
++++ formatter/docs/scenes/src/app/scenes/stepper/stepper-scene.html
+@@ -3,11 +3,13 @@
+     <mat-form-field appearance="outline" class="scene-stepper-input">
+       <mat-label>Name</mat-label>
+-      <input matInput type="text" />
++      <input matInput type="text">
+     </mat-form-field>
+     <mat-form-field appearance="outline" class="scene-stepper-input">
+       <mat-label>Street address</mat-label>
+-      <input matInput type="text" />
++      <input matInput type="text">
+     </mat-form-field>
+   </mat-step>
+-  <mat-step label="Payment information"> Content </mat-step>
++  <mat-step label="Payment information">
++    Content
++  </mat-step>
+ </mat-horizontal-stepper>
+
+
+--- reference/docs/scenes/src/app/scenes/table/table-scene.html
++++ formatter/docs/scenes/src/app/scenes/table/table-scene.html
+@@ -27,5 +27,5 @@
+ 
+       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+-      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
++      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+     </table>
+   </mat-card-content>
+
+
+--- reference/docs/scenes/src/app/scenes/timepicker/timepicker-scene.html
++++ formatter/docs/scenes/src/app/scenes/timepicker/timepicker-scene.html
+@@ -1,5 +1,5 @@
+ <mat-form-field>
+   <mat-label>Pick a time</mat-label>
+-  <input matInput [matTimepicker]="picker" [value]="value" />
++  <input matInput [matTimepicker]="picker" [value]="value">
+   <mat-timepicker #picker />
+   <mat-timepicker-toggle [for]="picker" matSuffix />
+
+
+--- reference/docs/scenes/src/app/scenes/tree/tree-scene.html
++++ formatter/docs/scenes/src/app/scenes/tree/tree-scene.html
+@@ -17,5 +17,5 @@
+   <mat-tree-node
+     class="scene-tree-node"
+-    *matTreeNodeDef="let node; when: hasChild"
++    *matTreeNodeDef="let node;when: hasChild"
+     matTreeNodePadding
+   >
+
+
+--- reference/docs/scenes/src/index.html
++++ formatter/docs/scenes/src/index.html
+@@ -1,17 +1,14 @@
+ <!doctype html>
+ <html lang="en">
+-  <head>
+-    <meta charset="utf-8" />
+-    <title>Scenes</title>
+-    <base href="/" />
+-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+-    <link rel="icon" type="image/x-icon" href="scenes/src/favicon.ico" />
+-    <link
+-      href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined&display=block"
+-      rel="stylesheet"
+-    />
+-  </head>
+-  <body>
+-    <app-root></app-root>
+-  </body>
++<head>
++  <meta charset="utf-8">
++  <title>Scenes</title>
++  <base href="/">
++  <meta name="viewport" content="width=device-width, initial-scale=1">
++  <link rel="icon" type="image/x-icon" href="scenes/src/favicon.ico">
++  <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined&display=block" rel="stylesheet">
++</head>
++<body>
++  <app-root></app-root>
++</body>
+ </html>
+
+
+--- reference/docs/src/app/pages/component-category-list/component-category-list.html
++++ formatter/docs/src/app/pages/component-category-list/component-category-list.html
+@@ -22,5 +22,5 @@
+         <a
+           class="docs-component-category-list-item"
+-          [routerLink]="'/' + section() + '/' + component.id"
++          [routerLink]='"/" + section() + "/" + component.id'
+         >
+           <ng-container
+@@ -39,10 +39,10 @@
+       <img
+         class="docs-component-category-list-card-image-wrapper"
+-        [src]="'../../../assets/screenshots/' + component.id + '.scene.png'"
++        [src]='"../../../assets/screenshots/" + component.id + ".scene.png"'
+         loading="lazy"
+         alt=""
+         role="presentation"
+         aria-hidden="true"
+-      />
++      >
+     }
+     <div class="docs-component-category-list-card-title">
+
+
+--- reference/docs/src/app/pages/component-sidenav/component-nav.html
++++ formatter/docs/src/app/pages/component-sidenav/component-nav.html
+@@ -8,14 +8,14 @@
+           @if (component.externalRedirect) {
+             <a mat-list-item [href]="component.externalRedirect">{{
+-              component.name
+-            }}</a>
++                component.name
++              }}</a>
+           } @else {
+             <a
+               mat-list-item
+               #link="routerLinkActive"
+-              [routerLink]="'/' + section() + '/' + component.id"
++              [routerLink]='"/" + section() + "/" + component.id'
+               [activated]="link.isActive"
+               routerLinkActive="docs-component-viewer-sidenav-item-selected"
+-              [attr.aria-current]="link.isActive ? 'page' : 'false'"
++              [attr.aria-current]='link.isActive ? "page" : "false"'
+             >
+               {{ component.name }}
+
+
+--- reference/docs/src/app/pages/component-viewer/component-api.html
++++ formatter/docs/src/app/pages/component-viewer/component-api.html
+@@ -19,9 +19,7 @@ same container so that they display one after another.
+   @for (additionalApiDoc of docItem.additionalApiDocs; track additionalApiDoc) {
+     <doc-viewer
+-      document="/docs-content/api-docs/{{ additionalApiDoc.path }}"
++      document="/docs-content/api-docs/{{additionalApiDoc.path}}"
+       class="docs-component-view-text-content"
+-      (contentRendered)="
+-        updateTableOfContents(additionalApiDoc.name, $event, $index + 1)
+-      "
++      (contentRendered)="updateTableOfContents(additionalApiDoc.name, $event, $index + 1)"
+     />
+   }
+
+
+--- reference/docs/src/app/pages/component-viewer/component-examples.html
++++ formatter/docs/src/app/pages/component-viewer/component-examples.html
+@@ -6,4 +6,8 @@
+ 
+ @for (example of docItem.examples; track example) {
+-  <example-viewer [example]="example" [showCompactToggle]="false" view="demo" />
++  <example-viewer
++    [example]="example"
++    [showCompactToggle]="false"
++    view="demo"
++  />
+ }
+
+
+--- reference/docs/src/app/pages/component-viewer/component-overview.html
++++ formatter/docs/src/app/pages/component-viewer/component-overview.html
+@@ -1,5 +1,7 @@
+ @let docItem = componentViewer.docItem();
+ 
+-<h2 class="cdk-visually-hidden" tabindex="-1">Overview for {{ docItem.id }}</h2>
++<h2 class="cdk-visually-hidden" tabindex="-1">
++  Overview for {{ docItem.id }}
++</h2>
+ <doc-viewer
+   [name]="docItem.id"
+@@ -7,5 +9,5 @@
+   [document]="getOverviewDocumentUrl(docItem)"
+   class="docs-component-view-text-content docs-component-overview"
+-  (contentRendered)="updateTableOfContents('Overview Content', $event)"
++  (contentRendered)='updateTableOfContents("Overview Content", $event)'
+ />
+ 
+
+
+--- reference/docs/src/app/pages/component-viewer/component-styling.html
++++ formatter/docs/src/app/pages/component-viewer/component-styling.html
+@@ -15,17 +15,13 @@
+     the <code>{{ data.themes[0].overridesMixin }}</code> mixin.
+   } @else {
+-    the
+-    @for (current of data.themes; track current.name) {
+-      {{ $last ? " and " : $first ? "" : ", "
+-      }}<code>{{ current.overridesMixin }}</code>
+-    }
+-    mixins.
++    the @for (current of data.themes; track current.name) {{{
++        $last ? " and " : ($first ? "" : ", ")
++      }}<code>{{ current.overridesMixin }}</code>} mixins.
+   }
+-  {{
+-    data.themes.length === 1 ? "This mixin accepts" : "These mixins accept"
+-  }}
++  {{ data.themes.length === 1 ? "This mixin accepts" : "These mixins accept" }}
+   a set of tokens that control how the components will look, either for the
+-  entire app or under a specific selector.
+-  {{ exampleHtml ? "For example:" : "" }}
++  entire app or under a specific selector. {{
++    exampleHtml ? "For example:" : ""
++  }}
+ 
+   @if (exampleHtml) {
+@@ -39,7 +35,5 @@
+   <div class="docs-markdown">
+     @for (current of data.themes; track current.name) {
+-      <h3>
+-        Tokens supported by <code>{{ current.overridesMixin }}</code>
+-      </h3>
++      <h3>Tokens supported by <code>{{ current.overridesMixin }}</code></h3>
+       <token-table [tokens]="current.tokens" />
+     }
+
+
+--- reference/docs/src/app/pages/component-viewer/component-viewer.html
++++ formatter/docs/src/app/pages/component-viewer/component-viewer.html
+@@ -17,6 +17,5 @@
+         #rla="routerLinkActive"
+         [active]="rla.isActive"
+-        >{{ section }}</a
+-      >
++      >{{ section }}</a>
+     }
+   </nav>
+
+
+--- reference/docs/src/app/pages/component-viewer/token-table.html
++++ formatter/docs/src/app/pages/component-viewer/token-table.html
+@@ -27,5 +27,6 @@
+         aria-label="Clear type filter"
+         matTooltip="Clear type filter"
+-        (click)="typeFilter.set(null); $event.stopPropagation()"
++        (click)="typeFilter.set(null);
++$event.stopPropagation()"
+       >
+         <mat-icon>clear</mat-icon>
+
+
+--- reference/docs/src/app/pages/guide-list/guide-list.html
++++ formatter/docs/src/app/pages/guide-list/guide-list.html
+@@ -7,5 +7,5 @@
+   <div class="docs-guide-list">
+     @for (guide of guideItems.getAllItems(); track guide) {
+-      <a class="docs-guide-item" routerLink="/guide/{{ guide.id }}" matRipple>
++      <a class="docs-guide-item" routerLink="/guide/{{guide.id}}" matRipple>
+         <mat-card class="docs-guide-card" appearance="outlined">
+           <mat-card-title>{{ guide.name }}</mat-card-title>
+
+
+--- reference/docs/src/app/pages/guide-viewer/guide-viewer.html
++++ formatter/docs/src/app/pages/guide-viewer/guide-viewer.html
+@@ -3,7 +3,6 @@
+     <doc-viewer
+       class="docs-guide-content"
+-      (contentRendered)="
+-        toc.addHeaders('Guide Content', $event); toc.updateScrollPosition()
+-      "
++      (contentRendered)='toc.addHeaders("Guide Content", $event);
++toc.updateScrollPosition()'
+       [document]="guide().document"
+       focusOnNavigation
+
+
+--- reference/docs/src/app/pages/homepage/homepage.html
++++ formatter/docs/src/app/pages/homepage/homepage.html
+@@ -15,6 +15,5 @@
+         class="docs-button"
+         routerLink="/guide/getting-started"
+-        >Get started</a
+-      >
++      >Get started</a>
+     </div>
+   </div>
+@@ -44,6 +43,10 @@
+     <div class="docs-homepage-row-column">
+       <h2>Frictionless</h2>
+-      <p>Built by the Angular team to integrate seamlessly with Angular.</p>
+-      <p>Start from scratch or drop into your existing applications.</p>
++      <p>
++        Built by the Angular team to integrate seamlessly with Angular.
++      </p>
++      <p>
++        Start from scratch or drop into your existing applications.
++      </p>
+     </div>
+   </div>
+@@ -60,17 +63,17 @@
+       </a>
+     </div>
+-    <app-carousel [aria-label]="'Featured components'">
++    <app-carousel [aria-label]='"Featured components"'>
+       @for (comp of topComponents; track comp) {
+         <a
+           carousel-item
+           class="docs-carousel-item docs-featured-components-carousel-item"
+-          routerLink="/components/{{ comp }}"
++          routerLink="/components/{{comp}}"
+         >
+           <div class="docs-homepage-img-container">
+             <img
+               alt=""
+-              src="../../../assets/screenshots/{{ comp }}.scene.png"
++              src="../../../assets/screenshots/{{comp}}.scene.png"
+               role="presentation"
+-            />
++            >
+           </div>
+           {{ (comp[0].toUpperCase() + comp.slice(1)).replace("-", " ") }}
+@@ -96,5 +99,5 @@
+           carousel-item
+           class="docs-carousel-item docs-homepage-guides-carousel-item"
+-          routerLink="/guide/{{ guide.id }}"
++          routerLink="/guide/{{guide.id}}"
+           matRipple
+         >
+@@ -103,6 +106,5 @@
+             <mat-card-content
+               class="docs-component-category-list-card-summary"
+-              >{{ guide.overview }}</mat-card-content
+-            >
++            >{{ guide.overview }}</mat-card-content>
+           </mat-card>
+         </a>
+... 1 more lines
+
+--- reference/docs/src/app/shared/cookie-popup/cookie-popup.html
++++ formatter/docs/src/app/shared/cookie-popup/cookie-popup.html
+@@ -10,6 +10,5 @@
+         target="_blank"
+         rel="noopener"
+-        >More details</a
+-      >
++      >More details</a>
+       <button mat-button color="primary" (click)="accept()">
+         Okay, got it
+
+
+--- reference/docs/src/app/shared/doc-viewer/angular-aria-banner/angular-aria-banner.html
++++ formatter/docs/src/app/shared/doc-viewer/angular-aria-banner/angular-aria-banner.html
+@@ -7,7 +7,7 @@
+       The Angular team has introduced a new low-level component library called
+       Angular Aria. Consider using the
+-      <a [href]="ariaLink" target="_blank" rel="noopener"
+-        >Angular Aria {{ componentName }}</a
+-      >
++      <a [href]="ariaLink" target="_blank" rel="noopener">Angular Aria {{
++          componentName
++        }}</a>
+       component as an alternative to this CDK component.
+     </p>
+

@@ -1,0 +1,745 @@
+# 61 of 1621 files differ from prettier@3.10.1
+packages/create-vite/template-lit/src/my-element.js
+packages/create-vite/template-lit-ts/src/my-element.ts
+packages/plugin-legacy/src/index.ts
+packages/vite/src/module-runner/types.ts
+packages/vite/src/node/__tests__/env.spec.ts
+packages/vite/src/node/__tests__/environment.spec.ts
+packages/vite/src/node/__tests__/fixtures/config/import-meta/vite.config.ts
+packages/vite/src/node/__tests__/optimizer/rolldownDepPlugin.spec.ts
+packages/vite/src/node/__tests__/plugins/import.spec.ts
+packages/vite/src/node/__tests__/plugins/importGlob/fixture-a/index.ts
+packages/vite/src/node/__tests__/plugins/importGlob/parse.spec.ts
+packages/vite/src/node/__tests__/resolve.spec.ts
+packages/vite/src/node/__tests_dts__/plugin.ts
+packages/vite/src/node/build.ts
+packages/vite/src/node/config.ts
+packages/vite/src/node/plugin.ts
+packages/vite/src/node/plugins/css.ts
+packages/vite/src/node/plugins/html.ts
+packages/vite/src/node/plugins/oxc.ts
+packages/vite/src/node/plugins/resolve.ts
+packages/vite/src/node/preview.ts
+packages/vite/src/node/server/__tests__/pluginContainer.spec.ts
+packages/vite/src/node/server/environments/runnableEnvironment.ts
+packages/vite/src/node/server/hmr.ts
+packages/vite/src/node/server/index.ts
+packages/vite/src/node/ssr/__tests__/ssrTransform.spec.ts
+packages/vite/src/node/ssr/runtime/__tests__/fixtures/oxc-runtime-helper.ts
+packages/vite/src/node/ssr/runtime/__tests__/server-runtime.spec.ts
+packages/vite/src/node/ssr/runtime/__tests__/server-source-maps.spec.ts
+packages/vite/src/node/ssr/runtime/serverModuleRunner.ts
+packages/vite/src/node/utils.ts
+packages/vite/src/shared/forwardConsole.ts
+packages/vite/src/shared/invokeMethods.ts
+packages/vite/src/types/commonjs.d.ts
+packages/vite/src/types/connect.d.ts
+packages/vite/src/types/shims.d.ts
+packages/vite/src/types/ws.d.ts
+packages/vite/types/importGlob.d.ts
+playground/assets/__tests__/assets.spec.ts
+playground/css/__tests__/sass-modern-compiler-build/sass-modern-compiler.spec.ts
+playground/css-lightningcss-proxy/server.js
+playground/css-sourcemap/__tests__/css-sourcemap.spec.ts
+playground/css-sourcemap/__tests__/lightningcss/lightningcss.spec.ts
+playground/dynamic-import/nested/index.js
+playground/forward-console/__test__/forward-console.spec.ts
+playground/fs-serve/__tests__/commonTests.ts
+playground/js-sourcemap/__tests__/js-sourcemap.spec.ts
+playground/js-sourcemap/with-multiline-import.ts
+playground/optimize-deps/vite.config.js
+playground/optimize-missing-deps/server.js
+playground/ssr/server.js
+playground/ssr/src/app.js
+playground/ssr-conditions/server.js
+playground/ssr-deps/define-properties-exports/index.js
+playground/ssr-deps/server.js
+playground/ssr-html/server.js
+playground/ssr-noexternal/server.js
+playground/ssr-pug/server.js
+playground/ssr-wasm/server.js
+playground/tsconfig-json/src/decorator.ts
+playground/worker/worker/main-classic.js
+
+# Left as they were staged (1)
+playground/tsconfig-json/src/decorator.ts
+
+# biome@2.6.8 exited 1; its output
+
+format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Some errors were emitted while running checks.
+  
+
+
+reporter/parse ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  i The following files have parsing errors:
+  
+  - playground/tsconfig-json/src/decorator.ts
+  
+reporter/format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  i The following files need to be formatted:
+  
+  - playground/tsconfig-json/src/decorator.ts
+  
+
+Formatted 1621 files in 95ms. Fixed 1591 files.
+Found 1 error.
+
+
+# The first 25, reference first
+
+--- reference/packages/create-vite/template-lit/src/my-element.js
++++ formatter/packages/create-vite/template-lit/src/my-element.js
+@@ -142,6 +142,6 @@ export class MyElement extends LitElement {
+           rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+ 
+-        --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+-        --heading: system-ui, "Segoe UI", Roboto, sans-serif;
++        --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
++        --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+         --mono: ui-monospace, Consolas, monospace;
+ 
+@@ -363,5 +363,5 @@ export class MyElement extends LitElement {
+       .ticks::before,
+       .ticks::after {
+-        content: "";
++        content: '';
+         position: absolute;
+         top: -4.5px;
+
+
+--- reference/packages/create-vite/template-lit-ts/src/my-element.ts
++++ formatter/packages/create-vite/template-lit-ts/src/my-element.ts
+@@ -134,6 +134,6 @@ export class MyElement extends LitElement {
+         rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+ 
+-      --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+-      --heading: system-ui, "Segoe UI", Roboto, sans-serif;
++      --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
++      --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+       --mono: ui-monospace, Consolas, monospace;
+ 
+@@ -356,5 +356,5 @@ export class MyElement extends LitElement {
+     .ticks::before,
+     .ticks::after {
+-      content: "";
++      content: '';
+       position: absolute;
+       top: -4.5px;
+
+
+--- reference/packages/plugin-legacy/src/index.ts
++++ formatter/packages/plugin-legacy/src/index.ts
+@@ -299,6 +299,7 @@ function viteLegacyPlugin(options: Options = {}): Plugin[] {
+         if (options.modernTargets) {
+           // Package is ESM only
+-          const { default: browserslistToEsbuild } =
+-            await import("browserslist-to-esbuild");
++          const { default: browserslistToEsbuild } = await import(
++            "browserslist-to-esbuild"
++          );
+           config.build.target = browserslistToEsbuild(options.modernTargets);
+         } else {
+@@ -494,5 +495,7 @@ function viteLegacyPlugin(options: Options = {}): Plugin[] {
+       const getLegacyOutputFileName = (
+         fileNames:
+-          string | ((chunkInfo: Rollup.PreRenderedChunk) => string) | undefined,
++          | string
++          | ((chunkInfo: Rollup.PreRenderedChunk) => string)
++          | undefined,
+         defaultFileName = "[name]-legacy-[hash].js",
+       ): string | ((chunkInfo: Rollup.PreRenderedChunk) => string) => {
+
+
+--- reference/packages/vite/src/module-runner/types.ts
++++ formatter/packages/vite/src/module-runner/types.ts
+@@ -100,5 +100,8 @@ export interface ModuleRunnerOptions {
+    */
+   sourcemapInterceptor?:
+-    false | "node" | "prepareStackTrace" | InterceptorOptions;
++    | false
++    | "node"
++    | "prepareStackTrace"
++    | InterceptorOptions;
+   /**
+    * Disable HMR or configure HMR options.
+
+
+--- reference/packages/vite/src/node/__tests__/env.spec.ts
++++ formatter/packages/vite/src/node/__tests__/env.spec.ts
+@@ -7,6 +7,7 @@ const dirname = import.meta.dirname;
+ describe("loadEnv", () => {
+   test("basic", () => {
+-    expect(loadEnv("development", join(dirname, "./env")))
+-      .toMatchInlineSnapshot(`
++    expect(
++      loadEnv("development", join(dirname, "./env")),
++    ).toMatchInlineSnapshot(`
+         {
+           "VITE_APP_BASE_ROUTE": "/",
+@@ -20,6 +21,7 @@ describe("loadEnv", () => {
+ 
+   test("specific prefix", () => {
+-    expect(loadEnv("development", join(dirname, "./env"), "VVITE"))
+-      .toMatchInlineSnapshot(`
++    expect(
++      loadEnv("development", join(dirname, "./env"), "VVITE"),
++    ).toMatchInlineSnapshot(`
+         {
+           "VVITE_A": "A",
+@@ -30,6 +32,7 @@ describe("loadEnv", () => {
+ 
+   test("override", () => {
+-    expect(loadEnv("production", join(dirname, "./env")))
+-      .toMatchInlineSnapshot(`
++    expect(
++      loadEnv("production", join(dirname, "./env")),
++    ).toMatchInlineSnapshot(`
+         {
+           "VITE_APP_BASE_ROUTE": "/app/",
+@@ -40,6 +43,7 @@ describe("loadEnv", () => {
+ 
+   test("override 2", () => {
+-    expect(loadEnv("development2", join(dirname, "./env")))
+-      .toMatchInlineSnapshot(`
++    expect(
++      loadEnv("development2", join(dirname, "./env")),
++    ).toMatchInlineSnapshot(`
+         {
+           "VITE_APP_BASE_ROUTE": "source",
+
+
+--- reference/packages/vite/src/node/__tests__/environment.spec.ts
++++ formatter/packages/vite/src/node/__tests__/environment.spec.ts
+@@ -156,6 +156,8 @@ describe("custom environment conditions", () => {
+       "/fixtures/test-dep-conditions-app/entry.css?inline",
+     );
+-    expect([modCss.default.replace(/\s+/g, " "), modJs.default])
+-      .toMatchInlineSnapshot(`
++    expect([
++      modCss.default.replace(/\s+/g, " "),
++      modJs.default,
++    ]).toMatchInlineSnapshot(`
+       [
+         ".test-css { color: orange; } ",
+
+
+--- reference/packages/vite/src/node/__tests__/fixtures/config/import-meta/vite.config.ts
++++ formatter/packages/vite/src/node/__tests__/fixtures/config/import-meta/vite.config.ts
+@@ -6,5 +6,4 @@ export default {
+   resolved: import.meta.resolve("../import-meta/vite.config.ts"),
+   // prettier-ignore
+-  resolvedMultiline: import.meta
+-    .resolve('../import-meta/vite.config.ts'),
++  resolvedMultiline: import.meta.resolve("../import-meta/vite.config.ts"),
+ };
+
+
+--- reference/packages/vite/src/node/__tests__/optimizer/rolldownDepPlugin.spec.ts
++++ formatter/packages/vite/src/node/__tests__/optimizer/rolldownDepPlugin.spec.ts
+@@ -44,6 +44,7 @@ describe("rolldownDepPlugin transform", async () => {
+       const wasm = new URL('./module.wasm', import.meta.url)
+     `;
+-    expect(await transform(code, "/root/node_modules/my-lib/dist/index.js"))
+-      .toMatchInlineSnapshot(`
++    expect(
++      await transform(code, "/root/node_modules/my-lib/dist/index.js"),
++    ).toMatchInlineSnapshot(`
+       "
+             const img = new URL('' + "../../node_modules/my-lib/dist/logo.png", import.meta.url).href
+@@ -100,6 +101,7 @@ describe("rolldownDepPlugin transform", async () => {
+       const url2 = new URL('./data.json#config', import.meta.url)
+     `;
+-    expect(await transform(code, "/root/node_modules/my-lib/index.js"))
+-      .toMatchInlineSnapshot(`
++    expect(
++      await transform(code, "/root/node_modules/my-lib/index.js"),
++    ).toMatchInlineSnapshot(`
+       "
+             const url1 = new URL('' + "../../node_modules/my-lib/style.css?raw", import.meta.url)
+
+
+--- reference/packages/vite/src/node/__tests__/plugins/import.spec.ts
++++ formatter/packages/vite/src/node/__tests__/plugins/import.spec.ts
+@@ -60,11 +60,13 @@ describe("runTransform", () => {
+ 
+   test("import default specifier", () => {
+-    expect(runTransformCjsImport('import React from "react"', false))
+-      .toMatchInlineSnapshot(`
++    expect(
++      runTransformCjsImport('import React from "react"', false),
++    ).toMatchInlineSnapshot(`
+       "const React = !__vite__cjsImport0_react.__esModule ? __vite__cjsImport0_react : __vite__cjsImport0_react.default;
+        import __vite__cjsImport0_react from "./node_modules/.vite/deps/react.js""
+     `);
+-    expect(runTransformCjsImport('import React from "react"', true))
+-      .toMatchInlineSnapshot(`
++    expect(
++      runTransformCjsImport('import React from "react"', true),
++    ).toMatchInlineSnapshot(`
+         "const React = __vite__cjsImport0_react;
+          import __vite__cjsImport0_react from "./node_modules/.vite/deps/react.js""
+@@ -80,11 +82,13 @@ describe("runTransform", () => {
+ 
+   test("import all specifier", () => {
+-    expect(runTransformCjsImport('import * as react from "react"', false))
+-      .toMatchInlineSnapshot(`
++    expect(
++      runTransformCjsImport('import * as react from "react"', false),
++    ).toMatchInlineSnapshot(`
+       "const react = ((m, n) => n || !m?.__esModule ? {	...typeof m === "object" && !Array.isArray(m) || typeof m === "function" ? m : {},	default: m} : m)(__vite__cjsImport0_react, 0);
+        import __vite__cjsImport0_react from "./node_modules/.vite/deps/react.js""
+     `);
+-    expect(runTransformCjsImport('import * as react from "react"', true))
+-      .toMatchInlineSnapshot(`
++    expect(
++      runTransformCjsImport('import * as react from "react"', true),
++    ).toMatchInlineSnapshot(`
+         "const react = ((m, n) => n || !m?.__esModule ? {	...typeof m === "object" && !Array.isArray(m) || typeof m === "function" ? m : {},	default: m} : m)(__vite__cjsImport0_react, 1);
+          import __vite__cjsImport0_react from "./node_modules/.vite/deps/react.js""
+@@ -152,12 +156,14 @@ describe("runTransform", () => {
+ 
+   test("export default specifier", () => {
+-    expect(runTransformCjsImport('export { default } from "react"', false))
+-      .toMatchInlineSnapshot(`
++    expect(
++      runTransformCjsImport('export { default } from "react"', false),
++    ).toMatchInlineSnapshot(`
+       "const __vite__cjsExportDefault_0 = !__vite__cjsImport0_react.__esModule ? __vite__cjsImport0_react : __vite__cjsImport0_react.default;
+        export default __vite__cjsExportDefault_0;
+        import __vite__cjsImport0_react from "./node_modules/.vite/deps/react.js""
+     `);
+-    expect(runTransformCjsImport('export { default } from "react"', true))
+-      .toMatchInlineSnapshot(`
++    expect(
++      runTransformCjsImport('export { default } from "react"', true),
++    ).toMatchInlineSnapshot(`
+         "const __vite__cjsExportDefault_0 = __vite__cjsImport0_react;
+          export default __vite__cjsExportDefault_0;
+
+
+--- reference/packages/vite/src/node/__tests__/plugins/importGlob/fixture-a/index.ts
++++ formatter/packages/vite/src/node/__tests__/plugins/importGlob/fixture-a/index.ts
+@@ -9,7 +9,11 @@ export interface ModuleType {
+ export const basic = import.meta.glob<ModuleType>("./modules/*.ts");
+ // prettier-ignore
+-export const basicWithObjectKeys = Object.keys(import.meta.glob<ModuleType>('./modules/*.ts'))
++export const basicWithObjectKeys = Object.keys(
++  import.meta.glob<ModuleType>("./modules/*.ts"),
++);
+ // prettier-ignore
+-export const basicWithObjectValues = Object.values(import.meta.glob<ModuleType>('./modules/*.ts'))
++export const basicWithObjectValues = Object.values(
++  import.meta.glob<ModuleType>("./modules/*.ts"),
++);
+ 
+ export const basicEager = import.meta.glob<ModuleType>("./modules/*.ts", {
+
+
+--- reference/packages/vite/src/node/__tests__/plugins/importGlob/parse.spec.ts
++++ formatter/packages/vite/src/node/__tests__/plugins/importGlob/parse.spec.ts
+@@ -297,6 +297,7 @@ describe("parse negatives", async () => {
+ 
+   it("template with unicode", async () => {
+-    expect(await run("import.meta.glob(`/\u0068\u0065\u006c\u006c\u006f`)"))
+-      .toMatchInlineSnapshot(`
++    expect(
++      await run("import.meta.glob(`/\u0068\u0065\u006c\u006c\u006f`)"),
++    ).toMatchInlineSnapshot(`
+       [
+         {
+@@ -312,6 +313,7 @@ describe("parse negatives", async () => {
+ 
+   it("template without expressions", async () => {
+-    expect(await run("import.meta.glob(`/**/*.page.client.*([a-zA-Z0-9])`)"))
+-      .toMatchInlineSnapshot(`
++    expect(
++      await run("import.meta.glob(`/**/*.page.client.*([a-zA-Z0-9])`)"),
++    ).toMatchInlineSnapshot(`
+       [
+         {
+
+
+--- reference/packages/vite/src/node/__tests__/resolve.spec.ts
++++ formatter/packages/vite/src/node/__tests__/resolve.spec.ts
+@@ -232,5 +232,7 @@ describe("file url", () => {
+     test("non declared builtin", async () => {
+       const resolved = await run({
+-        builtins: [/* empty */],
++        builtins: [
++          /* empty */
++        ],
+         idToResolve: "my-env:custom-builtin",
+       });
+@@ -241,5 +243,7 @@ describe("file url", () => {
+       await expect(
+         run({
+-          builtins: [/* empty */],
++          builtins: [
++            /* empty */
++          ],
+           idToResolve: "node:fs",
+         }),
+
+
+--- reference/packages/vite/src/node/__tests_dts__/plugin.ts
++++ formatter/packages/vite/src/node/__tests_dts__/plugin.ts
+@@ -15,7 +15,5 @@ import type {
+ type EnvironmentPluginHooksContext = GetHookContextMap<Plugin>;
+ type EnvironmentPluginHooksContextMatched = {
+-  [
+-    K in keyof EnvironmentPluginHooksContext
+-  ]: EnvironmentPluginHooksContext[K] extends PluginContextExtension
++  [K in keyof EnvironmentPluginHooksContext]: EnvironmentPluginHooksContext[K] extends PluginContextExtension
+     ? never
+     : false;
+@@ -31,11 +29,8 @@ export type cases = [
+   // Ensure environment plugin hooks are superset of rollup plugin hooks
+   ExpectTrue<ExpectExtends<RolldownPlugin, Plugin>>,
+-
+   // Ensure all Rollup hooks have Vite's plugin context extension
+   ExpectTrue<Equal<HooksMissingExtension, never>>,
+-
+   // Ensure the `ROLLUP_HOOKS` constant is up-to-date
+   ExpectTrue<Equal<HooksMissingInConstants, never>>,
+-
+   // Ensure all Vite plugins, Rolldown plugins, and Rollup plugins can be assigned to `plugins` option
+   ExpectTrue<ExpectExtends<PluginOption, RolldownPlugin>>,
+
+
+--- reference/packages/vite/src/node/build.ts
++++ formatter/packages/vite/src/node/build.ts
+@@ -141,5 +141,6 @@ export interface BuildEnvironmentOptions {
+    */
+   assetsInlineLimit?:
+-    number | ((filePath: string, content: Buffer) => boolean | undefined);
++    | number
++    | ((filePath: string, content: Buffer) => boolean | undefined);
+   /**
+    * Whether to code-split CSS. When enabled, CSS in async chunks will be
+@@ -374,13 +375,11 @@ export type ResolveModulePreloadDependenciesFn = (
+ ) => string[];
+ 
+-export interface ResolvedBuildEnvironmentOptions extends Required<
+-  Omit<BuildEnvironmentOptions, "polyfillModulePreload">
+-> {
++export interface ResolvedBuildEnvironmentOptions
++  extends Required<Omit<BuildEnvironmentOptions, "polyfillModulePreload">> {
+   modulePreload: false | ResolvedModulePreloadOptions;
+ }
+ 
+-export interface ResolvedBuildOptions extends Required<
+-  Omit<BuildOptions, "polyfillModulePreload">
+-> {
++export interface ResolvedBuildOptions
++  extends Required<Omit<BuildOptions, "polyfillModulePreload">> {
+   modulePreload: false | ResolvedModulePreloadOptions;
+ }
+
+
+--- reference/packages/vite/src/node/config.ts
++++ formatter/packages/vite/src/node/config.ts
+@@ -233,5 +233,6 @@ export interface DevEnvironmentOptions {
+    */
+   sourcemapIgnoreList?:
+-    false | ((sourcePath: string, sourcemapPath: string) => boolean);
++    | false
++    | ((sourcePath: string, sourcemapPath: string) => boolean);
+ 
+   /**
+@@ -688,106 +689,107 @@ export interface InlineConfig extends UserConfig {
+ }
+ 
+-export interface ResolvedConfig extends Readonly<
+-  Omit<
+-    UserConfig,
+-    | "plugins"
+-    | "css"
+-    | "json"
+-    | "assetsInclude"
+-    | "optimizeDeps"
+-    | "worker"
+-    | "build"
+-    | "dev"
+-    | "environments"
+-    | "experimental"
+-    | "future"
+-    | "server"
+-    | "preview"
+-    | "devtools"
+-  > & {
+-    configFile: string | undefined;
+-    configFileDependencies: string[];
+-    inlineConfig: InlineConfig;
+-    root: string;
+-    base: string;
+-    /** @internal */
+-    decodedBase: string;
+-    /** @internal */
+-    rawBase: string;
+-    publicDir: string;
+-    cacheDir: string;
+-    command: "build" | "serve";
+-    mode: string;
+-    isWorker: boolean;
+-    // in nested worker bundle to find the main config
+-    /** @internal */
+-    mainConfig: ResolvedConfig | null;
+-    /** @internal list of bundle entry id. used to detect recursive worker bundle. */
+-    bundleChain: string[];
+-    isProduction: boolean;
+-    envDir: string | false;
+-    env: Record<string, any>;
+-    resolve: Required<ResolveOptions> & {
+-      alias: Alias[];
+-    };
+-    plugins: readonly Plugin[];
+-    css: ResolvedCSSOptions;
+-    json: Required<JsonOptions>;
+-    /** @deprecated Use `oxc` option instead. */
+... 181 more lines
+
+--- reference/packages/vite/src/node/plugin.ts
++++ formatter/packages/vite/src/node/plugin.ts
+@@ -71,15 +71,11 @@ export interface PluginContextMetaExtension {
+ }
+ 
+-export interface ConfigPluginContext extends Omit<
+-  MinimalPluginContext,
+-  "meta" | "environment"
+-> {
++export interface ConfigPluginContext
++  extends Omit<MinimalPluginContext, "meta" | "environment"> {
+   meta: Omit<PluginContextMeta, "watchMode">;
+ }
+ 
+-export interface MinimalPluginContextWithoutEnvironment extends Omit<
+-  MinimalPluginContext,
+-  "environment"
+-> {}
++export interface MinimalPluginContextWithoutEnvironment
++  extends Omit<MinimalPluginContext, "environment"> {}
+ 
+ // Augment Rolldown types to have the PluginContextExtension
+
+
+--- reference/packages/vite/src/node/plugins/css.ts
++++ formatter/packages/vite/src/node/plugins/css.ts
+@@ -200,5 +200,6 @@ export interface CSSModulesOptions {
+   exportGlobals?: boolean;
+   generateScopedName?:
+-    string | ((name: string, filename: string, css: string) => string);
++    | string
++    | ((name: string, filename: string, css: string) => string);
+   hashPrefix?: string;
+   /**
+@@ -1930,5 +1931,6 @@ const preprocessorWorkerControllerCache = new WeakMap<
+ >();
+ let alwaysFakeWorkerWorkerControllerCache:
+-  PreprocessorWorkerController | undefined;
++  | PreprocessorWorkerController
++  | undefined;
+ 
+ export interface PreprocessCSSResult {
+@@ -2466,5 +2468,6 @@ export function hoistAtRules(css: string): string {
+ 
+ type PreprocessorAdditionalDataResult =
+-  string | { content: string; map?: ExistingRawSourceMap };
++  | string
++  | { content: string; map?: ExistingRawSourceMap };
+ 
+ type PreprocessorAdditionalData =
+@@ -3340,7 +3343,5 @@ async function compileLightningCSS(
+           analyzeDependencies: true,
+         })
+-      : await (
+-          await importLightningCSS()
+-        ).bundleAsync({
++      : await (await importLightningCSS()).bundleAsync({
+           ...config.css.lightningcss,
+           filename,
+@@ -3355,5 +3356,6 @@ async function compileLightningCSS(
+               const code = fs.readFileSync(filePath, "utf-8");
+               const lang = CSS_LANGS_RE.exec(filePath)?.[1] as
+-                CssLang | undefined;
++                | CssLang
++                | undefined;
+               if (isPreProcessor(lang)) {
+                 const result = await compileCSSPreprocessors(
+
+
+--- reference/packages/vite/src/node/plugins/html.ts
++++ formatter/packages/vite/src/node/plugins/html.ts
+@@ -1752,5 +1752,6 @@ export function getImportMap(
+ 
+   const asset = bundle[getImportMapFilename(options)] as
+-    OutputAsset | undefined;
++    | OutputAsset
++    | undefined;
+   if (!asset) return undefined;
+ 
+
+
+--- reference/packages/vite/src/node/plugins/oxc.ts
++++ formatter/packages/vite/src/node/plugins/oxc.ts
+@@ -29,15 +29,16 @@ const jsxExtensionsRE = /\.(?:j|t)sx\b/;
+ const validExtensionRE = /\.\w+$/;
+ 
+-export interface OxcOptions extends Omit<
+-  OxcTransformOptions,
+-  | "cwd"
+-  | "sourceType"
+-  | "lang"
+-  | "sourcemap"
+-  | "helpers"
+-  | "inject"
+-  | "tsconfig"
+-  | "inputMap"
+-> {
++export interface OxcOptions
++  extends Omit<
++    OxcTransformOptions,
++    | "cwd"
++    | "sourceType"
++    | "lang"
++    | "sourcemap"
++    | "helpers"
++    | "inject"
++    | "tsconfig"
++    | "inputMap"
++  > {
+   include?: string | RegExp | ReadonlyArray<string | RegExp>;
+   exclude?: string | RegExp | ReadonlyArray<string | RegExp>;
+
+
+--- reference/packages/vite/src/node/plugins/resolve.ts
++++ formatter/packages/vite/src/node/plugins/resolve.ts
+@@ -171,10 +171,12 @@ interface ResolvePluginOptions {
+ 
+ export interface InternalResolveOptions
+-  extends Required<ResolveOptions>, ResolvePluginOptions {}
++  extends Required<ResolveOptions>,
++    ResolvePluginOptions {}
+ 
+ // Defined ResolveOptions are used to overwrite the values for all environments
+ // It is used when creating custom resolvers (for CSS, scanning, etc)
+ export interface ResolvePluginOptionsWithOverrides
+-  extends ResolveOptions, ResolvePluginOptions {}
++  extends ResolveOptions,
++    ResolvePluginOptions {}
+ 
+ const perEnvironmentOrWorkerPlugin = (
+
+
+--- reference/packages/vite/src/node/preview.ts
++++ formatter/packages/vite/src/node/preview.ts
+@@ -51,8 +51,6 @@ import {
+ export interface PreviewOptions extends CommonServerOptions {}
+ 
+-export interface ResolvedPreviewOptions extends RequiredExceptFor<
+-  PreviewOptions,
+-  "host" | "https" | "proxy"
+-> {}
++export interface ResolvedPreviewOptions
++  extends RequiredExceptFor<PreviewOptions, "host" | "https" | "proxy"> {}
+ 
+ export function resolvePreviewOptions(
+
+
+--- reference/packages/vite/src/node/server/__tests__/pluginContainer.spec.ts
++++ formatter/packages/vite/src/node/server/__tests__/pluginContainer.spec.ts
+@@ -315,6 +315,7 @@ describe("plugin container", () => {
+         plugins: [plugin],
+       });
+-      await expect(() => environment.pluginContainer.load("foo")).rejects
+-        .toThrowErrorMatchingInlineSnapshot(`
++      await expect(() =>
++        environment.pluginContainer.load("foo"),
++      ).rejects.toThrowErrorMatchingInlineSnapshot(`
+         {
+           "message": "test",
+
+
+--- reference/packages/vite/src/node/server/environments/runnableEnvironment.ts
++++ formatter/packages/vite/src/node/server/environments/runnableEnvironment.ts
+@@ -18,8 +18,6 @@ export function createRunnableDevEnvironment(
+ }
+ 
+-export interface RunnableDevEnvironmentContext extends Omit<
+-  DevEnvironmentContext,
+-  "hot"
+-> {
++export interface RunnableDevEnvironmentContext
++  extends Omit<DevEnvironmentContext, "hot"> {
+   runner?: (
+     environment: RunnableDevEnvironment,
+
+
+--- reference/packages/vite/src/node/server/hmr.ts
++++ formatter/packages/vite/src/node/server/hmr.ts
+@@ -226,5 +226,6 @@ export const normalizeHotChannel = (
+   let invokeHandlers: InvokeMethods | undefined;
+   let listenerForInvokeHandler:
+-    ((data: InvokeSendData, client: HotChannelClient) => void) | undefined;
++    | ((data: InvokeSendData, client: HotChannelClient) => void)
++    | undefined;
+   const handleInvoke = async <T extends keyof InvokeMethods>(
+     payload: HotPayload,
+@@ -319,5 +320,6 @@ export const normalizeHotChannel = (
+       listenerForInvokeHandler = async (payload, client) => {
+         const responseInvoke = payload.id.replace("send", "response") as
+-          "response" | `response:${string}`;
++          | "response"
++          | `response:${string}`;
+         client.send({
+           type: "custom",
+
+
+--- reference/packages/vite/src/node/server/index.ts
++++ formatter/packages/vite/src/node/server/index.ts
+@@ -188,5 +188,6 @@ export interface ServerOptions extends CommonServerOptions {
+    */
+   sourcemapIgnoreList?:
+-    false | ((sourcePath: string, sourcemapPath: string) => boolean);
++    | false
++    | ((sourcePath: string, sourcemapPath: string) => boolean);
+   /**
+    * Backward compatibility. The buildStart and buildEnd hooks were called only once for
+@@ -215,18 +216,19 @@ export interface ServerOptions extends CommonServerOptions {
+ }
+ 
+-export interface ResolvedServerOptions extends Omit<
+-  RequiredExceptFor<
+-    ServerOptions,
+-    | "host"
+-    | "https"
+-    | "proxy"
+-    | "hmr"
+-    | "ws"
+-    | "watch"
+-    | "origin"
+-    | "hotUpdateEnvironments"
+-  >,
+-  "fs" | "middlewareMode" | "sourcemapIgnoreList" | "forwardConsole"
+-> {
++export interface ResolvedServerOptions
++  extends Omit<
++    RequiredExceptFor<
++      ServerOptions,
++      | "host"
++      | "https"
++      | "proxy"
++      | "hmr"
++      | "ws"
++      | "watch"
++      | "origin"
++      | "hotUpdateEnvironments"
++    >,
++    "fs" | "middlewareMode" | "sourcemapIgnoreList" | "forwardConsole"
++  > {
+   fs: Required<FileSystemServeOptions>;
+   middlewareMode: NonNullable<ServerOptions["middlewareMode"]>;
+
