@@ -1,0 +1,178 @@
+{
+  "$comment": "Formatter families. A family describes what stays the same across its versions; the version is chosen per run (family@version) and installed into tools/<family>@<version>/ by `pnpm arena tool add`. Fields: package: the npm package installed, or release: a GitHub release the binary comes from (repo, tag with {version}, and the asset per <platform>-<arch> with the executable's path inside it), whose sha256 per platform is recorded in tools/<id>/release.json when the version is added; with: companion packages pinned at one exact version for every version of the family (dprint's language plugins); versions: the major versions this family covers; binary: per <platform>-<arch>, or '*' for every platform, the package holding the executable and its path inside it (a missing platform means no build is published for it); runtime: 'node' when the executable is a JavaScript file run with the current node; languages: the languages it formats, of csv in src/lib/languages.ts; check: the arguments that report unformatted files without writing; checkDiffers: the exit code check mode uses when some file would change (dprint uses 20, the others 1); write: the arguments that format in place; {config} is the arena's generated config, written outside the staged files; env: environment for every invocation, where {cache} is a folder kept with the tool (dprint compiles its plugins there once); threads: thread settings as documented, as flags ({one}, {n}) or environment variables ({env}), {n} replaced, or null when it documents none; defaultThreads: what it uses with no setting, as documented; keep: how many versions the store keeps, newest first (default 3); about: who maintains it and why the arena tests it, shown in the site's Libs dialog; source: where the thread settings are documented.",
+  "families": [
+    {
+      "name": "prettier",
+      "description": "The JavaScript code formatter, the reference",
+      "about": {
+        "maintainer": "Prettier team",
+        "repo": "https://github.com/prettier/prettier",
+        "language": "JavaScript (runs on Node)",
+        "why": "The formatter most projects run today, and the output every other formatter here aims to match."
+      },
+      "package": "prettier",
+      "versions": ">=3",
+      "runtime": "node",
+      "binary": {
+        "*": { "package": "prettier", "file": "bin/prettier.cjs" }
+      },
+      "languages": ["js", "json", "css", "scss", "less", "markdown", "yaml", "html", "angular"],
+      "check": ["--list-different", "--config", "{config}", "--no-editorconfig", "."],
+      "write": ["--write", "--log-level", "warn", "--config", "{config}", "--no-editorconfig", "."],
+      "checkDiffers": 1,
+      "env": {},
+      "threads": null,
+      "defaultThreads": 1,
+      "source": "Prettier's CLI formats one file after another and documents no thread option"
+    },
+    {
+      "name": "bun",
+      "description": "Bun's built-in formatter (bun fmt), written in Rust",
+      "about": {
+        "maintainer": "Oven",
+        "repo": "https://github.com/oven-sh/bun",
+        "language": "Rust",
+        "why": "A formatter inside a runtime that reads Prettier's config and aims at Prettier's output."
+      },
+      "package": "bun",
+      "versions": ">=1.4.4",
+      "binary": {
+        "darwin-arm64": { "package": "@oven/bun-darwin-aarch64", "file": "bin/bun" },
+        "darwin-x64": { "package": "@oven/bun-darwin-x64", "file": "bin/bun" },
+        "linux-arm64": { "package": "@oven/bun-linux-aarch64", "file": "bin/bun" },
+        "linux-x64": { "package": "@oven/bun-linux-x64", "file": "bin/bun" },
+        "win32-arm64": { "package": "@oven/bun-windows-aarch64", "file": "bin/bun.exe" },
+        "win32-x64": { "package": "@oven/bun-windows-x64", "file": "bin/bun.exe" }
+      },
+      "languages": ["js", "json", "css", "scss", "less", "markdown", "yaml", "html", "angular"],
+      "check": ["fmt", "--list-different", "--config={config}", "--no-editorconfig", "--no-script", "."],
+      "write": ["fmt", "--config={config}", "--no-editorconfig", "--no-script", "--log-level=warn", "."],
+      "checkDiffers": 1,
+      "env": {},
+      "threads": { "one": ["--threads=1"], "n": ["--threads={n}"] },
+      "defaultThreads": "per-core",
+      "source": "bun fmt --help --all: --threads, default one per CPU core"
+    },
+    {
+      "name": "oxfmt",
+      "description": "The Oxc project's formatter, written in Rust",
+      "about": {
+        "maintainer": "Oxc project (VoidZero)",
+        "repo": "https://github.com/oxc-project/oxc",
+        "language": "Rust, shipped as a Node native addon",
+        "why": "A Prettier compatible formatter from the team behind oxlint, reading Prettier's option names."
+      },
+      "package": "oxfmt",
+      "versions": ">=0.70",
+      "runtime": "node",
+      "binary": {
+        "*": { "package": "oxfmt", "file": "bin/oxfmt" }
+      },
+      "languages": ["js", "json", "css", "scss", "less", "markdown", "yaml", "html", "angular"],
+      "check": ["--list-different", "--config={config}", "."],
+      "write": ["--write", "--config={config}", "."],
+      "checkDiffers": 1,
+      "env": {},
+      "threads": { "one": ["--threads=1"], "n": ["--threads={n}"] },
+      "defaultThreads": "per-core",
+      "source": "oxfmt --help: --threads"
+    },
+    {
+      "name": "biome",
+      "description": "Biome's formatter (biome format), written in Rust",
+      "about": {
+        "maintainer": "Biome team",
+        "repo": "https://github.com/biomejs/biome",
+        "language": "Rust",
+        "why": "A formatter and linter in one native binary, aiming at Prettier's output for the languages it formats."
+      },
+      "package": "@biomejs/biome",
+      "versions": ">=2",
+      "binary": {
+        "darwin-arm64": { "package": "@biomejs/cli-darwin-arm64", "file": "biome" },
+        "darwin-x64": { "package": "@biomejs/cli-darwin-x64", "file": "biome" },
+        "linux-x64": { "package": "@biomejs/cli-linux-x64", "file": "biome" },
+        "linux-arm64": { "package": "@biomejs/cli-linux-arm64", "file": "biome" },
+        "win32-x64": { "package": "@biomejs/cli-win32-x64", "file": "biome.exe" },
+        "win32-arm64": { "package": "@biomejs/cli-win32-arm64", "file": "biome.exe" }
+      },
+      "languages": ["js", "json", "css", "scss", "markdown", "yaml", "html", "angular"],
+      "check": ["format", "--config-path={config}", "--colors=off", "--reporter=summary", "."],
+      "write": ["format", "--write", "--config-path={config}", "--colors=off", "--reporter=summary", "."],
+      "checkDiffers": 1,
+      "env": {},
+      "threads": null,
+      "defaultThreads": "per-core",
+      "source": "biome format --help documents no thread option; BIOME_THREADS is documented for biome ci only"
+    },
+    {
+      "name": "dprint",
+      "description": "dprint with its TypeScript, JSON, Markdown, Malva (CSS), YAML and markup (HTML) plugins, written in Rust",
+      "about": {
+        "maintainer": "David Sherret and contributors",
+        "repo": "https://github.com/dprint/dprint",
+        "language": "Rust, with WebAssembly plugins",
+        "why": "A pluggable formatter with its own style, not Prettier's: it shows how far another style is, at native speed."
+      },
+      "package": "dprint",
+      "with": {
+        "@dprint/typescript": "0.101.0",
+        "@dprint/json": "0.26.0",
+        "@dprint/markdown": "0.29.0",
+        "dprint-plugin-malva": "0.16.1",
+        "dprint-plugin-yaml": "0.6.0",
+        "dprint-plugin-markup": "0.28.0"
+      },
+      "versions": ">=0.60",
+      "binary": {
+        "darwin-arm64": { "package": "@dprint/darwin-arm64", "file": "dprint" },
+        "darwin-x64": { "package": "@dprint/darwin-x64", "file": "dprint" },
+        "linux-x64": { "package": "@dprint/linux-x64-glibc", "file": "dprint" },
+        "linux-arm64": { "package": "@dprint/linux-arm64-glibc", "file": "dprint" },
+        "win32-x64": { "package": "@dprint/win32-x64", "file": "dprint.exe" },
+        "win32-arm64": { "package": "@dprint/win32-arm64", "file": "dprint.exe" }
+      },
+      "languages": ["js", "json", "css", "scss", "less", "markdown", "yaml", "html", "angular"],
+      "check": ["check", "--config", "{config}", "--list-different", "."],
+      "write": ["fmt", "--config", "{config}", "."],
+      "checkDiffers": 20,
+      "env": { "DPRINT_CACHE_DIR": "{cache}" },
+      "threads": { "env": { "DPRINT_MAX_THREADS": "{n}" } },
+      "defaultThreads": "per-core",
+      "source": "dprint --help: DPRINT_MAX_THREADS"
+    },
+    {
+      "name": "tidy",
+      "description": "A single Rust binary that prints what Prettier prints",
+      "about": {
+        "maintainer": "Luke Edwards",
+        "repo": "https://github.com/lukeed/tidy",
+        "language": "Rust",
+        "why": "Ports Prettier's printers and claims byte for byte agreement with Prettier 3.9.9 on its own corpus."
+      },
+      "release": {
+        "repo": "lukeed/tidy",
+        "tag": "v{version}",
+        "assets": {
+          "darwin-arm64": { "name": "tidy-aarch64-apple-darwin.tar.gz", "file": "tidy" },
+          "darwin-x64": { "name": "tidy-x86_64-apple-darwin.tar.gz", "file": "tidy" },
+          "linux-x64": { "name": "tidy-x86_64-unknown-linux-musl.tar.gz", "file": "tidy" },
+          "linux-arm64": { "name": "tidy-aarch64-unknown-linux-musl.tar.gz", "file": "tidy" },
+          "win32-x64": { "name": "tidy-x86_64-pc-windows-msvc.zip", "file": "tidy.exe" },
+          "win32-arm64": { "name": "tidy-aarch64-pc-windows-msvc.zip", "file": "tidy.exe" }
+        }
+      },
+      "package": "tidy",
+      "versions": ">=2",
+      "binary": {},
+      "languages": ["js", "json", "css", "scss", "less", "markdown", "yaml", "html", "angular"],
+      "check": ["check", "--config", "{config}", "--no-gitignore", "."],
+      "write": ["up", "--config", "{config}", "--no-gitignore", "."],
+      "checkDiffers": 1,
+      "env": {},
+      "threads": { "one": ["--threads", "1"], "n": ["--threads", "{n}"] },
+      "defaultThreads": "per-core",
+      "source": "tidy up --help: --threads"
+    }
+  ]
+}

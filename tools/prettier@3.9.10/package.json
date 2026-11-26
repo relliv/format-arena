@@ -1,0 +1,9 @@
+{
+  "name": "tool-prettier-3.9.10",
+  "version": "0.0.0",
+  "private": true,
+  "description": "The JavaScript code formatter, the reference, prettier@3.9.10",
+  "dependencies": {
+    "prettier": "3.9.10"
+  }
+}

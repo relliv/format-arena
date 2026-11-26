@@ -1,0 +1,7 @@
+{
+  "name": "tool-tidy-2.0.0",
+  "version": "0.0.0",
+  "private": true,
+  "description": "A single Rust binary that prints what Prettier prints, tidy@2.0.0",
+  "dependencies": {}
+}

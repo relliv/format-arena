@@ -1,0 +1,32 @@
+{
+  "repo": "lukeed/tidy",
+  "tag": "v2.0.0",
+  "publishedAt": "2026-11-24T19:10:29Z",
+  "allowYoung": true,
+  "assets": {
+    "darwin-arm64": {
+      "name": "tidy-aarch64-apple-darwin.tar.gz",
+      "sha256": "5386dd3b5cdd6981204429d50d5b860f869b046780bd2ff2241b8f90a9a11377"
+    },
+    "darwin-x64": {
+      "name": "tidy-x86_64-apple-darwin.tar.gz",
+      "sha256": "f18a74a3ce72359a02d43beb65e7feb55f1292703e45c0bc866647592d6cdf27"
+    },
+    "linux-x64": {
+      "name": "tidy-x86_64-unknown-linux-musl.tar.gz",
+      "sha256": "4b8166b1cdde610fd783f2d59511b0fb35d15ef96069ef20642b948ab90907ea"
+    },
+    "linux-arm64": {
+      "name": "tidy-aarch64-unknown-linux-musl.tar.gz",
+      "sha256": "3428f45a00a7a60d11213a4b5c85ca5d4fbb7f982c84925161a375b45e9bc114"
+    },
+    "win32-x64": {
+      "name": "tidy-x86_64-pc-windows-msvc.zip",
+      "sha256": "2f083ab58d51b3db7c601d73e697bbb704c8b56b9e30020945385dc36195ab76"
+    },
+    "win32-arm64": {
+      "name": "tidy-aarch64-pc-windows-msvc.zip",
+      "sha256": "13841f9df4ebfa9d58507a6c0fe0dedbed39c5c21d88ff69e9de8d14b7bda4b7"
+    }
+  }
+}

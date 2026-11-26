@@ -1,0 +1,15 @@
+{
+  "name": "tool-dprint-0.64.3",
+  "version": "0.0.0",
+  "private": true,
+  "description": "dprint with its TypeScript, JSON, Markdown, Malva (CSS), YAML and markup (HTML) plugins, written in Rust, dprint@0.64.3",
+  "dependencies": {
+    "dprint": "0.64.3",
+    "@dprint/typescript": "0.101.0",
+    "@dprint/json": "0.26.0",
+    "@dprint/markdown": "0.29.0",
+    "dprint-plugin-malva": "0.16.1",
+    "dprint-plugin-yaml": "0.6.0",
+    "dprint-plugin-markup": "0.28.0"
+  }
+}
