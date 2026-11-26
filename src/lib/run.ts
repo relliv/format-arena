@@ -12,7 +12,7 @@ import { RESULTS_DIR, ROOT } from './paths.ts';
 import { readRecord } from './release.ts';
 import { writeReport } from './report.ts';
 import { type Scrubber, scrubber } from './scrub.ts';
-import { compareTrees, computeFileSet, copyTree, stage, totalBytes, unifiedDiff } from './stage.ts';
+import { angularNames, compareTrees, computeFileSet, copyTree, stage, totalBytes, unifiedDiff } from './stage.ts';
 import { type Measured, rotate } from './stats.ts';
 import { writeConfig } from './style.ts';
 import { targetRevision } from './targets.ts';
@@ -94,7 +94,20 @@ export interface ParityResult {
   identical: number;
   /** Files whose output differs from the reference's, sorted. */
   differs: string[];
+  /**
+   * Of the differing files, those the formatter left exactly as they were staged,
+   * while the reference changed them: files it refused (a parse error) or judged
+   * already formatted. Measured, not read from the formatter's messages.
+   */
+  untouched: string[];
+  /** One line: the exit code and what it means. The full output is in parity/. */
   error?: string;
+}
+
+/** The first line of a formatter's output that reads like an error, without decoration. */
+export function firstError(text: string): string {
+  const lines = text.split(/\r?\n/).map(l => l.replace(/^[\s×x!]+(?=\S)/, '').replace(/[━─]+/g, '').trim()).filter(Boolean);
+  return (lines.find(l => /error|cannot|could not|unexpected|expected|invalid|failed/i.test(l)) ?? lines[0] ?? '').slice(0, 160);
 }
 
 const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -185,10 +198,13 @@ export async function run(input: RunOptions): Promise<string | null> {
     const rows: TimingRow[] = [];
 
     for (const language of languages) {
-      let files = set.byLanguage[language]!;
+      // Staged names: the real ones, but .component.html for every Angular template.
+      const names = language === 'angular' ? angularNames(set.byLanguage[language]!) : new Map(set.byLanguage[language]!.map(f => [f, f]));
+      const real = (f: string) => names.get(f) ?? f;
+      let files = [...names.keys()];
       const configs = new Map(runnable.map(t => [t.id, writeConfig(join(work, 'configs', language, t.id), t, language)]));
       const src = join(work, language, 'source');
-      stage(options.target, files, src);
+      stage(options.target, files, src, real);
 
       // Gate: the reference formats every file once; a file it cannot format is left out.
       const refOut = join(work, language, 'out', reference.id);
@@ -204,7 +220,7 @@ export async function run(input: RunOptions): Promise<string | null> {
           rmSync(join(refOut, r.file), { force: true });
         }
       }
-      languageMeta[language] = { files: files.length, bytes: totalBytes(src, files), rejected: rejected.map(r => ({ file: r.file, reason: scrub(r.reason) })) };
+      languageMeta[language] = { files: files.length, bytes: totalBytes(src, files), rejected: rejected.map(r => ({ file: real(r.file), reason: scrub(r.reason) })) };
       log(`${LANGUAGES[language].name}: ${files.length} files${rejected.length ? `, ${rejected.length} the reference cannot format` : ''}`);
       if (files.length === 0) continue;
 
@@ -215,7 +231,7 @@ export async function run(input: RunOptions): Promise<string | null> {
         let result: ParityResult;
         let writeExit = 0;
         if (t === reference) {
-          result = { parity: 'identical', files: files.length, identical: files.length, differs: [] };
+          result = { parity: 'identical', files: files.length, identical: files.length, differs: [], untouched: [] };
         } else {
           const out = join(work, language, 'out', t.id);
           copyTree(src, out);
@@ -227,15 +243,21 @@ export async function run(input: RunOptions): Promise<string | null> {
           // file at all crashed or refused its config, and failed.
           const touched = w.exit === 0 || compareTrees(src, out, files).differs.length > 0;
           if (!touched) {
-            result = { parity: 'failed', files: files.length, identical: 0, differs: [], error: scrub(`exited ${w.exit} without formatting a file: ${`${w.stderr}${w.stdout}`.trim().slice(-400)}`) };
+            result = { parity: 'failed', files: files.length, identical: 0, differs: [], untouched: [], error: scrub(`exited ${w.exit} without formatting a file: ${firstError(`${w.stderr}\n${w.stdout}`)}`) };
+            mkdirSync(join(dir, 'parity', t.id), { recursive: true });
+            writeFileSync(join(dir, 'parity', t.id, `${language}.txt`), scrub(`# ${t.id} exited ${w.exit} without formatting a file\n\n${w.stderr}\n${w.stdout}\n`));
           } else {
             const c = compareTrees(refOut, out, files);
-            const note = w.exit === 0 ? {} : { error: scrub(`exited ${w.exit}; files it could not format differ: ${`${w.stderr}${w.stdout}`.trim().slice(-300)}`) };
-            result = { parity: c.differs.length ? 'differs' : 'identical', files: files.length, identical: c.identical, differs: c.differs.map(scrub), ...note };
-            if (c.differs.length) {
+            const changed = new Set(compareTrees(src, out, c.differs).differs);
+            const untouched = c.differs.filter(f => !changed.has(f));
+            const note = w.exit === 0 ? {} : { error: scrub(`exited ${w.exit}: ${firstError(`${w.stderr}\n${w.stdout}`)}`) };
+            result = { parity: c.differs.length ? 'differs' : 'identical', files: files.length, identical: c.identical, differs: c.differs.map(real).map(scrub), untouched: untouched.map(real).map(scrub), ...note };
+            if (c.differs.length || w.exit !== 0) {
               mkdirSync(join(dir, 'parity', t.id), { recursive: true });
-              const sample = c.differs.slice(0, 25).map(f => unifiedDiff(refOut, out, f)).join('\n\n');
-              writeFileSync(join(dir, 'parity', t.id, `${language}.txt`), scrub(`# ${c.differs.length} of ${files.length} files differ from ${reference.id}\n${c.differs.join('\n')}\n\n# The first ${Math.min(25, c.differs.length)}, reference first\n\n${sample}\n`));
+              const sample = c.differs.slice(0, 25).map(f => unifiedDiff(refOut, out, f, 60, real(f))).join('\n\n');
+              const output = w.exit === 0 ? '' : `\n\n# ${t.id} exited ${w.exit}; its output\n\n${w.stderr}\n${w.stdout}`;
+              const left = untouched.length ? `\n\n# Left as they were staged (${untouched.length})\n${untouched.map(real).join('\n')}` : '';
+              writeFileSync(join(dir, 'parity', t.id, `${language}.txt`), scrub(`# ${c.differs.length} of ${files.length} files differ from ${reference.id}\n${c.differs.map(real).join('\n')}${left}${output}\n\n# The first ${Math.min(25, c.differs.length)}, reference first\n\n${sample}\n`));
             }
           }
           rmSync(out, { recursive: true, force: true });
@@ -243,7 +265,7 @@ export async function run(input: RunOptions): Promise<string | null> {
         // The check mode is what is timed; its exit code is recorded once, untimed.
         if (result.parity !== 'failed') {
           const check = runOnce(t, 'check', configs.get(t.id)!, src);
-          if (check.exit !== 0 && check.exit !== t.family.checkDiffers && check.exit !== writeExit) result = { ...result, parity: 'failed', error: scrub(`check exited ${check.exit}: ${`${check.stderr}${check.stdout}`.trim().slice(-400)}`) };
+          if (check.exit !== 0 && check.exit !== t.family.checkDiffers && check.exit !== writeExit) result = { ...result, parity: 'failed', error: scrub(`check exited ${check.exit}: ${firstError(`${check.stderr}\n${check.stdout}`)}`) };
           exits.set(`${t.id} ${language}`, check.exit);
         }
         byTool[t.id] = result;

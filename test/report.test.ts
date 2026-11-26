@@ -18,3 +18,11 @@ describe('rejectedByPrettier', () => {
     ]);
   });
 });
+
+describe('firstError', () => {
+  it('keeps the first line that reads like an error, without box drawing or markers', async () => {
+    const { firstError } = await import('../src/lib/run.ts');
+    expect(firstError('reporter/format ━━━━━━\n\n  i The following files need to be formatted:\n  - a.ts\nFound 3 errors.')).toBe('Found 3 errors.');
+    expect(firstError('  × Expected an array, an object, or a literal but instead found the end of the file.')).toBe('Expected an array, an object, or a literal but instead found the end of the file.');
+  });
+});

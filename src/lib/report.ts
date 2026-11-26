@@ -23,6 +23,8 @@ export interface ParitySummary {
   files: number;
   identical: number;
   differs: number;
+  /** Differing files the formatter left exactly as they were. */
+  untouched: number;
   /** identical / files, 0 to 1. */
   agreement: number;
   /** The first differing files, for the site. */
@@ -36,7 +38,8 @@ export interface LanguageSummary {
   files: number;
   bytes: number;
   rejected: number;
-  settings: { threads: string; formatters: FormatterSummary[] }[];
+  /** versusDefault: the reference is not timed in this setting, so ratios compare with its default run. */
+  settings: { threads: string; formatters: FormatterSummary[]; versusDefault?: boolean }[];
   parity: ParitySummary[];
   /** Formatters that failed on this language and were therefore not timed. */
   untimed: string[];
@@ -93,6 +96,10 @@ export function readTiming(csv: string): Row[] {
 export function summarizeRun(meta: RunMeta, rows: Row[], parity: Partial<Record<Language, Record<string, ParityResult>>>): RunSummary {
   const languages = LANGUAGE_IDS.filter(l => meta.languages[l]).map(language => {
     const inLanguage = rows.filter(r => r.language === language);
+    // A reference without a thread setting (Prettier) is timed only as shipped; other
+    // settings compare with that, so no table shows a ratio against nothing.
+    const refDefault = inLanguage.filter(r => r.threads === 'default' && !r.warm && r.formatter === meta.reference);
+    const refDefaultMedian = refDefault.length ? summarize(refDefault.map(r => r.timing)).median : Number.NaN;
     const settings = [...new Set(inLanguage.map(r => r.threads))].map(threads => {
       const timed = inLanguage.filter(r => r.threads === threads && !r.warm);
       const ids = [...new Set(timed.map(r => r.formatter))];
@@ -101,8 +108,9 @@ export function summarizeRun(meta: RunMeta, rows: Row[], parity: Partial<Record<
         return { id, family: f.family, version: f.version, ...summarize(timed.filter(r => r.formatter === id).map(r => r.timing)), speedup: 0 };
       });
       const ref = summaries.find(s => s.id === meta.reference);
-      for (const s of summaries) s.speedup = ref ? speedup(ref.median, s.median) : Number.NaN;
-      return { threads, formatters: summaries.sort((a, b) => a.median - b.median) };
+      const base = ref ? ref.median : refDefaultMedian;
+      for (const s of summaries) s.speedup = speedup(base, s.median);
+      return { threads, formatters: summaries.sort((a, b) => a.median - b.median), versusDefault: !ref };
     });
     const byTool = parity[language] ?? {};
     const paritySummaries: ParitySummary[] = Object.entries(byTool).map(([id, r]) => ({
@@ -111,6 +119,7 @@ export function summarizeRun(meta: RunMeta, rows: Row[], parity: Partial<Record<
       files: r.files,
       identical: r.identical,
       differs: r.differs.length,
+      untouched: r.untouched?.length ?? 0,
       agreement: r.parity === 'failed' || r.files === 0 ? 0 : r.identical / r.files,
       sample: r.differs.slice(0, 10),
       ...(r.error ? { error: r.error } : {}),
@@ -166,14 +175,15 @@ export function renderMarkdown(meta: RunMeta, summary: RunSummary): string {
   for (const l of summary.languages) {
     lines.push(`## ${l.name}`, '');
     lines.push(`${l.files} files, ${kib(l.bytes)}${l.rejected ? `; ${l.rejected} files left out because \`${meta.reference}\` cannot format them (run.json)` : ''}.`, '');
-    lines.push('| Formatter | Same as reference | Differs | Result |', '|---|--:|--:|---|');
+    lines.push('| Formatter | Same as reference | Differs | Left as they were | Result |', '|---|--:|--:|--:|---|');
     for (const p of [...l.parity].sort((a, b) => b.agreement - a.agreement)) {
       const result = p.parity === 'failed' ? `❌ failed${p.error ? `: ${p.error.replace(/\s+/g, ' ').replaceAll('|', '\\|').slice(0, 120)}` : ''}` : p.parity === 'identical' ? '✅ identical' : '⚠️ differs';
-      lines.push(`| \`${p.id}\` | ${p.identical} (${pct(p.agreement)}) | ${p.differs} | ${result} |`);
+      lines.push(`| \`${p.id}\` | ${p.identical} (${pct(p.agreement)}) | ${p.differs} | ${p.untouched} | ${result} |`);
     }
     lines.push('');
     for (const setting of l.settings) {
       lines.push(`**Speed, ${setting.threads === 'default' ? 'as shipped' : `${setting.threads} ${setting.threads === '1' ? 'thread' : 'threads'}`}** (check mode over all ${l.files} files)`, '');
+      if (setting.versusDefault) lines.push(`\`${meta.reference}\` has no thread setting, so "vs reference" compares with its run as shipped.`, '');
       lines.push('| Formatter | Wall | Range | vs reference | CPU | Peak |', '|---|--:|--:|--:|--:|--:|');
       for (const f of setting.formatters) lines.push(`| \`${f.id}\` | **${s3(f.median)} s** | ${s3(f.min)} to ${s3(f.max)} | ${f.speedup.toFixed(1)}× | ${s3(f.cpu)} s | ${Math.round(f.rssMiB)} MiB |`);
       lines.push('');

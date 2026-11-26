@@ -70,13 +70,33 @@ export function computeFileSet(target: string, exclude: string[] = [], htmlAs: H
 /** Lockfiles are YAML or JSON that no one formats. */
 export const LOCKFILES = ['pnpm-lock.yaml', 'package-lock.json', 'npm-shrinkwrap.json', 'yarn.lock', 'bun.lock', 'deno.lock'];
 
-/** Copies `files` from `from` into `to`, keeping their paths. */
-export function stage(from: string, files: string[], to: string): void {
+/** Copies `files` from `from` into `to`, keeping their paths; `sourceOf` names a staged file's original. */
+export function stage(from: string, files: string[], to: string, sourceOf: (file: string) => string = f => f): void {
   for (const file of files) {
     const dest = join(to, file);
     mkdirSync(dirname(dest), { recursive: true });
-    copyFileSync(join(from, file), dest);
+    copyFileSync(join(from, sourceOf(file)), dest);
   }
+}
+
+/**
+ * The names Angular templates are staged under. dprint's markup plugin reads a file
+ * as an Angular template only when it is named .component.html and as plain HTML
+ * otherwise, while Prettier, bun and oxfmt take it from their config and Biome and
+ * tidy print the same either way. So every template is staged as .component.html,
+ * which changes no other formatter's output, and reported under its real path.
+ * A rename that would land on an existing file keeps the real name.
+ */
+export function angularNames(files: string[]): Map<string, string> {
+  const taken = new Set(files);
+  const names = new Map<string, string>();
+  for (const file of files) {
+    const renamed = /\.component\.html$/i.test(file) ? file : file.replace(/\.html?$/i, '.component.html');
+    const staged = renamed !== file && taken.has(renamed) ? file : renamed;
+    taken.add(staged);
+    names.set(staged, file);
+  }
+  return names;
 }
 
 /** A fresh copy of a staged folder, for one formatter to write into. */
@@ -106,14 +126,14 @@ export function compareTrees(reference: string, mine: string, files: string[]): 
  * A unified diff of one file, reference first, for the parity records. Uses git,
  * which every runner has; returns an empty string when git is missing.
  */
-export function unifiedDiff(reference: string, mine: string, file: string, maxLines = 60): string {
+export function unifiedDiff(reference: string, mine: string, file: string, maxLines = 60, label = file): string {
   const r = spawnSync('git', ['diff', '--no-index', '--no-color', '--unified=2', '--', join(reference, file), join(mine, file)], { encoding: 'utf8', maxBuffer: 1 << 26 });
   if (r.error) return '';
   // The headers name temporary folders; they become the reference and this formatter.
   const lines = r.stdout
     .split('\n')
     .filter(l => !l.startsWith('diff --git') && !l.startsWith('index '))
-    .map(l => (l.startsWith('--- ') ? `--- reference/${file}` : l.startsWith('+++ ') ? `+++ formatter/${file}` : l));
+    .map(l => (l.startsWith('--- ') ? `--- reference/${label}` : l.startsWith('+++ ') ? `+++ formatter/${label}` : l));
   const body = lines.slice(0, maxLines).join('\n');
   return lines.length > maxLines ? `${body}\n... ${lines.length - maxLines} more lines` : body;
 }

@@ -63,3 +63,17 @@ describe('stage and compareTrees', () => {
     expect(compareTrees(one, two, ['src/a.ts', 'src/b.ts'])).toEqual({ identical: 1, differs: ['src/b.ts'] });
   });
 });
+
+describe('angularNames', () => {
+  it('stages every template as .component.html and keeps a real name that would collide', async () => {
+    const { angularNames } = await import('../src/lib/stage.ts');
+    const names = angularNames(['a/button.html', 'a/menu.component.html', 'b/x.html', 'b/x.component.html', 'c/page.htm']);
+    expect([...names]).toEqual([
+      ['a/button.component.html', 'a/button.html'],
+      ['a/menu.component.html', 'a/menu.component.html'],
+      ['b/x.html', 'b/x.html'],
+      ['b/x.component.html', 'b/x.component.html'],
+      ['c/page.component.html', 'c/page.htm'],
+    ]);
+  });
+});
