@@ -20,7 +20,7 @@ const RESULT: Record<ParitySummary['parity'], [kind: string, mark: string, label
   failed: ['bad', '!', 'Failed'],
 };
 
-/** Errors are long tool output; the cell shows the start and the title holds the rest. */
+/** Errors are one line; a long one is cut in the cell and whole in its title. */
 const ERROR_PREVIEW = 90;
 
 function outputTable(run: RunSummary, lang: LanguageSummary, names: Names): string {
@@ -35,12 +35,13 @@ function outputTable(run: RunSummary, lang: LanguageSummary, names: Names): stri
       <td class="num strong">${failed ? dash : `${count(p.identical)} <span class="muted">/ ${count(p.files)}</span>`}</td>
       <td>${reference || failed ? dash : `<div class="meter"><span style="width:${(p.agreement * 100).toFixed(1)}%;background:${color}"></span></div><span class="meter-value">${pct(p.agreement)}</span>`}</td>
       <td class="num">${reference || failed ? dash : count(p.differs)}</td>
+      <td class="num">${reference || failed ? dash : count(p.untouched ?? 0)}</td>
       <td class="error-cell">${p.error ? `<span class="error-text" title="${esc(p.error)}">${esc(p.error.length > ERROR_PREVIEW ? `${p.error.slice(0, ERROR_PREVIEW)}…` : p.error)}</span>` : ''}</td></tr>`;
   };
   // The reference first, then the closest match.
   const order = [...lang.parity].sort((a, b) => Number(b.id === run.reference) - Number(a.id === run.reference) || b.agreement - a.agreement || a.id.localeCompare(b.id));
   return `<div class="table-scroll" data-scroll="output"><table class="data output-table">
-    <thead><tr><th>Formatter</th><th>Result</th><th class="num">Identical files</th><th>Agreement</th><th class="num">Differing</th><th>Note</th></tr></thead>
+    <thead><tr><th>Formatter</th><th>Result</th><th class="num">Identical files</th><th>Agreement</th><th class="num">Differing</th><th class="num" title="Differing files the formatter left exactly as they were, while the reference changed them">Left as they were</th><th>Note</th></tr></thead>
     <tbody>${order.map(row).join('')}</tbody></table></div>`;
 }
 
@@ -50,21 +51,12 @@ function samples(run: RunSummary, lang: LanguageSummary, names: Names): string {
   if (!differing.length) return '';
   const block = (p: ParitySummary): string => `<details class="differ">
       <summary><span class="swatch" style="background:${familyColor(familyOf(p.id))}"></span><span class="differ-name">${names.nameHtml(p.id)}</span>
-        <span class="differ-sum">${count(p.differs)} ${p.differs === 1 ? 'file differs' : 'files differ'}${p.sample.length < p.differs ? `, first ${p.sample.length}` : ''}</span></summary>
+        <span class="differ-sum"><span class="sr-sep">: </span>${count(p.differs)} ${p.differs === 1 ? 'file differs' : 'files differ'}${p.sample.length < p.differs ? `, first ${p.sample.length}` : ''}</span></summary>
       <ul class="sample-list">${p.sample.map(f => `<li><code>${esc(f)}</code></li>`).join('')}</ul>
     </details>`;
   return `<h3 class="sub-head">Where they differ</h3>
     <p class="hint">Files whose output is not byte for byte the reference's, fewest first. The run's <code>parity/</code> folder has the diffs.</p>
     <div class="differs">${differing.map(block).join('')}</div>`;
-}
-
-/** Full error texts, each folded to one line until opened. */
-function errors(lang: LanguageSummary, names: Names): string {
-  const list = lang.parity.filter(p => p.error);
-  if (!list.length) return '';
-  return `<div class="errors">${list
-    .map(p => `<details class="error"><summary><b>${esc(names.short(p.id))}</b><span class="error-line">${esc(p.error)}</span></summary><pre>${esc(p.error)}</pre></details>`)
-    .join('')}</div>`;
 }
 
 export function outputSection(run: RunSummary, lang: LanguageSummary, names: Names): string {
@@ -73,7 +65,6 @@ export function outputSection(run: RunSummary, lang: LanguageSummary, names: Nam
       lang.rejected ? ` ${count(lang.rejected)} ${lang.rejected === 1 ? 'file was' : 'files were'} left out because the reference cannot format ${lang.rejected === 1 ? 'it' : 'them'}.` : ''
     }</p>
     ${lang.parity.length ? outputTable(run, lang, names) : '<p class="hint">No formatter output was compared for this language.</p>'}
-    <p class="hint legend-note">Identical files: files whose output matches the reference's exactly. Agreement: that share of all files. Failed: the formatter exited with an error on this language and was not timed; open its note below for the full text.</p>
-    ${errors(lang, names)}
+    <p class="hint legend-note">Identical files: files whose output matches the reference's exactly. Agreement: that share of all files. Left as they were: differing files the formatter did not change at all while the reference did, because it refused them (a syntax it does not parse) or judged them formatted. Note: the formatter's exit code and first error line; its full output is in the run's <code>parity/</code> folder. Failed: it exited with an error without changing any file, and was not timed.</p>
     ${samples(run, lang, names)}`;
 }

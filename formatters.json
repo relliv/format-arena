@@ -1,5 +1,5 @@
 {
-  "$comment": "Formatter families. A family describes what stays the same across its versions; the version is chosen per run (family@version) and installed into tools/<family>@<version>/ by `pnpm arena tool add`. Fields: package: the npm package installed, or release: a GitHub release the binary comes from (repo, tag with {version}, and the asset per <platform>-<arch> with the executable's path inside it), whose sha256 per platform is recorded in tools/<id>/release.json when the version is added; with: companion packages pinned at one exact version for every version of the family (dprint's language plugins); versions: the major versions this family covers; binary: per <platform>-<arch>, or '*' for every platform, the package holding the executable and its path inside it (a missing platform means no build is published for it); runtime: 'node' when the executable is a JavaScript file run with the current node; languages: the languages it formats, of csv in src/lib/languages.ts; check: the arguments that report unformatted files without writing; checkDiffers: the exit code check mode uses when some file would change (dprint uses 20, the others 1); write: the arguments that format in place; {config} is the arena's generated config, written outside the staged files; env: environment for every invocation, where {cache} is a folder kept with the tool (dprint compiles its plugins there once); threads: thread settings as documented, as flags ({one}, {n}) or environment variables ({env}), {n} replaced, or null when it documents none; defaultThreads: what it uses with no setting, as documented; keep: how many versions the store keeps, newest first (default 3); about: who maintains it and why the arena tests it, shown in the site's Libs dialog; source: where the thread settings are documented.",
+  "$comment": "Formatter families. A family describes what stays the same across its versions; the version is chosen per run (family@version) and installed into tools/<family>@<version>/ by `pnpm arena tool add`. Fields: package: the npm package installed, or release: a GitHub release the binary comes from (repo, tag with {version}, and the asset per <platform>-<arch> with the executable's path inside it), whose sha256 per platform is recorded in tools/<id>/release.json when the version is added; with: companion packages pinned at one exact version for every version of the family (dprint's language plugins); versions: the major versions this family covers; binary: per <platform>-<arch>, or '*' for every platform, the package holding the executable and its path inside it (a missing platform means no build is published for it); runtime: 'node' when the executable is a JavaScript file run with the current node; languages: the languages it formats, of those in src/lib/languages.ts; notes: how it formats a language, shown in the site's Languages dialog; asHtml: languages it formats with another language's parser (Angular templates as plain HTML), so its output there is not that language's; check: the arguments that report unformatted files without writing; checkDiffers: the exit code check mode uses when some file would change (dprint uses 20, the others 1); write: the arguments that format in place; {config} is the arena's generated config, written outside the staged files; env: environment for every invocation, where {cache} is a folder kept with the tool (dprint compiles its plugins there once); threads: thread settings as documented, as flags ({one}, {n}) or environment variables ({env}), {n} replaced, or null when it documents none; defaultThreads: what it uses with no setting, as documented; keep: how many versions the store keeps, newest first (default 3); about: who maintains it and why the arena tests it, shown in the site's Libs dialog; source: where the thread settings are documented.",
   "families": [
     {
       "name": "prettier",
@@ -17,6 +17,7 @@
         "*": { "package": "prettier", "file": "bin/prettier.cjs" }
       },
       "languages": ["js", "json", "css", "scss", "less", "markdown", "yaml", "html", "angular"],
+      "notes": { "angular": "Its angular parser, set for .html files by an override" },
       "check": ["--list-different", "--config", "{config}", "--no-editorconfig", "."],
       "write": ["--write", "--log-level", "warn", "--config", "{config}", "--no-editorconfig", "."],
       "checkDiffers": 1,
@@ -45,6 +46,7 @@
         "win32-x64": { "package": "@oven/bun-windows-x64", "file": "bin/bun.exe" }
       },
       "languages": ["js", "json", "css", "scss", "less", "markdown", "yaml", "html", "angular"],
+      "notes": { "angular": "Prettier's angular parser setting, read from the same override" },
       "check": ["fmt", "--list-different", "--config={config}", "--no-editorconfig", "--no-script", "."],
       "write": ["fmt", "--config={config}", "--no-editorconfig", "--no-script", "--log-level=warn", "."],
       "checkDiffers": 1,
@@ -69,6 +71,7 @@
         "*": { "package": "oxfmt", "file": "bin/oxfmt" }
       },
       "languages": ["js", "json", "css", "scss", "less", "markdown", "yaml", "html", "angular"],
+      "notes": { "angular": "Its angular-html language, set for .html files by an association" },
       "check": ["--list-different", "--config={config}", "."],
       "write": ["--write", "--config={config}", "."],
       "checkDiffers": 1,
@@ -97,6 +100,8 @@
         "win32-arm64": { "package": "@biomejs/cli-win32-arm64", "file": "biome.exe" }
       },
       "languages": ["js", "json", "css", "scss", "markdown", "yaml", "html", "angular"],
+      "notes": { "angular": "No Angular template parser in this release: control flow (@if, @for, @let) stays text" },
+      "asHtml": ["angular"],
       "check": ["format", "--config-path={config}", "--colors=off", "--reporter=summary", "."],
       "write": ["format", "--write", "--config-path={config}", "--colors=off", "--reporter=summary", "."],
       "checkDiffers": 1,
@@ -133,6 +138,7 @@
         "win32-arm64": { "package": "@dprint/win32-arm64", "file": "dprint.exe" }
       },
       "languages": ["js", "json", "css", "scss", "less", "markdown", "yaml", "html", "angular"],
+      "notes": { "angular": "Angular mode for files named .component.html, which the arena stages every template as; dprint's own style" },
       "check": ["check", "--config", "{config}", "--list-different", "."],
       "write": ["fmt", "--config", "{config}", "."],
       "checkDiffers": 20,
@@ -166,6 +172,8 @@
       "versions": ">=2",
       "binary": {},
       "languages": ["js", "json", "css", "scss", "less", "markdown", "yaml", "html", "angular"],
+      "notes": { "angular": "No Angular parser (--lang angular is refused): templates are formatted as HTML" },
+      "asHtml": ["angular"],
       "check": ["check", "--config", "{config}", "--no-gitignore", "."],
       "write": ["up", "--config", "{config}", "--no-gitignore", "."],
       "checkDiffers": 1,

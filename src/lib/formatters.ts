@@ -40,6 +40,10 @@ export interface Family {
   runtime?: 'node';
   binary: Record<string, BinarySpec>;
   languages: Language[];
+  /** How it formats a language, for the site. */
+  notes?: Partial<Record<Language, string>>;
+  /** Languages it formats with another language's parser (Angular templates as plain HTML). */
+  asHtml?: Language[];
   /** {config} is the generated config. */
   check: string[];
   write: string[];

@@ -21,7 +21,13 @@ export function mountLanguages(): void {
   const rows = LANGUAGE_IDS.map(id => {
     const l = LANGUAGES[id];
     const cells = columns
-      .map(f => (f.languages.includes(id) ? `<td class="yes">${check}</td>` : '<td><span class="muted">no</span></td>'))
+      .map(f => {
+        const note = f.notes?.[id];
+        const noteHtml = note ? `<span class="lang-note">${esc(note)}</span>` : '';
+        if (!f.languages.includes(id)) return '<td><span class="muted">no</span></td>';
+        if (f.asHtml?.includes(id)) return `<td class="partial"><span class="as-html" title="${esc(note ?? '')}">as HTML</span>${noteHtml}</td>`;
+        return `<td class="yes">${check}${noteHtml}</td>`;
+      })
       .join('');
     return `<tr><td class="lang-name"><b>${esc(l.name)}</b><span class="lang-ext">${l.extensions.map(e => `.${esc(e)}`).join(' ')}</span></td>${cells}</tr>`;
   }).join('');
@@ -29,7 +35,7 @@ export function mountLanguages(): void {
     hash: '#languages',
     id: 'languages',
     title: `The ${LANGUAGE_IDS.length} languages`,
-    hint: 'Which family formats which language. Each language is timed and compared with the reference on its own, over the files of that language.',
+    hint: 'Which family formats which language, and how. "As HTML" means the family formats the files with its HTML parser, without the language\'s own syntax, so its output there is not that language\'s. Each language is timed and compared with the reference on its own.',
     body: `<div class="languages-table"><div class="table-scroll"><table class="data">
       <thead><tr><th>Language</th>${head}</tr></thead>
       <tbody>${rows}</tbody>

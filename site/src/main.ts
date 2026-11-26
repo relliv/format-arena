@@ -119,6 +119,10 @@ function tile(label: string, value: string, note: string, swatch?: string): stri
   </div>`;
 }
 
+/** The share of files a formatter must print as the reference does to lead the headline. */
+const AGREEMENT_BAR = 0.99;
+const pctText = (n: number): string => `${(n * 100).toFixed(n >= 0.995 && n < 1 ? 1 : n === 1 ? 0 : 1)}%`;
+
 function hero(run: RunSummary, lang: LanguageSummary, formatters: FormatterSummary[]): string {
   const others = lang.parity.filter(p => p.id !== run.reference);
   const agree = others.filter(p => p.parity === 'identical').length;
@@ -133,13 +137,31 @@ function hero(run: RunSummary, lang: LanguageSummary, formatters: FormatterSumma
   }
   const ref = formatters.find(c => c.id === run.reference);
   const lightest = [...formatters].sort((a, b) => a.rssMiB - b.rssMiB)[0]!;
+  // Speed only counts next to agreement: the headline names the fastest formatter
+  // that prints what the reference prints for at least 99% of the files, and says
+  // how many. A faster formatter with another answer (Angular templates read as
+  // plain HTML) is named only when no formatter reaches that bar, and with its share.
+  const parityOf = (id: string) => lang.parity.find(p => p.id === id);
+  // Another Prettier version is not a rival; it would lead at 1.0x.
+  const refFamily = formatters.find(f => f.id === run.reference)?.family ?? 'prettier';
+  const agreeing = formatters.filter(f => f.family !== refFamily && (parityOf(f.id)?.agreement ?? 0) >= AGREEMENT_BAR);
+  const lead = agreeing[0];
+  const share = (id: string) => {
+    const p = parityOf(id);
+    return p ? `the same output for <span class="accent">${count(p.identical)}</span> of ${count(p.files)} files (${pctText(p.agreement)})` : '';
+  };
+  const headline = lead
+    ? `<span style="color:${familyColor(lead.family)}">${nameHtml(lead.id)}</span> checks ${esc(lang.name)} in ${esc(run.label)} <span class="accent">${times(lead.speedup)}</span> faster than ${esc(short(run.reference))}, with ${share(lead.id)}`
+    : fastest.family === refFamily
+      ? `${esc(short(run.reference))} is the fastest on ${esc(lang.name)} in ${esc(run.label)}`
+      : `No formatter matches ${esc(short(run.reference))} on ${pctText(AGREEMENT_BAR)} of ${esc(lang.name)} in ${esc(run.label)}; <span style="color:${familyColor(fastest.family)}">${nameHtml(fastest.id)}</span> is <span class="accent">${times(fastest.speedup)}</span> faster, with ${share(fastest.id)}`;
+  const fastestShare = parityOf(fastest.id);
   return `<section class="hero">
     <p class="eyebrow">${esc(run.label)} · ${esc(lang.name)} · ${esc(day(run.date))}</p>
-    <h1 class="headline"><span style="color:${familyColor(fastest.family)}">${nameHtml(fastest.id)}</span> formats ${esc(run.label)}'s ${esc(lang.name)}
-      ${fastest.id === run.reference ? 'fastest' : `<span class="accent">${times(fastest.speedup)}</span> faster than ${esc(short(run.reference))}`}</h1>
+    <h1 class="headline">${headline}</h1>
     <p class="sub">${sub}</p>
     <div class="tiles">
-      ${tile('Fastest pass', secs(fastest.median), nameHtml(fastest.id), familyColor(fastest.family))}
+      ${tile('Fastest pass', secs(fastest.median), `${nameHtml(fastest.id)}${fastestShare && fastest.id !== run.reference ? `, ${pctText(fastestShare.agreement)} same` : ''}`, familyColor(fastest.family))}
       ${ref ? tile('Reference pass', secs(ref.median), esc(short(ref.id)), familyColor(ref.family)) : ''}
       ${tile('Lightest peak', mib(lightest.rssMiB), nameHtml(lightest.id), familyColor(lightest.family))}
       ${tile('Same output', `${agree}<span class="tile-of">/${others.length}</span>`, `formatters print exactly what ${esc(short(run.reference))} prints`)}

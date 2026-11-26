@@ -904,6 +904,11 @@ code {
 
     .differ-sum {
       @apply ml-auto text-xs text-slate-500;
+
+      /* Kept for copied text and screen readers: "bun 1.4.4: 1 file differs". */
+      .sr-sep {
+        @apply sr-only;
+      }
     }
   }
 
@@ -944,6 +949,16 @@ code {
 
   .lang-check {
     @apply size-4;
+  }
+
+  /* Formats the files, but with its HTML parser: not the language's own syntax. */
+  .as-html {
+    @apply rounded-md bg-amber-50 px-1.5 py-px text-[11px] font-medium text-amber-700 dark:bg-amber-500/10 dark:text-amber-300;
+  }
+
+  /* How a family formats the language, under its mark. */
+  .lang-note {
+    @apply mt-1 block max-w-44 text-[11px] leading-snug font-normal text-slate-500 dark:text-slate-400;
   }
 
   .muted {
